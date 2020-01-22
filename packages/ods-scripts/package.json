@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "name": "@origin-digital/ods-scripts",
+  "description": "Build scripts for the monorepo",
+  "version": "0.1.0"
+}

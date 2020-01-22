@@ -1,0 +1,3 @@
+s3_publish_overrides:
+  '.*':
+    'cache-control': 'no-cache,max-age=0,public'

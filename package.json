@@ -1,0 +1,77 @@
+{
+  "private": true,
+  "name": "origin-ui",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@bitbucket.origin.com.au/od/origin-ui.git"
+  },
+  "workspaces": [
+    "packages/*",
+    "docs",
+    "playroom"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build --ignore docs --ignore playroom --parallel && yarn tsc",
+    "clean": "rm -rf coverage packages/*/dist",
+    "cz": "git-cz",
+    "docs:build": "yarn generate-component-docs && cd docs && yarn build && cd ../playroom && yarn build && mv dist ../docs/build/playroom",
+    "docs:deploy": "cd docs && yarn deploy",
+    "format": "origin-scripts format",
+    "generate-component-docs": "ts-node packages/ods-scripts/src/generate-component-docs",
+    "postinstall": "origin-scripts postinstall",
+    "lint": "origin-scripts lint",
+    "playroom": "cd playroom && yarn start",
+    "start": "yarn generate-component-docs && cd docs && yarn start",
+    "test": "origin-scripts test",
+    "tsc": "tsc -b packages/tsconfig.build.json",
+    "validate": "origin-scripts validate"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@origin-digital/origin-scripts": "^1.10.3",
+    "@types/jest": "^24.0.23",
+    "@types/lodash": "^4.14.132",
+    "@types/node": "^12.12.14",
+    "@types/prop-types": "^15.7.3",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "@types/styled-components": "^3.0.2",
+    "@types/styled-system": "^5.1.4",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "fs-extra": "^8.1.0",
+    "lerna": "^3.16.4",
+    "lodash": "^4.17.15",
+    "react": "^16.9.0",
+    "styled-components": "3.4.5",
+    "ts-node": "^8.2.0",
+    "typescript": "^3.7.3"
+  },
+  "engines": {
+    "node": ">=8.12.0"
+  },
+  "engineStrict": true,
+  "eslintIgnore": [
+    "dist",
+    "coverage",
+    "node_modules",
+    "build"
+  ],
+  "husky": {
+    "hooks": {
+      "commit-msg": "origin-scripts commitlint -e $HUSKY_GIT_PARAMS",
+      "pre-commit": "origin-scripts pre-commit",
+      "post-rewrite": "origin-scripts pre-commit"
+    }
+  },
+  "resolutions": {
+    "react": "16.9.0"
+  }
+}

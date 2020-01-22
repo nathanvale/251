@@ -1,0 +1,15 @@
+{
+  "lerna": "3.15.0",
+  "useWorkspaces": true,
+  "npmClient": "yarn",
+  "version": "independent",
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "changelogPreset": "angular",
+      "yes": true,
+      "npmClient": "npm",
+      "message": "chore(release): publish [ci skip]"
+    }
+  }
+}

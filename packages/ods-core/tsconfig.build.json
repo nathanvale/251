@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.settings.json",
+  "compilerOptions": {
+    "outDir": "./dist/typings",
+    "rootDir": "./src"
+  },
+  "include": ["src", "src/**/*.json", "../../globals.d.ts", "../ods-types"],
+  "references": [{"path": "../ods-icons/tsconfig.build.json"}]
+}
