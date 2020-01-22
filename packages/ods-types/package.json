@@ -2,5 +2,5 @@
   "private": true,
   "name": "@origin-digital/ods-types",
   "description": "Custom type declarations",
-  "version": "0.1.0"
+  "version": "0.1.1"
 }
