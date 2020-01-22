@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "playroom",
+  "description": "Living design system containing the building blocks and design principles for Origin Digital web applications.",
+  "license": "UNLICENSED",
+  "author": "Nathan Vale <nathan.vale@origin.com.au>",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "playroom build",
+    "start": "playroom start"
+  },
+  "dependencies": {
+    "@origin-digital/ods-core": "*",
+    "@origin-digital/ods-icons": "*",
+    "@origin-digital/ods-patterns": "*",
+    "playroom": "^0.14.5"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@origin-digital/ods-icons",
+  "description": "Babel preset for Origin Digital",
+  "license": "UNLICENSED",
+  "author": "Nathan Vale <nathan.vale@origin.com.au>",
+  "version": "0.1.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn build:cjs && yarn build:es",
+    "build:cjs": "BUILD_FORMAT=cjs origin-scripts build --monorepo --delete-dir-on-start --out-dir dist/cjs",
+    "build:es": "BUILD_WEBPACK=true origin-scripts build --monorepo --out-dir dist/es"
+  },
+  "typings": "dist/typings/index.d.ts",
+  "dependencies": {
+    "@babel/runtime-corejs3": "^7.8.3"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "styled-components": "3.4.5"
+  },
+  "publishConfig": {
+    "registry": "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-internal/"
+  },
+  "sideEffects": false
+}
