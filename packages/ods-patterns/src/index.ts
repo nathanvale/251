@@ -4,7 +4,5 @@
  * issue to explain our work around.
  * https://github.com/microsoft/TypeScript/issues/28481#issuecomment-552938424
  */
-export {ContentSection} from './content-section';
-export type ContentSectionProps = import('./content-section').ContentSectionProps;
-export {CardStackSection} from './card-stack-section';
-export type CardStackSectionProps = import('./card-stack-section').CardStackSectionProps;
+export {CardStackSection} from './CardStackSection/CardStackSection';
+export type CardStackSectionProps = import('./CardStackSection/CardStackSection').CardStackSectionProps;

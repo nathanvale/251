@@ -9,17 +9,18 @@ import {
   Box,
   Text,
   Link as StyledLink,
+  ContentSection,
 } from '@origin-digital/ods-core';
-import {ContentSection} from '@origin-digital/ods-patterns';
-import {BoxDocument} from './box';
-import {SectionDocument} from './section';
-import {StackDocument} from './stack';
-import {ColumnsDocument} from './columns';
-import {ColumnDocument} from './column';
-import {ContentSectionDocument} from './content-section';
-import {CardStackSectionDocument} from './card-stack-section';
-import {DividerDocument} from './divider';
-import {PlaceholderDocument} from './placeholder';
+
+import {BoxDocument} from './Box';
+import {SectionDocument} from './Section';
+import {StackDocument} from './Stack';
+import {ColumnsDocument} from './Columns';
+import {ColumnDocument} from './Column';
+import {ContentSectionDocument} from './ContentSection';
+import {CardStackSectionDocument} from './CardStackSection';
+import {DividerDocument} from './Divider';
+import {PlaceholderDocument} from './Placeholder';
 
 ReactDOM.render(
   <OriginThemeProvider gridGutterWidth={32}>
@@ -35,6 +36,9 @@ ReactDOM.render(
               <Box display="flex">
                 <Link to="/box">
                   <StyledLink>Box</StyledLink>
+                </Link>
+                <Link to="/content-section">
+                  <StyledLink>ContentSection</StyledLink>
                 </Link>
                 <Link to="/section">
                   <StyledLink>Section</StyledLink>
@@ -59,9 +63,6 @@ ReactDOM.render(
                 Pattern Components
               </Text>
               <Box>
-                <Link to="/content-section">
-                  <StyledLink>ContentSection</StyledLink>
-                </Link>
                 <Link to="/card-stack-section">
                   <StyledLink>CardStackSection</StyledLink>
                 </Link>

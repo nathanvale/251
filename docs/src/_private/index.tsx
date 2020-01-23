@@ -1,3 +1,3 @@
-export {Example} from './example';
-export {Props} from './props';
-export {Page} from './page';
+export {Example} from './Example';
+export {Props} from './Props';
+export {Page} from './Page';

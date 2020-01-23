@@ -1007,6 +1007,17 @@ exports[`Columns 1`] = `
 }
 `;
 
+exports[`ContentSection 1`] = `
+{
+  backgroundColor?: 
+    | "grey"
+    | "transparent"
+    | "white"
+  children?: ReactNode
+  data-id?: string
+}
+`;
+
 exports[`Divider 1`] = `
 {
 }
