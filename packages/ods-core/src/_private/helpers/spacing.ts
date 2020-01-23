@@ -1,6 +1,6 @@
 import {SpaceVariants, BreakpointVariants} from 'styled-components';
 import {ResponsiveValue} from 'styled-system';
-import {ResponsiveProp} from '../../box';
+import {ResponsiveProp} from '../../Box/Box';
 
 const spacingAliasToIndex: Record<SpaceVariants, number> = {
   none: 0,
