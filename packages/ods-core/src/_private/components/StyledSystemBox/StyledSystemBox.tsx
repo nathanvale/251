@@ -6,6 +6,8 @@ import styled, {
   css,
 } from 'styled-components';
 
+import {themeChecker} from '../../helpers/theme';
+
 import {
   alignItems,
   backgroundColor,
@@ -101,10 +103,12 @@ const boxShadowFactory = ({border, shadows}: DefaultTheme) => {
     borderFormAccentLarge: `inset 0 0 0 ${borderWidth.large}px ${color.formAccent}`,
     borderStandardInvertedLarge: `inset 0 0 0 ${borderWidth.large}px ${color.standardInverted}`,
   };
+
   return boxShadowForVariant;
 };
 
 export const StyledSystemBox = styled.div<StyledSystemProps>`
+        ${themeChecker}
         margin: 0;
         padding: 0;
         border: 0;
