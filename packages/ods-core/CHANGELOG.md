@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.1.2...@origin-digital/ods-core@0.2.0) (2020-01-24)
+
+
+### Features
+
+* **box:** check for OriginThemeProvider ([15fcbdf](https://bitbucket.orgn.io/od/origin-ui/commits/15fcbdf))
+
+
+
+
+
 ## [0.1.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.1.1...@origin-digital/ods-core@0.1.2) (2020-01-23)
 
 **Note:** Version bump only for package @origin-digital/ods-core
