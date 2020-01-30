@@ -6,3 +6,5 @@
  */
 export {CardStackSection} from './CardStackSection/CardStackSection';
 export type CardStackSectionProps = import('./CardStackSection/CardStackSection').CardStackSectionProps;
+export {ContentSection} from '../../ods-lab/src/ContentSection/ContentSection';
+export type ContentSectionProps = import('../../ods-lab/src/ContentSection/ContentSection').ContentSectionProps;

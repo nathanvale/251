@@ -18,11 +18,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "emitDeclarationOnly": false
   },
   "include": [
     "src",
-    "../ods-types",
+    "src/**/*.json",
+    "../packages/*/src/",
     "../globals.d.ts"
   ]
 }

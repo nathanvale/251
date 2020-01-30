@@ -1,15 +1,8 @@
 import React from 'react';
 import lzString from 'lz-string';
 import reactElementToJSXString from 'react-element-to-jsx-string';
-import {
-  ContentSection,
-  Stack,
-  Box,
-  Text,
-  Section,
-  Link,
-} from '@origin-digital/ods-core';
-
+import {Stack, Box, Text, Section, Link} from '@origin-digital/ods-core';
+import {ContentSection} from '@origin-digital/ods-lab';
 import {IconPlay} from '@origin-digital/ods-icons';
 import styled from 'styled-components';
 import {maxWidth, MaxWidthProps} from 'styled-system';
@@ -62,7 +55,6 @@ const getCodeAsString = (Example: ExampleProps['Code']) => {
 export const Example = ({
   title,
   description,
-  showHeaderFooter,
   space = 'medium',
   stretch,
   noSection,

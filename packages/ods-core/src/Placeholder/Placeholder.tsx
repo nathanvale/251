@@ -1,11 +1,13 @@
 import React, {ReactNode} from 'react';
-import styled, {ColorVariants} from 'styled-components';
-import {height} from 'styled-system';
+import styled from 'styled-components';
+import {ColorVariants} from '@origin-digital/ods-themes';
+import {height, width} from 'styled-system';
 import {Box, BoxProps} from '../Box/Box';
 import {Text} from '../Text/Text';
 
 const StyledBox = styled(Box)`
   ${height}
+  ${width}
 `;
 
 export interface PlaceholderProps {
@@ -15,6 +17,7 @@ export interface PlaceholderProps {
   color?: ColorVariants;
   inline?: boolean;
   height?: string;
+  width?: string;
 }
 
 export const Placeholder = ({
@@ -24,6 +27,7 @@ export const Placeholder = ({
   'data-id': dataId,
   inline,
   height,
+  width,
 }: PlaceholderProps) => {
   return (
     <StyledBox
@@ -35,6 +39,7 @@ export const Placeholder = ({
       justifyContent="center"
       alignItems="center"
       height={height as BoxProps['height']}
+      width={width as BoxProps['height']}
     >
       <Text size="xsmall" color={color}>
         {children}

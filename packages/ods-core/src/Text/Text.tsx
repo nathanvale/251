@@ -1,5 +1,6 @@
 import React, {ReactNode, ReactType} from 'react';
-import styled, {Color} from 'styled-components';
+import styled from 'styled-components';
+import {Color} from '@origin-digital/ods-themes';
 import {style} from 'styled-system';
 import {Box} from '../Box/Box';
 
@@ -37,11 +38,8 @@ export const Text = ({
   size = 'xxsmall',
   color = 'grey',
   weight = 'regular',
-  baseline = true,
   className,
 }: TextProps) => {
-  //const textStyles = useText({weight, size, baseline});
-  /*  ${textStyles} */
   const StyledBox = styled(Box)`
     ${p => {
       return basekick({

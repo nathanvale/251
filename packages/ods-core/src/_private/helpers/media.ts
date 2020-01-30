@@ -5,11 +5,12 @@ import {
   // SimpleInterpolation,
   ThemedStyledProps,
   DefaultTheme,
-  BreakpointVariants,
   // ThemedCssFunction,
   InterpolationFunction,
   SimpleInterpolation,
 } from 'styled-components';
+
+import {BreakpointVariants} from '@origin-digital/ods-themes';
 
 export enum MediaLabels {
   xs = 'smaller',
@@ -56,7 +57,7 @@ const defaultBreakpoints: Record<BreakpointVariants, number> = {
   xl: 1200,
 };
 
-const getBreakpoints: GetBreakpointsFn = props => ({
+const getBreakpoints: GetBreakpointsFn = () => ({
   ...defaultBreakpoints,
 });
 

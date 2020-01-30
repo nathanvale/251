@@ -1,9 +1,6 @@
 import React from 'react';
 import {Placeholder} from '@origin-digital/ods-core';
-import {
-  CardStackSection,
-  CardStackSectionProps,
-} from '@origin-digital/ods-patterns';
+import {CardStackSection, CardStackSectionProps} from '@origin-digital/ods-lab';
 import {Props, Example, Page} from './_private';
 
 export const CardStackSectionDocument = () => (

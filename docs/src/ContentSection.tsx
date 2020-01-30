@@ -1,8 +1,6 @@
 import React from 'react';
-import {Placeholder,
-  ContentSection,
-  ContentSectionProps,
-} from '@origin-digital/ods-core';
+import {Placeholder} from '@origin-digital/ods-core';
+import {ContentSection, ContentSectionProps} from '@origin-digital/ods-lab';
 
 import {Props, Example, Page} from './_private';
 

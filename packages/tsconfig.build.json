@@ -1,8 +1,0 @@
-{
-  "files": [],
-  "references": [
-    {"path": "ods-core/tsconfig.build.json"},
-    {"path": "ods-icons/tsconfig.build.json"},
-    {"path": "ods-patterns/tsconfig.build.json"}
-  ]
-}

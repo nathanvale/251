@@ -1,7 +1,6 @@
 import React, {ReactNode} from 'react';
-import {Color} from 'styled-components';
-import { Box } from '../Box/Box';
-import { Section } from '../Section/Section';
+import {Color} from '@origin-digital/ods-themes';
+import {Box, Section} from '@origin-digital/ods-core';
 
 export interface ContentSectionProps {
   children?: ReactNode;
