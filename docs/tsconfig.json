@@ -25,6 +25,6 @@
     "src",
     "src/**/*.json",
     "../packages/*/src/",
-    "../globals.d.ts", "../packages/ods-test-utils/jest-setup.ts"
+    "../globals.d.ts"
   ]
 }

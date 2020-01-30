@@ -1,5 +1,5 @@
 {
-  "name": "@origin-digital/ods-test-utils",
+  "name": "@origin-digital/ods-testing-library",
   "description": "ODS testing tools that enhance react-testing-library",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
@@ -17,12 +17,12 @@
   },
   "typings": "dist/typings/index.d.ts",
   "dependencies": {
-    "@babel/runtime-corejs3": "^7.8.3",
-    "@origin-digital/ods-core": "*"
+    "@babel/runtime-corejs3": "^7.8.3"
   },
   "peerDependencies": {
-    "@testing-library/react": "^9.4.0",
-    "jest-styled-components": "6.3.1"
+    "@origin-digital/ods-themes": "*",
+    "@testing-library/react": "9.x",
+    "jest-styled-components": "6.x"
   },
   "publishConfig": {
     "registry": "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-internal/"
