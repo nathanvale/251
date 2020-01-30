@@ -1,4 +1,4 @@
-import {SpaceVariants, BreakpointVariants} from 'styled-components';
+import {SpaceVariants, BreakpointVariants} from '@origin-digital/ods-themes';
 import {ResponsiveValue} from 'styled-system';
 import {ResponsiveProp} from '../../Box/Box';
 

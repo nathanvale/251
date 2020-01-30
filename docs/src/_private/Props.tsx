@@ -5,10 +5,10 @@ import partition from 'lodash/partition';
 import mapValues from 'lodash/mapValues';
 import isEmpty from 'lodash/isEmpty';
 import * as Core from '@origin-digital/ods-core';
-import * as Patterns from '@origin-digital/ods-patterns';
+import * as Experimental from '@origin-digital/ods-lab';
 import styled from 'styled-components';
 import {maxWidth, MaxWidthProps} from 'styled-system';
-import {ContentSection} from '@origin-digital/ods-core';
+import {ContentSection} from '@origin-digital/ods-lab';
 import {NormalisedInterface} from '@origin-digital/ods-scripts';
 import {
   Stack,
@@ -17,8 +17,8 @@ import {
   Columns,
   Column,
   Box,
-  CSSDebugButton,
 } from '@origin-digital/ods-core';
+import {CSSDebugButton} from '@origin-digital/ods-devtools';
 import {IconFlipToBack} from '@origin-digital/ods-icons';
 import componentDocs from '../componentDocs.json';
 
@@ -95,7 +95,7 @@ export function Props<T = {}>({
     prop => prop.required,
   );
 
-  const components = {...Core, ...Patterns};
+  const components = {...Core, ...Experimental};
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const component = (components as Record<string, FC<any>>)[componentName];
 

@@ -9,11 +9,8 @@ const {spawnSync} = require('child_process');
   { name: '@origin-digital/ods-icons',
     version: '1.0.0',
     private: false,
-    location: '/Users/nathanvale/code/origin-ui/packages/ods-icons' },
-  { name: '@origin-digital/ods-patterns',
-    version: '1.0.0',
-    private: false,
-    location: '/Users/nathanvale/code/origin-ui/packages/ods-patterns' } ]
+    location: '/Users/nathanvale/code/origin-ui/packages/ods-icons' }
+   ]
  */
 function getPackagesMetaData() {
   const result = spawnSync(

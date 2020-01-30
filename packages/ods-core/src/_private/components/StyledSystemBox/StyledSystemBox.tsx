@@ -1,12 +1,10 @@
 import * as CSS from 'csstype';
-import styled, {
-  DefaultTheme,
+import styled, {DefaultTheme, css} from 'styled-components';
+
+import {
   TransitionVariants,
   TransformVariants,
-  css,
-} from 'styled-components';
-
-import {themeChecker} from '../../helpers/theme';
+} from '@origin-digital/ods-themes';
 
 import {
   alignItems,
@@ -36,6 +34,7 @@ import {
   style,
 } from 'styled-system';
 import {tint} from 'polished';
+import {themeChecker} from '../../helpers/theme';
 
 export interface StyledSystemProps
   extends DisplayProps,

@@ -26,8 +26,8 @@
     "playroom": "cd playroom && yarn start",
     "start": "yarn generate-component-docs && cd docs && yarn start",
     "test": "origin-scripts test",
-    "tsc": "tsc -b packages/tsconfig.build.json",
-    "validate": "origin-scripts validate"
+    "tsc": "tsc -b",
+    "validate": "yarn clean && origin-scripts validate"
   },
   "config": {
     "commitizen": {
@@ -35,7 +35,7 @@
     }
   },
   "devDependencies": {
-    "@origin-digital/origin-scripts": "^1.10.3",
+    "@origin-digital/origin-scripts": "^1.11.0",
     "@types/jest": "^24.0.23",
     "@types/lodash": "^4.14.132",
     "@types/node": "^12.12.14",

@@ -1,9 +1,6 @@
 import React from 'react';
 
-import {
-  useGlobalState,
-  useGlobalDispatch,
-} from '../_private/context/global-context';
+import {useDebugState, useDebugDispatch} from '../../context/debug-context';
 
 export interface CSSDebugButtonProps {
   Button: TS_FIXME;
@@ -11,8 +8,8 @@ export interface CSSDebugButtonProps {
 }
 
 export const CSSDebugButton = ({Button, ...rest}: CSSDebugButtonProps) => {
-  const {showCSSBorders} = useGlobalState();
-  const dispatch = useGlobalDispatch();
+  const {showCSSBorders} = useDebugState();
+  const dispatch = useDebugDispatch();
   function handleShowCssBordersClick() {
     dispatch({type: 'showCSSBorders', value: !showCSSBorders});
   }

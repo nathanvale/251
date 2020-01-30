@@ -1,4 +1,4 @@
-import {Breakpoint} from 'styled-components';
+import {Breakpoint} from '@origin-digital/ods-themes';
 
 type ValueType = boolean | null | undefined | number | string | object;
 

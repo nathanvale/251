@@ -3233,10 +3233,10 @@
     semver "^6.3.0"
     webpack "^4.38.0"
 
-"@origin-digital/origin-scripts@^1.10.3":
-  version "1.10.3"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/origin-scripts/-/@origin-digital/origin-scripts-1.10.3.tgz#fd7f9f34b534781f4c6ffe47dc2fa11b9962779a"
-  integrity sha1-/X+fNLU0eB9Mb/5H3C+hG5lid5o=
+"@origin-digital/origin-scripts@^1.11.0":
+  version "1.11.0"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/origin-scripts/-/@origin-digital/origin-scripts-1.11.0.tgz#bf83708b8236da4b429190a5cf0b136f1ba81db6"
+  integrity sha1-v4Nwi4I22ktCkZClzwsTbxuoHbY=
   dependencies:
     "@babel/cli" "^7.4.4"
     "@babel/core" "^7.4.5"

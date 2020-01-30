@@ -1,6 +1,7 @@
 {
+  "private": true,
   "name": "@origin-digital/ods-icons",
-  "description": "Babel preset for Origin Digital",
+  "description": "",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
   "version": "0.1.2",
@@ -16,7 +17,8 @@
   },
   "typings": "dist/typings/index.d.ts",
   "dependencies": {
-    "@babel/runtime-corejs3": "^7.8.3"
+    "@babel/runtime-corejs3": "^7.8.3",
+    "@origin-digital/ods-themes": "*"
   },
   "peerDependencies": {
     "react": "^16.9.0",

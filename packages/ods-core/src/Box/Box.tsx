@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
 import React, {AllHTMLAttributes} from 'react';
-import styled, {
-  StyledComponentClass,
-  DefaultTheme,
+import styled, {StyledComponentClass, DefaultTheme} from 'styled-components';
+
+import {
   TransitionVariants,
   TransformVariants,
-} from 'styled-components';
+} from '@origin-digital/ods-themes';
+
 import * as CSS from 'csstype';
 import {Omit} from 'utility-types';
 

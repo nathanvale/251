@@ -2,5 +2,8 @@
   "private": true,
   "name": "@origin-digital/ods-types",
   "description": "Custom type declarations",
-  "version": "0.1.1"
+  "version": "0.1.1",
+  "dependencies": {
+    "@origin-digital/ods-themes": "*"
+  }
 }

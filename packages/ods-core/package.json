@@ -1,6 +1,6 @@
 {
   "name": "@origin-digital/ods-core",
-  "description": "Babel preset for Origin Digital",
+  "description": "Origin digital design system",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
   "version": "0.2.0",
@@ -17,6 +17,8 @@
   "typings": "dist/typings/index.d.ts",
   "dependencies": {
     "@babel/runtime-corejs3": "^7.8.3",
+    "@origin-digital/ods-devtools": "*",
+    "@origin-digital/ods-themes": "*",
     "csstype": "^2.6.4",
     "polished": "^3.4.2",
     "styled-system": "4.2.3",

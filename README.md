@@ -186,30 +186,16 @@ If at anytime any of these processes fail the process will exit, which is why it
 
 Google, Facebook, Microsoft, Uber, Airbnb and Twitter all employ very large monorepos with varying strategies to scale build systems and version control software with a large volume of code and daily changes.
 
-##### Why is there a tsconfig.settings.json, tsconfig.json and a tsconfig.build.json?
-
-`tsconfig.settings.json` are shared tsc compiler options between all `tsconfig(*).json` files.
-
-`packages/tsconfig.build.json` is used for efficiently building declaration files in your package's dist folders.
-
-`tsconfig.json` is for your ide only. It uses regex to map references, to packages that may have not been built yet, directly to your source code:
-
-```
-"paths": {
-    "@origin-digital/*": ["packages/*/src"]
-}
-```
-
 ##### Why am I getting the error TS7016: Could not find a declaration file for module '@origin-digital/...'?
 
 The typescript build system uses project references:
 
 https://www.typescriptlang.org/docs/handbook/project-references.html
 
-Please make sure that your package's `@origin-digital/...` dependencies that exist in `origin-ui` have been referenced in their corresponding `tsconfig.build.json` files:
+Please make sure that your package's `@origin-digital/...` dependencies that exist in `origin-ui` have been referenced in their corresponding `tsconfig.json` files:
 
 ```
 "references": [
-  {"path": "../{package}/tsconfig.build.json"},
+  {"path": "../{package}/tsconfig.json"},
 ]
 ```

@@ -933,8 +933,10 @@ exports[`Box 1`] = `
     | "unset"
   >
   title?: string
-  transform?: any
-  transition?: any
+  transform?: "touchable"
+  transition?: 
+    | "fast"
+    | "touchable"
   translate?: 
     | "no"
     | "yes"
@@ -952,13 +954,6 @@ exports[`Box 1`] = `
   width?: "full"
   wmode?: string
   wrap?: string
-}
-`;
-
-exports[`CSSDebugButton 1`] = `
-{
-  Button: any
-  Icon: any
 }
 `;
 
@@ -1007,17 +1002,6 @@ exports[`Columns 1`] = `
 }
 `;
 
-exports[`ContentSection 1`] = `
-{
-  backgroundColor?: 
-    | "grey"
-    | "transparent"
-    | "white"
-  children?: ReactNode
-  data-id?: string
-}
-`;
-
 exports[`Divider 1`] = `
 {
 }
@@ -1037,9 +1021,60 @@ exports[`Link 1`] = `
 exports[`OriginThemeProvider 1`] = `
 {
   children: ReactNode
-  gridGutterWidth?: 
-    | 16
-    | 32
+  theme?: {
+    border: {
+      color: { standard: string; standardInverted: string; formHover: string; focus: string; critical: string; formAccent: string; primary: string; secondary: string; }
+      width: { standard: number; large: number; }
+    }
+    breakpoints: Breakpoints
+    colors: {
+      blue: string
+      green: string
+      grey: string
+      grey16: string
+      grey24: string
+      grey4: string
+      grey48: string
+      grey56: string
+      grey8: string
+      grey80: string
+      lightBlue: string
+      lightGreen: string
+      lightGrey: string
+      lightOrange: string
+      orange: string
+      purple: string
+      red: string
+      redPink: string
+      transparent: string
+      white: string
+    }
+    gridGutterWidth: 
+      | 16
+      | 32
+    section: { maxWidth: Breakpoint<number>; }
+    shadows: {
+      large: string
+      medium: string
+      small: string
+    }
+    space: Space
+    transforms: {
+      touchable: string
+    }
+    transitions: {
+      fast: string
+      touchable: string
+    }
+    typography: {
+      capHeightScale: number
+      descenderHeightScale: number
+      fontFamily: string
+      gridRow: number
+      text: { xxxsmall: { size: number; rows: number; }; xxsmall: { size: number; rows: number; }; xsmall: { size: number; rows: number; }; small: { size: number; rows: number; }; medium: { size: number; rows: number; }; large: { ...; }; xlarge: { ...; }; xxlarge: { ...; }; xxxlarge: { ...; }; }
+      weight: { regular: number; medium: number; }
+    }
+  }
 }
 `;
 
@@ -1068,10 +1103,31 @@ exports[`Placeholder 1`] = `
     | "white"
   >
   children?: ReactNode
-  color?: any
+  color?: 
+    | "blue"
+    | "green"
+    | "grey"
+    | "grey16"
+    | "grey24"
+    | "grey4"
+    | "grey48"
+    | "grey56"
+    | "grey8"
+    | "grey80"
+    | "lightBlue"
+    | "lightGreen"
+    | "lightGrey"
+    | "lightOrange"
+    | "orange"
+    | "purple"
+    | "red"
+    | "redPink"
+    | "transparent"
+    | "white"
   data-id?: string
   height?: string
   inline?: boolean
+  width?: string
 }
 `;
 
@@ -1117,9 +1173,26 @@ exports[`Text 1`] = `
   children?: ReactNode
   className?: string
   color?: 
-    | number
-    | string
-    | symbol
+    | "blue"
+    | "green"
+    | "grey"
+    | "grey16"
+    | "grey24"
+    | "grey4"
+    | "grey48"
+    | "grey56"
+    | "grey8"
+    | "grey80"
+    | "lightBlue"
+    | "lightGreen"
+    | "lightGrey"
+    | "lightOrange"
+    | "orange"
+    | "purple"
+    | "red"
+    | "redPink"
+    | "transparent"
+    | "white"
   component?: 
     | "a"
     | "abbr"
