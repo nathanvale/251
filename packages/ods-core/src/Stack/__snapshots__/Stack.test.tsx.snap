@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It can distribute space 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  width: 100%;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #ec0000;
+  padding: 16px;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #ff8228;
+  padding: 16px;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #3f75c6;
+  padding: 16px;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  padding-bottom: 48px;
+}
+
+.c1:last-child {
+  padding-bottom: 0;
+}
+
+<div
+  class="c0"
+  data-id="stack"
+  width="full"
+>
+  <div
+    class="c1 c2"
+  >
+    <div
+      class="c3"
+    />
+  </div>
+  <div
+    class="c1 c2"
+  >
+    <div
+      class="c4"
+    />
+  </div>
+  <div
+    class="c1 c2"
+  >
+    <div
+      class="c5"
+    />
+  </div>
+</div>
+`;
+
+exports[`It can stack 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  width: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  padding-bottom: 0;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #ec0000;
+  padding: 16px;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #ff8228;
+  padding: 16px;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #3f75c6;
+  padding: 16px;
+}
+
+.c1:last-child {
+  padding-bottom: 0;
+}
+
+<div
+  class="c0"
+  data-id="stack"
+  width="full"
+>
+  <div
+    class="c1 c2"
+  >
+    <div
+      class="c3"
+    />
+  </div>
+  <div
+    class="c1 c2"
+  >
+    <div
+      class="c4"
+    />
+  </div>
+  <div
+    class="c1 c2"
+  >
+    <div
+      class="c5"
+    />
+  </div>
+</div>
+`;
