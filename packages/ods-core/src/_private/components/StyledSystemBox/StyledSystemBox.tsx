@@ -8,6 +8,7 @@ import {
 
 import {
   alignItems,
+  alignSelf,
   backgroundColor,
   display,
   DisplayProps,
@@ -130,6 +131,7 @@ export const StyledSystemBox = styled.div<StyledSystemProps>`
         ${paddingLeft}
         ${paddingRight}
         ${alignItems}
+        ${alignSelf}
         ${justifyContent}
         ${position}
         :active {
@@ -140,7 +142,7 @@ export const StyledSystemBox = styled.div<StyledSystemProps>`
           css`
             width: 100%;
           `}
-        ${p => (p.height === 'full' ? 'height: 100%;' : null)} 
+        ${p => (p.height === 'full' ? 'height: 100%;' : null)}
         ${({theme, showAnts}) =>
           showAnts &&
           css`

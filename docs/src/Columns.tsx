@@ -81,6 +81,20 @@ export const ColumnsDocument = () => (
           </Columns>
         )}
       />
+      <Example
+        title="Vertical Alignment"
+        description="Use alignY to align the child Column components top, center (defalut) or bottom"
+        Code={() => (
+          <Columns space="small" collapseBelow="sm" alignY="bottom">
+            <Column>
+              <Box backgroundColor="blue" padding="xsmall" />
+            </Column>
+            <Column>
+              <Box backgroundColor="blue" padding="large" />
+            </Column>
+          </Columns>
+        )}
+      />
     </Stack>
   </Page>
 );

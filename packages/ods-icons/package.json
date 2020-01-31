@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "private": false,
   "name": "@origin-digital/ods-icons",
   "description": "",
   "license": "UNLICENSED",

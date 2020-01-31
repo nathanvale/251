@@ -1,8 +1,10 @@
 import React, {ReactElement, createContext, useMemo} from 'react';
+import {BreakpointVariants} from '@origin-digital/ods-themes';
+
 import {ColumnProps} from '../Column/Column';
 import {BoxDebug} from '../_private/components/BoxDebug/BoxDebug';
 import {setBreakpoint} from '../_private/helpers/utils';
-import {ResponsiveSpace} from '../Box/Box';
+import {AlignItemsVariants, ResponsiveSpace} from '../Box/Box';
 import {mapSpaceAliasToIndex} from '../_private/helpers/spacing';
 
 interface ColumnsContextValue {
@@ -17,24 +19,38 @@ export const ColumnsContext = createContext<ColumnsContextValue>({
   space: defaultSpace,
 });
 
+export type AlignYType = 'top' | 'center' | 'bottom';
+
+const mapVAlignToAlignItems = (alignY: AlignYType): AlignItemsVariants => {
+  const map = {
+    top: 'flex-start',
+    center: 'center',
+    bottom: 'flex-end',
+  } as {[k in AlignYType]: AlignItemsVariants};
+  return map[alignY];
+};
+
 export interface ColumnsProps {
-  'data-id'?: string;
   children: ReactElement<ColumnProps>[] | ReactElement<ColumnProps>;
-  collapseBelow?: 'sm' | 'md' | 'lg' | 'xl';
   space?: ResponsiveSpace;
+  collapseBelow?: BreakpointVariants;
+  alignY?: AlignYType;
+  'data-id'?: string;
 }
 
 export const Columns = ({
   children,
   collapseBelow,
-  space = defaultSpace,
   'data-id': dataId,
+  space = defaultSpace,
+  alignY = 'center',
 }: ColumnsProps) => {
   // Prevent re-renders when context values haven't changed
   const columnsContextValue = useMemo(() => ({collapseBelow, space}), [
     collapseBelow,
     space,
   ]);
+
   const spaceIndex = mapSpaceAliasToIndex(space, true);
   return (
     <BoxDebug
@@ -43,6 +59,7 @@ export const Columns = ({
       flexDirection={
         collapseBelow && setBreakpoint(collapseBelow, 'column', 'row')
       }
+      alignItems={mapVAlignToAlignItems(alignY)}
       marginLeft={
         (collapseBelow
           ? setBreakpoint(collapseBelow, 'none', spaceIndex)
@@ -59,6 +76,7 @@ export const Columns = ({
 Columns.defaultProps = {
   'data-id': 'columns',
   space: 'none',
+  alignY: 'center',
 };
 
 Columns.displayName = 'Columns';
