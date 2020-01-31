@@ -15,7 +15,6 @@ module.exports = {
   },
   testRegex: '^.+\\.test\\.(ts|tsx|js|jsx)$',
   moduleNameMapper: {
-    '@origin-digital/((?!style-guide|ods-testing-library)[^/]*)$':
-      '<rootDir>../$1/src',
+    '@origin-digital/((?!style-guide)[^/]*)$': '<rootDir>../$1/src',
   },
 };
