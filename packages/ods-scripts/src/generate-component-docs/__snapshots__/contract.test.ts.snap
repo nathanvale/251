@@ -11,6 +11,13 @@ exports[`Box 1`] = `
     | "center"
     | "flex-end"
     | "flex-start"
+    | "stretch"
+  >
+  alignSelf?: ResponsiveProp<
+    | "center"
+    | "flex-end"
+    | "flex-start"
+    | "stretch"
   >
   allowFullScreen?: boolean
   allowTransparency?: boolean
@@ -974,11 +981,16 @@ exports[`Column 1`] = `
     | "5/6"
     | "7/12"
     | "content"
+    | "flex"
 }
 `;
 
 exports[`Columns 1`] = `
 {
+  alignY?: 
+    | "bottom"
+    | "center"
+    | "top"
   children: 
     | ReactElement<ColumnProps, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>
     | ReactElement<ColumnProps, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>[]
@@ -987,6 +999,7 @@ exports[`Columns 1`] = `
     | "md"
     | "sm"
     | "xl"
+    | "xs"
   data-id?: string
   space?: ResponsiveProp<
     | "large"
@@ -1150,6 +1163,11 @@ exports[`Section 1`] = `
 
 exports[`Stack 1`] = `
 {
+  alignX?: 
+    | "center"
+    | "left"
+    | "right"
+    | "stretch"
   children: ReactNode
   data-id?: string
   dividers?: boolean

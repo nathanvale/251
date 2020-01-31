@@ -1,13 +1,26 @@
 import React, {ReactNode, Fragment, Children} from 'react';
 import styled from 'styled-components';
-import {Box, BoxProps} from '../Box/Box';
+import {AlignItemsVariants, Box, ResponsiveSpace} from '../Box/Box';
 import {Divider} from '../Divider/Divider';
 
+export type AlignXType = 'left' | 'center' | 'right' | 'stretch';
+
+const mapHAlignToAlignItems = (alignX: AlignXType): AlignItemsVariants => {
+  const map = {
+    left: 'flex-start',
+    center: 'center',
+    right: 'flex-end',
+    stretch: 'stretch',
+  } as {[k in AlignXType]: AlignItemsVariants};
+  return map[alignX];
+};
+
 export interface StackProps {
-  'data-id'?: string;
   children: ReactNode;
-  space?: BoxProps['paddingBottom'];
+  space?: ResponsiveSpace;
+  alignX?: AlignXType;
   dividers?: boolean;
+  'data-id'?: string;
 }
 
 const StyledBox = styled(Box)`
@@ -21,6 +34,7 @@ export const Stack = ({
   space,
   dividers,
   'data-id': dataId,
+  alignX = 'stretch',
 }: StackProps) => {
   const stackItems = Children.toArray(children);
 
@@ -29,17 +43,23 @@ export const Stack = ({
   }
 
   return (
-    <Box data-id={dataId} width="full">
+    <Box
+      data-id={dataId}
+      width="full"
+      display="flex"
+      flexDirection="column"
+      alignItems={mapHAlignToAlignItems(alignX)}
+    >
       {stackItems.map((child, index) =>
         dividers ? (
-          <Box key={index}>
+          <>
             {index > 0 ? (
-              <Box width="full" paddingY={space}>
+              <Box key={index * 2 - 1} alignSelf="stretch" paddingY={space}>
                 <Divider />
               </Box>
             ) : null}
-            {child}
-          </Box>
+            <Box key={index * 2}>{child}</Box>
+          </>
         ) : (
           <StyledBox paddingBottom={space} key={index}>
             {child}
@@ -52,8 +72,9 @@ export const Stack = ({
 
 Stack.defaultProps = {
   'data-id': 'stack',
-  space: 'none',
   dividers: false,
+  alignX: 'stretch',
+  space: 'none',
 };
 
 Stack.displayName = 'Stack';

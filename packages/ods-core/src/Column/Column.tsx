@@ -8,7 +8,6 @@ import {BoxDebug} from '../_private/components/BoxDebug/BoxDebug';
 import {mapSpaceAliasToIndex} from '../_private/helpers/spacing';
 
 export interface ColumnProps {
-  'data-id'?: string;
   children: ReactNode;
   width?:
     | 'content'
@@ -22,14 +21,16 @@ export interface ColumnProps {
     | '1/12'
     | '5/12'
     | '7/12'
-    | '11/12';
+    | '11/12'
+    | 'flex';
+  'data-id'?: string;
 }
 
 const OuterStyledBox = styled(Box)<{columnWidth: ColumnProps['width']}>`
   min-width: 0;
   ${p => (p.columnWidth === 'content' ? 'flex-shrink: 0;' : undefined)}
   ${p =>
-    p.columnWidth && p.columnWidth !== 'content'
+    p.columnWidth && p.columnWidth !== 'content' && p.columnWidth !== 'flex'
       ? css`
           flex: 0 0 ${eval(p.columnWidth) * 100}%;
         `
@@ -42,7 +43,11 @@ const InnerStyledBox = styled(Box)`
   }
 `;
 
-export const Column = ({children, width, 'data-id': dataId}: ColumnProps) => {
+export const Column = ({
+  children,
+  width = 'flex',
+  'data-id': dataId,
+}: ColumnProps) => {
   const {collapseBelow, space} = useContext(ColumnsContext);
   const spaceIndex = space && mapSpaceAliasToIndex(space);
   return (
@@ -72,6 +77,7 @@ export const Column = ({children, width, 'data-id': dataId}: ColumnProps) => {
 
 Column.defaultProps = {
   'data-id': 'column',
+  width: 'flex',
 };
 
 Column.displayName = 'Column';

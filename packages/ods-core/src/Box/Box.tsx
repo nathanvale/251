@@ -50,7 +50,11 @@ export type ColorVariants =
   | 'white'
   | 'transparent';
 
-export type AlignItemsVariants = 'center' | 'flex-start' | 'flex-end';
+export type AlignItemsVariants =
+  | 'center'
+  | 'flex-start'
+  | 'flex-end'
+  | 'stretch';
 
 export type DisplayVariants =
   | 'none'
@@ -87,6 +91,7 @@ export interface BoxProps
     | 'suppressHydrationWarning'
   > {
   alignItems?: ResponsiveProp<AlignItemsVariants>;
+  alignSelf?: ResponsiveProp<AlignItemsVariants>;
   backgroundColor?: ResponsiveProp<ColorVariants>;
   component?: React.ReactType;
   display?: ResponsiveProp<DisplayVariants>;
@@ -150,6 +155,7 @@ export const StyledButtonReset = styled(
 
 export const Box = ({
   alignItems,
+  alignSelf,
   backgroundColor,
   children,
   component,
@@ -219,6 +225,7 @@ export const Box = ({
 
   const styledSystemProps = {
     alignItems: normaliseResponsiveProp<AlignItemsVariants>(alignItems),
+    alignSelf: normaliseResponsiveProp<AlignItemsVariants>(alignSelf),
     backgroundColor: normaliseResponsiveProp<ColorVariants>(backgroundColor),
     display: normaliseResponsiveProp<DisplayVariants>(display),
     flexDirection: normaliseResponsiveProp<FlexDirectionVariants>(

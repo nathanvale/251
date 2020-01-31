@@ -76,6 +76,19 @@ export const StackDocument = () => (
           </Box>
         )}
       />
+      <Example
+        title="Horizontal Alignment"
+        description={`With alignX one can decide to align the children of a Stack component, to left, right, center or stretch (default).`}
+        Code={() => (
+          <Box padding="medium" backgroundColor="white">
+            <Stack space="small" dividers alignX="center">
+              <Box padding="medium" backgroundColor="red" />
+              <Box padding="medium" backgroundColor="orange" />
+              <Box padding="medium" backgroundColor="blue" />
+            </Stack>
+          </Box>
+        )}
+      />
     </Stack>
   </Page>
 );
