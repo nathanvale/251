@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Box,
+  Placeholder,
   Columns,
   Column,
   Stack,
@@ -23,10 +23,10 @@ export const ColumnsDocument = () => (
         Code={() => (
           <Columns space="small" collapseBelow="sm">
             <Column>
-              <Box backgroundColor="blue" padding="medium" />
+              <Placeholder backgroundColor="blue" />
             </Column>
             <Column>
-              <Box backgroundColor="blue" padding="medium" />
+              <Placeholder backgroundColor="blue" />
             </Column>
           </Columns>
         )}
@@ -37,10 +37,10 @@ export const ColumnsDocument = () => (
         Code={() => (
           <Columns space="small" collapseBelow="lg">
             <Column>
-              <Box backgroundColor="blue" padding="medium" />
+              <Placeholder backgroundColor="blue" />
             </Column>
             <Column>
-              <Box backgroundColor="blue" padding="medium" />
+              <Placeholder backgroundColor="blue" />
             </Column>
           </Columns>
         )}
@@ -51,10 +51,10 @@ export const ColumnsDocument = () => (
         Code={() => (
           <Columns space={['small', 'xxxlarge']}>
             <Column>
-              <Box backgroundColor="blue" padding="medium" />
+              <Placeholder backgroundColor="blue" />
             </Column>
             <Column>
-              <Box backgroundColor="blue" padding="medium" />
+              <Placeholder backgroundColor="blue" />
             </Column>
           </Columns>
         )}
@@ -73,10 +73,10 @@ export const ColumnsDocument = () => (
             }}
           >
             <Column>
-              <Box backgroundColor="blue" padding="medium" />
+              <Placeholder backgroundColor="blue" />
             </Column>
             <Column>
-              <Box backgroundColor="blue" padding="medium" />
+              <Placeholder backgroundColor="blue" />
             </Column>
           </Columns>
         )}
@@ -87,10 +87,10 @@ export const ColumnsDocument = () => (
         Code={() => (
           <Columns space="small" collapseBelow="sm" alignY="bottom">
             <Column>
-              <Box backgroundColor="blue" padding="xsmall" />
+              <Placeholder backgroundColor="blue" />
             </Column>
             <Column>
-              <Box backgroundColor="blue" padding="large" />
+              <Placeholder backgroundColor="blue" />
             </Column>
           </Columns>
         )}

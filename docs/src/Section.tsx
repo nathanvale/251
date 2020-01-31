@@ -1,5 +1,10 @@
 import React from 'react';
-import {Box, Section, Stack, SectionProps} from '@origin-digital/ods-core';
+import {
+  Section,
+  Stack,
+  SectionProps,
+  Placeholder,
+} from '@origin-digital/ods-core';
 import {Props, Example, Page} from './_private';
 
 export const SectionDocument = () => (
@@ -15,7 +20,11 @@ export const SectionDocument = () => (
         noSection
         title="Background color"
         description={`A background color can be set and by default <Section/> has a background color of transparent.`}
-        Code={() => <Section backgroundColor="white">Content</Section>}
+        Code={() => (
+          <Section backgroundColor="white">
+            <Placeholder backgroundColor="white">Content</Placeholder>
+          </Section>
+        )}
       />
       <Example
         noSection
@@ -23,9 +32,7 @@ export const SectionDocument = () => (
         description={`By default <Section/> has a fluidity of "off". A max-width is applied at every media query breakpoint except for mobile. At the mobile breakpoint, the width is fluid, 100%.`}
         Code={() => (
           <Section>
-            <Box padding="medium" backgroundColor="lightOrange">
-              Content
-            </Box>
+            <Placeholder backgroundColor="lightOrange">Content</Placeholder>
           </Section>
         )}
       />
@@ -35,9 +42,7 @@ export const SectionDocument = () => (
         description={`When <Section/> has a fluidity of "max-width-at-xl". Its width is 100% of its container with a restriction of 1140px wide.`}
         Code={() => (
           <Section fluidity="max-width-at-xl">
-            <Box padding="medium" backgroundColor="lightOrange">
-              Content
-            </Box>
+            <Placeholder backgroundColor="lightOrange">Content</Placeholder>
           </Section>
         )}
       />
@@ -47,9 +52,7 @@ export const SectionDocument = () => (
         description={`A fluidity of "full-width" enables a width of 100% of its container with no restrictions at any breakpoint.`}
         Code={() => (
           <Section fluidity="full-width">
-            <Box padding="medium" backgroundColor="lightOrange">
-              Content
-            </Box>
+            <Placeholder backgroundColor="lightOrange">Content</Placeholder>
           </Section>
         )}
       />
@@ -59,9 +62,7 @@ export const SectionDocument = () => (
         description={`By default, there is a gutter or left and right padding. In cases where you want your content to extend to the boundaries of your parent container pass in "hideGutter={true}".`}
         Code={() => (
           <Section hideGutter fluidity="full-width">
-            <Box padding="medium" backgroundColor="lightOrange">
-              Content
-            </Box>
+            <Placeholder backgroundColor="lightOrange">Content</Placeholder>
           </Section>
         )}
       />
@@ -72,11 +73,9 @@ export const SectionDocument = () => (
         description={`In situations where you would like to vertically stretch Section to its parent height pass in "stretchY."`}
         Code={() => (
           <Section stretchY>
-            <Box height="full">
-              <Box padding="medium" height="full" backgroundColor="lightOrange">
-                Content
-              </Box>
-            </Box>
+            <Placeholder height="100%" backgroundColor="lightOrange">
+              Content
+            </Placeholder>
           </Section>
         )}
       />

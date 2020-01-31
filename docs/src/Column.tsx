@@ -1,10 +1,10 @@
 import React from 'react';
 import {
-  Box,
   Columns,
   Column,
   Stack,
   ColumnProps,
+  Placeholder,
 } from '@origin-digital/ods-core';
 import {Props, Example, Page} from './_private';
 
@@ -13,7 +13,7 @@ export const ColumnDocument = () => (
     <Props<ColumnProps>
       componentName="Column"
       title="<Column/>"
-      description="Column is a low-level atomic layout component. Its is used with its parent <Columns/> to provide 12 grid layout as well as flex box style layout."
+      description="Column is a low-level atomic layout component. Its is used with its parent <Columns/> to provide 12 grid layout as well as flex Placeholder style layout."
       propDescriptions={{
         width: 'Some interesting facts about the width prop to go here...',
       }}
@@ -25,10 +25,10 @@ export const ColumnDocument = () => (
         Code={() => (
           <Columns space="small">
             <Column>
-              <Box backgroundColor="blue" padding="medium" />
+              <Placeholder backgroundColor="blue" />
             </Column>
             <Column>
-              <Box backgroundColor="blue" padding="medium" />
+              <Placeholder backgroundColor="blue" />
             </Column>
           </Columns>
         )}
@@ -39,19 +39,19 @@ export const ColumnDocument = () => (
         Code={() => (
           <Columns space="small">
             <Column width="1/12">
-              <Box backgroundColor="blue" padding="medium" />
+              <Placeholder backgroundColor="blue" />
             </Column>
             <Column width="1/6">
-              <Box backgroundColor="red" padding="medium" />
+              <Placeholder backgroundColor="red" />
             </Column>
             <Column width="1/6">
-              <Box backgroundColor="blue" padding="medium" />
+              <Placeholder backgroundColor="blue" />
             </Column>
             <Column width="1/12">
-              <Box backgroundColor="red" padding="medium" />
+              <Placeholder backgroundColor="red" />
             </Column>
             <Column width="1/2">
-              <Box backgroundColor="blue" padding="medium" />
+              <Placeholder backgroundColor="blue" />
             </Column>
           </Columns>
         )}
@@ -61,16 +61,16 @@ export const ColumnDocument = () => (
         Code={() => (
           <Columns space="small">
             <Column>
-              <Box backgroundColor="blue" padding="medium" />
+              <Placeholder backgroundColor="blue" />
             </Column>
             <Column width="1/3">
-              <Box backgroundColor="red" padding="medium" />
+              <Placeholder backgroundColor="red" />
             </Column>
             <Column width="1/4">
-              <Box backgroundColor="orange" padding="medium" />
+              <Placeholder backgroundColor="orange" />
             </Column>
             <Column width="content">
-              <Box backgroundColor="green" padding="medium" />
+              <Placeholder backgroundColor="green" />
             </Column>
           </Columns>
         )}
@@ -80,13 +80,13 @@ export const ColumnDocument = () => (
         Code={() => (
           <Columns space="small">
             <Column width="content">
-              <Box backgroundColor="blue" padding="medium" />
+              <Placeholder backgroundColor="blue" />
             </Column>
             <Column>
-              <Box backgroundColor="blue" padding="medium" />
+              <Placeholder backgroundColor="blue" />
             </Column>
             <Column width="content">
-              <Box backgroundColor="blue" padding="medium" />
+              <Placeholder backgroundColor="blue" />
             </Column>
           </Columns>
         )}
