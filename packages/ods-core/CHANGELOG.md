@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.4.0...@origin-digital/ods-core@0.5.0) (2020-01-31)
+
+
+### Bug Fixes
+
+* **stack:** snapshot tests broken ([f66f6a9](https://bitbucket.orgn.io/od/origin-ui/commits/f66f6a9))
+
+
+### Features
+
+* **stack, columns:** add alignment to allow fine tuning of spaces ([a3f0eed](https://bitbucket.orgn.io/od/origin-ui/commits/a3f0eed))
+
+
+
+
+
 # [0.4.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.3.0...@origin-digital/ods-core@0.4.0) (2020-01-31)
 
 
