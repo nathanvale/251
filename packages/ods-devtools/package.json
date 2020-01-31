@@ -16,8 +16,7 @@
   },
   "typings": "dist/typings/index.d.ts",
   "dependencies": {
-    "@babel/runtime-corejs3": "^7.8.3",
-    "@origin-digital/ods-core": "^0.4.0"
+    "@babel/runtime-corejs3": "^7.8.3"
   },
   "peerDependencies": {
     "react": "^16.9.0",
