@@ -1,6 +1,7 @@
 import React from 'react';
-import {Stack, Box, StackProps} from '@origin-digital/ods-core';
+import {Stack, StackProps, Placeholder} from '@origin-digital/ods-core';
 import {Props, Example, Page} from './_private';
+import {ContentSection} from '@origin-digital/ods-lab';
 
 export const StackDocument = () => (
   <Page>
@@ -16,9 +17,9 @@ export const StackDocument = () => (
         description="By default <Stack/> vertically stacks siblings without any space between them."
         Code={() => (
           <Stack>
-            <Box padding="medium" backgroundColor="red" />
-            <Box padding="medium" backgroundColor="orange" />
-            <Box padding="medium" backgroundColor="blue" />
+            <Placeholder backgroundColor="red" />
+            <Placeholder backgroundColor="orange" />
+            <Placeholder backgroundColor="blue" />
           </Stack>
         )}
       />
@@ -27,9 +28,9 @@ export const StackDocument = () => (
         description={`In order to distribute white space evenly between components pass in "space" with a tshirt size.`}
         Code={() => (
           <Stack space="xxlarge">
-            <Box padding="medium" backgroundColor="red" />
-            <Box padding="medium" backgroundColor="orange" />
-            <Box padding="medium" backgroundColor="blue" />
+            <Placeholder backgroundColor="red" />
+            <Placeholder backgroundColor="orange" />
+            <Placeholder backgroundColor="blue" />
           </Stack>
         )}
       />
@@ -38,9 +39,9 @@ export const StackDocument = () => (
         description="Distributed space can be controlled responsively by passing in an array of exactly two tshirt sizes - one for mobile and one for desktop. Open in Playroom to see the responsive behaviour of this example."
         Code={() => (
           <Stack space={['none', 'large']}>
-            <Box backgroundColor="red" padding="medium" />
-            <Box backgroundColor="orange" padding="medium" />
-            <Box backgroundColor="blue" padding="medium" />
+            <Placeholder backgroundColor="red" />
+            <Placeholder backgroundColor="orange" />
+            <Placeholder backgroundColor="blue" />
           </Stack>
         )}
       />
@@ -57,9 +58,9 @@ export const StackDocument = () => (
               xl: 'xxlarge',
             }}
           >
-            <Box padding="medium" backgroundColor="red" />
-            <Box padding="medium" backgroundColor="orange" />
-            <Box padding="medium" backgroundColor="blue" />
+            <Placeholder backgroundColor="red" />
+            <Placeholder backgroundColor="orange" />
+            <Placeholder backgroundColor="blue" />
           </Stack>
         )}
       />
@@ -67,26 +68,26 @@ export const StackDocument = () => (
         title="Dividers"
         description={`Dividers between distributed children can be made visible when you pass in "dividers" as true.`}
         Code={() => (
-          <Box padding="medium" backgroundColor="white">
+          <ContentSection backgroundColor="white">
             <Stack space="small" dividers>
-              <Box padding="medium" backgroundColor="red" />
-              <Box padding="medium" backgroundColor="orange" />
-              <Box padding="medium" backgroundColor="blue" />
+              <Placeholder backgroundColor="red" />
+              <Placeholder backgroundColor="orange" />
+              <Placeholder backgroundColor="blue" />
             </Stack>
-          </Box>
+          </ContentSection>
         )}
       />
       <Example
         title="Horizontal Alignment"
         description={`With alignX one can decide to align the children of a Stack component, to left, right, center or stretch (default).`}
         Code={() => (
-          <Box padding="medium" backgroundColor="white">
+          <ContentSection backgroundColor="white">
             <Stack space="small" dividers alignX="center">
-              <Box padding="medium" backgroundColor="red" />
-              <Box padding="medium" backgroundColor="orange" />
-              <Box padding="medium" backgroundColor="blue" />
+              <Placeholder backgroundColor="red" />
+              <Placeholder backgroundColor="orange" />
+              <Placeholder backgroundColor="blue" />
             </Stack>
-          </Box>
+          </ContentSection>
         )}
       />
     </Stack>

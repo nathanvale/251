@@ -1,5 +1,6 @@
 import React from 'react';
-import {Stack, Divider, Box} from '@origin-digital/ods-core';
+import {Stack, Divider} from '@origin-digital/ods-core';
+import {ContentSection} from '@origin-digital/ods-lab';
 import {Props, Example, Page} from './_private';
 
 export const DividerDocument = () => (
@@ -12,9 +13,9 @@ export const DividerDocument = () => (
     <Stack>
       <Example
         Code={() => (
-          <Box backgroundColor="white" padding="xxlarge">
+          <ContentSection backgroundColor="white">
             <Divider />
-          </Box>
+          </ContentSection>
         )}
       />
     </Stack>
