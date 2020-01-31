@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.3.0...@origin-digital/ods-core@0.4.0) (2020-01-31)
+
+
+### Features
+
+* set up jest for snapshots ([6e6fbfa](https://bitbucket.orgn.io/od/origin-ui/commits/6e6fbfa))
+* set up jest for snapshots ([2198a46](https://bitbucket.orgn.io/od/origin-ui/commits/2198a46))
+
+
+
+
+
 # [0.3.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.2.0...@origin-digital/ods-core@0.3.0) (2020-01-31)
 
 
