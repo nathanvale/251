@@ -1,22 +1,12 @@
 <div align="center">
-  <h1>origin-ui</h1>
+  <h1>Origin Design System</h1>
 </div>
 
 <hr />
 
-## The problem
+Thanks to modern component-oriented architectures, the front-end community has been naturally gravitating towards design systems as a way of standardising our respective design languages into reusable components. When done successfully, it suddenly becomes trivial to translate standard designs into code.
 
-We have many libraries at Origin Digital and maintaining their semantic versioning and build systems is a cognitive load on all of us.
-
-## The solution
-
-Employ a software development strategy where code for many projects are stored in the same repository so we can version control a large volume of code and daily changes. `origin-ui` allows us:
-
-- Single lint, build, test and release process.
-- Easy to coordinate changes across modules.
-- Single place to report issues.
-- Easier to setup a development environment.
-- Tests across modules are run together which finds bugs that touch multiple modules easier.
+The Origin Design System is an implementation of this industry trend.
 
 ## Table of Contents
 
@@ -24,7 +14,10 @@ Employ a software development strategy where code for many projects are stored i
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [Getting Started](#getting-started)
+- [Support](#support)
 - [Usage](#usage)
+  - [Documentation](#documentation)
+  - [Playroom](#playroom)
   - [Formating](#formating)
   - [Linting](#linting)
   - [Typescript](#typescript)
@@ -69,11 +62,50 @@ Why do we do this?
 
 > **Note:** `yarn bootstrap` internally runs `yarn install` before it's bootstrapping so the above `yarn install` command only needs to be run once (to install lerna to be able to run `yarn bootstrap` in the first place).
 
+Finally to start developing or to just view the docs:
+
+```
+yarn start
+```
+
+## Support
+
+If you have any questions please post a slack message at #design-system-support
+
 ## Usage
 
-`origin-ui` leverages `@origin-digital/origin-scripts` to manage it's build system. For in depth `origin-scripts` documentation please refer to:
+### Documentation
 
-https://bitbucket.origin.com.au/projects/OD/repos/origin-scripts/browse/README.md
+To view or edit the docs in a create react app with hot reloading:
+
+```
+yarn start
+```
+
+Whenever `yarn start` is called a componentsDocs.json file is generated in `./docs/src/componentDocs.json`. This is used to automatically generate prop types tables in the docs based on typescript interfaces for each component.
+
+At anytime while developing docs, `componentDocs.json` can be regenerated and hot reloaded by calling:
+
+```
+yarn generate-component-docs
+```
+
+### Playroom
+
+Simultaneously design across a variety of themes and screen sizes, powered by JSX and your own component library.
+
+Playroom allows you to create a zero-install code-oriented design environment, built into a standalone bundle that can be deployed alongside your existing design system documentation.
+
+- Iterate on your designs in the final medium.
+- Create quick mock-ups and interactive prototypes with real code.
+- Exercise and evaluate the flexibility of your design system.
+- Share your work with others by simply copying the URL.
+
+To start playroom in a local development server:
+
+```
+yarn playroom
+```
 
 ### Formating
 
@@ -148,7 +180,7 @@ yarn test --coverage
 Jest has been setup to use a mult-package test runner. This means many projects can run at the same time within a single instance of jest. This also gives you the benefit of granular control, you can run tests and coverage on just the packages you want to:
 
 ```
-yarn test --projects packages/daxi packages/mesh --coverage
+yarn test --projects packages/core packages/lab --coverage
 ```
 
 ### Husky and commitlint support
@@ -181,10 +213,6 @@ This command will:
 If at anytime any of these processes fail the process will exit, which is why it is run in CI.
 
 ## FAQS
-
-##### This is dumb! Nobody in open source does this?!?!
-
-Google, Facebook, Microsoft, Uber, Airbnb and Twitter all employ very large monorepos with varying strategies to scale build systems and version control software with a large volume of code and daily changes.
 
 ##### Why am I getting the error TS7016: Could not find a declaration file for module '@origin-digital/...'?
 
