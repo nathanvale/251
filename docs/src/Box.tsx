@@ -15,6 +15,17 @@ export const BoxDocument = () => (
       <Example
         Code={() => <Box padding="xxlarge" backgroundColor="lightOrange" />}
       />
+      <Example
+        Code={() => (
+          <Box
+            padding="xxlarge"
+            backgroundColor="lightOrange"
+            textAlign={['center', 'right']}
+          >
+            Text
+          </Box>
+        )}
+      />
       <Example Code={() => <Box padding="large" backgroundColor="blue" />} />
       <Example
         Code={() => (
