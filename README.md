@@ -8,6 +8,14 @@ Thanks to modern component-oriented architectures, the front-end community has b
 
 The Origin Design System is an implementation of this industry trend.
 
+**Docs**
+
+https://docs.origindigital-dac.com.au/designsystem/#/
+
+**Playroom**
+
+https://docs.origindigital-dac.com.au/designsystem/playroom/
+
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -15,7 +23,8 @@ The Origin Design System is an implementation of this industry trend.
 
 - [Getting Started](#getting-started)
 - [Support](#support)
-- [Usage](#usage)
+- [Using ODS in your own app](#using-ods-in-your-own-app)
+- [Contribution Usage](#contribution-usage)
   - [Documentation](#documentation)
   - [Playroom](#playroom)
   - [Formating](#formating)
@@ -30,7 +39,7 @@ The Origin Design System is an implementation of this industry trend.
 
 ## Getting Started
 
-First, you need to clone the monorepo:
+To contribute to this project, first you need to clone the monorepo:
 
 ```bash
 git clone ssh://git@bitbucket.origin.com.au/od/origin-ui.git
@@ -72,7 +81,51 @@ yarn start
 
 If you have any questions please post a slack message at #design-system-support
 
-## Usage
+## Using ODS in your own app
+
+Install ODS core in your project directory with:
+
+```sh
+yarn add @origin-digital/ods-core
+```
+
+This package also has a peer dependency on the following:
+
+```sh
+// with yarn
+yarn add react@^16.9.0
+yarn add styled-components@3.4.5
+```
+
+Here is a quick example to get you started, **it's all you need**:
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {
+  Stack,
+  Placeholder,
+  OriginThemeProviders,
+} from '@origin-digital/ods-core';
+
+function App() {
+  return (
+    <OriginThemeProvider>
+      <Stack>
+        <Placeholder backgroundColor="red" />
+        <Placeholder backgroundColor="orange" />
+        <Placeholder backgroundColor="blue" />
+      </Stack>
+    </OriginThemeProvider>
+  );
+}
+
+ReactDOM.render(<App />, document.querySelector('#app'));
+```
+
+> **Note:** For testing your app with ODS components please refer to the `ods-testing-library` https://bitbucket.origin.com.au/projects/OD/repos/origin-ui/browse/packages/ods-testing-library
+
+## Contribution Usage
 
 ### Documentation
 
