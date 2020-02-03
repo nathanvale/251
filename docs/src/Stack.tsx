@@ -1,7 +1,7 @@
 import React from 'react';
 import {Stack, StackProps, Placeholder} from '@origin-digital/ods-core';
-import {Props, Example, Page} from './_private';
 import {ContentSection} from '@origin-digital/ods-lab';
+import {Props, Example, Page} from './_private';
 
 export const StackDocument = () => (
   <Page>
@@ -79,7 +79,7 @@ export const StackDocument = () => (
       />
       <Example
         title="Horizontal Alignment"
-        description={`With alignX one can decide to align the children of a Stack component, to left, right, center or stretch (default).`}
+        description="With alignX one can decide to align the children of a Stack component, to left, right, center or stretch (default)."
         Code={() => (
           <ContentSection backgroundColor="white">
             <Stack space="small" dividers alignX="center">

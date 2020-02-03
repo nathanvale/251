@@ -1,1 +1,1 @@
-export {originRetail} from './originRetail';
+export {originRetailTheme} from './originRetail';

@@ -18,6 +18,7 @@ import {DebugProvider} from '@origin-digital/ods-devtools';
 import {BoxDocument} from './Box';
 import {SectionDocument} from './Section';
 import {StackDocument} from './Stack';
+import {CheckboxDocument} from './Checkbox';
 import {ColumnsDocument} from './Columns';
 import {ColumnDocument} from './Column';
 import {ContentSectionDocument} from './ContentSection';
@@ -70,11 +71,17 @@ ReactDOM.render(
                   <Link to="/content-section">
                     <StyledLink>ContentSection</StyledLink>
                   </Link>
+                  <Link to="/checkbox">
+                    <StyledLink>Checkbox</StyledLink>
+                  </Link>
                 </Box>
               </Stack>
             </Stack>
           </ContentSection>
           <Switch>
+            <Route path="/checkbox">
+              <CheckboxDocument />
+            </Route>
             <Route path="/card-stack-section">
               <CardStackSectionDocument />
             </Route>

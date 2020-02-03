@@ -964,6 +964,40 @@ exports[`Box 1`] = `
 }
 `;
 
+exports[`CardStackSection 1`] = `
+{
+  children: ReactNode
+  data-id?: string
+  size?: 
+    | "large"
+    | "medium"
+    | "small"
+  variant?: 
+    | "card"
+    | "card-padded"
+    | "widget"
+}
+`;
+
+exports[`Checkbox 1`] = `
+{
+  checked: boolean
+  className?: string
+  data-id?: string
+  disabled?: boolean
+  error?: boolean
+  helperText?: string
+  label: string
+  name: string
+  onChange: (event: ChangeEvent<HTMLInputElement>, checked: boolean) => void
+  required?: boolean
+  value?: 
+    | number
+    | string
+    | string[]
+}
+`;
+
 exports[`Column 1`] = `
 {
   children: ReactNode
@@ -1012,6 +1046,17 @@ exports[`Columns 1`] = `
     | "xxsmall"
     | "xxxlarge"
   >
+}
+`;
+
+exports[`ContentSection 1`] = `
+{
+  backgroundColor?: 
+    | "grey"
+    | "transparent"
+    | "white"
+  children?: ReactNode
+  data-id?: string
 }
 `;
 

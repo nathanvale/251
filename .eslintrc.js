@@ -14,6 +14,7 @@ module.exports = {
     'no-bitwise': 'off',
     'babel/new-cap': 'off',
     'no-negated-condition': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
