@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.5.0...@origin-digital/ods-core@0.5.1) (2020-02-03)
+
+
+### Bug Fixes
+
+* **box:** add the missing textAlign implementation ([d986d89](https://bitbucket.orgn.io/od/origin-ui/commits/d986d89))
+
+
+
+
+
 # [0.5.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.4.0...@origin-digital/ods-core@0.5.0) (2020-01-31)
 
 
