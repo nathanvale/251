@@ -7,6 +7,7 @@ import {
 } from '@origin-digital/ods-themes';
 
 import {
+  textAlign,
   alignItems,
   alignSelf,
   backgroundColor,
@@ -134,6 +135,7 @@ export const StyledSystemBox = styled.div<StyledSystemProps>`
         ${alignSelf}
         ${justifyContent}
         ${position}
+        ${textAlign}
         :active {
            transform: ${({theme, transform}) => theme.transforms[transform!]};
          }
