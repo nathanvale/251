@@ -26,7 +26,7 @@
     "playroom": "cd playroom && yarn start",
     "start": "yarn generate-component-docs && cd docs && yarn start",
     "test": "origin-scripts test",
-    "tsc": "tsc -b",
+    "tsc": "yarn clean && tsc -b",
     "validate": "yarn clean && origin-scripts validate"
   },
   "config": {
@@ -70,7 +70,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "origin-scripts commitlint -e $HUSKY_GIT_PARAMS",
-      "pre-commit": "origin-scripts pre-commit",
+      "pre-commit": "yarn clean && origin-scripts pre-commit",
       "post-rewrite": "origin-scripts pre-commit"
     }
   },

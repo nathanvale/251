@@ -8,7 +8,7 @@ import {
   Transition,
   Shadow,
   Theme,
-} from './types';
+} from '../types';
 
 const gridGutterWidth = 16;
 
@@ -138,7 +138,7 @@ const transitions: Transition = {
   touchable: 'transform 0.2s cubic-bezier(0.02, 1.505, 0.745, 1.235)',
 };
 
-export const master: Theme = {
+export const odsMasterTheme: Theme = {
   typography,
   space,
   breakpoints,

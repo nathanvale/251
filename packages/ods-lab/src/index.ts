@@ -6,5 +6,7 @@
  */
 export {CardStackSection} from './CardStackSection/CardStackSection';
 export type CardStackSectionProps = import('./CardStackSection/CardStackSection').CardStackSectionProps;
+export {Checkbox} from './Checkbox/Checkbox';
+export type CheckboxProps = import('./Checkbox/Checkbox').CheckboxProps;
 export {ContentSection} from './ContentSection/ContentSection';
 export type ContentSectionProps = import('../../ods-lab/src/ContentSection/ContentSection').ContentSectionProps;

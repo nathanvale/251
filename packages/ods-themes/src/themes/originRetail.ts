@@ -1,3 +1,3 @@
-import {master} from '../master';
+import {odsMasterTheme} from '../_private/odsMasterTheme';
 
-export {master as originRetail};
+export {odsMasterTheme as originRetailTheme};
