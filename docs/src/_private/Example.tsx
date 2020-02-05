@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
 import lzString from 'lz-string';
 import reactElementToJSXString from 'react-element-to-jsx-string';
 import {Stack, Box, Text, Section, Link} from '@origin-digital/ods-core';
@@ -6,17 +6,21 @@ import {ContentSection} from '@origin-digital/ods-lab';
 import {IconPlay} from '@origin-digital/ods-icons';
 import styled from 'styled-components';
 import {maxWidth, MaxWidthProps} from 'styled-system';
+import {ExampleDocs} from '../types';
 
-type Code = () => JSX.Element;
-export interface ExampleProps {
-  stretch?: boolean;
-  space?: TS_FIXME;
-  showHeaderFooter?: boolean;
-  description?: string;
-  noSection?: boolean;
-  title?: string;
-  Code: Code;
+type ExampleProps = ExampleDocs;
+interface CodeContainerProps {
+  Container?: ExampleDocs['Container'];
+  children: ReactNode;
 }
+
+const CodeContainer = ({Container, children}: CodeContainerProps) => {
+  if (Container) {
+    return <Container>{children}</Container>;
+  } else {
+    return <>{children}</>;
+  }
+};
 
 interface CreateUrlOptions {
   baseUrl?: string;
@@ -41,7 +45,7 @@ const StyledBox = styled(Box)<MaxWidthProps>`
   ${maxWidth}
 `;
 
-const getCodeAsString = (Example: ExampleProps['Code']) => {
+const getCodeAsString = (Example: ExampleDocs['Code']) => {
   const codeAsString = reactElementToJSXString(Example(), {
     useBooleanShorthandSyntax: false,
     showDefaultProps: false,
@@ -53,20 +57,20 @@ const getCodeAsString = (Example: ExampleProps['Code']) => {
 };
 
 export const Example = ({
-  title,
+  label,
   description,
-  space = 'medium',
   stretch,
   noSection,
-  Code: Example,
+  Code,
+  Container,
 }: ExampleProps) => (
   <Stack space="none">
     <ContentSection backgroundColor="white">
       <StyledBox maxWidth={[null, null, '75%', '66%']}>
         <Stack space="large">
-          {title && (
+          {label && (
             <Text color="grey56" weight="medium" size="xsmall">
-              {title}
+              {label}
             </Text>
           )}
           {description && <Text color="grey56">{description}</Text>}
@@ -75,7 +79,7 @@ export const Example = ({
               <Box backgroundColor="grey56" paddingY="xlarge" paddingX="medium">
                 <Box component="pre">
                   <Text color="grey16" component="code">
-                    {getCodeAsString(Example)}
+                    {getCodeAsString(Code)}
                   </Text>
                 </Box>
               </Box>
@@ -86,7 +90,7 @@ export const Example = ({
                   href={createUrl({
                     baseUrl:
                       'docs.origindigital-dac.com.au/designsystem/playroom',
-                    code: getCodeAsString(Example),
+                    code: getCodeAsString(Code),
                   })}
                   Icon={<IconPlay />}
                 >
@@ -98,7 +102,7 @@ export const Example = ({
         </Stack>
       </StyledBox>
     </ContentSection>
-    <Stack space={space}>
+    <Stack space="medium">
       <Box style={{height: stretch ? '600px' : undefined}}>
         <Box
           height="full"
@@ -107,12 +111,16 @@ export const Example = ({
           justifyContent="center"
         >
           {noSection ? (
-            <Example />
+            <CodeContainer Container={Container}>
+              <Code />
+            </CodeContainer>
           ) : (
             <Section>
               {
-                <StyledBox id="???" maxWidth={[null, null, '75%', '66%']}>
-                  <Example />
+                <StyledBox maxWidth={[null, null, '75%', '66%']}>
+                  <CodeContainer Container={Container}>
+                    <Code />
+                  </CodeContainer>
                 </StyledBox>
               }
             </Section>

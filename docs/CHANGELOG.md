@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [0.4.0](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.3.3...docs@0.4.0) (2020-02-05)
 
-
 ### Features
 
-* implement MUI theme provider and styles ([33a6f42](https://bitbucket.orgn.io/od/origin-ui/commits/33a6f42))
-
-
-
-
+- implement MUI theme provider and styles ([33a6f42](https://bitbucket.orgn.io/od/origin-ui/commits/33a6f42))
 
 ## [0.3.3](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.3.2...docs@0.3.3) (2020-02-03)
 

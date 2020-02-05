@@ -3,7 +3,7 @@ import {NormalisedPropType} from '@origin-digital/ods-scripts';
 import {Column, Text, Columns, Stack} from '@origin-digital/ods-core';
 import {PropType} from './PropType';
 
-export interface PropListProps {
+export interface PropListViewProps {
   requiredProps: Array<{propName: string; type: NormalisedPropType}>;
   optionalProps: Array<{propName: string; type: NormalisedPropType}>;
   propDescriptions?: Partial<Record<string, string>>;
@@ -85,13 +85,13 @@ const Props = ({
   );
 };
 
-export const PropTable = ({
+export const PropTableView = ({
   requiredProps,
   optionalProps,
   hasDefaultProps,
   defaultProps,
   propDescriptions = {},
-}: PropListProps) => (
+}: PropListViewProps) => (
   <Stack space="small" dividers>
     {requiredProps.map(({propName, type}) => {
       return (

@@ -1,17 +1,4 @@
-import React from 'react';
-import {Stack, Placeholder, PlaceholderProps} from '@origin-digital/ods-core';
-import {Props, Example, Page} from './_private';
+import {docs} from '../../packages/ods-core/src/Placeholder/Placeholder.docs';
+import {renderDocs} from './_private/renderDocs';
 
-export const PlaceholderDocument = () => (
-  <Page>
-    <Props<PlaceholderProps>
-      title="<Placeholder/>"
-      componentName="Placeholder"
-      description="Placeholders are helpful for laying out placeholders for future content."
-      propDescriptions={{}}
-    />
-    <Stack>
-      <Example Code={() => <Placeholder height="300px">Content</Placeholder>} />
-    </Stack>
-  </Page>
-);
+export const PlaceholderDocument = () => renderDocs(docs);
