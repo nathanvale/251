@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-themes@0.3.0...@origin-digital/ods-themes@0.3.1) (2020-02-06)
+
+
+### Bug Fixes
+
+* **mui theme:** fix shadows and psuedo selectors ([48c5e19](https://bitbucket.orgn.io/od/origin-ui/commits/48c5e19))
+
+
+
+
+
 # [0.3.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-themes@0.2.0...@origin-digital/ods-themes@0.3.0) (2020-02-05)
 
 
