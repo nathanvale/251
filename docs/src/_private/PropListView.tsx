@@ -2,9 +2,8 @@ import React from 'react';
 import {NormalisedPropType} from '@origin-digital/ods-scripts';
 import {Text, Stack} from '@origin-digital/ods-core';
 import {PropType} from './PropType';
-// import {PropType} from './prop-type';
 
-export interface PropListProps {
+export interface PropListViewProps {
   requiredProps: Array<{propName: string; type: NormalisedPropType}>;
   optionalProps: Array<{propName: string; type: NormalisedPropType}>;
   hasDefaultProps: boolean;
@@ -35,11 +34,11 @@ const Props = ({
   </Stack>
 );
 
-export const PropList = ({
+export const PropListView = ({
   requiredProps,
   optionalProps,
   propDescriptions = {},
-}: PropListProps) => (
+}: PropListViewProps) => (
   <Stack space="small">
     {requiredProps.map(({propName, type}) => {
       return (

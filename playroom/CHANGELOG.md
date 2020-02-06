@@ -6,21 +6,8 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 # [0.3.0](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.2.5...playroom@0.3.0) (2020-02-05)
 
 
-### Features
-
-* implement MUI theme provider and styles ([33a6f42](https://bitbucket.orgn.io/od/origin-ui/commits/33a6f42))
-
-
-
-
-
-## [0.2.5](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.2.4...playroom@0.2.5) (2020-02-03)
-
-**Note:** Version bump only for package playroom
-
 ## [0.2.4](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.2.3...playroom@0.2.4) (2020-01-31)
 
-**Note:** Version bump only for package playroom
 
 ## [0.2.3](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.2.2...playroom@0.2.3) (2020-01-31)
 

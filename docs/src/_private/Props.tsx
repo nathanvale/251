@@ -21,16 +21,16 @@ import {
 import {CSSDebugButton} from '@origin-digital/ods-devtools';
 import {IconFlipToBack} from '@origin-digital/ods-icons';
 import componentDocs from '../componentDocs.json';
+import {ComponentDocs} from '../types';
 
-import {PropList} from './PropList';
-import {PropTable} from './PropTable';
+import {PropListView} from './PropListView';
+import {PropTableView} from './PropTableView';
 
-export interface PropsProps<T = {}> {
-  title: string;
-  description?: string;
-  propDescriptions?: Partial<Record<keyof T, string>>;
-  componentName: string;
-  variant?: 'list' | 'table';
+interface PropsProps<T> {
+  componentName: ComponentDocs['componentName'];
+  description: ComponentDocs['description'];
+  propDescriptions: ComponentDocs<T>['propDescriptions'];
+  variant?: ComponentDocs['variant'];
 }
 
 type ComponentName = keyof typeof componentDocs;
@@ -79,7 +79,6 @@ const ColumnsHeader = ({hasDefaultProps}: {hasDefaultProps: boolean}) =>
   );
 
 export function Props<T = {}>({
-  title,
   description,
   componentName,
   variant,
@@ -122,7 +121,7 @@ export function Props<T = {}>({
       <StyledBox maxWidth={[null, null, '75%', '66%']}>
         <Stack space="xxlarge">
           <Text color="grey56" size="xlarge">
-            {title}
+            {`<${componentName}/>`}
           </Text>
           {description && (
             <Text color="grey56" size="medium">
@@ -136,7 +135,7 @@ export function Props<T = {}>({
             {requiredProps.length === 0 && optionalProps.length === 0 ? null : (
               <Stack space="medium" dividers>
                 {variant === 'list' ? (
-                  <PropList
+                  <PropListView
                     defaultProps={defaultProps}
                     hasDefaultProps={hasDefaultProps}
                     requiredProps={requiredProps}
@@ -145,7 +144,7 @@ export function Props<T = {}>({
                   />
                 ) : (
                   <>
-                    <PropTable
+                    <PropTableView
                       defaultProps={defaultProps}
                       hasDefaultProps={hasDefaultProps}
                       requiredProps={requiredProps}
