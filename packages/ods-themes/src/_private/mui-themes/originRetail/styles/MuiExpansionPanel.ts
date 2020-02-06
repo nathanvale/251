@@ -4,7 +4,6 @@ export const MuiExpansionPanel = {
   root: {
     borderBottom: `1px solid ${colors.grey16}`,
     borderTop: `1px solid ${colors.grey16}`,
-    boxShadow: 'none',
     '&:hover': {
       background: colors.grey4,
     },
@@ -12,9 +11,9 @@ export const MuiExpansionPanel = {
       margin: 0,
     },
   },
-  expanded: {},
-  rounded: {},
-  disabled: {},
+  // disabled: {},
+  // expanded: {},
+  // rounded: {}
 };
 
 export const MuiExpansionPanelSummary = {
@@ -25,10 +24,10 @@ export const MuiExpansionPanelSummary = {
       background: colors.grey4,
     },
     '&$disabled': {
-      boxShadow: 'none',
+      // boxShadow: "none",
       border: 'none',
       '&:hover': {
-        boxShadow: 'none',
+        // boxShadow: "none",
         border: 'none',
       },
     },
@@ -38,7 +37,7 @@ export const MuiExpansionPanelSummary = {
     },
   },
   expandIcon: {
-    boxShadow: 'none',
+    // boxShadow: "none",
     border: 'none',
     width: 24,
     height: 24,
@@ -46,7 +45,7 @@ export const MuiExpansionPanelSummary = {
     background: 'transparent',
     margin: '0 0 0 32px',
     '&:hover': {
-      boxShadow: 'none',
+      // boxShadow: "none",
       border: 'none',
     },
   },
@@ -63,13 +62,12 @@ export const MuiExpansionPanelSummary = {
 };
 
 export const MuiExpansionPanelActions = {
-  root: {},
-  spacing: {},
+  // root: {},
+  // spacing: {},
 };
 
 export const MuiExpansionPanelDetails = {
   root: {
-    padding: 0, // override previous styles
-    paddingBottom: 24,
+    padding: '0px 0px 24px 0px',
   },
 };

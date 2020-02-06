@@ -21,7 +21,7 @@ export const MuiDialogContent = {
     padding: '0 16px 16px',
     margin: '0 16px 24px',
   },
-  dividers: {},
+  // dividers: {}
 };
 
 export const MuiDialog = {
@@ -46,13 +46,13 @@ export const MuiDialog = {
   paperWidthXl: {
     width: '800px',
   },
-  scrollPaper: {},
-  scrollBody: {},
-  container: {},
-  paper: {},
-  paperScrollPaper: {},
-  paperBody: {},
-  paperWidthFalse: {},
-  paperFullWidth: {},
-  paperFullScreen: {},
+  // scrollPaper: {},
+  // scrollBody: {},
+  // container: {},
+  // paper: {},
+  // paperScrollPaper: {},
+  // paperBody: {},
+  // paperWidthFalse: {},
+  // paperFullWidth: {},
+  // paperFullScreen: {},
 };

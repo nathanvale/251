@@ -13,8 +13,8 @@ export const MuiLink = {
       textDecoration: 'none',
     },
   },
-  underlineHover: {},
-  underlineAlways: {},
-  button: {},
-  focusVisible: {},
+  // underlineHover: {},
+  // underlineAlways: {},
+  // button: {},
+  // focusVisible: {},
 };

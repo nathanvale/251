@@ -1,5 +1,5 @@
 export const MuiToggleButtonGroup = {
-  root: {},
+  // root: {},
   grouped: {
     padding: '12px 27px',
     '&:not(:first-child)': {
@@ -7,6 +7,6 @@ export const MuiToggleButtonGroup = {
       borderLeft: 'ignore',
     },
   },
-  groupedSizeSmall: {},
-  groupedSizeLarge: {},
+  // groupedSizeSmall: {},
+  // groupedSizeLarge: {},
 };

@@ -1,8 +1,8 @@
 export const MuiSkeleton = {
-  root: {},
-  text: {},
-  rect: {},
-  circle: {},
-  pulse: {},
-  wave: {},
+  // root: {},
+  // text: {},
+  // rect: {},
+  // circle: {},
+  // pulse: {},
+  // wave: {}
 };

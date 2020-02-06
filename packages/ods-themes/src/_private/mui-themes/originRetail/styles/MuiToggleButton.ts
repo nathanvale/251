@@ -48,5 +48,5 @@ export const MuiToggleButton = {
     color: colors.grey,
     fontWeight: 300,
   },
-  selected: {},
+  // selected: {}
 };

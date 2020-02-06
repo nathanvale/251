@@ -46,6 +46,6 @@ export const MuiSelect = {
       color: colors.greyIcon,
     },
   },
-  disabled: {},
-  error: {},
+  // disabled: {},
+  // error: {},
 };

@@ -6,9 +6,9 @@ export const MuiDivider = {
     marginTop: 24,
     marginBottom: 24,
   },
-  absolute: {},
-  inset: {},
-  light: {},
-  middle: {},
-  vertical: {},
+  // absolute: {},
+  // inset: {},
+  // light: {},
+  // middle: {},
+  // vertical: {}
 };

@@ -11,11 +11,11 @@ export const MuiCircularProgress = {
   colorSecondary: {
     color: colors.redPink,
   },
-  static: {},
-  indeterminate: {},
-  svg: {},
-  circle: {},
-  circleStatic: {},
-  circleIndeterminate: {},
-  circleDisableShrink: {},
+  // static: {},
+  // indeterminate: {},
+  // svg: {},
+  // circle: {},
+  // circleStatic: {},
+  // circleIndeterminate: {},
+  // circleDisableShrink: {}
 };

@@ -10,15 +10,16 @@ export const MuiFormLabel = {
     '&.Mui-focused': {
       color: colors.mediumBlue,
     },
+    '&$error': {
+      color: colors.red,
+    },
   },
-  error: {
-    color: colors.red,
-  },
-  focused: {},
-  label: {},
-  colorSecondary: {},
-  filled: {},
-  required: {},
-  asterisk: {},
-  disabled: {},
+  // error: {},
+  // focused: {},
+  // label: {},
+  // colorSecondary: {},
+  // filled: {},
+  // required: {},
+  // asterisk: {},
+  // disabled: {},
 };

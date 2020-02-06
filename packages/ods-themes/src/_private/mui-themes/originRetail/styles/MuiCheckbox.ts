@@ -3,11 +3,9 @@ import {colors} from '../colors';
 export const MuiCheckbox = {
   root: {
     border: 'none',
-    boxShadow: 'none',
     color: colors.grey,
     '&:hover': {
       border: 'none',
-      boxShadow: 'none',
       background: colors.grey8,
     },
     '&$disabled': {
@@ -17,7 +15,7 @@ export const MuiCheckbox = {
       color: colors.lightOrange,
     },
   },
-  indeterminate: {},
-  colorPrimary: {},
-  colorSecondary: {},
+  // indeterminate: {},
+  // colorPrimary: {},
+  // colorSecondary: {}
 };

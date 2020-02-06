@@ -29,6 +29,7 @@ import {MuiLink} from './styles/MuiLink';
 import {MuiPaper} from './styles/MuiPaper';
 import {MuiRadio} from './styles/MuiRadio';
 import {MuiSelect} from './styles/MuiSelect';
+import {MuiShadows} from './styles/MuiShadows';
 import {MuiSkeleton} from './styles/MuiSkeleton';
 import {MuiSnackbar} from './styles/MuiSnackbar';
 import {MuiSvgIcon} from './styles/MuiSvgIcon';
@@ -48,7 +49,9 @@ import {MuiTypography} from './styles/MuiTypography';
 export const originRetailMUITheme = {
   // Breakpoint
   breakpoints: MuiBreakpoints,
-  // All default props set
+  // Shadows
+  shadows: MuiShadows,
+  // Default props
   props: {
     MuiPaper: {
       square: true,
@@ -57,7 +60,7 @@ export const originRetailMUITheme = {
       autoComplete: 'false',
     },
   },
-  // All component styling overrides
+  // Component styling overrides
   overrides: {
     // Alert
     MuiAlert,

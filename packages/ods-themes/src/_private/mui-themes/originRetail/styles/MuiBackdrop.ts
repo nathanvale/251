@@ -1,7 +1,7 @@
 import {colors} from '../colors';
 
 export const MuiBackdrop = {
-  root: {},
+  // root: {},
   invisible: {
     backgroundColor: colors.grey,
   },
