@@ -1,7 +1,7 @@
 import {colors} from '../colors';
 
 export const MuiFormControlLabel = {
-  root: {},
+  // root: {},
   label: {
     marginBottom: `0px !important`,
     marginLeft: 4,
@@ -9,8 +9,8 @@ export const MuiFormControlLabel = {
     lineHeight: '20px',
     color: colors.grey,
   },
-  disabled: {}, // TODO: check the style guidelines on disabled for input,
-  labelPlacementStart: {},
-  labelPlacementTop: {},
-  labelPlacementBottom: {},
+  // disabled: {}, // TODO: check the style guidelines on disabled for input
+  // labelPlacementStart: {},
+  // labelPlacementTop: {},
+  // labelPlacementBottom: {}
 };

@@ -1,8 +1,8 @@
 import {colors} from '../colors';
 
 export const MuiTable = {
-  root: {},
-  stickyHeader: {},
+  // root: {},
+  // stickyHeader: {}
 };
 
 export const MuiTableHead = {
@@ -23,14 +23,14 @@ export const MuiTableRow = {
       background: colors.grey8,
     },
   },
-  selected: {},
-  hover: {},
-  head: {},
-  footer: {},
+  // selected: {},
+  // hover: {},
+  // head: {},
+  // footer: {}
 };
 
 export const MuiTableBody = {
-  root: {},
+  // root: {}
 };
 
 export const MuiTableCell = {
@@ -58,12 +58,12 @@ export const MuiTableCell = {
     paddingRight: 10, // Override other random style applied
     padding: '4px 10px',
   },
-  paddingNone: {},
-  footer: {},
-  sizeSmall: {},
-  alignLeft: {},
-  alignCenter: {},
-  alignRight: {},
-  alignJustify: {},
-  stickyHeader: {},
+  // paddingNone: {},
+  // footer: {},
+  // sizeSmall: {},
+  // alignLeft: {},
+  // alignCenter: {},
+  // alignRight: {},
+  // alignJustify: {},
+  // stickyHeader: {},
 };

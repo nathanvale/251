@@ -16,13 +16,14 @@ export const MuiFormHelperText = {
     '&.Mui-focused': {
       color: colors.grey80,
     },
+    '&$disabled': {
+      color: colors.greyTextDisabled,
+    },
   },
-  disabled: {
-    color: colors.greyTextDisabled,
-  },
-  marginDense: {},
-  contained: {},
-  focused: {},
-  filled: {},
-  required: {},
+  // disabled: {},
+  // marginDense: {},
+  // contained: {},
+  // focused: {},
+  // filled: {},
+  // required: {}
 };

@@ -10,7 +10,7 @@ export const MuiFab = {
     fontSize: 14,
     lineHeight: '24px',
     color: colors.grey,
-    boxShadow: 'none',
+    // boxShadow: "none",
     borderRadius: '50%',
     '&:hover': {
       background: colors.grey4,
@@ -18,9 +18,9 @@ export const MuiFab = {
     '&$disabled': {
       color: colors.lightGrey,
     },
-    '&:active': {
-      boxShadow: 'none',
-    },
+    // '&:active': {
+    //   boxShadow: "none",
+    // }
   },
   sizeSmall: {
     padding: '12px 16px',
@@ -48,12 +48,12 @@ export const MuiFab = {
   },
   primary: {
     color: colors.grey,
-    boxShadow: 'none',
+    // boxShadow: "none",
     '&:active': {
       color: colors.grey,
     },
   },
-  secondary: {},
-  focusVisible: {},
-  colorInherit: {},
+  // secondary: {},
+  // focusVisible: {},
+  // colorInherit: {},
 };

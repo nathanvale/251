@@ -13,9 +13,12 @@ export const MuiInputLabel = {
     '&$disabled': {
       color: colors.greyTextDisabled,
     },
-  },
-  focused: {
-    color: colors.mediumBlue,
+    '&:focus': {
+      color: colors.mediumBlue,
+    },
+    '&$focused': {
+      color: colors.mediumBlue,
+    },
   },
   shrink: {
     marginTop: 8,
@@ -26,13 +29,14 @@ export const MuiInputLabel = {
       color: colors.grey48,
     },
   },
-  disabled: {},
-  error: {},
-  required: {},
-  asterisk: {},
-  formControl: {},
-  marginDense: {},
-  animated: {},
-  filled: {},
-  outlined: {},
+  // focused: {},
+  // disabled: {},
+  // error: {},
+  // required: {},
+  // asterisk: {},
+  // formControl: {},
+  // marginDense: {},
+  // animated: {},
+  // filled: {},
+  // outlined: {}
 };

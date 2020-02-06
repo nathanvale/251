@@ -21,11 +21,9 @@ export const MuiInput = {
     },
     '&$disabled': {
       borderColor: colors.grey16,
+      color: colors.greyTextDisabled,
+      background: colors.transparent,
     },
-  },
-  disabled: {
-    color: '#9d9d9d',
-    background: colors.transparent,
   },
   underline: {
     '&$disabled': {
@@ -40,14 +38,15 @@ export const MuiInput = {
       marginTop: 0,
     },
   },
-  focused: {},
-  error: {},
-  colorSecondary: {},
-  marginDense: {},
-  multiline: {},
-  fullWidth: {},
-  input: {},
-  inputMarginDense: {},
-  inputMultiline: {},
-  inputTypeSearch: {},
+  // disabled: {},
+  // focused: {},
+  // error: {},
+  // colorSecondary: {},
+  // marginDense: {},
+  // multiline: {},
+  // fullWidth: {},
+  // input: {},
+  // inputMarginDense: {},
+  // inputMultiline: {},
+  // inputTypeSearch: {}
 };

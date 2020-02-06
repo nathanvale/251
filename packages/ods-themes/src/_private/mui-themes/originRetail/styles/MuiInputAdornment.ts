@@ -1,11 +1,11 @@
 export const MuiInputAdornment = {
-  root: {},
-  filled: {},
-  positionStart: {},
+  // root: {},
+  // filled: {},
+  // positionStart: {},
   positionEnd: {
     marginRight: 14,
   },
-  disablePointerEvents: {},
-  hiddenLabel: {},
-  marginDense: {},
+  // disablePointerEvents: {},
+  // hiddenLabel: {},
+  // marginDense: {}
 };
