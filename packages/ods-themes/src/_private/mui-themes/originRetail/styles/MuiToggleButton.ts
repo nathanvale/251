@@ -1,4 +1,5 @@
 import {colors} from '../colors';
+import {typography} from '../typography';
 
 export const MuiToggleButton = {
   root: {
@@ -42,11 +43,10 @@ export const MuiToggleButton = {
     },
   },
   label: {
-    lineHeight: '24px',
-    fontSize: '14px',
+    ...typography.text.large,
     textAlign: 'center',
     color: colors.grey,
-    fontWeight: 300,
+    fontWeight: typography.weight.regular,
   },
   // selected: {}
 };

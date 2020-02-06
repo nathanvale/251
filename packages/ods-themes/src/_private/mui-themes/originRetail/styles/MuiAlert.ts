@@ -1,12 +1,12 @@
 import {colors} from '../colors';
+import {typography} from '../typography';
 
 export const MuiAlert = {
   root: {
     padding: '16px 16px',
   },
   message: {
-    fontSize: 14,
-    lineHeight: '24px',
+    ...typography.text.xxsmall,
     paddingTop: 3,
   },
   action: {

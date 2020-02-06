@@ -1,9 +1,9 @@
 import {colors} from '../colors';
+import {typography} from '../typography';
 
 export const MuiLink = {
   root: {
-    fontSize: '14px',
-    lineHeight: '24px',
+    ...typography.text.xxsmall,
     textDecoration: 'underline',
   },
   underlineNone: {

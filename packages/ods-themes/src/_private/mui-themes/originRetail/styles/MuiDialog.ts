@@ -1,10 +1,10 @@
 import {colors} from '../colors';
+import {typography} from '../typography';
 
 export const MuiDialogTitle = {
   root: {
-    fontStyle: 'Medium',
-    fontSize: 20,
-    lineHeight: '28px',
+    fontStyle: typography.fontStyle.medium,
+    ...typography.text.medium,
     color: colors.grey56,
     padding: '0 16px',
     margin: '0 16px',
@@ -13,8 +13,8 @@ export const MuiDialogTitle = {
 
 export const MuiDialogContent = {
   root: {
-    fontStyle: 'Regular',
-    fontWeight: 400,
+    fontStyle: typography.fontStyle.regular,
+    fontWeight: typography.weight.regular,
     fontSize: 14,
     lineHeight: '24px',
     color: colors.grey,

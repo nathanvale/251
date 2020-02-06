@@ -1,12 +1,12 @@
 import {colors} from '../colors';
+import {typography} from '../typography';
 
 export const MuiTooltip = {
   tooltip: {
     color: colors.white,
     padding: 16,
-    fontStyle: 'Medium',
-    fontSize: 14,
-    lineHeight: '24px',
+    fontStyle: typography.fontStyle.medium,
+    ...typography.text.xxsmall,
   },
   // popper: {},
   // popperInteractive: {},

@@ -1,31 +1,13 @@
+import {odsMasterTheme} from '../../odsMasterTheme';
+
 export const colors = {
-  redPink: '#ff373c',
-  red: '#ec0000',
-  lightRed: '#eddee2',
+  ...odsMasterTheme.colors,
   darkRed: '#b30000',
   veryDarkRed: '#7b0000',
   redBackground: '#feebeb',
   redBorder: '#fcd6d6',
-  blue: '#3f75c6',
-  lightBlue: '#d2f0ff',
   mediumBlue: '#2275D3',
-  darkBlue: '#0d47a1', // Same here
-  orange: '#ff8228',
-  lightOrange: '#ffb432',
-  darkOrange: '#fa4616',
-  green: '#008906',
-  lightGreen: '#a5bb48',
-  purple: '#c34789',
-  grey: '#505050',
-  lightGrey: '#535353',
   darkGrey: '#3c3c3c',
-  grey4: '#f8f8f8',
-  grey8: '#f1f1f1',
-  grey16: '#e3e3e3',
-  grey24: '#d5d5d5',
-  grey48: '#ababab',
-  grey80: '#737373',
-  grey56: '#232323',
   // For TextField
   greyHover: '#EAEAEA',
   greyDisabled: '#F8F8F8',
@@ -33,8 +15,6 @@ export const colors = {
   greyTextDisabled: '#9D9D9D',
   greyIcon: '#d6d6d6',
   black: '#232323',
-  transparent: 'transparent',
-  white: '#FFFFFF',
   // For segmented controls
   yellow: '#FFF9EF',
   yellow16: '#FFF3DF',
