@@ -26,8 +26,8 @@
     "playroom": "cd playroom && yarn start",
     "start": "yarn generate-component-docs && cd docs && yarn start",
     "test": "origin-scripts test",
-    "tsc": "yarn clean && tsc -b",
-    "validate": "yarn clean && origin-scripts validate"
+    "tsc": "tsc -b",
+    "validate": "origin-scripts validate"
   },
   "config": {
     "commitizen": {
