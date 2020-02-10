@@ -1,26 +1,4 @@
-import React from 'react';
-import {Stack} from '@origin-digital/ods-core';
-import {ContentSection, Checkbox} from '@origin-digital/ods-lab';
-import {Props, Example, Page} from './_private';
+import {docs} from '../../packages/ods-lab/src/Checkbox/Checkbox.docs';
+import {renderDocs} from './_private/renderDocs';
 
-export const CheckboxDocument = () => (
-  <Page>
-    <Props title="<Checkbox/>" componentName="Checkbox" description="" />
-    <Stack>
-      <Example
-        Code={() => (
-          <ContentSection backgroundColor="white">
-            <Checkbox
-              name="checkbox"
-              label="checkbox"
-              helperText="helperText"
-              onChange={() => {}}
-              checked={true}
-              error={false}
-            />
-          </ContentSection>
-        )}
-      />
-    </Stack>
-  </Page>
-);
+export const CheckboxDocument = () => renderDocs(docs);

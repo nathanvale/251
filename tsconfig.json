@@ -45,6 +45,7 @@
     {"path": "packages/ods-devtools/tsconfig.json"},
     {"path": "packages/ods-icons/tsconfig.json"},
     {"path": "packages/ods-themes/tsconfig.json"},
-    {"path": "packages/ods-lab/tsconfig.json"}
+    {"path": "packages/ods-lab/tsconfig.json"},
+    {"path": "docs/tsconfig.json"}
   ]
 }
