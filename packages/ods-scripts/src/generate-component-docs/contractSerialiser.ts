@@ -1,5 +1,5 @@
 import sortBy from 'lodash/sortBy';
-import {NormalisedPropType} from './generate';
+import {NormalisedPropType} from '../index';
 
 export const typeSerializer = {
   print: (
@@ -28,7 +28,7 @@ export const typeSerializer = {
         .join('')}\n}`;
     } else {
       return `${type.alias}<${type.params
-        .map(param => `${serializer(param)}`)
+        .map((param: any) => `${serializer(param)}`)
         .join(',')}\n>`;
     }
   },

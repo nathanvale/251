@@ -38,7 +38,7 @@ type ComponentName = keyof typeof componentDocs;
 const docs = componentDocs as Record<ComponentName, NormalisedInterface>;
 
 const isValidComponentName = (
-  componentName: string,
+  componentName: string | number | symbol,
 ): componentName is ComponentName => {
   return componentDocs.hasOwnProperty(componentName);
 };
