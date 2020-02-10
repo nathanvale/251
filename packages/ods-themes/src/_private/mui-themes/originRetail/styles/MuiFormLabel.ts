@@ -1,11 +1,11 @@
 import {colors} from '../colors';
+import {typography} from '../typography';
 
 export const MuiFormLabel = {
   root: {
     marginBottom: 8,
-    fontSize: 16,
-    lineHeight: '24px',
-    fontWeight: 500,
+    ...typography.text.xxsmall,
+    fontWeight: typography.weight.regular,
     color: colors.grey56,
     '&.Mui-focused': {
       color: colors.mediumBlue,

@@ -1,14 +1,14 @@
 import {colors} from '../colors';
+import {typography} from '../typography';
 
 export const MuiFab = {
   root: {
     textTransform: 'none',
     background: colors.white,
-    fontStyle: 'Regular',
+    fontStyle: typography.fontStyle.regular,
     width: 40,
     height: 40,
-    fontSize: 14,
-    lineHeight: '24px',
+    ...typography.text.xxsmall,
     color: colors.grey,
     // boxShadow: "none",
     borderRadius: '50%',
@@ -24,19 +24,17 @@ export const MuiFab = {
   },
   sizeSmall: {
     padding: '12px 16px',
-    fontStyle: 'Medium',
-    fontSize: 14,
-    lineHeight: '16px',
+    fontStyle: typography.fontStyle.medium,
+    ...typography.text.xxsmall,
   },
   sizeMedium: {
     width: 56,
     height: 56,
   },
   label: {
-    fontsize: '18px',
-    fontWeight: 500,
+    fontWeight: typography.weight.regular,
     width: 'auto',
-    lineHeight: '32px',
+    ...typography.text.small,
     textAlign: 'center',
     color: colors.black,
   },

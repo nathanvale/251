@@ -1,22 +1,21 @@
 import {colors} from '../colors';
+import {typography} from '../typography';
 
 export const MuiButton = {
   root: {
     borderRadius: 0,
     textTransform: 'none',
     padding: '12px 24px',
-    fontStyle: 'Medium',
-    fontSize: 16,
-    lineHeight: '24px',
+    fontStyle: typography.fontStyle.medium,
+    ...typography.text.xsmall,
     '&$disabled': {
       color: colors.lightGrey,
     },
   },
   sizeSmall: {
     padding: '12px 16px',
-    fontStyle: 'Medium',
-    fontSize: 14,
-    lineHeight: '16px',
+    fontStyle: typography.fontStyle.medium,
+    ...typography.text.xsmall,
   },
   containedPrimary: {
     backgroundColor: colors.red,

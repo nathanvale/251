@@ -1,11 +1,11 @@
 import {colors} from '../colors';
+import {typography} from '../typography';
 
 export const MuiInputLabel = {
   root: {
-    fontSize: 16,
-    lineHeight: '18px',
+    ...typography.text.xsmall,
     color: colors.greyTextField,
-    fontWeight: 400,
+    fontWeight: typography.weight.regular,
     paddingLeft: 12,
     '&$error': {
       color: colors.red,

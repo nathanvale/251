@@ -1,6 +1,7 @@
+import {typography} from '../typography';
+
 export const MuiAlertTitle = {
   root: {
-    fontSize: 14,
-    lineHeight: '24px',
+    ...typography.text.xxsmall,
   },
 };
