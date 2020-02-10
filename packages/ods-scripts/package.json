@@ -2,5 +2,5 @@
   "private": true,
   "name": "@origin-digital/ods-scripts",
   "description": "Build scripts for the monorepo",
-  "version": "0.4.0"
+  "version": "0.4.1"
 }
