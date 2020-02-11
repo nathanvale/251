@@ -1,0 +1,851 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it correctly allocates required width for "content" 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -12px;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  width: 100%;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  padding-top: 0;
+  padding-left: 12px;
+  height: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #e3e3e3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c7 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c8 {
+  min-width: 0;
+}
+
+.c1 {
+  min-width: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+div:first-child > .c3 {
+  padding-top: 0;
+}
+
+.c6 {
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-transform: translateY(0.36em);
+  -ms-transform: translateY(0.36em);
+  transform: translateY(0.36em);
+  padding-top: 1px;
+  font-family: gordita,sans-serif;
+  font-weight: 500;
+  color: #232323;
+}
+
+.c6:before {
+  content: '';
+  margin-top: -13px;
+  display: block;
+  height: 0;
+}
+
+<div
+  class="c0"
+  data-id="columns"
+  display="flex"
+>
+  <div
+    class="c1 c2"
+    data-id="column"
+  >
+    <div
+      class="c3 c4"
+      height="full"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c5"
+          data-id="placeholder"
+          display="flex"
+        >
+          <span
+            class="c6 -span c7"
+            color="grey56"
+            data-id="text"
+            display="block"
+          >
+            This is content width
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c8 c9"
+    data-id="column"
+    width="full"
+  >
+    <div
+      class="c3 c4"
+      height="full"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c5"
+          data-id="placeholder"
+          display="flex"
+        >
+          <span
+            class="c6 -span c7"
+            color="grey56"
+            data-id="text"
+            display="block"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c8 c9"
+    data-id="column"
+    width="full"
+  >
+    <div
+      class="c3 c4"
+      height="full"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c5"
+          data-id="placeholder"
+          display="flex"
+        >
+          <span
+            class="c6 -span c7"
+            color="grey56"
+            data-id="text"
+            display="block"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`it correctly sets width for proportions 1/3 and 2/3 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -12px;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  width: 100%;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  padding-top: 0;
+  padding-left: 12px;
+  height: 100%;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #e3e3e3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c8 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c1 {
+  min-width: 0;
+  -webkit-flex: 0 0 33.33333333333333%;
+  -ms-flex: 0 0 33.33333333333333%;
+  flex: 0 0 33.33333333333333%;
+}
+
+.c9 {
+  min-width: 0;
+  -webkit-flex: 0 0 66.66666666666666%;
+  -ms-flex: 0 0 66.66666666666666%;
+  flex: 0 0 66.66666666666666%;
+}
+
+div:first-child > .c3 {
+  padding-top: 0;
+}
+
+.c7 {
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-transform: translateY(0.36em);
+  -ms-transform: translateY(0.36em);
+  transform: translateY(0.36em);
+  padding-top: 1px;
+  font-family: gordita,sans-serif;
+  font-weight: 500;
+  color: #232323;
+}
+
+.c7:before {
+  content: '';
+  margin-top: -13px;
+  display: block;
+  height: 0;
+}
+
+<div
+  class="c0"
+  data-id="columns"
+  display="flex"
+>
+  <div
+    class="c1 c2"
+    data-id="column"
+    width="full"
+  >
+    <div
+      class="c3 c4"
+      height="full"
+    >
+      <div
+        class="c5"
+      >
+        <div
+          class="c6"
+          data-id="placeholder"
+          display="flex"
+        >
+          <span
+            class="c7 -span c8"
+            color="grey56"
+            data-id="text"
+            display="block"
+          >
+            This is 1/3
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c9 c2"
+    data-id="column"
+    width="full"
+  >
+    <div
+      class="c3 c4"
+      height="full"
+    >
+      <div
+        class="c5"
+      >
+        <div
+          class="c6"
+          data-id="placeholder"
+          display="flex"
+        >
+          <span
+            class="c7 -span c8"
+            color="grey56"
+            data-id="text"
+            display="block"
+          >
+            This is 2/3
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`it correctly sets width for proportions 1/12, 7/12, 1/3 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -12px;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  width: 100%;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  padding-top: 0;
+  padding-left: 12px;
+  height: 100%;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #e3e3e3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c8 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c10 {
+  min-width: 0;
+  -webkit-flex: 0 0 33.33333333333333%;
+  -ms-flex: 0 0 33.33333333333333%;
+  flex: 0 0 33.33333333333333%;
+}
+
+.c1 {
+  min-width: 0;
+  -webkit-flex: 0 0 8.333333333333332%;
+  -ms-flex: 0 0 8.333333333333332%;
+  flex: 0 0 8.333333333333332%;
+}
+
+.c9 {
+  min-width: 0;
+  -webkit-flex: 0 0 41.66666666666667%;
+  -ms-flex: 0 0 41.66666666666667%;
+  flex: 0 0 41.66666666666667%;
+}
+
+div:first-child > .c3 {
+  padding-top: 0;
+}
+
+.c7 {
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-transform: translateY(0.36em);
+  -ms-transform: translateY(0.36em);
+  transform: translateY(0.36em);
+  padding-top: 1px;
+  font-family: gordita,sans-serif;
+  font-weight: 500;
+  color: #232323;
+}
+
+.c7:before {
+  content: '';
+  margin-top: -13px;
+  display: block;
+  height: 0;
+}
+
+<div
+  class="c0"
+  data-id="columns"
+  display="flex"
+>
+  <div
+    class="c1 c2"
+    data-id="column"
+    width="full"
+  >
+    <div
+      class="c3 c4"
+      height="full"
+    >
+      <div
+        class="c5"
+      >
+        <div
+          class="c6"
+          data-id="placeholder"
+          display="flex"
+        >
+          <span
+            class="c7 -span c8"
+            color="grey56"
+            data-id="text"
+            display="block"
+          >
+            This is 1/12
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c9 c2"
+    data-id="column"
+    width="full"
+  >
+    <div
+      class="c3 c4"
+      height="full"
+    >
+      <div
+        class="c5"
+      >
+        <div
+          class="c6"
+          data-id="placeholder"
+          display="flex"
+        >
+          <span
+            class="c7 -span c8"
+            color="grey56"
+            data-id="text"
+            display="block"
+          >
+            This is 5/12
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c10 c2"
+    data-id="column"
+    width="full"
+  >
+    <div
+      class="c3 c4"
+      height="full"
+    >
+      <div
+        class="c5"
+      >
+        <div
+          class="c6"
+          data-id="placeholder"
+          display="flex"
+        >
+          <span
+            class="c7 -span c8"
+            color="grey56"
+            data-id="text"
+            display="block"
+          >
+            This is 1/3
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`it sets width to flex by default 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -12px;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  width: 100%;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  padding-top: 0;
+  padding-left: 12px;
+  height: 100%;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #e3e3e3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c8 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c1 {
+  min-width: 0;
+}
+
+div:first-child > .c3 {
+  padding-top: 0;
+}
+
+.c7 {
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-transform: translateY(0.36em);
+  -ms-transform: translateY(0.36em);
+  transform: translateY(0.36em);
+  padding-top: 1px;
+  font-family: gordita,sans-serif;
+  font-weight: 500;
+  color: #232323;
+}
+
+.c7:before {
+  content: '';
+  margin-top: -13px;
+  display: block;
+  height: 0;
+}
+
+<div
+  class="c0"
+  data-id="columns"
+  display="flex"
+>
+  <div
+    class="c1 c2"
+    data-id="column"
+    width="full"
+  >
+    <div
+      class="c3 c4"
+      height="full"
+    >
+      <div
+        class="c5"
+      >
+        <div
+          class="c6"
+          data-id="placeholder"
+          display="flex"
+        >
+          <span
+            class="c7 -span c8"
+            color="grey56"
+            data-id="text"
+            display="block"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c1 c2"
+    data-id="column"
+    width="full"
+  >
+    <div
+      class="c3 c4"
+      height="full"
+    >
+      <div
+        class="c5"
+      >
+        <div
+          class="c6"
+          data-id="placeholder"
+          display="flex"
+        >
+          <span
+            class="c7 -span c8"
+            color="grey56"
+            data-id="text"
+            display="block"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c1 c2"
+    data-id="column"
+    width="full"
+  >
+    <div
+      class="c3 c4"
+      height="full"
+    >
+      <div
+        class="c5"
+      >
+        <div
+          class="c6"
+          data-id="placeholder"
+          display="flex"
+        >
+          <span
+            class="c7 -span c8"
+            color="grey56"
+            data-id="text"
+            display="block"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

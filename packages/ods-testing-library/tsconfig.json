@@ -2,8 +2,7 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist/typings",
-    "rootDir": "./src",
-    "baseUrl": "."
+    "rootDir": "./src"
   },
   "include": [
     "src",
@@ -11,5 +10,6 @@
     "../../globals.d.ts",
     "../ods-types",
     "jest-setup.ts"
-  ]
+  ],
+  "references": [{"path": "../ods-themes/tsconfig.json"}]
 }

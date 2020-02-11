@@ -6,9 +6,7 @@
   },
   "include": ["src", "src/**/*.json", "../../globals.d.ts", "../ods-types"],
   "references": [
-    {"path": "../ods-icons/tsconfig.json"},
-    {"path": "../ods-devtools/tsconfig.json"},
-    {"path": "../ods-testing-library/tsconfig.json"},
-    {"path": "../ods-themes/tsconfig.json"}
+    {"path": "../ods-lab/tsconfig.json"},
+    {"path": "../ods-core/tsconfig.json"}
   ]
 }

@@ -1,4 +1,4 @@
-import React, {ReactNode, Fragment, Children} from 'react';
+import React, {ReactNode, Children} from 'react';
 import styled from 'styled-components';
 import {AlignItemsVariants, Box, ResponsiveSpace} from '../Box/Box';
 import {Divider} from '../Divider/Divider';
@@ -37,10 +37,6 @@ export const Stack = ({
   alignX = 'stretch',
 }: StackProps) => {
   const stackItems = Children.toArray(children);
-
-  if (stackItems.length <= 1) {
-    return <Fragment>{stackItems}</Fragment>;
-  }
 
   return (
     <Box
