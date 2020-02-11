@@ -7,36 +7,19 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @origin-digital/ods-types
 
-
-
-
-
 ## [0.2.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.2.1...@origin-digital/ods-types@0.2.2) (2020-02-06)
 
 **Note:** Version bump only for package @origin-digital/ods-types
-
-
-
-
 
 ## [0.2.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.2.0...@origin-digital/ods-types@0.2.1) (2020-02-05)
 
 **Note:** Version bump only for package @origin-digital/ods-types
 
-
-
-
-
 # [0.2.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.1.1...@origin-digital/ods-types@0.2.0) (2020-01-31)
-
 
 ### Features
 
-* restructure packages for theming, debugging and an incubator lab ([8c8a514](https://bitbucket.orgn.io/od/origin-ui/commits/8c8a514))
-
-
-
-
+- restructure packages for theming, debugging and an incubator lab ([8c8a514](https://bitbucket.orgn.io/od/origin-ui/commits/8c8a514))
 
 ## 0.1.1 (2020-01-22)
 

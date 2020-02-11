@@ -1,26 +1,26 @@
-import {colors} from '../colors';
+import {colors} from "../colors";
 
 export const MuiRadio = {
   root: {
-    border: 'none',
+    border: "none",
     // boxShadow: "none",
     color: colors.grey,
-    '& .MuiSvgIcon': {
+    "& .MuiSvgIcon": {
       color: colors.grey,
-      fontSize: '24px',
+      fontSize: "24px",
     },
-    '&:hover': {
-      border: 'none',
+    "&:hover": {
+      border: "none",
       // boxShadow: "none",
       background: colors.grey8,
     },
-    '&:focus': {
+    "&:focus": {
       background: colors.yellow16,
     },
-    '&$checked': {
+    "&$checked": {
       color: `${colors.lightOrange} !important`,
     },
-    '&:disabled': {
+    "&:disabled": {
       color: colors.grey16,
     },
   },

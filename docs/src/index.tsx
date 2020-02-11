@@ -1,7 +1,7 @@
-import React from 'react';
-import * as ReactDOM from 'react-dom';
+import React from "react";
+import * as ReactDOM from "react-dom";
 
-import {HashRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import {HashRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 import {
   OriginThemeProvider,
@@ -9,22 +9,22 @@ import {
   Box,
   Text,
   Link as StyledLink,
-} from '@origin-digital/ods-core';
+} from "@origin-digital/ods-core";
 
-import {ContentSection} from '@origin-digital/ods-lab';
+import {ContentSection} from "@origin-digital/ods-lab";
 
-import {DebugProvider} from '@origin-digital/ods-devtools';
+import {DebugProvider} from "@origin-digital/ods-devtools";
 
-import {BoxDocument} from './Box';
-import {SectionDocument} from './Section';
-import {StackDocument} from './Stack';
-import {CheckboxDocument} from './Checkbox';
-import {ColumnsDocument} from './Columns';
-import {ColumnDocument} from './Column';
-import {ContentSectionDocument} from './ContentSection';
-import {CardStackSectionDocument} from './CardStackSection';
-import {DividerDocument} from './Divider';
-import {PlaceholderDocument} from './Placeholder';
+import {BoxDocument} from "./Box";
+import {SectionDocument} from "./Section";
+import {StackDocument} from "./Stack";
+import {CheckboxDocument} from "./Checkbox";
+import {ColumnsDocument} from "./Columns";
+import {ColumnDocument} from "./Column";
+import {ContentSectionDocument} from "./ContentSection";
+import {CardStackSectionDocument} from "./CardStackSection";
+import {DividerDocument} from "./Divider";
+import {PlaceholderDocument} from "./Placeholder";
 
 ReactDOM.render(
   <OriginThemeProvider>
@@ -117,5 +117,5 @@ ReactDOM.render(
       </Router>
     </DebugProvider>
   </OriginThemeProvider>,
-  document.getElementById('root'),
+  document.getElementById("root"),
 );

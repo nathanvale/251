@@ -1,12 +1,12 @@
-import React from 'react';
-import {ThemeProvider, injectGlobal} from 'styled-components';
-import MUIThemeProvider from '@material-ui/styles/ThemeProvider';
+import React from "react";
+import {ThemeProvider, injectGlobal} from "styled-components";
+import MUIThemeProvider from "@material-ui/styles/ThemeProvider";
 
-import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
+import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 
-import {Theme} from '../types';
-import {originRetailTheme} from '../themes';
-import {originRetailMUITheme} from '../_private/mui-themes/originRetail';
+import {Theme} from "../types";
+import {originRetailTheme} from "../themes";
+import {originRetailMUITheme} from "../_private/mui-themes/originRetail";
 
 export interface OriginThemeProviderProps {
   theme?: Theme;

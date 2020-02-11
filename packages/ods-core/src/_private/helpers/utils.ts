@@ -1,4 +1,4 @@
-import {Breakpoint} from '@origin-digital/ods-themes';
+import {Breakpoint} from "@origin-digital/ods-themes";
 
 type ValueType = boolean | null | undefined | number | string | object;
 
@@ -7,14 +7,14 @@ export type SuffixFn = (value: ValueType) => string;
 export type CSSLength = number | string;
 
 export function cssLengthToString(value: CSSLength): string {
-  return typeof value === 'number' ? `${value}px` : value;
+  return typeof value === "number" ? `${value}px` : value;
 }
 
 export const isNumber: IsNumberFn = value =>
   !Number.isNaN(parseInt(`${value}`, 10));
-export const suffix: SuffixFn = value => (isNumber(value) ? `-${value}` : '');
+export const suffix: SuffixFn = value => (isNumber(value) ? `-${value}` : "");
 
-const breakpoints = ['xs', 'sm', 'md', 'lg', 'xl'];
+const breakpoints = ["xs", "sm", "md", "lg", "xl"];
 
 export const setBreakpoint = (
   breakpoint: keyof Breakpoint,

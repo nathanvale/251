@@ -1,7 +1,7 @@
-import React from 'react';
-import {NormalisedPropType} from '@origin-digital/ods-scripts';
-import {Text, Stack} from '@origin-digital/ods-core';
-import {PropType} from './PropType';
+import React from "react";
+import {NormalisedPropType} from "@origin-digital/ods-scripts";
+import {Text, Stack} from "@origin-digital/ods-core";
+import {PropType} from "./PropType";
 
 export interface PropListViewProps {
   requiredProps: Array<{propName: string; type: NormalisedPropType}>;

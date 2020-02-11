@@ -1,4 +1,4 @@
-const {spawnSync} = require('child_process');
+const {spawnSync} = require("child_process");
 
 /**
  * Returns metadata for the monorepos packages. eg:
@@ -14,17 +14,17 @@ const {spawnSync} = require('child_process');
  */
 function getPackagesMetaData() {
   const result = spawnSync(
-    '../node_modules/lerna/cli.js',
-    ['ls', '--parseable', '--ndjson'],
+    "../node_modules/lerna/cli.js",
+    ["ls", "--parseable", "--ndjson"],
     {
-      stdio: 'pipe',
-      encoding: 'utf-8',
+      stdio: "pipe",
+      encoding: "utf-8",
     },
   );
 
   const packagesMetadata = result.stdout
-    .split('\n')
-    .filter(package => package !== '')
+    .split("\n")
+    .filter(package => package !== "")
     .map(package => JSON.parse(package));
 
   return packagesMetadata;

@@ -4,9 +4,9 @@
  * issue to explain our work around.
  * https://github.com/microsoft/TypeScript/issues/28481#issuecomment-552938424
  */
-export {CardStackSection} from './CardStackSection/CardStackSection';
-export type CardStackSectionProps = import('./CardStackSection/CardStackSection').CardStackSectionProps;
-export {Checkbox} from './Checkbox/Checkbox';
-export type CheckboxProps = import('./Checkbox/Checkbox').CheckboxProps;
-export {ContentSection} from './ContentSection/ContentSection';
-export type ContentSectionProps = import('../../ods-lab/src/ContentSection/ContentSection').ContentSectionProps;
+export {CardStackSection} from "./CardStackSection/CardStackSection";
+export type CardStackSectionProps = import("./CardStackSection/CardStackSection").CardStackSectionProps;
+export {Checkbox} from "./Checkbox/Checkbox";
+export type CheckboxProps = import("./Checkbox/Checkbox").CheckboxProps;
+export {ContentSection} from "./ContentSection/ContentSection";
+export type ContentSectionProps = import("../../ods-lab/src/ContentSection/ContentSection").ContentSectionProps;

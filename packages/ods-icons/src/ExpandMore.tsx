@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import {IconProps, IconSVG} from './_private/IconSvg';
+import {IconProps, IconSVG} from "./_private/IconSvg";
 
 export const IconExpandMore = ({color}: IconProps) => (
   <IconSVG color={color as string}>

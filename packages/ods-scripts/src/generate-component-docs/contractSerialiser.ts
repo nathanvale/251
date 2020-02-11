@@ -1,5 +1,5 @@
-import sortBy from 'lodash/sortBy';
-import {NormalisedPropType} from '../index';
+import sortBy from "lodash/sortBy";
+import {NormalisedPropType} from "../index";
 
 export const typeSerializer = {
   print: (
@@ -8,37 +8,37 @@ export const typeSerializer = {
     serializer: (value: any) => string,
     indent: (value: string) => string,
   ) => {
-    if (typeof type === 'string') {
+    if (typeof type === "string") {
       return type;
-    } else if (type.type === 'union') {
+    } else if (type.type === "union") {
       return type.types
         .sort()
         .map(subType => {
           return `\n${indent(`| ${serializer(subType)}`)}`;
         })
-        .join('');
-    } else if (type.type === 'interface') {
+        .join("");
+    } else if (type.type === "interface") {
       return `{${sortBy(Object.values(type.props), ({propName}) => propName)
         .map(
           ({propName, required, type: propType}) =>
             `\n${indent(
-              `${propName}${required ? '' : '?'}: ${serializer(propType)}`,
+              `${propName}${required ? "" : "?"}: ${serializer(propType)}`,
             )}`,
         )
-        .join('')}\n}`;
+        .join("")}\n}`;
     } else {
       return `${type.alias}<${type.params
         .map((param: any) => `${serializer(param)}`)
-        .join(',')}\n>`;
+        .join(",")}\n>`;
     }
   },
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   test: (val: any) => {
-    if (typeof val === 'object') {
-      return ['union', 'interface', 'alias'].includes(val.type);
+    if (typeof val === "object") {
+      return ["union", "interface", "alias"].includes(val.type);
     }
 
-    return typeof val === 'string';
+    return typeof val === "string";
   },
 };

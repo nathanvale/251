@@ -1,9 +1,9 @@
-import React from 'react';
-import {useDebugState} from '@origin-digital/ods-devtools';
+import React from "react";
+import {useDebugState} from "@origin-digital/ods-devtools";
 
-import {Box, BoxProps} from '../../../Box/Box';
+import {Box, BoxProps} from "../../../Box/Box";
 
-import {Overlay} from '../Overlay/Overlay';
+import {Overlay} from "../Overlay/Overlay";
 
 export interface BoxDebugProps extends BoxProps {}
 
@@ -20,4 +20,4 @@ export const BoxDebug = ({children, ...rest}: BoxDebugProps) => {
   return <Box {...rest}>{children}</Box>;
 };
 
-BoxDebug.displayName = 'BoxDebug';
+BoxDebug.displayName = "BoxDebug";

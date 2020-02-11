@@ -1,12 +1,12 @@
-import fs from 'fs';
-import path from 'path';
+import fs from "fs";
+import path from "path";
 
-import generate from './generate';
+import generate from "./generate";
 
 const typeDocs = generate();
 
 fs.writeFileSync(
-  path.join(__dirname, '../../../../docs/src/componentDocs.json'),
+  path.join(__dirname, "../../../../docs/src/componentDocs.json"),
   JSON.stringify(typeDocs, null, 2),
-  'utf8',
+  "utf8",
 );

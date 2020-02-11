@@ -1,17 +1,17 @@
-import {colors} from '../colors';
+import {colors} from "../colors";
 
 export const MuiCheckbox = {
   root: {
-    border: 'none',
+    border: "none",
     color: colors.grey,
-    '&:hover': {
-      border: 'none',
+    "&:hover": {
+      border: "none",
       background: colors.grey8,
     },
-    '&$disabled': {
+    "&$disabled": {
       color: colors.grey16,
     },
-    '&$checked': {
+    "&$checked": {
       color: colors.lightOrange,
     },
   },

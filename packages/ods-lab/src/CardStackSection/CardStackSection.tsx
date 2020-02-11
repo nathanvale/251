@@ -1,45 +1,45 @@
-import React, {ReactNode} from 'react';
-import styled from 'styled-components';
-import {Breakpoint} from '@origin-digital/ods-themes';
-import {Box, Section, Columns, Column, Stack} from '@origin-digital/ods-core';
-import {marginTop, marginBottom} from 'styled-system';
+import React, {ReactNode} from "react";
+import styled from "styled-components";
+import {Breakpoint} from "@origin-digital/ods-themes";
+import {Box, Section, Columns, Column, Stack} from "@origin-digital/ods-core";
+import {marginTop, marginBottom} from "styled-system";
 
-type CardStackSectionVariant = 'widget' | 'card' | 'card-padded';
-type CardStackSize = 'small' | 'medium' | 'large';
+type CardStackSectionVariant = "widget" | "card" | "card-padded";
+type CardStackSize = "small" | "medium" | "large";
 
 export interface CardStackSectionProps {
   children: ReactNode;
-  'data-id'?: string;
+  "data-id"?: string;
   variant?: CardStackSectionVariant;
   size?: CardStackSize;
 }
 
-const defaultSize = 'small';
+const defaultSize = "small";
 
 const cardSizeForVariant: Record<
   CardStackSize,
   Record<keyof Breakpoint, TS_FIXME[]>
 > = {
   small: {
-    xs: [undefined, '12/12', undefined],
-    sm: [undefined, '12/12', undefined],
-    md: [undefined, '2/3', undefined],
-    lg: [undefined, '1/2', undefined],
-    xl: [undefined, '1/2', undefined],
+    xs: [undefined, "12/12", undefined],
+    sm: [undefined, "12/12", undefined],
+    md: [undefined, "2/3", undefined],
+    lg: [undefined, "1/2", undefined],
+    xl: [undefined, "1/2", undefined],
   },
   medium: {
-    xs: [undefined, '12/12', undefined],
-    sm: [undefined, '12/12', undefined],
-    md: [undefined, '5/6', undefined],
-    lg: [undefined, '2/3', undefined],
-    xl: [undefined, '2/3', undefined],
+    xs: [undefined, "12/12", undefined],
+    sm: [undefined, "12/12", undefined],
+    md: [undefined, "5/6", undefined],
+    lg: [undefined, "2/3", undefined],
+    xl: [undefined, "2/3", undefined],
   },
   large: {
-    xs: [undefined, '12/12', undefined],
-    sm: [undefined, '12/12', undefined],
-    md: [undefined, '5/6', undefined],
-    lg: [undefined, '5/6', undefined],
-    xl: [undefined, '5/6', undefined],
+    xs: [undefined, "12/12", undefined],
+    sm: [undefined, "12/12", undefined],
+    md: [undefined, "5/6", undefined],
+    lg: [undefined, "5/6", undefined],
+    xl: [undefined, "5/6", undefined],
   },
 };
 
@@ -58,14 +58,14 @@ const ResponsiveGrid = ({
   children: ReactNode;
 }) => (
   <>
-    <Box display={{xs: 'flex', sm: 'none'}} width="full">
+    <Box display={{xs: "flex", sm: "none"}} width="full">
       <Section fluidity="full-width" hideGutter={hideGutter}>
         <Columns>
           <Column>{children}</Column>
         </Columns>
       </Section>
     </Box>
-    <Box display={{xs: 'none', sm: 'flex', md: 'none'}} width="full">
+    <Box display={{xs: "none", sm: "flex", md: "none"}} width="full">
       <Section fluidity="full-width">
         <Columns>
           <Column>{children}</Column>
@@ -73,7 +73,7 @@ const ResponsiveGrid = ({
       </Section>
     </Box>
     <Box
-      display={{xs: 'none', sm: 'none', md: 'flex', lg: 'none'}}
+      display={{xs: "none", sm: "none", md: "flex", lg: "none"}}
       width="full"
     >
       <Section>
@@ -85,7 +85,7 @@ const ResponsiveGrid = ({
       </Section>
     </Box>
     <Box
-      display={{xs: 'none', sm: 'none', md: 'none', lg: 'flex'}}
+      display={{xs: "none", sm: "none", md: "none", lg: "flex"}}
       width="full"
     >
       <Section>
@@ -101,15 +101,15 @@ const ResponsiveGrid = ({
 
 const CardPaddedSection = ({
   children,
-  'data-id': dataId,
+  "data-id": dataId,
   size = defaultSize,
 }: CardStackSectionProps) => (
   <Box
     display="flex"
     data-id={dataId}
     flexDirection="column"
-    paddingY={{xs: 'xsmall', sm: 'xsmall'}}
-    justifyContent={{md: 'center'}}
+    paddingY={{xs: "xsmall", sm: "xsmall"}}
+    justifyContent={{md: "center"}}
     height="full"
     width="full"
   >
@@ -121,13 +121,13 @@ const CardPaddedSection = ({
 
 const WidgetSection = ({
   children,
-  'data-id': dataId,
+  "data-id": dataId,
   size = defaultSize,
 }: CardStackSectionProps) => (
   <Box width="full" data-id={dataId}>
     <Box
-      display={{lg: 'none'}}
-      style={{height: '120px'}}
+      display={{lg: "none"}}
+      style={{height: "120px"}}
       width="full"
       backgroundColor="orange"
     />
@@ -135,19 +135,19 @@ const WidgetSection = ({
       display="flex"
       width="full"
       marginTop={
-        {xs: '-88px', sm: '-88px', md: '-88px', lg: '48px'} as TS_FIXME
+        {xs: "-88px", sm: "-88px", md: "-88px", lg: "48px"} as TS_FIXME
       }
       marginBottom={
-        {xs: '32px', sm: '32px', md: '32px', lg: '48px'} as TS_FIXME
+        {xs: "32px", sm: "32px", md: "32px", lg: "48px"} as TS_FIXME
       }
     >
       <ResponsiveGrid size={size}>
         <Stack
           space={{
-            xs: 'large',
-            sm: 'large',
-            md: 'large',
-            lg: 'xlarge',
+            xs: "large",
+            sm: "large",
+            md: "large",
+            lg: "xlarge",
           }}
         >
           {children}
@@ -159,18 +159,18 @@ const WidgetSection = ({
 
 const CardSection = ({
   children,
-  'data-id': dataId,
+  "data-id": dataId,
   size = defaultSize,
 }: CardStackSectionProps) => (
-  <Box data-id={dataId} paddingY={['xsmall', 'xxlarge']} width="full">
+  <Box data-id={dataId} paddingY={["xsmall", "xxlarge"]} width="full">
     <ResponsiveGrid size={size} hideGutter>
       <Stack
         space={{
           xs: defaultSize,
           sm: defaultSize,
           md: defaultSize,
-          lg: 'xlarge',
-          xl: 'xxlarge',
+          lg: "xlarge",
+          xl: "xxlarge",
         }}
       >
         {children}
@@ -181,17 +181,17 @@ const CardSection = ({
 
 export const CardStackSection = ({
   children,
-  'data-id': dataId,
-  variant = 'card',
+  "data-id": dataId,
+  variant = "card",
   size = defaultSize,
 }: CardStackSectionProps) => {
-  if (variant === 'widget') {
+  if (variant === "widget") {
     return (
       <WidgetSection data-id={dataId} size={size}>
         {children}
       </WidgetSection>
     );
-  } else if (variant === 'card-padded') {
+  } else if (variant === "card-padded") {
     return (
       <CardPaddedSection data-id={dataId} size={size}>
         {children}
@@ -207,9 +207,9 @@ export const CardStackSection = ({
 };
 
 CardStackSection.defaultProps = {
-  'data-id': 'card-stack-section',
-  variant: 'card',
+  "data-id": "card-stack-section",
+  variant: "card",
   size: defaultSize,
 };
 
-CardStackSection.displayName = 'CardStackSection';
+CardStackSection.displayName = "CardStackSection";

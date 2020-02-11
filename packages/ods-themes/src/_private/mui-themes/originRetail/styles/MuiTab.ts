@@ -1,20 +1,20 @@
-import {colors} from '../colors';
-import {typography} from '../typography';
+import {colors} from "../colors";
+import {typography} from "../typography";
 
 export const MuiTab = {
   root: {
     borderBottom: `1px solid ${colors.grey16} !important`,
     backgroundColor: `${colors.white} !important`,
-    padding: '24px 32px',
+    padding: "24px 32px",
     ...typography.text.xxsmall,
     fontStyle: typography.fontStyle.regular,
     fontWeight: typography.weight.regular,
     color: colors.grey,
-    textTransform: 'none',
-    '&:hover': {
+    textTransform: "none",
+    "&:hover": {
       backgroundColor: `${colors.grey4} !important`,
     },
-    '&$selected': {
+    "&$selected": {
       fontWeight: `500 !important`,
       backgroundColor: colors.grey4,
     },
@@ -45,7 +45,7 @@ export const MuiTabs = {
     color: `${colors.redPink} !important`,
   },
   indicator: {
-    '& > div': {
+    "& > div": {
       backgroundColor: colors.lightOrange,
       height: 4,
     },

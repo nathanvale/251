@@ -1,14 +1,14 @@
-import React, {ReactNode, ReactType} from 'react';
-import styled from 'styled-components';
-import {Color} from '@origin-digital/ods-themes';
-import {style} from 'styled-system';
-import {Box} from '../Box/Box';
+import React, {ReactNode, ReactType} from "react";
+import styled from "styled-components";
+import {Color} from "@origin-digital/ods-themes";
+import {style} from "styled-system";
+import {Box} from "../Box/Box";
 
-import {basekick} from '../_private/hooks/typography/basekick';
+import {basekick} from "../_private/hooks/typography/basekick";
 
 export const textColor = style({
-  prop: 'color',
-  key: 'colors',
+  prop: "color",
+  key: "colors",
 });
 
 /* import {useText} from './_private/hooks/typography/use-text'; */
@@ -17,27 +17,27 @@ export interface TextProps {
   children?: ReactNode;
   component?: ReactType;
   size?:
-    | 'xxxsmall'
-    | 'xxsmall'
-    | 'xsmall'
-    | 'small'
-    | 'medium'
-    | 'large'
-    | 'xlarge'
-    | 'xxlarge'
-    | 'xxxlarge';
+    | "xxxsmall"
+    | "xxsmall"
+    | "xsmall"
+    | "small"
+    | "medium"
+    | "large"
+    | "xlarge"
+    | "xxlarge"
+    | "xxxlarge";
   color?: keyof Color;
-  weight?: 'regular' | 'medium';
+  weight?: "regular" | "medium";
   baseline?: boolean;
   className?: string;
 }
 
 export const Text = ({
   children,
-  component = 'span',
-  size = 'xxsmall',
-  color = 'grey',
-  weight = 'regular',
+  component = "span",
+  size = "xxsmall",
+  color = "grey",
+  weight = "regular",
   className,
 }: TextProps) => {
   const StyledBox = styled(Box)`
@@ -69,7 +69,7 @@ export const Text = ({
 };
 
 Text.defaultValues = {
-  color: 'grey',
+  color: "grey",
 };
 
-Text.displayName = 'Text';
+Text.displayName = "Text";

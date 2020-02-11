@@ -1,50 +1,50 @@
-import {colors} from '../colors';
-import {typography} from '../typography';
+import {colors} from "../colors";
+import {typography} from "../typography";
 
 export const MuiToggleButton = {
   root: {
     backgroundColor: colors.white,
     border: `1px solid ${colors.grey16}`,
-    borderRadius: 'none',
-    '&$selected': {
+    borderRadius: "none",
+    "&$selected": {
       border: `1px solid ${colors.lightOrange}`,
       backgroundColor: colors.yellow,
       fontWeight: `500 !important`,
-      '&:hover': {
+      "&:hover": {
         outline: `4px solid ${colors.yellow16}`,
         zIndex: 11,
         backgroundColor: `${colors.yellow} !important`,
       },
-      '&:focus': {
+      "&:focus": {
         outline: `4px solid ${colors.yellow24}`,
         zIndex: 11,
         backgroundColor: `${colors.yellow} !important`,
       },
-      '&:active': {
+      "&:active": {
         outline: `4px solid ${colors.yellow32}`,
         zIndex: 11,
         backgroundColor: `${colors.yellow} !important`,
       },
-      '& > span.MuiToggleButton-label': {
+      "& > span.MuiToggleButton-label": {
         fontWeight: 600,
       },
     },
-    '&:hover': {
+    "&:hover": {
       outline: `4px solid ${colors.grey8}`,
       zIndex: 10,
     },
-    '&:focus': {
+    "&:focus": {
       outline: `4px solid ${colors.grey16}`,
       zIndex: 10,
     },
-    '&:active': {
+    "&:active": {
       outline: `4px solid ${colors.grey24}`,
       zIndex: 10,
     },
   },
   label: {
     ...typography.text.large,
-    textAlign: 'center',
+    textAlign: "center",
     color: colors.grey,
     fontWeight: typography.weight.regular,
   },

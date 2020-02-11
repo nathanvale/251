@@ -1,10 +1,10 @@
-import React from 'react';
-import {queryAllByAttribute, render} from '@origin-digital/ods-testing-library';
-import {Columns} from './Columns';
-import {Column} from '../Column/Column';
-import {Placeholder} from '../Placeholder/Placeholder';
+import React from "react";
+import {queryAllByAttribute, render} from "@origin-digital/ods-testing-library";
+import {Columns} from "./Columns";
+import {Column} from "../Column/Column";
+import {Placeholder} from "../Placeholder/Placeholder";
 
-test('it spaces column comps with small space', () => {
+test("it spaces column comps with small space", () => {
   const {container} = render(
     <Columns space="small">
       <Column>
@@ -20,16 +20,16 @@ test('it spaces column comps with small space', () => {
   );
   //Parent container sets initial margin to negative of the space value.
   const style = window.getComputedStyle(container.firstChild as Element);
-  expect(style.marginLeft).toEqual('-12px');
+  expect(style.marginLeft).toEqual("-12px");
 
   // Each Column then sets a left padding of space (small = 12px).
-  queryAllByAttribute('data-id', container, 'column').forEach(colEl => {
+  queryAllByAttribute("data-id", container, "column").forEach(colEl => {
     const elStyle = window.getComputedStyle(colEl.firstChild as Element);
-    expect(elStyle.paddingLeft).toEqual('12px');
+    expect(elStyle.paddingLeft).toEqual("12px");
   });
 });
 
-test('it top-aligns children by default', () => {
+test("it top-aligns children by default", () => {
   const {container} = render(
     <Columns>
       <Column>
@@ -44,12 +44,12 @@ test('it top-aligns children by default', () => {
     </Columns>,
   );
 
-  const columnsEl = queryAllByAttribute('data-id', container, 'columns')[0];
+  const columnsEl = queryAllByAttribute("data-id", container, "columns")[0];
   const style = window.getComputedStyle(columnsEl as Element);
-  expect(style.alignItems).toEqual('flex-start');
+  expect(style.alignItems).toEqual("flex-start");
 });
 
-test('it vertically aligns children middle if alignY is center', () => {
+test("it vertically aligns children middle if alignY is center", () => {
   const {container} = render(
     <Columns alignY="center">
       <Column>
@@ -64,12 +64,12 @@ test('it vertically aligns children middle if alignY is center', () => {
     </Columns>,
   );
 
-  const columnsEl = queryAllByAttribute('data-id', container, 'columns')[0];
+  const columnsEl = queryAllByAttribute("data-id", container, "columns")[0];
   const style = window.getComputedStyle(columnsEl as Element);
-  expect(style.alignItems).toEqual('center');
+  expect(style.alignItems).toEqual("center");
 });
 
-test('it vertically aligns children bottom if alignY is bottom', () => {
+test("it vertically aligns children bottom if alignY is bottom", () => {
   const {container} = render(
     <Columns alignY="bottom">
       <Column>
@@ -84,9 +84,9 @@ test('it vertically aligns children bottom if alignY is bottom', () => {
     </Columns>,
   );
 
-  const columnsEl = queryAllByAttribute('data-id', container, 'columns')[0];
+  const columnsEl = queryAllByAttribute("data-id", container, "columns")[0];
   const style = window.getComputedStyle(columnsEl as Element);
-  expect(style.alignItems).toEqual('flex-end');
+  expect(style.alignItems).toEqual("flex-end");
 });
 
 //TODO: FInd a way to unit test collapseBelow. Needs to set window width.

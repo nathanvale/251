@@ -1,4 +1,4 @@
-import {css} from 'styled-components';
+import {css} from "styled-components";
 
 interface BaseKickOptions {
   typeSizeModifier: number;
@@ -38,7 +38,7 @@ export const basekick = ({
     transform: translateY(${typeOffset}em);
     padding-top: 1px;
     &:before {
-      content: '';
+      content: "";
       margin-top: ${-(heightCorrection + preventCollapse)}px;
       display: block;
       height: 0;

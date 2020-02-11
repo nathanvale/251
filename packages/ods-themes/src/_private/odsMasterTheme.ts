@@ -8,13 +8,13 @@ import {
   Transition,
   Shadow,
   Theme,
-} from '../types';
+} from "../types";
 
 const gridGutterWidth = 16;
 
-const breakpoints: Breakpoints = ['576px', '768px', '992px', '1200px'];
+const breakpoints: Breakpoints = ["576px", "768px", "992px", "1200px"];
 
-breakpoints.xs = '575px';
+breakpoints.xs = "575px";
 breakpoints.sm = breakpoints[0];
 breakpoints.md = breakpoints[1];
 breakpoints.lg = breakpoints[2];
@@ -32,39 +32,39 @@ space.xxlarge = space[7];
 space.xxxlarge = space[8];
 
 const colors: Color = {
-  redPink: '#ff373c',
-  red: '#ec0000',
-  orange: '#ff8228',
-  lightOrange: '#ffb432',
-  lightBlue: '#d2f0ff',
-  grey: '#505050',
-  lightGrey: '#535353',
-  blue: '#3f75c6',
-  green: '#008906',
-  lightGreen: '#a5bb48',
-  purple: '#c34789',
-  grey4: '#f8f8f8',
-  grey8: '#f1f1f1',
-  grey16: '#e3e3e3',
-  grey24: '#d5d5d5',
-  grey48: '#ababab',
-  grey80: '#737373',
-  grey56: '#232323',
-  white: 'white',
-  transparent: 'transparent',
+  redPink: "#ff373c",
+  red: "#ec0000",
+  orange: "#ff8228",
+  lightOrange: "#ffb432",
+  lightBlue: "#d2f0ff",
+  grey: "#505050",
+  lightGrey: "#535353",
+  blue: "#3f75c6",
+  green: "#008906",
+  lightGreen: "#a5bb48",
+  purple: "#c34789",
+  grey4: "#f8f8f8",
+  grey8: "#f1f1f1",
+  grey16: "#e3e3e3",
+  grey24: "#d5d5d5",
+  grey48: "#ababab",
+  grey80: "#737373",
+  grey56: "#232323",
+  white: "white",
+  transparent: "transparent",
 };
 
 const shadows: Shadow = {
   small:
-    '0 2px 4px 0px rgba(28,28,28,.1), 0 2px 2px -2px rgba(28,28,28,.1), 0 4px 4px -4px rgba(28,28,28,.2)',
+    "0 2px 4px 0px rgba(28,28,28,.1), 0 2px 2px -2px rgba(28,28,28,.1), 0 4px 4px -4px rgba(28,28,28,.2)",
   medium:
-    '0 2px 4px 0px rgba(28,28,28,.1), 0 8px 8px -4px rgba(28,28,28,.1), 0 12px 12px -8px rgba(28,28,28,.2)',
+    "0 2px 4px 0px rgba(28,28,28,.1), 0 8px 8px -4px rgba(28,28,28,.1), 0 12px 12px -8px rgba(28,28,28,.2)",
   large:
-    '0 2px 4px 0px rgba(28,28,28,.1), 0 12px 12px -4px rgba(28,28,28,.1), 0 20px 20px -12px rgba(28,28,28,.2)',
+    "0 2px 4px 0px rgba(28,28,28,.1), 0 12px 12px -4px rgba(28,28,28,.1), 0 20px 20px -12px rgba(28,28,28,.2)",
 };
 
 const typography: Typography = {
-  fontFamily: 'gordita, sans-serif',
+  fontFamily: "gordita, sans-serif",
   descenderHeightScale: 0.11,
   capHeightScale: 0.75,
   gridRow: 4,
@@ -130,12 +130,12 @@ const border: Border = {
 };
 
 const transforms: Transform = {
-  touchable: 'scale(0.95)',
+  touchable: "scale(0.95)",
 };
 
 const transitions: Transition = {
-  fast: 'transform .15s ease, opacity .15s ease',
-  touchable: 'transform 0.2s cubic-bezier(0.02, 1.505, 0.745, 1.235)',
+  fast: "transform .15s ease, opacity .15s ease",
+  touchable: "transform 0.2s cubic-bezier(0.02, 1.505, 0.745, 1.235)",
 };
 
 export const odsMasterTheme: Theme = {

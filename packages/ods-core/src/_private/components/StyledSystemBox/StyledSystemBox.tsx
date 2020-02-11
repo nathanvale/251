@@ -1,10 +1,10 @@
-import * as CSS from 'csstype';
-import styled, {DefaultTheme, css} from 'styled-components';
+import * as CSS from "csstype";
+import styled, {DefaultTheme, css} from "styled-components";
 
 import {
   TransitionVariants,
   TransformVariants,
-} from '@origin-digital/ods-themes';
+} from "@origin-digital/ods-themes";
 
 import {
   textAlign,
@@ -34,9 +34,9 @@ import {
   ResponsiveValue,
   BackgroundColorProps,
   style,
-} from 'styled-system';
-import {tint} from 'polished';
-import {themeChecker} from '../../helpers/theme';
+} from "styled-system";
+import {tint} from "polished";
+import {themeChecker} from "../../helpers/theme";
 
 export interface StyledSystemProps
   extends DisplayProps,
@@ -47,35 +47,35 @@ export interface StyledSystemProps
     JustifyContentProps,
     BackgroundColorProps {
   boxShadow?: BoxShadowVariant;
-  height?: 'full';
+  height?: "full";
   pointerEvents?: CSS.PointerEventsProperty;
   showAnts?: boolean;
   transform?: TransformVariants;
   transition?: TransitionVariants;
-  width?: 'full';
+  width?: "full";
   cursor?: CSS.CursorProperty;
 }
 
 export type BoxShadowVariant =
-  | 'small'
-  | 'medium'
-  | 'large'
-  | 'outlineFocus'
-  | 'borderStandard'
-  | 'borderStandardInverted'
-  | 'borderCritical'
-  | 'borderFormHover'
-  | 'borderFormAccent'
-  | 'borderFormAccentLarge'
-  | 'borderStandardInvertedLarge'
-  | 'borderWeakPrimary'
-  | 'borderWeakSecondary'
-  | 'borderWeakPrimaryDisabled'
-  | 'borderWeakSecondaryDisabled';
+  | "small"
+  | "medium"
+  | "large"
+  | "outlineFocus"
+  | "borderStandard"
+  | "borderStandardInverted"
+  | "borderCritical"
+  | "borderFormHover"
+  | "borderFormAccent"
+  | "borderFormAccentLarge"
+  | "borderStandardInvertedLarge"
+  | "borderWeakPrimary"
+  | "borderWeakSecondary"
+  | "borderWeakPrimaryDisabled"
+  | "borderWeakSecondaryDisabled";
 
 const pointerEvents = style({
-  prop: 'pointerEvents',
-  cssProperty: 'pointerEvents',
+  prop: "pointerEvents",
+  cssProperty: "pointerEvents",
 });
 
 const boxShadowFactory = ({border, shadows}: DefaultTheme) => {
@@ -140,11 +140,11 @@ export const StyledSystemBox = styled.div<StyledSystemProps>`
            transform: ${({theme, transform}) => theme.transforms[transform!]};
          }
         ${p =>
-          p.width === 'full' &&
+          p.width === "full" &&
           css`
             width: 100%;
           `}
-        ${p => (p.height === 'full' ? 'height: 100%;' : null)}
+        ${p => (p.height === "full" ? "height: 100%;" : null)}
         ${({theme, showAnts}) =>
           showAnts &&
           css`

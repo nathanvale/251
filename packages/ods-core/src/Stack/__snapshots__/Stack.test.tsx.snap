@@ -181,7 +181,7 @@ exports[`It adds dividers 1`] = `
 }
 
 .c3:before {
-  content: '';
+  content: "";
   margin-top: -13px;
   display: block;
   height: 0;
@@ -413,7 +413,7 @@ exports[`It can stack 1`] = `
 }
 
 .c4:before {
-  content: '';
+  content: "";
   margin-top: -13px;
   display: block;
   height: 0;

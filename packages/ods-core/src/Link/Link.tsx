@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import {FieldOverlay} from '../_private/components/FieldOverlay/FieldOverlay';
+import {FieldOverlay} from "../_private/components/FieldOverlay/FieldOverlay";
 
-import {Box} from '../Box/Box';
-import {Text} from '../Text/Text';
+import {Box} from "../Box/Box";
+import {Text} from "../Text/Text";
 
 export interface LinkProps {
   children?: React.ReactNode;
@@ -12,7 +12,7 @@ export interface LinkProps {
   target?: string;
   Icon?: any;
   to?: string;
-  component?: 'a' | 'button' | React.ReactNode;
+  component?: "a" | "button" | React.ReactNode;
 }
 
 const StyledBox = styled(Box)``;
@@ -27,7 +27,7 @@ const HoverOverlay = styled(FieldOverlay)`
 export const Link = ({
   children,
   Icon,
-  component = 'button',
+  component = "button",
   ...rest
 }: LinkProps) => (
   <StyledBox
@@ -43,9 +43,9 @@ export const Link = ({
         {Icon ? (
           <Box
             style={{
-              width: '24px',
-              height: '24px',
-              verticalAlign: 'middle',
+              width: "24px",
+              height: "24px",
+              verticalAlign: "middle",
             }}
             display="inline-block"
             position="relative"
@@ -61,5 +61,5 @@ export const Link = ({
 );
 
 Link.defaultProps = {
-  component: 'button',
+  component: "button",
 };

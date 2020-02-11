@@ -1,17 +1,17 @@
-import React from 'react';
+import React from "react";
 import MuiCheckbox, {
   CheckboxProps as MUICheckboxProps,
-} from '@material-ui/core/Checkbox';
-import {FormControlLabel} from '../FormControlLabel/FormControlLabel';
-import {FormHelperText} from '../FormHelperText/FormHelperText';
+} from "@material-ui/core/Checkbox";
+import {FormControlLabel} from "../FormControlLabel/FormControlLabel";
+import {FormHelperText} from "../FormHelperText/FormHelperText";
 
 export interface CheckboxProps {
   name: string;
   checked: boolean;
-  'data-id'?: string;
+  "data-id"?: string;
   label: string;
   error?: boolean;
-  onChange: MUICheckboxProps['onChange'];
+  onChange: MUICheckboxProps["onChange"];
   required?: boolean;
   disabled?: boolean;
   className?: string;
@@ -21,7 +21,7 @@ export interface CheckboxProps {
 
 export const Checkbox = (props: CheckboxProps) => {
   const {
-    'data-id': dataId,
+    "data-id": dataId,
     disabled,
     label,
     error,
@@ -36,7 +36,7 @@ export const Checkbox = (props: CheckboxProps) => {
         label={label}
         control={
           <MuiCheckbox
-            inputProps={{'aria-label': label}}
+            inputProps={{"aria-label": label}}
             disabled={disabled}
             {...other}
           />

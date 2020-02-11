@@ -1,5 +1,5 @@
 export const MuiFormControl = {
   root: {
-    minWidth: '100%',
+    minWidth: "100%",
   },
 };

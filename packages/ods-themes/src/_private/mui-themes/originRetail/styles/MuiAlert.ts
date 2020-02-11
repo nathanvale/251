@@ -1,9 +1,9 @@
-import {colors} from '../colors';
-import {typography} from '../typography';
+import {colors} from "../colors";
+import {typography} from "../typography";
 
 export const MuiAlert = {
   root: {
-    padding: '16px 16px',
+    padding: "16px 16px",
   },
   message: {
     ...typography.text.xxsmall,
@@ -13,8 +13,8 @@ export const MuiAlert = {
     color: `${colors.redPink} !important`, // This is required due to inheritance of icon button
     paddingLeft: 16,
     paddingRight: 0,
-    alignItems: 'flex-start',
-    '&:hover': {
+    alignItems: "flex-start",
+    "&:hover": {
       color: colors.veryDarkRed,
     },
   },
@@ -22,12 +22,12 @@ export const MuiAlert = {
     color: colors.veryDarkRed,
     background: colors.redBackground,
     border: `1px solid ${colors.redBorder}`,
-    '& .MuiAlertTitle-root': {
+    "& .MuiAlertTitle-root": {
       color: colors.veryDarkRed,
     },
-    '& .MuiSvgIcon-root': {
+    "& .MuiSvgIcon-root": {
       color: colors.redPink,
-      '&:hover': {
+      "&:hover": {
         color: colors.veryDarkRed,
       },
     },

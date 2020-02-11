@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export interface DebugState {
   showCSSBorders: boolean;
@@ -12,13 +12,13 @@ const DebugDispatchContext = React.createContext<
 >(undefined);
 
 export interface DebugAction {
-  type: 'showCSSBorders';
+  type: "showCSSBorders";
   value: boolean;
 }
 
 function debugReducer(debugState: DebugState, action: DebugAction): DebugState {
   switch (action.type) {
-    case 'showCSSBorders': {
+    case "showCSSBorders": {
       return {...debugState, showCSSBorders: action.value};
     }
     default: {
@@ -42,7 +42,7 @@ function DebugProvider({children}: React.Props<any>) {
 }
 
 function showCSSBorders(dispatch: React.Dispatch<DebugAction>, value: boolean) {
-  dispatch({type: 'showCSSBorders', value});
+  dispatch({type: "showCSSBorders", value});
 }
 
 function useDebugDispatch() {

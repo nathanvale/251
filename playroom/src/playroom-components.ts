@@ -1,2 +1,2 @@
-export * from '@origin-digital/ods-core';
-export * from '@origin-digital/ods-lab';
+export * from "@origin-digital/ods-core";
+export * from "@origin-digital/ods-lab";
