@@ -1,10 +1,10 @@
-import * as React from 'react';
+import * as React from "react";
 import MuiFormHelperText, {
   FormHelperTextProps,
-} from '@material-ui/core/FormHelperText';
+} from "@material-ui/core/FormHelperText";
 
 interface IFormHelperText extends FormHelperTextProps {
-  'data-id'?: string;
+  "data-id"?: string;
 }
 
 export const FormHelperText = (props: IFormHelperText) => (

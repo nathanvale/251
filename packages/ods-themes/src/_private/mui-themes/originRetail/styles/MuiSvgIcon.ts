@@ -1,23 +1,23 @@
-import {colors} from '../colors';
+import {colors} from "../colors";
 
 export const MuiSvgIcon = {
   root: {
     color: colors.lightOrange,
-    fontSize: '48px',
+    fontSize: "48px",
   },
   colorPrimary: {
     color: colors.grey,
-    '&:active': {
+    "&:active": {
       background: colors.transparent,
       color: colors.white,
     },
   },
   colorSecondary: {
     color: colors.redPink,
-    '&:hover': {
+    "&:hover": {
       background: colors.transparent,
     },
-    '&:active': {
+    "&:active": {
       color: colors.white,
       background: colors.redPink,
     },
@@ -33,12 +33,12 @@ export const MuiSvgIcon = {
     color: colors.grey24,
   },
   fontSizeInherit: {
-    fontSize: '88px',
+    fontSize: "88px",
   },
   fontSizeSmall: {
-    fontSize: '24px',
+    fontSize: "24px",
   },
   fontSizeLarge: {
-    fontSize: '64px',
+    fontSize: "64px",
   },
 };

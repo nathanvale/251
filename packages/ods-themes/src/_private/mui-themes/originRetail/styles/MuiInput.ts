@@ -1,40 +1,40 @@
-import {colors} from '../colors';
+import {colors} from "../colors";
 
 export const MuiInput = {
   root: {
     height: 56,
     fontSize: 16,
     paddingLeft: 12,
-    lineHeight: '18px',
+    lineHeight: "18px",
     background: colors.transparent,
     color: colors.greyTextField,
     borderColor: colors.grey48,
-    '&:hover': {
+    "&:hover": {
       borderColor: colors.grey80,
-      borderHeight: '1px',
+      borderHeight: "1px",
     },
-    '&:active': {
+    "&:active": {
       borderColor: colors.blue,
     },
-    '&$error': {
+    "&$error": {
       borderColor: colors.red,
     },
-    '&$disabled': {
+    "&$disabled": {
       borderColor: colors.grey16,
       color: colors.greyTextDisabled,
       background: colors.transparent,
     },
   },
   underline: {
-    '&$disabled': {
-      '&:before': {
-        borderBottomStyle: 'solid',
-        borderColor: '#e3e3e3',
+    "&$disabled": {
+      "&:before": {
+        borderBottomStyle: "solid",
+        borderColor: "#e3e3e3",
       },
     },
   },
   formControl: {
-    'label + &': {
+    "label + &": {
       marginTop: 0,
     },
   },

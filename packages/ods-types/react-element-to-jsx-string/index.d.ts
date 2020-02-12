@@ -1,5 +1,5 @@
-declare module 'react-element-to-jsx-string' {
-  import {ReactNode} from 'react';
+declare module "react-element-to-jsx-string" {
+  import {ReactNode} from "react";
 
   const reactElementToJsxString: (
     element: ReactNode,

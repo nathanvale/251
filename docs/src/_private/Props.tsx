@@ -1,15 +1,15 @@
 /* eslint-disable import/no-duplicates */
 /* eslint-disable no-duplicate-imports */
-import React, {FC} from 'react';
-import partition from 'lodash/partition';
-import mapValues from 'lodash/mapValues';
-import isEmpty from 'lodash/isEmpty';
-import * as Core from '@origin-digital/ods-core';
-import * as Experimental from '@origin-digital/ods-lab';
-import styled from 'styled-components';
-import {maxWidth, MaxWidthProps} from 'styled-system';
-import {ContentSection} from '@origin-digital/ods-lab';
-import {NormalisedInterface} from '@origin-digital/ods-scripts';
+import React, {FC} from "react";
+import partition from "lodash/partition";
+import mapValues from "lodash/mapValues";
+import isEmpty from "lodash/isEmpty";
+import * as Core from "@origin-digital/ods-core";
+import * as Experimental from "@origin-digital/ods-lab";
+import styled from "styled-components";
+import {maxWidth, MaxWidthProps} from "styled-system";
+import {ContentSection} from "@origin-digital/ods-lab";
+import {NormalisedInterface} from "@origin-digital/ods-scripts";
 import {
   Stack,
   Text,
@@ -17,20 +17,20 @@ import {
   Columns,
   Column,
   Box,
-} from '@origin-digital/ods-core';
-import {CSSDebugButton} from '@origin-digital/ods-devtools';
-import {IconFlipToBack} from '@origin-digital/ods-icons';
-import componentDocs from '../componentDocs.json';
-import {ComponentDocs} from '../types';
+} from "@origin-digital/ods-core";
+import {CSSDebugButton} from "@origin-digital/ods-devtools";
+import {IconFlipToBack} from "@origin-digital/ods-icons";
+import componentDocs from "../componentDocs.json";
+import {ComponentDocs} from "../types";
 
-import {PropListView} from './PropListView';
-import {PropTableView} from './PropTableView';
+import {PropListView} from "./PropListView";
+import {PropTableView} from "./PropTableView";
 
 interface PropsProps<T> {
-  componentName: ComponentDocs['componentName'];
-  description: ComponentDocs['description'];
-  propDescriptions: ComponentDocs<T>['propDescriptions'];
-  variant?: ComponentDocs['variant'];
+  componentName: ComponentDocs["componentName"];
+  description: ComponentDocs["description"];
+  propDescriptions: ComponentDocs<T>["propDescriptions"];
+  variant?: ComponentDocs["variant"];
 }
 
 type ComponentName = keyof typeof componentDocs;
@@ -101,13 +101,13 @@ export function Props<T = {}>({
   const defaultProps = mapValues(
     (component && component.defaultProps) || {},
     value => {
-      if (typeof value === 'boolean') {
+      if (typeof value === "boolean") {
         return Boolean(value).toString();
       }
-      if (typeof value === 'string') {
+      if (typeof value === "string") {
         return JSON.stringify(value, null, 2);
       }
-      if (typeof value === 'object') {
+      if (typeof value === "object") {
         return JSON.stringify(value, null, 2);
       }
       return value;
@@ -118,7 +118,7 @@ export function Props<T = {}>({
 
   return (
     <ContentSection backgroundColor="white">
-      <StyledBox maxWidth={[null, null, '75%', '66%']}>
+      <StyledBox maxWidth={[null, null, "75%", "66%"]}>
         <Stack space="xxlarge">
           <Text color="grey56" size="xlarge">
             {`<${componentName}/>`}
@@ -129,12 +129,12 @@ export function Props<T = {}>({
             </Text>
           )}
           <Stack dividers space="medium">
-            {variant !== 'list' ? (
+            {variant !== "list" ? (
               <ColumnsHeader hasDefaultProps={hasDefaultProps} />
             ) : null}
             {requiredProps.length === 0 && optionalProps.length === 0 ? null : (
               <Stack space="medium" dividers>
-                {variant === 'list' ? (
+                {variant === "list" ? (
                   <PropListView
                     defaultProps={defaultProps}
                     hasDefaultProps={hasDefaultProps}
@@ -179,5 +179,5 @@ export function Props<T = {}>({
 }
 
 Props.defaultProps = {
-  variant: 'table',
+  variant: "table",
 };

@@ -1,4 +1,4 @@
-import {css} from 'styled-components';
+import {css} from "styled-components";
 
 export const themeChecker = css`
   ${({theme}) => {
@@ -8,8 +8,8 @@ export const themeChecker = css`
       theme.constructor === Object
     )
       throw new Error(
-        'Please make sure the root of your application is wrapped with the <OriginThemeProvider/>',
+        "Please make sure the root of your application is wrapped with the <OriginThemeProvider/>",
       );
-    return '';
+    return "";
   }}
 `;

@@ -1,50 +1,50 @@
-import {MuiAlert} from './styles/MuiAlert';
-import {MuiAlertTitle} from './styles/MuiAlertTitle';
-import {MuiAppBar} from './styles/MuiAppBar';
-import {MuiBackdrop} from './styles/MuiBackdrop';
-import {MuiBreakpoints} from './styles/MuiBreakpoints';
-import {MuiButton} from './styles/MuiButton';
-import {MuiCheckbox} from './styles/MuiCheckbox';
-import {MuiCircularProgress} from './styles/MuiCircularProgress';
-import {MuiDialog, MuiDialogTitle, MuiDialogContent} from './styles/MuiDialog';
-import {MuiDivider} from './styles/MuiDivider';
+import {MuiAlert} from "./styles/MuiAlert";
+import {MuiAlertTitle} from "./styles/MuiAlertTitle";
+import {MuiAppBar} from "./styles/MuiAppBar";
+import {MuiBackdrop} from "./styles/MuiBackdrop";
+import {MuiBreakpoints} from "./styles/MuiBreakpoints";
+import {MuiButton} from "./styles/MuiButton";
+import {MuiCheckbox} from "./styles/MuiCheckbox";
+import {MuiCircularProgress} from "./styles/MuiCircularProgress";
+import {MuiDialog, MuiDialogTitle, MuiDialogContent} from "./styles/MuiDialog";
+import {MuiDivider} from "./styles/MuiDivider";
 import {
   MuiExpansionPanel,
   MuiExpansionPanelSummary,
   MuiExpansionPanelDetails,
   MuiExpansionPanelActions,
-} from './styles/MuiExpansionPanel';
-import {MuiFab} from './styles/MuiFab';
-import {MuiFormControl} from './styles/MuiFormControl';
-import {MuiFormControlLabel} from './styles/MuiFormControlLabel';
-import {MuiFormHelperText} from './styles/MuiFormHelperText';
-import {MuiFormLabel} from './styles/MuiFormLabel';
-import {MuiIcon} from './styles/MuiIcon';
-import {MuiIconButton} from './styles/MuiIconButton';
-import {MuiInput} from './styles/MuiInput';
-import {MuiInputAdornment} from './styles/MuiInputAdornment';
-import {MuiInputBase} from './styles/MuiInputBase';
-import {MuiInputLabel} from './styles/MuiInputLabel';
-import {MuiLink} from './styles/MuiLink';
-import {MuiPaper} from './styles/MuiPaper';
-import {MuiRadio} from './styles/MuiRadio';
-import {MuiSelect} from './styles/MuiSelect';
-import {MuiShadows} from './styles/MuiShadows';
-import {MuiSkeleton} from './styles/MuiSkeleton';
-import {MuiSnackbar} from './styles/MuiSnackbar';
-import {MuiSvgIcon} from './styles/MuiSvgIcon';
+} from "./styles/MuiExpansionPanel";
+import {MuiFab} from "./styles/MuiFab";
+import {MuiFormControl} from "./styles/MuiFormControl";
+import {MuiFormControlLabel} from "./styles/MuiFormControlLabel";
+import {MuiFormHelperText} from "./styles/MuiFormHelperText";
+import {MuiFormLabel} from "./styles/MuiFormLabel";
+import {MuiIcon} from "./styles/MuiIcon";
+import {MuiIconButton} from "./styles/MuiIconButton";
+import {MuiInput} from "./styles/MuiInput";
+import {MuiInputAdornment} from "./styles/MuiInputAdornment";
+import {MuiInputBase} from "./styles/MuiInputBase";
+import {MuiInputLabel} from "./styles/MuiInputLabel";
+import {MuiLink} from "./styles/MuiLink";
+import {MuiPaper} from "./styles/MuiPaper";
+import {MuiRadio} from "./styles/MuiRadio";
+import {MuiSelect} from "./styles/MuiSelect";
+import {MuiShadows} from "./styles/MuiShadows";
+import {MuiSkeleton} from "./styles/MuiSkeleton";
+import {MuiSnackbar} from "./styles/MuiSnackbar";
+import {MuiSvgIcon} from "./styles/MuiSvgIcon";
 import {
   MuiTable,
   MuiTableBody,
   MuiTableCell,
   MuiTableHead,
   MuiTableRow,
-} from './styles/MuiTable';
-import {MuiTabs, MuiTab} from './styles/MuiTab';
-import {MuiTooltip} from './styles/MuiTooltip';
-import {MuiToggleButton} from './styles/MuiToggleButton';
-import {MuiToggleButtonGroup} from './styles/MuiToggleButtonGroup';
-import {MuiTypography} from './styles/MuiTypography';
+} from "./styles/MuiTable";
+import {MuiTabs, MuiTab} from "./styles/MuiTab";
+import {MuiTooltip} from "./styles/MuiTooltip";
+import {MuiToggleButton} from "./styles/MuiToggleButton";
+import {MuiToggleButtonGroup} from "./styles/MuiToggleButtonGroup";
+import {MuiTypography} from "./styles/MuiTypography";
 
 export const originRetailMUITheme = {
   // Breakpoint
@@ -57,7 +57,7 @@ export const originRetailMUITheme = {
       square: true,
     },
     MuiTextField: {
-      autoComplete: 'false',
+      autoComplete: "false",
     },
   },
   // Component styling overrides

@@ -8,24 +8,24 @@ import {
   // ThemedCssFunction,
   InterpolationFunction,
   SimpleInterpolation,
-} from 'styled-components';
+} from "styled-components";
 
-import {BreakpointVariants} from '@origin-digital/ods-themes';
+import {BreakpointVariants} from "@origin-digital/ods-themes";
 
 export enum MediaLabels {
-  xs = 'smaller',
-  sm = 'phone',
-  md = 'tablet',
-  lg = 'desktop',
-  xl = 'giant',
+  xs = "smaller",
+  sm = "phone",
+  md = "tablet",
+  lg = "desktop",
+  xl = "giant",
 }
 
 export enum MediaAliases {
-  smaller = 'xs',
-  phone = 'sm',
-  tablet = 'md',
-  desktop = 'lg',
-  giant = 'xl',
+  smaller = "xs",
+  phone = "sm",
+  tablet = "md",
+  desktop = "lg",
+  giant = "xl",
 }
 
 export type Media = MediaLabels | MediaAliases;
@@ -84,7 +84,7 @@ export const media: MediaObject = (Object.keys(
     `;
 
     accumulator[label] =
-      label === 'xs' || label === 'smaller' ? maxMedia : minMedia;
+      label === "xs" || label === "smaller" ? maxMedia : minMedia;
     accumulator.max[label] = maxMedia;
     accumulator.min[label] = minMedia;
 

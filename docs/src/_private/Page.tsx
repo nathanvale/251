@@ -1,5 +1,5 @@
-import React, {ReactNode} from 'react';
-import {Stack} from '@origin-digital/ods-core';
+import React, {ReactNode} from "react";
+import {Stack} from "@origin-digital/ods-core";
 
 export interface PageProps {
   children: ReactNode;

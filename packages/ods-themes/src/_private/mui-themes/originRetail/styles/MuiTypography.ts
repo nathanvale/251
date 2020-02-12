@@ -1,11 +1,11 @@
-import {colors} from '../colors';
-import {typography} from '../typography';
+import {colors} from "../colors";
+import {typography} from "../typography";
 
 export const MuiTypography = {
-  fontFamily: ['gordita', 'Arial', 'Sans-Serif'].join(','),
+  fontFamily: ["gordita", "Arial", "Sans-Serif"].join(","),
   root: {
     color: colors.grey56,
-    fontFamily: ['gordita', 'Arial', 'Sans-Serif'].join(','),
+    fontFamily: ["gordita", "Arial", "Sans-Serif"].join(","),
   },
   h1: {
     fontWeight: typography.weight.regular,
@@ -65,8 +65,8 @@ export const MuiTypography = {
   overline: {
     fontWeight: typography.weight.regular,
     ...typography.text.medium,
-    color: '#232323',
-    textTransform: 'none',
+    color: "#232323",
+    textTransform: "none",
   },
   colorTextSecondary: {
     color: `${colors.white} !important`,

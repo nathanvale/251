@@ -1,22 +1,22 @@
 /* eslint-disable react/display-name */
-import React from 'react';
-import {ComponentDocs} from '../../../../docs/src/types';
-import {Columns, Column, ColumnProps, Placeholder} from '..';
+import React from "react";
+import {ComponentDocs} from "../../../../docs/src/types";
+import {Columns, Column, ColumnProps, Placeholder} from "..";
 
 export const docs: ComponentDocs<ColumnProps> = {
-  category: 'Layout',
-  componentName: 'Column',
+  category: "Layout",
+  componentName: "Column",
   description:
-    'Column is a low-level atomic layout component. Its is used with its parent <Columns/> to provide 12 grid layout as well as flex Placeholder style layout.',
+    "Column is a low-level atomic layout component. Its is used with its parent <Columns/> to provide 12 grid layout as well as flex Placeholder style layout.",
   propDescriptions: {
-    width: 'Some interesting facts about the width prop to go here...',
+    width: "Some interesting facts about the width prop to go here...",
   },
   migrationGuide: false,
   examples: [
     {
-      label: 'Evenly Distributed Columns',
+      label: "Evenly Distributed Columns",
       description:
-        'When a Column is given no width they evenly take up their available space in relation to other columns.',
+        "When a Column is given no width they evenly take up their available space in relation to other columns.",
       Code: () => (
         <Columns space="small">
           <Column>
@@ -29,7 +29,7 @@ export const docs: ComponentDocs<ColumnProps> = {
       ),
     },
     {
-      label: 'Defining Column Widths',
+      label: "Defining Column Widths",
       description: `Bootstrap style 12 column layout can be achieved by passing in column widths.`,
       Code: () => (
         <Columns space="small">
@@ -52,7 +52,7 @@ export const docs: ComponentDocs<ColumnProps> = {
       ),
     },
     {
-      label: 'Mixing Column Widths With Content Width and Fluid Width',
+      label: "Mixing Column Widths With Content Width and Fluid Width",
       Code: () => (
         <Columns space="small">
           <Column>
@@ -71,7 +71,7 @@ export const docs: ComponentDocs<ColumnProps> = {
       ),
     },
     {
-      label: 'Stretching Space Between Columns',
+      label: "Stretching Space Between Columns",
       Code: () => (
         <Columns space="small">
           <Column width="content">

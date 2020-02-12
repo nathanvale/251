@@ -1,5 +1,5 @@
-import React from 'react';
-import {IconProps, IconSVG} from './_private/IconSvg';
+import React from "react";
+import {IconProps, IconSVG} from "./_private/IconSvg";
 
 export const IconCheck = ({color}: IconProps) => (
   <IconSVG color={color as string}>

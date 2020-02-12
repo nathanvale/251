@@ -1,10 +1,10 @@
-import * as React from 'react';
+import * as React from "react";
 import MuiFormControlLabel, {
   FormControlLabelProps,
-} from '@material-ui/core/FormControlLabel';
+} from "@material-ui/core/FormControlLabel";
 
 interface IFormControlLabel extends FormControlLabelProps {
-  'data-id'?: string;
+  "data-id"?: string;
 }
 
 export const FormControlLabel = (props: IFormControlLabel) => (

@@ -1,35 +1,35 @@
-import {colors} from '../colors';
+import {colors} from "../colors";
 
 export const MuiIcon = {
   root: {
     color: colors.lightOrange,
-    fontSize: '48px',
-    '&:active': {
+    fontSize: "48px",
+    "&:active": {
       color: colors.white,
     },
   },
   fontSizeSmall: {
-    fontSize: '24px',
+    fontSize: "24px",
   },
   fontSizeLarge: {
-    fontSize: '64px',
+    fontSize: "64px",
   },
   fontSizeInherit: {
-    fontSize: '88px',
+    fontSize: "88px",
   },
   colorPrimary: {
     color: colors.grey,
-    '&:active': {
+    "&:active": {
       background: colors.transparent,
       color: colors.grey,
     },
   },
   colorSecondary: {
     color: colors.redPink,
-    '&:hover': {
+    "&:hover": {
       background: colors.transparent,
     },
-    '&:active': {
+    "&:active": {
       color: colors.white,
       background: colors.redPink,
     },

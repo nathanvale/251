@@ -1,6 +1,6 @@
-import {SpaceVariants, BreakpointVariants} from '@origin-digital/ods-themes';
-import {ResponsiveValue} from 'styled-system';
-import {ResponsiveProp} from '../../Box/Box';
+import {SpaceVariants, BreakpointVariants} from "@origin-digital/ods-themes";
+import {ResponsiveValue} from "styled-system";
+import {ResponsiveProp} from "../../Box/Box";
 
 const spacingAliasToIndex: Record<SpaceVariants, number> = {
   none: 0,
@@ -21,7 +21,7 @@ const spacingAliasToIndex: Record<SpaceVariants, number> = {
 export const normaliseResponsiveProp = <T>(
   space?: ResponsiveProp<T>,
 ): ResponsiveValue<T> | undefined => {
-  if (typeof space === 'string') {
+  if (typeof space === "string") {
     return space;
   }
   if (space instanceof Array) {
@@ -54,7 +54,7 @@ export const mapSpaceAliasToIndex = (
     return space.map(alias =>
       alias ? spacingAliasToIndex[alias] * sign : null,
     );
-  } else if (typeof space === 'string') {
+  } else if (typeof space === "string") {
     return spacingAliasToIndex[space] * sign;
   } else if (space instanceof Object) {
     const obj: Partial<Record<BreakpointVariants, number>> = {};

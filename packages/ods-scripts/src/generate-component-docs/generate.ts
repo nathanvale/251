@@ -1,40 +1,40 @@
 /* eslint-disable import/no-default-export */
 /* eslint-disable @typescript-eslint/no-use-before-define */
 /* tslint:disable */
-import fs from 'fs';
-import path from 'path';
-import ts from 'typescript';
-import isEqual from 'lodash/isEqual';
-import {NormalisedInterface, NormalisedPropType} from '..';
+import fs from "fs";
+import path from "path";
+import ts from "typescript";
+import isEqual from "lodash/isEqual";
+import {NormalisedInterface, NormalisedPropType} from "..";
 
-const aliasWhitelist = ['ResponsiveProp'];
-const propBlacklist = ['key'];
+const aliasWhitelist = ["ResponsiveProp"];
+const propBlacklist = ["key"];
 
-const tsconfigPath = path.join(__dirname, '../../../../tsconfig.json');
-const componentsFile = path.join(__dirname, './components.ts');
+const tsconfigPath = path.join(__dirname, "../../../../tsconfig.json");
+const componentsFile = path.join(__dirname, "./components.ts");
 
 const stringAliases: Record<string, string> = {
   // with an explicit alias 'boolean' becomes a union of 'true' | 'false'
-  boolean: 'boolean',
-  CSSProperties: 'CSSProperties',
+  boolean: "boolean",
+  CSSProperties: "CSSProperties",
 };
 
 const reactNodeTypes = [
-  'string',
-  'number',
-  'false',
-  'true',
-  '{}',
-  'ReactElement<any, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<any, any, any>)>',
-  'ReactNodeArray',
-  'ReactPortal',
+  "string",
+  "number",
+  "false",
+  "true",
+  "{}",
+  "ReactElement<any, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<any, any, any>)>",
+  "ReactNodeArray",
+  "ReactPortal",
 ];
 
 // eslint-disable-next-line consistent-return
 export default () => {
   const basePath = path.dirname(tsconfigPath);
   const {config, error} = ts.readConfigFile(tsconfigPath, filename =>
-    fs.readFileSync(filename, 'utf8'),
+    fs.readFileSync(filename, "utf8"),
   );
 
   if (error) {
@@ -78,7 +78,7 @@ export default () => {
         }
 
         const propsParam = params[0];
-        if (propsParam.name === 'props' || params.length === 1) {
+        if (propsParam.name === "props" || params.length === 1) {
           return propsParam;
         }
       }
@@ -92,7 +92,7 @@ export default () => {
     propsObj: ts.Symbol,
   ): NormalisedInterface => {
     return {
-      type: 'interface',
+      type: "interface",
       props: Object.assign(
         {},
         ...propsType
@@ -148,7 +148,7 @@ export default () => {
               )
             : [],
           alias,
-          type: 'alias',
+          type: "alias",
         };
       }
     }
@@ -159,9 +159,9 @@ export default () => {
       );
 
       return isEqual(types, reactNodeTypes)
-        ? 'ReactNode'
+        ? "ReactNode"
         : {
-            type: 'union',
+            type: "union",
             types: type.types.map(unionItem =>
               normaliseType(unionItem, propsObj),
             ),
@@ -179,7 +179,7 @@ export default () => {
     const propsObj = getComponentPropsType(exp);
 
     if (!propsObj || !propsObj.valueDeclaration) {
-      return {type: 'interface', props: {}};
+      return {type: "interface", props: {}};
     }
 
     const propsType = checker.getTypeOfSymbolAtLocation(

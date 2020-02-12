@@ -1,9 +1,9 @@
-import {colors} from '../colors';
-import {typography} from '../typography';
+import {colors} from "../colors";
+import {typography} from "../typography";
 
 export const MuiFab = {
   root: {
-    textTransform: 'none',
+    textTransform: "none",
     background: colors.white,
     fontStyle: typography.fontStyle.regular,
     width: 40,
@@ -11,11 +11,11 @@ export const MuiFab = {
     ...typography.text.xxsmall,
     color: colors.grey,
     // boxShadow: "none",
-    borderRadius: '50%',
-    '&:hover': {
+    borderRadius: "50%",
+    "&:hover": {
       background: colors.grey4,
     },
-    '&$disabled': {
+    "&$disabled": {
       color: colors.lightGrey,
     },
     // '&:active': {
@@ -23,7 +23,7 @@ export const MuiFab = {
     // }
   },
   sizeSmall: {
-    padding: '12px 16px',
+    padding: "12px 16px",
     fontStyle: typography.fontStyle.medium,
     ...typography.text.xxsmall,
   },
@@ -33,21 +33,21 @@ export const MuiFab = {
   },
   label: {
     fontWeight: typography.weight.regular,
-    width: 'auto',
+    width: "auto",
     ...typography.text.small,
-    textAlign: 'center',
+    textAlign: "center",
     color: colors.black,
   },
   extended: {
     background: colors.lightGreen,
-    '&:hover': {
+    "&:hover": {
       background: colors.grey8,
     },
   },
   primary: {
     color: colors.grey,
     // boxShadow: "none",
-    '&:active': {
+    "&:active": {
       color: colors.grey,
     },
   },

@@ -17,11 +17,11 @@ import {
   TransitionVariants,
   Typography,
   Theme,
-} from '@origin-digital/ods-themes';
+} from "@origin-digital/ods-themes";
 
-import {} from 'styled-components/cssprop';
+import {} from "styled-components/cssprop";
 
-declare module 'styled-components' {
+declare module "styled-components" {
   // eslint-disable-next-line @typescript-eslint/interface-name-prefix
   export interface DefaultTheme extends Theme {}
 }

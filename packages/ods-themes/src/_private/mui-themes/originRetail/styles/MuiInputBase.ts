@@ -1,4 +1,4 @@
-import {colors} from '../colors';
+import {colors} from "../colors";
 
 export const MuiInputBase = {
   root: {
@@ -6,25 +6,25 @@ export const MuiInputBase = {
     fontSize: 16,
     color: colors.greyTextField,
     background: colors.grey8,
-    borderRadius: '4px 4px 0px 0px',
+    borderRadius: "4px 4px 0px 0px",
     borderColor: colors.grey48,
-    fontFamily: ['gordita', 'Arial', 'Sans-Serif'].join(','),
-    '&:hover': {
+    fontFamily: ["gordita", "Arial", "Sans-Serif"].join(","),
+    "&:hover": {
       borderColor: colors.grey80,
     },
-    '&:active': {
+    "&:active": {
       borderColor: colors.blue,
     },
-    '&$error': {
+    "&$error": {
       borderColor: colors.red,
     },
-    '&$disabled': {
+    "&$disabled": {
       borderColor: colors.grey16,
     },
-    '&:focus': {
+    "&:focus": {
       color: colors.greyTextField,
     },
-    '&$focused': {
+    "&$focused": {
       color: colors.greyTextField,
     },
   },
@@ -33,7 +33,7 @@ export const MuiInputBase = {
     fontWeight: 400,
     marginBottom: -14,
     marginTop: 6,
-    lineHeight: '1.25em',
+    lineHeight: "1.25em",
   },
   // focused: {},
   // formControl: {},

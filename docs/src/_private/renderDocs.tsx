@@ -1,7 +1,7 @@
-import React from 'react';
-import {Stack, StackProps} from '@origin-digital/ods-core';
-import {ComponentDocs} from '../types';
-import {Example, Page, Props} from '.';
+import React from "react";
+import {Stack, StackProps} from "@origin-digital/ods-core";
+import {ComponentDocs} from "../types";
+import {Example, Page, Props} from ".";
 
 export function renderDocs({
   componentName,

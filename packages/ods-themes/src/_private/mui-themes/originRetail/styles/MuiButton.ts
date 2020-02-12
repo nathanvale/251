@@ -1,19 +1,19 @@
-import {colors} from '../colors';
-import {typography} from '../typography';
+import {colors} from "../colors";
+import {typography} from "../typography";
 
 export const MuiButton = {
   root: {
     borderRadius: 0,
-    textTransform: 'none',
-    padding: '12px 24px',
+    textTransform: "none",
+    padding: "12px 24px",
     fontStyle: typography.fontStyle.medium,
     ...typography.text.xsmall,
-    '&$disabled': {
+    "&$disabled": {
       color: colors.lightGrey,
     },
   },
   sizeSmall: {
-    padding: '12px 16px',
+    padding: "12px 16px",
     fontStyle: typography.fontStyle.medium,
     ...typography.text.xsmall,
   },
@@ -21,7 +21,7 @@ export const MuiButton = {
     backgroundColor: colors.red,
     color: colors.white,
     borderRadius: 0,
-    '&:hover': {
+    "&:hover": {
       backgroundColor: colors.darkRed,
     },
   },
@@ -30,24 +30,24 @@ export const MuiButton = {
     color: colors.white,
     borderRadius: 0,
     border: `1px solid ${colors.grey}`,
-    '&:hover': {
+    "&:hover": {
       backgroundColor: colors.darkGrey,
       color: colors.white,
       border: `1px solid ${colors.darkGrey}`,
-      '& .MuiIcon-colorPrimary': {
+      "& .MuiIcon-colorPrimary": {
         color: colors.white,
       },
     },
   },
   label: {
-    textTransform: 'none',
+    textTransform: "none",
   },
   outlinedPrimary: {
     color: colors.red,
     backgroundColor: colors.white,
     borderRadius: 0,
     border: `1px solid ${colors.red}`,
-    '&:hover': {
+    "&:hover": {
       backgroundColor: colors.darkRed,
       color: colors.white,
       border: `1px solid ${colors.darkRed}`,
@@ -58,11 +58,11 @@ export const MuiButton = {
     backgroundColor: colors.white,
     borderRadius: 0,
     border: `1px solid ${colors.grey}`,
-    '&:hover': {
+    "&:hover": {
       backgroundColor: colors.grey,
       color: colors.white,
       border: `1px solid ${colors.grey}`,
-      '& .MuiIcon-root': {
+      "& .MuiIcon-root": {
         color: colors.white,
       },
     },
@@ -71,7 +71,7 @@ export const MuiButton = {
     color: colors.red,
     backgroundColor: colors.white,
     borderRadius: 0,
-    '&:hover': {
+    "&:hover": {
       backgroundColor: colors.darkRed,
       color: colors.white,
     },
@@ -80,7 +80,7 @@ export const MuiButton = {
     color: colors.grey,
     backgroundColor: colors.white,
     borderRadius: 0,
-    '&:hover': {
+    "&:hover": {
       backgroundColor: colors.grey16,
     },
   },

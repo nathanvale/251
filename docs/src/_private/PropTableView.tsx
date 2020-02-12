@@ -1,7 +1,7 @@
-import React from 'react';
-import {NormalisedPropType} from '@origin-digital/ods-scripts';
-import {Column, Text, Columns, Stack} from '@origin-digital/ods-core';
-import {PropType} from './PropType';
+import React from "react";
+import {NormalisedPropType} from "@origin-digital/ods-scripts";
+import {Column, Text, Columns, Stack} from "@origin-digital/ods-core";
+import {PropType} from "./PropType";
 
 export interface PropListViewProps {
   requiredProps: Array<{propName: string; type: NormalisedPropType}>;
@@ -29,7 +29,7 @@ const CommonColumns = ({
     <Column width="1/4">
       <Text>
         {propName}
-        {required && '*'}
+        {required && "*"}
       </Text>
     </Column>
     <Column>

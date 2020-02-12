@@ -1,94 +1,94 @@
 /* eslint-disable react/prop-types */
-import React, {AllHTMLAttributes} from 'react';
-import styled, {StyledComponentClass, DefaultTheme} from 'styled-components';
+import React, {AllHTMLAttributes} from "react";
+import styled, {StyledComponentClass, DefaultTheme} from "styled-components";
 
 import {
   TransitionVariants,
   TransformVariants,
-} from '@origin-digital/ods-themes';
+} from "@origin-digital/ods-themes";
 
-import * as CSS from 'csstype';
-import {Omit} from 'utility-types';
+import * as CSS from "csstype";
+import {Omit} from "utility-types";
 
 import {
   StyledSystemProps,
   BoxShadowVariant,
   StyledSystemBox,
-} from '../_private/components/StyledSystemBox/StyledSystemBox';
-import {normaliseResponsiveProp} from '../_private/helpers/spacing';
+} from "../_private/components/StyledSystemBox/StyledSystemBox";
+import {normaliseResponsiveProp} from "../_private/helpers/spacing";
 
 export type SpaceVariants =
-  | 'none'
-  | 'small'
-  | 'xxsmall'
-  | 'xsmall'
-  | 'medium'
-  | 'large'
-  | 'xlarge'
-  | 'xxlarge'
-  | 'xxxlarge';
+  | "none"
+  | "small"
+  | "xxsmall"
+  | "xsmall"
+  | "medium"
+  | "large"
+  | "xlarge"
+  | "xxlarge"
+  | "xxxlarge";
 
 export type ColorVariants =
-  | 'redPink'
-  | 'red'
-  | 'orange'
-  | 'lightOrange'
-  | 'lightBlue'
-  | 'grey'
-  | 'lightGrey'
-  | 'blue'
-  | 'green'
-  | 'lightGreen'
-  | 'purple'
-  | 'grey4'
-  | 'grey8'
-  | 'grey16'
-  | 'grey24'
-  | 'grey48'
-  | 'grey80'
-  | 'grey56'
-  | 'white'
-  | 'transparent';
+  | "redPink"
+  | "red"
+  | "orange"
+  | "lightOrange"
+  | "lightBlue"
+  | "grey"
+  | "lightGrey"
+  | "blue"
+  | "green"
+  | "lightGreen"
+  | "purple"
+  | "grey4"
+  | "grey8"
+  | "grey16"
+  | "grey24"
+  | "grey48"
+  | "grey80"
+  | "grey56"
+  | "white"
+  | "transparent";
 
 export type AlignItemsVariants =
-  | 'center'
-  | 'flex-start'
-  | 'flex-end'
-  | 'stretch';
+  | "center"
+  | "flex-start"
+  | "flex-end"
+  | "stretch";
 
 export type DisplayVariants =
-  | 'none'
-  | 'block'
-  | 'inline'
-  | 'flex'
-  | 'inline-block'
-  | 'inline-flex';
+  | "none"
+  | "block"
+  | "inline"
+  | "flex"
+  | "inline-block"
+  | "inline-flex";
 
 export type FlexDirectionVariants =
-  | 'row'
-  | 'row-reverse'
-  | 'column'
-  | 'column-reverse';
+  | "row"
+  | "row-reverse"
+  | "column"
+  | "column-reverse";
 
 export type JustifyContentVariants =
-  | 'center'
-  | 'flex-start'
-  | 'flex-end'
-  | 'space-between';
+  | "center"
+  | "flex-start"
+  | "flex-end"
+  | "space-between";
 
 export type ResponsiveProp<T> =
   | T
   | [T, T]
-  | Partial<Record<'xs' | 'sm' | 'md' | 'lg' | 'xl', T>>;
+  | Partial<Record<"xs" | "sm" | "md" | "lg" | "xl", T>>;
 
 export type ResponsiveSpace = ResponsiveProp<SpaceVariants>;
 export interface BoxProps
   extends Omit<
     AllHTMLAttributes<HTMLElement>,
-    | 'width'
-    | 'height'
-    | 'suppressContentEditableWarning'
-    | 'suppressHydrationWarning'
+    | "width"
+    | "height"
+    | "suppressContentEditableWarning"
+    | "suppressHydrationWarning"
   > {
   alignItems?: ResponsiveProp<AlignItemsVariants>;
   alignSelf?: ResponsiveProp<AlignItemsVariants>;
@@ -114,32 +114,32 @@ export interface BoxProps
   marginRight?: ResponsiveSpace;
   textAlign?: ResponsiveProp<CSS.TextAlignProperty>;
   boxShadow?: BoxShadowVariant;
-  height?: 'full';
+  height?: "full";
   pointerEvents?: CSS.PointerEventsProperty;
   showAnts?: boolean;
   transform?: TransformVariants;
   transition?: TransitionVariants;
-  width?: 'full';
+  width?: "full";
   cursor?: CSS.CursorProperty;
 }
 
-export const StyledCodeReset = styled(StyledSystemBox.withComponent('code'))``;
+export const StyledCodeReset = styled(StyledSystemBox.withComponent("code"))``;
 
-export const StyledPreReset = styled(StyledSystemBox.withComponent('pre'))`
+export const StyledPreReset = styled(StyledSystemBox.withComponent("pre"))`
   overflow-x: auto;
   word-wrap: break-word;
   overflow-y: hidden;
 `;
 
-export const StyledSpanReset = styled(StyledSystemBox.withComponent('span'))``;
+export const StyledSpanReset = styled(StyledSystemBox.withComponent("span"))``;
 
-export const StyledAReset = styled(StyledSystemBox.withComponent('a'))`
+export const StyledAReset = styled(StyledSystemBox.withComponent("a"))`
   text-decoration: none;
   color: inherit;
 `;
 
 export const StyledButtonReset = styled(
-  StyledSystemBox.withComponent('button'),
+  StyledSystemBox.withComponent("button"),
 )`
   background: none;
   text-decoration: none;
@@ -207,15 +207,15 @@ export const Box = ({
   }
 
   let Container: StyledComponentClass<StyledSystemProps, DefaultTheme>;
-  if (component === 'a') {
+  if (component === "a") {
     Container = StyledAReset;
-  } else if (component === 'code') {
+  } else if (component === "code") {
     Container = StyledCodeReset;
-  } else if (component === 'pre') {
+  } else if (component === "pre") {
     Container = StyledPreReset;
-  } else if (component === 'span') {
+  } else if (component === "span") {
     Container = StyledSpanReset;
-  } else if (component === 'button') {
+  } else if (component === "button") {
     Container = StyledButtonReset;
   } else {
     Container = StyledSystemBox;
@@ -261,4 +261,4 @@ export const Box = ({
   );
 };
 
-Box.displayName = 'Box';
+Box.displayName = "Box";

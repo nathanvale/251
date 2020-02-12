@@ -1,8 +1,8 @@
 export const typography = {
-  fontFamily: 'gordita, sans-serif',
+  fontFamily: "gordita, sans-serif",
   fontStyle: {
-    regular: 'Regular',
-    medium: 'Medium',
+    regular: "Regular",
+    medium: "Medium",
   },
   weight: {
     regular: 500,

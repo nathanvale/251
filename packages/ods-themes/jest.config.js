@@ -1,5 +1,5 @@
-const base = require('../../jest.settings.js');
-const pack = require('./package.json');
+const base = require("../../jest.settings.js");
+const pack = require("./package.json");
 
 module.exports = {
   ...base,

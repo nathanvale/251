@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import {ColorVariants} from '@origin-digital/ods-themes';
+import styled from "styled-components";
+import {ColorVariants} from "@origin-digital/ods-themes";
 
 export interface IconProps {
   color?: ColorVariants;
@@ -8,6 +8,6 @@ export interface IconProps {
 export const IconSVG = styled.svg.attrs({
   width: 24,
   height: 24,
-  viewBox: '0 0 24 24',
-  fill: 'currentColor',
+  viewBox: "0 0 24 24",
+  fill: "currentColor",
 })``;

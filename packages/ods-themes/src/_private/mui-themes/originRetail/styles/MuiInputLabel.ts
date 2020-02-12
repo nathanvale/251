@@ -1,5 +1,5 @@
-import {colors} from '../colors';
-import {typography} from '../typography';
+import {colors} from "../colors";
+import {typography} from "../typography";
 
 export const MuiInputLabel = {
   root: {
@@ -7,25 +7,25 @@ export const MuiInputLabel = {
     color: colors.greyTextField,
     fontWeight: typography.weight.regular,
     paddingLeft: 12,
-    '&$error': {
+    "&$error": {
       color: colors.red,
     },
-    '&$disabled': {
+    "&$disabled": {
       color: colors.greyTextDisabled,
     },
-    '&:focus': {
+    "&:focus": {
       color: colors.mediumBlue,
     },
-    '&$focused': {
+    "&$focused": {
       color: colors.mediumBlue,
     },
   },
   shrink: {
     marginTop: 8,
     fontSize: 12,
-    lineHeight: '14px',
-    transform: 'translate(0, 1.5px)',
-    '&$disabled': {
+    lineHeight: "14px",
+    transform: "translate(0, 1.5px)",
+    "&$disabled": {
       color: colors.grey48,
     },
   },

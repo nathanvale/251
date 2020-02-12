@@ -1,10 +1,10 @@
-import React from 'react';
-import {render} from '@origin-digital/ods-testing-library';
-import {Column} from './Column';
-import {Columns} from '../Columns/Columns';
-import {Placeholder} from '../Placeholder/Placeholder';
+import React from "react";
+import {render} from "@origin-digital/ods-testing-library";
+import {Column} from "./Column";
+import {Columns} from "../Columns/Columns";
+import {Placeholder} from "../Placeholder/Placeholder";
 
-test('it sets width to flex by default', () => {
+test("it sets width to flex by default", () => {
   const {container} = render(
     <Columns space="small">
       <Column>
@@ -38,7 +38,7 @@ test('it correctly allocates required width for "content"', () => {
   expect(container.firstChild).toMatchSnapshot();
 });
 
-test('it correctly sets width for proportions 1/3 and 2/3', () => {
+test("it correctly sets width for proportions 1/3 and 2/3", () => {
   const {container} = render(
     <Columns space="small">
       <Column width="1/3">
@@ -52,7 +52,7 @@ test('it correctly sets width for proportions 1/3 and 2/3', () => {
   expect(container.firstChild).toMatchSnapshot();
 });
 
-test('it correctly sets width for proportions 1/12, 7/12, 1/3', () => {
+test("it correctly sets width for proportions 1/12, 7/12, 1/3", () => {
   const {container} = render(
     <Columns space="small">
       <Column width="1/12">

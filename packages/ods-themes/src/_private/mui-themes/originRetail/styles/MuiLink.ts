@@ -1,16 +1,16 @@
-import {colors} from '../colors';
-import {typography} from '../typography';
+import {colors} from "../colors";
+import {typography} from "../typography";
 
 export const MuiLink = {
   root: {
     ...typography.text.xxsmall,
-    textDecoration: 'underline',
+    textDecoration: "underline",
   },
   underlineNone: {
     color: `${colors.grey} !important`,
-    '&:hover': {
+    "&:hover": {
       color: `${colors.red} !important`,
-      textDecoration: 'none',
+      textDecoration: "none",
     },
   },
   // underlineHover: {},

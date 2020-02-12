@@ -100,13 +100,13 @@ yarn add styled-components@3.4.5
 Here is a quick example to get you started, **it's all you need**:
 
 ```jsx
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 import {
   Stack,
   Placeholder,
   OriginThemeProviders,
-} from '@origin-digital/ods-core';
+} from "@origin-digital/ods-core";
 
 function App() {
   return (
@@ -120,7 +120,7 @@ function App() {
   );
 }
 
-ReactDOM.render(<App />, document.querySelector('#app'));
+ReactDOM.render(<App />, document.querySelector("#app"));
 ```
 
 > **Note:** For testing your app with ODS components please refer to the `ods-testing-library` https://bitbucket.origin.com.au/projects/OD/repos/origin-ui/browse/packages/ods-testing-library

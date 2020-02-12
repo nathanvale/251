@@ -1,31 +1,31 @@
-import React, {ReactElement, createContext, useMemo} from 'react';
-import {BreakpointVariants} from '@origin-digital/ods-themes';
+import React, {ReactElement, createContext, useMemo} from "react";
+import {BreakpointVariants} from "@origin-digital/ods-themes";
 
-import {ColumnProps} from '../Column/Column';
-import {BoxDebug} from '../_private/components/BoxDebug/BoxDebug';
-import {setBreakpoint} from '../_private/helpers/utils';
-import {AlignItemsVariants, ResponsiveSpace} from '../Box/Box';
-import {mapSpaceAliasToIndex} from '../_private/helpers/spacing';
+import {ColumnProps} from "../Column/Column";
+import {BoxDebug} from "../_private/components/BoxDebug/BoxDebug";
+import {setBreakpoint} from "../_private/helpers/utils";
+import {AlignItemsVariants, ResponsiveSpace} from "../Box/Box";
+import {mapSpaceAliasToIndex} from "../_private/helpers/spacing";
 
 interface ColumnsContextValue {
-  collapseBelow?: ColumnsProps['collapseBelow'];
-  space?: ColumnsProps['space'];
+  collapseBelow?: ColumnsProps["collapseBelow"];
+  space?: ColumnsProps["space"];
 }
 
-const defaultSpace = 'none';
+const defaultSpace = "none";
 
 export const ColumnsContext = createContext<ColumnsContextValue>({
   collapseBelow: undefined,
   space: defaultSpace,
 });
 
-export type AlignYType = 'top' | 'center' | 'bottom';
+export type AlignYType = "top" | "center" | "bottom";
 
 const mapVAlignToAlignItems = (alignY: AlignYType): AlignItemsVariants => {
   const map = {
-    top: 'flex-start',
-    center: 'center',
-    bottom: 'flex-end',
+    top: "flex-start",
+    center: "center",
+    bottom: "flex-end",
   } as {[k in AlignYType]: AlignItemsVariants};
   return map[alignY];
 };
@@ -35,15 +35,15 @@ export interface ColumnsProps {
   space?: ResponsiveSpace;
   collapseBelow?: BreakpointVariants;
   alignY?: AlignYType;
-  'data-id'?: string;
+  "data-id"?: string;
 }
 
 export const Columns = ({
   children,
   collapseBelow,
-  'data-id': dataId,
+  "data-id": dataId,
   space = defaultSpace,
-  alignY = 'top',
+  alignY = "top",
 }: ColumnsProps) => {
   // Prevent re-renders when context values haven't changed
   const columnsContextValue = useMemo(() => ({collapseBelow, space}), [
@@ -57,12 +57,12 @@ export const Columns = ({
       data-id={dataId}
       display="flex"
       flexDirection={
-        collapseBelow && setBreakpoint(collapseBelow, 'column', 'row')
+        collapseBelow && setBreakpoint(collapseBelow, "column", "row")
       }
       alignItems={mapVAlignToAlignItems(alignY)}
       marginLeft={
         (collapseBelow
-          ? setBreakpoint(collapseBelow, 'none', spaceIndex)
+          ? setBreakpoint(collapseBelow, "none", spaceIndex)
           : spaceIndex) as TS_FIXME
       }
     >
@@ -74,9 +74,9 @@ export const Columns = ({
 };
 
 Columns.defaultProps = {
-  'data-id': 'columns',
-  space: 'none',
-  alignY: 'top',
+  "data-id": "columns",
+  space: "none",
+  alignY: "top",
 };
 
-Columns.displayName = 'Columns';
+Columns.displayName = "Columns";

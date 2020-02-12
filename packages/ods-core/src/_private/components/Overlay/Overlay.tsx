@@ -1,20 +1,20 @@
-import React, {ReactNode} from 'react';
-import styled from 'styled-components';
-import {BoxProps, Box} from '../../../Box/Box';
+import React, {ReactNode} from "react";
+import styled from "styled-components";
+import {BoxProps, Box} from "../../../Box/Box";
 
 export interface OverlayProps {
   children?: ReactNode;
   visible?: boolean;
-  backgroundColor?: BoxProps['backgroundColor'];
-  boxShadow?: BoxProps['boxShadow'];
-  transform?: BoxProps['transform'];
-  transition?: BoxProps['transition'];
+  backgroundColor?: BoxProps["backgroundColor"];
+  boxShadow?: BoxProps["boxShadow"];
+  transform?: BoxProps["transform"];
+  transition?: BoxProps["transition"];
   showAnts?: boolean;
   className?: string;
 }
 
 const StyledBox = styled(Box)<OverlayProps>`
-  opacity: ${p => (p.visible ? '1' : '0')};
+  opacity: ${p => (p.visible ? "1" : "0")};
   top: 0;
   right: 0;
   bottom: 0;
