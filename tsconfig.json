@@ -1,12 +1,5 @@
 {
-  "exclude": [
-    "node_modules",
-    "dist",
-    "lib",
-    "__tests__",
-    "**/*.test*",
-    "**/*.spec*"
-  ],
+  "exclude": ["node_modules", "dist", "lib"],
   "files": [],
   "compilerOptions": {
     "skipLibCheck": true,
@@ -44,6 +37,7 @@
     {"path": "packages/ods-core/tsconfig.json"},
     {"path": "packages/ods-devtools/tsconfig.json"},
     {"path": "packages/ods-icons/tsconfig.json"},
+    {"path": "packages/ods-testing-library/tsconfig.json"},
     {"path": "packages/ods-themes/tsconfig.json"},
     {"path": "packages/ods-lab/tsconfig.json"},
     {"path": "docs/tsconfig.json"}

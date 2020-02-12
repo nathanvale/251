@@ -1062,6 +1062,7 @@ exports[`ContentSection 1`] = `
 
 exports[`Divider 1`] = `
 {
+  data-id?: string
 }
 `;
 

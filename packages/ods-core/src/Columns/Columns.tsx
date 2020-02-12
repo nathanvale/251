@@ -43,7 +43,7 @@ export const Columns = ({
   collapseBelow,
   'data-id': dataId,
   space = defaultSpace,
-  alignY = 'center',
+  alignY = 'top',
 }: ColumnsProps) => {
   // Prevent re-renders when context values haven't changed
   const columnsContextValue = useMemo(() => ({collapseBelow, space}), [
@@ -76,7 +76,7 @@ export const Columns = ({
 Columns.defaultProps = {
   'data-id': 'columns',
   space: 'none',
-  alignY: 'center',
+  alignY: 'top',
 };
 
 Columns.displayName = 'Columns';

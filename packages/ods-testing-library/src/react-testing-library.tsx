@@ -7,8 +7,9 @@
  * https://testing-library.com/docs/native-testing-library/setup#custom-render
  */
 import React, {ReactNode} from 'react';
+import '@testing-library/jest-dom/extend-expect';
 import {render} from '@testing-library/react';
-import {OriginThemeProvider} from '@origin-digital/ods-core';
+import {OriginThemeProvider} from '@origin-digital/ods-themes';
 
 const AllTheProviders = ({children}: {children: ReactNode}) => {
   return <OriginThemeProvider>{children}</OriginThemeProvider>;
