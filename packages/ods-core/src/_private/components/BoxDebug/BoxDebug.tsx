@@ -1,9 +1,7 @@
 import React from "react";
 import {useDebugState} from "@origin-digital/ods-devtools";
-
-import {Box, BoxProps} from "../../../Box/Box";
-
 import {Overlay} from "../Overlay/Overlay";
+import {Box, BoxProps} from "../../../Box/Box";
 
 export interface BoxDebugProps extends BoxProps {}
 

@@ -3,32 +3,11 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.4.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.4.1...@origin-digital/ods-lab@0.4.2) (2020-02-12)
-
-**Note:** Version bump only for package @origin-digital/ods-lab
-
-
-
-
-
-## [0.4.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.4.0...@origin-digital/ods-lab@0.4.1) (2020-02-12)
-
-**Note:** Version bump only for package @origin-digital/ods-lab
-
-
-
-
-
 # [0.4.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.3.4...@origin-digital/ods-lab@0.4.0) (2020-02-12)
-
 
 ### Features
 
-* **tests, columns:** alignY default changed to top ([c23c964](https://bitbucket.orgn.io/od/origin-ui/commits/c23c964))
-
-
-
-
+- **tests, columns:** alignY default changed to top ([c23c964](https://bitbucket.orgn.io/od/origin-ui/commits/c23c964))
 
 ## [0.3.4](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.3.3...@origin-digital/ods-lab@0.3.4) (2020-02-10)
 

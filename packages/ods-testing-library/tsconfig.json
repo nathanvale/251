@@ -8,7 +8,7 @@
     "src",
     "src/**/*.json",
     "../../globals.d.ts",
-    "../ods-types",
+    "../../@types",
     "jest-setup.ts"
   ],
   "references": [{"path": "../ods-themes/tsconfig.json"}]

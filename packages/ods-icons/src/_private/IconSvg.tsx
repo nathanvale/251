@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {ColorVariants} from "@origin-digital/ods-themes";
+import {ColorVariants} from "@origin-digital/ods-types";
 
 export interface IconProps {
   color?: ColorVariants;
