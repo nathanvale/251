@@ -4,7 +4,7 @@ import MUIThemeProvider from "@material-ui/styles/ThemeProvider";
 
 import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 
-import {Theme} from "@origin-digital/ods-types";
+import {Theme} from "../types";
 import {originRetailTheme} from "../themes";
 import {originRetailMUITheme} from "../_private/mui-themes/originRetail";
 

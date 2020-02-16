@@ -22,7 +22,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "baseUrl": ".",
-    "typeRoots": ["./node_modules/@types", "./@types"],
+    "typeRoots": ["./node_modules/@types", "./packages/ods-types"],
     "paths": {
       "@origin-digital/*": ["packages/*/src"]
     },
@@ -37,11 +37,9 @@
     {"path": "packages/ods-core/tsconfig.json"},
     {"path": "packages/ods-devtools/tsconfig.json"},
     {"path": "packages/ods-icons/tsconfig.json"},
-    {"path": "packages/ods-helpers/tsconfig.json"},
     {"path": "packages/ods-testing-library/tsconfig.json"},
     {"path": "packages/ods-themes/tsconfig.json"},
     {"path": "packages/ods-lab/tsconfig.json"},
-    {"path": "packages/ods-types/tsconfig.json"},
     {"path": "docs/tsconfig.json"}
   ]
 }

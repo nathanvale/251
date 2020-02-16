@@ -7,7 +7,7 @@
 /* eslint-disable react/prop-types */
 import styled from "styled-components";
 import React from "react";
-import {media} from "@origin-digital/ods-helpers";
+import {media} from "../_private/helpers/media";
 import {BoxDebug} from "../_private/components/BoxDebug/BoxDebug";
 
 type FluidityVariant = "off" | "max-width-at-xl" | "full-width";

@@ -1,25 +1,85 @@
 /* eslint-disable react/prop-types */
 import React, {AllHTMLAttributes} from "react";
-import styled, {StyledComponentClass} from "styled-components";
+import styled, {StyledComponentClass, DefaultTheme} from "styled-components";
+
 import {
   TransitionVariants,
   TransformVariants,
-  ColorVariants,
-  ResponsiveProp,
-  AlignItemsVariants,
-  FlexDirectionVariants,
-  JustifyContentVariants,
-  DisplayVariants,
-  SpaceVariants,
-} from "@origin-digital/ods-types";
+} from "@origin-digital/ods-themes";
+
 import * as CSS from "csstype";
 import {Omit} from "utility-types";
-import {normaliseResponsiveProp} from "@origin-digital/ods-helpers";
+
 import {
   StyledSystemProps,
   BoxShadowVariant,
   StyledSystemBox,
 } from "../_private/components/StyledSystemBox/StyledSystemBox";
+import {normaliseResponsiveProp} from "../_private/helpers/spacing";
+
+export type SpaceVariants =
+  | "none"
+  | "small"
+  | "xxsmall"
+  | "xsmall"
+  | "medium"
+  | "large"
+  | "xlarge"
+  | "xxlarge"
+  | "xxxlarge";
+
+export type ColorVariants =
+  | "redPink"
+  | "red"
+  | "orange"
+  | "lightOrange"
+  | "lightBlue"
+  | "grey"
+  | "lightGrey"
+  | "blue"
+  | "green"
+  | "lightGreen"
+  | "purple"
+  | "grey4"
+  | "grey8"
+  | "grey16"
+  | "grey24"
+  | "grey48"
+  | "grey80"
+  | "grey56"
+  | "white"
+  | "transparent";
+
+export type AlignItemsVariants =
+  | "center"
+  | "flex-start"
+  | "flex-end"
+  | "stretch";
+
+export type DisplayVariants =
+  | "none"
+  | "block"
+  | "inline"
+  | "flex"
+  | "inline-block"
+  | "inline-flex";
+
+export type FlexDirectionVariants =
+  | "row"
+  | "row-reverse"
+  | "column"
+  | "column-reverse";
+
+export type JustifyContentVariants =
+  | "center"
+  | "flex-start"
+  | "flex-end"
+  | "space-between";
+
+export type ResponsiveProp<T> =
+  | T
+  | [T, T]
+  | Partial<Record<"xs" | "sm" | "md" | "lg" | "xl", T>>;
 
 export type ResponsiveSpace = ResponsiveProp<SpaceVariants>;
 export interface BoxProps
@@ -61,7 +121,6 @@ export interface BoxProps
   transition?: TransitionVariants;
   width?: "full";
   cursor?: CSS.CursorProperty;
-  overflow?: "auto" | "hidden" | "visible" | "scroll";
 }
 
 export const StyledCodeReset = styled(StyledSystemBox.withComponent("code"))``;
@@ -147,7 +206,7 @@ export const Box = ({
     mB = marginY;
   }
 
-  let Container: StyledComponentClass<StyledSystemProps, {}>;
+  let Container: StyledComponentClass<StyledSystemProps, DefaultTheme>;
   if (component === "a") {
     Container = StyledAReset;
   } else if (component === "code") {

@@ -72,3 +72,12 @@ test('It can stack', () => {
   expect(container.firstChild).toMatchSnapshot();
 });
 ```
+
+Another feature this package provides is to provide all the extentions to
+`expect` that the `"@testing-library/jest-dom/extend-expect"` provides.
+For example, you could easily check if a DOM element has an attribute with specific
+props:
+
+```javascript
+expect(elem).toHaveAttribute("data-id", "CreditCardInput");
+```

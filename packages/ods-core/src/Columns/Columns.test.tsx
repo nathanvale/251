@@ -1,8 +1,8 @@
 import React from "react";
 import {queryAllByAttribute, render} from "@origin-digital/ods-testing-library";
+import {Columns} from "./Columns";
 import {Column} from "../Column/Column";
 import {Placeholder} from "../Placeholder/Placeholder";
-import {Columns} from "./Columns";
 
 test("it spaces column comps with small space", () => {
   const {container} = render(

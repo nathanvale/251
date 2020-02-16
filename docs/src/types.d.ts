@@ -1,14 +1,4 @@
-import {ReactNode, ComponentType} from "react";
-
-export interface Page {
-  title: string;
-  Component: ComponentType;
-}
-
-export interface AppConfig {
-  playroomUrl: string;
-  sourceUrlPrefix: string;
-}
+import {ReactNode} from "react";
 
 export interface ComponentDocs<T = {}> {
   componentName: string;
