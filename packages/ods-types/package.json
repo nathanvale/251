@@ -2,8 +2,12 @@
   "private": true,
   "name": "@origin-digital/ods-types",
   "description": "Custom type declarations",
-  "version": "0.2.5",
+  "version": "0.2.3",
+  "files": [
+    "dist"
+  ],
+  "typings": "dist/typings/index.d.ts",
   "dependencies": {
-    "@origin-digital/ods-themes": "^0.4.1"
+    "@origin-digital/ods-themes": "^0.4.0"
   }
 }

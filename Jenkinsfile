@@ -65,38 +65,34 @@ pipeline {
         stage("Docs Build") {
             steps {
                 script {
-                    if (env.BRANCH_NAME == 'origin/master' || env.BRANCH_NAME == 'master') {
-                        def appBranch = env.BRANCH_NAME
-                        sh "make docs"
-                        archiveArtifacts "origin-ui-docs.tar.gz"
-                    }
+                    def appBranch = env.BRANCH_NAME
+                    sh "make docs"
+                    archiveArtifacts "origin-ui-docs.tar.gz"
                 }
             }
         }
         stage("Docs Publish and Deploy") {
             steps {
                 script {
-                    if (env.BRANCH_NAME == 'origin/master' || env.BRANCH_NAME == 'master') {
-                        def appVersion = getAppVersion(env.BRANCH_NAME)
-                        echo "env.BRANCH_NAME ${env.BRANCH_NAME}"
-                        echo "Starting publish of ${app_id} to ${env_id} sub-folder ${appVersion}"
-                        build job: "$project_id-awsmanage-s3site-publish",
-                        parameters: [
-                                string(name: "app_id", value: app_id),
-                                string(name: "app_version", value: appVersion),
-                                string(name: 'artifact_build_job', value: env.JOB_NAME),
-                                string(name: "artifact_build_num", value: env.BUILD_NUMBER),
-                                string(name: "artifact_name", value: "origin-ui-docs.tar.gz")
-                                ]
-                        echo "Starting deployment of ${app_id} to ${env_id} sub-folder ${appVersion}"
-                        build job: "$project_id-awsmanage-s3site-deploy",
-                        parameters: [
-                            string(name: 'aws_account_id', value: aws_account_id),
-                            string(name: 'app_id', value: app_id),
-                            string(name: 'app_version', value: appVersion),
-                            string(name: 'env_id', value: env_id)
-                        ]
-                    }    
+                    def appVersion = getAppVersion(env.BRANCH_NAME)
+                    echo "env.BRANCH_NAME ${env.BRANCH_NAME}"
+                    echo "Starting publish of ${app_id} to ${env_id} sub-folder ${appVersion}"
+                    build job: "$project_id-awsmanage-s3site-publish",
+                    parameters: [
+                            string(name: "app_id", value: app_id),
+                            string(name: "app_version", value: appVersion),
+                            string(name: 'artifact_build_job', value: env.JOB_NAME),
+                            string(name: "artifact_build_num", value: env.BUILD_NUMBER),
+                            string(name: "artifact_name", value: "origin-ui-docs.tar.gz")
+                            ]
+                    echo "Starting deployment of ${app_id} to ${env_id} sub-folder ${appVersion}"
+                    build job: "$project_id-awsmanage-s3site-deploy",
+                    parameters: [
+                        string(name: 'aws_account_id', value: aws_account_id),
+                        string(name: 'app_id', value: app_id),
+                        string(name: 'app_version', value: appVersion),
+                        string(name: 'env_id', value: env_id)
+                    ]
                 }
             }
         }
