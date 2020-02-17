@@ -1,14 +1,11 @@
 import React, {ReactElement, createContext, useMemo} from "react";
-import {
-  BreakpointVariants,
-  AlignItemsVariants,
-} from "@origin-digital/ods-types";
+import {BreakpointVariants} from "@origin-digital/ods-themes";
 
 import {ColumnProps} from "../Column/Column";
 import {BoxDebug} from "../_private/components/BoxDebug/BoxDebug";
-import {setBreakpoint} from "../../../ods-helpers/src/utils";
-import {ResponsiveSpace} from "../Box/Box";
-import {mapSpaceAliasToIndex} from "../../../ods-helpers/src/spacing";
+import {setBreakpoint} from "../_private/helpers/utils";
+import {AlignItemsVariants, ResponsiveSpace} from "../Box/Box";
+import {mapSpaceAliasToIndex} from "../_private/helpers/spacing";
 
 interface ColumnsContextValue {
   collapseBelow?: ColumnsProps["collapseBelow"];

@@ -3,9 +3,9 @@ import React, {ReactNode, useContext} from "react";
 import styled, {css} from "styled-components";
 import {ColumnsContext} from "../Columns/Columns";
 import {Box} from "../Box/Box";
-import {setBreakpoint} from "../../../ods-helpers/src/utils";
+import {setBreakpoint} from "../_private/helpers/utils";
 import {BoxDebug} from "../_private/components/BoxDebug/BoxDebug";
-import {mapSpaceAliasToIndex} from "../../../ods-helpers/src/spacing";
+import {mapSpaceAliasToIndex} from "../_private/helpers/spacing";
 
 export interface ColumnProps {
   children: ReactNode;

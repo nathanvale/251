@@ -14,12 +14,16 @@ export {Columns} from "./Columns/Columns";
 export type ColumnsProps = import("./Columns/Columns").ColumnsProps;
 export {Divider} from "./Divider/Divider";
 export type DividerProps = import("./Divider/Divider").DividerProps;
+export {Link} from "./Link/Link";
+export type LinkProps = import("./Link/Link").LinkProps;
 export {Placeholder} from "./Placeholder/Placeholder";
 export type PlaceholderProps = import("./Placeholder/Placeholder").PlaceholderProps;
 export {Section} from "./Section/Section";
 export type SectionProps = import("./Section/Section").SectionProps;
 export {Stack} from "./Stack/Stack";
 export type StackProps = import("./Stack/Stack").StackProps;
+export {Text} from "./Text/Text";
+export type TextProps = import("./Text/Text").TextProps;
 
 // Themes
 export {OriginThemeProvider} from "@origin-digital/ods-themes";

@@ -50,7 +50,7 @@ exports[`It adds dividers 1`] = `
   justify-content: center;
 }
 
-.c7 {
+.c9 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -77,7 +77,7 @@ exports[`It adds dividers 1`] = `
   justify-content: center;
 }
 
-.c8 {
+.c10 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -114,7 +114,7 @@ exports[`It adds dividers 1`] = `
   vertical-align: baseline;
 }
 
-.c3 {
+.c5 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -129,7 +129,7 @@ exports[`It adds dividers 1`] = `
   align-self: stretch;
 }
 
-.c4 {
+.c6 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -140,7 +140,7 @@ exports[`It adds dividers 1`] = `
   position: relative;
 }
 
-.c6 {
+.c8 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -153,8 +153,38 @@ exports[`It adds dividers 1`] = `
   box-shadow: inset 0 0 0 1px #e3e3e3;
 }
 
-.c5 {
+.c4 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c7 {
   height: 1px;
+}
+
+.c3 {
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-transform: translateY(0.36em);
+  -ms-transform: translateY(0.36em);
+  transform: translateY(0.36em);
+  padding-top: 1px;
+  font-family: gordita,sans-serif;
+  font-weight: 500;
+  color: #232323;
+}
+
+.c3:before {
+  content: "";
+  margin-top: -13px;
+  display: block;
+  height: 0;
 }
 
 <div
@@ -172,19 +202,22 @@ exports[`It adds dividers 1`] = `
       display="flex"
     >
       <span
-        style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
+        class="c3 -span c4"
+        color="grey56"
+        data-id="text"
+        display="block"
       />
     </div>
   </div>
   <div
-    class="c3"
+    class="c5"
   >
     <div
-      class="c4"
+      class="c6"
       data-id="divider"
     >
       <div
-        class="c5 c6"
+        class="c7 c8"
         width="full"
       />
     </div>
@@ -193,24 +226,27 @@ exports[`It adds dividers 1`] = `
     class="c1"
   >
     <div
-      class="c7"
+      class="c9"
       data-id="placeholder"
       display="flex"
     >
       <span
-        style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
+        class="c3 -span c4"
+        color="grey56"
+        data-id="text"
+        display="block"
       />
     </div>
   </div>
   <div
-    class="c3"
+    class="c5"
   >
     <div
-      class="c4"
+      class="c6"
       data-id="divider"
     >
       <div
-        class="c5 c6"
+        class="c7 c8"
         width="full"
       />
     </div>
@@ -219,12 +255,15 @@ exports[`It adds dividers 1`] = `
     class="c1"
   >
     <div
-      class="c8"
+      class="c10"
       data-id="placeholder"
       display="flex"
     >
       <span
-        style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
+        class="c3 -span c4"
+        color="grey56"
+        data-id="text"
+        display="block"
       />
     </div>
   </div>
@@ -292,7 +331,7 @@ exports[`It can stack 1`] = `
   justify-content: center;
 }
 
-.c4 {
+.c6 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -319,7 +358,7 @@ exports[`It can stack 1`] = `
   justify-content: center;
 }
 
-.c5 {
+.c7 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -346,8 +385,38 @@ exports[`It can stack 1`] = `
   justify-content: center;
 }
 
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
 .c1:last-child {
   padding-bottom: 0;
+}
+
+.c4 {
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-transform: translateY(0.36em);
+  -ms-transform: translateY(0.36em);
+  transform: translateY(0.36em);
+  padding-top: 1px;
+  font-family: gordita,sans-serif;
+  font-weight: 500;
+  color: #232323;
+}
+
+.c4:before {
+  content: "";
+  margin-top: -13px;
+  display: block;
+  height: 0;
 }
 
 <div
@@ -365,7 +434,10 @@ exports[`It can stack 1`] = `
       display="flex"
     >
       <span
-        style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
+        class="c4 -span c5"
+        color="grey56"
+        data-id="text"
+        display="block"
       />
     </div>
   </div>
@@ -373,12 +445,15 @@ exports[`It can stack 1`] = `
     class="c1 c2"
   >
     <div
-      class="c4"
+      class="c6"
       data-id="placeholder"
       display="flex"
     >
       <span
-        style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
+        class="c4 -span c5"
+        color="grey56"
+        data-id="text"
+        display="block"
       />
     </div>
   </div>
@@ -386,12 +461,15 @@ exports[`It can stack 1`] = `
     class="c1 c2"
   >
     <div
-      class="c5"
+      class="c7"
       data-id="placeholder"
       display="flex"
     >
       <span
-        style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
+        class="c4 -span c5"
+        color="grey56"
+        data-id="text"
+        display="block"
       />
     </div>
   </div>

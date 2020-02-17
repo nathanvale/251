@@ -16,8 +16,8 @@ export const docs: ComponentDocs<SectionProps> = {
       label: "Background color",
       description: `A background color can be set and by default <Section/> has a background color of transparent.`,
       Code: () => (
-        <Section>
-          <Placeholder backgroundColor="lightOrange">Content</Placeholder>
+        <Section backgroundColor="white">
+          <Placeholder backgroundColor="white">Content</Placeholder>
         </Section>
       ),
     },

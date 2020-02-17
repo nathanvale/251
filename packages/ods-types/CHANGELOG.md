@@ -3,16 +3,9 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [0.3.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.2.5...@origin-digital/ods-types@0.3.0) (2020-02-16)
+## [0.2.5](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.2.4...@origin-digital/ods-types@0.2.5) (2020-02-12)
 
-
-### Features
-
-* dynamically generate docs platform ([20659c9](https://bitbucket.orgn.io/od/origin-ui/commits/20659c9))
-
-
-
-
+**Note:** Version bump only for package @origin-digital/ods-types
 
 ## [0.2.4](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.2.3...@origin-digital/ods-types@0.2.4) (2020-02-12)
 

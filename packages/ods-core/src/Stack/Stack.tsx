@@ -1,7 +1,6 @@
 import React, {ReactNode, Children} from "react";
 import styled from "styled-components";
-import {AlignItemsVariants} from "@origin-digital/ods-types";
-import {Box, ResponsiveSpace} from "../Box/Box";
+import {AlignItemsVariants, Box, ResponsiveSpace} from "../Box/Box";
 import {Divider} from "../Divider/Divider";
 
 export type AlignXType = "left" | "center" | "right" | "stretch";
