@@ -1,7 +1,7 @@
 import React from "react";
 import {render, queryAllByAttribute} from "@origin-digital/ods-testing-library";
-import {Stack} from "./Stack";
 import {Placeholder} from "../Placeholder/Placeholder";
+import {Stack} from "./Stack";
 
 test("It can stack", () => {
   const {container} = render(
@@ -55,7 +55,7 @@ test("It does not add dividers if there is only 1 child", () => {
       <Placeholder backgroundColor="blue" />
     </Stack>,
   );
-  expect(container.children.length).toEqual(1);
+  expect(container.children).toHaveLength(1);
 });
 
 test("It stretches children by default", () => {
@@ -115,6 +115,6 @@ test("It adds data-id", () => {
   );
 
   expect(
-    queryAllByAttribute("data-id", dom.container, "MyCustomStack").length,
-  ).toEqual(1);
+    queryAllByAttribute("data-id", dom.container, "MyCustomStack"),
+  ).toHaveLength(1);
 });

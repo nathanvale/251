@@ -8,7 +8,7 @@ import {
   Transition,
   Shadow,
   Theme,
-} from "../types";
+} from "@origin-digital/ods-types";
 
 const gridGutterWidth = 16;
 

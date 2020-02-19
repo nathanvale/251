@@ -1,9 +1,7 @@
 import React, {ReactNode} from "react";
 import styled from "styled-components";
-import {ColorVariants} from "@origin-digital/ods-themes";
 import {height, width} from "styled-system";
 import {Box, BoxProps} from "../Box/Box";
-import {Text} from "../Text/Text";
 
 const StyledBox = styled(Box)`
   ${height}
@@ -14,7 +12,6 @@ export interface PlaceholderProps {
   children?: ReactNode;
   "data-id"?: string;
   backgroundColor?: BoxProps["backgroundColor"];
-  color?: ColorVariants;
   inline?: boolean;
   height?: string;
   width?: string;
@@ -23,7 +20,6 @@ export interface PlaceholderProps {
 export const Placeholder = ({
   children,
   backgroundColor,
-  color,
   "data-id": dataId,
   inline,
   height,
@@ -41,9 +37,16 @@ export const Placeholder = ({
       height={height as BoxProps["height"]}
       width={width as BoxProps["height"]}
     >
-      <Text size="xsmall" color={color}>
+      <span
+        style={{
+          fontSize: "16px",
+          lineHeight: "24px",
+          fontWeight: 500,
+          color: "rgb(35, 35, 35)",
+        }}
+      >
         {children}
-      </Text>
+      </span>
     </StyledBox>
   );
 };

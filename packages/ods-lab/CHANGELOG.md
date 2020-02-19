@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @origin-digital/ods-lab
 
-
-
-
-
 ## [0.4.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.4.1...@origin-digital/ods-lab@0.4.2) (2020-02-12)
 
 **Note:** Version bump only for package @origin-digital/ods-lab

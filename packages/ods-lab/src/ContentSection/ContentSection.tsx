@@ -1,5 +1,5 @@
 import React, {ReactNode} from "react";
-import {Color} from "@origin-digital/ods-themes";
+import {Color} from "@origin-digital/ods-types";
 import {Box, Section} from "@origin-digital/ods-core";
 
 export interface ContentSectionProps {

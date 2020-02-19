@@ -4,9 +4,18 @@
  * issue to explain our work around.
  * https://github.com/microsoft/TypeScript/issues/28481#issuecomment-552938424
  */
+
+// PLEASE EXPORT LAB UI COMPONENTS ONLY
+
 export {CardStackSection} from "./CardStackSection/CardStackSection";
 export type CardStackSectionProps = import("./CardStackSection/CardStackSection").CardStackSectionProps;
 export {Checkbox} from "./Checkbox/Checkbox";
 export type CheckboxProps = import("./Checkbox/Checkbox").CheckboxProps;
 export {ContentSection} from "./ContentSection/ContentSection";
 export type ContentSectionProps = import("../../ods-lab/src/ContentSection/ContentSection").ContentSectionProps;
+export {Hidden} from "./Hidden/Hidden";
+export type HiddenProps = import("../../ods-lab/src/Hidden/Hidden").HiddenProps;
+export {Link} from "./Link/Link";
+export type LinkProps = import("./Link/Link").LinkProps;
+export {Text} from "./Text/Text";
+export type TextProps = import("./Text/Text").TextProps;

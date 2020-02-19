@@ -4,6 +4,9 @@
     "outDir": "./dist/typings",
     "rootDir": "./src"
   },
-  "include": ["src", "src/**/*.json", "../../globals.d.ts", "../ods-types"],
-  "references": [{"path": "../ods-core/tsconfig.json"}]
+  "include": ["src", "src/**/*.json", "../../globals.d.ts", "../../@types"],
+  "references": [
+    {"path": "../ods-core/tsconfig.json"},
+    {"path": "../ods-helpers/tsconfig.json"}
+  ]
 }

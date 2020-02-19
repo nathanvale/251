@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @origin-digital/ods-icons
 
-
-
-
-
 ## [0.4.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.4.0...@origin-digital/ods-icons@0.4.1) (2020-02-12)
 
 **Note:** Version bump only for package @origin-digital/ods-icons

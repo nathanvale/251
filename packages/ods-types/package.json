@@ -1,9 +1,15 @@
 {
-  "private": true,
   "name": "@origin-digital/ods-types",
   "description": "Custom type declarations",
+  "license": "UNLICENSED",
+  "author": "Nathan Vale <nathan.vale@origin.com.au>",
   "version": "0.2.6",
-  "dependencies": {
-    "@origin-digital/ods-themes": "^0.4.2"
-  }
+  "files": [
+    "dist"
+  ],
+  "typings": "dist/typings/index.d.ts",
+  "publishConfig": {
+    "registry": "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-internal/"
+  },
+  "sideEffects": false
 }
