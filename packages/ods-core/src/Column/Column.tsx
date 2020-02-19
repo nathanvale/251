@@ -1,11 +1,10 @@
 /* eslint-disable no-eval */
 import React, {ReactNode, useContext} from "react";
 import styled, {css} from "styled-components";
+import {mapSpaceAliasToIndex, setBreakpoint} from "@origin-digital/ods-helpers";
 import {ColumnsContext} from "../Columns/Columns";
 import {Box} from "../Box/Box";
-import {setBreakpoint} from "../_private/helpers/utils";
 import {BoxDebug} from "../_private/components/BoxDebug/BoxDebug";
-import {mapSpaceAliasToIndex} from "../_private/helpers/spacing";
 
 export interface ColumnProps {
   children: ReactNode;
@@ -49,7 +48,7 @@ export const Column = ({
   "data-id": dataId,
 }: ColumnProps) => {
   const {collapseBelow, space} = useContext(ColumnsContext);
-  const spaceIndex = space && mapSpaceAliasToIndex(space);
+  const spaceIndex = space && mapSpaceAliasToIndex({space});
   return (
     <OuterStyledBox
       data-id={dataId}
@@ -60,12 +59,20 @@ export const Column = ({
         height="full"
         paddingLeft={
           (collapseBelow
-            ? setBreakpoint(collapseBelow, "none", spaceIndex)
+            ? setBreakpoint({
+                breakpoint: collapseBelow,
+                value1: "none",
+                value2: spaceIndex,
+              })
             : spaceIndex) as TS_FIXME
         }
         paddingTop={
           (collapseBelow
-            ? setBreakpoint(collapseBelow, spaceIndex, "none")
+            ? setBreakpoint({
+                breakpoint: collapseBelow,
+                value1: spaceIndex,
+                value2: "none",
+              })
             : "none") as TS_FIXME
         }
       >

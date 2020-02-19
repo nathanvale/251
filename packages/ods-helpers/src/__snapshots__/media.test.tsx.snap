@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It should render with a lg media query 1`] = `
+@media (min-width:992px) {
+  .c0 {
+    color: red;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`It should render with a md media query 1`] = `
+@media (min-width:768px) {
+  .c0 {
+    color: red;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`It should render with a sm media query 1`] = `
+@media (min-width:576px) {
+  .c0 {
+    color: red;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`It should render with a xl media query 1`] = `
+@media (min-width:1200px) {
+  .c0 {
+    color: red;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`It should render with a xs media query 1`] = `
+@media (max-width:575px) {
+  .c0 {
+    color: red;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;

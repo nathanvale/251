@@ -1,11 +1,12 @@
 import React, {ReactElement, createContext, useMemo} from "react";
-import {BreakpointVariants} from "@origin-digital/ods-themes";
-
+import {
+  BreakpointVariants,
+  AlignItemsVariants,
+} from "@origin-digital/ods-types";
+import {setBreakpoint, mapSpaceAliasToIndex} from "@origin-digital/ods-helpers";
 import {ColumnProps} from "../Column/Column";
 import {BoxDebug} from "../_private/components/BoxDebug/BoxDebug";
-import {setBreakpoint} from "../_private/helpers/utils";
-import {AlignItemsVariants, ResponsiveSpace} from "../Box/Box";
-import {mapSpaceAliasToIndex} from "../_private/helpers/spacing";
+import {ResponsiveSpace} from "../Box/Box";
 
 interface ColumnsContextValue {
   collapseBelow?: ColumnsProps["collapseBelow"];
@@ -51,18 +52,27 @@ export const Columns = ({
     space,
   ]);
 
-  const spaceIndex = mapSpaceAliasToIndex(space, true);
+  const spaceIndex = mapSpaceAliasToIndex({space, isNegative: true});
   return (
     <BoxDebug
       data-id={dataId}
       display="flex"
       flexDirection={
-        collapseBelow && setBreakpoint(collapseBelow, "column", "row")
+        collapseBelow &&
+        setBreakpoint({
+          breakpoint: collapseBelow,
+          value1: "column",
+          value2: "row",
+        })
       }
       alignItems={mapVAlignToAlignItems(alignY)}
       marginLeft={
         (collapseBelow
-          ? setBreakpoint(collapseBelow, "none", spaceIndex)
+          ? setBreakpoint({
+              breakpoint: collapseBelow,
+              value1: "none",
+              value2: spaceIndex,
+            })
           : spaceIndex) as TS_FIXME
       }
     >

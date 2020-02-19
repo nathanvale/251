@@ -772,6 +772,11 @@ exports[`Box 1`] = `
   onWheelCapture?: (event: WheelEvent<HTMLElement>) => void
   open?: boolean
   optimum?: number
+  overflow?: 
+    | "auto"
+    | "hidden"
+    | "scroll"
+    | "visible"
   padding?: ResponsiveProp<
     | "large"
     | "medium"
@@ -1066,12 +1071,28 @@ exports[`Divider 1`] = `
 }
 `;
 
+exports[`Hidden 1`] = `
+{
+  above?: 
+    | "mobile"
+    | "tablet"
+  below?: 
+    | "desktop"
+    | "tablet"
+  children: ReactNode
+  inline?: boolean
+  print?: boolean
+  screen?: boolean
+}
+`;
+
 exports[`Link 1`] = `
 {
   Icon?: any
   children?: ReactNode
   component?: ReactNode
   href?: string
+  onClick?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
   target?: string
   to?: string
 }
@@ -1162,27 +1183,6 @@ exports[`Placeholder 1`] = `
     | "white"
   >
   children?: ReactNode
-  color?: 
-    | "blue"
-    | "green"
-    | "grey"
-    | "grey16"
-    | "grey24"
-    | "grey4"
-    | "grey48"
-    | "grey56"
-    | "grey8"
-    | "grey80"
-    | "lightBlue"
-    | "lightGreen"
-    | "lightGrey"
-    | "lightOrange"
-    | "orange"
-    | "purple"
-    | "red"
-    | "redPink"
-    | "transparent"
-    | "white"
   data-id?: string
   height?: string
   inline?: boolean

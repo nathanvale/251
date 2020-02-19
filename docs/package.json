@@ -14,15 +14,21 @@
     "@origin-digital/ods-devtools": "^0.3.2",
     "@origin-digital/ods-icons": "^0.4.2",
     "@origin-digital/ods-lab": "^0.4.3",
+    "@origin-digital/reporting-client": "^3.5.0",
+    "@origin-digital/style-guide": "^21.1.2",
+    "@types/prettier": "^1.19.0",
+    "copy-to-clipboard": "^3.2.0",
     "lz-string": "^1.4.4",
     "polished": "3.4.2",
+    "prettier": "^1.19.1",
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-element-to-jsx-string": "^14.0.1",
     "react-router-dom": "5.1.2",
     "react-scripts": "3.3.0",
     "styled-components": "3.4.5",
-    "styled-system": "4.2.4"
+    "styled-system": "4.2.4",
+    "styled-transition-group": "1.0.0"
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.1.3"

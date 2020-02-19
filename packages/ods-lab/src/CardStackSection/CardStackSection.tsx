@@ -1,6 +1,6 @@
 import React, {ReactNode} from "react";
 import styled from "styled-components";
-import {Breakpoint} from "@origin-digital/ods-themes";
+import {Breakpoint} from "@origin-digital/ods-types";
 import {Box, Section, Columns, Column, Stack} from "@origin-digital/ods-core";
 import {marginTop, marginBottom} from "styled-system";
 

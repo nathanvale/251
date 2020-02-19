@@ -1,10 +1,7 @@
 import * as CSS from "csstype";
-import styled, {DefaultTheme, css} from "styled-components";
+import styled, {css} from "styled-components";
 
-import {
-  TransitionVariants,
-  TransformVariants,
-} from "@origin-digital/ods-themes";
+import {TransitionVariants, TransformVariants} from "@origin-digital/ods-types";
 
 import {
   textAlign,
@@ -26,6 +23,8 @@ import {
   padding,
   paddingBottom,
   paddingLeft,
+  overflow,
+  OverflowProps,
   PaddingProps,
   paddingRight,
   paddingTop,
@@ -36,7 +35,7 @@ import {
   style,
 } from "styled-system";
 import {tint} from "polished";
-import {themeChecker} from "../../helpers/theme";
+import {themeChecker} from "@origin-digital/ods-helpers";
 
 export interface StyledSystemProps
   extends DisplayProps,
@@ -45,7 +44,8 @@ export interface StyledSystemProps
     MarginProps,
     FlexDirectionProps,
     JustifyContentProps,
-    BackgroundColorProps {
+    BackgroundColorProps,
+    OverflowProps {
   boxShadow?: BoxShadowVariant;
   height?: "full";
   pointerEvents?: CSS.PointerEventsProperty;
@@ -78,7 +78,8 @@ const pointerEvents = style({
   cssProperty: "pointerEvents",
 });
 
-const boxShadowFactory = ({border, shadows}: DefaultTheme) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const boxShadowFactory = ({border, shadows}: any) => {
   const {width: borderWidth, color} = border;
   const boxShadowForVariant: Record<
     BoxShadowVariant,
@@ -136,6 +137,7 @@ export const StyledSystemBox = styled.div<StyledSystemProps>`
         ${justifyContent}
         ${position}
         ${textAlign}
+        ${overflow}
         :active {
            transform: ${({theme, transform}) => theme.transforms[transform!]};
          }

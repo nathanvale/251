@@ -1,4 +1,15 @@
-import {ReactNode} from "react";
+import {ReactNode, ComponentType} from "react";
+
+export interface Page {
+  title: string;
+  Component: ComponentType;
+}
+
+export interface AppConfig {
+  playroomUrl: string;
+  sourceUrlPrefix: string;
+  zeplinUrl: string;
+}
 
 export interface ComponentDocs<T = {}> {
   componentName: string;
@@ -8,7 +19,8 @@ export interface ComponentDocs<T = {}> {
     | "Content"
     | "Interaction"
     | "Icon"
-    | "Experimental";
+    | "Experimental"
+    | "Unknown";
   examples: ExampleDocs[];
   description?: string;
   propDescriptions?: Partial<Record<keyof T, string>>;
