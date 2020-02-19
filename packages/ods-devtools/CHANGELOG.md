@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-devtools@0.3.2...@origin-digital/ods-devtools@0.4.0) (2020-02-19)
+
+
+### Features
+
+* dynamically generate docs platform ([0effbb8](https://bitbucket.orgn.io/od/origin-ui/commits/0effbb8))
+
+
+
+
+
 ## [0.3.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-devtools@0.4.0...@origin-digital/ods-devtools@0.3.2) (2020-02-17)
 
 **Note:** Version bump only for package @origin-digital/ods-devtools

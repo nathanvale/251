@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.4.3...@origin-digital/ods-lab@0.5.0) (2020-02-19)
+
+
+### Features
+
+* dynamically generate docs platform ([0effbb8](https://bitbucket.orgn.io/od/origin-ui/commits/0effbb8))
+
+
+
+
+
 ## [0.4.3](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.5.0...@origin-digital/ods-lab@0.4.3) (2020-02-17)
 
 **Note:** Version bump only for package @origin-digital/ods-lab
