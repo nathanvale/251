@@ -66,7 +66,7 @@ const ResponsiveGrid = ({
       </Section>
     </Box>
     <Box display={{xs: "none", sm: "flex", md: "none"}} width="full">
-      <Section fluidity="full-width">
+      <Section>
         <Columns>
           <Column>{children}</Column>
         </Columns>
