@@ -10,7 +10,7 @@ The Origin Design System is an implementation of this industry trend.
 
 **Docs**
 
-https://docs.origindigital-dac.com.au/designsystem/#/
+https://docs.origindigital-dac.com.au/designsystem/master/
 
 **Playroom**
 
