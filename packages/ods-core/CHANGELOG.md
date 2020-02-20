@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.7.0...@origin-digital/ods-core@0.7.1) (2020-02-20)
+
+
+### Bug Fixes
+
+* **stack:** move key to the fragment ([ca2feaf](https://bitbucket.orgn.io/od/origin-ui/commits/ca2feaf))
+
+
+
+
+
 # [0.7.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.6.3...@origin-digital/ods-core@0.7.0) (2020-02-19)
 
 
