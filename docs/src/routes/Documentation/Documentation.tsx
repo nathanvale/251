@@ -307,6 +307,7 @@ export const Documentation = () => {
                       }
                       componentName={match.params.componentName}
                       sourceUrlPrefix={sourceUrlPrefix}
+                      playroomUrl={playroomUrl}
                     />
                   )}
                 />

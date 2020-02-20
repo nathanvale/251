@@ -1,20 +1,10 @@
 import {createContext, useContext} from "react";
 import {AppConfig} from "../../types";
 
-let baseUrl = window.location.origin + window.location.pathname;
-
-if (baseUrl) {
-  if (window.location.hostname === "localhost") {
-    baseUrl = "localhost:9999";
-  }
-  const trimmedBaseUrl = baseUrl.replace(/\/$/, "");
-  baseUrl = `http://${trimmedBaseUrl}`;
-}
-
 const playroomUrl =
   window.location.hostname === "localhost"
     ? "localhost:9999"
-    : `${baseUrl}/playroom`;
+    : `${window.location.origin + window.location.pathname}playroom`;
 
 const defaultConfig: AppConfig = {
   playroomUrl,
