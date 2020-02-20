@@ -10,25 +10,20 @@ import {DocsContainer} from "../DocsContainer/DocsContainer";
 import {CodeExample} from "../CodeExample/CodeExample";
 import {CodeBlock} from "../CodeBlock/CodeBlock";
 
-type ExampleProps = ExampleDocs;
+interface ExampleProps extends ExampleDocs {
+  playroomUrl: string;
+}
 
 interface CreateUrlOptions {
-  baseUrl?: string;
+  playroomUrl: string;
   code: string;
 }
 
-const createUrl = ({baseUrl, code}: CreateUrlOptions) => {
+const createUrl = ({playroomUrl, code}: CreateUrlOptions) => {
   const data = JSON.stringify({code});
   const compressedData = lzString.compressToEncodedURIComponent(data);
-  const path = `#?code=${compressedData}`;
-  if (baseUrl) {
-    if (window.location.hostname === "localhost") {
-      baseUrl = "localhost:9999";
-    }
-    const trimmedBaseUrl = baseUrl.replace(/\/$/, "");
-    return `http://${trimmedBaseUrl}/${path}`;
-  }
-  return path;
+  const path = `/#?code=${compressedData}`;
+  return playroomUrl + path;
 };
 
 export const Example = ({
@@ -38,6 +33,7 @@ export const Example = ({
   noSection,
   Code,
   Container,
+  playroomUrl,
 }: ExampleProps) => {
   const snippet = getCodeAsString(Code);
   return (
@@ -62,8 +58,7 @@ export const Example = ({
                     target="_blank"
                     component="a"
                     href={createUrl({
-                      baseUrl:
-                        "docs.origindigital-dac.com.au/designsystem/playroom",
+                      playroomUrl,
                       code: snippet,
                     })}
                     Icon={<IconPlay />}

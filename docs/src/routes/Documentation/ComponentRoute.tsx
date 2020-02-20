@@ -12,6 +12,7 @@ interface ComponentRouteProps {
   componentName: string;
   subfolder?: string;
   sourceUrlPrefix: string;
+  playroomUrl: string;
   packageName: string;
 }
 
@@ -19,6 +20,7 @@ export const ComponentRoute = ({
   componentName,
   subfolder = "",
   sourceUrlPrefix,
+  playroomUrl,
   packageName,
 }: ComponentRouteProps) => {
   const componentFolder = `packages/${packageName}/src/${
@@ -65,9 +67,9 @@ export const ComponentRoute = ({
               </DocsContainer>
             </Stack>
           </Section>
-          {examples.map((props, index) => {
-            return <Example key={index} {...props} />;
-          })}
+          {examples.map((props, index) => (
+            <Example key={index} {...props} playroomUrl={playroomUrl} />
+          ))}
         </Stack>
       </Stack>
     </Page>
