@@ -49,14 +49,14 @@ export const Stack = ({
     >
       {stackItems.map((child, index) =>
         dividers ? (
-          <>
+          <React.Fragment key={index}>
             {index > 0 ? (
-              <Box key={index * 2 - 1} alignSelf="stretch" paddingY={space}>
+              <Box alignSelf="stretch" paddingY={space}>
                 <Divider />
               </Box>
             ) : null}
-            <Box key={index * 2}>{child}</Box>
-          </>
+            <Box>{child}</Box>
+          </React.Fragment>
         ) : (
           <StyledBox paddingBottom={space} key={index}>
             {child}
