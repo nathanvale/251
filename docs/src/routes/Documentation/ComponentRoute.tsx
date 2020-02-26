@@ -42,7 +42,7 @@ export const ComponentRoute = ({
   const {description, propDescriptions, examples, variant} = docs;
   return (
     <Page>
-      <Stack space="xxlarge">
+      <Stack space="xxxlarge">
         <Props<StackProps>
           sourceUrl={sourceUrl}
           variant={variant}

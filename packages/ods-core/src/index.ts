@@ -16,6 +16,8 @@ export {Columns} from "./Columns/Columns";
 export type ColumnsProps = import("./Columns/Columns").ColumnsProps;
 export {Divider} from "./Divider/Divider";
 export type DividerProps = import("./Divider/Divider").DividerProps;
+export {Hidden} from "./Hidden/Hidden";
+export type HiddenProps = import("./Hidden/Hidden").HiddenProps;
 export {Placeholder} from "./Placeholder/Placeholder";
 export type PlaceholderProps = import("./Placeholder/Placeholder").PlaceholderProps;
 export {Section} from "./Section/Section";

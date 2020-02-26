@@ -14,6 +14,13 @@ import {foundations} from "./foundations";
 import {MenuButton} from "./components/MenuButton/MenuButton";
 import {ComponentRoute} from "./ComponentRoute";
 
+interface MenuItem {
+  name: string;
+  path: string;
+  external: boolean;
+  onClick: () => void;
+}
+
 function getDocPaths(module: any, packageName: string) {
   return Object.keys(module).map(name => ({
     name,
@@ -36,12 +43,12 @@ const {Text, Box, Stack, Hidden, Link} = components;
 const responsiveGutter: odsCore.BoxProps["paddingX"] = ["large", "xlarge"];
 const headerHeight = "100px";
 
-interface MenuItem {
-  name: string;
-  path: string;
-  external: boolean;
-  onClick: () => void;
-}
+const HiddenOnPrint = styled(Hidden)`
+  @media print {
+    display: none !important;
+  }
+`;
+
 const MenuSectionList = ({
   title,
   items,
@@ -188,13 +195,14 @@ export const Documentation = () => {
                 </LogoContainer>
               </ReactRouterLink>
             </Text>
-
-            <Hidden screen={!showMenuButton} above="tablet">
-              <MenuButton
-                open={isMenuOpen}
-                onClick={() => setMenuOpen(!isMenuOpen)}
-              />
-            </Hidden>
+            {showMenuButton && (
+              <Hidden above="md">
+                <MenuButton
+                  open={isMenuOpen}
+                  onClick={() => setMenuOpen(!isMenuOpen)}
+                />
+              </Hidden>
+            )}
           </Header>
 
           <Container
@@ -202,7 +210,7 @@ export const Documentation = () => {
             display="flex"
             flexDirection={["column", "row"]}
           >
-            <Hidden print>
+            <HiddenOnPrint>
               <Menu
                 backgroundColor="white"
                 isOpen={isMenuOpen}
@@ -284,7 +292,7 @@ export const Documentation = () => {
                   />
                 </Stack>
               </Menu>
-            </Hidden>
+            </HiddenOnPrint>
             <Content>
               <Box paddingY="small" paddingX={responsiveGutter}>
                 {map({...guides, ...foundations}, ({Component}, path) => (

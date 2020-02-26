@@ -1,0 +1,408 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it hides components above the sm breakpoint 1`] = `
+.c1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #e3e3e3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+  class="c0"
+  display="block,block,none,none,none"
+>
+  <div
+    class="c1"
+    data-id="placeholder"
+    display="flex"
+  >
+    <span
+      style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
+    >
+      Hidden above sm.
+    </span>
+  </div>
+</div>
+`;
+
+exports[`it hides components below the md breakpoint 1`] = `
+.c1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #e3e3e3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: none;
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c0 {
+    display: block;
+  }
+}
+
+<div
+  class="c0"
+  display="none,none,block,block,block"
+>
+  <div
+    class="c1"
+    data-id="placeholder"
+    display="flex"
+  >
+    <span
+      style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
+    >
+      Hidden below md.
+    </span>
+  </div>
+</div>
+`;
+
+exports[`it hides text nodes above md 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #e3e3e3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline;
+}
+
+@media screen and (min-width:576px) {
+  .c1 {
+    display: inline;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    display: inline;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c1 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c1 {
+    display: none;
+  }
+}
+
+<div
+  class="c0"
+  data-id="placeholder"
+  display="flex"
+>
+  <span
+    style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
+  >
+    The following text node is hidden above md:
+    <span
+      class="-span c1"
+      display="inline,inline,inline,none,none"
+    >
+      Hidden above md.
+    </span>
+  </span>
+</div>
+`;
+
+exports[`it hides text nodes below md 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #e3e3e3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: none;
+}
+
+@media screen and (min-width:576px) {
+  .c1 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    display: inline;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c1 {
+    display: inline;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c1 {
+    display: inline;
+  }
+}
+
+<div
+  class="c0"
+  data-id="placeholder"
+  display="flex"
+>
+  <span
+    style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
+  >
+    The following text node is hidden below md:
+    <span
+      class="-span c1"
+      display="none,none,inline,inline,inline"
+    >
+      Hidden below md.
+    </span>
+  </span>
+</div>
+`;
+
+exports[`it renders a Hidden 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #e3e3e3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c0 {
+    display: block;
+  }
+}
+
+<div
+  class="c0"
+  display="block,block,block,block,block"
+>
+  <div
+    class="c1"
+    data-id="placeholder"
+    display="flex"
+  >
+    <span
+      style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
+    >
+      Not hidden
+    </span>
+  </div>
+</div>
+`;
