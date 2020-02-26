@@ -27,7 +27,7 @@ export type JustifyContentVariants =
 export type ResponsiveProp<T> =
   | T
   | [T, T]
-  | Partial<Record<"xs" | "sm" | "md" | "lg" | "xl", T>>;
+  | Partial<Record<BreakpointVariants, T>>;
 
 export interface Breakpoint<T = string> {
   xs: T;

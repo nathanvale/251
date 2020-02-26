@@ -1074,15 +1074,17 @@ exports[`Divider 1`] = `
 exports[`Hidden 1`] = `
 {
   above?: 
-    | "mobile"
-    | "tablet"
+    | "lg"
+    | "md"
+    | "sm"
+    | "xs"
   below?: 
-    | "desktop"
-    | "tablet"
+    | "lg"
+    | "md"
+    | "sm"
+    | "xl"
   children: ReactNode
   inline?: boolean
-  print?: boolean
-  screen?: boolean
 }
 `;
 
