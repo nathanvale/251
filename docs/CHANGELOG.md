@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.5.2...docs@0.6.0) (2020-02-26)
+
+
+### Features
+
+* **Hidden:** move hidden to ods-core ([e0919b0](https://bitbucket.orgn.io/od/origin-ui/commits/e0919b0))
+
+
+
+
+
 ## [0.5.2](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.5.1...docs@0.5.2) (2020-02-20)
 
 **Note:** Version bump only for package docs

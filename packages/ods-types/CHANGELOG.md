@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.3.0...@origin-digital/ods-types@0.4.0) (2020-02-26)
+
+
+### Features
+
+* **Hidden:** move hidden to ods-core ([e0919b0](https://bitbucket.orgn.io/od/origin-ui/commits/e0919b0))
+
+
+
+
+
 # [0.3.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.2.6...@origin-digital/ods-types@0.3.0) (2020-02-19)
 
 
