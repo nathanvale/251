@@ -1,3 +1,5 @@
+export type CardPaddingVariants = "small" | "medium" | "large";
+
 export type AlignItemsVariants =
   | "center"
   | "flex-start"

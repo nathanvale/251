@@ -969,6 +969,21 @@ exports[`Box 1`] = `
 }
 `;
 
+exports[`Card 1`] = `
+{
+  backgroundColor?: 
+    | "grey4"
+    | "transparent"
+    | "white"
+  children?: ReactNode
+  data-id?: string
+  padding?: 
+    | "large"
+    | "medium"
+    | "small"
+}
+`;
+
 exports[`CardStackSection 1`] = `
 {
   children: ReactNode

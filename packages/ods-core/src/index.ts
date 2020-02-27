@@ -10,6 +10,8 @@
 // Core
 export {Box} from "./Box/Box";
 export type BoxProps = import("./Box/Box").BoxProps;
+export {Card} from "./Card/Card";
+export type CardProps = import("./Card/Card").CardProps;
 export {Column} from "./Column/Column";
 export type ColumnProps = import("./Column/Column").ColumnProps;
 export {Columns} from "./Columns/Columns";
