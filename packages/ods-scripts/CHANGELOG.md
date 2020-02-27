@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.7.0...@origin-digital/ods-scripts@0.8.0) (2020-02-27)
+
+
+### Features
+
+* **Card:** implement card component in core ([1eabfdb](https://bitbucket.orgn.io/od/origin-ui/commits/1eabfdb))
+
+
+
+
+
 # [0.7.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.6.1...@origin-digital/ods-scripts@0.7.0) (2020-02-26)
 
 
