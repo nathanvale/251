@@ -1,0 +1,233 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders a card 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: white;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width:992px) {
+  .c0 {
+    padding-top: 32px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c0 {
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    padding-left: 32px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    padding-right: 32px;
+  }
+}
+
+<div
+  class="c0"
+  data-id="card"
+/>
+`;
+
+exports[`it renders a card with a selected background color 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #f8f8f8;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    padding-top: 48px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-top: 64px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    padding-left: 48px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-left: 64px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    padding-right: 48px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-right: 64px;
+  }
+}
+
+<div
+  class="c0"
+  data-id="card"
+/>
+`;
+
+exports[`it renders a card with large padding 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: white;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    padding-top: 48px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-top: 64px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    padding-left: 48px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-left: 64px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    padding-right: 48px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-right: 64px;
+  }
+}
+
+<div
+  class="c0"
+  data-id="card"
+/>
+`;
+
+exports[`it renders a card with medium padding 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: white;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    padding-top: 48px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    padding-left: 48px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    padding-right: 48px;
+  }
+}
+
+<div
+  class="c0"
+  data-id="card"
+/>
+`;
