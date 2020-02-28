@@ -7,7 +7,7 @@ import {CardProps, Card} from "..";
 export const docs: ComponentDocs<CardProps> = {
   category: "Layout",
   componentName: "Card",
-  description: "Cards provide content contianers with responsive padding.",
+  description: "Cards provide content containers with responsive padding.",
   propDescriptions: {
     padding: "The size of the responsive paddingX and paddingY of the card.",
   },
