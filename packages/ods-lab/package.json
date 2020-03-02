@@ -3,7 +3,7 @@
   "description": "Incubator for experimental ODS components",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
-  "version": "0.6.2",
+  "version": "0.7.0",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "files": [
