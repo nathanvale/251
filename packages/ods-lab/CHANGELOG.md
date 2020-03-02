@@ -7,47 +7,25 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @origin-digital/ods-lab
 
-
-
-
-
 ## [0.6.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.6.0...@origin-digital/ods-lab@0.6.1) (2020-02-27)
 
 **Note:** Version bump only for package @origin-digital/ods-lab
 
-
-
-
-
 # [0.6.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.5.1...@origin-digital/ods-lab@0.6.0) (2020-02-26)
-
 
 ### Features
 
-* **Hidden:** move hidden to ods-core ([e0919b0](https://bitbucket.orgn.io/od/origin-ui/commits/e0919b0))
-
-
-
-
+- **Hidden:** move hidden to ods-core ([e0919b0](https://bitbucket.orgn.io/od/origin-ui/commits/e0919b0))
 
 ## [0.5.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.5.0...@origin-digital/ods-lab@0.5.1) (2020-02-20)
 
 **Note:** Version bump only for package @origin-digital/ods-lab
 
-
-
-
-
 # [0.5.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.4.3...@origin-digital/ods-lab@0.5.0) (2020-02-19)
-
 
 ### Features
 
-* dynamically generate docs platform ([0effbb8](https://bitbucket.orgn.io/od/origin-ui/commits/0effbb8))
-
-
-
-
+- dynamically generate docs platform ([0effbb8](https://bitbucket.orgn.io/od/origin-ui/commits/0effbb8))
 
 ## [0.4.3](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.5.0...@origin-digital/ods-lab@0.4.3) (2020-02-17)
 

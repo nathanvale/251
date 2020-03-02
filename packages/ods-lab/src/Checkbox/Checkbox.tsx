@@ -2,8 +2,7 @@ import React from "react";
 import MuiCheckbox, {
   CheckboxProps as MUICheckboxProps,
 } from "@material-ui/core/Checkbox";
-import {FormControlLabel} from "../_private/components/FormControlLabel/FormControlLabel";
-import {FormHelperText} from "../_private/components/FormHelperText/FormHelperText";
+import {FormControlLabel, FormHelperText} from "..";
 
 export interface CheckboxProps {
   name: string;
