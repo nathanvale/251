@@ -2,7 +2,7 @@
   "private": true,
   "name": "docs",
   "description": "",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "main": "src/index.tsx",
   "scripts": {
     "build": "craco build",
@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "@craco/craco": "5.6.2",
-    "@origin-digital/ods-core": "^0.9.1",
+    "@origin-digital/ods-core": "^0.9.2",
     "@origin-digital/ods-devtools": "^0.4.0",
     "@origin-digital/ods-icons": "^0.5.2",
-    "@origin-digital/ods-lab": "^0.7.0",
+    "@origin-digital/ods-lab": "^0.7.1",
     "@origin-digital/reporting-client": "^3.5.0",
     "@origin-digital/style-guide": "^21.1.2",
     "@types/prettier": "^1.19.0",
