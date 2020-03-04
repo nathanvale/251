@@ -18,7 +18,7 @@ export const docs: ComponentDocs<CardProps> = {
       description: "Be default cards have a small padding size.",
       Code: () => (
         <Card>
-          <Placeholder>Content</Placeholder>
+          <Placeholder />
         </Card>
       ),
     },
@@ -26,7 +26,7 @@ export const docs: ComponentDocs<CardProps> = {
       label: "Medium Padding",
       Code: () => (
         <Card padding="medium">
-          <Placeholder>Content</Placeholder>
+          <Placeholder />
         </Card>
       ),
     },
@@ -34,7 +34,7 @@ export const docs: ComponentDocs<CardProps> = {
       label: "Large Padding",
       Code: () => (
         <Card padding="large">
-          <Placeholder>Content</Placeholder>
+          <Placeholder />
         </Card>
       ),
     },

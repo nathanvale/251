@@ -1,6 +1,6 @@
 import React, {ReactNode, ReactType} from "react";
 import styled from "styled-components";
-import {Box} from "@origin-digital/ods-core";
+import {Box, BoxProps} from "@origin-digital/ods-core";
 import {Color} from "@origin-digital/ods-types";
 import {style} from "styled-system";
 
@@ -30,6 +30,7 @@ export interface TextProps {
   weight?: "regular" | "medium";
   baseline?: boolean;
   className?: string;
+  align?: BoxProps["textAlign"];
 }
 
 export const Text = ({
@@ -38,6 +39,8 @@ export const Text = ({
   size = "xxsmall",
   color = "grey",
   weight = "regular",
+  align,
+
   className,
 }: TextProps) => {
   const StyledBox = styled(Box)`
@@ -62,6 +65,7 @@ export const Text = ({
       component={component}
       color={color}
       className={className}
+      textAlign={align}
     >
       {children}
     </StyledBox>

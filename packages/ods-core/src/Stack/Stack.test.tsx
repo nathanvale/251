@@ -6,9 +6,9 @@ import {Stack} from "./Stack";
 test("It can stack", () => {
   const {container} = render(
     <Stack>
-      <Placeholder backgroundColor="red" />
-      <Placeholder backgroundColor="orange" />
-      <Placeholder backgroundColor="blue" />
+      <Placeholder />
+      <Placeholder />
+      <Placeholder />
     </Stack>,
   );
   expect(container.firstChild).toMatchSnapshot();
@@ -17,9 +17,9 @@ test("It can stack", () => {
 test("It can distribute space", () => {
   const {container} = render(
     <Stack space="xxlarge">
-      <Placeholder backgroundColor="red" />
-      <Placeholder backgroundColor="orange" />
-      <Placeholder backgroundColor="blue" />
+      <Placeholder />
+      <Placeholder />
+      <Placeholder />
     </Stack>,
   );
 
@@ -42,9 +42,9 @@ test("It can distribute space", () => {
 test("It adds dividers", () => {
   const {container} = render(
     <Stack space="xxlarge" dividers>
-      <Placeholder backgroundColor="red" />
-      <Placeholder backgroundColor="orange" />
-      <Placeholder backgroundColor="blue" />
+      <Placeholder />
+      <Placeholder />
+      <Placeholder />
     </Stack>,
   );
   expect(container.firstChild).toMatchSnapshot();
@@ -52,7 +52,7 @@ test("It adds dividers", () => {
 test("It does not add dividers if there is only 1 child", () => {
   const {container} = render(
     <Stack space="medium" dividers>
-      <Placeholder backgroundColor="blue" />
+      <Placeholder />
     </Stack>,
   );
   expect(container.children).toHaveLength(1);
@@ -61,8 +61,8 @@ test("It does not add dividers if there is only 1 child", () => {
 test("It stretches children by default", () => {
   const {container} = render(
     <Stack>
-      <Placeholder backgroundColor="red" />
-      <Placeholder backgroundColor="orange" />
+      <Placeholder />
+      <Placeholder />
     </Stack>,
   );
 
@@ -74,8 +74,8 @@ test("It stretches children by default", () => {
 test("It can right-align components", () => {
   const {container} = render(
     <Stack alignX="right">
-      <Placeholder backgroundColor="red" />
-      <Placeholder backgroundColor="orange" />
+      <Placeholder width="120px" />
+      <Placeholder width="120px" />
     </Stack>,
   );
   const columnsEl = queryAllByAttribute("data-id", container, "stack")[0];
@@ -86,8 +86,8 @@ test("It can right-align components", () => {
 test("It can center-align components", () => {
   const {container} = render(
     <Stack alignX="center">
-      <Placeholder backgroundColor="red" />
-      <Placeholder backgroundColor="orange" />
+      <Placeholder width="120px" />
+      <Placeholder width="120px" />
     </Stack>,
   );
   const columnsEl = queryAllByAttribute("data-id", container, "stack")[0];
@@ -98,7 +98,7 @@ test("It can center-align components", () => {
 test("It can left-align children", () => {
   const {container} = render(
     <Stack alignX="left">
-      <Placeholder data-id="childElement" backgroundColor="red" />
+      <Placeholder data-id="childElement" width="120px" />
     </Stack>,
   );
   const columnsEl = queryAllByAttribute("data-id", container, "stack")[0];
@@ -109,8 +109,8 @@ test("It can left-align children", () => {
 test("It adds data-id", () => {
   const dom = render(
     <Stack data-id="MyCustomStack">
-      <Placeholder backgroundColor="red" />
-      <Placeholder backgroundColor="orange" />
+      <Placeholder />
+      <Placeholder />
     </Stack>,
   );
 

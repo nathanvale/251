@@ -9,7 +9,7 @@ export const docs: ComponentDocs<ColumnProps> = {
   description:
     "Column is a low-level atomic layout component. Its is used with its parent <Columns/> to provide 12 grid layout as well as flex Placeholder style layout.",
   propDescriptions: {
-    width: "Some interesting facts about the width prop to go here...",
+    width: "Width is used here",
   },
   migrationGuide: false,
   examples: [
@@ -20,10 +20,10 @@ export const docs: ComponentDocs<ColumnProps> = {
       Code: () => (
         <Columns space="small">
           <Column>
-            <Placeholder backgroundColor="blue" />
+            <Placeholder />
           </Column>
           <Column>
-            <Placeholder backgroundColor="blue" />
+            <Placeholder />
           </Column>
         </Columns>
       ),
@@ -34,19 +34,19 @@ export const docs: ComponentDocs<ColumnProps> = {
       Code: () => (
         <Columns space="small">
           <Column width="1/12">
-            <Placeholder backgroundColor="blue" />
+            <Placeholder />
           </Column>
           <Column width="1/6">
-            <Placeholder backgroundColor="red" />
+            <Placeholder />
           </Column>
           <Column width="1/6">
-            <Placeholder backgroundColor="blue" />
+            <Placeholder />
           </Column>
           <Column width="1/12">
-            <Placeholder backgroundColor="red" />
+            <Placeholder />
           </Column>
           <Column width="1/2">
-            <Placeholder backgroundColor="blue" />
+            <Placeholder />
           </Column>
         </Columns>
       ),
@@ -56,16 +56,16 @@ export const docs: ComponentDocs<ColumnProps> = {
       Code: () => (
         <Columns space="small">
           <Column>
-            <Placeholder backgroundColor="blue" />
+            <Placeholder />
           </Column>
           <Column width="1/3">
-            <Placeholder backgroundColor="red" />
+            <Placeholder />
           </Column>
           <Column width="1/4">
-            <Placeholder backgroundColor="orange" />
+            <Placeholder />
           </Column>
           <Column width="content">
-            <Placeholder backgroundColor="green" />
+            <Placeholder label="content" />
           </Column>
         </Columns>
       ),
@@ -75,13 +75,13 @@ export const docs: ComponentDocs<ColumnProps> = {
       Code: () => (
         <Columns space="small">
           <Column width="content">
-            <Placeholder backgroundColor="blue" />
+            <Placeholder label="content" />
           </Column>
           <Column>
-            <Placeholder backgroundColor="blue" />
+            <Placeholder />
           </Column>
           <Column width="content">
-            <Placeholder backgroundColor="blue" />
+            <Placeholder label="content" />
           </Column>
         </Columns>
       ),

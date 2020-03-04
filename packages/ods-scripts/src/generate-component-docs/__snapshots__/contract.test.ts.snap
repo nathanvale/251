@@ -1259,6 +1259,7 @@ exports[`Box 1`] = `
   autoSave?: string
   backgroundColor?: ResponsiveProp<
     | "blue"
+    | "darkOrange"
     | "green"
     | "grey"
     | "grey16"
@@ -2508,15 +2509,22 @@ exports[`Card 1`] = `
 
 exports[`CardStackSection 1`] = `
 {
-  children: ReactNode
-  data-id?: string
-  size?: 
+  cardWidth?: 
     | "large"
     | "medium"
     | "small"
+  children: 
+    | ReactElement<CardProps, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>
+    | ReactElement<CardProps, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>[]
+  data-id?: string
+  paddingY?: 
+    | "large"
+    | "medium"
+    | "none"
+    | "small"
   variant?: 
-    | "card"
-    | "card-padded"
+    | "card-centered"
+    | "default"
     | "widget"
 }
 `;
@@ -14487,6 +14495,7 @@ exports[`OriginThemeProvider 1`] = `
     breakpoints: Breakpoints
     colors: {
       blue: string
+      darkOrange: string
       green: string
       grey: string
       grey16: string
@@ -14538,33 +14547,19 @@ exports[`OriginThemeProvider 1`] = `
 
 exports[`Placeholder 1`] = `
 {
-  backgroundColor?: ResponsiveProp<
-    | "blue"
-    | "green"
-    | "grey"
-    | "grey16"
-    | "grey24"
-    | "grey4"
-    | "grey48"
-    | "grey56"
-    | "grey8"
-    | "grey80"
-    | "lightBlue"
-    | "lightGreen"
-    | "lightGrey"
-    | "lightOrange"
-    | "orange"
-    | "purple"
-    | "red"
-    | "redPink"
-    | "transparent"
-    | "white"
-  >
-  children?: ReactNode
   data-id?: string
-  height?: string
-  inline?: boolean
-  width?: string
+  height?: ResponsiveProp<
+    | number
+    | string
+  >
+  label?: string
+  shape?: 
+    | "rectangle"
+    | "round"
+  width?: ResponsiveProp<
+    | number
+    | string
+  >
 }
 `;
 
@@ -23009,11 +23004,26 @@ exports[`Tabs 1`] = `
 
 exports[`Text 1`] = `
 {
+  align?: ResponsiveProp<
+    | "-moz-initial"
+    | "center"
+    | "end"
+    | "inherit"
+    | "initial"
+    | "justify"
+    | "left"
+    | "match-parent"
+    | "revert"
+    | "right"
+    | "start"
+    | "unset"
+  >
   baseline?: boolean
   children?: ReactNode
   className?: string
   color?: 
     | "blue"
+    | "darkOrange"
     | "green"
     | "grey"
     | "grey16"

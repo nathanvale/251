@@ -20,7 +20,7 @@ exports[`it correctly allocates required width for "content" 1`] = `
   align-items: flex-start;
 }
 
-.c7 {
+.c9 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -54,7 +54,7 @@ exports[`it correctly allocates required width for "content" 1`] = `
   vertical-align: baseline;
 }
 
-.c5 {
+.c6 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -67,10 +67,6 @@ exports[`it correctly allocates required width for "content" 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 24px;
-  padding-right: 24px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -79,9 +75,32 @@ exports[`it correctly allocates required width for "content" 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.c6 {
+.c7 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+
+.c5 {
+  width: auto;
+  height: 120px;
+  border: 2px solid rgba(51,51,51,0.3);
+}
+
+.c8 {
   min-width: 0;
 }
 
@@ -113,21 +132,26 @@ div:first-child > .c3 {
         class="c2"
       >
         <div
-          class="c5"
+          class="c5 c6"
           data-id="placeholder"
           display="flex"
+          height="120"
+          overflow="hidden"
+          shape="rectangle"
+          width="auto"
         >
-          <span
-            style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
+          <div
+            class="c7"
+            style="margin-top: 2px;"
           >
             This is content width
-          </span>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div
-    class="c6 c7"
+    class="c8 c9"
     data-id="column"
     width="full"
   >
@@ -139,19 +163,39 @@ div:first-child > .c3 {
         class="c2"
       >
         <div
-          class="c5"
+          class="c5 c6"
           data-id="placeholder"
           display="flex"
+          height="120"
+          overflow="hidden"
+          shape="rectangle"
+          width="auto"
         >
-          <span
-            style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
-          />
+          <svg
+            style="width: 100%; height: 100%; position: absolute;"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+              x1="0"
+              x2="100%"
+              y1="0"
+              y2="100%"
+            />
+            <line
+              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+              x1="100%"
+              x2="0"
+              y1="0"
+              y2="100%"
+            />
+          </svg>
         </div>
       </div>
     </div>
   </div>
   <div
-    class="c6 c7"
+    class="c8 c9"
     data-id="column"
     width="full"
   >
@@ -163,13 +207,33 @@ div:first-child > .c3 {
         class="c2"
       >
         <div
-          class="c5"
+          class="c5 c6"
           data-id="placeholder"
           display="flex"
+          height="120"
+          overflow="hidden"
+          shape="rectangle"
+          width="auto"
         >
-          <span
-            style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
-          />
+          <svg
+            style="width: 100%; height: 100%; position: absolute;"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+              x1="0"
+              x2="100%"
+              y1="0"
+              y2="100%"
+            />
+            <line
+              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+              x1="100%"
+              x2="0"
+              y1="0"
+              y2="100%"
+            />
+          </svg>
         </div>
       </div>
     </div>
@@ -231,7 +295,7 @@ exports[`it correctly sets width for proportions 1/3 and 2/3 1`] = `
   vertical-align: baseline;
 }
 
-.c6 {
+.c7 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -244,10 +308,6 @@ exports[`it correctly sets width for proportions 1/3 and 2/3 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 24px;
-  padding-right: 24px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -256,6 +316,29 @@ exports[`it correctly sets width for proportions 1/3 and 2/3 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.c8 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+
+.c6 {
+  width: auto;
+  height: 120px;
+  border: 2px solid rgba(51,51,51,0.3);
 }
 
 .c1 {
@@ -265,7 +348,7 @@ exports[`it correctly sets width for proportions 1/3 and 2/3 1`] = `
   flex: 0 0 33.33333333333333%;
 }
 
-.c7 {
+.c9 {
   min-width: 0;
   -webkit-flex: 0 0 66.66666666666666%;
   -ms-flex: 0 0 66.66666666666666%;
@@ -294,21 +377,26 @@ div:first-child > .c3 {
         class="c5"
       >
         <div
-          class="c6"
+          class="c6 c7"
           data-id="placeholder"
           display="flex"
+          height="120"
+          overflow="hidden"
+          shape="rectangle"
+          width="auto"
         >
-          <span
-            style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
+          <div
+            class="c8"
+            style="margin-top: 2px;"
           >
             This is 1/3
-          </span>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div
-    class="c7 c2"
+    class="c9 c2"
     data-id="column"
     width="full"
   >
@@ -320,15 +408,20 @@ div:first-child > .c3 {
         class="c5"
       >
         <div
-          class="c6"
+          class="c6 c7"
           data-id="placeholder"
           display="flex"
+          height="120"
+          overflow="hidden"
+          shape="rectangle"
+          width="auto"
         >
-          <span
-            style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
+          <div
+            class="c8"
+            style="margin-top: 2px;"
           >
             This is 2/3
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -390,7 +483,7 @@ exports[`it correctly sets width for proportions 1/12, 7/12, 1/3 1`] = `
   vertical-align: baseline;
 }
 
-.c6 {
+.c7 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -403,10 +496,6 @@ exports[`it correctly sets width for proportions 1/12, 7/12, 1/3 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 24px;
-  padding-right: 24px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -415,9 +504,32 @@ exports[`it correctly sets width for proportions 1/12, 7/12, 1/3 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .c8 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+
+.c6 {
+  width: auto;
+  height: 120px;
+  border: 2px solid rgba(51,51,51,0.3);
+}
+
+.c10 {
   min-width: 0;
   -webkit-flex: 0 0 33.33333333333333%;
   -ms-flex: 0 0 33.33333333333333%;
@@ -431,7 +543,7 @@ exports[`it correctly sets width for proportions 1/12, 7/12, 1/3 1`] = `
   flex: 0 0 8.333333333333332%;
 }
 
-.c7 {
+.c9 {
   min-width: 0;
   -webkit-flex: 0 0 41.66666666666667%;
   -ms-flex: 0 0 41.66666666666667%;
@@ -460,21 +572,26 @@ div:first-child > .c3 {
         class="c5"
       >
         <div
-          class="c6"
+          class="c6 c7"
           data-id="placeholder"
           display="flex"
+          height="120"
+          overflow="hidden"
+          shape="rectangle"
+          width="auto"
         >
-          <span
-            style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
+          <div
+            class="c8"
+            style="margin-top: 2px;"
           >
             This is 1/12
-          </span>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div
-    class="c7 c2"
+    class="c9 c2"
     data-id="column"
     width="full"
   >
@@ -486,21 +603,26 @@ div:first-child > .c3 {
         class="c5"
       >
         <div
-          class="c6"
+          class="c6 c7"
           data-id="placeholder"
           display="flex"
+          height="120"
+          overflow="hidden"
+          shape="rectangle"
+          width="auto"
         >
-          <span
-            style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
+          <div
+            class="c8"
+            style="margin-top: 2px;"
           >
             This is 5/12
-          </span>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div
-    class="c8 c2"
+    class="c10 c2"
     data-id="column"
     width="full"
   >
@@ -512,15 +634,20 @@ div:first-child > .c3 {
         class="c5"
       >
         <div
-          class="c6"
+          class="c6 c7"
           data-id="placeholder"
           display="flex"
+          height="120"
+          overflow="hidden"
+          shape="rectangle"
+          width="auto"
         >
-          <span
-            style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
+          <div
+            class="c8"
+            style="margin-top: 2px;"
           >
             This is 1/3
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -582,7 +709,7 @@ exports[`it sets width to flex by default 1`] = `
   vertical-align: baseline;
 }
 
-.c6 {
+.c7 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -595,10 +722,6 @@ exports[`it sets width to flex by default 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 24px;
-  padding-right: 24px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -607,6 +730,14 @@ exports[`it sets width to flex by default 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.c6 {
+  width: auto;
+  height: 120px;
+  border: 2px solid rgba(51,51,51,0.3);
 }
 
 .c1 {
@@ -635,13 +766,33 @@ div:first-child > .c3 {
         class="c5"
       >
         <div
-          class="c6"
+          class="c6 c7"
           data-id="placeholder"
           display="flex"
+          height="120"
+          overflow="hidden"
+          shape="rectangle"
+          width="auto"
         >
-          <span
-            style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
-          />
+          <svg
+            style="width: 100%; height: 100%; position: absolute;"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+              x1="0"
+              x2="100%"
+              y1="0"
+              y2="100%"
+            />
+            <line
+              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+              x1="100%"
+              x2="0"
+              y1="0"
+              y2="100%"
+            />
+          </svg>
         </div>
       </div>
     </div>
@@ -659,13 +810,33 @@ div:first-child > .c3 {
         class="c5"
       >
         <div
-          class="c6"
+          class="c6 c7"
           data-id="placeholder"
           display="flex"
+          height="120"
+          overflow="hidden"
+          shape="rectangle"
+          width="auto"
         >
-          <span
-            style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
-          />
+          <svg
+            style="width: 100%; height: 100%; position: absolute;"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+              x1="0"
+              x2="100%"
+              y1="0"
+              y2="100%"
+            />
+            <line
+              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+              x1="100%"
+              x2="0"
+              y1="0"
+              y2="100%"
+            />
+          </svg>
         </div>
       </div>
     </div>
@@ -683,13 +854,33 @@ div:first-child > .c3 {
         class="c5"
       >
         <div
-          class="c6"
+          class="c6 c7"
           data-id="placeholder"
           display="flex"
+          height="120"
+          overflow="hidden"
+          shape="rectangle"
+          width="auto"
         >
-          <span
-            style="font-size: 16px; line-height: 24px; font-weight: 500; color: rgb(35, 35, 35);"
-          />
+          <svg
+            style="width: 100%; height: 100%; position: absolute;"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+              x1="0"
+              x2="100%"
+              y1="0"
+              y2="100%"
+            />
+            <line
+              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+              x1="100%"
+              x2="0"
+              y1="0"
+              y2="100%"
+            />
+          </svg>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ import {Placeholder} from "..";
 test("it renders a Hidden", () => {
   const {container} = render(
     <Hidden>
-      <Placeholder>Not hidden</Placeholder>
+      <Placeholder label="Not hidden" />
     </Hidden>,
   );
   expect(container.firstChild).toMatchSnapshot();
@@ -15,7 +15,7 @@ test("it renders a Hidden", () => {
 test("it hides components below the md breakpoint", () => {
   const {container} = render(
     <Hidden below="md">
-      <Placeholder>Hidden below md.</Placeholder>
+      <Placeholder label="Hidden below md." />
     </Hidden>,
   );
   expect(container.firstChild).toMatchSnapshot();
@@ -24,7 +24,7 @@ test("it hides components below the md breakpoint", () => {
 test("it hides components above the sm breakpoint", () => {
   const {container} = render(
     <Hidden above="sm">
-      <Placeholder>Hidden above sm.</Placeholder>
+      <Placeholder label="Hidden above sm." />
     </Hidden>,
   );
   expect(container.firstChild).toMatchSnapshot();
@@ -32,24 +32,24 @@ test("it hides components above the sm breakpoint", () => {
 
 test("it hides text nodes below md", () => {
   const {container} = render(
-    <Placeholder>
+    <span>
       The following text node is hidden below md:
       <Hidden below="md" inline={true}>
         Hidden below md.
       </Hidden>
-    </Placeholder>,
+    </span>,
   );
   expect(container.firstChild).toMatchSnapshot();
 });
 
 test("it hides text nodes above md", () => {
   const {container} = render(
-    <Placeholder>
+    <span>
       The following text node is hidden above md:
       <Hidden above="md" inline={true}>
         Hidden above md.
       </Hidden>
-    </Placeholder>,
+    </span>,
   );
   expect(container.firstChild).toMatchSnapshot();
 });
