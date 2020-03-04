@@ -13,21 +13,20 @@ export const docs: ComponentDocs<SectionProps> = {
   examples: [
     {
       noSection: true,
-      label: "Background color",
-      description: `A background color can be set and by default <Section/> has a background color of transparent.`,
+      description: `By default <Section/> has a fluidity of "off". A max-width is applied at every media query breakpoint except for mobile. At the mobile breakpoint, the width is fluid, 100%.`,
+      label: "Default Example",
       Code: () => (
         <Section>
-          <Placeholder backgroundColor="lightOrange">Content</Placeholder>
+          <Placeholder />
         </Section>
       ),
     },
     {
       noSection: true,
-      label: "Responsive max-widths",
-      description: `By default <Section/> has a fluidity of "off". A max-width is applied at every media query breakpoint except for mobile. At the mobile breakpoint, the width is fluid, 100%.`,
+      label: "Background color",
       Code: () => (
-        <Section>
-          <Placeholder backgroundColor="lightOrange">Content</Placeholder>
+        <Section backgroundColor="white">
+          <Placeholder />
         </Section>
       ),
     },
@@ -37,7 +36,7 @@ export const docs: ComponentDocs<SectionProps> = {
       description: `When <Section/> has a fluidity of "max-width-at-xl". Its width is 100% of its container with a restriction of 1140px wide.`,
       Code: () => (
         <Section fluidity="max-width-at-xl">
-          <Placeholder backgroundColor="lightOrange">Content</Placeholder>
+          <Placeholder />
         </Section>
       ),
     },
@@ -47,7 +46,7 @@ export const docs: ComponentDocs<SectionProps> = {
       description: `A fluidity of "full-width" enables a width of 100% of its container with no restrictions at any breakpoint.`,
       Code: () => (
         <Section fluidity="full-width">
-          <Placeholder backgroundColor="lightOrange">Content</Placeholder>
+          <Placeholder />
         </Section>
       ),
     },
@@ -57,7 +56,7 @@ export const docs: ComponentDocs<SectionProps> = {
       description: `By default, there is a gutter or left and right padding. In cases where you want your content to extend to the boundaries of your parent container pass in "hideGutter={true}".`,
       Code: () => (
         <Section hideGutter fluidity="full-width">
-          <Placeholder backgroundColor="lightOrange">Content</Placeholder>
+          <Placeholder />
         </Section>
       ),
     },
@@ -68,9 +67,7 @@ export const docs: ComponentDocs<SectionProps> = {
       description: `In situations where you would like to vertically stretch Section to its parent height pass in "stretchY."`,
       Code: () => (
         <Section stretchY>
-          <Placeholder height="100%" backgroundColor="lightOrange">
-            Content
-          </Placeholder>
+          <Placeholder height="100%" />
         </Section>
       ),
     },

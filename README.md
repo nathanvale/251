@@ -33,7 +33,6 @@ https://docs.origindigital-dac.com.au/designsystem/playroom/
   - [Testing](#testing)
   - [Husky and commitlint support](#husky-and-commitlint-support)
   - [CI support](#ci-support)
-- [FAQS](#faqs)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -111,10 +110,10 @@ import {
 function App() {
   return (
     <OriginThemeProvider>
-      <Stack>
-        <Placeholder backgroundColor="red" />
-        <Placeholder backgroundColor="orange" />
-        <Placeholder backgroundColor="blue" />
+      <Stack space="medium">
+        <Placeholder />
+        <Placeholder />
+        <Placeholder />
       </Stack>
     </OriginThemeProvider>
   );
@@ -264,19 +263,3 @@ This command will:
 - Run jest on all packages along with a complete test coverage report
 
 If at anytime any of these processes fail the process will exit, which is why it is run in CI.
-
-## FAQS
-
-##### Why am I getting the error TS7016: Could not find a declaration file for module '@origin-digital/...'?
-
-The typescript build system uses project references:
-
-https://www.typescriptlang.org/docs/handbook/project-references.html
-
-Please make sure that your package's `@origin-digital/...` dependencies that exist in `origin-ui` have been referenced in their corresponding `tsconfig.json` files:
-
-```
-"references": [
-  {"path": "../{package}/tsconfig.json"},
-]
-```

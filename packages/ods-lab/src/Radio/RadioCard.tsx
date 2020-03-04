@@ -1,5 +1,6 @@
 import * as React from "react";
 import makeStyles from "@material-ui/styles/makeStyles";
+import {Divider} from "@origin-digital/ods-core";
 import {
   ToggleButtonGroup,
   ToggleButton,
@@ -9,7 +10,6 @@ import {
   RadioBase,
   RadioProps,
 } from "..";
-import {Divider} from "@origin-digital/ods-core";
 
 export interface ExtendedRadioBaseProps extends RadioBaseProps {
   content?: React.ReactNode;

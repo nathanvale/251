@@ -35,6 +35,7 @@ const colors: Color = {
   redPink: "#ff373c",
   red: "#ec0000",
   orange: "#ff8228",
+  darkOrange: "#fa4616",
   lightOrange: "#ffb432",
   lightBlue: "#d2f0ff",
   grey: "#505050",
@@ -75,7 +76,7 @@ const typography: Typography = {
   text: {
     xxxsmall: {
       size: 12,
-      rows: 2,
+      rows: 5,
     },
     xxsmall: {
       size: 14,

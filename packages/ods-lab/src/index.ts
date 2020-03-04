@@ -7,8 +7,6 @@
 
 // PLEASE EXPORT LAB UI COMPONENTS ONLY
 
-export {CardStackSection} from "./CardStackSection/CardStackSection";
-export type CardStackSectionProps = import("./CardStackSection/CardStackSection").CardStackSectionProps;
 export {Checkbox} from "./Checkbox/Checkbox";
 export type CheckboxProps = import("./Checkbox/Checkbox").CheckboxProps;
 export {ContentSection} from "./ContentSection/ContentSection";

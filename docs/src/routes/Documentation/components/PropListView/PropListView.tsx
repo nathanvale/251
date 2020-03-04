@@ -30,7 +30,7 @@ const Props = ({
       <Text>
         <PropType type={type} />
       </Text>
-      {description && <Text>{description}</Text>}
+      {description && <Text size="xxxsmall">{description}</Text>}
     </Stack>
   </Stack>
 );

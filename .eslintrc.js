@@ -10,6 +10,8 @@ module.exports = {
   extends:
     "./node_modules/@origin-digital/origin-scripts/dist/config/eslintrc.js",
   rules: {
+    "import/no-default-export": "error",
+    "jest/require-top-level-describe": "off",
     "jest/no-empty-title": "off",
     "react/prop-types": "off",
     "no-bitwise": "off",

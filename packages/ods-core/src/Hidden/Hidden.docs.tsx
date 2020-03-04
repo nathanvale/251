@@ -22,7 +22,7 @@ export const docs: ComponentDocs<HiddenProps> = {
       description: "The default behaviour is to not hide children.",
       Code: () => (
         <Hidden>
-          <Placeholder>Not hidden.</Placeholder>
+          <Placeholder label="Not hidden" />
         </Hidden>
       ),
     },
@@ -30,9 +30,9 @@ export const docs: ComponentDocs<HiddenProps> = {
       label: "Hiding components below the md breakpoint",
       Code: () => (
         <Stack space="small">
-          <Placeholder>The following line is hidden below md:</Placeholder>
+          <Placeholder label="The following line is hidden below md:" />
           <Hidden below="md">
-            <Placeholder>Hidden below md.</Placeholder>
+            <Placeholder label="Hidden below md" />
           </Hidden>
         </Stack>
       ),
@@ -41,9 +41,9 @@ export const docs: ComponentDocs<HiddenProps> = {
       label: "Hiding components above the sm breakpoint",
       Code: () => (
         <Stack space="small">
-          <Placeholder>The following line is hidden above sm:</Placeholder>
+          <Placeholder label="The following line is hidden above sm:" />
           <Hidden above="sm">
-            <Placeholder>Hidden above sm.</Placeholder>
+            <Placeholder label="Hidden above sm" />
           </Hidden>
         </Stack>
       ),
@@ -53,11 +53,9 @@ export const docs: ComponentDocs<HiddenProps> = {
         "Hiding components above the sm breakpoint and below to lg breakpoint",
       Code: () => (
         <Stack space="small">
-          <Placeholder>
-            The following line is hidden above sm and below lg:
-          </Placeholder>
+          <Placeholder label="The following line is hidden above sm and below lg:" />
           <Hidden above="sm" below="lg">
-            <Placeholder>Hidden above sm and below lg.</Placeholder>
+            <Placeholder label="Hidden above sm and below lg" />
           </Hidden>
         </Stack>
       ),
@@ -65,23 +63,23 @@ export const docs: ComponentDocs<HiddenProps> = {
     {
       label: "Hiding text nodes below md",
       Code: () => (
-        <Placeholder>
+        <span>
           The following text node is hidden below md:
           <Hidden below="md" inline={true}>
             Hidden below md.
           </Hidden>
-        </Placeholder>
+        </span>
       ),
     },
     {
       label: "Hiding text nodes above sm",
       Code: () => (
-        <Placeholder>
+        <span>
           The following text node is hidden above sm:
           <Hidden above="sm" inline={true}>
             Hidden above sm.
           </Hidden>
-        </Placeholder>
+        </span>
       ),
     },
   ],

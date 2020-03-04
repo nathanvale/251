@@ -114,11 +114,11 @@ export function Props<T = {}>({
   return (
     <Section backgroundColor="white">
       <StyledBox maxWidth={[null, null, "75%", "66%"]}>
-        <Stack space="xxlarge">
-          <Columns>
+        <Stack space={["xxlarge", "xxxlarge"]}>
+          <Columns alignY="bottom">
             <Column width="content">
               <Text color="grey56" size="xlarge">
-                {`<${componentName}/>`}
+                {componentName}
               </Text>
             </Column>
             <Column>
@@ -126,9 +126,9 @@ export function Props<T = {}>({
             </Column>
             <Column width="content">
               <Box display="flex">
-                <Link component="a" href={sourceUrl}>
-                  View source
-                </Link>
+                <a href={sourceUrl} style={{textDecoration: "none"}}>
+                  <Text size="xxxsmall">View source</Text>
+                </a>
               </Box>
             </Column>
           </Columns>

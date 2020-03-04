@@ -25,7 +25,7 @@ test('it correctly allocates required width for "content"', () => {
   const {container} = render(
     <Columns space="small">
       <Column width="content">
-        <Placeholder>This is content width</Placeholder>
+        <Placeholder label="This is content width" />
       </Column>
       <Column>
         <Placeholder />
@@ -42,10 +42,10 @@ test("it correctly sets width for proportions 1/3 and 2/3", () => {
   const {container} = render(
     <Columns space="small">
       <Column width="1/3">
-        <Placeholder>This is 1/3</Placeholder>
+        <Placeholder label="This is 1/3" />
       </Column>
       <Column width="2/3">
-        <Placeholder>This is 2/3</Placeholder>
+        <Placeholder label="This is 2/3" />
       </Column>
     </Columns>,
   );
@@ -56,13 +56,13 @@ test("it correctly sets width for proportions 1/12, 7/12, 1/3", () => {
   const {container} = render(
     <Columns space="small">
       <Column width="1/12">
-        <Placeholder>This is 1/12</Placeholder>
+        <Placeholder label="This is 1/12" />
       </Column>
       <Column width="5/12">
-        <Placeholder>This is 5/12</Placeholder>
+        <Placeholder label="This is 5/12" />
       </Column>
       <Column width="1/3">
-        <Placeholder>This is 1/3</Placeholder>
+        <Placeholder label="This is 1/3" />
       </Column>
     </Columns>,
   );

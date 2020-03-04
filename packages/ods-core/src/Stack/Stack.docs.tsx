@@ -23,9 +23,9 @@ export const docs: ComponentDocs<StackProps> = {
         "By default <Stack/> vertically stacks siblings without any space between them.",
       Code: () => (
         <Stack>
-          <Placeholder backgroundColor="red" />
-          <Placeholder backgroundColor="orange" />
-          <Placeholder backgroundColor="blue" />
+          <Placeholder />
+          <Placeholder />
+          <Placeholder />
         </Stack>
       ),
     },
@@ -34,9 +34,9 @@ export const docs: ComponentDocs<StackProps> = {
       description: `In order to distribute white space evenly between components pass in "space" with a tshirt size.`,
       Code: () => (
         <Stack space="xxlarge">
-          <Placeholder backgroundColor="red" />
-          <Placeholder backgroundColor="orange" />
-          <Placeholder backgroundColor="blue" />
+          <Placeholder />
+          <Placeholder />
+          <Placeholder />
         </Stack>
       ),
     },
@@ -54,9 +54,9 @@ export const docs: ComponentDocs<StackProps> = {
             xl: "xxlarge",
           }}
         >
-          <Placeholder backgroundColor="red" />
-          <Placeholder backgroundColor="orange" />
-          <Placeholder backgroundColor="blue" />
+          <Placeholder />
+          <Placeholder />
+          <Placeholder />
         </Stack>
       ),
     },
@@ -66,9 +66,9 @@ export const docs: ComponentDocs<StackProps> = {
       Container,
       Code: () => (
         <Stack space="small" dividers>
-          <Placeholder backgroundColor="red" />
-          <Placeholder backgroundColor="orange" />
-          <Placeholder backgroundColor="blue" />
+          <Placeholder />
+          <Placeholder />
+          <Placeholder />
         </Stack>
       ),
     },
@@ -79,9 +79,9 @@ export const docs: ComponentDocs<StackProps> = {
       Container,
       Code: () => (
         <Stack space="small" dividers alignX="center">
-          <Placeholder backgroundColor="red" />
-          <Placeholder backgroundColor="orange" />
-          <Placeholder backgroundColor="blue" />
+          <Placeholder shape="round" width="120px" />
+          <Placeholder shape="round" width="120px" />
+          <Placeholder shape="round" width="120px" />
         </Stack>
       ),
     },

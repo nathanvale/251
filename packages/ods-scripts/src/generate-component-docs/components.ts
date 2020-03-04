@@ -3,7 +3,6 @@ export {
   Alert,
   AppBar,
   Button,
-  CardStackSection,
   Checkbox,
   CircularProgress,
   Collapse,

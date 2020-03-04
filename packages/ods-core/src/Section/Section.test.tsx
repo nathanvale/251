@@ -6,9 +6,9 @@ import {Section} from "./Section";
 test("It sets the grey background correctly", () => {
   const {container} = render(
     <Section backgroundColor="grey">
-      <Placeholder backgroundColor="red" />
-      <Placeholder backgroundColor="orange" />
-      <Placeholder backgroundColor="blue" />
+      <Placeholder />
+      <Placeholder />
+      <Placeholder />
     </Section>,
   );
   const style = window.getComputedStyle(container.firstChild as Element);
@@ -18,9 +18,9 @@ test("It sets the grey background correctly", () => {
 test("It sets the white background correctly", () => {
   const {container} = render(
     <Section backgroundColor="white">
-      <Placeholder backgroundColor="red" />
-      <Placeholder backgroundColor="orange" />
-      <Placeholder backgroundColor="blue" />
+      <Placeholder />
+      <Placeholder />
+      <Placeholder />
     </Section>,
   );
   const style = window.getComputedStyle(container.firstChild as Element);
@@ -30,9 +30,9 @@ test("It sets the white background correctly", () => {
 test("It sets the transparent background if no background is provided", () => {
   const {container} = render(
     <Section>
-      <Placeholder backgroundColor="red" />
-      <Placeholder backgroundColor="orange" />
-      <Placeholder backgroundColor="blue" />
+      <Placeholder />
+      <Placeholder />
+      <Placeholder />
     </Section>,
   );
   const style = window.getComputedStyle(container.firstChild as Element);
@@ -42,9 +42,9 @@ test("It sets the transparent background if no background is provided", () => {
 test("should have no max-width if fluidity is set to full-width", () => {
   const {container} = render(
     <Section fluidity="full-width">
-      <Placeholder backgroundColor="red" />
-      <Placeholder backgroundColor="orange" />
-      <Placeholder backgroundColor="blue" />
+      <Placeholder />
+      <Placeholder />
+      <Placeholder />
     </Section>,
   );
   const style = window.getComputedStyle(container.firstChild as Element);
@@ -54,7 +54,7 @@ test("should have no max-width if fluidity is set to full-width", () => {
 test("should hide gutters if hideGutter is true", () => {
   const {container} = render(
     <Section hideGutter={true}>
-      <Placeholder backgroundColor="red" />
+      <Placeholder />
     </Section>,
   );
   const style = window.getComputedStyle(container.firstChild as Element);
@@ -65,7 +65,7 @@ test("should hide gutters if hideGutter is true", () => {
 test("should have gutters by default", () => {
   const {container} = render(
     <Section>
-      <Placeholder backgroundColor="red" />
+      <Placeholder />
     </Section>,
   );
   const style = window.getComputedStyle(container.firstChild as Element);
@@ -76,7 +76,7 @@ test("should have gutters by default", () => {
 test("should stretch the height to full if stretchY is true", () => {
   const {container} = render(
     <Section stretchY>
-      <Placeholder backgroundColor="red" />
+      <Placeholder />
     </Section>,
   );
   const style = window.getComputedStyle(container.firstChild as Element);
@@ -86,7 +86,7 @@ test("should stretch the height to full if stretchY is true", () => {
 test("should not stretch the height by default", () => {
   const {container} = render(
     <Section>
-      <Placeholder backgroundColor="red" />
+      <Placeholder />
     </Section>,
   );
   const style = window.getComputedStyle(container.firstChild as Element);

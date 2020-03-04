@@ -18,10 +18,10 @@ export const docs: ComponentDocs<ColumnsProps> = {
       Code: () => (
         <Columns space="small" collapseBelow="sm">
           <Column>
-            <Placeholder backgroundColor="blue" />
+            <Placeholder />
           </Column>
           <Column>
-            <Placeholder backgroundColor="blue" />
+            <Placeholder />
           </Column>
         </Columns>
       ),
@@ -33,10 +33,10 @@ export const docs: ComponentDocs<ColumnsProps> = {
       Code: () => (
         <Columns space="small" collapseBelow="lg">
           <Column>
-            <Placeholder backgroundColor="blue" />
+            <Placeholder />
           </Column>
           <Column>
-            <Placeholder backgroundColor="blue" />
+            <Placeholder />
           </Column>
         </Columns>
       ),
@@ -48,10 +48,10 @@ export const docs: ComponentDocs<ColumnsProps> = {
       Code: () => (
         <Columns space={["small", "xxxlarge"]}>
           <Column>
-            <Placeholder backgroundColor="blue" />
+            <Placeholder />
           </Column>
           <Column>
-            <Placeholder backgroundColor="blue" />
+            <Placeholder />
           </Column>
         </Columns>
       ),
@@ -71,10 +71,10 @@ export const docs: ComponentDocs<ColumnsProps> = {
           }}
         >
           <Column>
-            <Placeholder backgroundColor="blue" />
+            <Placeholder />
           </Column>
           <Column>
-            <Placeholder backgroundColor="blue" />
+            <Placeholder />
           </Column>
         </Columns>
       ),
@@ -84,12 +84,12 @@ export const docs: ComponentDocs<ColumnsProps> = {
       description:
         "Use alignY to align the child Column components top, center (defalut) or bottom",
       Code: () => (
-        <Columns space="small" collapseBelow="sm" alignY="bottom">
+        <Columns space="small" alignY="bottom">
           <Column>
-            <Placeholder backgroundColor="blue" />
+            <Placeholder height="400px" />
           </Column>
           <Column>
-            <Placeholder backgroundColor="blue" />
+            <Placeholder />
           </Column>
         </Columns>
       ),

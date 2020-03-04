@@ -2,8 +2,8 @@ import React from "react";
 import MuiTableRow, {
   TableRowProps as ITableRow,
 } from "@material-ui/core/TableRow";
-import {AllColors} from "../AllColors/AllColors";
 import makeStyles from "@material-ui/styles/makeStyles";
+import {AllColors} from "../AllColors/AllColors";
 
 const useStyles = makeStyles({
   row: {

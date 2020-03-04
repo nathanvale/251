@@ -1,3 +1,6 @@
+export type CardStackSectionVariant = "widget" | "default" | "card-centered";
+export type CardStackSize = "small" | "medium" | "large";
+export type PaddingYVariants = "none" | "small" | "medium" | "large";
 export type CardPaddingVariants = "small" | "medium" | "large";
 
 export type AlignItemsVariants =
@@ -75,6 +78,7 @@ export interface Color {
   redPink: string;
   red: string;
   orange: string;
+  darkOrange: string;
   lightOrange: string;
   lightBlue: string;
   grey: string;

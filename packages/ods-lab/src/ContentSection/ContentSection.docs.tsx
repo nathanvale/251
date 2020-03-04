@@ -16,7 +16,7 @@ export const docs: ComponentDocs<ContentSectionProps> = {
       noSection: true,
       Code: () => (
         <ContentSection backgroundColor="white">
-          <Placeholder height="300px">Content</Placeholder>
+          <Placeholder />
         </ContentSection>
       ),
     },
