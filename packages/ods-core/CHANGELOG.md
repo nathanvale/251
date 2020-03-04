@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.9.3...@origin-digital/ods-core@0.10.0) (2020-03-04)
+
+
+### Features
+
+* **CardStackSection:** move to core ([5c3472b](https://bitbucket.orgn.io/od/origin-ui/commits/5c3472b))
+
+
+
+
+
 ## [0.9.3](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.9.2...@origin-digital/ods-core@0.9.3) (2020-03-04)
 
 **Note:** Version bump only for package @origin-digital/ods-core
