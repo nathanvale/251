@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-testing-library@0.4.0...@origin-digital/ods-testing-library@0.4.1) (2020-03-04)
+
+
+### Bug Fixes
+
+* **react-testing-library:** fix react transpile issue ([d6d0e17](https://bitbucket.orgn.io/od/origin-ui/commits/d6d0e17))
+
+
+
+
+
 # [0.4.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-testing-library@0.3.3...@origin-digital/ods-testing-library@0.4.0) (2020-02-19)
 
 

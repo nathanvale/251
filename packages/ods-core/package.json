@@ -3,7 +3,7 @@
   "description": "Origin digital design system",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "files": [
@@ -31,7 +31,7 @@
     "styled-components": "3.4.5"
   },
   "devDependencies": {
-    "@origin-digital/ods-testing-library": "^0.4.0"
+    "@origin-digital/ods-testing-library": "^0.4.1"
   },
   "publishConfig": {
     "registry": "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-internal/"
