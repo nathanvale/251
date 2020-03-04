@@ -23,7 +23,8 @@
   "peerDependencies": {
     "@origin-digital/ods-themes": "*",
     "@testing-library/react": "9.x",
-    "jest-styled-components": "6.x"
+    "jest-styled-components": "6.x",
+    "react": "^16.9.0"
   },
   "devDependencies": {
     "@testing-library/react": "9.x"
