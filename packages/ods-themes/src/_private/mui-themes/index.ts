@@ -1,1 +1,1 @@
-export {originRetailMUITheme} from "./originRetail";
+export { originRetailMUITheme } from "./originRetail";

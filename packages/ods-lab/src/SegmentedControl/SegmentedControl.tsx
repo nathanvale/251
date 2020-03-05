@@ -8,12 +8,12 @@ import {
 } from "..";
 
 export interface SegmentedControlProps extends ToggleButtonGroupProps {
-  options: Array<{value: string | number; content: React.ReactNode}>;
+  options: Array<{ value: string | number; content: React.ReactNode }>;
   label: string;
 }
 
 export const SegmentedControl = (props: SegmentedControlProps) => {
-  const {label, value, onChange, options} = props;
+  const { label, value, onChange, options } = props;
   return (
     <Grid container direction="column">
       <Grid item>

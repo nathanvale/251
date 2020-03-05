@@ -1,5 +1,5 @@
 import React from "react";
-import MuiTable, {TableProps as ITable} from "@material-ui/core/Table";
+import MuiTable, { TableProps as ITable } from "@material-ui/core/Table";
 
 export interface TableProps extends ITable {
   "data-id": string;

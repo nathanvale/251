@@ -6,7 +6,7 @@
   },
   "include": ["src", "src/**/*.json", "../../globals.d.ts", "../ods-types"],
   "references": [
-    {"path": "../ods-lab/tsconfig.json"},
-    {"path": "../ods-core/tsconfig.json"}
+    { "path": "../ods-lab/tsconfig.json" },
+    { "path": "../ods-core/tsconfig.json" }
   ]
 }

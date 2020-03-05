@@ -1,10 +1,10 @@
 import React from "react";
-import {render} from "@origin-digital/ods-testing-library";
-import {Hidden} from "./Hidden";
-import {Placeholder} from "..";
+import { render } from "@origin-digital/ods-testing-library";
+import { Hidden } from "./Hidden";
+import { Placeholder } from "..";
 
 test("it renders a Hidden", () => {
-  const {container} = render(
+  const { container } = render(
     <Hidden>
       <Placeholder label="Not hidden" />
     </Hidden>,
@@ -13,7 +13,7 @@ test("it renders a Hidden", () => {
 });
 
 test("it hides components below the md breakpoint", () => {
-  const {container} = render(
+  const { container } = render(
     <Hidden below="md">
       <Placeholder label="Hidden below md." />
     </Hidden>,
@@ -22,7 +22,7 @@ test("it hides components below the md breakpoint", () => {
 });
 
 test("it hides components above the sm breakpoint", () => {
-  const {container} = render(
+  const { container } = render(
     <Hidden above="sm">
       <Placeholder label="Hidden above sm." />
     </Hidden>,
@@ -31,7 +31,7 @@ test("it hides components above the sm breakpoint", () => {
 });
 
 test("it hides text nodes below md", () => {
-  const {container} = render(
+  const { container } = render(
     <span>
       The following text node is hidden below md:
       <Hidden below="md" inline={true}>
@@ -43,7 +43,7 @@ test("it hides text nodes below md", () => {
 });
 
 test("it hides text nodes above md", () => {
-  const {container} = render(
+  const { container } = render(
     <span>
       The following text node is hidden above md:
       <Hidden above="md" inline={true}>

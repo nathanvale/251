@@ -1,11 +1,14 @@
 import React from "react";
-import {queryAllByAttribute, render} from "@origin-digital/ods-testing-library";
-import {Column} from "../Column/Column";
-import {Placeholder} from "../Placeholder/Placeholder";
-import {Columns} from "./Columns";
+import {
+  queryAllByAttribute,
+  render,
+} from "@origin-digital/ods-testing-library";
+import { Column } from "../Column/Column";
+import { Placeholder } from "../Placeholder/Placeholder";
+import { Columns } from "./Columns";
 
 test("it spaces column comps with small space", () => {
-  const {container} = render(
+  const { container } = render(
     <Columns space="small">
       <Column>
         <Placeholder />
@@ -30,7 +33,7 @@ test("it spaces column comps with small space", () => {
 });
 
 test("it top-aligns children by default", () => {
-  const {container} = render(
+  const { container } = render(
     <Columns>
       <Column>
         <Placeholder height="100px" />
@@ -50,7 +53,7 @@ test("it top-aligns children by default", () => {
 });
 
 test("it vertically aligns children middle if alignY is center", () => {
-  const {container} = render(
+  const { container } = render(
     <Columns alignY="center">
       <Column>
         <Placeholder height="100px" />
@@ -70,7 +73,7 @@ test("it vertically aligns children middle if alignY is center", () => {
 });
 
 test("it vertically aligns children bottom if alignY is bottom", () => {
-  const {container} = render(
+  const { container } = render(
     <Columns alignY="bottom">
       <Column>
         <Placeholder height="100px" />

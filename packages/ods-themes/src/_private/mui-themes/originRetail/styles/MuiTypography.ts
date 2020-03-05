@@ -1,5 +1,5 @@
-import {colors} from "../colors";
-import {typography} from "../typography";
+import { colors } from "../colors";
+import { typography } from "../typography";
 
 export const MuiTypography = {
   fontFamily: ["gordita", "Arial", "Sans-Serif"].join(","),

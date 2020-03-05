@@ -5,8 +5,8 @@ import {
 
 describe("mapSpaceAliasToIndex", () => {
   const testData: [MapSpaceAliasToIndexProps, number[] | {}][] = [
-    [{space: "small"}, 3],
-    [{space: ["small", "large"]}, [3, 5]],
+    [{ space: "small" }, 3],
+    [{ space: ["small", "large"] }, [3, 5]],
     [
       {
         space: {
@@ -17,10 +17,10 @@ describe("mapSpaceAliasToIndex", () => {
           xs: "none",
         },
       },
-      {lg: 5, md: 4, sm: 3, xl: 7, xs: 0},
+      { lg: 5, md: 4, sm: 3, xl: 7, xs: 0 },
     ],
-    [{space: "small", isNegative: true}, -3],
-    [{space: ["small", "large"], isNegative: true}, [-3, -5]],
+    [{ space: "small", isNegative: true }, -3],
+    [{ space: ["small", "large"], isNegative: true }, [-3, -5]],
     [
       {
         space: {
@@ -32,7 +32,7 @@ describe("mapSpaceAliasToIndex", () => {
         },
         isNegative: true,
       },
-      {lg: -5, md: -4, sm: -3, xl: -7, xs: -0},
+      { lg: -5, md: -4, sm: -3, xl: -7, xs: -0 },
     ],
   ];
 

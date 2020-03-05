@@ -1,8 +1,8 @@
-import React, {ReactNode, Children} from "react";
+import React, { ReactNode, Children } from "react";
 import styled from "styled-components";
-import {AlignItemsVariants} from "@origin-digital/ods-types";
-import {Box, ResponsiveSpace} from "../Box/Box";
-import {Divider} from "../Divider/Divider";
+import { AlignItemsVariants } from "@origin-digital/ods-types";
+import { Box, ResponsiveSpace } from "../Box/Box";
+import { Divider } from "../Divider/Divider";
 
 export type AlignXType = "left" | "center" | "right" | "stretch";
 
@@ -12,7 +12,7 @@ const mapHAlignToAlignItems = (alignX: AlignXType): AlignItemsVariants => {
     center: "center",
     right: "flex-end",
     stretch: "stretch",
-  } as {[k in AlignXType]: AlignItemsVariants};
+  } as { [k in AlignXType]: AlignItemsVariants };
   return map[alignX];
 };
 

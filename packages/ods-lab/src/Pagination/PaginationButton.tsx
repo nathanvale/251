@@ -1,7 +1,7 @@
 import * as React from "react";
 import makeStyles from "@material-ui/styles/makeStyles";
-import {AllColors} from "../AllColors/AllColors";
-import {Button, Grid} from "..";
+import { AllColors } from "../AllColors/AllColors";
+import { Button, Grid } from "..";
 
 const useStyles = makeStyles({
   select: {

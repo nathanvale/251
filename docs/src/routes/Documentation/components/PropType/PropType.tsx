@@ -1,12 +1,12 @@
-import React, {Fragment} from "react";
-import {NormalisedPropType} from "@origin-digital/ods-scripts";
-import {Box} from "@origin-digital/ods-core";
+import React, { Fragment } from "react";
+import { NormalisedPropType } from "@origin-digital/ods-scripts";
+import { Box } from "@origin-digital/ods-core";
 
 export interface PropTypeProps {
   type: NormalisedPropType;
 }
 
-export const PropType = ({type}: PropTypeProps) => {
+export const PropType = ({ type }: PropTypeProps) => {
   if (typeof type === "string") {
     // Display child component type (e.g. Column | Column[])
     const matches = type.match(/^ReactElement<([A-Z]{1}[a-zA-Z]+)Props/);
@@ -39,7 +39,7 @@ export const PropType = ({type}: PropTypeProps) => {
     return (
       <Fragment>
         {"{"}
-        {Object.values(type.props).map(({propName, required, type}) => (
+        {Object.values(type.props).map(({ propName, required, type }) => (
           <Box key={propName} paddingLeft="small">
             {propName}
             {required ? ": " : "?: "}

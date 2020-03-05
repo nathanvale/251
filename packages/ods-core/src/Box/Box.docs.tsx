@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import React from "react";
-import {ComponentDocs} from "../../../../docs/src/types";
-import {Box, StackProps} from "../";
+import { ComponentDocs } from "../../../../docs/src/types";
+import { Box, StackProps } from "../";
 
 export const docs: ComponentDocs<StackProps> = {
   category: "Layout",

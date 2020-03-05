@@ -1,5 +1,5 @@
-import React, {ReactNode} from "react";
-import {Box} from "@origin-digital/ods-core";
+import React, { ReactNode } from "react";
+import { Box } from "@origin-digital/ods-core";
 import {
   resolveResponsiveRangeProps,
   ResponsiveRangeProps,
@@ -10,7 +10,7 @@ export interface HiddenProps extends ResponsiveRangeProps {
   inline?: boolean;
 }
 
-export const Hidden = ({children, above, below, inline}: HiddenProps) => {
+export const Hidden = ({ children, above, below, inline }: HiddenProps) => {
   const [
     hiddenOnXs,
     hiddenOnSm,

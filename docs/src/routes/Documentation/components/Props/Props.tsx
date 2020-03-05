@@ -1,23 +1,23 @@
 /* eslint-disable import/no-duplicates */
 /* eslint-disable no-duplicate-imports */
-import React, {FC} from "react";
+import React, { FC } from "react";
 import partition from "lodash/partition";
 import mapValues from "lodash/mapValues";
 import isEmpty from "lodash/isEmpty";
 import * as Core from "@origin-digital/ods-core";
 import * as Experimental from "@origin-digital/ods-lab";
 import styled from "styled-components";
-import {maxWidth, MaxWidthProps} from "styled-system";
-import {NormalisedInterface} from "@origin-digital/ods-scripts";
-import {Stack, Columns, Column, Section, Box} from "@origin-digital/ods-core";
-import {Text, Link} from "@origin-digital/ods-lab";
-import {CSSDebugButton} from "@origin-digital/ods-devtools";
-import {IconFlipToBack} from "@origin-digital/ods-icons";
+import { maxWidth, MaxWidthProps } from "styled-system";
+import { NormalisedInterface } from "@origin-digital/ods-scripts";
+import { Stack, Columns, Column, Section, Box } from "@origin-digital/ods-core";
+import { Text, Link } from "@origin-digital/ods-lab";
+import { CSSDebugButton } from "@origin-digital/ods-devtools";
+import { IconFlipToBack } from "@origin-digital/ods-icons";
 import componentDocs from "../../../../componentDocs.json";
-import {ComponentDocs} from "../../../../types";
+import { ComponentDocs } from "../../../../types";
 
-import {PropListView} from "../PropListView/PropListView";
-import {PropTableView} from "../PropTableView/PropTableView";
+import { PropListView } from "../PropListView/PropListView";
+import { PropTableView } from "../PropTableView/PropTableView";
 
 interface PropsProps<T> {
   componentName: ComponentDocs["componentName"];
@@ -56,7 +56,7 @@ const StyledBox = styled(Box)<MaxWidthProps>`
   ${maxWidth}
 `;
 
-const ColumnsHeader = ({hasDefaultProps}: {hasDefaultProps: boolean}) =>
+const ColumnsHeader = ({ hasDefaultProps }: { hasDefaultProps: boolean }) =>
   hasDefaultProps ? (
     <Columns space="xlarge">
       <CommonColumns />
@@ -82,14 +82,14 @@ export function Props<T = {}>({
   if (!isValidComponentName(componentName)) {
     return null;
   }
-  const {props} = docs[componentName];
+  const { props } = docs[componentName];
 
   const [requiredProps, optionalProps] = partition(
     props,
     prop => prop.required,
   );
 
-  const components = {...Core, ...Experimental};
+  const components = { ...Core, ...Experimental };
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const component = (components as Record<string, FC<any>>)[componentName];
 
@@ -126,7 +126,7 @@ export function Props<T = {}>({
             </Column>
             <Column width="content">
               <Box display="flex">
-                <a href={sourceUrl} style={{textDecoration: "none"}}>
+                <a href={sourceUrl} style={{ textDecoration: "none" }}>
                   <Text size="xxxsmall">View source</Text>
                 </a>
               </Box>
@@ -163,7 +163,7 @@ export function Props<T = {}>({
                   </>
                 )}
 
-                <Box style={{marginBottom: -20}}>
+                <Box style={{ marginBottom: -20 }}>
                   <Columns>
                     <Column width="content">
                       {requiredProps.length > 0 && (

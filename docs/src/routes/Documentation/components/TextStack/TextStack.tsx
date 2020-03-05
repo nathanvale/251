@@ -1,5 +1,5 @@
-import React, {ReactElement} from "react";
-import {Box, Stack, StackProps} from "@origin-digital/ods-core";
+import React, { ReactElement } from "react";
+import { Box, Stack, StackProps } from "@origin-digital/ods-core";
 
 interface TextStackProps {
   children: ReactNodeNoStrings;
@@ -15,8 +15,8 @@ type ReactNodeNoStrings =
   | null
   | undefined;
 
-export const TextStack = ({space = "xlarge", children}: TextStackProps) => (
-  <Box style={{maxWidth: "640px"}}>
+export const TextStack = ({ space = "xlarge", children }: TextStackProps) => (
+  <Box style={{ maxWidth: "640px" }}>
     <Stack space={space}>{children}</Stack>
   </Box>
 );

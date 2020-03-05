@@ -1,14 +1,14 @@
-import React, {StrictMode} from "react";
+import React, { StrictMode } from "react";
 import * as ReactDOM from "react-dom";
 import transition from "styled-transition-group";
-import {HashRouter as Router, Route} from "react-router-dom";
-import {DebugProvider} from "@origin-digital/ods-devtools";
-import {OriginThemeProvider, Box} from "@origin-digital/ods-core";
-import {Documentation} from "./routes/Documentation/Documentation";
-import {Home} from "./routes/Home/Home";
+import { HashRouter as Router, Route } from "react-router-dom";
+import { DebugProvider } from "@origin-digital/ods-devtools";
+import { OriginThemeProvider, Box } from "@origin-digital/ods-core";
+import { Documentation } from "./routes/Documentation/Documentation";
+import { Home } from "./routes/Home/Home";
 
 const routes = [
-  {path: "/", name: "Home", exact: true, Component: Home},
+  { path: "/", name: "Home", exact: true, Component: Home },
   {
     path: "/(guides|components|foundations)",
     name: "Documentation",
@@ -42,15 +42,15 @@ ReactDOM.render(
     <DebugProvider>
       <Router>
         <Box backgroundColor="white">
-          {routes.map(({path, exact, Component}) => (
+          {routes.map(({ path, exact, Component }) => (
             <Route key={path} exact={exact} path={path}>
-              {({match}) => (
+              {({ match }) => (
                 <CSSTransition in={match != null} timeout={350} unmountOnExit>
                   <StrictMode>
                     <Box
                       position="absolute"
                       backgroundColor="white"
-                      style={{top: 0, bottom: 0, left: 0, right: 0}}
+                      style={{ top: 0, bottom: 0, left: 0, right: 0 }}
                     >
                       <Component />
                     </Box>

@@ -1,5 +1,5 @@
 import * as React from "react";
-import MuiButton, {ButtonProps as IButton} from "@material-ui/core/Button";
+import MuiButton, { ButtonProps as IButton } from "@material-ui/core/Button";
 
 export interface ButtonProps extends IButton {
   "data-id"?: string;
@@ -21,7 +21,7 @@ export interface ButtonProps extends IButton {
 
 export const Button = (props: ButtonProps) => {
   // const { inverseBlack, children, className, ...other} = props;
-  const {children, ...other} = props;
+  const { children, ...other } = props;
   return (
     <MuiButton
       // className={inverseBlack ? styles.inverseBlack : className}

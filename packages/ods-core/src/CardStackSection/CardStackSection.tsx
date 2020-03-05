@@ -1,5 +1,5 @@
-import React, {ReactNode, ReactElement} from "react";
-import styled, {css} from "styled-components";
+import React, { ReactNode, ReactElement } from "react";
+import styled, { css } from "styled-components";
 import {
   CardStackSectionVariant,
   CardStackSize,
@@ -8,7 +8,7 @@ import {
   SpaceVariants,
   ResponsiveProp,
 } from "@origin-digital/ods-types";
-import {Box, Stack, CardProps, BoxProps} from "@origin-digital/ods-core";
+import { Box, Stack, CardProps, BoxProps } from "@origin-digital/ods-core";
 import {
   marginTop,
   marginBottom,
@@ -116,9 +116,9 @@ const CardCenteredStack = ({
     display="flex"
     data-id={dataId}
     flexDirection="column"
-    paddingY={{xs: "xsmall", sm: "xsmall"}}
+    paddingY={{ xs: "xsmall", sm: "xsmall" }}
     alignItems="center"
-    justifyContent={{md: "center"}}
+    justifyContent={{ md: "center" }}
     height="full"
     width="full"
   >
@@ -144,16 +144,16 @@ const WidgetStack = ({
   <Box width="full" data-id={dataId}>
     <Box
       backgroundColor="darkOrange"
-      display={{lg: "none"}}
-      style={{height: "120px"}}
+      display={{ lg: "none" }}
+      style={{ height: "120px" }}
       width="full"
     />
     <WidgetContainer
       display="flex"
       justifyContent="center"
       width="full"
-      marginTop={{xs: "-88px", lg: "48px"}}
-      marginBottom={{xs: "32px", lg: "48px"}}
+      marginTop={{ xs: "-88px", lg: "48px" }}
+      marginBottom={{ xs: "32px", lg: "48px" }}
     >
       <ResponsiveCardMaxWidths cardWidth={cardWidth}>
         <Stack space={["medium", "xlarge"]}>{children}</Stack>

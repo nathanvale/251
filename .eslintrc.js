@@ -1,4 +1,4 @@
-const {spawnSync} = require("child_process");
+const { spawnSync } = require("child_process");
 
 const result = spawnSync("./node_modules/lerna/cli.js", ["ls", "--parseable"], {
   stdio: "pipe",

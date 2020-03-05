@@ -1,12 +1,12 @@
 import React from "react";
-import {NormalisedPropType} from "@origin-digital/ods-scripts";
-import {Column, Columns, Stack} from "@origin-digital/ods-core";
-import {Text} from "@origin-digital/ods-lab";
-import {PropType} from "../PropType/PropType";
+import { NormalisedPropType } from "@origin-digital/ods-scripts";
+import { Column, Columns, Stack } from "@origin-digital/ods-core";
+import { Text } from "@origin-digital/ods-lab";
+import { PropType } from "../PropType/PropType";
 
 export interface PropListViewProps {
-  requiredProps: Array<{propName: string; type: NormalisedPropType}>;
-  optionalProps: Array<{propName: string; type: NormalisedPropType}>;
+  requiredProps: Array<{ propName: string; type: NormalisedPropType }>;
+  optionalProps: Array<{ propName: string; type: NormalisedPropType }>;
   propDescriptions?: Partial<Record<string, string>>;
   hasDefaultProps: boolean;
   defaultProps: {
@@ -94,7 +94,7 @@ export const PropTableView = ({
   propDescriptions = {},
 }: PropListViewProps) => (
   <Stack space="small" dividers>
-    {requiredProps.map(({propName, type}) => {
+    {requiredProps.map(({ propName, type }) => {
       return (
         <Props
           required
@@ -107,7 +107,7 @@ export const PropTableView = ({
         />
       );
     })}
-    {optionalProps.map(({propName, type}) => {
+    {optionalProps.map(({ propName, type }) => {
       return (
         <Props
           hasDefaultProps={hasDefaultProps}

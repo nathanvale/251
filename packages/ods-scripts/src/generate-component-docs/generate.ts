@@ -5,7 +5,7 @@ import fs from "fs";
 import path from "path";
 import ts from "typescript";
 import isEqual from "lodash/isEqual";
-import {NormalisedInterface, NormalisedPropType} from "..";
+import { NormalisedInterface, NormalisedPropType } from "..";
 
 const aliasWhitelist = ["ResponsiveProp"];
 const propBlacklist = ["key"];
@@ -33,7 +33,7 @@ const reactNodeTypes = [
 // eslint-disable-next-line consistent-return
 export default () => {
   const basePath = path.dirname(tsconfigPath);
-  const {config, error} = ts.readConfigFile(tsconfigPath, filename =>
+  const { config, error } = ts.readConfigFile(tsconfigPath, filename =>
     fs.readFileSync(filename, "utf8"),
   );
 
@@ -43,7 +43,7 @@ export default () => {
     throw error;
   }
 
-  const {options, errors} = ts.parseJsonConfigFileContent(
+  const { options, errors } = ts.parseJsonConfigFileContent(
     config,
     ts.sys,
     basePath,
@@ -179,7 +179,7 @@ export default () => {
     const propsObj = getComponentPropsType(exp);
 
     if (!propsObj || !propsObj.valueDeclaration) {
-      return {type: "interface", props: {}};
+      return { type: "interface", props: {} };
     }
 
     const propsType = checker.getTypeOfSymbolAtLocation(

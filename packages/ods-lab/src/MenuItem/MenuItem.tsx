@@ -6,6 +6,6 @@ import MuiMenuItem, {
 export interface MenuItemProps extends IMenuItem {}
 
 export const MenuItem = (props: MenuItemProps) => {
-  const {children, button, ...other} = props;
+  const { children, button, ...other } = props;
   return <MuiMenuItem {...other}>{children}</MuiMenuItem>;
 };

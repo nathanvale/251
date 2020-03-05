@@ -1,14 +1,14 @@
 import React from "react";
 import lzString from "lz-string";
-import {Stack, Box, Section} from "@origin-digital/ods-core";
-import {ContentSection, Text, Link} from "@origin-digital/ods-lab";
-import {IconPlay, IconCopy} from "@origin-digital/ods-icons";
+import { Stack, Box, Section } from "@origin-digital/ods-core";
+import { ContentSection, Text, Link } from "@origin-digital/ods-lab";
+import { IconPlay, IconCopy } from "@origin-digital/ods-icons";
 import copy from "copy-to-clipboard";
-import {getCodeAsString} from "docs/src/shared/getCodeAsString";
-import {ExampleDocs} from "../../../../types";
-import {DocsContainer} from "../DocsContainer/DocsContainer";
-import {CodeExample} from "../CodeExample/CodeExample";
-import {CodeBlock} from "../CodeBlock/CodeBlock";
+import { getCodeAsString } from "docs/src/shared/getCodeAsString";
+import { ExampleDocs } from "../../../../types";
+import { DocsContainer } from "../DocsContainer/DocsContainer";
+import { CodeExample } from "../CodeExample/CodeExample";
+import { CodeBlock } from "../CodeBlock/CodeBlock";
 
 interface ExampleProps extends ExampleDocs {
   playroomUrl: string;
@@ -19,8 +19,8 @@ interface CreateUrlOptions {
   code: string;
 }
 
-const createUrl = ({playroomUrl, code}: CreateUrlOptions) => {
-  const data = JSON.stringify({code});
+const createUrl = ({ playroomUrl, code }: CreateUrlOptions) => {
+  const data = JSON.stringify({ code });
   const compressedData = lzString.compressToEncodedURIComponent(data);
   const path = `/#?code=${compressedData}`;
   return playroomUrl + path;
@@ -47,7 +47,7 @@ export const Example = ({
               </Text>
             )}
             {description && <Text color="grey56">{description}</Text>}
-            <Box style={{marginBottom: -20}}>
+            <Box style={{ marginBottom: -20 }}>
               <Stack space="xxsmall">
                 <CodeBlock Code={Code} />
                 <Box display="flex" justifyContent="flex-end">

@@ -1,4 +1,4 @@
-import {Breakpoint} from "@origin-digital/ods-types";
+import { Breakpoint } from "@origin-digital/ods-types";
 
 const breakpoints = ["xs", "sm", "md", "lg", "xl"];
 

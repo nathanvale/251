@@ -1,5 +1,5 @@
 import * as React from "react";
-import MuiList, {ListProps as IList} from "@material-ui/core/List";
+import MuiList, { ListProps as IList } from "@material-ui/core/List";
 
 export interface ListProps extends IList {}
 

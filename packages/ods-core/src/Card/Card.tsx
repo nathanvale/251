@@ -1,11 +1,11 @@
-import React, {ReactNode} from "react";
+import React, { ReactNode } from "react";
 import {
   BreakpointVariants,
   SpaceVariants,
   Color,
   CardPaddingVariants,
 } from "@origin-digital/ods-types";
-import {Box} from "../Box/Box";
+import { Box } from "../Box/Box";
 
 export interface CardProps {
   padding?: CardPaddingVariants;

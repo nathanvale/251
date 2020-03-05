@@ -196,6 +196,6 @@ export interface Theme {
   transforms: Transform;
   transitions: Transition;
   gridGutterWidth: 16 | 32;
-  section: {maxWidth: Breakpoint<number>};
+  section: { maxWidth: Breakpoint<number> };
   border: Border;
 }

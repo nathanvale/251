@@ -4,7 +4,7 @@ interface LogoProps {
   width?: string;
 }
 
-export const Logo = ({width = "48px", ...props}: LogoProps) => (
+export const Logo = ({ width = "48px", ...props }: LogoProps) => (
   <svg width={width} viewBox="0 0 48 48" {...props}>
     <defs>
       <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">

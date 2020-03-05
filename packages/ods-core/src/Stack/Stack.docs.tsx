@@ -1,9 +1,9 @@
 /* eslint-disable react/display-name */
-import React, {ReactNode} from "react";
-import {ComponentDocs} from "../../../../docs/src/types";
-import {Box, Section, Stack, StackProps, Placeholder} from "../";
+import React, { ReactNode } from "react";
+import { ComponentDocs } from "../../../../docs/src/types";
+import { Box, Section, Stack, StackProps, Placeholder } from "../";
 
-const Container = ({children}: {children: ReactNode}) => (
+const Container = ({ children }: { children: ReactNode }) => (
   <Box width="full" backgroundColor="white" paddingY={["xlarge", "xxlarge"]}>
     <Section>{children}</Section>
   </Box>

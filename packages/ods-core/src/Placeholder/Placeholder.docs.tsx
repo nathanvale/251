@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import React from "react";
-import {ComponentDocs} from "../../../../docs/src/types";
-import {Placeholder, PlaceholderProps} from "..";
+import { ComponentDocs } from "../../../../docs/src/types";
+import { Placeholder, PlaceholderProps } from "..";
 
 export const docs: ComponentDocs<PlaceholderProps> = {
   category: "Layout",

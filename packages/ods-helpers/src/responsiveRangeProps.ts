@@ -1,4 +1,4 @@
-import {BreakpointVariants} from "@origin-digital/ods-types";
+import { BreakpointVariants } from "@origin-digital/ods-types";
 
 const breakpoints: BreakpointVariants[] = ["xs", "sm", "md", "lg", "xl"];
 
@@ -10,7 +10,7 @@ export interface ResponsiveRangeProps {
 export const resolveResponsiveRangeProps = (
   props: ResponsiveRangeProps,
 ): [boolean, boolean, boolean, boolean, boolean] => {
-  const {above, below} = props;
+  const { above, below } = props;
 
   if (!above && !below) {
     return [false, false, false, false, false];

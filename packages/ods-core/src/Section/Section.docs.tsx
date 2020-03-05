@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import React from "react";
-import {ComponentDocs} from "../../../../docs/src/types";
-import {Section, SectionProps, Placeholder} from "..";
+import { ComponentDocs } from "../../../../docs/src/types";
+import { Section, SectionProps, Placeholder } from "..";
 
 export const docs: ComponentDocs<SectionProps> = {
   category: "Layout",

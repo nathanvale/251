@@ -6,6 +6,6 @@ import MuiListItem, {
 export interface ListItemProps extends IListItem {}
 
 export const ListItem = (props: ListItemProps) => {
-  const {button, ...other} = props;
+  const { button, ...other } = props;
   return <MuiListItem {...other} />;
 };

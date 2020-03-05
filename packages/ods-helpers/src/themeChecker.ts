@@ -1,10 +1,10 @@
-import {css} from "styled-components";
+import { css } from "styled-components";
 
 export const errorMessage =
   "Please make sure the root of your application is wrapped with the <OriginThemeProvider/>";
 
 export const themeChecker = css`
-  ${({theme}) => {
+  ${({ theme }) => {
     if (
       theme != null &&
       Object.keys(theme).length === 0 &&

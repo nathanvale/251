@@ -1,12 +1,12 @@
 import React from "react";
-import {StackProps, Stack, Section} from "@origin-digital/ods-core";
-import {Text} from "@origin-digital/ods-lab";
-import {ComponentDocs} from "../../types";
-import {Page} from "./components/Page/Page";
-import {Props} from "./components/Props/Props";
-import {Example} from "./components/Example/Example";
-import {CodeBlock} from "./components/CodeBlock/CodeBlock";
-import {DocsContainer} from "./components/DocsContainer/DocsContainer";
+import { StackProps, Stack, Section } from "@origin-digital/ods-core";
+import { Text } from "@origin-digital/ods-lab";
+import { ComponentDocs } from "../../types";
+import { Page } from "./components/Page/Page";
+import { Props } from "./components/Props/Props";
+import { Example } from "./components/Example/Example";
+import { CodeBlock } from "./components/CodeBlock/CodeBlock";
+import { DocsContainer } from "./components/DocsContainer/DocsContainer";
 
 interface ComponentRouteProps {
   componentName: string;
@@ -39,7 +39,7 @@ export const ComponentRoute = ({
     };
   }
 
-  const {description, propDescriptions, examples, variant} = docs;
+  const { description, propDescriptions, examples, variant } = docs;
   return (
     <Page>
       <Stack space="xxxlarge">

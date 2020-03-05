@@ -1,5 +1,5 @@
-import {createContext, useContext} from "react";
-import {AppConfig} from "../../types";
+import { createContext, useContext } from "react";
+import { AppConfig } from "../../types";
 
 const playroomUrl =
   window.location.hostname === "localhost"

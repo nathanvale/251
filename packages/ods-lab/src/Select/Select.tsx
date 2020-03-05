@@ -1,6 +1,6 @@
 import * as React from "react";
-import MuiSelect, {SelectProps as ISelect} from "@material-ui/core/Select";
-import {MenuItem, FormControl, InputLabel, FormHelperText} from "..";
+import MuiSelect, { SelectProps as ISelect } from "@material-ui/core/Select";
+import { MenuItem, FormControl, InputLabel, FormHelperText } from "..";
 
 interface ISelectProps extends ISelect {
   label: string;

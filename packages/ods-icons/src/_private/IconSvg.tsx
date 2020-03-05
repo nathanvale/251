@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {ColorVariants} from "@origin-digital/ods-types";
+import { ColorVariants } from "@origin-digital/ods-types";
 
 export interface IconProps extends React.SVGProps<SVGSVGElement> {
   color?: ColorVariants;

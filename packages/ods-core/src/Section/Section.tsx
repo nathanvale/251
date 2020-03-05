@@ -7,8 +7,8 @@
 /* eslint-disable react/prop-types */
 import styled from "styled-components";
 import React from "react";
-import {media} from "@origin-digital/ods-helpers";
-import {BoxDebug} from "../_private/components/BoxDebug/BoxDebug";
+import { media } from "@origin-digital/ods-helpers";
+import { BoxDebug } from "../_private/components/BoxDebug/BoxDebug";
 
 type FluidityVariant = "off" | "max-width-at-xl" | "full-width";
 type BackgroundVariant = "transparent" | "grey" | "white";
@@ -22,7 +22,7 @@ export interface SectionProps {
   stretchY?: boolean;
 }
 
-const StyledBoxDebug = styled<SectionProps & {paddingX?: string; theme: any}>(
+const StyledBoxDebug = styled<SectionProps & { paddingX?: string; theme: any }>(
   BoxDebug,
 )`
   ${p =>
@@ -71,7 +71,7 @@ export const Section = ({
       paddingX={hideGutter ? undefined : "medium"}
       height={stretchY ? "full" : undefined}
       width="full"
-      style={{marginLeft: "auto", marginRight: "auto"}}
+      style={{ marginLeft: "auto", marginRight: "auto" }}
       {...rest}
     >
       {children}

@@ -5,5 +5,5 @@
     "rootDir": "./src"
   },
   "include": ["src", "src/**/*.json", "../../globals.d.ts", "../../@types"],
-  "references": [{"path": "../ods-themes/tsconfig.json"}]
+  "references": [{ "path": "../ods-themes/tsconfig.json" }]
 }

@@ -9,7 +9,7 @@ import {
   SimpleInterpolation,
 } from "styled-components";
 
-import {BreakpointVariants} from "@origin-digital/ods-types";
+import { BreakpointVariants } from "@origin-digital/ods-types";
 
 enum MediaLabels {
   xs = "smaller",
@@ -37,7 +37,7 @@ type Media = MediaLabels | MediaAliases;
 //   ...interpolations: Interpolation<ThemedStyledProps<P, T>>[]
 // ) => FlattenInterpolation<ThemedStyledProps<P, T>>;
 
-type MapMediaToQuery = {[Key in Media]: InterpolationFunction<any>};
+type MapMediaToQuery = { [Key in Media]: InterpolationFunction<any> };
 
 type MediaObject = MapMediaToQuery & {
   min: MapMediaToQuery;
@@ -90,5 +90,5 @@ export const media: MediaObject = (Object.keys(
     return accumulator;
   },
   // eslint-disable-next-line @typescript-eslint/no-object-literal-type-assertion
-  {min: {}, max: {}} as MediaObject,
+  { min: {}, max: {} } as MediaObject,
 );

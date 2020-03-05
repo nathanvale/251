@@ -2,7 +2,7 @@ import React from "react";
 import MuiCheckbox, {
   CheckboxProps as MUICheckboxProps,
 } from "@material-ui/core/Checkbox";
-import {FormControlLabel, FormHelperText} from "..";
+import { FormControlLabel, FormHelperText } from "..";
 
 export interface CheckboxProps {
   name: string;
@@ -35,7 +35,7 @@ export const Checkbox = (props: CheckboxProps) => {
         label={label}
         control={
           <MuiCheckbox
-            inputProps={{"aria-label": label}}
+            inputProps={{ "aria-label": label }}
             disabled={disabled}
             {...other}
           />

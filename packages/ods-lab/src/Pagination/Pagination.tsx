@@ -1,6 +1,6 @@
 import React from "react";
 import makeStyles from "@material-ui/styles/makeStyles";
-import {Grid, Icon, IconButton, PaginationHolder} from "..";
+import { Grid, Icon, IconButton, PaginationHolder } from "..";
 
 const useStyles = makeStyles({
   chevron: {

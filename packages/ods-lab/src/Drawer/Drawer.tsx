@@ -1,5 +1,5 @@
 import * as React from "react";
-import MuiDrawer, {DrawerProps as IDrawer} from "@material-ui/core/Drawer";
+import MuiDrawer, { DrawerProps as IDrawer } from "@material-ui/core/Drawer";
 
 export interface DrawerProps extends IDrawer {}
 

@@ -2,7 +2,7 @@ import reactElementToJSXString from "react-element-to-jsx-string";
 import memoize from "lodash/memoize";
 import prettier from "prettier/standalone";
 import babylonParser from "prettier/parser-babylon";
-import {ExampleDocs} from "../types";
+import { ExampleDocs } from "../types";
 
 const formatSnippet = memoize(
   snippet =>

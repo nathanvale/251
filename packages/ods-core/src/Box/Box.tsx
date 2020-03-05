@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import React, {AllHTMLAttributes} from "react";
-import styled, {StyledComponentClass} from "styled-components";
+import React, { AllHTMLAttributes } from "react";
+import styled, { StyledComponentClass } from "styled-components";
 import {
   TransitionVariants,
   TransformVariants,
@@ -13,8 +13,8 @@ import {
   SpaceVariants,
 } from "@origin-digital/ods-types";
 import * as CSS from "csstype";
-import {Omit} from "utility-types";
-import {normaliseResponsiveProp} from "@origin-digital/ods-helpers";
+import { Omit } from "utility-types";
+import { normaliseResponsiveProp } from "@origin-digital/ods-helpers";
 import {
   StyledSystemProps,
   BoxShadowVariant,

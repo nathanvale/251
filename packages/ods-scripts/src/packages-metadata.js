@@ -1,4 +1,4 @@
-const {spawnSync} = require("child_process");
+const { spawnSync } = require("child_process");
 
 /**
  * Returns metadata for the monorepos packages. eg:
@@ -43,10 +43,10 @@ function getResolveAliases(packagesMetadata) {
   return packagesMetadata.reduce(
     (previousValue, currentValue, currentIndex, array) => {
       const package = array[currentIndex];
-      return {...previousValue, [package.name]: `${package.location}/src`};
+      return { ...previousValue, [package.name]: `${package.location}/src` };
     },
     {},
   );
 }
 
-module.exports = {getPackagesMetaData, getResolveAliases};
+module.exports = { getPackagesMetaData, getResolveAliases };

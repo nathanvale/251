@@ -1,8 +1,8 @@
 /* eslint-disable react/display-name */
 import React from "react";
-import {Placeholder, Stack} from "@origin-digital/ods-core";
-import {ComponentDocs} from "../../../../docs/src/types";
-import {Hidden, HiddenProps} from "../Hidden/Hidden";
+import { Placeholder, Stack } from "@origin-digital/ods-core";
+import { ComponentDocs } from "../../../../docs/src/types";
+import { Hidden, HiddenProps } from "../Hidden/Hidden";
 
 export const docs: ComponentDocs<HiddenProps> = {
   category: "Layout",
