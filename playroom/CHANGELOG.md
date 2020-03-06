@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.19](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.3.18...playroom@0.3.19) (2020-03-06)
+
+**Note:** Version bump only for package playroom
+
+
+
+
+
 ## [0.3.18](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.3.17...playroom@0.3.18) (2020-03-05)
 
 **Note:** Version bump only for package playroom
