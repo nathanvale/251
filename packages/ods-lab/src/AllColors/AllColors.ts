@@ -1,4 +1,4 @@
-export const AllColors: {[key: string]: string} = {
+export const AllColors: { [key: string]: string } = {
   redPink: "#ff373c",
   red: "#ec0000",
   lightRed: "#eddee2",

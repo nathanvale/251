@@ -1,6 +1,6 @@
-import React, {ReactNode} from "react";
+import React, { ReactNode } from "react";
 import styled from "styled-components";
-import {BoxProps, Box} from "../../../Box/Box";
+import { BoxProps, Box } from "../../../Box/Box";
 
 export interface OverlayProps {
   children?: ReactNode;

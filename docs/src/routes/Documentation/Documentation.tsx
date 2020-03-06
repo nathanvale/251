@@ -1,18 +1,18 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import map from "lodash/map";
 import groupBy from "lodash/groupBy";
-import {Route, useLocation, Link as ReactRouterLink} from "react-router-dom";
+import { Route, useLocation, Link as ReactRouterLink } from "react-router-dom";
 import * as odsCore from "@origin-digital/ods-core";
 import * as odsLab from "@origin-digital/ods-lab";
-import styled, {css} from "styled-components";
-import {media} from "@origin-digital/ods-helpers";
-import {Logo} from "../../shared/Logo/Logo";
-import {ConfigConsumer} from "../../shared/ConfigContext/ConfigContext";
-import {ComponentDocs} from "../../types";
-import {guides} from "./guides";
-import {foundations} from "./foundations";
-import {MenuButton} from "./components/MenuButton/MenuButton";
-import {ComponentRoute} from "./ComponentRoute";
+import styled, { css } from "styled-components";
+import { media } from "@origin-digital/ods-helpers";
+import { Logo } from "../../shared/Logo/Logo";
+import { ConfigConsumer } from "../../shared/ConfigContext/ConfigContext";
+import { ComponentDocs } from "../../types";
+import { guides } from "./guides";
+import { foundations } from "./foundations";
+import { MenuButton } from "./components/MenuButton/MenuButton";
+import { ComponentRoute } from "./ComponentRoute";
 
 interface MenuItem {
   name: string;
@@ -37,8 +37,8 @@ const componentPathsByCategory = groupBy(
   component => component.name,
 );
 
-const components = {...odsCore, ...odsLab};
-const {Text, Box, Stack, Hidden, Link} = components;
+const components = { ...odsCore, ...odsLab };
+const { Text, Box, Stack, Hidden, Link } = components;
 
 const responsiveGutter: odsCore.BoxProps["paddingX"] = ["large", "xlarge"];
 const headerHeight = "100px";
@@ -62,7 +62,7 @@ const MenuSectionList = ({
     </Text>
 
     <Stack space={["xsmall", "small"]}>
-      {items.map(({name, path, onClick, external}) => (
+      {items.map(({ name, path, onClick, external }) => (
         <Text key={name}>
           {external ? (
             <Box display="flex">
@@ -81,7 +81,7 @@ const MenuSectionList = ({
   </Stack>
 );
 
-const Header = styled(Box)<{isOpen: boolean}>`
+const Header = styled(Box)<{ isOpen: boolean }>`
   background: white;
   z-index: 3;
   ${p => (p.isOpen ? "position: fixed;" : undefined)}
@@ -101,7 +101,7 @@ const Container = styled(Box)`
   padding-top: ${headerHeight};
 `;
 
-const Menu = styled(Box)<{isOpen: boolean}>`
+const Menu = styled(Box)<{ isOpen: boolean }>`
     z-index: 2;
     top: ${headerHeight};
     left: 0;
@@ -155,8 +155,8 @@ export const Documentation = () => {
 
   const componentsByCategory = groupBy(
     componentPaths
-      .filter(({name}) => !/^(OriginThemeProvider)/.test(name))
-      .map(({name, packageName}) => {
+      .filter(({ name }) => !/^(OriginThemeProvider)/.test(name))
+      .map(({ name, packageName }) => {
         let docs: ComponentDocs;
         try {
           docs = require(`../../../../packages/${packageName}/src/${name}/${name}.docs.tsx`)
@@ -169,14 +169,14 @@ export const Documentation = () => {
           };
         }
 
-        return {name, ...docs};
+        return { name, ...docs };
       }),
     component => component.category,
   );
 
   return (
     <ConfigConsumer>
-      {({playroomUrl, sourceUrlPrefix, zeplinUrl}) => (
+      {({ playroomUrl, sourceUrlPrefix, zeplinUrl }) => (
         <>
           <Header
             isOpen={isMenuOpen}
@@ -269,7 +269,7 @@ export const Documentation = () => {
                     <MenuSectionList
                       key={category}
                       title={`${category} Components`}
-                      items={componentsByCategory[category].map(({name}) => ({
+                      items={componentsByCategory[category].map(({ name }) => ({
                         name,
                         path: `/components/${name}`,
                         external: false,
@@ -295,13 +295,13 @@ export const Documentation = () => {
             </HiddenOnPrint>
             <Content>
               <Box paddingY="small" paddingX={responsiveGutter}>
-                {map({...guides, ...foundations}, ({Component}, path) => (
+                {map({ ...guides, ...foundations }, ({ Component }, path) => (
                   <Route key={path} path={path} component={Component} />
                 ))}
 
                 <Route
                   path="/components/:componentName"
-                  render={({match}) => (
+                  render={({ match }) => (
                     <ComponentRoute
                       key={match.params.componentName} // Force remount per page to fix hooks errors when generating code snippets
                       packageName={

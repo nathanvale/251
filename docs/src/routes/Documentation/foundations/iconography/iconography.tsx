@@ -1,9 +1,9 @@
-import React, {ReactNode} from "react";
-import {Page} from "docs/src/types";
-import {Text} from "@origin-digital/ods-lab";
-import {TextStack} from "../../components/TextStack/TextStack";
+import React, { ReactNode } from "react";
+import { Page } from "docs/src/types";
+import { Text } from "@origin-digital/ods-lab";
+import { TextStack } from "../../components/TextStack/TextStack";
 
-const Heading = ({children}: {children: ReactNode}) => (
+const Heading = ({ children }: { children: ReactNode }) => (
   <Text color="grey56" weight="medium" size="xsmall">
     {children}
   </Text>

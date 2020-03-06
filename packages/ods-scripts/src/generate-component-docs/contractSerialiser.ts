@@ -1,5 +1,5 @@
 import sortBy from "lodash/sortBy";
-import {NormalisedPropType} from "../index";
+import { NormalisedPropType } from "../index";
 
 export const typeSerializer = {
   print: (
@@ -18,9 +18,9 @@ export const typeSerializer = {
         })
         .join("");
     } else if (type.type === "interface") {
-      return `{${sortBy(Object.values(type.props), ({propName}) => propName)
+      return `{${sortBy(Object.values(type.props), ({ propName }) => propName)
         .map(
-          ({propName, required, type: propType}) =>
+          ({ propName, required, type: propType }) =>
             `\n${indent(
               `${propName}${required ? "" : "?"}: ${serializer(propType)}`,
             )}`,

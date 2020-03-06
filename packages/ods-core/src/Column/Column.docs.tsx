@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import React from "react";
-import {ComponentDocs} from "../../../../docs/src/types";
-import {Columns, Column, ColumnProps, Placeholder} from "..";
+import { ComponentDocs } from "../../../../docs/src/types";
+import { Columns, Column, ColumnProps, Placeholder } from "..";
 
 export const docs: ComponentDocs<ColumnProps> = {
   category: "Layout",

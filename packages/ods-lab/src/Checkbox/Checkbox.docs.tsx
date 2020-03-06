@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import React from "react";
-import {ComponentDocs} from "../../../../docs/src/types";
-import {ContentSection, Checkbox, CheckboxProps} from "..";
+import { ComponentDocs } from "../../../../docs/src/types";
+import { ContentSection, Checkbox, CheckboxProps } from "..";
 
 export const docs: ComponentDocs<CheckboxProps> = {
   category: "Experimental",

@@ -1,13 +1,13 @@
-import React, {Fragment, ReactNode} from "react";
-import {Link} from "react-router-dom";
-import {Box} from "@origin-digital/ods-core";
-import {Text} from "@origin-digital/ods-lab";
-import {Button} from "@origin-digital/style-guide";
+import React, { Fragment, ReactNode } from "react";
+import { Link } from "react-router-dom";
+import { Box } from "@origin-digital/ods-core";
+import { Text } from "@origin-digital/ods-lab";
+import { Button } from "@origin-digital/style-guide";
 import styled from "styled-components";
-import {ConfigConsumer} from "../../shared/ConfigContext/ConfigContext";
-import {Logo} from "../../shared/Logo/Logo";
+import { ConfigConsumer } from "../../shared/ConfigContext/ConfigContext";
+import { Logo } from "../../shared/Logo/Logo";
 
-const Action = ({children}: {children: ReactNode}) => (
+const Action = ({ children }: { children: ReactNode }) => (
   <Box
     display="flex"
     width="full"
@@ -38,7 +38,7 @@ const ActionsContainer = styled(Box)`
 export const Home = () => {
   return (
     <ConfigConsumer>
-      {({playroomUrl}) => (
+      {({ playroomUrl }) => (
         <Fragment>
           <Content
             display="flex"
@@ -61,9 +61,9 @@ export const Home = () => {
                   component="span"
                   display="flex"
                   justifyContent="center"
-                  style={{flexWrap: "wrap"}}
+                  style={{ flexWrap: "wrap" }}
                 >
-                  <span style={{whiteSpace: "nowrap"}}>
+                  <span style={{ whiteSpace: "nowrap" }}>
                     Origin Design System
                   </span>
                 </Box>
@@ -75,7 +75,7 @@ export const Home = () => {
                 <Link
                   to="/components"
                   tabIndex={-1}
-                  style={{width: "100%", textDecoration: "none"}}
+                  style={{ width: "100%", textDecoration: "none" }}
                 >
                   <Button
                     kind="secondary"
@@ -88,7 +88,7 @@ export const Home = () => {
               <Action>
                 <a
                   href={playroomUrl}
-                  style={{width: "100%", textDecoration: "none"}}
+                  style={{ width: "100%", textDecoration: "none" }}
                 >
                   <Button kind="secondary" text="Playroom" block color="grey" />
                 </a>

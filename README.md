@@ -21,18 +21,18 @@ https://docs.origindigital-dac.com.au/designsystem/playroom/
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Getting Started](#getting-started)
-- [Support](#support)
-- [Using ODS in your own app](#using-ods-in-your-own-app)
-- [Contribution Usage](#contribution-usage)
-  - [Documentation](#documentation)
-  - [Playroom](#playroom)
-  - [Formating](#formating)
-  - [Linting](#linting)
-  - [Typescript](#typescript)
-  - [Testing](#testing)
-  - [Husky and commitlint support](#husky-and-commitlint-support)
-  - [CI support](#ci-support)
+-   [Getting Started](#getting-started)
+-   [Support](#support)
+-   [Using ODS in your own app](#using-ods-in-your-own-app)
+-   [Contribution Usage](#contribution-usage)
+    -   [Documentation](#documentation)
+    -   [Playroom](#playroom)
+    -   [Formating](#formating)
+    -   [Linting](#linting)
+    -   [Typescript](#typescript)
+    -   [Testing](#testing)
+    -   [Husky and commitlint support](#husky-and-commitlint-support)
+    -   [CI support](#ci-support)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -60,13 +60,13 @@ yarn bootstrap
 
 Why do we do this?
 
-- So you only need to run yarn install once to install all of our packages in a single pass
+-   So you only need to run yarn install once to install all of our packages in a single pass
 
-- Your dependencies can be linked together, which means that your workspaces can depend on one another while always using the most up-to-date code available. This is also a better mechanism than yarn link since it only affects your workspace tree rather than your whole system.
+-   Your dependencies can be linked together, which means that your workspaces can depend on one another while always using the most up-to-date code available. This is also a better mechanism than yarn link since it only affects your workspace tree rather than your whole system.
 
-- All your package dependencies will be installed together, giving Yarn more latitude to better optimize them.
+-   All your package dependencies will be installed together, giving Yarn more latitude to better optimize them.
 
-- Yarn will use a single lockfile rather than a different one for each package, which means fewer conflicts and easier reviews.
+-   Yarn will use a single lockfile rather than a different one for each package, which means fewer conflicts and easier reviews.
 
 > **Note:** `yarn bootstrap` internally runs `yarn install` before it's bootstrapping so the above `yarn install` command only needs to be run once (to install lerna to be able to run `yarn bootstrap` in the first place).
 
@@ -102,21 +102,21 @@ Here is a quick example to get you started, **it's all you need**:
 import React from "react";
 import ReactDOM from "react-dom";
 import {
-  Stack,
-  Placeholder,
-  OriginThemeProviders,
+    Stack,
+    Placeholder,
+    OriginThemeProviders,
 } from "@origin-digital/ods-core";
 
 function App() {
-  return (
-    <OriginThemeProvider>
-      <Stack space="medium">
-        <Placeholder />
-        <Placeholder />
-        <Placeholder />
-      </Stack>
-    </OriginThemeProvider>
-  );
+    return (
+        <OriginThemeProvider>
+            <Stack space="medium">
+                <Placeholder />
+                <Placeholder />
+                <Placeholder />
+            </Stack>
+        </OriginThemeProvider>
+    );
 }
 
 ReactDOM.render(<App />, document.querySelector("#app"));
@@ -148,10 +148,10 @@ Simultaneously design across a variety of themes and screen sizes, powered by JS
 
 Playroom allows you to create a zero-install code-oriented design environment, built into a standalone bundle that can be deployed alongside your existing design system documentation.
 
-- Iterate on your designs in the final medium.
-- Create quick mock-ups and interactive prototypes with real code.
-- Exercise and evaluate the flexibility of your design system.
-- Share your work with others by simply copying the URL.
+-   Iterate on your designs in the final medium.
+-   Create quick mock-ups and interactive prototypes with real code.
+-   Exercise and evaluate the flexibility of your design system.
+-   Share your work with others by simply copying the URL.
 
 To start playroom in a local development server:
 
@@ -177,9 +177,9 @@ yarn format
 
 `origin-ui` have clear and consistent coding conventions, with automated enforcement. They will help
 
-- You find bugs and errors before they happen
-- You spend less time testing new features
-- Your code (and your team’s code) be more consistent
+-   You find bugs and errors before they happen
+-   You spend less time testing new features
+-   Your code (and your team’s code) be more consistent
 
 Besides checking style, linters are also excellent tools for finding certain classes of bugs, such as those related to variable scope. Assignment to undeclared variables (these leak into the global scope, contaminating it and possibly causing very difficult to find bugs) and use of undefined variables are examples of errors that are detectable at lint time.
 
@@ -257,9 +257,9 @@ One single command using origin scripts will validate the health of the entire m
 
 This command will:
 
-- Build and bundle all packages to a dist folder using rollup (as esm and cjs)
-- Generate type declarations to a dist folder for all bundles
-- Run eslint on all js,ts and tsx files
-- Run jest on all packages along with a complete test coverage report
+-   Build and bundle all packages to a dist folder using rollup (as esm and cjs)
+-   Generate type declarations to a dist folder for all bundles
+-   Run eslint on all js,ts and tsx files
+-   Run jest on all packages along with a complete test coverage report
 
 If at anytime any of these processes fail the process will exit, which is why it is run in CI.

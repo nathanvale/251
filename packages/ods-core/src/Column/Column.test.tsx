@@ -1,11 +1,11 @@
 import React from "react";
-import {render} from "@origin-digital/ods-testing-library";
-import {Columns} from "../Columns/Columns";
-import {Placeholder} from "../Placeholder/Placeholder";
-import {Column} from "./Column";
+import { render } from "@origin-digital/ods-testing-library";
+import { Columns } from "../Columns/Columns";
+import { Placeholder } from "../Placeholder/Placeholder";
+import { Column } from "./Column";
 
 test("it sets width to flex by default", () => {
-  const {container} = render(
+  const { container } = render(
     <Columns space="small">
       <Column>
         <Placeholder />
@@ -22,7 +22,7 @@ test("it sets width to flex by default", () => {
 });
 
 test('it correctly allocates required width for "content"', () => {
-  const {container} = render(
+  const { container } = render(
     <Columns space="small">
       <Column width="content">
         <Placeholder label="This is content width" />
@@ -39,7 +39,7 @@ test('it correctly allocates required width for "content"', () => {
 });
 
 test("it correctly sets width for proportions 1/3 and 2/3", () => {
-  const {container} = render(
+  const { container } = render(
     <Columns space="small">
       <Column width="1/3">
         <Placeholder label="This is 1/3" />
@@ -53,7 +53,7 @@ test("it correctly sets width for proportions 1/3 and 2/3", () => {
 });
 
 test("it correctly sets width for proportions 1/12, 7/12, 1/3", () => {
-  const {container} = render(
+  const { container } = render(
     <Columns space="small">
       <Column width="1/12">
         <Placeholder label="This is 1/12" />

@@ -1,5 +1,5 @@
-import {ResponsiveProp} from "@origin-digital/ods-types";
-import {normaliseResponsiveProp} from "./normaliseResponsiveProp";
+import { ResponsiveProp } from "@origin-digital/ods-types";
+import { normaliseResponsiveProp } from "./normaliseResponsiveProp";
 
 describe("normaliseResponsiveProp", () => {
   const testData: [ResponsiveProp<any>, any][] = [

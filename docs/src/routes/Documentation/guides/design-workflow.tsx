@@ -1,12 +1,12 @@
-import React, {ReactNode} from "react";
-import {Divider} from "@origin-digital/ods-core";
-import {Text} from "@origin-digital/ods-lab";
-import {TextStack} from "../components/TextStack/TextStack";
-import {Page} from "../../../types";
+import React, { ReactNode } from "react";
+import { Divider } from "@origin-digital/ods-core";
+import { Text } from "@origin-digital/ods-lab";
+import { TextStack } from "../components/TextStack/TextStack";
+import { Page } from "../../../types";
 
 const ODSDesignSupportLink = "#design-system-support";
 
-const Heading = ({children}: {children: ReactNode}) => (
+const Heading = ({ children }: { children: ReactNode }) => (
   <Text color="grey56" weight="medium" size="xsmall">
     {children}
   </Text>

@@ -1,5 +1,5 @@
 import * as React from "react";
-import MuiModal, {ModalProps as IModal} from "@material-ui/core/Modal";
+import MuiModal, { ModalProps as IModal } from "@material-ui/core/Modal";
 
 export interface ModalProps extends IModal {}
 

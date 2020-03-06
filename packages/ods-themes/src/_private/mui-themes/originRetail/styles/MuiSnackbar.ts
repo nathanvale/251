@@ -1,4 +1,4 @@
-import {MuiBreakpoints} from "./MuiBreakpoints";
+import { MuiBreakpoints } from "./MuiBreakpoints";
 
 export const MuiSnackbar = {
   root: {

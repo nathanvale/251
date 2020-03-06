@@ -1,6 +1,6 @@
-import {ResponsiveProp} from "@origin-digital/ods-types";
+import { ResponsiveProp } from "@origin-digital/ods-types";
 
-import {ResponsiveValue} from "styled-system";
+import { ResponsiveValue } from "styled-system";
 
 /**
  * Maps originui ResponsiveProp<T> to styled-system ResponsiveValue<T>
@@ -14,7 +14,7 @@ export const normaliseResponsiveProp = <T>(
     return space;
   }
   if (space instanceof Array) {
-    const {length} = space;
+    const { length } = space;
     if (length === 2) {
       const mobile = space[0];
       const desktop = space[1];

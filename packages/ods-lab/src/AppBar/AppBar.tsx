@@ -1,5 +1,5 @@
 import * as React from "react";
-import MuiAppBar, {AppBarProps as IAppBar} from "@material-ui/core/AppBar";
+import MuiAppBar, { AppBarProps as IAppBar } from "@material-ui/core/AppBar";
 
 export interface AppBarProps extends IAppBar {}
 

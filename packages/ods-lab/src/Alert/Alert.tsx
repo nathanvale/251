@@ -1,5 +1,5 @@
 import * as React from "react";
-import MuiAlert, {AlertProps as IAlert} from "@material-ui/lab/Alert";
+import MuiAlert, { AlertProps as IAlert } from "@material-ui/lab/Alert";
 
 export interface AlertProps extends IAlert {}
 

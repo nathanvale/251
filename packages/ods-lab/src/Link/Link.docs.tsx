@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import React from "react";
-import {ComponentDocs} from "../../../../docs/src/types";
-import {Link, LinkProps} from "..";
+import { ComponentDocs } from "../../../../docs/src/types";
+import { Link, LinkProps } from "..";
 
 export const docs: ComponentDocs<LinkProps> = {
   category: "Experimental",

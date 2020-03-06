@@ -1,5 +1,5 @@
 import * as React from "react";
-import MuiIcon, {IconProps as IIcon} from "@material-ui/core/Icon";
+import MuiIcon, { IconProps as IIcon } from "@material-ui/core/Icon";
 
 export interface IconProps extends IIcon {}
 

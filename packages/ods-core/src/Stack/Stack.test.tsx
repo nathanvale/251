@@ -1,10 +1,13 @@
 import React from "react";
-import {render, queryAllByAttribute} from "@origin-digital/ods-testing-library";
-import {Placeholder} from "../Placeholder/Placeholder";
-import {Stack} from "./Stack";
+import {
+  render,
+  queryAllByAttribute,
+} from "@origin-digital/ods-testing-library";
+import { Placeholder } from "../Placeholder/Placeholder";
+import { Stack } from "./Stack";
 
 test("It can stack", () => {
-  const {container} = render(
+  const { container } = render(
     <Stack>
       <Placeholder />
       <Placeholder />
@@ -15,7 +18,7 @@ test("It can stack", () => {
 });
 
 test("It can distribute space", () => {
-  const {container} = render(
+  const { container } = render(
     <Stack space="xxlarge">
       <Placeholder />
       <Placeholder />
@@ -40,7 +43,7 @@ test("It can distribute space", () => {
 });
 
 test("It adds dividers", () => {
-  const {container} = render(
+  const { container } = render(
     <Stack space="xxlarge" dividers>
       <Placeholder />
       <Placeholder />
@@ -50,7 +53,7 @@ test("It adds dividers", () => {
   expect(container.firstChild).toMatchSnapshot();
 });
 test("It does not add dividers if there is only 1 child", () => {
-  const {container} = render(
+  const { container } = render(
     <Stack space="medium" dividers>
       <Placeholder />
     </Stack>,
@@ -59,7 +62,7 @@ test("It does not add dividers if there is only 1 child", () => {
 });
 
 test("It stretches children by default", () => {
-  const {container} = render(
+  const { container } = render(
     <Stack>
       <Placeholder />
       <Placeholder />
@@ -72,7 +75,7 @@ test("It stretches children by default", () => {
 });
 
 test("It can right-align components", () => {
-  const {container} = render(
+  const { container } = render(
     <Stack alignX="right">
       <Placeholder width="120px" />
       <Placeholder width="120px" />
@@ -84,7 +87,7 @@ test("It can right-align components", () => {
 });
 
 test("It can center-align components", () => {
-  const {container} = render(
+  const { container } = render(
     <Stack alignX="center">
       <Placeholder width="120px" />
       <Placeholder width="120px" />
@@ -96,7 +99,7 @@ test("It can center-align components", () => {
 });
 
 test("It can left-align children", () => {
-  const {container} = render(
+  const { container } = render(
     <Stack alignX="left">
       <Placeholder data-id="childElement" width="120px" />
     </Stack>,

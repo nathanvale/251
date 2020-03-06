@@ -1,7 +1,7 @@
 import React from "react";
-import {RadioProps as IRadio} from "@material-ui/core/Radio";
-import MuiRadioGroup, {RadioGroupProps} from "@material-ui/core/RadioGroup";
-import {FormLabel, FormControl, RadioBase} from "..";
+import { RadioProps as IRadio } from "@material-ui/core/Radio";
+import MuiRadioGroup, { RadioGroupProps } from "@material-ui/core/RadioGroup";
+import { FormLabel, FormControl, RadioBase } from "..";
 
 export interface IRadioProps extends IRadio {
   label: string;

@@ -3,7 +3,7 @@ import MuiTableCell, {
   TableCellProps as ITableCell,
 } from "@material-ui/core/TableCell";
 import makeStyles from "@material-ui/styles/makeStyles";
-import {AllColors} from "../AllColors/AllColors";
+import { AllColors } from "../AllColors/AllColors";
 
 const useStyles = makeStyles({
   // This inherits the border from root - Must be applied to TableCells and TableHeader

@@ -1,12 +1,15 @@
-import React, {ReactElement, createContext, useMemo} from "react";
+import React, { ReactElement, createContext, useMemo } from "react";
 import {
   BreakpointVariants,
   AlignItemsVariants,
 } from "@origin-digital/ods-types";
-import {setBreakpoint, mapSpaceAliasToIndex} from "@origin-digital/ods-helpers";
-import {ColumnProps} from "../Column/Column";
-import {BoxDebug} from "../_private/components/BoxDebug/BoxDebug";
-import {ResponsiveSpace} from "../Box/Box";
+import {
+  setBreakpoint,
+  mapSpaceAliasToIndex,
+} from "@origin-digital/ods-helpers";
+import { ColumnProps } from "../Column/Column";
+import { BoxDebug } from "../_private/components/BoxDebug/BoxDebug";
+import { ResponsiveSpace } from "../Box/Box";
 
 interface ColumnsContextValue {
   collapseBelow?: ColumnsProps["collapseBelow"];
@@ -27,7 +30,7 @@ const mapVAlignToAlignItems = (alignY: AlignYType): AlignItemsVariants => {
     top: "flex-start",
     center: "center",
     bottom: "flex-end",
-  } as {[k in AlignYType]: AlignItemsVariants};
+  } as { [k in AlignYType]: AlignItemsVariants };
   return map[alignY];
 };
 
@@ -47,12 +50,12 @@ export const Columns = ({
   alignY = "top",
 }: ColumnsProps) => {
   // Prevent re-renders when context values haven't changed
-  const columnsContextValue = useMemo(() => ({collapseBelow, space}), [
+  const columnsContextValue = useMemo(() => ({ collapseBelow, space }), [
     collapseBelow,
     space,
   ]);
 
-  const spaceIndex = mapSpaceAliasToIndex({space, isNegative: true});
+  const spaceIndex = mapSpaceAliasToIndex({ space, isNegative: true });
   return (
     <BoxDebug
       data-id={dataId}

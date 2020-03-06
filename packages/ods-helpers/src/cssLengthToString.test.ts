@@ -1,4 +1,4 @@
-import {cssLengthToString} from "./cssLengthToString";
+import { cssLengthToString } from "./cssLengthToString";
 
 describe("cssLengthToString", () => {
   const testData = [[0, "0px"], [10, "10px"], ["10px", "10px"]] as const;

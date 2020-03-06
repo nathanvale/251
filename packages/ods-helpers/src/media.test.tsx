@@ -1,7 +1,7 @@
 import React from "react";
-import {render} from "@testing-library/react";
+import { render } from "@testing-library/react";
 import styled from "styled-components";
-import {media} from "./media";
+import { media } from "./media";
 
 test("It should render with a xs media query", () => {
   const Test = styled.div`
@@ -9,7 +9,7 @@ test("It should render with a xs media query", () => {
       color: red;
     `}
   `;
-  const {container} = render(<Test />);
+  const { container } = render(<Test />);
   expect(container.firstChild).toMatchSnapshot();
 });
 
@@ -19,7 +19,7 @@ test("It should render with a sm media query", () => {
       color: red;
     `}
   `;
-  const {container} = render(<Test />);
+  const { container } = render(<Test />);
   expect(container.firstChild).toMatchSnapshot();
 });
 
@@ -29,7 +29,7 @@ test("It should render with a md media query", () => {
       color: red;
     `}
   `;
-  const {container} = render(<Test />);
+  const { container } = render(<Test />);
   expect(container.firstChild).toMatchSnapshot();
 });
 
@@ -39,7 +39,7 @@ test("It should render with a lg media query", () => {
       color: red;
     `}
   `;
-  const {container} = render(<Test />);
+  const { container } = render(<Test />);
   expect(container.firstChild).toMatchSnapshot();
 });
 
@@ -49,6 +49,6 @@ test("It should render with a xl media query", () => {
       color: red;
     `}
   `;
-  const {container} = render(<Test />);
+  const { container } = render(<Test />);
   expect(container.firstChild).toMatchSnapshot();
 });

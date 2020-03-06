@@ -1,7 +1,10 @@
 import * as CSS from "csstype";
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 
-import {TransitionVariants, TransformVariants} from "@origin-digital/ods-types";
+import {
+  TransitionVariants,
+  TransformVariants,
+} from "@origin-digital/ods-types";
 
 import {
   textAlign,
@@ -34,8 +37,8 @@ import {
   BackgroundColorProps,
   style,
 } from "styled-system";
-import {tint} from "polished";
-import {themeChecker} from "@origin-digital/ods-helpers";
+import { tint } from "polished";
+import { themeChecker } from "@origin-digital/ods-helpers";
 
 export interface StyledSystemProps
   extends DisplayProps,
@@ -79,8 +82,8 @@ const pointerEvents = style({
 });
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const boxShadowFactory = ({border, shadows}: any) => {
-  const {width: borderWidth, color} = border;
+const boxShadowFactory = ({ border, shadows }: any) => {
+  const { width: borderWidth, color } = border;
   const boxShadowForVariant: Record<
     BoxShadowVariant,
     ResponsiveValue<string>
@@ -139,7 +142,7 @@ export const StyledSystemBox = styled.div<StyledSystemProps>`
         ${textAlign}
         ${overflow}
         :active {
-           transform: ${({theme, transform}) => theme.transforms[transform!]};
+           transform: ${({ theme, transform }) => theme.transforms[transform!]};
          }
         ${p =>
           p.width === "full" &&
@@ -147,19 +150,19 @@ export const StyledSystemBox = styled.div<StyledSystemProps>`
             width: 100%;
           `}
         ${p => (p.height === "full" ? "height: 100%;" : null)}
-        ${({theme, showAnts}) =>
+        ${({ theme, showAnts }) =>
           showAnts &&
           css`
             border: 1px dashed ${theme.colors.grey24};
           `}
 
-          ${({theme, boxShadow}) =>
+          ${({ theme, boxShadow }) =>
             boxShadow &&
             css`
               box-shadow: ${boxShadowFactory(theme)[boxShadow]};
             `}
 
-          ${({theme, transition}) =>
+          ${({ theme, transition }) =>
             transition &&
             css`
               transition: ${theme.transitions[transition]};

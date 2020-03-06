@@ -1,5 +1,5 @@
 import * as React from "react";
-import MuiPaper, {PaperProps as IPaper} from "@material-ui/core/Paper";
+import MuiPaper, { PaperProps as IPaper } from "@material-ui/core/Paper";
 
 export interface PaperProps extends IPaper {}
 

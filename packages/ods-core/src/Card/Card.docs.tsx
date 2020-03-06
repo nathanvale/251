@@ -1,8 +1,8 @@
 /* eslint-disable react/display-name */
 import React from "react";
-import {ComponentDocs} from "../../../../docs/src/types";
-import {Placeholder} from "../Placeholder/Placeholder";
-import {CardProps, Card} from "..";
+import { ComponentDocs } from "../../../../docs/src/types";
+import { Placeholder } from "../Placeholder/Placeholder";
+import { CardProps, Card } from "..";
 
 export const docs: ComponentDocs<CardProps> = {
   category: "Layout",

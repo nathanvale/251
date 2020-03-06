@@ -2,7 +2,7 @@ import * as React from "react";
 import MuiTextField, {
   StandardTextFieldProps as IStandardTextFieldProps,
 } from "@material-ui/core/TextField";
-import {InputAdornment, Icon} from "..";
+import { InputAdornment, Icon } from "..";
 
 export interface TextFieldProps extends IStandardTextFieldProps {
   "data-id": string;

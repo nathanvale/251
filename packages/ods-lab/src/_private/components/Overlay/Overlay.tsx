@@ -1,6 +1,6 @@
-import React, {ReactNode} from "react";
+import React, { ReactNode } from "react";
 import styled from "styled-components";
-import {BoxProps, Box} from "@origin-digital/ods-core";
+import { BoxProps, Box } from "@origin-digital/ods-core";
 
 export interface OverlayProps {
   children?: ReactNode;

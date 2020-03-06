@@ -1,6 +1,6 @@
 import * as React from "react";
 import makeStyles from "@material-ui/styles/makeStyles";
-import {Divider} from "@origin-digital/ods-core";
+import { Divider } from "@origin-digital/ods-core";
 import {
   ToggleButtonGroup,
   ToggleButton,
@@ -51,7 +51,7 @@ const useStyles = makeStyles({
 
 export const RadioCard = (props: RadioCardProps) => {
   const styles = useStyles({});
-  const {value, options, label, handleChange, "data-id": dataId} = props;
+  const { value, options, label, handleChange, "data-id": dataId } = props;
   const updateToggleGroup = (
     _event: React.MouseEvent<HTMLElement>,
     newValue: string,
@@ -69,14 +69,14 @@ export const RadioCard = (props: RadioCardProps) => {
       </Grid>
       <Grid item>
         <ToggleButtonGroup
-          classes={{root: styles.largerToggleButtonGroup}}
+          classes={{ root: styles.largerToggleButtonGroup }}
           value={value}
           exclusive
           onChange={updateToggleGroup}
         >
           {options.map(r => (
             <ToggleButton
-              classes={{root: styles.toggleButton}}
+              classes={{ root: styles.toggleButton }}
               value={r.value}
               key={r.value}
               selected={r.value === value}

@@ -1,5 +1,5 @@
-import {designWorkflow} from "./design-workflow";
-import {developmentWorkflow} from "./development-workflow";
+import { designWorkflow } from "./design-workflow";
+import { developmentWorkflow } from "./development-workflow";
 
 // eslint-disable-next-line import/no-default-export
 export const guides = {

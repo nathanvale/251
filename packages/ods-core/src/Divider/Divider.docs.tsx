@@ -1,9 +1,9 @@
 /* eslint-disable react/display-name */
-import React, {ReactNode} from "react";
-import {ComponentDocs} from "../../../../docs/src/types";
-import {Divider, DividerProps, Section, Box} from "..";
+import React, { ReactNode } from "react";
+import { ComponentDocs } from "../../../../docs/src/types";
+import { Divider, DividerProps, Section, Box } from "..";
 
-const Container = ({children}: {children: ReactNode}) => (
+const Container = ({ children }: { children: ReactNode }) => (
   <Box width="full" backgroundColor="white" paddingY={["xlarge", "xxlarge"]}>
     <Section>{children}</Section>
   </Box>

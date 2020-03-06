@@ -1,5 +1,5 @@
 import * as React from "react";
-import {PaginationButton} from "..";
+import { PaginationButton } from "..";
 
 export interface PaginationHolderProps {
   pages: number;

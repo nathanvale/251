@@ -1,10 +1,10 @@
-import React, {ReactNode, ReactType} from "react";
+import React, { ReactNode, ReactType } from "react";
 import styled from "styled-components";
-import {Box, BoxProps} from "@origin-digital/ods-core";
-import {Color} from "@origin-digital/ods-types";
-import {style} from "styled-system";
+import { Box, BoxProps } from "@origin-digital/ods-core";
+import { Color } from "@origin-digital/ods-types";
+import { style } from "styled-system";
 
-import {basekick} from "../_private/hooks/typography/basekick";
+import { basekick } from "../_private/hooks/typography/basekick";
 
 export const textColor = style({
   prop: "color",

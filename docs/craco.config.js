@@ -14,7 +14,7 @@ module.exports = {
           webpackConfig,
           cracoConfig,
           pluginOptions,
-          context: {env, paths},
+          context: { env, paths },
         }) => {
           //Remove ModuleScope plugin so babel can access packages
           webpackConfig.resolve.plugins.pop();

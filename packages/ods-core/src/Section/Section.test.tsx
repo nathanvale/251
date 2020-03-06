@@ -1,10 +1,10 @@
 import React from "react";
-import {render} from "@origin-digital/ods-testing-library";
-import {Placeholder} from "../Placeholder/Placeholder";
-import {Section} from "./Section";
+import { render } from "@origin-digital/ods-testing-library";
+import { Placeholder } from "../Placeholder/Placeholder";
+import { Section } from "./Section";
 
 test("It sets the grey background correctly", () => {
-  const {container} = render(
+  const { container } = render(
     <Section backgroundColor="grey">
       <Placeholder />
       <Placeholder />
@@ -16,7 +16,7 @@ test("It sets the grey background correctly", () => {
 });
 
 test("It sets the white background correctly", () => {
-  const {container} = render(
+  const { container } = render(
     <Section backgroundColor="white">
       <Placeholder />
       <Placeholder />
@@ -28,7 +28,7 @@ test("It sets the white background correctly", () => {
 });
 
 test("It sets the transparent background if no background is provided", () => {
-  const {container} = render(
+  const { container } = render(
     <Section>
       <Placeholder />
       <Placeholder />
@@ -40,7 +40,7 @@ test("It sets the transparent background if no background is provided", () => {
 });
 
 test("should have no max-width if fluidity is set to full-width", () => {
-  const {container} = render(
+  const { container } = render(
     <Section fluidity="full-width">
       <Placeholder />
       <Placeholder />
@@ -52,7 +52,7 @@ test("should have no max-width if fluidity is set to full-width", () => {
 });
 
 test("should hide gutters if hideGutter is true", () => {
-  const {container} = render(
+  const { container } = render(
     <Section hideGutter={true}>
       <Placeholder />
     </Section>,
@@ -63,7 +63,7 @@ test("should hide gutters if hideGutter is true", () => {
 });
 
 test("should have gutters by default", () => {
-  const {container} = render(
+  const { container } = render(
     <Section>
       <Placeholder />
     </Section>,
@@ -74,7 +74,7 @@ test("should have gutters by default", () => {
 });
 
 test("should stretch the height to full if stretchY is true", () => {
-  const {container} = render(
+  const { container } = render(
     <Section stretchY>
       <Placeholder />
     </Section>,
@@ -84,7 +84,7 @@ test("should stretch the height to full if stretchY is true", () => {
 });
 
 test("should not stretch the height by default", () => {
-  const {container} = render(
+  const { container } = render(
     <Section>
       <Placeholder />
     </Section>,

@@ -1,6 +1,6 @@
 import React from "react";
-import {Box} from "@origin-digital/ods-core";
-import styled, {css} from "styled-components";
+import { Box } from "@origin-digital/ods-core";
+import styled, { css } from "styled-components";
 
 interface MenuButtonProps {
   open?: boolean;
@@ -25,7 +25,7 @@ const Bar = styled(Box)`
   transform-origin: 50% 50%;
 `;
 
-const Bar1 = styled(Bar)<{open: boolean}>`
+const Bar1 = styled(Bar)<{ open: boolean }>`
   top: 0;
   ${p =>
     p.open &&
@@ -51,7 +51,7 @@ const Bar3 = styled(Bar)`
     `}
 `;
 
-export const MenuButton = ({open = false, onClick}: MenuButtonProps) => {
+export const MenuButton = ({ open = false, onClick }: MenuButtonProps) => {
   return (
     <>
       <StyledBox

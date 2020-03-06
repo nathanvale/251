@@ -1,10 +1,13 @@
 /* eslint-disable no-eval */
-import React, {ReactNode, useContext} from "react";
-import styled, {css} from "styled-components";
-import {mapSpaceAliasToIndex, setBreakpoint} from "@origin-digital/ods-helpers";
-import {ColumnsContext} from "../Columns/Columns";
-import {Box} from "../Box/Box";
-import {BoxDebug} from "../_private/components/BoxDebug/BoxDebug";
+import React, { ReactNode, useContext } from "react";
+import styled, { css } from "styled-components";
+import {
+  mapSpaceAliasToIndex,
+  setBreakpoint,
+} from "@origin-digital/ods-helpers";
+import { ColumnsContext } from "../Columns/Columns";
+import { Box } from "../Box/Box";
+import { BoxDebug } from "../_private/components/BoxDebug/BoxDebug";
 
 export interface ColumnProps {
   children: ReactNode;
@@ -25,7 +28,7 @@ export interface ColumnProps {
   "data-id"?: string;
 }
 
-const OuterStyledBox = styled(Box)<{columnWidth: ColumnProps["width"]}>`
+const OuterStyledBox = styled(Box)<{ columnWidth: ColumnProps["width"] }>`
   min-width: 0;
   ${p => (p.columnWidth === "content" ? "flex-shrink: 0;" : undefined)}
   ${p =>
@@ -47,8 +50,8 @@ export const Column = ({
   width = "flex",
   "data-id": dataId,
 }: ColumnProps) => {
-  const {collapseBelow, space} = useContext(ColumnsContext);
-  const spaceIndex = space && mapSpaceAliasToIndex({space});
+  const { collapseBelow, space } = useContext(ColumnsContext);
+  const spaceIndex = space && mapSpaceAliasToIndex({ space });
   return (
     <OuterStyledBox
       data-id={dataId}

@@ -8,26 +8,26 @@
 // PLEASE EXPORT CORE UI COMPONENTS ONLY
 
 // Core
-export {Box} from "./Box/Box";
+export { Box } from "./Box/Box";
 export type BoxProps = import("./Box/Box").BoxProps;
-export {Card} from "./Card/Card";
+export { Card } from "./Card/Card";
 export type CardProps = import("./Card/Card").CardProps;
-export {CardStackSection} from "./CardStackSection/CardStackSection";
+export { CardStackSection } from "./CardStackSection/CardStackSection";
 export type CardStackSectionProps = import("./CardStackSection/CardStackSection").CardStackSectionProps;
-export {Column} from "./Column/Column";
+export { Column } from "./Column/Column";
 export type ColumnProps = import("./Column/Column").ColumnProps;
-export {Columns} from "./Columns/Columns";
+export { Columns } from "./Columns/Columns";
 export type ColumnsProps = import("./Columns/Columns").ColumnsProps;
-export {Divider} from "./Divider/Divider";
+export { Divider } from "./Divider/Divider";
 export type DividerProps = import("./Divider/Divider").DividerProps;
-export {Hidden} from "./Hidden/Hidden";
+export { Hidden } from "./Hidden/Hidden";
 export type HiddenProps = import("./Hidden/Hidden").HiddenProps;
-export {Placeholder} from "./Placeholder/Placeholder";
+export { Placeholder } from "./Placeholder/Placeholder";
 export type PlaceholderProps = import("./Placeholder/Placeholder").PlaceholderProps;
-export {Section} from "./Section/Section";
+export { Section } from "./Section/Section";
 export type SectionProps = import("./Section/Section").SectionProps;
-export {Stack} from "./Stack/Stack";
+export { Stack } from "./Stack/Stack";
 export type StackProps = import("./Stack/Stack").StackProps;
 
 // Themes
-export {OriginThemeProvider} from "@origin-digital/ods-themes";
+export { OriginThemeProvider } from "@origin-digital/ods-themes";

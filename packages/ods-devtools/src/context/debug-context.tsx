@@ -19,7 +19,7 @@ export interface DebugAction {
 function debugReducer(debugState: DebugState, action: DebugAction): DebugState {
   switch (action.type) {
     case "showCSSBorders": {
-      return {...debugState, showCSSBorders: action.value};
+      return { ...debugState, showCSSBorders: action.value };
     }
     default: {
       throw new Error(`Unhandled action type: ${action.type}`);
@@ -28,7 +28,7 @@ function debugReducer(debugState: DebugState, action: DebugAction): DebugState {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-function DebugProvider({children}: React.Props<any>) {
+function DebugProvider({ children }: React.Props<any>) {
   const [state, dispatch] = React.useReducer(debugReducer, {
     showCSSBorders: false,
   });
@@ -42,7 +42,7 @@ function DebugProvider({children}: React.Props<any>) {
 }
 
 function showCSSBorders(dispatch: React.Dispatch<DebugAction>, value: boolean) {
-  dispatch({type: "showCSSBorders", value});
+  dispatch({ type: "showCSSBorders", value });
 }
 
 function useDebugDispatch() {
@@ -61,4 +61,4 @@ function useDebugState() {
   return context;
 }
 
-export {DebugProvider, useDebugDispatch, useDebugState, showCSSBorders};
+export { DebugProvider, useDebugDispatch, useDebugState, showCSSBorders };

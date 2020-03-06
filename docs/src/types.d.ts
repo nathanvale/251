@@ -1,4 +1,4 @@
-import {ReactNode, ComponentType} from "react";
+import { ReactNode, ComponentType } from "react";
 
 export interface Page {
   title: string;
@@ -34,5 +34,5 @@ export interface ExampleDocs {
   stretch?: boolean;
   noSection?: boolean;
   Code: () => JSX.Element;
-  Container?: (props: {children: ReactNode}) => JSX.Element;
+  Container?: (props: { children: ReactNode }) => JSX.Element;
 }

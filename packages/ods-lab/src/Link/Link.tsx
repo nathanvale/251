@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-import {Box, BoxProps} from "@origin-digital/ods-core";
-import {FieldOverlay} from "../_private/components/FieldOverlay/FieldOverlay";
+import { Box, BoxProps } from "@origin-digital/ods-core";
+import { FieldOverlay } from "../_private/components/FieldOverlay/FieldOverlay";
 
-import {Text} from "../Text/Text";
+import { Text } from "../Text/Text";
 
 export interface LinkProps {
   children?: React.ReactNode;

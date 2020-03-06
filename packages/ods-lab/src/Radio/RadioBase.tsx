@@ -1,9 +1,9 @@
 import * as React from "react";
 import MuiRadio from "@material-ui/core/Radio";
 import makeStyles from "@material-ui/styles/makeStyles";
-import {AllColors} from "../AllColors/AllColors";
-import {IRadioProps} from "./Radio";
-import {FormControlLabel, FormHelperText, Typography} from "..";
+import { AllColors } from "../AllColors/AllColors";
+import { IRadioProps } from "./Radio";
+import { FormControlLabel, FormHelperText, Typography } from "..";
 
 export interface RadioBaseProps extends IRadioProps {
   "data-id"?: string;
@@ -86,7 +86,7 @@ export const RadioBase = (props: RadioBaseProps) => {
           name={name}
           control={
             <MuiRadio
-              inputProps={{"aria-label": props.label}}
+              inputProps={{ "aria-label": props.label }}
               color={color ? color : "default"}
             />
           }
