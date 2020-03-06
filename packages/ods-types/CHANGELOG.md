@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.6.1...@origin-digital/ods-types@0.6.2) (2020-03-06)
+
+
+### Bug Fixes
+
+* **CardStackSection:** update responsive paddingy values ([3c1a38e](https://bitbucket.orgn.io/od/origin-ui/commits/3c1a38e))
+
+
+
+
+
 ## [0.6.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.6.0...@origin-digital/ods-types@0.6.1) (2020-03-06)
 
 **Note:** Version bump only for package @origin-digital/ods-types
