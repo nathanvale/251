@@ -2518,7 +2518,6 @@ exports[`CardStackSection 1`] = `
     | ReactElement<CardProps, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>[]
   data-id?: string
   paddingY?: 
-    | "large"
     | "medium"
     | "none"
     | "small"

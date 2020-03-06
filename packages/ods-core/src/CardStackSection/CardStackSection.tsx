@@ -166,10 +166,13 @@ const cardPaddingYForVariant: Record<
   PaddingYVariants,
   ResponsiveProp<SpaceVariants>
 > = {
-  none: "none",
+  none: {
+    xs: "none",
+    sm: "xsmall",
+    lg: "xxlarge",
+  },
   small: ["xsmall", "xxlarge"],
-  medium: ["large", "xxlarge"],
-  large: ["large", "xxxlarge"],
+  medium: ["xsmall", "xxxlarge"],
 };
 
 const DefaultCardStack = ({
