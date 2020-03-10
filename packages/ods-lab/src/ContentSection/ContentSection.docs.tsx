@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import React from "react";
 import { Placeholder } from "@origin-digital/ods-core";
-import { ComponentDocs } from "../../../../docs/src/types";
+import { ComponentDocs } from "@origin-digital/ods-types";
 import { ContentSection, ContentSectionProps } from "..";
 
 export const docs: ComponentDocs<ContentSectionProps> = {
@@ -21,4 +21,5 @@ export const docs: ComponentDocs<ContentSectionProps> = {
       ),
     },
   ],
+  snippets: [],
 };

@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import React from "react";
-import { ComponentDocs } from "../../../../docs/src/types";
-import { Columns, Column, ColumnProps, Placeholder } from "..";
+import { ComponentDocs } from "@origin-digital/ods-types";
+import { Columns, Column, ColumnProps, Placeholder, Stack } from "..";
 
 export const docs: ComponentDocs<ColumnProps> = {
   category: "Layout",
@@ -82,6 +82,103 @@ export const docs: ComponentDocs<ColumnProps> = {
           </Column>
           <Column width="content">
             <Placeholder label="content" />
+          </Column>
+        </Columns>
+      ),
+    },
+  ],
+  snippets: [
+    {
+      label: "2 Columns",
+      Code: () => (
+        <Columns space="small">
+          <Column>
+            <Stack space="small">
+              <Placeholder height={60} label="Column" />
+            </Stack>
+          </Column>
+          <Column>
+            <Stack space="small">
+              <Placeholder height={60} label="Column" />
+            </Stack>
+          </Column>
+        </Columns>
+      ),
+    },
+    {
+      label: "2 Columns (Collapse Below Tablet)",
+      Code: () => (
+        <Columns space="small" collapseBelow="md">
+          <Column>
+            <Stack space="small">
+              <Placeholder height={60} label="Column" />
+            </Stack>
+          </Column>
+          <Column>
+            <Stack space="small">
+              <Placeholder height={60} label="Column" />
+            </Stack>
+          </Column>
+        </Columns>
+      ),
+    },
+    {
+      label: "3 Columns",
+      Code: () => (
+        <Columns space="small">
+          <Column>
+            <Stack space="small">
+              <Placeholder height={60} label="Column" />
+            </Stack>
+          </Column>
+          <Column>
+            <Stack space="small">
+              <Placeholder height={60} label="Column" />
+            </Stack>
+          </Column>
+          <Column>
+            <Stack space="small">
+              <Placeholder height={60} label="Column" />
+            </Stack>
+          </Column>
+        </Columns>
+      ),
+    },
+    {
+      label: "3 Columns (Collapse Below Tablet)",
+      Code: () => (
+        <Columns space="small" collapseBelow="md">
+          <Column>
+            <Stack space="small">
+              <Placeholder height={60} label="Column" />
+            </Stack>
+          </Column>
+          <Column>
+            <Stack space="small">
+              <Placeholder height={60} label="Column" />
+            </Stack>
+          </Column>
+          <Column>
+            <Stack space="small">
+              <Placeholder height={60} label="Column" />
+            </Stack>
+          </Column>
+        </Columns>
+      ),
+    },
+    {
+      label: "Main Content With Sidebar",
+      Code: () => (
+        <Columns space="small" collapseBelow="md">
+          <Column width="2/3">
+            <Stack space="small">
+              <Placeholder height={400} label="Main" />
+            </Stack>
+          </Column>
+          <Column>
+            <Stack space="small">
+              <Placeholder height={100} label="Sidebar" />
+            </Stack>
           </Column>
         </Columns>
       ),

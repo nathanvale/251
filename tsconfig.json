@@ -34,14 +34,35 @@
     "sourceMap": true
   },
   "references": [
-    { "path": "packages/ods-core/tsconfig.json" },
-    { "path": "packages/ods-devtools/tsconfig.json" },
-    { "path": "packages/ods-icons/tsconfig.json" },
-    { "path": "packages/ods-helpers/tsconfig.json" },
-    { "path": "packages/ods-testing-library/tsconfig.json" },
-    { "path": "packages/ods-themes/tsconfig.json" },
-    { "path": "packages/ods-lab/tsconfig.json" },
-    { "path": "packages/ods-types/tsconfig.json" },
-    { "path": "docs/tsconfig.json" }
+    {
+      "path": "packages/ods-core/tsconfig.json"
+    },
+    {
+      "path": "packages/ods-devtools/tsconfig.json"
+    },
+    {
+      "path": "packages/ods-icons/tsconfig.json"
+    },
+    {
+      "path": "packages/ods-helpers/tsconfig.json"
+    },
+    {
+      "path": "packages/ods-testing-library/tsconfig.json"
+    },
+    {
+      "path": "packages/ods-themes/tsconfig.json"
+    },
+    {
+      "path": "packages/ods-lab/tsconfig.json"
+    },
+    {
+      "path": "packages/ods-types/tsconfig.json"
+    },
+    {
+      "path": "docs/tsconfig.json"
+    },
+    {
+      "path": "playroom/tsconfig.json"
+    }
   ]
 }

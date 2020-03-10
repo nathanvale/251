@@ -14,9 +14,11 @@
     "@origin-digital/icon": "*",
     "@origin-digital/messages": "*",
     "@origin-digital/ods-core": "^0.10.2",
+    "@origin-digital/ods-helpers": "*",
     "@origin-digital/ods-icons": "^0.5.5",
     "@origin-digital/ods-lab": "^0.8.2",
+    "@origin-digital/ods-types": "*",
     "@origin-digital/style-guide": "*",
-    "playroom": "^0.14.5"
+    "playroom": "^0.15.1"
   }
 }

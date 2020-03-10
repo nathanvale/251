@@ -13,8 +13,8 @@ import { Stack, Columns, Column, Section, Box } from "@origin-digital/ods-core";
 import { Text, Link } from "@origin-digital/ods-lab";
 import { CSSDebugButton } from "@origin-digital/ods-devtools";
 import { IconFlipToBack } from "@origin-digital/ods-icons";
+import { ComponentDocs } from "@origin-digital/ods-types";
 import componentDocs from "../../../../componentDocs.json";
-import { ComponentDocs } from "../../../../types";
 
 import { PropListView } from "../PropListView/PropListView";
 import { PropTableView } from "../PropTableView/PropTableView";

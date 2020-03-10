@@ -11,6 +11,7 @@ module.exports = {
   cwd: path.join(__dirname, "../"),
   components: "playroom/src/playroom-components.ts",
   frameComponent: "playroom/src/playroom-entry.tsx",
+  snippets: "playroom/src/playroom-snippets.ts",
   outputPath: "./playroom/dist",
   port: 9999,
   widths: [375, 667, 768, 1024, 1440],

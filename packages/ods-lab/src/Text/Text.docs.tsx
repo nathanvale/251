@@ -1,6 +1,6 @@
 /* eslint-disable react/display-name */
 import React from "react";
-import { ComponentDocs } from "../../../../docs/src/types";
+import { ComponentDocs } from "@origin-digital/ods-types";
 import { Text, TextProps } from "..";
 
 export const docs: ComponentDocs<TextProps> = {
@@ -15,4 +15,5 @@ export const docs: ComponentDocs<TextProps> = {
       Code: () => <Text>Content</Text>,
     },
   ],
+  snippets: [],
 };
