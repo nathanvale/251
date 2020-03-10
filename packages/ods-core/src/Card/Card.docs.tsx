@@ -1,6 +1,6 @@
 /* eslint-disable react/display-name */
 import React from "react";
-import { ComponentDocs } from "../../../../docs/src/types";
+import { ComponentDocs } from "@origin-digital/ods-types";
 import { Placeholder } from "../Placeholder/Placeholder";
 import { CardProps, Card } from "..";
 
@@ -16,6 +16,32 @@ export const docs: ComponentDocs<CardProps> = {
     {
       label: "Default Card",
       description: "Be default cards have a small padding size.",
+      Code: () => (
+        <Card>
+          <Placeholder />
+        </Card>
+      ),
+    },
+    {
+      label: "Medium Padding",
+      Code: () => (
+        <Card padding="medium">
+          <Placeholder />
+        </Card>
+      ),
+    },
+    {
+      label: "Large Padding",
+      Code: () => (
+        <Card padding="large">
+          <Placeholder />
+        </Card>
+      ),
+    },
+  ],
+  snippets: [
+    {
+      label: "Default",
       Code: () => (
         <Card>
           <Placeholder />

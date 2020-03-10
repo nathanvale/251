@@ -1,6 +1,6 @@
 /* eslint-disable react/display-name */
 import React from "react";
-import { ComponentDocs } from "../../../../docs/src/types";
+import { ComponentDocs } from "@origin-digital/ods-types";
 import { Box, StackProps } from "../";
 
 export const docs: ComponentDocs<StackProps> = {
@@ -35,4 +35,5 @@ export const docs: ComponentDocs<StackProps> = {
       ),
     },
   ],
+  snippets: [],
 };

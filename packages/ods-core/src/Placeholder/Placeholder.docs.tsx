@@ -1,6 +1,6 @@
 /* eslint-disable react/display-name */
 import React from "react";
-import { ComponentDocs } from "../../../../docs/src/types";
+import { ComponentDocs } from "@origin-digital/ods-types";
 import { Placeholder, PlaceholderProps } from "..";
 
 export const docs: ComponentDocs<PlaceholderProps> = {
@@ -55,4 +55,5 @@ export const docs: ComponentDocs<PlaceholderProps> = {
       ),
     },
   ],
+  snippets: [],
 };

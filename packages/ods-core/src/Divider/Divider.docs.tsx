@@ -1,6 +1,6 @@
 /* eslint-disable react/display-name */
 import React, { ReactNode } from "react";
-import { ComponentDocs } from "../../../../docs/src/types";
+import { ComponentDocs } from "@origin-digital/ods-types";
 import { Divider, DividerProps, Section, Box } from "..";
 
 const Container = ({ children }: { children: ReactNode }) => (
@@ -21,4 +21,5 @@ export const docs: ComponentDocs<DividerProps> = {
       Code: () => <Divider />,
     },
   ],
+  snippets: [],
 };

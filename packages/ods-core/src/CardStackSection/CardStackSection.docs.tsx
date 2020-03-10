@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import React from "react";
 import { Placeholder, Card } from "@origin-digital/ods-core";
-import { ComponentDocs } from "../../../../docs/src/types";
+import { ComponentDocs } from "@origin-digital/ods-types";
 import { CardStackSection, CardStackSectionProps } from "..";
 
 export const docs: ComponentDocs<CardStackSectionProps> = {
@@ -72,6 +72,57 @@ export const docs: ComponentDocs<CardStackSectionProps> = {
       label: "Card Centered Variant",
       description: `Card centered stacks are for standalone cards in beskpoke flows e.g. onboarding. Cards are vertically centered at "md" and above. A good used case is when displaying a login form.`,
       noSection: true,
+      Code: () => (
+        <CardStackSection variant="card-centered">
+          <Card>
+            <Placeholder />
+          </Card>
+        </CardStackSection>
+      ),
+    },
+  ],
+  snippets: [
+    {
+      label: "Default",
+      Code: () => (
+        <CardStackSection>
+          <Card>
+            <Placeholder />
+          </Card>
+          <Card>
+            <Placeholder />
+          </Card>
+        </CardStackSection>
+      ),
+    },
+    {
+      label: "Default",
+      Code: () => (
+        <CardStackSection>
+          <Card>
+            <Placeholder />
+          </Card>
+          <Card>
+            <Placeholder />
+          </Card>
+        </CardStackSection>
+      ),
+    },
+    {
+      label: "Widget",
+      Code: () => (
+        <CardStackSection variant="widget">
+          <Card>
+            <Placeholder />
+          </Card>
+          <Card>
+            <Placeholder />
+          </Card>
+        </CardStackSection>
+      ),
+    },
+    {
+      label: "Card Centered",
       Code: () => (
         <CardStackSection variant="card-centered">
           <Card>

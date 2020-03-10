@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import { Section, Box } from "@origin-digital/ods-core";
-import { ExampleDocs } from "docs/src/types";
+import { ExampleDocs } from "@origin-digital/ods-types";
 import { DocsContainer } from "../DocsContainer/DocsContainer";
 
 interface CodeExampleProps {

@@ -6,9 +6,9 @@ import * as odsCore from "@origin-digital/ods-core";
 import * as odsLab from "@origin-digital/ods-lab";
 import styled, { css } from "styled-components";
 import { media } from "@origin-digital/ods-helpers";
+import { ComponentDocs } from "@origin-digital/ods-types";
 import { Logo } from "../../shared/Logo/Logo";
 import { ConfigConsumer } from "../../shared/ConfigContext/ConfigContext";
-import { ComponentDocs } from "../../types";
 import { guides } from "./guides";
 import { foundations } from "./foundations";
 import { MenuButton } from "./components/MenuButton/MenuButton";
@@ -166,6 +166,7 @@ export const Documentation = () => {
             category: "Unknown",
             componentName: name,
             examples: [],
+            snippets: [],
           };
         }
 

@@ -1,6 +1,6 @@
 /* eslint-disable react/display-name */
 import React, { ReactNode } from "react";
-import { ComponentDocs } from "../../../../docs/src/types";
+import { ComponentDocs } from "@origin-digital/ods-types";
 import { Box, Section, Stack, StackProps, Placeholder } from "../";
 
 const Container = ({ children }: { children: ReactNode }) => (
@@ -82,6 +82,86 @@ export const docs: ComponentDocs<StackProps> = {
           <Placeholder shape="round" width="120px" />
           <Placeholder shape="round" width="120px" />
           <Placeholder shape="round" width="120px" />
+        </Stack>
+      ),
+    },
+  ],
+  snippets: [
+    {
+      label: "XXSmall Space",
+      Code: () => (
+        <Stack space="xxsmall">
+          <Placeholder height={40} />
+          <Placeholder height={40} />
+          <Placeholder height={40} />
+        </Stack>
+      ),
+    },
+    {
+      label: "XSmall Space",
+      Code: () => (
+        <Stack space="xsmall">
+          <Placeholder height={40} />
+          <Placeholder height={40} />
+          <Placeholder height={40} />
+        </Stack>
+      ),
+    },
+    {
+      label: "Small Space",
+      Code: () => (
+        <Stack space="small">
+          <Placeholder height={40} />
+          <Placeholder height={40} />
+          <Placeholder height={40} />
+        </Stack>
+      ),
+    },
+    {
+      label: "Medium Space",
+      Code: () => (
+        <Stack space="medium">
+          <Placeholder height={40} />
+          <Placeholder height={40} />
+          <Placeholder height={40} />
+        </Stack>
+      ),
+    },
+    {
+      label: "Large Space",
+      Code: () => (
+        <Stack space="large">
+          <Placeholder height={40} />
+          <Placeholder height={40} />
+          <Placeholder height={40} />
+        </Stack>
+      ),
+    },
+    {
+      label: "Responsive Space 1",
+      Code: () => (
+        <Stack space={["small", "xxxlarge"]}>
+          <Placeholder height={40} />
+          <Placeholder height={40} />
+          <Placeholder height={40} />
+        </Stack>
+      ),
+    },
+    {
+      label: "Responsive Space 2",
+      Code: () => (
+        <Stack
+          space={{
+            xs: "none",
+            sm: "small",
+            md: "medium",
+            lg: "large",
+            xl: "xxxlarge",
+          }}
+        >
+          <Placeholder height={40} />
+          <Placeholder height={40} />
+          <Placeholder height={40} />
         </Stack>
       ),
     },
