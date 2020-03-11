@@ -3,16 +3,16 @@ import { render } from "@origin-digital/ods-testing-library";
 import { Placeholder } from "../Placeholder/Placeholder";
 import { Section } from "./Section";
 
-test("It sets the grey background correctly", () => {
+test("It sets the grey4 background correctly", () => {
   const { container } = render(
-    <Section backgroundColor="grey">
+    <Section backgroundColor="grey4">
       <Placeholder />
       <Placeholder />
       <Placeholder />
     </Section>,
   );
   const style = window.getComputedStyle(container.firstChild as Element);
-  expect(style.backgroundColor).toEqual("rgb(80, 80, 80)");
+  expect(style.backgroundColor).toEqual("rgb(248, 248, 248)");
 });
 
 test("It sets the white background correctly", () => {
@@ -36,7 +36,7 @@ test("It sets the transparent background if no background is provided", () => {
     </Section>,
   );
   const style = window.getComputedStyle(container.firstChild as Element);
-  expect(style.backgroundColor).toEqual("transparent");
+  expect(style.backgroundColor).toEqual("white");
 });
 
 test("should have no max-width if fluidity is set to full-width", () => {
@@ -68,7 +68,9 @@ test("should have gutters by default", () => {
       <Placeholder />
     </Section>,
   );
-  const style = window.getComputedStyle(container.firstChild as Element);
+
+  const subContainer = container.firstChild && container.firstChild.firstChild;
+  const style = window.getComputedStyle(subContainer as Element);
   expect(style.paddingLeft).toEqual("16px");
   expect(style.paddingRight).toEqual("16px");
 });
@@ -91,4 +93,34 @@ test("should not stretch the height by default", () => {
   );
   const style = window.getComputedStyle(container.firstChild as Element);
   expect(style.height).toEqual("");
+});
+
+test("should show paddingY none", () => {
+  const { container } = render(
+    <Section paddingY="none">
+      <Placeholder />
+    </Section>,
+  );
+  const style = window.getComputedStyle(container.firstChild as Element);
+  expect(style.padding).toEqual("0px 0px 0px 0px");
+});
+
+test("should show paddingY small", () => {
+  const { container } = render(
+    <Section>
+      <Placeholder />
+    </Section>,
+  );
+  const style = window.getComputedStyle(container.firstChild as Element);
+  expect(style.padding).toEqual("32px 0px 32px 0px");
+});
+
+test("should show paddingY medium", () => {
+  const { container } = render(
+    <Section paddingY="medium">
+      <Placeholder />
+    </Section>,
+  );
+  const style = window.getComputedStyle(container.firstChild as Element);
+  expect(style.padding).toEqual("32px 0px 32px 0px");
 });

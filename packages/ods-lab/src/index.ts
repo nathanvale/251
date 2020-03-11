@@ -9,8 +9,6 @@
 
 export { Checkbox } from "./Checkbox/Checkbox";
 export type CheckboxProps = import("./Checkbox/Checkbox").CheckboxProps;
-export { ContentSection } from "./ContentSection/ContentSection";
-export type ContentSectionProps = import("../../ods-lab/src/ContentSection/ContentSection").ContentSectionProps;
 export { Link } from "./Link/Link";
 export type LinkProps = import("./Link/Link").LinkProps;
 export { Text } from "./Text/Text";

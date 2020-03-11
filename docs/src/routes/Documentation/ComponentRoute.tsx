@@ -52,7 +52,7 @@ export const ComponentRoute = ({
           propDescriptions={propDescriptions || {}}
         />
         <Stack>
-          <Section backgroundColor="white">
+          <Section paddingY="none">
             <Stack space="large">
               <Text color="grey56" weight="medium" size="xsmall">
                 {`Usage ${
