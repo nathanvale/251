@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.8.3...@origin-digital/ods-lab@0.9.0) (2020-03-11)
+
+
+### Features
+
+* **Section:** move to core ([adb482a](https://bitbucket.orgn.io/od/origin-ui/commits/adb482a))
+
+
+
+
+
 ## [0.8.3](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.8.2...@origin-digital/ods-lab@0.8.3) (2020-03-10)
 
 **Note:** Version bump only for package @origin-digital/ods-lab
