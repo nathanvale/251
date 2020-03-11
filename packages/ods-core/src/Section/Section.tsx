@@ -1,17 +1,13 @@
-// TODO: remove below line so that type checking is done on this file
-// @ts-nocheck
-/**
- * This @ts-nocheck had to be done as the media.sm tagged template literals have complex types.
- * We should simplify these, as they are hard to understand and follow and not sure worth the complexity.
- */
-/* eslint-disable react/prop-types */
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import React from "react";
-import { media } from "@origin-digital/ods-helpers";
-import { BoxDebug } from "../_private/components/BoxDebug/BoxDebug";
-
-type FluidityVariant = "off" | "max-width-at-xl" | "full-width";
-type BackgroundVariant = "transparent" | "grey" | "white";
+import {
+  PaddingYVariants,
+  SpaceVariants,
+  ResponsiveProp,
+  BackgroundVariant,
+  FluidityVariant,
+} from "@origin-digital/ods-types";
+import { Box } from "../Box/Box";
 
 export interface SectionProps {
   children: React.ReactNode;
@@ -20,11 +16,30 @@ export interface SectionProps {
   fluidity?: FluidityVariant;
   hideGutter?: boolean;
   stretchY?: boolean;
+  paddingY?: PaddingYVariants;
 }
 
-const StyledBoxDebug = styled<SectionProps & { paddingX?: string; theme: any }>(
-  BoxDebug,
-)`
+const defaultPaddingY = "small";
+const defaultFluidity = "off";
+const defaultBackgroundColor = "white";
+
+const cardPaddingYForVariant: Record<
+  PaddingYVariants,
+  ResponsiveProp<SpaceVariants>
+> = {
+  none: "none",
+  small: ["xlarge", "xxlarge"],
+  medium: {
+    xs: "xlarge",
+    sm: "xxlarge",
+    lg: "xxxlarge",
+  },
+};
+
+type StyledBoxProps = Omit<SectionProps, "paddingY">;
+
+const StyledBox = styled(Box)<StyledBoxProps>`
+
   ${p =>
     p.fluidity !== "full-width"
       ? `max-width: ${p.theme.section.maxWidth.xl}px;`
@@ -32,30 +47,41 @@ const StyledBoxDebug = styled<SectionProps & { paddingX?: string; theme: any }>(
 
   ${p =>
     p.fluidity === "off" &&
-    media.sm`
-    max-width: ${p.theme.section.maxWidth.sm}px;
-  `}
+    css`
+      @media (min-width: ${p.theme.breakpoints.sm}) {
+        max-width: ${p.theme.section.maxWidth.sm}px;
+      }
+    `}
 
   ${p =>
     p.fluidity === "off" &&
-    media.md`
-    max-width: ${p.theme.section.maxWidth.md}px;
-  `}
+    css`
+      @media (min-width: ${p.theme.breakpoints.md}) {
+        max-width: ${p.theme.section.maxWidth.md}px;
+      }
+    `}
 
   ${p =>
     p.fluidity === "off" &&
-    media.lg`
-    max-width: ${p.theme.section.maxWidth.lg}px;
-  `}
+    css`
+      @media (min-width: ${p.theme.breakpoints.lg}) {
+        max-width: ${p.theme.section.maxWidth.lg}px;
+      }
+    `}
 
   ${p =>
     p.fluidity === "full-width"
-      ? media.xl`
-      max-width: 100%;
-    `
-      : media.xl`
-    max-width: ${p.theme.section.maxWidth.xl}px;
-  `}
+      ? css`
+          @media (min-width: ${p.theme.breakpoints.xl}) {
+            max-width: 100%;
+          }
+        `
+      : css`
+          @media (min-width: ${p.theme.breakpoints.xl}) {
+            max-width: ${p.theme.section.maxWidth.xl}px;
+          }
+        `}
+
 `;
 
 export const Section = ({
@@ -63,26 +89,37 @@ export const Section = ({
   hideGutter,
   children,
   "data-id": dataId,
+  paddingY = defaultPaddingY,
+  backgroundColor,
   ...rest
 }: SectionProps) => {
   return (
-    <StyledBoxDebug
+    <Box
       data-id={dataId}
-      paddingX={hideGutter ? undefined : "medium"}
-      height={stretchY ? "full" : undefined}
       width="full"
-      style={{ marginLeft: "auto", marginRight: "auto" }}
-      {...rest}
+      paddingY={cardPaddingYForVariant[paddingY]}
+      display="flex"
+      backgroundColor={backgroundColor}
+      height={stretchY ? "full" : undefined}
     >
-      {children}
-    </StyledBoxDebug>
+      <StyledBox
+        {...rest}
+        height={stretchY ? "full" : undefined}
+        paddingX={hideGutter ? undefined : "medium"}
+        width="full"
+        style={{ marginLeft: "auto", marginRight: "auto" }}
+      >
+        {children}
+      </StyledBox>
+    </Box>
   );
 };
 
 Section.defaultProps = {
   "data-id": "section",
-  backgroundColor: "transparent",
-  fluidity: "off",
+  backgroundColor: defaultBackgroundColor,
+  paddingY: defaultPaddingY,
+  fluidity: defaultFluidity,
   hideGutter: false,
   stretchY: false,
 };

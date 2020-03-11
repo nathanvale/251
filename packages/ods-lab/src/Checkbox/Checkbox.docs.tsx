@@ -1,7 +1,8 @@
 /* eslint-disable react/display-name */
 import React from "react";
+import { Section } from "@origin-digital/ods-core";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { ContentSection, Checkbox, CheckboxProps } from "..";
+import { Checkbox, CheckboxProps } from "..";
 
 export const docs: ComponentDocs<CheckboxProps> = {
   category: "Experimental",
@@ -12,7 +13,7 @@ export const docs: ComponentDocs<CheckboxProps> = {
   examples: [
     {
       Code: () => (
-        <ContentSection backgroundColor="white">
+        <Section>
           <Checkbox
             name="checkbox"
             label="checkbox"
@@ -21,7 +22,7 @@ export const docs: ComponentDocs<CheckboxProps> = {
             checked={true}
             error={false}
           />
-        </ContentSection>
+        </Section>
       ),
     },
   ],

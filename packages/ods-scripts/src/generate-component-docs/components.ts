@@ -6,7 +6,6 @@ export {
   Checkbox,
   CircularProgress,
   Collapse,
-  ContentSection,
   // Dialog, // Kills it - Anything with modal/dialog
   // Drawer, // Kills it - Anything with modal/dialog
   ExpansionPanel,

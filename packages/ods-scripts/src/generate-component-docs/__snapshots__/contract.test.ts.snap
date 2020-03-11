@@ -3365,17 +3365,6 @@ exports[`Columns 1`] = `
 }
 `;
 
-exports[`ContentSection 1`] = `
-{
-  backgroundColor?: 
-    | "grey"
-    | "transparent"
-    | "white"
-  children?: ReactNode
-  data-id?: string
-}
-`;
-
 exports[`Divider 1`] = `
 {
   data-id?: string
@@ -16311,7 +16300,7 @@ exports[`RadioGroup 1`] = `
 exports[`Section 1`] = `
 {
   backgroundColor?: 
-    | "grey"
+    | "grey4"
     | "transparent"
     | "white"
   children: ReactNode
@@ -16321,6 +16310,10 @@ exports[`Section 1`] = `
     | "max-width-at-xl"
     | "off"
   hideGutter?: boolean
+  paddingY?: 
+    | "medium"
+    | "none"
+    | "small"
   stretchY?: boolean
 }
 `;

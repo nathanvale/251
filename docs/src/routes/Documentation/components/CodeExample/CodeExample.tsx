@@ -39,7 +39,7 @@ export const CodeExample = ({
           <Code />
         </CodeContainer>
       ) : (
-        <Section>
+        <Section paddingY="none" backgroundColor="transparent">
           {
             <DocsContainer>
               <CodeContainer Container={Container}>

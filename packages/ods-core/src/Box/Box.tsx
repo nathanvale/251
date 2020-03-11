@@ -64,24 +64,32 @@ export interface BoxProps
   overflow?: "auto" | "hidden" | "visible" | "scroll";
 }
 
-export const StyledCodeReset = styled(StyledSystemBox.withComponent("code"))``;
+export const StyledCodeReset = styled(StyledSystemBox.withComponent("code"))<
+  BoxProps
+>``;
 
-export const StyledPreReset = styled(StyledSystemBox.withComponent("pre"))`
+export const StyledPreReset = styled(StyledSystemBox.withComponent("pre"))<
+  BoxProps
+>`
   overflow-x: auto;
   word-wrap: break-word;
   overflow-y: hidden;
 `;
 
-export const StyledSpanReset = styled(StyledSystemBox.withComponent("span"))``;
+export const StyledSpanReset = styled(StyledSystemBox.withComponent("span"))<
+  BoxProps
+>``;
 
-export const StyledAReset = styled(StyledSystemBox.withComponent("a"))`
+export const StyledAReset = styled(StyledSystemBox.withComponent("a"))<
+  BoxProps
+>`
   text-decoration: none;
   color: inherit;
 `;
 
 export const StyledButtonReset = styled(
   StyledSystemBox.withComponent("button"),
-)`
+)<BoxProps>`
   background: none;
   text-decoration: none;
   color: inherit;

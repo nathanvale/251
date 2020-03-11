@@ -1,7 +1,7 @@
 import React from "react";
 import lzString from "lz-string";
 import { Stack, Box, Section } from "@origin-digital/ods-core";
-import { ContentSection, Text, Link } from "@origin-digital/ods-lab";
+import { Text, Link } from "@origin-digital/ods-lab";
 import { IconPlay, IconCopy } from "@origin-digital/ods-icons";
 import copy from "copy-to-clipboard";
 import { getCodeAsString } from "@origin-digital/ods-helpers";
@@ -38,7 +38,7 @@ export const Example = ({
   const snippet = getCodeAsString(Code);
   return (
     <Stack space="none">
-      <ContentSection backgroundColor="white">
+      <Section>
         <DocsContainer>
           <Stack space="large">
             {label && (
@@ -70,9 +70,9 @@ export const Example = ({
             </Box>
           </Stack>
         </DocsContainer>
-      </ContentSection>
+      </Section>
       <Stack space="medium">
-        <Section backgroundColor="white">
+        <Section paddingY="none">
           <CodeExample
             Container={Container}
             Code={Code}

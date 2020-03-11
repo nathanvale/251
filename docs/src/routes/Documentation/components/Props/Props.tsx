@@ -112,7 +112,7 @@ export function Props<T = {}>({
   const hasDefaultProps = !isEmpty(defaultProps);
 
   return (
-    <Section backgroundColor="white">
+    <Section paddingY="none">
       <StyledBox maxWidth={[null, null, "75%", "66%"]}>
         <Stack space={["xxlarge", "xxxlarge"]}>
           <Columns alignY="bottom">
