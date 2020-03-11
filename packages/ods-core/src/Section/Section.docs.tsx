@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Section, SectionProps, Placeholder } from "..";
+import { Section, SectionProps, Placeholder, Stack } from "..";
 
 export const docs: ComponentDocs<SectionProps> = {
   category: "Layout",
@@ -72,5 +72,30 @@ export const docs: ComponentDocs<SectionProps> = {
       ),
     },
   ],
-  snippets: [],
+  snippets: [
+    {
+      label: "Default",
+      Code: () => (
+        <Section>
+          <Placeholder />
+        </Section>
+      ),
+    },
+    {
+      label: "Stacked",
+      Code: () => (
+        <Stack space="xsmall">
+          <Section>
+            <Placeholder />
+          </Section>
+          <Section>
+            <Placeholder />
+          </Section>
+          <Section>
+            <Placeholder />
+          </Section>
+        </Stack>
+      ),
+    },
+  ],
 };
