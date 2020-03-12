@@ -91,9 +91,9 @@ export const docs: ComponentDocs<StackProps> = {
       label: "XXSmall Space",
       Code: () => (
         <Stack space="xxsmall">
-          <Placeholder height={40} />
-          <Placeholder height={40} />
-          <Placeholder height={40} />
+          <Placeholder />
+          <Placeholder />
+          <Placeholder />
         </Stack>
       ),
     },
@@ -101,9 +101,9 @@ export const docs: ComponentDocs<StackProps> = {
       label: "XSmall Space",
       Code: () => (
         <Stack space="xsmall">
-          <Placeholder height={40} />
-          <Placeholder height={40} />
-          <Placeholder height={40} />
+          <Placeholder />
+          <Placeholder />
+          <Placeholder />
         </Stack>
       ),
     },
@@ -111,9 +111,9 @@ export const docs: ComponentDocs<StackProps> = {
       label: "Small Space",
       Code: () => (
         <Stack space="small">
-          <Placeholder height={40} />
-          <Placeholder height={40} />
-          <Placeholder height={40} />
+          <Placeholder />
+          <Placeholder />
+          <Placeholder />
         </Stack>
       ),
     },
@@ -121,9 +121,9 @@ export const docs: ComponentDocs<StackProps> = {
       label: "Medium Space",
       Code: () => (
         <Stack space="medium">
-          <Placeholder height={40} />
-          <Placeholder height={40} />
-          <Placeholder height={40} />
+          <Placeholder />
+          <Placeholder />
+          <Placeholder />
         </Stack>
       ),
     },
@@ -131,9 +131,9 @@ export const docs: ComponentDocs<StackProps> = {
       label: "Large Space",
       Code: () => (
         <Stack space="large">
-          <Placeholder height={40} />
-          <Placeholder height={40} />
-          <Placeholder height={40} />
+          <Placeholder />
+          <Placeholder />
+          <Placeholder />
         </Stack>
       ),
     },
@@ -141,9 +141,9 @@ export const docs: ComponentDocs<StackProps> = {
       label: "Responsive Space 1",
       Code: () => (
         <Stack space={["small", "xxxlarge"]}>
-          <Placeholder height={40} />
-          <Placeholder height={40} />
-          <Placeholder height={40} />
+          <Placeholder />
+          <Placeholder />
+          <Placeholder />
         </Stack>
       ),
     },
@@ -159,9 +159,9 @@ export const docs: ComponentDocs<StackProps> = {
             xl: "xxxlarge",
           }}
         >
-          <Placeholder height={40} />
-          <Placeholder height={40} />
-          <Placeholder height={40} />
+          <Placeholder />
+          <Placeholder />
+          <Placeholder />
         </Stack>
       ),
     },
