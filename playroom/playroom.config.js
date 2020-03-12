@@ -17,7 +17,7 @@ module.exports = {
   widths: [375, 667, 768, 1024, 1440],
   openBrowser: false,
   exampleCode: `<Section>
-  <Placeholder backgroundColor="lightOrange">Content</Placeholder>
+  <Placeholder />
 </Section>`,
   webpackConfig: () => ({
     module: {
