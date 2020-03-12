@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.11.1...@origin-digital/ods-core@0.11.2) (2020-03-12)
+
+
+### Bug Fixes
+
+* **ods-helpers:** add missing dep ([670cfa3](https://bitbucket.orgn.io/od/origin-ui/commits/670cfa3))
+
+
+
+
+
 ## [0.11.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.11.0...@origin-digital/ods-core@0.11.1) (2020-03-11)
 
 **Note:** Version bump only for package @origin-digital/ods-core

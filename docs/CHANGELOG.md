@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.2](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.8.1...docs@0.8.2) (2020-03-12)
+
+
+### Bug Fixes
+
+* **ods-helpers:** add missing dep ([670cfa3](https://bitbucket.orgn.io/od/origin-ui/commits/670cfa3))
+
+
+
+
+
 ## [0.8.1](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.8.0...docs@0.8.1) (2020-03-11)
 
 **Note:** Version bump only for package docs
