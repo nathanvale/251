@@ -11,7 +11,7 @@ const StyledBox = styled(Box)`
 `;
 
 export const Divider = ({ "data-id": dataId = "divider" }: DividerProps) => (
-  <Box position="relative" data-id={dataId}>
+  <Box position="relative" data-id={dataId} alignSelf="stretch">
     <StyledBox position="absolute" boxShadow="borderStandard" width="full" />
   </Box>
 );

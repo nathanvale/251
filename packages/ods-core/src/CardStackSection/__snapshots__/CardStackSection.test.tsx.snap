@@ -44,40 +44,7 @@ exports[`it renders a CardStackSection 1`] = `
   width: 100%;
 }
 
-.c3 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  width: 100%;
-}
-
-.c5 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  padding-bottom: 8px;
-}
-
-.c6 {
+.c4 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -92,7 +59,7 @@ exports[`it renders a CardStackSection 1`] = `
   padding-right: 16px;
 }
 
-.c8 {
+.c6 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -117,14 +84,29 @@ exports[`it renders a CardStackSection 1`] = `
   overflow: hidden;
 }
 
-.c7 {
+.c5 {
   width: auto;
   height: 120px;
   border: 2px solid rgba(51,51,51,0.3);
 }
 
-.c4:last-child {
-  padding-bottom: 0;
+.c3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c3.c3.c3 > *:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 @media screen and (min-width:576px) {
@@ -175,51 +157,51 @@ exports[`it renders a CardStackSection 1`] = `
   }
 }
 
-@media screen and (min-width:576px) {
-  .c5 {
-    padding-bottom: 8px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c5 {
-    padding-bottom: 8px;
-  }
-}
-
 @media screen and (min-width:992px) {
-  .c5 {
-    padding-bottom: 32px;
-  }
-}
-
-@media screen and (min-width:1200px) {
-  .c5 {
-    padding-bottom: 32px;
-  }
-}
-
-@media screen and (min-width:992px) {
-  .c6 {
+  .c4 {
     padding-top: 32px;
   }
 }
 
 @media screen and (min-width:992px) {
-  .c6 {
+  .c4 {
     padding-bottom: 32px;
   }
 }
 
 @media screen and (min-width:576px) {
-  .c6 {
+  .c4 {
     padding-left: 32px;
   }
 }
 
 @media screen and (min-width:576px) {
-  .c6 {
+  .c4 {
     padding-right: 32px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c3.c3.c3 > *:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3.c3.c3 > *:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c3.c3.c3 > *:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c3.c3.c3 > *:not(:last-child) {
+    margin-bottom: 32px;
   }
 }
 
@@ -261,83 +243,73 @@ exports[`it renders a CardStackSection 1`] = `
     <div
       class="c3"
       data-id="stack"
-      display="flex"
-      width="full"
     >
       <div
-        class="c4 c5"
+        class="c4"
+        data-id="card"
       >
         <div
-          class="c6"
-          data-id="card"
+          class="c5 c6"
+          data-id="placeholder"
+          display="flex"
+          height="120"
+          overflow="hidden"
+          shape="rectangle"
+          width="auto"
         >
-          <div
-            class="c7 c8"
-            data-id="placeholder"
-            display="flex"
-            height="120"
-            overflow="hidden"
-            shape="rectangle"
-            width="auto"
+          <svg
+            style="width: 100%; height: 100%; position: absolute;"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              style="width: 100%; height: 100%; position: absolute;"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line
-                style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-                x1="0"
-                x2="100%"
-                y1="0"
-                y2="100%"
-              />
-              <line
-                style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-                x1="100%"
-                x2="0"
-                y1="0"
-                y2="100%"
-              />
-            </svg>
-          </div>
+            <line
+              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+              x1="0"
+              x2="100%"
+              y1="0"
+              y2="100%"
+            />
+            <line
+              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+              x1="100%"
+              x2="0"
+              y1="0"
+              y2="100%"
+            />
+          </svg>
         </div>
       </div>
       <div
-        class="c4 c5"
+        class="c4"
+        data-id="card"
       >
         <div
-          class="c6"
-          data-id="card"
+          class="c5 c6"
+          data-id="placeholder"
+          display="flex"
+          height="120"
+          overflow="hidden"
+          shape="rectangle"
+          width="auto"
         >
-          <div
-            class="c7 c8"
-            data-id="placeholder"
-            display="flex"
-            height="120"
-            overflow="hidden"
-            shape="rectangle"
-            width="auto"
+          <svg
+            style="width: 100%; height: 100%; position: absolute;"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              style="width: 100%; height: 100%; position: absolute;"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line
-                style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-                x1="0"
-                x2="100%"
-                y1="0"
-                y2="100%"
-              />
-              <line
-                style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-                x1="100%"
-                x2="0"
-                y1="0"
-                y2="100%"
-              />
-            </svg>
-          </div>
+            <line
+              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+              x1="0"
+              x2="100%"
+              y1="0"
+              y2="100%"
+            />
+            <line
+              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+              x1="100%"
+              x2="0"
+              y1="0"
+              y2="100%"
+            />
+          </svg>
         </div>
       </div>
     </div>

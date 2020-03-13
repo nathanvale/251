@@ -11,6 +11,7 @@ import {
   JustifyContentVariants,
   DisplayVariants,
   SpaceVariants,
+  TLength,
 } from "@origin-digital/ods-types";
 import * as CSS from "csstype";
 import { Omit } from "utility-types";
@@ -169,8 +170,6 @@ export const Box = ({
   } else {
     Container = StyledSystemBox;
   }
-
-  type TLength = string | 0 | number;
 
   const styledSystemProps = {
     alignItems: normaliseResponsiveProp<AlignItemsVariants>(alignItems),

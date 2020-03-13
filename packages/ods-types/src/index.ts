@@ -1,5 +1,9 @@
 export * from "./docs";
 
+export type AlignXType = "left" | "center" | "right" | "stretch";
+
+export type TLength = string | 0 | number;
+
 export type FluidityVariant = "off" | "max-width-at-xl" | "full-width";
 export type BackgroundVariant = "transparent" | "grey4" | "white";
 

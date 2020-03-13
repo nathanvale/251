@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`It adds dividers 1`] = `
-.c0 {
+.c2 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -9,6 +9,62 @@ exports[`It adds dividers 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  background-color: #e3e3e3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  position: absolute;
+  width: 100%;
+  box-shadow: inset 0 0 0 1px #e3e3e3;
+}
+
+.c1 {
+  width: auto;
+  height: 120px;
+  border: 2px solid rgba(51,51,51,0.3);
+}
+
+.c4 {
+  height: 1px;
+}
+
+.c0 {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -20,10 +76,126 @@ exports[`It adds dividers 1`] = `
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  width: 100%;
 }
 
-.c3 {
+.c0.c0.c0 > *:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+<div
+  class="c0"
+  data-id="stack"
+>
+  <div
+    class="c1 c2"
+    data-id="placeholder"
+    display="flex"
+    height="120"
+    overflow="hidden"
+    shape="rectangle"
+    width="auto"
+  >
+    <svg
+      style="width: 100%; height: 100%; position: absolute;"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <line
+        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+        x1="0"
+        x2="100%"
+        y1="0"
+        y2="100%"
+      />
+      <line
+        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+        x1="100%"
+        x2="0"
+        y1="0"
+        y2="100%"
+      />
+    </svg>
+  </div>
+  <div
+    class="c3"
+    data-id="divider"
+  >
+    <div
+      class="c4 c5"
+      width="full"
+    />
+  </div>
+  <div
+    class="c1 c2"
+    data-id="placeholder"
+    display="flex"
+    height="120"
+    overflow="hidden"
+    shape="rectangle"
+    width="auto"
+  >
+    <svg
+      style="width: 100%; height: 100%; position: absolute;"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <line
+        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+        x1="0"
+        x2="100%"
+        y1="0"
+        y2="100%"
+      />
+      <line
+        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+        x1="100%"
+        x2="0"
+        y1="0"
+        y2="100%"
+      />
+    </svg>
+  </div>
+  <div
+    class="c3"
+    data-id="divider"
+  >
+    <div
+      class="c4 c5"
+      width="full"
+    />
+  </div>
+  <div
+    class="c1 c2"
+    data-id="placeholder"
+    display="flex"
+    height="120"
+    overflow="hidden"
+    shape="rectangle"
+    width="auto"
+  >
+    <svg
+      style="width: 100%; height: 100%; position: absolute;"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <line
+        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+        x1="0"
+        x2="100%"
+        y1="0"
+        y2="100%"
+      />
+      <line
+        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+        x1="100%"
+        x2="0"
+        y1="0"
+        y2="100%"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`It can stack 1`] = `
+.c2 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -49,207 +221,13 @@ exports[`It adds dividers 1`] = `
 }
 
 .c1 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-.c4 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-}
-
-.c5 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  position: relative;
-}
-
-.c7 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  position: absolute;
-  width: 100%;
-  box-shadow: inset 0 0 0 1px #e3e3e3;
-}
-
-.c2 {
   width: auto;
   height: 120px;
   border: 2px solid rgba(51,51,51,0.3);
 }
 
-.c6 {
-  height: 1px;
-}
-
-<div
-  class="c0"
-  data-id="stack"
-  display="flex"
-  width="full"
->
-  <div
-    class="c1"
-  >
-    <div
-      class="c2 c3"
-      data-id="placeholder"
-      display="flex"
-      height="120"
-      overflow="hidden"
-      shape="rectangle"
-      width="auto"
-    >
-      <svg
-        style="width: 100%; height: 100%; position: absolute;"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <line
-          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-          x1="0"
-          x2="100%"
-          y1="0"
-          y2="100%"
-        />
-        <line
-          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-          x1="100%"
-          x2="0"
-          y1="0"
-          y2="100%"
-        />
-      </svg>
-    </div>
-  </div>
-  <div
-    class="c4"
-  >
-    <div
-      class="c5"
-      data-id="divider"
-    >
-      <div
-        class="c6 c7"
-        width="full"
-      />
-    </div>
-  </div>
-  <div
-    class="c1"
-  >
-    <div
-      class="c2 c3"
-      data-id="placeholder"
-      display="flex"
-      height="120"
-      overflow="hidden"
-      shape="rectangle"
-      width="auto"
-    >
-      <svg
-        style="width: 100%; height: 100%; position: absolute;"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <line
-          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-          x1="0"
-          x2="100%"
-          y1="0"
-          y2="100%"
-        />
-        <line
-          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-          x1="100%"
-          x2="0"
-          y1="0"
-          y2="100%"
-        />
-      </svg>
-    </div>
-  </div>
-  <div
-    class="c4"
-  >
-    <div
-      class="c5"
-      data-id="divider"
-    >
-      <div
-        class="c6 c7"
-        width="full"
-      />
-    </div>
-  </div>
-  <div
-    class="c1"
-  >
-    <div
-      class="c2 c3"
-      data-id="placeholder"
-      display="flex"
-      height="120"
-      overflow="hidden"
-      shape="rectangle"
-      width="auto"
-    >
-      <svg
-        style="width: 100%; height: 100%; position: absolute;"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <line
-          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-          x1="0"
-          x2="100%"
-          y1="0"
-          y2="100%"
-        />
-        <line
-          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-          x1="100%"
-          x2="0"
-          y1="0"
-          y2="100%"
-        />
-      </svg>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`It can stack 1`] = `
 .c0 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -261,159 +239,102 @@ exports[`It can stack 1`] = `
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  width: 100%;
 }
 
-.c2 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  padding-bottom: 0;
-}
-
-.c4 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  background-color: #e3e3e3;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.c3 {
-  width: auto;
-  height: 120px;
-  border: 2px solid rgba(51,51,51,0.3);
-}
-
-.c1:last-child {
-  padding-bottom: 0;
+.c0.c0.c0 > *:not(:last-child) {
+  margin-bottom: 0px;
 }
 
 <div
   class="c0"
   data-id="stack"
-  display="flex"
-  width="full"
 >
   <div
     class="c1 c2"
+    data-id="placeholder"
+    display="flex"
+    height="120"
+    overflow="hidden"
+    shape="rectangle"
+    width="auto"
   >
-    <div
-      class="c3 c4"
-      data-id="placeholder"
-      display="flex"
-      height="120"
-      overflow="hidden"
-      shape="rectangle"
-      width="auto"
+    <svg
+      style="width: 100%; height: 100%; position: absolute;"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <svg
-        style="width: 100%; height: 100%; position: absolute;"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <line
-          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-          x1="0"
-          x2="100%"
-          y1="0"
-          y2="100%"
-        />
-        <line
-          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-          x1="100%"
-          x2="0"
-          y1="0"
-          y2="100%"
-        />
-      </svg>
-    </div>
+      <line
+        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+        x1="0"
+        x2="100%"
+        y1="0"
+        y2="100%"
+      />
+      <line
+        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+        x1="100%"
+        x2="0"
+        y1="0"
+        y2="100%"
+      />
+    </svg>
   </div>
   <div
     class="c1 c2"
+    data-id="placeholder"
+    display="flex"
+    height="120"
+    overflow="hidden"
+    shape="rectangle"
+    width="auto"
   >
-    <div
-      class="c3 c4"
-      data-id="placeholder"
-      display="flex"
-      height="120"
-      overflow="hidden"
-      shape="rectangle"
-      width="auto"
+    <svg
+      style="width: 100%; height: 100%; position: absolute;"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <svg
-        style="width: 100%; height: 100%; position: absolute;"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <line
-          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-          x1="0"
-          x2="100%"
-          y1="0"
-          y2="100%"
-        />
-        <line
-          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-          x1="100%"
-          x2="0"
-          y1="0"
-          y2="100%"
-        />
-      </svg>
-    </div>
+      <line
+        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+        x1="0"
+        x2="100%"
+        y1="0"
+        y2="100%"
+      />
+      <line
+        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+        x1="100%"
+        x2="0"
+        y1="0"
+        y2="100%"
+      />
+    </svg>
   </div>
   <div
     class="c1 c2"
+    data-id="placeholder"
+    display="flex"
+    height="120"
+    overflow="hidden"
+    shape="rectangle"
+    width="auto"
   >
-    <div
-      class="c3 c4"
-      data-id="placeholder"
-      display="flex"
-      height="120"
-      overflow="hidden"
-      shape="rectangle"
-      width="auto"
+    <svg
+      style="width: 100%; height: 100%; position: absolute;"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <svg
-        style="width: 100%; height: 100%; position: absolute;"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <line
-          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-          x1="0"
-          x2="100%"
-          y1="0"
-          y2="100%"
-        />
-        <line
-          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-          x1="100%"
-          x2="0"
-          y1="0"
-          y2="100%"
-        />
-      </svg>
-    </div>
+      <line
+        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+        x1="0"
+        x2="100%"
+        y1="0"
+        y2="100%"
+      />
+      <line
+        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+        x1="100%"
+        x2="0"
+        y1="0"
+        y2="100%"
+      />
+    </svg>
   </div>
 </div>
 `;
