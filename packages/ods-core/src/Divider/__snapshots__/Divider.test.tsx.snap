@@ -9,6 +9,9 @@ exports[`it renders a divider 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   position: relative;
 }
 

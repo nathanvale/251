@@ -32,7 +32,7 @@ test("It can distribute space", () => {
   for (let childIdx = 0; childIdx < stackChildren.length - 1; childIdx++) {
     const wrapperEl = stackChildren[childIdx];
     const style = window.getComputedStyle(wrapperEl as Element);
-    expect(style.paddingBottom).toEqual("48px");
+    expect(style.marginBottom).toEqual("48px");
   }
 
   // last element has padding-bottom set to 0.

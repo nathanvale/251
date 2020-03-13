@@ -62,7 +62,7 @@ export const docs: ComponentDocs<StackProps> = {
     },
     {
       label: "Dividers",
-      description: `Dividers between distributed children can be made visible when you pass in "dividers" as true.`,
+      description: `Dividers between distributed children can be made visible when you pass in "dividers" as true. You will notice superfluous dividers if any of Stack's children return null. The recommendation in this case is to manually add your own dividers - by using the Divider component.`,
       Container,
       Code: () => (
         <Stack space="small" dividers>

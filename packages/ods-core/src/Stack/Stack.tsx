@@ -1,10 +1,18 @@
 import React, { ReactNode, Children } from "react";
-import styled from "styled-components";
-import { AlignItemsVariants } from "@origin-digital/ods-types";
-import { Box, ResponsiveSpace } from "../Box/Box";
+import styled, { css } from "styled-components";
+import { style, MarginBottomProps, get } from "styled-system";
+import {
+  AlignXType,
+  AlignItemsVariants,
+  TLength,
+} from "@origin-digital/ods-types";
+import {
+  normaliseResponsiveProp,
+  cssLengthToString,
+} from "@origin-digital/ods-helpers";
+import * as CSS from "csstype";
+import { ResponsiveSpace } from "../Box/Box";
 import { Divider } from "../Divider/Divider";
-
-export type AlignXType = "left" | "center" | "right" | "stretch";
 
 const mapHAlignToAlignItems = (alignX: AlignXType): AlignItemsVariants => {
   const map = {
@@ -24,46 +32,53 @@ export interface StackProps {
   "data-id"?: string;
 }
 
-const StyledBox = styled(Box)`
-  &:last-child {
-    padding-bottom: 0;
+interface ContainerProps extends MarginBottomProps {
+  alignItems?: AlignItemsVariants;
+}
+
+const Container = styled.div<ContainerProps>`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  ${p =>
+    p.alignItems &&
+    css`
+      align-items: ${p.alignItems};
+    `}
+  &&& > *:not(:last-child) {
+    ${style({
+      prop: "marginBottom",
+      key: "space",
+      transformValue: (n, scale) => cssLengthToString(get(scale, n)),
+    })}
   }
 `;
 
 export const Stack = ({
   children,
-  space,
   dividers,
+  space,
   "data-id": dataId,
   alignX = "stretch",
 }: StackProps) => {
   const stackItems = Children.toArray(children);
-
   return (
-    <Box
+    <Container
+      marginBottom={normaliseResponsiveProp<CSS.MarginBottomProperty<TLength>>(
+        space,
+      )}
       data-id={dataId}
-      width="full"
-      display="flex"
-      flexDirection="column"
       alignItems={mapHAlignToAlignItems(alignX)}
     >
-      {stackItems.map((child, index) =>
-        dividers ? (
-          <React.Fragment key={index}>
-            {index > 0 ? (
-              <Box alignSelf="stretch" paddingY={space}>
-                <Divider />
-              </Box>
-            ) : null}
-            <Box>{child}</Box>
-          </React.Fragment>
-        ) : (
-          <StyledBox paddingBottom={space} key={index}>
-            {child}
-          </StyledBox>
-        ),
-      )}
-    </Box>
+      {!dividers
+        ? children
+        : stackItems.flatMap((child, index) => (
+            <React.Fragment key={index}>
+              {child}
+              {index === stackItems.length - 1 ? null : <Divider />}
+            </React.Fragment>
+          ))}
+    </Container>
   );
 };
 
