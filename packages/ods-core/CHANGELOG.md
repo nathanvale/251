@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.11.2...@origin-digital/ods-core@0.12.0) (2020-03-13)
+
+
+### Features
+
+* **Stack:** uplift spacing to use CSS ([8682153](https://bitbucket.orgn.io/od/origin-ui/commits/8682153))
+
+
+
+
+
 ## [0.11.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.11.1...@origin-digital/ods-core@0.11.2) (2020-03-12)
 
 
