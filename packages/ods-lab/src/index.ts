@@ -7,8 +7,6 @@
 
 // PLEASE EXPORT LAB UI COMPONENTS ONLY
 
-export { Checkbox } from "./Checkbox/Checkbox";
-export type CheckboxProps = import("./Checkbox/Checkbox").CheckboxProps;
 export { Link } from "./Link/Link";
 export type LinkProps = import("./Link/Link").LinkProps;
 export { Text } from "./Text/Text";

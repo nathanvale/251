@@ -1,3 +1,5 @@
+import React from "react";
+
 export * from "./docs";
 
 export type AlignXType = "left" | "center" | "right" | "stretch";
@@ -89,6 +91,7 @@ export interface Color {
   orange: string;
   darkOrange: string;
   lightOrange: string;
+  lighterOrange: string;
   lightBlue: string;
   grey: string;
   lightGrey: string;
@@ -207,4 +210,30 @@ export interface Theme {
   gridGutterWidth: 16 | 32;
   section: { maxWidth: Breakpoint<number> };
   border: Border;
+}
+
+// Section for Mui components
+
+export interface OptionalTrackableProps {
+  "data-id"?: string;
+}
+
+export interface ComponentBaseProps extends OptionalTrackableProps {
+  children?: React.ReactNode;
+  className?: string;
+  classes?: Record<string, string>;
+  disabled?: boolean;
+  id?: string;
+}
+
+export interface BaseInputProps extends ComponentBaseProps {
+  id: string;
+  name?: string;
+  onChange?: (
+    event: React.ChangeEvent<HTMLInputElement>,
+    checked: boolean,
+  ) => void;
+  required?: boolean;
+  value?: string | number | string[];
+  inputRef?: React.Ref<any>;
 }

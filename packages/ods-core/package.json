@@ -14,9 +14,12 @@
     "build:cjs": "BUILD_FORMAT=cjs origin-scripts build --monorepo --delete-dir-on-start --out-dir dist/cjs",
     "build:es": "BUILD_WEBPACK=true origin-scripts build --monorepo --out-dir dist/es"
   },
+  "sideEffects": false,
   "typings": "dist/typings/index.d.ts",
   "dependencies": {
     "@babel/runtime-corejs3": "^7.8.3",
+    "@material-ui/core": "^4.9.3",
+    "@material-ui/icons": "^4.9.1",
     "@origin-digital/ods-devtools": "^0.4.1",
     "@origin-digital/ods-helpers": "^0.3.0",
     "@origin-digital/ods-themes": "^0.6.5",
@@ -35,6 +38,5 @@
   },
   "publishConfig": {
     "registry": "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-internal/"
-  },
-  "sideEffects": false
+  }
 }

@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders a Checkbox in error state correctly 1`] = `
+<div>
+  <label
+    class="MuiFormControlLabel-root makeStyles-root-179"
+    data-id="my-checkbox"
+    id="my-checkbox-label"
+  >
+    <span
+      aria-disabled="false"
+      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-194 MuiCheckbox-root makeStyles-root-187 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+      data-id="my-checkbox-checkboxBase"
+    >
+      <span
+        class="MuiIconButton-label"
+      >
+        <input
+          class="PrivateSwitchBase-input-197"
+          data-indeterminate="false"
+          id="my-checkbox-input"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root makeStyles-root-210 MuiSvgIcon-colorError"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 5v14H5V5h14m2-2H3v18h18V3z"
+          />
+        </svg>
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </span>
+    <span
+      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+    >
+      Check 1
+    </span>
+  </label>
+  <p
+    class="MuiFormHelperText-root makeStyles-inlineHelper-180"
+    data-id="my-checkbox-helperText"
+    id="my-checkbox-helperText"
+  />
+</div>
+`;
+
+exports[`it renders a disabled Checkbox 1`] = `
+<div>
+  <label
+    class="MuiFormControlLabel-root makeStyles-root-268 Mui-disabled"
+    data-id="my-checkbox"
+    id="my-checkbox-label"
+  >
+    <span
+      aria-disabled="true"
+      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-283 MuiCheckbox-root makeStyles-root-276 MuiCheckbox-colorSecondary PrivateSwitchBase-disabled-285 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
+      data-id="my-checkbox-checkboxBase"
+      tabindex="-1"
+    >
+      <span
+        class="MuiIconButton-label"
+      >
+        <input
+          class="PrivateSwitchBase-input-286"
+          data-indeterminate="false"
+          disabled=""
+          id="my-checkbox-input"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root makeStyles-root-299 MuiSvgIcon-colorDisabled"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 5v14H5V5h14m2-2H3v18h18V3z"
+          />
+        </svg>
+      </span>
+    </span>
+    <span
+      class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+    >
+      Check 1
+    </span>
+  </label>
+  <p
+    class="MuiFormHelperText-root makeStyles-inlineHelper-269 Mui-disabled"
+    data-id="my-checkbox-helperText"
+    id="my-checkbox-helperText"
+  />
+</div>
+`;
+
+exports[`it renders an unchecked Checkbox with label 1`] = `
+<div>
+  <label
+    class="MuiFormControlLabel-root makeStyles-root-1"
+    data-id="my-checkbox"
+    id="my-checkbox-label"
+  >
+    <span
+      aria-disabled="false"
+      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-16 MuiCheckbox-root makeStyles-root-9 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+      data-id="my-checkbox-checkboxBase"
+    >
+      <span
+        class="MuiIconButton-label"
+      >
+        <input
+          class="PrivateSwitchBase-input-19"
+          data-indeterminate="false"
+          id="my-checkbox-input"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root makeStyles-root-32"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 5v14H5V5h14m2-2H3v18h18V3z"
+          />
+        </svg>
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </span>
+    <span
+      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+    >
+      Check 1
+    </span>
+  </label>
+  <p
+    class="MuiFormHelperText-root makeStyles-inlineHelper-2"
+    data-id="my-checkbox-helperText"
+    id="my-checkbox-helperText"
+  />
+</div>
+`;

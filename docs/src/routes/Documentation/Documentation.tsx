@@ -37,7 +37,11 @@ const componentPathsByCategory = groupBy(
   component => component.name,
 );
 
-const components = { ...odsCore, ...odsLab };
+const components = {
+  ...odsLab,
+  ...odsCore,
+};
+
 const { Text, Box, Stack, Hidden, Link } = components;
 
 const responsiveGutter: odsCore.BoxProps["paddingX"] = ["large", "xlarge"];
@@ -266,18 +270,22 @@ export const Documentation = () => {
                     }))}
                   />
 
-                  {["Layout", "Experimental"].map(category => (
-                    <MenuSectionList
-                      key={category}
-                      title={`${category} Components`}
-                      items={componentsByCategory[category].map(({ name }) => ({
-                        name,
-                        path: `/components/${name}`,
-                        external: false,
-                        onClick: () => setMenuOpen(false),
-                      }))}
-                    />
-                  ))}
+                  {["Layout", "Interaction", "Content", "Experimental"].map(
+                    category => (
+                      <MenuSectionList
+                        key={category}
+                        title={`${category} Components`}
+                        items={componentsByCategory[category].map(
+                          ({ name }) => ({
+                            name,
+                            path: `/components/${name}`,
+                            external: false,
+                            onClick: () => setMenuOpen(false),
+                          }),
+                        )}
+                      />
+                    ),
+                  )}
 
                   <MenuSectionList
                     title="All Components"

@@ -10,6 +10,7 @@
     "start": "playroom start"
   },
   "dependencies": {
+    "@material-ui/icons": "^4.9.1",
     "@origin-digital/formatters": "*",
     "@origin-digital/icon": "*",
     "@origin-digital/messages": "*",

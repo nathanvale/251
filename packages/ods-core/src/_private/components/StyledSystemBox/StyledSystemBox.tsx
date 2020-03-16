@@ -4,6 +4,7 @@ import styled, { css } from "styled-components";
 import {
   TransitionVariants,
   TransformVariants,
+  Theme,
 } from "@origin-digital/ods-types";
 
 import {
@@ -33,7 +34,6 @@ import {
   paddingTop,
   position,
   PositionProps,
-  ResponsiveValue,
   BackgroundColorProps,
   style,
 } from "styled-system";
@@ -82,12 +82,12 @@ const pointerEvents = style({
 });
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const boxShadowFactory = ({ border, shadows }: any) => {
+const boxShadowFactory = ({
+  border,
+  shadows,
+}: Pick<Theme, "border" | "shadows">) => {
   const { width: borderWidth, color } = border;
-  const boxShadowForVariant: Record<
-    BoxShadowVariant,
-    ResponsiveValue<string>
-  > = {
+  const boxShadowForVariant: Record<BoxShadowVariant, string> = {
     ...shadows,
     outlineFocus: `0 0 0 ${borderWidth.large}px ${color.focus}`,
     borderStandard: `inset 0 0 0 ${borderWidth.standard}px ${color.standard}`,
@@ -113,7 +113,7 @@ const boxShadowFactory = ({ border, shadows }: any) => {
 };
 
 export const StyledSystemBox = styled.div<StyledSystemProps>`
-        ${themeChecker}
+        ${themeChecker};
         margin: 0;
         padding: 0;
         border: 0;
@@ -156,7 +156,13 @@ export const StyledSystemBox = styled.div<StyledSystemProps>`
             border: 1px dashed ${theme.colors.grey24};
           `}
 
-          ${({ theme, boxShadow }) =>
+          ${({
+            theme,
+            boxShadow,
+          }: {
+            theme: Theme;
+            boxShadow?: BoxShadowVariant;
+          }) =>
             boxShadow &&
             css`
               box-shadow: ${boxShadowFactory(theme)[boxShadow]};

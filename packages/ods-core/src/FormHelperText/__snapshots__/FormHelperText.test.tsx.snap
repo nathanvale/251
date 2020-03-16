@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders the text as a paragraph 1`] = `
+<div>
+  <p
+    class="MuiFormHelperText-root"
+    data-id="helperTextDataId"
+    id="helperText"
+  >
+    This is a simple helper text
+  </p>
+</div>
+`;

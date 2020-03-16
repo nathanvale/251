@@ -8,6 +8,7 @@ import isEqual from "lodash/isEqual";
 import { NormalisedInterface, NormalisedPropType } from "..";
 
 const aliasWhitelist = ["ResponsiveProp"];
+const noNormalisePropNames = ["muiProps"];
 const propBlacklist = ["key"];
 
 const tsconfigPath = path.join(__dirname, "../../../../tsconfig.json");
@@ -117,9 +118,11 @@ export default () => {
               [propName]: {
                 propName,
                 required: !isOptional,
-                type: aliasWhitelist.includes(typeAlias)
-                  ? typeAlias
-                  : normaliseType(propType, propsObj),
+                type:
+                  aliasWhitelist.includes(typeAlias) ||
+                  noNormalisePropNames.includes(propName)
+                    ? typeAlias
+                    : normaliseType(propType, propsObj),
               },
             };
           }),

@@ -22,7 +22,7 @@ export const MuiIconButton = {
     padding: "16px 16px 0 0",
     "&:hover": {
       border: "none",
-      // boxShadow: "none",
+      boxShadow: "none",
       background: "transparent",
     },
     "&:active": {
