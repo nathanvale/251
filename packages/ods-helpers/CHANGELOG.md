@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-helpers@0.2.9...@origin-digital/ods-helpers@0.3.0) (2020-03-16)
+
+
+### Features
+
+* remove third party deps from ods ([e30a3cc](https://bitbucket.orgn.io/od/origin-ui/commits/e30a3cc))
+
+
+
+
+
 ## [0.2.9](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-helpers@0.2.8...@origin-digital/ods-helpers@0.2.9) (2020-03-13)
 
 **Note:** Version bump only for package @origin-digital/ods-helpers

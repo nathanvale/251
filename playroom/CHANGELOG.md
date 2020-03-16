@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.3.25...playroom@0.4.0) (2020-03-16)
+
+
+### Features
+
+* remove third party deps from ods ([e30a3cc](https://bitbucket.orgn.io/od/origin-ui/commits/e30a3cc))
+
+
+
+
+
 ## [0.3.25](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.3.24...playroom@0.3.25) (2020-03-13)
 
 **Note:** Version bump only for package playroom

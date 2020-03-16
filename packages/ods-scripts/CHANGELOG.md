@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.11.3...@origin-digital/ods-scripts@0.12.0) (2020-03-16)
+
+
+### Features
+
+* remove third party deps from ods ([e30a3cc](https://bitbucket.orgn.io/od/origin-ui/commits/e30a3cc))
+
+
+
+
+
 ## [0.11.3](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.11.2...@origin-digital/ods-scripts@0.11.3) (2020-03-13)
 
 **Note:** Version bump only for package @origin-digital/ods-scripts
