@@ -1,9 +1,13 @@
 const { spawnSync } = require("child_process");
 
-const result = spawnSync("./node_modules/lerna/cli.js", ["ls", "--parseable"], {
-  stdio: "pipe",
-  encoding: "utf-8",
-});
+const result = spawnSync(
+  "./node_modules/lerna/cli.js",
+  ["ls", "--parseable", "--all"],
+  {
+    stdio: "pipe",
+    encoding: "utf-8",
+  },
+);
 const packages = result.stdout.split("\n").filter(package => package !== "");
 
 module.exports = {

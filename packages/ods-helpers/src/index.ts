@@ -9,7 +9,6 @@
 
 export { cssLengthToString } from "./cssLengthToString";
 export { isNumber } from "./isNumber";
-export { getCodeAsString } from "./getCodeAsString";
 export { mapSpaceAliasToIndex } from "./mapSpaceAliasToIndex";
 export { media } from "./media";
 export { normaliseResponsiveProp } from "./normaliseResponsiveProp";

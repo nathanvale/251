@@ -15,7 +15,7 @@ const { spawnSync } = require("child_process");
 function getPackagesMetaData() {
   const result = spawnSync(
     "../node_modules/lerna/cli.js",
-    ["ls", "--parseable", "--ndjson"],
+    ["ls", "--parseable", "--ndjson", "--all"],
     {
       stdio: "pipe",
       encoding: "utf-8",

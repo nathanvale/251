@@ -14,6 +14,7 @@
     "@origin-digital/ods-devtools": "^0.4.1",
     "@origin-digital/ods-icons": "^0.5.8",
     "@origin-digital/ods-lab": "^0.9.3",
+    "@origin-digital/ods-scripts": "*",
     "@origin-digital/ods-types": "^0.8.0",
     "@origin-digital/reporting-client": "^3.5.0",
     "@origin-digital/style-guide": "^21.1.2",
