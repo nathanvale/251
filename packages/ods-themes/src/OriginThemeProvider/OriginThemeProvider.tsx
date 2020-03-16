@@ -1,8 +1,10 @@
 import React from "react";
 import { ThemeProvider, injectGlobal } from "styled-components";
-import MUIThemeProvider from "@material-ui/styles/ThemeProvider";
-
-import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
+import {
+  ThemeProvider as MUIThemeProvider,
+  Theme as MuiTheme,
+  createMuiTheme,
+} from "@material-ui/core";
 
 import { Theme } from "@origin-digital/ods-types";
 import { originRetailTheme } from "../themes";
@@ -10,6 +12,7 @@ import { originRetailMUITheme } from "../_private/mui-themes/originRetail";
 
 export interface OriginThemeProviderProps {
   theme?: Theme;
+  muiTheme?: MuiTheme;
   children: React.ReactNode;
 }
 
@@ -63,13 +66,14 @@ injectGlobal`
       }
 `;
 
+const defaultMuiTheme = createMuiTheme(originRetailMUITheme as any);
 export const OriginThemeProvider = ({
   children,
   theme = originRetailTheme,
+  muiTheme = defaultMuiTheme,
 }: OriginThemeProviderProps) => {
   //TODO: create a mapper function that maps originRetailTheme to a originRetailMUITheme
   // https://origindd.atlassian.net/browse/TED-484
-  const muiTheme = createMuiTheme(originRetailMUITheme as any);
   return (
     <ThemeProvider theme={theme}>
       <MUIThemeProvider theme={muiTheme}>{children}</MUIThemeProvider>

@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders a CheckboxBase in error 1`] = `
+<div>
+  <span
+    aria-disabled="false"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-94 MuiCheckbox-root makeStyles-root-87 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+    data-id="checkboxBase"
+  >
+    <span
+      class="MuiIconButton-label"
+    >
+      <input
+        class="PrivateSwitchBase-input-97"
+        data-indeterminate="false"
+        id="checkboxInput"
+        type="checkbox"
+        value=""
+      />
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root makeStyles-root-110 MuiSvgIcon-colorError"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 5v14H5V5h14m2-2H3v18h18V3z"
+        />
+      </svg>
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </span>
+</div>
+`;
+
+exports[`it renders a checked CheckboxBase 1`] = `
+<div>
+  <span
+    aria-disabled="false"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-51 MuiCheckbox-root makeStyles-root-44 MuiCheckbox-colorSecondary PrivateSwitchBase-checked-52 Mui-checked MuiIconButton-colorSecondary"
+    data-id="checkboxBase"
+  >
+    <span
+      class="MuiIconButton-label"
+    >
+      <input
+        checked=""
+        class="PrivateSwitchBase-input-54"
+        data-indeterminate="false"
+        id="checkboxInput"
+        type="checkbox"
+        value=""
+      />
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root makeStyles-root-67"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M21 3H3v18h18V3zM10 17l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+        />
+      </svg>
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </span>
+</div>
+`;
+
+exports[`it renders a disabled CheckboxBase 1`] = `
+<div>
+  <span
+    aria-disabled="true"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-137 MuiCheckbox-root makeStyles-root-130 MuiCheckbox-colorSecondary PrivateSwitchBase-disabled-139 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
+    data-id="checkboxBase"
+    tabindex="-1"
+  >
+    <span
+      class="MuiIconButton-label"
+    >
+      <input
+        class="PrivateSwitchBase-input-140"
+        data-indeterminate="false"
+        disabled=""
+        id="checkboxInput"
+        type="checkbox"
+        value=""
+      />
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root makeStyles-root-153 MuiSvgIcon-colorDisabled"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 5v14H5V5h14m2-2H3v18h18V3z"
+        />
+      </svg>
+    </span>
+  </span>
+</div>
+`;
+
+exports[`it renders an unchecked CheckboxBase 1`] = `
+<div>
+  <span
+    aria-disabled="false"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-8 MuiCheckbox-root makeStyles-root-1 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+    data-id="checkboxBase"
+  >
+    <span
+      class="MuiIconButton-label"
+    >
+      <input
+        class="PrivateSwitchBase-input-11"
+        data-indeterminate="false"
+        id="checkboxInput"
+        type="checkbox"
+        value=""
+      />
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root makeStyles-root-24"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 5v14H5V5h14m2-2H3v18h18V3z"
+        />
+      </svg>
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </span>
+</div>
+`;
+
+exports[`uncontrolled CheckboxBase it is clicked, it will set Mui-Checked prop 1`] = `
+<div>
+  <span
+    aria-disabled="false"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-213 MuiCheckbox-root makeStyles-root-206 MuiCheckbox-colorSecondary PrivateSwitchBase-checked-214 Mui-checked MuiIconButton-colorSecondary"
+    data-id="checkboxRoot"
+  >
+    <span
+      class="MuiIconButton-label"
+    >
+      <input
+        class="PrivateSwitchBase-input-216"
+        data-indeterminate="false"
+        id="mychk"
+        type="checkbox"
+        value=""
+      />
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root makeStyles-root-249"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M21 3H3v18h18V3zM10 17l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+        />
+      </svg>
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </span>
+</div>
+`;

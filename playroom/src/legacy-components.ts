@@ -66,9 +66,7 @@ export { RadioButton as ZRadioButton } from "@origin-digital/style-guide";
 export { RadioGroup as ZRadioGroup } from "@origin-digital/style-guide";
 export { RadioImage as ZRadioImage } from "@origin-digital/style-guide";
 export { RatesDisplay as ZRatesDisplay } from "@origin-digital/style-guide";
-export {
-  SegmentedControls as ZSegmentedControls,
-} from "@origin-digital/style-guide";
+export { SegmentedControls as ZSegmentedControls } from "@origin-digital/style-guide";
 export { SelectField as ZSelectField } from "@origin-digital/style-guide";
 export { Spinner as ZSpinner } from "@origin-digital/style-guide";
 export { Table as ZTable } from "@origin-digital/style-guide";

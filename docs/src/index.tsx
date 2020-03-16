@@ -4,6 +4,7 @@ import transition from "styled-transition-group";
 import { HashRouter as Router, Route } from "react-router-dom";
 import { DebugProvider } from "@origin-digital/ods-devtools";
 import { OriginThemeProvider, Box } from "@origin-digital/ods-core";
+import { coreMuiTheme } from "@origin-digital/ods-themes";
 import { Documentation } from "./routes/Documentation/Documentation";
 import { Home } from "./routes/Home/Home";
 
@@ -38,7 +39,7 @@ const CSSTransition = transition.div`
 `;
 
 ReactDOM.render(
-  <OriginThemeProvider>
+  <OriginThemeProvider muiTheme={coreMuiTheme}>
     <DebugProvider>
       <Router>
         <Box backgroundColor="white">

@@ -5,10 +5,12 @@ import partition from "lodash/partition";
 import mapValues from "lodash/mapValues";
 import isEmpty from "lodash/isEmpty";
 import * as Core from "@origin-digital/ods-core";
-import * as Experimental from "@origin-digital/ods-lab";
 import styled from "styled-components";
 import { maxWidth, MaxWidthProps } from "styled-system";
-import { NormalisedInterface } from "@origin-digital/ods-scripts";
+import {
+  NormalisedInterface,
+  NormalisedPropType,
+} from "@origin-digital/ods-scripts";
 import { Stack, Columns, Column, Section, Box } from "@origin-digital/ods-core";
 import { Text, Link } from "@origin-digital/ods-lab";
 import { CSSDebugButton } from "@origin-digital/ods-devtools";
@@ -30,6 +32,29 @@ interface PropsProps<T> {
 type ComponentName = keyof typeof componentDocs;
 
 const docs = componentDocs as Record<ComponentName, NormalisedInterface>;
+
+/**
+ * This is used to add a hard coded description for muiProps of all components.
+ * TODO: Should be removed whenever we provided a proper description (e.g. linking to MUI website).
+ * @param props
+ * @param propDescriptions
+ */
+function updateDescForMuiProps<T>(
+  props: {
+    propName: string;
+    required: boolean;
+    type: NormalisedPropType;
+  }[],
+  propDescriptions: ComponentDocs<T>["propDescriptions"],
+) {
+  if (props.find(prop => prop.propName === "muiProps")) {
+    return {
+      ...propDescriptions,
+      muiProps: "See component's code for the details of this prop.",
+    };
+  }
+  return propDescriptions;
+}
 
 const isValidComponentName = (
   componentName: string | number | symbol,
@@ -89,7 +114,9 @@ export function Props<T = {}>({
     prop => prop.required,
   );
 
-  const components = { ...Core, ...Experimental };
+  propDescriptions = updateDescForMuiProps(optionalProps, propDescriptions);
+
+  const components = { ...Core };
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const component = (components as Record<string, FC<any>>)[componentName];
 
@@ -109,6 +136,7 @@ export function Props<T = {}>({
     },
   );
 
+  console.log(defaultProps);
   const hasDefaultProps = !isEmpty(defaultProps);
 
   return (

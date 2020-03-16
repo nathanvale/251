@@ -15,6 +15,19 @@ export interface PropListViewProps {
   };
 }
 
+const TypeRenderer = ({
+  propName,
+  type,
+}: {
+  propName: string;
+  type: NormalisedPropType;
+}) =>
+  propName.toLocaleLowerCase() === "muiprops" ? (
+    <> - </>
+  ) : (
+    <PropType type={type} />
+  );
+
 const CommonColumns = ({
   type,
   propName,
@@ -28,15 +41,15 @@ const CommonColumns = ({
 }) => (
   <>
     <Column width="1/4">
-      <Text>
+      <Text size="xxsmall">
         {propName}
         {required && "*"}
       </Text>
     </Column>
     <Column>
-      <Stack space="small">
-        <Text>
-          <PropType type={type} />
+      <Stack space="medium">
+        <Text size="xxsmall">
+          <TypeRenderer propName={propName} type={type} />
         </Text>
         {description && <Text size="xxxsmall">{description}</Text>}
       </Stack>

@@ -49,8 +49,10 @@ import { MuiTooltip } from "./styles/MuiTooltip";
 import { MuiToggleButton } from "./styles/MuiToggleButton";
 import { MuiToggleButtonGroup } from "./styles/MuiToggleButtonGroup";
 import { MuiTypography } from "./styles/MuiTypography";
+import { palette } from "./palette";
 
 export const originRetailMUITheme = {
+  palette,
   // Breakpoint
   breakpoints: MuiBreakpoints,
   // Shadows
@@ -63,6 +65,11 @@ export const originRetailMUITheme = {
     MuiTextField: {
       autoComplete: "false",
     },
+    // TODO: A lot has to happen here, for example IconButton comps such as Checkbox and Radio, should they use
+    // primary colour by default or secondary?
+  },
+  shape: {
+    borderRadius: 0,
   },
   // Component styling overrides
   overrides: {

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@craco/craco": "5.6.2",
+    "@material-ui/icons": "^4.9.1",
     "@origin-digital/ods-core": "^0.12.1",
     "@origin-digital/ods-devtools": "^0.4.1",
     "@origin-digital/ods-icons": "^0.5.8",
@@ -25,7 +26,7 @@
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-router-dom": "5.1.2",
-    "react-scripts": "3.3.0",
+    "react-scripts": "3.4.0",
     "styled-components": "3.4.5",
     "styled-system": "4.2.4",
     "styled-transition-group": "1.0.0"

@@ -5,7 +5,10 @@ describe("normaliseResponsiveProp", () => {
   const testData: [ResponsiveProp<any>, any][] = [
     [undefined, undefined],
     ["small", "small"],
-    [["small", "large"], ["small", "small", "small", "large", "large"]],
+    [
+      ["small", "large"],
+      ["small", "small", "small", "large", "large"],
+    ],
     [
       {
         lg: "large",

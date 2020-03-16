@@ -36,9 +36,9 @@ test("It can distribute space", () => {
   }
 
   // last element has padding-bottom set to 0.
-  const style = window.getComputedStyle(stackChildren[
-    stackChildren.length - 1
-  ] as Element);
+  const style = window.getComputedStyle(
+    stackChildren[stackChildren.length - 1] as Element,
+  );
   expect(style.paddingBottom).toEqual("0px");
 });
 

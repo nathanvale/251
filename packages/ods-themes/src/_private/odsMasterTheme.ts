@@ -36,6 +36,7 @@ const colors: Color = {
   red: "#ec0000",
   orange: "#ff8228",
   darkOrange: "#fa4616",
+  lighterOrange: "#fff3de",
   lightOrange: "#ffb432",
   lightBlue: "#d2f0ff",
   grey: "#505050",
