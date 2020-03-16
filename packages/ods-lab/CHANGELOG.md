@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.9.4...@origin-digital/ods-lab@0.10.0) (2020-03-16)
+
+
+### Features
+
+* **checkbox:** add new MUI-based checkbox ([e54d945](https://bitbucket.orgn.io/od/origin-ui/commits/e54d9457df9a41060f0e6c0d14e26a1a8059ce96))
+
+
+
+
+
 ## [0.9.4](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.9.3...@origin-digital/ods-lab@0.9.4) (2020-03-16)
 
 **Note:** Version bump only for package @origin-digital/ods-lab
