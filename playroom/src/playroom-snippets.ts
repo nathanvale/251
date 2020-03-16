@@ -1,6 +1,6 @@
 import * as odsCore from "@origin-digital/ods-core";
 import { ComponentDocs, DocsSnippet } from "@origin-digital/ods-types";
-import { getCodeAsString } from "@origin-digital/ods-helpers";
+import { getCodeAsString } from "@origin-digital/ods-scripts";
 
 const components = Object.keys(odsCore);
 const config = components

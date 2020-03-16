@@ -17,10 +17,7 @@
   "typings": "dist/typings/index.d.ts",
   "dependencies": {
     "@babel/runtime-corejs3": "^7.8.3",
-    "@origin-digital/ods-types": "^0.8.0",
-    "lodash": "^4.17.15",
-    "prettier": "^1.19.1",
-    "react-element-to-jsx-string": "^14.0.1"
+    "@origin-digital/ods-types": "^0.8.0"
   },
   "peerDependencies": {
     "react": "^16.9.0",

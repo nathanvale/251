@@ -4,7 +4,7 @@ import { Stack, Box, Section } from "@origin-digital/ods-core";
 import { Text, Link } from "@origin-digital/ods-lab";
 import { IconPlay, IconCopy } from "@origin-digital/ods-icons";
 import copy from "copy-to-clipboard";
-import { getCodeAsString } from "@origin-digital/ods-helpers";
+import { getCodeAsString } from "@origin-digital/ods-scripts";
 import { ExampleDocs } from "@origin-digital/ods-types";
 import { DocsContainer } from "../DocsContainer/DocsContainer";
 import { CodeExample } from "../CodeExample/CodeExample";

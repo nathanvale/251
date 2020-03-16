@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "@origin-digital/ods-core";
 import { Text } from "@origin-digital/ods-lab";
 import { ExampleDocs } from "@origin-digital/ods-types";
-import { getCodeAsString } from "@origin-digital/ods-helpers";
+import { getCodeAsString } from "@origin-digital/ods-scripts";
 
 interface CodeBlockProps {
   Code: ExampleDocs["Code"] | string;
