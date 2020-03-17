@@ -28,25 +28,5 @@
     "../packages/ods-types",
     "../packages/*/src/",
     "../globals.d.ts"
-  ],
-  "references": [
-    {
-      "path": "../packages/ods-core/tsconfig.json"
-    },
-    {
-      "path": "../packages/ods-types/tsconfig.json"
-    },
-    {
-      "path": "../packages/ods-scripts/tsconfig.json"
-    },
-    {
-      "path": "../packages/ods-lab/tsconfig.json"
-    },
-    {
-      "path": "../packages/ods-icons/tsconfig.json"
-    },
-    {
-      "path": "../packages/ods-devtools/tsconfig.json"
-    }
   ]
 }
