@@ -1438,6 +1438,57 @@ exports[`Placeholder 1`] = `
 }
 `;
 
+exports[`Radio 1`] = `
+{
+  checked?: boolean
+  children?: ReactNode
+  className?: string
+  classes?: Record<string, string>
+  data-id?: string
+  disabled?: boolean
+  error?: boolean
+  helperText?: string
+  id: string
+  inputRef?: 
+    | (instance: any) => void
+    | RefObject<any>
+  label: string
+  muiProps?: RadioMuiPropsType | undefined
+  name?: string
+  onChange?: (event: ChangeEvent<HTMLInputElement>, checked: boolean) => void
+  required?: boolean
+  value?: 
+    | number
+    | string
+    | string[]
+}
+`;
+
+exports[`RadioBase 1`] = `
+{
+  aria-describedby?: string
+  checked?: boolean
+  children?: ReactNode
+  className?: string
+  classes?: Record<string, string>
+  data-id?: string
+  disabled?: boolean
+  error?: boolean
+  id: string
+  inputRef?: 
+    | (instance: any) => void
+    | RefObject<any>
+  muiProps?: RadioProps | undefined
+  name?: string
+  onChange?: (event: ChangeEvent<HTMLInputElement>, checked: boolean) => void
+  required?: boolean
+  value?: 
+    | number
+    | string
+    | string[]
+}
+`;
+
 exports[`Section 1`] = `
 {
   backgroundColor?: 
