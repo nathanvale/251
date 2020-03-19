@@ -52,7 +52,5 @@ describe("uncontrolled CheckboxBase", () => {
     input?.click();
 
     expect(chkRoot).toHaveClass("Mui-checked");
-
-    expect(container).toMatchSnapshot();
   });
 });

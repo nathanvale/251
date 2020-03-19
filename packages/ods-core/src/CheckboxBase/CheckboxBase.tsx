@@ -1,100 +1,24 @@
 import React from "react";
-import MuiCheckbox from "@material-ui/core/Checkbox";
 import CheckBoxOutlineBlankSharpIcon from "@material-ui/icons/CheckBoxOutlineBlankSharp";
 import CheckBoxSharpIcon from "@material-ui/icons/CheckBoxSharp";
-import { CheckboxProps as MuiCheckboxProps } from "@material-ui/core";
-import { SvgIconProps } from "@material-ui/core/SvgIcon/SvgIcon";
-import { BaseInputProps } from "@origin-digital/ods-types";
-import { makeStyles } from "@material-ui/core/styles";
+import {
+  CheckboxProps as MuiCheckboxProps,
+  Checkbox as MuiCheckbox,
+} from "@material-ui/core";
+import { BaseSwitchBaseProps } from "@origin-digital/ods-types";
+import { AbstractSwitchBase } from "../_private/components/AbstractSwitch/AbstractSwitchBase";
 
-export interface CheckboxBaseProps extends BaseInputProps {
-  checked?: boolean;
-  error?: boolean;
-  "aria-describedby"?: string;
+export interface CheckboxBaseProps extends BaseSwitchBaseProps {
   muiProps?: MuiCheckboxProps;
 }
 
-const iconBaseStyle = {
-  border: "none",
-  boxShadow: "none",
-};
-
-const useUnheckedStyle = makeStyles({
-  root: {
-    ...iconBaseStyle,
-  },
-});
-
-const UncheckedIcon = ({
-  disabled,
-  error,
-  ...others
-}: SvgIconProps & { disabled?: boolean; error?: boolean }) => {
-  const classes = useUnheckedStyle();
-
-  return (
-    <CheckBoxOutlineBlankSharpIcon
-      {...others}
-      classes={classes}
-      color={disabled ? "disabled" : error ? "error" : "inherit"}
-    />
-  );
-};
-
-const useCheckedStyle = makeStyles({
-  root: {
-    ...iconBaseStyle,
-  },
-});
-
-const CheckedIcon = ({
-  disabled,
-  ...others
-}: SvgIconProps & { disabled?: boolean }) => {
-  const classes = useCheckedStyle();
-
-  return (
-    <CheckBoxSharpIcon
-      {...others}
-      classes={classes}
-      color={disabled ? "disabled" : "inherit"}
-    />
-  );
-};
-
-const useCheckboxStyle = makeStyles({
-  root: {
-    border: "none",
-    boxShadow: "none",
-    alignItems: "flex-start",
-    "&&:hover": {
-      boxShadow: "none",
-    },
-  },
-});
-
 export const CheckboxBase = (props: CheckboxBaseProps) => {
-  const {
-    disabled,
-    error,
-    "aria-describedby": describedBy,
-    muiProps,
-    ...other
-  } = props;
-  const chkClasses = useCheckboxStyle();
-
   return (
-    <MuiCheckbox
-      {...muiProps}
-      {...other}
-      inputProps={{
-        ...(muiProps && muiProps.inputProps),
-        "aria-describedby": describedBy,
-      }}
-      disabled={disabled}
-      checkedIcon={<CheckedIcon disabled={disabled} />}
-      icon={<UncheckedIcon disabled={disabled} error={error} />}
-      classes={chkClasses}
+    <AbstractSwitchBase<MuiCheckboxProps>
+      {...props}
+      Component={MuiCheckbox}
+      checkedIcon={<CheckBoxSharpIcon />}
+      icon={<CheckBoxOutlineBlankSharpIcon />}
     />
   );
 };

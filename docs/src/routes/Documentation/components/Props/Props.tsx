@@ -136,7 +136,6 @@ export function Props<T = {}>({
     },
   );
 
-  console.log(defaultProps);
   const hasDefaultProps = !isEmpty(defaultProps);
 
   return (

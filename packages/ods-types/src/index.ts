@@ -237,3 +237,15 @@ export interface BaseInputProps extends ComponentBaseProps {
   value?: string | number | string[];
   inputRef?: React.Ref<any>;
 }
+
+export interface BaseSwitchBaseProps extends BaseInputProps {
+  checked?: boolean;
+  error?: boolean;
+  "aria-describedby"?: string;
+}
+
+export interface BaseSwitchProps
+  extends Omit<BaseSwitchBaseProps, "aria-describedby"> {
+  label: string;
+  helperText?: string;
+}

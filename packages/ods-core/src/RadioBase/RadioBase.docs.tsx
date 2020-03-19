@@ -2,44 +2,44 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
 import { getSwitchBaseDocs } from "../_private/components/AbstractSwitch/switch-docs";
-import { CheckboxBase, CheckboxBaseProps } from "./CheckboxBase";
+import { RadioBase, RadioBaseProps } from "./RadioBase";
 
-export const docs: ComponentDocs<CheckboxBaseProps> = {
+export const docs: ComponentDocs<RadioBaseProps> = {
   category: "Interaction",
-  componentName: "CheckboxBase",
+  componentName: "RadioBase",
   description: [
-    "This is a basic checkbox component without any labels or helper text.",
+    "This is a basic radio component without any labels or helper text.",
     "Use this atomic component to build more complicated components.",
-    "The Checkbox components uses this under the hood.",
+    "The Radio components uses this under the hood.",
   ].join(" "),
-  propDescriptions: getSwitchBaseDocs("checkbox"),
+  propDescriptions: getSwitchBaseDocs("radio"),
   migrationGuide: false,
   examples: [
     {
       label: "Uncontrolled",
-      description: "Simple use case of an uncontrolled checkbox",
-      Code: () => <CheckboxBase id="tc-checkbox" />,
+      description: "Simple use case of an uncontrolled radio",
+      Code: () => <RadioBase id="tc-radio" />,
     },
     {
       label: "Controlled",
       description: "It becomes controlled when checked prop is provided",
-      Code: () => <CheckboxBase id="tc-checkbox" checked />,
+      Code: () => <RadioBase id="tc-radio" checked />,
     },
     {
       label: "Error",
       description: "Turns red when it is in error state and it is not checked",
-      Code: () => <CheckboxBase id="tc-checkbox" error />,
+      Code: () => <RadioBase id="tc-radio" error />,
     },
     {
       label: "Disabled",
       description: "All turn grey when it is disabled",
-      Code: () => <CheckboxBase id="tc-checkbox" disabled checked />,
+      Code: () => <RadioBase id="tc-radio" disabled checked />,
     },
   ],
   snippets: [
     {
       label: "Uncontrolled",
-      Code: () => <CheckboxBase id="checkbox1" />,
+      Code: () => <RadioBase id="radio1" />,
     },
   ],
 };
