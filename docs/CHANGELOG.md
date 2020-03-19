@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.10.2...docs@0.11.0) (2020-03-19)
+
+
+### Features
+
+* **radio, radiobase:** new components added to ods-core ([25e19c8](https://bitbucket.orgn.io/od/origin-ui/commits/25e19c84341a41155f8d8683012a4677c022b6d6))
+
+
+
+
+
 ## [0.10.2](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.10.1...docs@0.10.2) (2020-03-17)
 
 **Note:** Version bump only for package docs
