@@ -11,13 +11,13 @@ interface CodeBlockProps {
 export const CodeBlock = ({ Code }: CodeBlockProps) => (
   <Box backgroundColor="grey56" paddingY="xlarge" paddingX="medium">
     <Box component="pre" style={{ overflowY: "visible", overflowX: "visible" }}>
-      {typeof Code === "string" ? (
+      {Code instanceof String ? (
         <Text color="grey16" component="code">
           {Code}
         </Text>
       ) : (
         <Text color="grey16" component="code">
-          {getCodeAsString(Code)}
+          {getCodeAsString(Code as ExampleDocs["Code"])}
         </Text>
       )}
     </Box>
