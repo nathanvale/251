@@ -34,8 +34,12 @@ export const Example = ({
   Code,
   Container,
   playroomUrl,
+  playroom = true,
+  codeString,
 }: ExampleProps) => {
-  const snippet = getCodeAsString(Code);
+  const snippet =
+    Code && !codeString ? getCodeAsString(Code) : (codeString as string);
+
   return (
     <Stack space="none">
       <Section>
@@ -49,22 +53,24 @@ export const Example = ({
             {description && <Text color="grey56">{description}</Text>}
             <Box style={{ marginBottom: -20 }}>
               <Stack space="xxsmall">
-                <CodeBlock Code={Code} />
+                <CodeBlock Code={snippet} />
                 <Box display="flex" justifyContent="flex-end">
                   <Link onClick={() => copy(snippet)} Icon={<IconCopy />}>
                     Copy
                   </Link>
-                  <Link
-                    target="_blank"
-                    component="a"
-                    href={createUrl({
-                      playroomUrl,
-                      code: snippet,
-                    })}
-                    Icon={<IconPlay />}
-                  >
-                    Open in Playroom
-                  </Link>
+                  {playroom && (
+                    <Link
+                      target="_blank"
+                      component="a"
+                      href={createUrl({
+                        playroomUrl,
+                        code: snippet,
+                      })}
+                      Icon={<IconPlay />}
+                    >
+                      Open in Playroom
+                    </Link>
+                  )}
                 </Box>
               </Stack>
             </Box>
