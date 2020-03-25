@@ -5,7 +5,7 @@ import { getSwitchDocs } from "../_private/components/AbstractSwitch/switch-docs
 import { Checkbox, CheckboxProps } from "./Checkbox";
 
 export const docs: ComponentDocs<CheckboxProps> = {
-  category: "Interaction",
+  category: "Form",
   componentName: "Checkbox",
   description:
     "This is an accessible Checkbox component. It is uncontrolled by default. But if the `checked` value is provided it becomes controlled",

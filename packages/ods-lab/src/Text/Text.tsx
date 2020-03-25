@@ -31,7 +31,24 @@ export interface TextProps {
   baseline?: boolean;
   className?: string;
   align?: BoxProps["textAlign"];
+  dangerouslySetInnerHTML?: any;
 }
+
+const StyledBox = styled(Box)<any>`
+  ${({ theme, size }) => {
+    return basekick({
+      baseFontSize: 1,
+      typeSizeModifier: theme.typography.text[size].size,
+      typeRowSpan: theme.typography.text[size].rows,
+      descenderHeightScale: theme.typography.descenderHeightScale,
+      capHeight: theme.typography.capHeightScale,
+      gridRowHeight: theme.typography.gridRow,
+    });
+  }};
+  font-family: gordita, sans-serif;
+  font-weight: ${({ theme, weight }) => theme.typography.weight[weight]};
+  ${textColor};
+`;
 
 export const Text = ({
   children,
@@ -40,24 +57,9 @@ export const Text = ({
   color = "grey",
   weight = "regular",
   align,
-
   className,
+  dangerouslySetInnerHTML,
 }: TextProps) => {
-  const StyledBox = styled(Box)`
-    ${p => {
-      return basekick({
-        baseFontSize: 1,
-        typeSizeModifier: p.theme.typography.text[size].size,
-        typeRowSpan: p.theme.typography.text[size].rows,
-        descenderHeightScale: p.theme.typography.descenderHeightScale,
-        capHeight: p.theme.typography.capHeightScale,
-        gridRowHeight: p.theme.typography.gridRow,
-      });
-    }}
-    font-family: gordita, sans-serif;
-    font-weight: ${p => p.theme.typography.weight[weight]};
-    ${textColor}
-  `;
   return (
     <StyledBox
       data-id="text"
@@ -66,6 +68,9 @@ export const Text = ({
       color={color}
       className={className}
       textAlign={align}
+      size={size}
+      weight={weight}
+      dangerouslySetInnerHTML={dangerouslySetInnerHTML}
     >
       {children}
     </StyledBox>

@@ -226,26 +226,59 @@ export interface ComponentBaseProps extends OptionalTrackableProps {
   id?: string;
 }
 
-export interface BaseInputProps extends ComponentBaseProps {
+export type InputValueType = string | number | string[];
+
+export interface BaseFormStateProps extends ComponentBaseProps {
+  error?: boolean;
+  required?: boolean;
+}
+
+export interface BaseInputProps extends BaseFormStateProps {
   id: string;
+  "aria-describedby"?: string;
+  "aria-label"?: string;
+  "aria-labelledby"?: string;
+  inputRef?: React.Ref<any>;
   name?: string;
+  onChange?: (
+    event: React.ChangeEvent<HTMLInputElement>,
+    value: string,
+  ) => void;
+  value?: InputValueType;
+}
+
+export interface BaseSwitchBaseProps extends Omit<BaseInputProps, "onChange"> {
+  checked?: boolean;
   onChange?: (
     event: React.ChangeEvent<HTMLInputElement>,
     checked: boolean,
   ) => void;
-  required?: boolean;
-  value?: string | number | string[];
-  inputRef?: React.Ref<any>;
-}
-
-export interface BaseSwitchBaseProps extends BaseInputProps {
-  checked?: boolean;
-  error?: boolean;
-  "aria-describedby"?: string;
 }
 
 export interface BaseSwitchProps
   extends Omit<BaseSwitchBaseProps, "aria-describedby"> {
-  label: string;
-  helperText?: string;
+  label: React.ReactNode;
+  helperText?: React.ReactNode;
 }
+
+export type LabelElements =
+  | "cite"
+  | "form"
+  | "label"
+  | "span"
+  | "a"
+  | "abbr"
+  | "div"
+  | "fieldset"
+  | "legend"
+  | "p"
+  | "pre"
+  | "q"
+  | "section";
+
+export type FormGroupElements =
+  | "form"
+  | "span"
+  | "div"
+  | "fieldset"
+  | "section";

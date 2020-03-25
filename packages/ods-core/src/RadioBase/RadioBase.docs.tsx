@@ -5,7 +5,7 @@ import { getSwitchBaseDocs } from "../_private/components/AbstractSwitch/switch-
 import { RadioBase, RadioBaseProps } from "./RadioBase";
 
 export const docs: ComponentDocs<RadioBaseProps> = {
-  category: "Interaction",
+  category: "Internal",
   componentName: "RadioBase",
   description: [
     "This is a basic radio component without any labels or helper text.",

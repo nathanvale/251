@@ -5,7 +5,7 @@ import { getSwitchBaseDocs } from "../_private/components/AbstractSwitch/switch-
 import { CheckboxBase, CheckboxBaseProps } from "./CheckboxBase";
 
 export const docs: ComponentDocs<CheckboxBaseProps> = {
-  category: "Interaction",
+  category: "Internal",
   componentName: "CheckboxBase",
   description: [
     "This is a basic checkbox component without any labels or helper text.",

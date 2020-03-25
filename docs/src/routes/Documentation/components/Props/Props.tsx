@@ -160,9 +160,11 @@ export function Props<T = {}>({
             </Column>
           </Columns>
           {description && (
-            <Text color="grey56" size="medium">
-              {description}
-            </Text>
+            <Text
+              color="grey56"
+              size="xsmall"
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
           )}
           <Stack dividers space="medium">
             {variant !== "list" ? (

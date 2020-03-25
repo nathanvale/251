@@ -25,5 +25,10 @@ export const palette: Theme["palette"] = createMuiTheme({
       hoverOpacity: 0.2,
       disabled: colors.grey16,
     },
+    text: {
+      primary: colors.grey,
+      secondary: colors.grey80,
+      disabled: colors.grey16,
+    },
   },
 }).palette;
