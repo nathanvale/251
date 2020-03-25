@@ -4,7 +4,7 @@ import { ComponentDocs } from "@origin-digital/ods-types";
 import { FormHelperText, FormHelperTextProps } from "./FormHelperText";
 
 export const docs: ComponentDocs<FormHelperTextProps> = {
-  category: "Content",
+  category: "Internal",
   componentName: "FormHelperText",
   description:
     "This is a low level and atomic component used to show descriptive helper text under form components.",

@@ -273,7 +273,7 @@ export const Documentation = () => {
                     }))}
                   />
 
-                  {["Layout", "Interaction", "Content"].map(category => (
+                  {["Layout", "Form"].map(category => (
                     <MenuSectionList
                       key={category}
                       title={`${category} Components`}

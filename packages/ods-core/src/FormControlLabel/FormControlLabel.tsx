@@ -7,6 +7,7 @@ import { ComponentBaseProps } from "@origin-digital/ods-types";
 export interface FormControlLabelProps extends ComponentBaseProps {
   control: React.ReactElement;
   label: React.ReactNode;
+  error?: boolean;
   muiProps?: MuiFormControlLabelProps;
 }
 

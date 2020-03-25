@@ -5,7 +5,7 @@ import { getSwitchDocs } from "../_private/components/AbstractSwitch/switch-docs
 import { Radio, RadioProps } from "./Radio";
 
 export const docs: ComponentDocs<RadioProps> = {
-  category: "Interaction",
+  category: "Form",
   componentName: "Radio",
   description:
     "This is an accessible Radio component. It is uncontrolled by default. But if the `checked` value is provided it becomes controlled",

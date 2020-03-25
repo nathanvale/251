@@ -1,5 +1,9 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core";
+import {
+  FormControlState,
+  makeStyles,
+  useFormControl,
+} from "@material-ui/core";
 import { FormControlLabel } from "../../../FormControlLabel/FormControlLabel";
 import { FormHelperText } from "../../../FormHelperText/FormHelperText";
 import { Box } from "../../../Box/Box";
@@ -8,6 +12,40 @@ import { AbstractSwitchProps, SwitchMuiProps } from "./abstract-types";
 const getId = (baseId: string, compName: string = "") =>
   `${baseId}-${compName}`;
 const getHelperId = (baseId: string) => `${baseId}-helperText`;
+
+/**
+ * This allows our Switch components to be sensitive to a FormControl context surrounding them.
+ * If the FormControl (ControlGroup) is in error state, all Checkboxes or Radios inside it show up in error state.
+ * @param props
+ * @param states
+ * @param muiFormControl
+ */
+function formControlState({
+  props,
+  states,
+  muiFormControl,
+}: {
+  props: any;
+  muiFormControl: FormControlState;
+  states: Array<keyof FormControlState>;
+}) {
+  return states.reduce(
+    (acc: FormControlState, state: keyof FormControlState) => {
+      // @ts-ignore
+      acc[state] = props[state];
+
+      if (muiFormControl) {
+        if (typeof props[state] === "undefined") {
+          // @ts-ignore
+          acc[state] = muiFormControl[state];
+        }
+      }
+
+      return acc;
+    },
+    {} as FormControlState,
+  );
+}
 
 const useLabelStyles = makeStyles({
   root: {
@@ -33,43 +71,54 @@ export function AbstractSwitch<
     Component,
     id,
     "data-id": dataId,
-    disabled,
     checked,
-    label,
+    disabled,
+    error,
     helperText,
+    label,
     muiProps,
     ...others
   } = props;
   const lblClasses = useLabelStyles();
   const hlpClasses = useHelperTextStyles();
 
+  const muiFormControl = useFormControl();
+  const fcs = formControlState({
+    props,
+    muiFormControl,
+    states: ["disabled", "error"], // TODO: see if we need to support the whole list of FormControlState keys.
+  }) as FormControlState;
+
+  const disabledVal = disabled || (!!fcs.disabled);
   return (
     <Box>
       <FormControlLabel
-        muiProps={muiProps && muiProps.formControlLabelProps}
-        id={`${id}-label`}
-        data-id={dataId || id}
-        disabled={disabled}
-        label={label}
         className={lblClasses.root}
+        data-id={dataId || id}
+        disabled={disabledVal}
+        id={`${id}-label`}
+        label={label}
+        muiProps={muiProps && muiProps.formControlLabelProps}
         control={
           <Component
             {...others}
-            muiProps={muiProps && muiProps.componentProps}
             aria-describedby={getHelperId(id)}
-            id={id}
             checked={checked}
-            disabled={disabled}
             data-id={getId(dataId || id, Component.displayName)}
+            disabled={disabledVal}
+            error={error || (!!fcs.error)}
+            id={id}
+            muiProps={muiProps && muiProps.componentProps}
           />
         }
       />
       <FormHelperText
-        muiProps={muiProps && muiProps.formHelperTextProps}
         className={hlpClasses.inlineHelper}
         id={getHelperId(id)}
         data-id={getHelperId(dataId || id)}
-        disabled={disabled}
+        disabled={disabledVal}
+        error={false}
+        muiProps={muiProps && muiProps.formHelperTextProps}
       >
         {helperText}
       </FormHelperText>

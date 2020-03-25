@@ -6,7 +6,7 @@ import { CheckboxBase } from "../CheckboxBase/CheckboxBase";
 import { FormControlLabel, FormControlLabelProps } from "./FormControlLabel";
 
 export const docs: ComponentDocs<FormControlLabelProps> = {
-  category: "Content",
+  category: "Internal",
   componentName: "FormControlLabel",
   description:
     "This is a low level and atomic component used to provide a label for interactive form components.",

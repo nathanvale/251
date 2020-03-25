@@ -7,7 +7,9 @@ export interface ComponentDocs<T = {}> {
     | "Layout"
     | "Content"
     | "Interaction"
+    | "Form"
     | "Icon"
+    | "Internal"
     | "Experimental"
     | "Unknown";
   examples: ExampleDocs[];
