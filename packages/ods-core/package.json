@@ -24,6 +24,7 @@
     "@origin-digital/ods-helpers": "^0.4.3",
     "@origin-digital/ods-themes": "^0.8.1",
     "@origin-digital/ods-types": "^0.11.1",
+    "clsx": "^1.1.0",
     "csstype": "^2.6.4",
     "polished": "^3.4.2",
     "styled-system": "4.2.3",

@@ -89,7 +89,7 @@ export function AbstractSwitch<
     states: ["disabled", "error"], // TODO: see if we need to support the whole list of FormControlState keys.
   }) as FormControlState;
 
-  const disabledVal = disabled || (!!fcs.disabled);
+  const disabledVal = disabled || !!fcs.disabled;
   return (
     <Box>
       <FormControlLabel
@@ -106,7 +106,7 @@ export function AbstractSwitch<
             checked={checked}
             data-id={getId(dataId || id, Component.displayName)}
             disabled={disabledVal}
-            error={error || (!!fcs.error)}
+            error={error || !!fcs.error}
             id={id}
             muiProps={muiProps && muiProps.componentProps}
           />

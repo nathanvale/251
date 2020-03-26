@@ -23,6 +23,9 @@ export type CheckboxBaseProps = import("./CheckboxBase/CheckboxBase").CheckboxBa
 export { Checkbox } from "./Checkbox/Checkbox";
 export type CheckboxProps = import("./Checkbox/Checkbox").CheckboxProps;
 
+export { CheckboxGroup } from "./CheckboxGroup/CheckboxGroup";
+export type CheckboxGroupProps = import("./CheckboxGroup/CheckboxGroup").CheckboxGroupProps;
+
 export { Column } from "./Column/Column";
 export type ColumnProps = import("./Column/Column").ColumnProps;
 

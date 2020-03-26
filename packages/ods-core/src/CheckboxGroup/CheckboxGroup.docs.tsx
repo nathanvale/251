@@ -25,7 +25,6 @@ export const docs: ComponentDocs<CheckboxGroupProps> = {
           id="cityGroup"
           label="Australia cities"
           helperText="You have to select at least one city."
-          disabled
         >
           <Checkbox label="Melbourne" id="mlb" />
           <Checkbox label="Sydney" id="syd" />
