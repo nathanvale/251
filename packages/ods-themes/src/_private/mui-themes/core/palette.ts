@@ -28,7 +28,7 @@ export const palette: Theme["palette"] = createMuiTheme({
     text: {
       primary: colors.grey,
       secondary: colors.grey80,
-      disabled: colors.grey16,
+      disabled: colors.grey48,
     },
   },
 }).palette;

@@ -1,4 +1,5 @@
-import * as React from "react";
+import React from "react";
+import clsx from "clsx";
 import {
   FormLabel as MuiFormLabel,
   FormLabelProps as MuiFormLabelProps,
@@ -26,6 +27,7 @@ const useLabelClasses = makeStyles(theme => ({
 export const FormLabel = ({
   muiProps = {} as any,
   classes,
+  className,
   ...others
 }: FormLabelProps) => {
   const lblClasses = useLabelClasses();
@@ -33,10 +35,8 @@ export const FormLabel = ({
     <MuiFormLabel
       {...muiProps}
       {...others}
-      classes={{
-        ...lblClasses,
-        ...classes,
-      }}
+      className={clsx(lblClasses.root, lblClasses.focused, className)}
+      classes={classes}
     />
   );
 };

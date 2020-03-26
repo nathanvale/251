@@ -1062,6 +1062,42 @@ exports[`CheckboxBase 1`] = `
 }
 `;
 
+exports[`CheckboxGroup 1`] = `
+{
+  children?: ReactNode
+  className?: string
+  classes?: Record<string, string>
+  data-id?: string
+  disabled?: boolean
+  error?: boolean
+  groupComponent?: 
+    | "div"
+    | "fieldset"
+    | "form"
+    | "section"
+    | "span"
+  helperText?: string
+  id?: string
+  label?: string
+  labelComponent?: 
+    | "a"
+    | "abbr"
+    | "cite"
+    | "div"
+    | "fieldset"
+    | "form"
+    | "label"
+    | "legend"
+    | "p"
+    | "pre"
+    | "q"
+    | "section"
+    | "span"
+  muiProps?: ControlGroupMuiProps | undefined
+  required?: boolean
+}
+`;
+
 exports[`Column 1`] = `
 {
   children: ReactNode
