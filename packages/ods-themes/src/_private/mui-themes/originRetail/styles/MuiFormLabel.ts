@@ -6,12 +6,12 @@ export const MuiFormLabel = {
     marginBottom: 8,
     ...typography.text.xxsmall,
     fontWeight: typography.weight.regular,
-    color: colors.grey56,
+    color: colors.grey600,
     "&.Mui-focused": {
       color: colors.mediumBlue,
     },
     "&$error": {
-      color: colors.red,
+      color: colors.primary,
     },
   },
   // error: {},

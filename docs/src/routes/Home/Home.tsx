@@ -56,7 +56,7 @@ export const Home = () => {
               width="full"
               paddingBottom={["xxxlarge", "xxlarge"]}
             >
-              <Text color="grey56" weight="medium" size="medium">
+              <Text color="grey600" weight="medium" size="medium">
                 <Box
                   component="span"
                   display="flex"

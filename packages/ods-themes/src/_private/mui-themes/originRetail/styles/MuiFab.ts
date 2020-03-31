@@ -9,14 +9,14 @@ export const MuiFab = {
     width: 40,
     height: 40,
     ...typography.text.xxsmall,
-    color: colors.grey,
+    color: colors.grey500,
     // boxShadow: "none",
     borderRadius: "50%",
     "&:hover": {
-      background: colors.grey4,
+      background: colors.grey50,
     },
     "&$disabled": {
-      color: colors.lightGrey,
+      color: colors.grey500,
     },
     // '&:active': {
     //   boxShadow: "none",
@@ -39,16 +39,16 @@ export const MuiFab = {
     color: colors.black,
   },
   extended: {
-    background: colors.lightGreen,
+    background: colors.positiveLight,
     "&:hover": {
-      background: colors.grey8,
+      background: colors.grey50,
     },
   },
   primary: {
-    color: colors.grey,
+    color: colors.grey500,
     // boxShadow: "none",
     "&:active": {
-      color: colors.grey,
+      color: colors.grey500,
     },
   },
   // secondary: {},

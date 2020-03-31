@@ -46,11 +46,11 @@ export const Example = ({
         <DocsContainer>
           <Stack space="large">
             {label && (
-              <Text color="grey56" weight="medium" size="xsmall">
+              <Text color="grey600" weight="medium" size="xsmall">
                 {label}
               </Text>
             )}
-            {description && <Text color="grey56">{description}</Text>}
+            {description && <Text color="grey600">{description}</Text>}
             <Box style={{ marginBottom: -20 }}>
               <Stack space="xxsmall">
                 <CodeBlock Code={snippet} />

@@ -7,7 +7,7 @@ export const MuiFormControlLabel = {
     marginLeft: 4,
     fontSize: 14,
     lineHeight: "20px",
-    color: colors.grey,
+    color: colors.grey500,
   },
   // disabled: {}, // TODO: check the style guidelines on disabled for input
   // labelPlacementStart: {},

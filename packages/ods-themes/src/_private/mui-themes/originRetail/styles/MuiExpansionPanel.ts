@@ -2,10 +2,10 @@ import { colors } from "../colors";
 
 export const MuiExpansionPanel = {
   root: {
-    borderBottom: `1px solid ${colors.grey16}`,
-    borderTop: `1px solid ${colors.grey16}`,
+    borderBottom: `1px solid ${colors.grey200}`,
+    borderTop: `1px solid ${colors.grey200}`,
     "&:hover": {
-      background: colors.grey4,
+      background: colors.grey50,
     },
     "&$expanded": {
       margin: 0,
@@ -19,9 +19,9 @@ export const MuiExpansionPanel = {
 export const MuiExpansionPanelSummary = {
   root: {
     padding: "24px 0",
-    color: colors.grey,
+    color: colors.grey500,
     "&:focusWithin": {
-      background: colors.grey4,
+      background: colors.grey50,
     },
     "&$disabled": {
       // boxShadow: "none",
@@ -41,7 +41,7 @@ export const MuiExpansionPanelSummary = {
     border: "none",
     width: 24,
     height: 24,
-    color: colors.redPink,
+    color: colors.primaryB,
     background: "transparent",
     margin: "0 0 0 32px",
     "&:hover": {
@@ -56,7 +56,7 @@ export const MuiExpansionPanelSummary = {
     textAlign: "left",
     fontWeight: 500,
     display: "block",
-    color: colors.grey,
+    color: colors.grey500,
   },
   focused: {},
 };

@@ -17,6 +17,9 @@
     },
     {
       "path": "../packages/ods-icons/tsconfig.json"
+    },
+    {
+      "path": "../packages/ods-lab/tsconfig.json"
     }
   ]
 }

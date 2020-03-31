@@ -54,7 +54,7 @@ export const ComponentRoute = ({
         <Stack>
           <Section paddingY="none">
             <Stack space="large">
-              <Text color="grey56" weight="medium" size="xsmall">
+              <Text color="grey600" weight="medium" size="xsmall">
                 {`Usage ${
                   packageName === "ods-lab"
                     ? "(Beware experiemental components have an API that is subject to change)"

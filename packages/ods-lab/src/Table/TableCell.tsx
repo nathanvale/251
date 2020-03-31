@@ -8,8 +8,8 @@ import { AllColors } from "../AllColors/AllColors";
 const useStyles = makeStyles({
   // This inherits the border from root - Must be applied to TableCells and TableHeader
   bordered: {
-    borderLeft: `1px solid ${AllColors.grey16}`,
-    borderRight: `1px solid ${AllColors.grey16}`,
+    borderLeft: `1px solid ${AllColors.grey200}`,
+    borderRight: `1px solid ${AllColors.grey200}`,
   },
 });
 

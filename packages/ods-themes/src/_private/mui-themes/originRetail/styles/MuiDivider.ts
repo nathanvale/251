@@ -2,7 +2,7 @@ import { colors } from "../colors";
 
 export const MuiDivider = {
   root: {
-    color: colors.grey16,
+    color: colors.grey200,
     marginTop: 24,
     marginBottom: 24,
   },

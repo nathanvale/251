@@ -8,19 +8,19 @@ export const MuiInput = {
     lineHeight: "18px",
     background: colors.transparent,
     color: colors.greyTextField,
-    borderColor: colors.grey48,
+    borderColor: colors.grey300,
     "&:hover": {
-      borderColor: colors.grey80,
+      borderColor: colors.grey400,
       borderHeight: "1px",
     },
     "&:active": {
-      borderColor: colors.blue,
+      borderColor: colors.promote,
     },
     "&$error": {
-      borderColor: colors.red,
+      borderColor: colors.primary,
     },
     "&$disabled": {
-      borderColor: colors.grey16,
+      borderColor: colors.grey200,
       color: colors.greyTextDisabled,
       background: colors.transparent,
     },

@@ -1,9 +1,7 @@
 import {
   Breakpoints,
   Space,
-  Color,
   Typography,
-  Border,
   Transform,
   Transition,
   Shadow,
@@ -30,31 +28,6 @@ space.large = space[5];
 space.xlarge = space[6];
 space.xxlarge = space[7];
 space.xxxlarge = space[8];
-
-const colors: Color = {
-  redPink: "#ff373c",
-  red: "#ec0000",
-  orange: "#ff8228",
-  darkOrange: "#fa4616",
-  lighterOrange: "#fff3de",
-  lightOrange: "#ffb432",
-  lightBlue: "#d2f0ff",
-  grey: "#505050",
-  lightGrey: "#535353",
-  blue: "#3f75c6",
-  green: "#008906",
-  lightGreen: "#a5bb48",
-  purple: "#c34789",
-  grey4: "#f8f8f8",
-  grey8: "#f1f1f1",
-  grey16: "#e3e3e3",
-  grey24: "#d5d5d5",
-  grey48: "#ababab",
-  grey80: "#737373",
-  grey56: "#232323",
-  white: "white",
-  transparent: "transparent",
-};
 
 const shadows: Shadow = {
   small:
@@ -114,23 +87,6 @@ const typography: Typography = {
   },
 };
 
-const border: Border = {
-  width: {
-    standard: 1,
-    large: 2,
-  },
-  color: {
-    standard: colors.grey16,
-    standardInverted: colors.white,
-    focus: colors.blue,
-    formHover: colors.red,
-    critical: colors.green,
-    formAccent: colors.purple,
-    primary: colors.red,
-    secondary: colors.grey,
-  },
-};
-
 const transforms: Transform = {
   touchable: "scale(0.95)",
 };
@@ -145,8 +101,6 @@ export const odsMasterTheme: Theme = {
   space,
   breakpoints,
   gridGutterWidth,
-  colors,
-  border,
   transforms,
   transitions,
   shadows,

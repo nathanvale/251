@@ -11,7 +11,7 @@ export interface CardProps {
   padding?: CardPaddingVariants;
   "data-id"?: string;
   children?: ReactNode;
-  backgroundColor?: keyof Pick<Color, "transparent" | "grey4" | "white">;
+  backgroundColor?: keyof Pick<Color, "transparent" | "grey50" | "white">;
 }
 
 type PaddingValues = Partial<Record<BreakpointVariants, SpaceVariants>>;

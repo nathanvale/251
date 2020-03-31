@@ -54,7 +54,7 @@ export const Text = ({
   children,
   component = "span",
   size = "xxsmall",
-  color = "grey",
+  color = "grey500",
   weight = "regular",
   align,
   className,
@@ -78,7 +78,7 @@ export const Text = ({
 };
 
 Text.defaultValues = {
-  color: "grey",
+  color: "grey500",
 };
 
 Text.displayName = "Text";

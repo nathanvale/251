@@ -2,8 +2,8 @@ import { colors } from "../colors";
 
 export const MuiIconButton = {
   root: {
-    color: colors.lightOrange,
-    border: `1px solid ${colors.grey16}`,
+    color: colors.secondary,
+    border: `1px solid ${colors.grey200}`,
     background: colors.transparent,
     margin: 0,
     boxShadow: "0px 2px 4px 0px rgba(0,0,0,0.4)",
@@ -13,7 +13,7 @@ export const MuiIconButton = {
       fontSize: "64px",
     },
     "&$disabled": {
-      color: colors.grey24,
+      color: colors.grey200,
     },
   },
   colorInherit: {
@@ -30,7 +30,7 @@ export const MuiIconButton = {
     },
   },
   colorSecondary: {
-    color: colors.redPink,
+    color: colors.primaryB,
   },
   // label: {},
   // edgeStart: {},

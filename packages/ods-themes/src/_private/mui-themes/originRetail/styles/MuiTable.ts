@@ -7,10 +7,10 @@ export const MuiTable = {
 
 export const MuiTableHead = {
   root: {
-    color: colors.grey,
+    color: colors.grey500,
     fontSize: "14px",
     lineHeight: "24px",
-    border: `1px solid ${colors.grey16}`,
+    border: `1px solid ${colors.grey200}`,
     borderLeft: "none",
     borderRight: "none",
     padding: "12px 16px",
@@ -20,7 +20,7 @@ export const MuiTableHead = {
 export const MuiTableRow = {
   root: {
     "&:nthOfType(odd)": {
-      background: colors.grey8,
+      background: colors.grey50,
     },
   },
   // selected: {},
@@ -36,11 +36,11 @@ export const MuiTableBody = {
 export const MuiTableCell = {
   root: {
     lineHeight: "24px",
-    border: `1px solid ${colors.grey16}`,
+    border: `1px solid ${colors.grey200}`,
     borderLeft: "none",
     borderRight: "none",
     padding: "12px 16px",
-    color: colors.grey,
+    color: colors.grey500,
     "&:last-child": {
       paddingRight: 10, // Override other random style applied
     },
@@ -48,11 +48,11 @@ export const MuiTableCell = {
   head: {
     fontSize: "14px",
     fontWeight: "bold",
-    color: colors.grey,
+    color: colors.grey500,
   },
   body: {
     fontSize: "14px",
-    color: colors.grey,
+    color: colors.grey500,
   },
   paddingCheckbox: {
     paddingRight: 10, // Override other random style applied

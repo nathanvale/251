@@ -13,13 +13,13 @@ export const docs: ComponentDocs<StackProps> = {
   migrationGuide: false,
   examples: [
     {
-      Code: () => <Box padding="xxlarge" backgroundColor="lightOrange" />,
+      Code: () => <Box padding="xxlarge" backgroundColor="secondary" />,
     },
     {
       Code: () => (
         <Box
           padding="xxlarge"
-          backgroundColor="lightOrange"
+          backgroundColor="secondary"
           textAlign={["center", "right"]}
         >
           Text
@@ -27,11 +27,11 @@ export const docs: ComponentDocs<StackProps> = {
       ),
     },
     {
-      Code: () => <Box padding="large" backgroundColor="blue" />,
+      Code: () => <Box padding="large" backgroundColor="info" />,
     },
     {
       Code: () => (
-        <Box padding="large" margin="xxlarge" backgroundColor="orange" />
+        <Box padding="large" margin="xxlarge" backgroundColor="secondary" />
       ),
     },
   ],

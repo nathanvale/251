@@ -54,7 +54,7 @@ export const Placeholder = ({
       width={normaliseResponsiveProp<string | number>(width)}
       height={normaliseResponsiveProp<string | number>(height)}
       shape={shape}
-      backgroundColor="grey16"
+      backgroundColor="grey200"
     >
       {label ? (
         <Box

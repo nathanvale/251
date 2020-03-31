@@ -10,7 +10,7 @@ export const MuiAlert = {
     paddingTop: 3,
   },
   action: {
-    color: `${colors.redPink} !important`, // This is required due to inheritance of icon button
+    color: `${colors.primaryB} !important`, // This is required due to inheritance of icon button
     paddingLeft: 16,
     paddingRight: 0,
     alignItems: "flex-start",
@@ -26,7 +26,7 @@ export const MuiAlert = {
       color: colors.veryDarkRed,
     },
     "& .MuiSvgIcon-root": {
-      color: colors.redPink,
+      color: colors.primaryB,
       "&:hover": {
         color: colors.veryDarkRed,
       },
@@ -34,6 +34,6 @@ export const MuiAlert = {
   },
   icon: {
     padding: 0,
-    color: colors.redPink,
+    color: colors.primaryB,
   },
 };

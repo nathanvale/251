@@ -2,14 +2,14 @@ import { colors } from "../colors";
 
 export const MuiCircularProgress = {
   root: {
-    color: colors.lightOrange,
+    color: colors.secondary,
     margin: 16,
   },
   colorPrimary: {
-    color: colors.lightOrange,
+    color: colors.secondary,
   },
   colorSecondary: {
-    color: colors.redPink,
+    color: colors.primaryB,
   },
   // static: {},
   // indeterminate: {},

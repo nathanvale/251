@@ -3,9 +3,9 @@ import { render } from "@origin-digital/ods-testing-library";
 import { Placeholder } from "../Placeholder/Placeholder";
 import { Section } from "./Section";
 
-test("It sets the grey4 background correctly", () => {
+test("It sets the grey50 background correctly", () => {
   const { container } = render(
-    <Section backgroundColor="grey4">
+    <Section backgroundColor="grey50">
       <Placeholder />
       <Placeholder />
       <Placeholder />
@@ -24,7 +24,7 @@ test("It sets the white background correctly", () => {
     </Section>,
   );
   const style = window.getComputedStyle(container.firstChild as Element);
-  expect(style.backgroundColor).toEqual("white");
+  expect(style.backgroundColor).toEqual("rgb(255, 255, 255)");
 });
 
 test("It sets the transparent background if no background is provided", () => {
@@ -36,7 +36,7 @@ test("It sets the transparent background if no background is provided", () => {
     </Section>,
   );
   const style = window.getComputedStyle(container.firstChild as Element);
-  expect(style.backgroundColor).toEqual("white");
+  expect(style.backgroundColor).toEqual("rgb(255, 255, 255)");
 });
 
 test("should have no max-width if fluidity is set to full-width", () => {

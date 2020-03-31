@@ -5,7 +5,7 @@ export const MuiAppBar = {
     background: colors.white,
   },
   colorPrimary: {
-    color: colors.grey56,
+    color: colors.grey600,
     backgroundColor: colors.white,
   },
 };
