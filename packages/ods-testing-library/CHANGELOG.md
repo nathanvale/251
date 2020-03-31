@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-testing-library@0.5.0...@origin-digital/ods-testing-library@0.6.0) (2020-03-31)
+
+
+### Features
+
+* implement ods master color palette ([682e0dd](https://bitbucket.orgn.io/od/origin-ui/commits/682e0dd33cfd270cb51d0e720a0ab59bdfda2f87))
+
+
+
+
+
 # [0.5.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-testing-library@0.4.2...@origin-digital/ods-testing-library@0.5.0) (2020-03-25)
 
 
