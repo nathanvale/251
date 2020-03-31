@@ -4,10 +4,10 @@ import { typography } from "../typography";
 export const MuiToggleButton = {
   root: {
     backgroundColor: colors.white,
-    border: `1px solid ${colors.grey16}`,
+    border: `1px solid ${colors.grey200}`,
     borderRadius: "none",
     "&$selected": {
-      border: `1px solid ${colors.lightOrange}`,
+      border: `1px solid ${colors.secondary}`,
       backgroundColor: colors.yellow,
       fontWeight: `500 !important`,
       "&:hover": {
@@ -30,22 +30,22 @@ export const MuiToggleButton = {
       },
     },
     "&:hover": {
-      outline: `4px solid ${colors.grey8}`,
+      outline: `4px solid ${colors.grey50}`,
       zIndex: 10,
     },
     "&:focus": {
-      outline: `4px solid ${colors.grey16}`,
+      outline: `4px solid ${colors.grey200}`,
       zIndex: 10,
     },
     "&:active": {
-      outline: `4px solid ${colors.grey24}`,
+      outline: `4px solid ${colors.grey200}`,
       zIndex: 10,
     },
   },
   label: {
     ...typography.text.large,
     textAlign: "center",
-    color: colors.grey,
+    color: colors.grey500,
     fontWeight: typography.weight.regular,
   },
   // selected: {}

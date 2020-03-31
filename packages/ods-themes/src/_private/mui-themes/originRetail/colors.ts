@@ -1,7 +1,8 @@
-import { odsMasterTheme } from "../../odsMasterTheme";
+import { flattenPalette } from "../../helpers/flattenPalette";
+import { palette } from "../core/palette";
 
 export const colors = {
-  ...odsMasterTheme.colors,
+  ...flattenPalette(palette),
   darkRed: "#b30000",
   veryDarkRed: "#7b0000",
   redBackground: "#feebeb",

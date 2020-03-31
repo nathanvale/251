@@ -65,12 +65,12 @@ const isValidComponentName = (
 const CommonColumns = () => (
   <>
     <Column width="1/4">
-      <Text size="xsmall" color="grey56" weight="medium">
+      <Text size="xsmall" color="grey600" weight="medium">
         Name
       </Text>
     </Column>
     <Column>
-      <Text size="xsmall" color="grey56" weight="medium">
+      <Text size="xsmall" color="grey600" weight="medium">
         Type
       </Text>
     </Column>
@@ -86,7 +86,7 @@ const ColumnsHeader = ({ hasDefaultProps }: { hasDefaultProps: boolean }) =>
     <Columns space="xlarge">
       <CommonColumns />
       <Column width="1/4">
-        <Text size="xsmall" color="grey56" weight="medium">
+        <Text size="xsmall" color="grey600" weight="medium">
           Default
         </Text>
       </Column>
@@ -144,7 +144,7 @@ export function Props<T = {}>({
         <Stack space={["xxlarge", "xxxlarge"]}>
           <Columns alignY="bottom">
             <Column width="content">
-              <Text color="grey56" size="xlarge">
+              <Text color="grey600" size="xlarge">
                 {componentName}
               </Text>
             </Column>
@@ -161,7 +161,7 @@ export function Props<T = {}>({
           </Columns>
           {description && (
             <Text
-              color="grey56"
+              color="grey600"
               size="xsmall"
               dangerouslySetInnerHTML={{ __html: description }}
             />

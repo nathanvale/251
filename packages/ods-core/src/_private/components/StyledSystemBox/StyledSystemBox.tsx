@@ -4,7 +4,6 @@ import styled, { css } from "styled-components";
 import {
   TransitionVariants,
   TransformVariants,
-  Theme,
 } from "@origin-digital/ods-types";
 
 import {
@@ -37,7 +36,7 @@ import {
   BackgroundColorProps,
   style,
 } from "styled-system";
-import { tint } from "polished";
+
 import { themeChecker } from "@origin-digital/ods-helpers";
 
 export interface StyledSystemProps
@@ -81,37 +80,6 @@ const pointerEvents = style({
   cssProperty: "pointerEvents",
 });
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const boxShadowFactory = ({
-  border,
-  shadows,
-}: Pick<Theme, "border" | "shadows">) => {
-  const { width: borderWidth, color } = border;
-  const boxShadowForVariant: Record<BoxShadowVariant, string> = {
-    ...shadows,
-    outlineFocus: `0 0 0 ${borderWidth.large}px ${color.focus}`,
-    borderStandard: `inset 0 0 0 ${borderWidth.standard}px ${color.standard}`,
-    borderStandardInverted: `inset 0 0 0 ${borderWidth.standard}px ${color.standardInverted}`,
-    borderWeakPrimary: `inset 0 0 0 ${borderWidth.standard}px ${color.primary}`,
-    borderWeakSecondary: `inset 0 0 0 ${borderWidth.standard}px ${color.secondary}`,
-    borderWeakPrimaryDisabled: `inset 0 0 0 ${borderWidth.standard}px ${tint(
-      0.84,
-      color.primary,
-    )}`,
-    borderWeakSecondaryDisabled: `inset 0 0 0 ${borderWidth.standard}px ${tint(
-      0.84,
-      color.secondary,
-    )}`,
-    borderCritical: `inset 0 0 0 ${borderWidth.standard}px ${color.critical}`,
-    borderFormHover: `inset 0 0 0 ${borderWidth.standard}px ${color.formHover}`,
-    borderFormAccent: `inset 0 0 0 ${borderWidth.standard}px ${color.formAccent}`,
-    borderFormAccentLarge: `inset 0 0 0 ${borderWidth.large}px ${color.formAccent}`,
-    borderStandardInvertedLarge: `inset 0 0 0 ${borderWidth.large}px ${color.standardInverted}`,
-  };
-
-  return boxShadowForVariant;
-};
-
 export const StyledSystemBox = styled.div<StyledSystemProps>`
         ${themeChecker};
         margin: 0;
@@ -153,20 +121,8 @@ export const StyledSystemBox = styled.div<StyledSystemProps>`
         ${({ theme, showAnts }) =>
           showAnts &&
           css`
-            border: 1px dashed ${theme.colors.grey24};
+            border: 1px dashed ${theme.colors.grey200};
           `}
-
-          ${({
-            theme,
-            boxShadow,
-          }: {
-            theme: Theme;
-            boxShadow?: BoxShadowVariant;
-          }) =>
-            boxShadow &&
-            css`
-              box-shadow: ${boxShadowFactory(theme)[boxShadow]};
-            `}
 
           ${({ theme, transition }) =>
             transition &&

@@ -185,26 +185,46 @@ exports[`Box 1`] = `
   autoPlay?: boolean
   autoSave?: string
   backgroundColor?: ResponsiveProp<
-    | "blue"
-    | "darkOrange"
-    | "green"
-    | "grey"
-    | "grey16"
-    | "grey24"
-    | "grey4"
-    | "grey48"
-    | "grey56"
-    | "grey8"
-    | "grey80"
-    | "lightBlue"
-    | "lightGreen"
-    | "lightGrey"
-    | "lightOrange"
-    | "lighterOrange"
-    | "orange"
-    | "purple"
-    | "red"
-    | "redPink"
+    | "backgroundDefault"
+    | "backgroundLight"
+    | "backgroundPaper"
+    | "caution"
+    | "cautionDark"
+    | "cautionLight"
+    | "critical"
+    | "criticalDark"
+    | "criticalLight"
+    | "grey100"
+    | "grey200"
+    | "grey300"
+    | "grey400"
+    | "grey50"
+    | "grey500"
+    | "grey600"
+    | "info"
+    | "infoDark"
+    | "infoLight"
+    | "positive"
+    | "positiveDark"
+    | "positiveLight"
+    | "primary"
+    | "primaryB"
+    | "primaryBDark"
+    | "primaryBLight"
+    | "primaryDark"
+    | "primaryLight"
+    | "promote"
+    | "promoteB"
+    | "promoteBDark"
+    | "promoteBLight"
+    | "promoteDark"
+    | "promoteLight"
+    | "secondary"
+    | "secondaryB"
+    | "secondaryBDark"
+    | "secondaryBLight"
+    | "secondaryDark"
+    | "secondaryLight"
     | "transparent"
     | "white"
   >
@@ -974,7 +994,7 @@ exports[`Box 1`] = `
 exports[`Card 1`] = `
 {
   backgroundColor?: 
-    | "grey4"
+    | "grey50"
     | "transparent"
     | "white"
   children?: ReactNode
@@ -1282,13 +1302,26 @@ exports[`OriginThemeProvider 1`] = `
       augmentColor: { (color: Partial<Color>, mainShade?: string | number | undefined, lightShade?: string | number | undefined, darkShade?: string | number | undefined): PaletteColor; (color: PaletteColorOptions): PaletteColor; }
       background: {
         default: string
+        light: string
         paper: string
+      }
+      caution: {
+        contrastText: string
+        dark: string
+        light: string
+        main: string
       }
       common: {
         black: string
         white: string
       }
       contrastThreshold: number
+      critical: {
+        contrastText: string
+        dark: string
+        light: string
+        main: string
+      }
       divider: string
       error: {
         contrastText: string
@@ -1319,13 +1352,43 @@ exports[`OriginThemeProvider 1`] = `
         light: string
         main: string
       }
+      positive: {
+        contrastText: string
+        dark: string
+        light: string
+        main: string
+      }
       primary: {
         contrastText: string
         dark: string
         light: string
         main: string
       }
+      primaryB: {
+        contrastText: string
+        dark: string
+        light: string
+        main: string
+      }
+      promote: {
+        contrastText: string
+        dark: string
+        light: string
+        main: string
+      }
+      promoteB: {
+        contrastText: string
+        dark: string
+        light: string
+        main: string
+      }
       secondary: {
+        contrastText: string
+        dark: string
+        light: string
+        main: string
+      }
+      secondaryB: {
         contrastText: string
         dark: string
         light: string
@@ -1453,32 +1516,48 @@ exports[`OriginThemeProvider 1`] = `
     }
   }
   theme?: {
-    border: {
-      color: { standard: string; standardInverted: string; formHover: string; focus: string; critical: string; formAccent: string; primary: string; secondary: string; }
-      width: { standard: number; large: number; }
-    }
     breakpoints: Breakpoints
-    colors: {
-      blue: string
-      darkOrange: string
-      green: string
-      grey: string
-      grey16: string
-      grey24: string
-      grey4: string
-      grey48: string
-      grey56: string
-      grey8: string
-      grey80: string
-      lightBlue: string
-      lightGreen: string
-      lightGrey: string
-      lightOrange: string
-      lighterOrange: string
-      orange: string
-      purple: string
-      red: string
-      redPink: string
+    colors?: {
+      backgroundDefault: string
+      backgroundLight: string
+      backgroundPaper: string
+      caution: string
+      cautionDark: string
+      cautionLight: string
+      critical: string
+      criticalDark: string
+      criticalLight: string
+      grey100: string
+      grey200: string
+      grey300: string
+      grey400: string
+      grey50: string
+      grey500: string
+      grey600: string
+      info: string
+      infoDark: string
+      infoLight: string
+      positive: string
+      positiveDark: string
+      positiveLight: string
+      primary: string
+      primaryB: string
+      primaryBDark: string
+      primaryBLight: string
+      primaryDark: string
+      primaryLight: string
+      promote: string
+      promoteB: string
+      promoteBDark: string
+      promoteBLight: string
+      promoteDark: string
+      promoteLight: string
+      secondary: string
+      secondaryB: string
+      secondaryBDark: string
+      secondaryBLight: string
+      secondaryDark: string
+      secondaryLight: string
       transparent: string
       white: string
     }
@@ -1663,7 +1742,7 @@ exports[`RadioGroupBase 1`] = `
 exports[`Section 1`] = `
 {
   backgroundColor?: 
-    | "grey4"
+    | "grey50"
     | "transparent"
     | "white"
   children: ReactNode

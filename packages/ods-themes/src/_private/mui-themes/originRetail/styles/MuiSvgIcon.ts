@@ -2,35 +2,35 @@ import { colors } from "../colors";
 
 export const MuiSvgIcon = {
   root: {
-    color: colors.lightOrange,
+    color: colors.secondary,
     fontSize: "48px",
   },
   colorPrimary: {
-    color: colors.grey,
+    color: colors.grey500,
     "&:active": {
       background: colors.transparent,
       color: colors.white,
     },
   },
   colorSecondary: {
-    color: colors.redPink,
+    color: colors.primaryB,
     "&:hover": {
       background: colors.transparent,
     },
     "&:active": {
       color: colors.white,
-      background: colors.redPink,
+      background: colors.primaryB,
     },
   },
   colorError: {
-    color: colors.redPink,
+    color: colors.primaryB,
     background: colors.transparent,
   },
   colorAction: {
-    color: colors.lightGreen,
+    color: colors.positiveLight,
   },
   colorDisabled: {
-    color: colors.grey24,
+    color: colors.grey200,
   },
   fontSizeInherit: {
     fontSize: "88px",

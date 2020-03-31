@@ -8,7 +8,7 @@ export const MuiInputLabel = {
     fontWeight: typography.weight.regular,
     paddingLeft: 12,
     "&$error": {
-      color: colors.red,
+      color: colors.primary,
     },
     "&$disabled": {
       color: colors.greyTextDisabled,
@@ -26,7 +26,7 @@ export const MuiInputLabel = {
     lineHeight: "14px",
     transform: "translate(0, 1.5px)",
     "&$disabled": {
-      color: colors.grey48,
+      color: colors.grey300,
     },
   },
   // focused: {},

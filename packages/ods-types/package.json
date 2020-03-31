@@ -7,9 +7,9 @@
   "files": [
     "dist"
   ],
+  "sideEffects": false,
   "typings": "dist/typings/index.d.ts",
   "publishConfig": {
     "registry": "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-internal/"
-  },
-  "sideEffects": false
+  }
 }

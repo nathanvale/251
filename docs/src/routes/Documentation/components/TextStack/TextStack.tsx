@@ -16,7 +16,7 @@ type ReactNodeNoStrings =
   | undefined;
 
 export const TextStack = ({ space = "xlarge", children }: TextStackProps) => (
-  <Box style={{ maxWidth: "640px" }}>
+  <Box>
     <Stack space={space}>{children}</Stack>
   </Box>
 );

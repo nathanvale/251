@@ -3,7 +3,7 @@ import { colors } from "../colors";
 export const MuiSelect = {
   root: {
     "&$error": {
-      color: colors.red,
+      color: colors.primary,
     },
     "&:focus": {
       ".MuiInputBase-root": {
@@ -12,7 +12,7 @@ export const MuiSelect = {
     },
     "&$disabled": {
       background: colors.greyDisabled,
-      borderColor: colors.grey16,
+      borderColor: colors.grey200,
       "&$icon": {
         color: colors.greyIcon,
       },

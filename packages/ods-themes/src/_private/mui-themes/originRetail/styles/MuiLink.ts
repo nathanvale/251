@@ -7,9 +7,9 @@ export const MuiLink = {
     textDecoration: "underline",
   },
   underlineNone: {
-    color: `${colors.grey} !important`,
+    color: `${colors.grey500} !important`,
     "&:hover": {
-      color: `${colors.red} !important`,
+      color: `${colors.primary} !important`,
       textDecoration: "none",
     },
   },

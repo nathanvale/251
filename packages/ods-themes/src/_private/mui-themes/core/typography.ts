@@ -1,7 +1,7 @@
 import { Theme } from "@material-ui/core";
 import { colors } from "./colors";
 
-const typography = {
+export const typography = {
   fontFamily: "gordita, sans-serif",
   fontStyle: {
     regular: "Regular",
@@ -57,62 +57,62 @@ export const muiTypography: Partial<Theme["typography"]> = {
   h1: {
     fontWeight: typography.weight.regular,
     ...typography.text.xxlarge,
-    color: colors.grey56,
+    color: colors.grey[600],
   },
   h2: {
     fontWeight: typography.weight.regular,
     ...typography.text.large,
-    color: colors.grey56,
+    color: colors.grey[600],
   },
   h3: {
     fontWeight: typography.weight.medium,
     ...typography.text.small,
-    color: colors.grey56,
+    color: colors.grey[600],
   },
   h4: {
     fontWeight: typography.weight.medium,
     ...typography.text.xsmall,
-    color: colors.grey56,
+    color: colors.grey[600],
   },
   h5: {
     fontWeight: typography.weight.medium,
     ...typography.text.xsmall,
-    color: colors.grey56,
+    color: colors.grey[600],
   },
   h6: {
     fontWeight: typography.weight.medium,
     ...typography.text.xsmall,
-    color: colors.grey56,
+    color: colors.grey[600],
   },
   subtitle1: {
     fontWeight: typography.weight.medium,
     ...typography.text.medium,
-    color: colors.grey56,
+    color: colors.grey[600],
   },
   subtitle2: {
     fontWeight: typography.weight.medium,
     ...typography.text.medium,
-    color: colors.grey56,
+    color: colors.grey[600],
   },
   body1: {
     fontWeight: typography.weight.regular,
     ...typography.text.xxsmall,
-    color: colors.grey,
+    color: colors.grey[500],
   },
   body2: {
     fontWeight: typography.weight.regular,
     ...typography.text.xxxsmall,
-    color: colors.grey,
+    color: colors.grey[500],
   },
   caption: {
     fontWeight: typography.weight.regular,
     ...typography.text.xxxsmall,
-    color: colors.grey80,
+    color: colors.grey[400],
   },
   overline: {
     fontWeight: typography.weight.regular,
     ...typography.text.medium,
-    color: colors.grey56,
+    color: colors.grey[600],
     textTransform: "none",
   },
 };

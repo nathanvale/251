@@ -9,6 +9,7 @@ import {
 import { Theme } from "@origin-digital/ods-types";
 import { originRetailTheme } from "../themes";
 import { originRetailMUITheme } from "../_private/mui-themes/originRetail";
+import { flattenPalette } from "../_private/helpers/flattenPalette";
 
 export interface OriginThemeProviderProps {
   theme?: Theme;
@@ -72,8 +73,7 @@ export const OriginThemeProvider = ({
   theme = originRetailTheme,
   muiTheme = defaultMuiTheme,
 }: OriginThemeProviderProps) => {
-  //TODO: create a mapper function that maps originRetailTheme to a originRetailMUITheme
-  // https://origindd.atlassian.net/browse/TED-484
+  theme.colors = flattenPalette(muiTheme.palette);
   return (
     <ThemeProvider theme={theme}>
       <MUIThemeProvider theme={muiTheme}>{children}</MUIThemeProvider>

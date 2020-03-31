@@ -9,7 +9,7 @@ export const MuiButton = {
     fontStyle: typography.fontStyle.medium,
     ...typography.text.xsmall,
     "&$disabled": {
-      color: colors.lightGrey,
+      color: colors.grey500,
     },
   },
   sizeSmall: {
@@ -18,7 +18,7 @@ export const MuiButton = {
     ...typography.text.xsmall,
   },
   containedPrimary: {
-    backgroundColor: colors.red,
+    backgroundColor: colors.primary,
     color: colors.white,
     borderRadius: 0,
     "&:hover": {
@@ -26,10 +26,10 @@ export const MuiButton = {
     },
   },
   containedSecondary: {
-    backgroundColor: colors.grey,
+    backgroundColor: colors.grey500,
     color: colors.white,
     borderRadius: 0,
-    border: `1px solid ${colors.grey}`,
+    border: `1px solid ${colors.grey500}`,
     "&:hover": {
       backgroundColor: colors.darkGrey,
       color: colors.white,
@@ -43,10 +43,10 @@ export const MuiButton = {
     textTransform: "none",
   },
   outlinedPrimary: {
-    color: colors.red,
+    color: colors.primary,
     backgroundColor: colors.white,
     borderRadius: 0,
-    border: `1px solid ${colors.red}`,
+    border: `1px solid ${colors.primary}`,
     "&:hover": {
       backgroundColor: colors.darkRed,
       color: colors.white,
@@ -54,21 +54,21 @@ export const MuiButton = {
     },
   },
   outlinedSecondary: {
-    color: colors.grey,
+    color: colors.grey500,
     backgroundColor: colors.white,
     borderRadius: 0,
-    border: `1px solid ${colors.grey}`,
+    border: `1px solid ${colors.grey500}`,
     "&:hover": {
-      backgroundColor: colors.grey,
+      backgroundColor: colors.grey500,
       color: colors.white,
-      border: `1px solid ${colors.grey}`,
+      border: `1px solid ${colors.grey500}`,
       "& .MuiIcon-root": {
         color: colors.white,
       },
     },
   },
   textPrimary: {
-    color: colors.red,
+    color: colors.primary,
     backgroundColor: colors.white,
     borderRadius: 0,
     "&:hover": {
@@ -77,26 +77,26 @@ export const MuiButton = {
     },
   },
   textSecondary: {
-    color: colors.grey,
+    color: colors.grey500,
     backgroundColor: colors.white,
     borderRadius: 0,
     "&:hover": {
-      backgroundColor: colors.grey16,
+      backgroundColor: colors.grey200,
     },
   },
   // flatPrimary: {
   //   backgroundColor: colors.white,
-  //   color: colors.red,
+  //   color: colors.primary,
   //   borderRadius: 0,
   //   '&:hover': {
   //     backgroundColor: colors.lightRed
   //   },
   // },
   // flatSecondary: {
-  //   color: colors.grey,
+  //   color: colors.grey500,
   //   borderRadius: 0,
   //   '&:hover': {
-  //     backgroundColor: colors.grey16,
+  //     backgroundColor: colors.grey200,
   //   },
   // },
   // text: {},

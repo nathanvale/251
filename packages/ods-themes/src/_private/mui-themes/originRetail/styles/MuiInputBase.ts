@@ -5,21 +5,21 @@ export const MuiInputBase = {
     height: 56,
     fontSize: 16,
     color: colors.greyTextField,
-    background: colors.grey8,
+    background: colors.grey50,
     borderRadius: "4px 4px 0px 0px",
-    borderColor: colors.grey48,
+    borderColor: colors.grey300,
     fontFamily: ["gordita", "Arial", "Sans-Serif"].join(","),
     "&:hover": {
-      borderColor: colors.grey80,
+      borderColor: colors.grey400,
     },
     "&:active": {
-      borderColor: colors.blue,
+      borderColor: colors.promote,
     },
     "&$error": {
-      borderColor: colors.red,
+      borderColor: colors.primary,
     },
     "&$disabled": {
-      borderColor: colors.grey16,
+      borderColor: colors.grey200,
     },
     "&:focus": {
       color: colors.greyTextField,
@@ -29,7 +29,7 @@ export const MuiInputBase = {
     },
   },
   input: {
-    color: colors.grey,
+    color: colors.grey500,
     fontWeight: 400,
     marginBottom: -14,
     marginTop: 6,

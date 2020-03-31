@@ -11,6 +11,7 @@ export { Link } from "./Link/Link";
 export type LinkProps = import("./Link/Link").LinkProps;
 export { Text } from "./Text/Text";
 export type TextProps = import("./Text/Text").TextProps;
+
 export { Alert } from "./Alert/Alert";
 export type AlertProps = import("./Alert/Alert").AlertProps;
 export { AlertTitle } from "./Alert/AlertTitle";

@@ -5,7 +5,7 @@ import { TextStack } from "../components/TextStack/TextStack";
 import { Page } from "../../../types";
 
 const Heading = ({ children }: { children: ReactNode }) => (
-  <Text color="grey56" weight="medium" size="xsmall">
+  <Text color="grey600" weight="medium" size="xsmall">
     {children}
   </Text>
 );

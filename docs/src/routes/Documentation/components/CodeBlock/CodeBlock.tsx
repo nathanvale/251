@@ -9,14 +9,14 @@ interface CodeBlockProps {
 }
 
 export const CodeBlock = ({ Code }: CodeBlockProps) => (
-  <Box backgroundColor="grey56" paddingY="xlarge" paddingX="medium">
+  <Box backgroundColor="grey600" paddingY="xlarge" paddingX="medium">
     <Box component="pre" style={{ overflowY: "visible", overflowX: "visible" }}>
       {Code instanceof String ? (
-        <Text color="grey16" component="code">
+        <Text color="grey200" component="code">
           {Code}
         </Text>
       ) : (
-        <Text color="grey16" component="code">
+        <Text color="grey200" component="code">
           {getCodeAsString(Code as ExampleDocs["Code"])}
         </Text>
       )}

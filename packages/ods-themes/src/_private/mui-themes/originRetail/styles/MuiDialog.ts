@@ -5,7 +5,7 @@ export const MuiDialogTitle = {
   root: {
     fontStyle: typography.fontStyle.medium,
     ...typography.text.medium,
-    color: colors.grey56,
+    color: colors.grey600,
     padding: "0 16px",
     margin: "0 16px",
   },
@@ -17,7 +17,7 @@ export const MuiDialogContent = {
     fontWeight: typography.weight.regular,
     fontSize: 14,
     lineHeight: "24px",
-    color: colors.grey,
+    color: colors.grey500,
     padding: "0 16px 16px",
     margin: "0 16px 24px",
   },
@@ -26,8 +26,8 @@ export const MuiDialogContent = {
 
 export const MuiDialog = {
   root: {
-    color: colors.lightOrange,
-    border: `1px solid ${colors.grey16}`,
+    color: colors.secondary,
+    border: `1px solid ${colors.grey200}`,
     borderRadius: "none",
     margin: 16,
   },

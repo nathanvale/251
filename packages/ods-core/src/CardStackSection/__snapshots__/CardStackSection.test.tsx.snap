@@ -52,7 +52,7 @@ exports[`it renders a CardStackSection 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  background-color: white;
+  background-color: #FFFFFF;
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 16px;

@@ -16,6 +16,7 @@
     "@origin-digital/messages": "*",
     "@origin-digital/ods-core": "^0.15.2",
     "@origin-digital/ods-icons": "^0.5.12",
+    "@origin-digital/ods-lab": "*",
     "@origin-digital/ods-scripts": "^0.15.2",
     "@origin-digital/ods-types": "^0.11.1",
     "@origin-digital/style-guide": "*",

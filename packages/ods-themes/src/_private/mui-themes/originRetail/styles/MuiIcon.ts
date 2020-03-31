@@ -2,7 +2,7 @@ import { colors } from "../colors";
 
 export const MuiIcon = {
   root: {
-    color: colors.lightOrange,
+    color: colors.secondary,
     fontSize: "48px",
     "&:active": {
       color: colors.white,
@@ -18,30 +18,30 @@ export const MuiIcon = {
     fontSize: "88px",
   },
   colorPrimary: {
-    color: colors.grey,
+    color: colors.grey500,
     "&:active": {
       background: colors.transparent,
-      color: colors.grey,
+      color: colors.grey500,
     },
   },
   colorSecondary: {
-    color: colors.redPink,
+    color: colors.primaryB,
     "&:hover": {
       background: colors.transparent,
     },
     "&:active": {
       color: colors.white,
-      background: colors.redPink,
+      background: colors.primaryB,
     },
   },
   colorDisabled: {
-    color: colors.grey24,
+    color: colors.grey200,
   },
   colorError: {
-    color: colors.redPink,
+    color: colors.primaryB,
     background: colors.transparent,
   },
   colorAction: {
-    color: colors.lightGreen,
+    color: colors.positiveLight,
   },
 };

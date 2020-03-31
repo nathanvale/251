@@ -31,7 +31,7 @@ export const CodeExample = ({
 }: CodeExampleProps) => (
   <Box
     style={{ height: stretch ? "600px" : undefined }}
-    backgroundColor="grey8"
+    backgroundColor="grey100"
   >
     <Box height="full" display="flex" paddingY="xlarge" justifyContent="center">
       {noSection ? (

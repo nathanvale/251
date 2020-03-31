@@ -4,28 +4,28 @@ export const MuiRadio = {
   root: {
     border: "none",
     // boxShadow: "none",
-    color: colors.grey,
+    color: colors.grey500,
     "& .MuiSvgIcon": {
-      color: colors.grey,
+      color: colors.grey500,
       fontSize: "24px",
     },
     "&:hover": {
       border: "none",
       // boxShadow: "none",
-      background: colors.grey8,
+      background: colors.grey50,
     },
     "&:focus": {
       background: colors.yellow16,
     },
     "&$checked": {
-      color: `${colors.lightOrange} !important`,
+      color: `${colors.secondary} !important`,
     },
     "&:disabled": {
-      color: colors.grey16,
+      color: colors.grey200,
     },
   },
   colorPrimary: {
-    color: colors.lightOrange,
+    color: colors.secondary,
   },
   // checked: {},
 };

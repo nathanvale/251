@@ -8,6 +8,7 @@ export interface DividerProps {
 
 const StyledBox = styled(Box)`
   height: 1px;
+  box-shadow: inset 0 0 0 1px ${p => p.theme.colors.grey200};
 `;
 
 export const Divider = ({ "data-id": dataId = "divider" }: DividerProps) => (

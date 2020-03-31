@@ -65,8 +65,8 @@ test('It can stack', () => {
   const {container} = render(
     <Stack>
       <Box backgroundColor="red" padding="medium" />
-      <Box backgroundColor="orange" padding="medium" />
-      <Box backgroundColor="blue" padding="medium" />
+      <Box backgroundColor="secondary" padding="medium" />
+      <Box backgroundColor="informational" padding="medium" />
     </Stack>,
   );
   expect(container.firstChild).toMatchSnapshot();

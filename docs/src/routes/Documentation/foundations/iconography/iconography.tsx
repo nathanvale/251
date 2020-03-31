@@ -4,12 +4,12 @@ import { Text } from "@origin-digital/ods-lab";
 import { TextStack } from "../../components/TextStack/TextStack";
 
 const Heading = ({ children }: { children: ReactNode }) => (
-  <Text color="grey56" weight="medium" size="xsmall">
+  <Text color="grey600" weight="medium" size="xsmall">
     {children}
   </Text>
 );
 
-export const iconography: Page = {
+export const page: Page = {
   title: "Iconography",
   // eslint-disable-next-line react/display-name
   Component: () => {

@@ -1,13 +1,14 @@
 import React from "react";
 
 export * from "./docs";
+export * from "./palette";
 
 export type AlignXType = "left" | "center" | "right" | "stretch";
 
 export type TLength = string | 0 | number;
 
 export type FluidityVariant = "off" | "max-width-at-xl" | "full-width";
-export type BackgroundVariant = "transparent" | "grey4" | "white";
+export type BackgroundVariant = "transparent" | "grey50" | "white";
 
 export type CardStackSectionVariant = "widget" | "default" | "card-centered";
 export type CardStackSize = "small" | "medium" | "large";
@@ -86,26 +87,46 @@ export type Space = [
   SpaceTShirts;
 
 export interface Color {
-  redPink: string;
-  red: string;
-  orange: string;
-  darkOrange: string;
-  lightOrange: string;
-  lighterOrange: string;
-  lightBlue: string;
-  grey: string;
-  lightGrey: string;
-  blue: string;
-  green: string;
-  lightGreen: string;
-  purple: string;
-  grey4: string;
-  grey8: string;
-  grey16: string;
-  grey24: string;
-  grey48: string;
-  grey80: string;
-  grey56: string;
+  backgroundDefault: string;
+  backgroundPaper: string;
+  backgroundLight: string;
+  caution: string;
+  cautionDark: string;
+  cautionLight: string;
+  critical: string;
+  criticalDark: string;
+  criticalLight: string;
+  grey100: string;
+  grey200: string;
+  grey300: string;
+  grey400: string;
+  grey50: string;
+  grey500: string;
+  grey600: string;
+  info: string;
+  infoDark: string;
+  infoLight: string;
+  positive: string;
+  positiveDark: string;
+  positiveLight: string;
+  primary: string;
+  primaryDark: string;
+  primaryLight: string;
+  primaryB: string;
+  primaryBDark: string;
+  primaryBLight: string;
+  promote: string;
+  promoteDark: string;
+  promoteLight: string;
+  promoteB: string;
+  promoteBDark: string;
+  promoteBLight: string;
+  secondary: string;
+  secondaryDark: string;
+  secondaryLight: string;
+  secondaryB: string;
+  secondaryBDark: string;
+  secondaryBLight: string;
   white: string;
   transparent: string;
 }
@@ -119,23 +140,6 @@ export interface Shadow {
 }
 
 export type ShadowVariants = keyof Shadow;
-
-export interface Border {
-  width: {
-    standard: number;
-    large: number;
-  };
-  color: {
-    standard: string;
-    standardInverted: string;
-    formHover: string;
-    focus: string;
-    critical: string;
-    formAccent: string;
-    primary: string;
-    secondary: string;
-  };
-}
 
 export interface Transform {
   touchable: string;
@@ -201,7 +205,7 @@ export interface Typography {
 
 export interface Theme {
   typography: Typography;
-  colors: Color;
+  colors?: Color;
   space: Space;
   shadows: Shadow;
   breakpoints: Breakpoints;
@@ -209,7 +213,6 @@ export interface Theme {
   transitions: Transition;
   gridGutterWidth: 16 | 32;
   section: { maxWidth: Breakpoint<number> };
-  border: Border;
 }
 
 // Section for Mui components
