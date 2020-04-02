@@ -2,83 +2,48 @@
   <h1>Origin Design System</h1>
 </div>
 
-<hr />
-
-Thanks to modern component-oriented architectures, the front-end community has been naturally gravitating towards design systems as a way of standardising our respective design languages into reusable components. When done successfully, it suddenly becomes trivial to translate standard designs into code.
-
-The Origin Design System is an implementation of this industry trend.
-
-**Docs**
-
-https://docs.origindigital-dac.com.au/designsystem/master/
-
-**Playroom**
-
-https://docs.origindigital-dac.com.au/designsystem/playroom/
-
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
--   [Getting Started](#getting-started)
--   [Support](#support)
+-   [Introduction](#introduction)
 -   [Using ODS in your own app](#using-ods-in-your-own-app)
--   [Contribution Usage](#contribution-usage)
-    -   [Documentation](#documentation)
-    -   [Playroom](#playroom)
-    -   [Formating](#formating)
-    -   [Linting](#linting)
-    -   [Typescript](#typescript)
-    -   [Testing](#testing)
-    -   [Husky and commitlint support](#husky-and-commitlint-support)
-    -   [CI support](#ci-support)
+-   [Documentation](#documentation)
+-   [Playroom](#playroom)
+-   [Questions](#questions)
+-   [Structure of component library](#structure-of-component-library)
+    -   [ods-core](#ods-core)
+    -   [ods-lab](#ods-lab)
+    -   [ods-themes](#ods-themes)
+    -   [ods-testing-library](#ods-testing-library)
+    -   [ods-types](#ods-types)
+    -   [other packages](#other-packages)
+-   [Contributing](#contributing)
+-   [ODS core team](#ods-core-team)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Getting Started
+## Introduction
 
-To contribute to this project, first you need to clone the monorepo:
+Thanks to modern component-oriented architectures, the front-end community has been naturally
+gravitating towards design systems as a way of standardising our respective design languages
+into reusable components.
+When done successfully, it suddenly becomes trivial to translate standard designs into code.
 
-```bash
-git clone ssh://git@bitbucket.origin.com.au/od/origin-ui.git
-```
+The Origin Design System (also known ans **ODS**) is an implementation of this industry trend.
 
-> **Note:** Ensure correct node version as per `.nvmrc`. If using `nvm`, run `nvm use`.
+As our design system is based on **Material Design** language, we use [Material UI](https://material-ui.com/)
+as the backbone of our ODS components. This gives us several benefits:
 
-Let's get the party started with...
+-   We benefit from all the effort and support the open source community has put into building those components
+-   Time to build new components will massively reduce as the heavy lifting is delegated to MUI components
+-   Less code for us means fewer errors and less maintenance
+-   As Material UI components are all accessible, we can easily make our complex components accessible
 
-```
-yarn install
-```
-
-Secondly you need to bootstrap the monorepo
-
-```
-yarn bootstrap
-```
-
-Why do we do this?
-
--   So you only need to run yarn install once to install all of our packages in a single pass
-
--   Your dependencies can be linked together, which means that your workspaces can depend on one another while always using the most up-to-date code available. This is also a better mechanism than yarn link since it only affects your workspace tree rather than your whole system.
-
--   All your package dependencies will be installed together, giving Yarn more latitude to better optimize them.
-
--   Yarn will use a single lockfile rather than a different one for each package, which means fewer conflicts and easier reviews.
-
-> **Note:** `yarn bootstrap` internally runs `yarn install` before it's bootstrapping so the above `yarn install` command only needs to be run once (to install lerna to be able to run `yarn bootstrap` in the first place).
-
-Finally to start developing or to just view the docs:
-
-```
-yarn start
-```
-
-## Support
-
-If you have any questions please post a slack message at #design-system-support
+This being said we have our own design language and conventions serving our own needs. Hence, whenever we create
+components we still design its API the way it works best for us. The corresponding Material UI components
+are only used under the hood to provide the functionality we designed according to our API.
 
 ## Using ODS in your own app
 
@@ -86,6 +51,12 @@ Install ODS core in your project directory with:
 
 ```sh
 yarn add @origin-digital/ods-core
+```
+
+Make sure your .npmrc has this flag set:
+
+```.env
+registry=https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all
 ```
 
 This package also has a peer dependency on the following:
@@ -98,168 +69,151 @@ yarn add styled-components@3.4.5
 
 Here is a quick example to get you started, **it's all you need**:
 
-```jsx
+```typescript jsx
 import React from "react";
 import ReactDOM from "react-dom";
 import {
-    Stack,
-    Placeholder,
-    OriginThemeProviders,
+    OriginThemeProvider,
+    Section,
+    CheckboxGroup,
+    Checkbox,
 } from "@origin-digital/ods-core";
+import { coreMuiTheme } from "@origin-digital/ods-themes";
 
-function App() {
-    return (
-        <OriginThemeProvider>
-            <Stack space="medium">
-                <Placeholder />
-                <Placeholder />
-                <Placeholder />
-            </Stack>
-        </OriginThemeProvider>
-    );
-}
+const App = () => (
+    <OriginThemeProvider muiTheme={coreMuiTheme}>
+        <Section>
+            <Card>
+                <CheckboxGroup>
+                    <Checkbox
+                        id="mlb"
+                        label="Melbourne"
+                        helperText="Great city"
+                    />
+                    <Checkbox
+                        id="syd"
+                        label="Sydney"
+                        helperText="Heart of Australia"
+                    />
+                    <Checkbox id="prt" label="Perth" helperText="Beautiful" />
+                </CheckboxGroup>
+            </Card>
+        </Section>
+    </OriginThemeProvider>
+);
 
 ReactDOM.render(<App />, document.querySelector("#app"));
 ```
 
-> **Note:** For testing your app with ODS components please refer to the `ods-testing-library` https://bitbucket.origin.com.au/projects/OD/repos/origin-ui/browse/packages/ods-testing-library
+> **Note:** For testing your app with ODS components please refer to the
+> [`ods-testing-library` package](https://bitbucket.origin.com.au/projects/OD/repos/origin-ui/browse/packages/ods-testing-library).
 
-## Contribution Usage
+## Documentation
 
-### Documentation
+The documentation of the design system is published in
+[https://docs.origindigital-dac.com.au/designsystem/master/](https://docs.origindigital-dac.com.au/designsystem/master/)
 
-To view or edit the docs in a create react app with hot reloading:
+For the API documentation of each component as well as guidelines and examples of how to use the
+components from ODS, please visit that link.
 
-```
-yarn start
-```
+## Playroom
 
-Whenever `yarn start` is called a componentsDocs.json file is generated in `./docs/src/componentDocs.json`. This is used to automatically generate prop types tables in the docs based on typescript interfaces for each component.
+Playroom is a tool that helps you build the visuals of your page using the actual components
+from ODS. We highly recommend every one (including designers, UX and developers) to start
+building their designs via this tool. It will help shorten the feedback loop between design
+and development.
 
-At anytime while developing docs, `componentDocs.json` can be regenerated and hot reloaded by calling:
+The pages built in Playroom could be easily shared via its link. As part of supporting the ODS
+(in terms of bug fixes, feature requestst, etc.) the core ODS team expects Playroom links to share
+the code for detailed explanations.
 
-```
-yarn generate-component-docs
-```
+You can access the playroom via
 
-### Playroom
+[https://docs.origindigital-dac.com.au/designsystem/playroom/](https://docs.origindigital-dac.com.au/designsystem/playroom/).
 
-Simultaneously design across a variety of themes and screen sizes, powered by JSX and your own component library.
+## Questions
 
-Playroom allows you to create a zero-install code-oriented design environment, built into a standalone bundle that can be deployed alongside your existing design system documentation.
+Always check out the [docs](https://docs.origindigital-dac.com.au/designsystem/master/) first.
+In addition to that we have the channel #design-system-support on Slack which is dedicated to
+provide support by ODS core team. The fastest way to get answer for your question is to use the
+Slack channel.
 
--   Iterate on your designs in the final medium.
--   Create quick mock-ups and interactive prototypes with real code.
--   Exercise and evaluate the flexibility of your design system.
--   Share your work with others by simply copying the URL.
+## Structure of component library
 
-To start playroom in a local development server:
+This mono-repo (`origin-ui`) contains several packages which all together form the Origin Design System.
+Below we will briefly review the most important packages in ODS.
 
-```
-yarn playroom
-```
+If you have been using one of the packages, please do not forget to checkout its changelog prior to upgrading.
 
-### Formating
+### ods-core
 
-Given that `origin-ui` is a shared asset it is critical that a consistent code style is enforced. We use prettier to take care of this.
+This is the core and the most important package which contains all the atomic (core) components
+our design system includes. As we progress, we add more and more components to this package. These components are
+assumed to be production ready and their API are derived after thorough discussions.
+This package has several benefits over our old style-guide:
 
-Formatting your code isn't something you need to think about that much, a pre commit hook is in place to take care of this for you.
+-   It is fully accessible: We take accessibility serious in building any components for ODS.
+    Due to regulations we must be AA compliant regarding accessibility.
+-   The terminology and the API is consistent: Contrary to the style-guide where every body could
+    design and contribute a component (i.e. distributed design and ownership) and that would often
+    lead to inconsistent API (e.g. props with similar roles had different names in different components),
+    in ODS only components could be contributed via PR which have already had their API discussed
+    and approved by the ODS core team. We capture, compare and improve API of all components
+    holistically to make sure the consistency is always provided.
 
-However, at any time you can format the whole monorepo with:
+This package should export almost everything you need to get your app running, Layout components,
+Typography components, core interactive (input) components, etc.
 
-```
-yarn format
-```
+The changelog is available at this [CHANGELOG.md](https://bitbucket.origin.com.au/projects/OD/repos/origin-ui/browse/packages/ods-core/CHANGELOG.md).
 
-> **Note:** A helpful practice is to setup a prettier plugin in your IDE to format your code on file save.
+### ods-lab
 
-### Linting
+This is an experimental package where we start building and experimenting new components in.
+You can still use components that are exported from this package, but they are not assumed
+production ready and their API might change at any time.
+For most cases once a components reaches a stable (production ready) state, we move it from
+`ods-lab` to either `ods-core` or other production ready packages.
 
-`origin-ui` have clear and consistent coding conventions, with automated enforcement. They will help
+### ods-themes
 
--   You find bugs and errors before they happen
--   You spend less time testing new features
--   Your code (and your team’s code) be more consistent
+Our new design system is now built with theming as a first class citizen. This allows us to
+flexibly change the look and feel in the apps while avoiding inconsistent custom CSS implemenetations.
 
-Besides checking style, linters are also excellent tools for finding certain classes of bugs, such as those related to variable scope. Assignment to undeclared variables (these leak into the global scope, contaminating it and possibly causing very difficult to find bugs) and use of undefined variables are examples of errors that are detectable at lint time.
+This package is low-level and unless you need to access theme definitions or specific themes
+directly, you sould not need to use this package.
+For accessing the `ThemeProvider` please import it from `@origin-digital/ods-core`.
 
-At any time you can lint the whole monorepo with:
+### ods-testing-library
 
-`yarn lint`
+This is a simple package containing some utilities for unit testing your app. The main feature
+you get from this package is a `render` function which provide our default `theme` under the hood
+so that you do not repeat the `OriginThemeProvider` in every test.
+It also re-exports all the utilities you need to use from `@testing-library/react`.
+If you need `@testing-library/dom` you still have to install it in your app manually as it is not
+provided by `ods-testing-library`.
 
-If your code has a lot of fixable linting errors then you can also run:
+### ods-types
 
-`yarn lint --fix`
+Everything in ODS is built via TypeScript, as as result all the public types are provided
+via this package.
 
-`origin-ui` leverages `@origin-digital/eslint-config-origin` to enforce default industry recommended eslint rules. For in depth `eslint-config-origin` documentation please refer to:
+### other packages
 
-https://bitbucket.origin.com.au/projects/OD/repos/eslint-config-origin/browse/README.md
+There are still other packages that are either experimental or for internal use in ODS.
 
-> **Note:** A helpful practice is to setup a eslint plugin in your IDE to identify linting issues as you code.
+## Contributing
 
-### Typescript
+If you would like to makes changes to any code in this repo please read
+[CONTRIBUTING.md](https://bitbucket.origin.com.au/projects/OD/repos/origin-ui/browse/CONTRIBUTING.md).
 
-`origin-ui` uses project references, a new feature in TypeScript 3.0 that allows you to structure your TypeScript programs into smaller pieces.
+## ODS core team
 
-https://www.typescriptlang.org/docs/handbook/project-references.html
+The current team that is the guardian of ODS consists of these people:
 
-By doing this, build times are greatly improved. A new mode for tsc, the --build flag, works hand in hand with project references to enable faster TypeScript builds.
-
-Your IDE should provide the type checking support that you need, however at any time you can type check the whole monorepo with:
-
-`yarn tsc`
-
-You can also type check in real time with:
-
-`yarn tsc --watch`
-
-### Testing
-
-Every developer is expected to provide comprehensive unit tests that give confidence your code performs the way the user expects it to.
-
-In most case you will only be interested in running tests on code that you have added or changed. For that reason the default test command will run tests in watch mode and only on code you have been working on:
-
-```
-yarn test
-```
-
-If you would like to run tests on all the entire monorepo with code coverage then the following command will do the job for you:
-
-```
-yarn test --coverage
-```
-
-Jest has been setup to use a mult-package test runner. This means many projects can run at the same time within a single instance of jest. This also gives you the benefit of granular control, you can run tests and coverage on just the packages you want to:
-
-```
-yarn test --projects packages/core packages/lab --coverage
-```
-
-### Husky and commitlint support
-
-Love them or hate them, pre hook commits are essential when managing a large volume of code. With lengthy build times involved in validating the health of an entire monorepo it can be argued that a few quick and simple pre commit scripts, on only code that you have added or changed, can save you hours in the long run.
-
-It is also mandatory to lint commit messages on pre commit hooks. They must follow the conventional commits specification in order for package publishing to be an automated process.
-
-To be guided through the process of providing a conventional commit please use the following command:
-
-`yarn cz`
-
-The Conventional Commits specification is a lightweight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of. This convention dovetails with SemVer, by describing the features, fixes, and breaking changes made in commit messages.
-
-https://www.conventionalcommits.org/en/v1.0.0-beta.4/
-
-### CI support
-
-One single command using origin scripts will validate the health of the entire monorepo.
-
-`yarn validate`
-
-This command will:
-
--   Build and bundle all packages to a dist folder using rollup (as esm and cjs)
--   Generate type declarations to a dist folder for all bundles
--   Run eslint on all js,ts and tsx files
--   Run jest on all packages along with a complete test coverage report
-
-If at anytime any of these processes fail the process will exit, which is why it is run in CI.
+-   Alex Mordue
+-   Ali Motevallian
+-   Bryce Larson
+-   Eugen Kozynin
+-   Jake Bayer
+-   John Sung
+-   Nathan Vale
