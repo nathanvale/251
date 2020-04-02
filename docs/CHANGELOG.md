@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.13.0...docs@0.14.0) (2020-04-02)
+
+
+### Features
+
+* **originthemeprovider:** change default theme to coreMuiTheme ([2202671](https://bitbucket.orgn.io/od/origin-ui/commits/22026716ba5f76d4b2df783d74d29e0a3b26af41))
+
+
+
+
+
 # [0.13.0](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.12.2...docs@0.13.0) (2020-03-31)
 
 

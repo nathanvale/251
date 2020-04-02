@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.7.0...playroom@0.8.0) (2020-04-02)
+
+
+### Features
+
+* **originthemeprovider:** change default theme to coreMuiTheme ([2202671](https://bitbucket.orgn.io/od/origin-ui/commits/22026716ba5f76d4b2df783d74d29e0a3b26af41))
+
+
+
+
+
 # [0.7.0](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.6.3...playroom@0.7.0) (2020-03-31)
 
 
