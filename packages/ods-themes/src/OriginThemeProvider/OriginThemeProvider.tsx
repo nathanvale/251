@@ -3,12 +3,10 @@ import { ThemeProvider, injectGlobal } from "styled-components";
 import {
   ThemeProvider as MUIThemeProvider,
   Theme as MuiTheme,
-  createMuiTheme,
 } from "@material-ui/core";
 
 import { Theme } from "@origin-digital/ods-types";
-import { originRetailTheme } from "../themes";
-import { originRetailMUITheme } from "../_private/mui-themes/originRetail";
+import { coreMuiTheme, originRetailTheme } from "../themes";
 import { flattenPalette } from "../_private/helpers/flattenPalette";
 
 export interface OriginThemeProviderProps {
@@ -67,11 +65,10 @@ injectGlobal`
       }
 `;
 
-const defaultMuiTheme = createMuiTheme(originRetailMUITheme as any);
 export const OriginThemeProvider = ({
   children,
   theme = originRetailTheme,
-  muiTheme = defaultMuiTheme,
+  muiTheme = coreMuiTheme,
 }: OriginThemeProviderProps) => {
   theme.colors = flattenPalette(muiTheme.palette);
   return (

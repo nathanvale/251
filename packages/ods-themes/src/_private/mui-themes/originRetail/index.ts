@@ -1,3 +1,5 @@
+import { createMuiTheme } from "@material-ui/core";
+
 import { MuiAlert } from "./styles/MuiAlert";
 import { MuiAlertTitle } from "./styles/MuiAlertTitle";
 import { MuiAppBar } from "./styles/MuiAppBar";
@@ -51,7 +53,7 @@ import { MuiToggleButtonGroup } from "./styles/MuiToggleButtonGroup";
 import { MuiTypography } from "./styles/MuiTypography";
 import { palette } from "./palette";
 
-export const originRetailMUITheme = {
+export const originRetailMUITheme = createMuiTheme({
   palette,
   // Breakpoint
   breakpoints: MuiBreakpoints,
@@ -161,4 +163,4 @@ export const originRetailMUITheme = {
     MuiTooltip,
   },
   typography: MuiTypography,
-};
+} as any); // this as any was a hack to turn off errors. Some of these are valid errors. We have fixed them in Core Theme.
