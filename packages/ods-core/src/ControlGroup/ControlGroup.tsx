@@ -36,7 +36,7 @@ const useFLClasses = makeStyles({
   },
 });
 
-export const ControlGroup = ({
+export const ControlGroup: React.FunctionComponent<ControlGroupProps> = ({
   children,
   disabled,
   error,

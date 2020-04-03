@@ -18,7 +18,10 @@ export interface RadioGroupMuiProps {
 }
 
 export interface RadioGroupProps
-  extends Omit<BaseInputProps, "inputRef" | "id"> {
+  extends Omit<
+    BaseInputProps,
+    "inputRef" | "id" | "aria-describedby" | "aria-labelledby" | "aria-label"
+  > {
   name: string;
   defaultValue?: InputValueType;
   groupComponent?: FormGroupElements;
@@ -72,4 +75,6 @@ export const RadioGroup = ({
 RadioGroup.displayName = "RadioGroup";
 RadioGroup.defaultProps = {
   "data-id": "RadioGroup",
+  groupComponent: "fieldset",
+  labelComponent: "legend",
 };

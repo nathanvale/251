@@ -14,8 +14,8 @@ export const docs: ComponentDocs<RadioGroupProps> = {
   componentName: "RadioGroup",
   description: getRadioGroupDesc("RadioGroup"),
   propDescriptions: {
-    ...getRadioGroupPropsDesc("RadioGroup"),
     ...getCGPropsDocs("RadioGroup"),
+    ...getRadioGroupPropsDesc("RadioGroup"),
   },
   migrationGuide: false,
   examples: [
@@ -45,6 +45,49 @@ export const docs: ComponentDocs<RadioGroupProps> = {
           <Radio label="Perth" id="prt" value="prt" />
         </RadioGroup>
       ),
+    },
+    {
+      label: "Controlled",
+      description: "The value is shown as the selected radio is changed",
+      playroom: false,
+      Code: () => {
+        const [city, setCity] = React.useState<string>();
+        return (
+          <>
+            <div>
+              Current city: <span>{city}</span>
+            </div>
+            <RadioGroup
+              name="cities"
+              value={city}
+              onChange={e => setCity(e.target.value)}
+            >
+              <Radio label="Melbourne" id="mlb" value="mlb" />
+              <Radio label="Sydney" id="syd" value="syd" />
+              <Radio label="Perth" id="prt" value="prt" />
+            </RadioGroup>
+          </>
+        );
+      },
+      codeString: `
+        const [city, setCity] = React.useState();
+        return (
+          <>
+            <div>
+              Current city: <span>{city}</span>
+            </div>
+            <RadioGroup
+              name="cities"
+              value={city}
+              onChange={e => setCity(e.target.value)}
+            >
+              <Radio label="Melbourne" id="mlb" value="mlb" />
+              <Radio label="Sydney" id="syd" value="syd" />
+              <Radio label="Perth" id="prt" value="prt" />
+            </RadioGroup>
+          </>
+        );
+      `,
     },
   ],
   snippets: [
