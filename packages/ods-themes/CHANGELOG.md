@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-themes@0.10.0...@origin-digital/ods-themes@0.11.0) (2020-04-06)
+
+
+### Features
+
+* implement Text component with basekick ([e7b96c7](https://bitbucket.orgn.io/od/origin-ui/commits/e7b96c7eddf877a5656eb95d1efde25774eceb86))
+
+
+
+
+
 # [0.10.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-themes@0.9.0...@origin-digital/ods-themes@0.10.0) (2020-04-02)
 
 
