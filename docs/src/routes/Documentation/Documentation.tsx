@@ -45,7 +45,8 @@ const components = {
   ...odsCore,
 };
 
-const { Text, Box, Stack, Hidden, Link } = components;
+const { Box, Stack, Hidden, Link } = components;
+const Text = odsLab.Text;
 
 const responsiveGutter: odsCore.BoxProps["paddingX"] = ["large", "xlarge"];
 const headerHeight = "100px";
@@ -273,7 +274,7 @@ export const Documentation = () => {
                     }))}
                   />
 
-                  {["Layout", "Form"].map(category => (
+                  {["Layout", "Content", "Form"].map(category => (
                     <MenuSectionList
                       key={category}
                       title={`${category} Components`}

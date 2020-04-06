@@ -143,7 +143,7 @@ const WidgetStack = ({
 }: CardStackSectionProps) => (
   <Box width="full" data-id={dataId}>
     <Box
-      backgroundColor="primaryB"
+      backgroundColor="secondary"
       display={{ lg: "none" }}
       style={{ height: "120px" }}
       width="full"

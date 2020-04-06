@@ -9,6 +9,9 @@
   ],
   "sideEffects": false,
   "typings": "dist/typings/index.d.ts",
+  "devDependencies": {
+    "@material-ui/core": "^4.9.0"
+  },
   "publishConfig": {
     "registry": "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-internal/"
   }

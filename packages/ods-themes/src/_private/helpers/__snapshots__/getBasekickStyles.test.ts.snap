@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getBasekickStyles it returns styles for xxxsmall 1`] = `
+Object {
+  "&::before": Object {
+    "content": "\\"\\"",
+    "display": "block",
+    "height": 0,
+    "marginTop": "-9px",
+  },
+  "-ms-transform": "translateY(0.44333333333333336em)",
+  "-webkit-transform": "translateY(0.44333333333333336em)",
+  "fontSize": 12,
+  "lineHeight": "20px",
+  "margin": 0,
+  "padding-top": "1px",
+  "transform": "translateY(0.44333333333333336em)",
+  "verticalAlign": "baseline",
+}
+`;

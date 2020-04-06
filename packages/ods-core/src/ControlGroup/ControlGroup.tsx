@@ -32,7 +32,8 @@ const getLabelId = (id: string = "") => `${id}-label`;
 
 const useFLClasses = makeStyles({
   root: {
-    marginBottom: "8px",
+    marginBottom: "14px",
+    paddingTop: "6px",
   },
 });
 

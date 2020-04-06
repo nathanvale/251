@@ -953,18 +953,9 @@ exports[`Box 1`] = `
   tabIndex?: number
   target?: string
   textAlign?: ResponsiveProp<
-    | "-moz-initial"
     | "center"
-    | "end"
-    | "inherit"
-    | "initial"
-    | "justify"
     | "left"
-    | "match-parent"
-    | "revert"
     | "right"
-    | "start"
-    | "unset"
   >
   title?: string
   transform?: "touchable"
@@ -1504,6 +1495,7 @@ exports[`OriginThemeProvider 1`] = `
       pxToRem: (px: number) => string
       subtitle1: CSSProperties
       subtitle2: CSSProperties
+      text: Record<FontSizeVariants, BasekickStyles>
     }
     zIndex: {
       appBar: number
@@ -1583,8 +1575,8 @@ exports[`OriginThemeProvider 1`] = `
       descenderHeightScale: number
       fontFamily: string
       gridRow: number
-      text: { xxxsmall: { size: number; rows: number; }; xxsmall: { size: number; rows: number; }; xsmall: { size: number; rows: number; }; small: { size: number; rows: number; }; medium: { size: number; rows: number; }; large: { ...; }; xlarge: { ...; }; xxlarge: { ...; }; xxxlarge: { ...; }; }
-      weight: { regular: number; medium: number; }
+      text: Record<FontSizeVariants, FontSizeMetrics>
+      weight: FontWeightValue
     }
   }
 }
@@ -1781,5 +1773,36 @@ exports[`Stack 1`] = `
     | "xxsmall"
     | "xxxlarge"
   >
+}
+`;
+
+exports[`Text 1`] = `
+{
+  align?: ResponsiveProp<
+    | "center"
+    | "left"
+    | "right"
+  >
+  children?: ReactNode
+  component?: 
+    | "p"
+    | "span"
+  data-id?: string
+  tone?: 
+    | "critcal"
+    | "neutral"
+    | "positive"
+  truncate?: boolean
+  variant?: 
+    | "body"
+    | "body-small"
+    | "caption"
+    | "overline-text"
+    | "subtitle"
+    | "subtitle-small"
+  weight?: 
+    | "medium"
+    | "regular"
+    | "strong"
 }
 `;

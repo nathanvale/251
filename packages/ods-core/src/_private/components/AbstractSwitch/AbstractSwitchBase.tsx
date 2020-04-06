@@ -6,6 +6,7 @@ import { AbstractSwitchBaseProps, SwitchBaseMuiProps } from "./abstract-types";
 
 const useSwitchBaseStyle = makeStyles((theme: Theme) => ({
   root: ({ error }: BaseSwitchBaseProps) => ({
+    padding: "6px",
     border: "none",
     boxShadow: "none",
     alignItems: "flex-start",

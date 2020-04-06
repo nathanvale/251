@@ -52,7 +52,7 @@ export const palette: Theme["palette"] = createMuiTheme({
     info: getPaletteColor(colors.blue),
     warning: getPaletteColor(colors.lightOrange),
     error: getPaletteColor(colors.red),
-    caution: getPaletteColor(colors.red),
+    caution: getPaletteColor(colors.lightOrange),
     positive: getPaletteColor(colors.green),
     action: {
       hoverOpacity: 0.2,

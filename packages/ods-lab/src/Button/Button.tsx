@@ -12,16 +12,18 @@ const useButtonStyle = makeStyles((theme: Theme) => {
   const red = theme.palette.primary.main;
   const darkRed = theme.palette.primary.dark;
   const darkGrey = theme.palette.secondary.dark;
-  console.log(theme);
+
   return {
     root: {
+      display: "inline",
       borderRadius: 0,
       textTransform: "none",
-      padding: "12px 24px",
+      padding: "18px 24px",
       ...theme.typography.button,
       "&$disabled": {
         color: theme.palette.grey[200],
       },
+      width: "fit-content",
     },
     sizeSmall: {
       padding: "12px 16px",
@@ -49,6 +51,9 @@ const useButtonStyle = makeStyles((theme: Theme) => {
       },
     },
     label: {
+      color: theme.palette.common.white,
+      ...theme.typography.text.xsmall,
+      display: "block",
       textTransform: "none",
     },
     outlinedPrimary: {

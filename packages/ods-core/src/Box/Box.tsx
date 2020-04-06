@@ -10,8 +10,9 @@ import {
   FlexDirectionVariants,
   JustifyContentVariants,
   DisplayVariants,
-  SpaceVariants,
   TLength,
+  TextAlignVariants,
+  SpaceVariants,
 } from "@origin-digital/ods-types";
 import * as CSS from "csstype";
 import { Omit } from "utility-types";
@@ -23,6 +24,7 @@ import {
 } from "../_private/components/StyledSystemBox/StyledSystemBox";
 
 export type ResponsiveSpace = ResponsiveProp<SpaceVariants>;
+
 export interface BoxProps
   extends Omit<
     AllHTMLAttributes<HTMLElement>,
@@ -53,7 +55,7 @@ export interface BoxProps
   marginBottom?: ResponsiveSpace;
   marginLeft?: ResponsiveSpace;
   marginRight?: ResponsiveSpace;
-  textAlign?: ResponsiveProp<CSS.TextAlignProperty>;
+  textAlign?: ResponsiveProp<TextAlignVariants>;
   boxShadow?: BoxShadowVariant;
   height?: "full";
   pointerEvents?: CSS.PointerEventsProperty;
