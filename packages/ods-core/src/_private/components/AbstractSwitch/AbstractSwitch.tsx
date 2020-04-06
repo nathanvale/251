@@ -3,6 +3,7 @@ import {
   FormControlState,
   makeStyles,
   useFormControl,
+  Theme,
 } from "@material-ui/core";
 import { FormControlLabel } from "../../../FormControlLabel/FormControlLabel";
 import { FormHelperText } from "../../../FormHelperText/FormHelperText";
@@ -51,17 +52,19 @@ const useLabelStyles = makeStyles({
   root: {
     alignItems: "flex-start",
     "& .MuiFormControlLabel-label": {
-      padding: "9px 0",
+      padding: "12px 0",
     },
   },
 });
 
-const useHelperTextStyles = makeStyles({
+const useHelperTextStyles = makeStyles((theme: Theme) => ({
   inlineHelper: {
-    paddingLeft: "32px",
+    paddingLeft: "29px",
     marginTop: "-5px",
+    paddingBottom: "5px",
+    color: theme.palette.grey[400],
   },
-});
+}));
 
 export function AbstractSwitch<
   CompMuiProps,
@@ -112,16 +115,18 @@ export function AbstractSwitch<
           />
         }
       />
-      <FormHelperText
-        className={hlpClasses.inlineHelper}
-        id={getHelperId(id)}
-        data-id={getHelperId(dataId || id)}
-        disabled={disabledVal}
-        error={false}
-        muiProps={muiProps && muiProps.formHelperTextProps}
-      >
-        {helperText}
-      </FormHelperText>
+      {helperText ? (
+        <FormHelperText
+          className={hlpClasses.inlineHelper}
+          id={getHelperId(id)}
+          data-id={getHelperId(dataId || id)}
+          disabled={disabledVal}
+          error={false}
+          muiProps={muiProps && muiProps.formHelperTextProps}
+        >
+          {helperText}
+        </FormHelperText>
+      ) : null}
     </Box>
   );
 }

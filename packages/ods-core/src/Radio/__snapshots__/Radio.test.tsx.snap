@@ -16,13 +16,13 @@ exports[`it renders a Radio in error state correctly 1`] = `
     class="c0"
   >
     <label
-      class="MuiFormControlLabel-root makeStyles-root-183"
+      class="MuiFormControlLabel-root makeStyles-root-167"
       data-id="my-radio"
       id="my-radio-label"
     >
       <span
         aria-disabled="false"
-        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-198 MuiRadio-root makeStyles-root-191 makeStyles-root-192 MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-182 MuiRadio-root makeStyles-root-175 makeStyles-root-176 MuiRadio-colorSecondary MuiIconButton-colorSecondary"
         data-id="my-radio-RadioBase"
       >
         <span
@@ -30,13 +30,13 @@ exports[`it renders a Radio in error state correctly 1`] = `
         >
           <input
             aria-describedby="my-radio-helperText"
-            class="PrivateSwitchBase-input-201"
+            class="PrivateSwitchBase-input-185"
             id="my-radio"
             type="radio"
             value=""
           />
           <div
-            class="PrivateRadioButtonIcon-root-214"
+            class="PrivateRadioButtonIcon-root-198"
           >
             <svg
               aria-hidden="true"
@@ -51,7 +51,7 @@ exports[`it renders a Radio in error state correctly 1`] = `
             </svg>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-215"
+              class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-199"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -72,11 +72,6 @@ exports[`it renders a Radio in error state correctly 1`] = `
         Check 1
       </span>
     </label>
-    <p
-      class="MuiFormHelperText-root makeStyles-inlineHelper-184"
-      data-id="my-radio-helperText"
-      id="my-radio-helperText"
-    />
   </div>
 </div>
 `;
@@ -97,13 +92,13 @@ exports[`it renders a disabled Radio 1`] = `
     class="c0"
   >
     <label
-      class="MuiFormControlLabel-root makeStyles-root-274 Mui-disabled"
+      class="MuiFormControlLabel-root makeStyles-root-250 Mui-disabled"
       data-id="my-radio"
       id="my-radio-label"
     >
       <span
         aria-disabled="true"
-        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-289 MuiRadio-root makeStyles-root-282 makeStyles-root-283 MuiRadio-colorSecondary PrivateSwitchBase-disabled-291 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
+        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-265 MuiRadio-root makeStyles-root-258 makeStyles-root-259 MuiRadio-colorSecondary PrivateSwitchBase-disabled-267 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
         data-id="my-radio-RadioBase"
         tabindex="-1"
       >
@@ -112,14 +107,14 @@ exports[`it renders a disabled Radio 1`] = `
         >
           <input
             aria-describedby="my-radio-helperText"
-            class="PrivateSwitchBase-input-292"
+            class="PrivateSwitchBase-input-268"
             disabled=""
             id="my-radio"
             type="radio"
             value=""
           />
           <div
-            class="PrivateRadioButtonIcon-root-305"
+            class="PrivateRadioButtonIcon-root-281"
           >
             <svg
               aria-hidden="true"
@@ -134,7 +129,7 @@ exports[`it renders a disabled Radio 1`] = `
             </svg>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-306"
+              class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-282"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -152,11 +147,6 @@ exports[`it renders a disabled Radio 1`] = `
         Check 1
       </span>
     </label>
-    <p
-      class="MuiFormHelperText-root makeStyles-inlineHelper-275 Mui-disabled"
-      data-id="my-radio-helperText"
-      id="my-radio-helperText"
-    />
   </div>
 </div>
 `;
@@ -233,11 +223,6 @@ exports[`it renders an unchecked Radio with label 1`] = `
         Check 1
       </span>
     </label>
-    <p
-      class="MuiFormHelperText-root makeStyles-inlineHelper-2"
-      data-id="my-radio-helperText"
-      id="my-radio-helperText"
-    />
   </div>
 </div>
 `;

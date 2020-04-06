@@ -48,6 +48,10 @@ const typography: Typography = {
     medium: 600,
   },
   text: {
+    xxxxsmall: {
+      size: 10,
+      rows: 5,
+    },
     xxxsmall: {
       size: 12,
       rows: 5,

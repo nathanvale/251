@@ -41,30 +41,25 @@ const Row = ({ color, variation }: RowProps) => (
 );
 
 export const Palette = () => {
-  const colorLabels = [
-    "critical",
-    "secondaryB",
-    "grey",
-    "background",
-    "primary",
-    "secondary",
-    "success",
-    "info",
-    "warning",
-    "error",
-    "caution",
-    "positive",
-    "primaryB",
-    "promote",
-    "promoteB",
-  ];
-
-  const palette = coreMuiTheme.palette as any;
+  const palette = coreMuiTheme.palette;
   return (
     <>
       <Columns space="large">
-        {colorLabels.map((tone, index) => {
-          const colors = palette[tone];
+        {[
+          "caution",
+          "critical",
+          "grey",
+          "info",
+          "positive",
+          "primary",
+          "primaryB",
+          "promote",
+          "promoteB",
+          "secondary",
+          "secondaryB",
+          "background",
+        ].map((tone, index) => {
+          const colors = (palette as any)[tone];
           return (
             // eslint-disable-next-line react/no-array-index-key
             <Column key={index} width="content">

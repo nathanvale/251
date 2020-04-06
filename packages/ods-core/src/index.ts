@@ -71,5 +71,8 @@ export type SectionProps = import("./Section/Section").SectionProps;
 export { Stack } from "./Stack/Stack";
 export type StackProps = import("./Stack/Stack").StackProps;
 
+export { Text } from "./Text/Text";
+export type TextProps = import("./Text/Text").TextProps;
+
 // Themes
 export { OriginThemeProvider } from "@origin-digital/ods-themes";

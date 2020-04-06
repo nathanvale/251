@@ -1,59 +1,108 @@
 import { Theme } from "@material-ui/core";
+import { FontSizeMetrics } from "@origin-digital/ods-types";
+import {
+  FontSizeVariants,
+  BasekickStyles,
+} from "@material-ui/core/styles/createTypography";
+import { getBasekickStyles } from "../../helpers/getBasekickStyles";
 import { colors } from "./colors";
 
-export const typography = {
-  fontFamily: "gordita, sans-serif",
-  fontStyle: {
-    regular: "Regular",
-    medium: "Medium",
+interface Typography {
+  fontFamily: string;
+  weight: { regular: number; medium: number; bold: number };
+  text: Record<FontSizeVariants, BasekickStyles>;
+}
+
+const text: Record<FontSizeVariants, FontSizeMetrics> = {
+  xxxxsmall: {
+    size: 10,
+    rows: 5,
   },
+  xxxsmall: {
+    size: 12,
+    rows: 5,
+  },
+  xxsmall: {
+    size: 14,
+    rows: 6,
+  },
+  xsmall: {
+    size: 16,
+    rows: 6,
+  },
+  small: {
+    size: 18,
+    rows: 6,
+  },
+  medium: {
+    size: 20,
+    rows: 7,
+  },
+  large: {
+    size: 24,
+    rows: 7,
+  },
+  xlarge: {
+    size: 32,
+    rows: 10,
+  },
+  xxlarge: {
+    size: 36,
+    rows: 10,
+  },
+  xxxlarge: {
+    size: 56,
+    rows: 16,
+  },
+};
+
+export const typography: Typography = {
+  fontFamily: ["gordita", "Arial", "Sans-Serif"].join(","),
   weight: {
     regular: 400,
     medium: 600,
+    bold: 700,
   },
   text: {
+    xxxxsmall: {
+      ...getBasekickStyles(text.xxxxsmall),
+    },
     xxxsmall: {
-      fontSize: 12,
-      lineHeight: "20px",
+      ...getBasekickStyles(text.xxxsmall, -0.02),
     },
     xxsmall: {
-      fontSize: 14,
-      lineHeight: "24px",
+      ...getBasekickStyles(text.xxsmall, 0.05),
     },
     xsmall: {
-      fontSize: 16,
-      lineHeight: "24px",
+      ...getBasekickStyles(text.xsmall),
     },
     small: {
-      fontSize: 18,
-      lineHeight: "24px",
+      ...getBasekickStyles(text.small),
     },
     medium: {
-      fontSize: 20,
-      lineHeight: "28px",
+      ...getBasekickStyles(text.medium),
     },
     large: {
-      fontSize: 24,
-      lineHeight: "28px",
+      ...getBasekickStyles(text.large),
     },
     xlarge: {
-      fontSize: 32,
-      lineHeight: "40px",
+      ...getBasekickStyles(text.xlarge),
     },
     xxlarge: {
-      fontSize: 36,
-      lineHeight: "40px",
+      ...getBasekickStyles(text.xxlarge),
     },
     xxxlarge: {
-      fontSize: 56,
-      lineHeight: "64px",
+      ...getBasekickStyles(text.xxxlarge),
     },
   },
 };
 
 export const muiTypography: Partial<Theme["typography"]> = {
-  fontFamily: ["gordita", "Arial", "Sans-Serif"].join(","),
-  fontWeightMedium: 600,
+  fontFamily: typography.fontFamily,
+  fontWeightMedium: typography.weight.medium,
+  fontWeightRegular: typography.weight.regular,
+  fontWeightBold: typography.weight.bold,
+  text: typography.text,
   h1: {
     fontWeight: typography.weight.regular,
     ...typography.text.xxlarge,
@@ -85,13 +134,13 @@ export const muiTypography: Partial<Theme["typography"]> = {
     color: colors.grey[600],
   },
   subtitle1: {
-    fontWeight: typography.weight.medium,
-    ...typography.text.medium,
+    fontWeight: typography.weight.regular,
+    ...typography.text.small,
     color: colors.grey[600],
   },
   subtitle2: {
-    fontWeight: typography.weight.medium,
-    ...typography.text.medium,
+    fontWeight: typography.weight.regular,
+    ...typography.text.xsmall,
     color: colors.grey[600],
   },
   body1: {
@@ -107,12 +156,12 @@ export const muiTypography: Partial<Theme["typography"]> = {
   caption: {
     fontWeight: typography.weight.regular,
     ...typography.text.xxxsmall,
-    color: colors.grey[400],
+    color: colors.grey[500],
   },
   overline: {
     fontWeight: typography.weight.regular,
-    ...typography.text.medium,
-    color: colors.grey[600],
-    textTransform: "none",
+    ...typography.text.xxxxsmall,
+    color: colors.grey[500],
+    textTransform: "uppercase",
   },
 };

@@ -1,7 +1,10 @@
 import React from "react";
+import { FontSizeVariants } from "@material-ui/core/styles/createTypography";
 
 export * from "./docs";
 export * from "./palette";
+
+export type TextAlignVariants = "left" | "right" | "center";
 
 export type AlignXType = "left" | "center" | "right" | "stretch";
 
@@ -154,53 +157,23 @@ export interface Transition {
 
 export type TransitionVariants = keyof Transition;
 
+export type FontSizeMetrics = {
+  size: number;
+  rows: number;
+};
+
+export type FontWeightValue = {
+  regular: number;
+  medium: number;
+};
+
 export interface Typography {
   fontFamily: string;
   descenderHeightScale: number;
   capHeightScale: number;
   gridRow: number;
-  weight: {
-    regular: number;
-    medium: number;
-  };
-  text: {
-    xxxsmall: {
-      size: number;
-      rows: number;
-    };
-    xxsmall: {
-      size: number;
-      rows: number;
-    };
-    xsmall: {
-      size: number;
-      rows: number;
-    };
-    small: {
-      size: number;
-      rows: number;
-    };
-    medium: {
-      size: number;
-      rows: number;
-    };
-    large: {
-      size: number;
-      rows: number;
-    };
-    xlarge: {
-      size: number;
-      rows: number;
-    };
-    xxlarge: {
-      size: number;
-      rows: number;
-    };
-    xxxlarge: {
-      size: number;
-      rows: number;
-    };
-  };
+  weight: FontWeightValue;
+  text: Record<FontSizeVariants, FontSizeMetrics>;
 }
 
 export interface Theme {

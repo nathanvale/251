@@ -1,0 +1,268 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It can render body small text 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+<div
+  class="c0"
+>
+  <span
+    class="MuiTypography-root makeStyles-root-33 makeStyles-root-34 MuiTypography-body2"
+  >
+    Body Text
+  </span>
+</div>
+`;
+
+exports[`It can render body text 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+<div
+  class="c0"
+>
+  <span
+    class="MuiTypography-root makeStyles-root-1 makeStyles-root-2 MuiTypography-body1"
+  >
+    Body Text
+  </span>
+</div>
+`;
+
+exports[`It can render body text critical tone 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+<div
+  class="c0"
+>
+  <span
+    class="MuiTypography-root makeStyles-root-257 makeStyles-root-258 MuiTypography-body1"
+  >
+    Body Text
+  </span>
+</div>
+`;
+
+exports[`It can render body text medium strong 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+<div
+  class="c0"
+>
+  <span
+    class="MuiTypography-root makeStyles-root-225 makeStyles-root-226 MuiTypography-body1"
+  >
+    Body Text
+  </span>
+</div>
+`;
+
+exports[`It can render body text medium weight 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+<div
+  class="c0"
+>
+  <span
+    class="MuiTypography-root makeStyles-root-193 makeStyles-root-194 MuiTypography-body1"
+  >
+    Body Text
+  </span>
+</div>
+`;
+
+exports[`It can render body text positive tone 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+<div
+  class="c0"
+>
+  <span
+    class="MuiTypography-root makeStyles-root-289 makeStyles-root-290 MuiTypography-body1"
+  >
+    Body Text
+  </span>
+</div>
+`;
+
+exports[`It can render body text truncated 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  overflow: hidden;
+}
+
+<div
+  class="c0"
+  style="width: 90px;"
+>
+  <div
+    class="c0"
+  >
+    <span
+      class="MuiTypography-root makeStyles-root-321 makeStyles-root-322 MuiTypography-body1"
+    >
+      <span
+        class="-span c1"
+        data-id="text"
+        display="block"
+        overflow="hidden"
+        style="white-space: nowrap; text-overflow: ellipsis;"
+      >
+        Truncated text
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`It can render subtitle caption text 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+<div
+  class="c0"
+>
+  <span
+    class="MuiTypography-root makeStyles-root-129 makeStyles-root-130 MuiTypography-caption"
+  >
+    Body Text
+  </span>
+</div>
+`;
+
+exports[`It can render subtitle overline text 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+<div
+  class="c0"
+>
+  <span
+    class="MuiTypography-root makeStyles-root-161 makeStyles-root-162 MuiTypography-overline"
+  >
+    Body Text
+  </span>
+</div>
+`;
+
+exports[`It can render subtitle small text 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+<div
+  class="c0"
+>
+  <span
+    class="MuiTypography-root makeStyles-root-97 makeStyles-root-98 MuiTypography-subtitle2"
+  >
+    Body Text
+  </span>
+</div>
+`;
+
+exports[`It can render subtitle text 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+<div
+  class="c0"
+>
+  <span
+    class="MuiTypography-root makeStyles-root-65 makeStyles-root-66 MuiTypography-subtitle1"
+  >
+    Body Text
+  </span>
+</div>
+`;
