@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.18.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.17.0...@origin-digital/ods-scripts@0.18.0) (2020-04-07)
+
+
+### Features
+
+* **radiogroup:** remove unnecessary props ([c20c804](https://bitbucket.orgn.io/od/origin-ui/commits/c20c804064b1dc986adb5645e6952d06ad503ff2))
+
+
+
+
+
 # [0.17.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.16.1...@origin-digital/ods-scripts@0.17.0) (2020-04-06)
 
 
