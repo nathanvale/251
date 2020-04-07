@@ -1657,9 +1657,6 @@ exports[`RadioBase 1`] = `
 
 exports[`RadioGroup 1`] = `
 {
-  aria-describedby?: string
-  aria-label?: string
-  aria-labelledby?: string
   children?: ReactNode
   className?: string
   classes?: Record<string, string>

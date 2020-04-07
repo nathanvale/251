@@ -21,4 +21,6 @@ export const CheckboxGroup = ({ children, ...others }: CheckboxGroupProps) => {
 CheckboxGroup.displayName = "CheckboxGroup";
 CheckboxGroup.defaultProps = {
   "data-id": "CheckboxGroup",
+  groupComponent: "fieldset",
+  labelComponent: "legend",
 };
