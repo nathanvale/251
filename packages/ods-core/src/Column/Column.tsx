@@ -30,8 +30,8 @@ export interface ColumnProps {
 
 const OuterStyledBox = styled(Box)<{ columnWidth: ColumnProps["width"] }>`
   min-width: 0;
-  ${p => (p.columnWidth === "content" ? "flex-shrink: 0;" : undefined)}
-  ${p =>
+  ${(p) => (p.columnWidth === "content" ? "flex-shrink: 0;" : undefined)}
+  ${(p) =>
     p.columnWidth && p.columnWidth !== "content" && p.columnWidth !== "flex"
       ? css`
           flex: 0 0 ${eval(p.columnWidth) * 100}%;

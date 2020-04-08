@@ -14,7 +14,7 @@ test("when disabled, the checkbox inputs become disabled as well", () => {
       <Checkbox label="Melbourne" id="mlb" />
       <Checkbox label="Sydney" id="syd" />
       <Checkbox label="Perth" id="prt" />
-    </CheckboxGroup>,
+    </CheckboxGroup>
   );
 
   const [mlb, syd, prt] = Array.from(container.getElementsByTagName("input"));

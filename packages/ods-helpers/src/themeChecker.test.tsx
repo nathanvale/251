@@ -22,7 +22,7 @@ test("It does not throw error when a component is wrapped in an <OriginThemeProv
     render(
       <OriginThemeProvider>
         <Test />
-      </OriginThemeProvider>,
+      </OriginThemeProvider>
     );
   };
   expect(t).not.toThrowError();

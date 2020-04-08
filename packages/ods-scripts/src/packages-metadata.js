@@ -19,13 +19,13 @@ function getPackagesMetaData() {
     {
       stdio: "pipe",
       encoding: "utf-8",
-    },
+    }
   );
 
   const packagesMetadata = result.stdout
     .split("\n")
-    .filter(package => package !== "")
-    .map(package => JSON.parse(package));
+    .filter((package) => package !== "")
+    .map((package) => JSON.parse(package));
 
   return packagesMetadata;
 }
@@ -45,7 +45,7 @@ function getResolveAliases(packagesMetadata) {
       const package = array[currentIndex];
       return { ...previousValue, [package.name]: `${package.location}/src` };
     },
-    {},
+    {}
   );
 }
 

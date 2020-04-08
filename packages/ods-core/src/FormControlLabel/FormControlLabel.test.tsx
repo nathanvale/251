@@ -8,7 +8,7 @@ test("it renders an icon and embeds the control inside it", () => {
       id="helperText"
       label="This is a simple label"
       control={<div id="childControl" />}
-    />,
+    />
   );
 
   expect(container).toMatchSnapshot();

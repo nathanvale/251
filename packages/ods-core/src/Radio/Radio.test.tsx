@@ -24,7 +24,7 @@ test("it renders a Radio in error state correctly", () => {
 
 test("it renders a disabled Radio", () => {
   const { container } = render(
-    <Radio label="Check 1" id="my-radio" disabled />,
+    <Radio label="Check 1" id="my-radio" disabled />
   );
 
   expect(container).toMatchSnapshot();

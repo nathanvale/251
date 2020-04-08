@@ -6,7 +6,7 @@ test("it renders the text as a paragraph", () => {
   const { container } = render(
     <FormHelperText id="helperText" data-id="helperTextDataId">
       This is a simple helper text
-    </FormHelperText>,
+    </FormHelperText>
   );
 
   expect(container).toMatchSnapshot();
@@ -16,7 +16,7 @@ test("it passes down id, data-id and children text", () => {
   const { getAllByText } = render(
     <FormHelperText id="helperText" data-id="helperTextDataId">
       This is a simple helper text
-    </FormHelperText>,
+    </FormHelperText>
   );
 
   const items = getAllByText("This is a simple helper text");

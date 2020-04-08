@@ -6,9 +6,9 @@ const result = spawnSync(
   {
     stdio: "pipe",
     encoding: "utf-8",
-  },
+  }
 );
-const packages = result.stdout.split("\n").filter(package => package !== "");
+const packages = result.stdout.split("\n").filter((package) => package !== "");
 
 module.exports = {
   extends:

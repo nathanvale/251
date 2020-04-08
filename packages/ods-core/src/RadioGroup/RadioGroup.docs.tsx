@@ -60,7 +60,7 @@ export const docs: ComponentDocs<RadioGroupProps> = {
             <RadioGroup
               name="cities"
               value={city}
-              onChange={e => setCity(e.target.value)}
+              onChange={(e) => setCity(e.target.value)}
             >
               <Radio label="Melbourne" id="mlb" value="mlb" />
               <Radio label="Sydney" id="syd" value="syd" />

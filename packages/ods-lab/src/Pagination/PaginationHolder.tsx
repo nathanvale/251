@@ -9,7 +9,7 @@ export interface PaginationHolderProps {
 }
 
 export const PaginationHolder = (
-  props: PaginationHolderProps,
+  props: PaginationHolderProps
 ): React.ReactElement => {
   const comps = Array.from(Array(props.pages)).map(
     (_button, i) =>
@@ -25,7 +25,7 @@ export const PaginationHolder = (
         >
           {i + 1}
         </PaginationButton>
-      )),
+      ))
   );
   return <>{comps}</>;
 };

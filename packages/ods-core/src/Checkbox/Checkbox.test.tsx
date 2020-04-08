@@ -10,7 +10,7 @@ test("it renders an unchecked Checkbox with label", () => {
 
 test("it shows correct label", () => {
   const { getAllByText } = render(
-    <Checkbox label="Check 1" id="my-checkbox" />,
+    <Checkbox label="Check 1" id="my-checkbox" />
   );
 
   const items = getAllByText("Check 1");
@@ -20,7 +20,7 @@ test("it shows correct label", () => {
 
 test("it renders a Checkbox in error state correctly", () => {
   const { container } = render(
-    <Checkbox label="Check 1" id="my-checkbox" error />,
+    <Checkbox label="Check 1" id="my-checkbox" error />
   );
 
   expect(container).toMatchSnapshot();
@@ -28,7 +28,7 @@ test("it renders a Checkbox in error state correctly", () => {
 
 test("it renders a disabled Checkbox", () => {
   const { container } = render(
-    <Checkbox label="Check 1" id="my-checkbox" disabled />,
+    <Checkbox label="Check 1" id="my-checkbox" disabled />
   );
 
   expect(container).toMatchSnapshot();

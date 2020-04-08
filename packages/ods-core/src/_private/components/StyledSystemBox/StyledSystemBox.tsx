@@ -112,12 +112,12 @@ export const StyledSystemBox = styled.div<StyledSystemProps>`
         :active {
            transform: ${({ theme, transform }) => theme.transforms[transform!]};
          }
-        ${p =>
+        ${(p) =>
           p.width === "full" &&
           css`
             width: 100%;
           `}
-        ${p => (p.height === "full" ? "height: 100%;" : null)}
+        ${(p) => (p.height === "full" ? "height: 100%;" : null)}
         ${({ theme, showAnts }) =>
           showAnts &&
           css`

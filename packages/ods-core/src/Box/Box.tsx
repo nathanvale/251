@@ -91,7 +91,7 @@ export const StyledAReset = styled(StyledSystemBox.withComponent("a"))<
 `;
 
 export const StyledButtonReset = styled(
-  StyledSystemBox.withComponent("button"),
+  StyledSystemBox.withComponent("button")
 )<BoxProps>`
   background: none;
   text-decoration: none;
@@ -179,19 +179,19 @@ export const Box = ({
     backgroundColor: normaliseResponsiveProp<ColorVariants>(backgroundColor),
     display: normaliseResponsiveProp<DisplayVariants>(display),
     flexDirection: normaliseResponsiveProp<FlexDirectionVariants>(
-      flexDirection,
+      flexDirection
     ),
     justifyContent: normaliseResponsiveProp<JustifyContentVariants>(
-      justifyContent,
+      justifyContent
     ),
     padding: normaliseResponsiveProp<CSS.PaddingProperty<TLength>>(padding),
     paddingLeft: normaliseResponsiveProp<CSS.PaddingLeftProperty<TLength>>(pL),
     paddingRight: normaliseResponsiveProp<CSS.PaddingRightProperty<TLength>>(
-      pR,
+      pR
     ),
     paddingTop: normaliseResponsiveProp<CSS.PaddingTopProperty<TLength>>(pT),
     paddingBottom: normaliseResponsiveProp<CSS.PaddingBottomProperty<TLength>>(
-      pB,
+      pB
     ),
     position: normaliseResponsiveProp<CSS.PositionProperty>(position),
     margin: normaliseResponsiveProp<CSS.MarginProperty<TLength>>(margin),
@@ -199,7 +199,7 @@ export const Box = ({
     marginRight: normaliseResponsiveProp<CSS.MarginRightProperty<TLength>>(mR),
     marginTop: normaliseResponsiveProp<CSS.MarginTopProperty<TLength>>(mT),
     marginBottom: normaliseResponsiveProp<CSS.MarginBottomProperty<TLength>>(
-      mB,
+      mB
     ),
     textAlign: normaliseResponsiveProp<CSS.TextAlignProperty>(textAlign),
   };

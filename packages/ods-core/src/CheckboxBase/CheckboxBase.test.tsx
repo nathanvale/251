@@ -29,7 +29,7 @@ test("it renders a disabled CheckboxBase", () => {
 describe("uncontrolled CheckboxBase", () => {
   test("it passes down id and data-id", () => {
     const { container } = render(
-      <CheckboxBase data-id="checkboxRoot" id="mychk" />,
+      <CheckboxBase data-id="checkboxRoot" id="mychk" />
     );
 
     const chkRoot = queryByAttribute("data-id", container, "checkboxRoot");
@@ -41,7 +41,7 @@ describe("uncontrolled CheckboxBase", () => {
 
   test("it is clicked, it will set Mui-Checked prop", () => {
     const { container } = render(
-      <CheckboxBase data-id="checkboxRoot" id="mychk" />,
+      <CheckboxBase data-id="checkboxRoot" id="mychk" />
     );
 
     const chkRoot = queryByAttribute("data-id", container, "checkboxRoot");

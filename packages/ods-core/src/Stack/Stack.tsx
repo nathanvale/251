@@ -40,7 +40,7 @@ const Container = styled.div<ContainerProps>`
   width: 100%;
   display: flex;
   flex-direction: column;
-  ${p =>
+  ${(p) =>
     p.alignItems &&
     css`
       align-items: ${p.alignItems};
@@ -65,7 +65,7 @@ export const Stack = ({
   return (
     <Container
       marginBottom={normaliseResponsiveProp<CSS.MarginBottomProperty<TLength>>(
-        space,
+        space
       )}
       data-id={dataId}
       alignItems={mapHAlignToAlignItems(alignX)}

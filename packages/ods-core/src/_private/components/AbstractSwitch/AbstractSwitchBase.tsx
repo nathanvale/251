@@ -20,7 +20,7 @@ const useSwitchBaseStyle = makeStyles((theme: Theme) => ({
 }));
 
 export function AbstractSwitchBase<T extends SwitchBaseMuiProps>(
-  props: AbstractSwitchBaseProps<T>,
+  props: AbstractSwitchBaseProps<T>
 ) {
   const {
     "aria-describedby": describedBy,

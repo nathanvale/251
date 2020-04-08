@@ -8,7 +8,7 @@ import { ResponsiveValue } from "styled-system";
  */
 
 export const normaliseResponsiveProp = <T>(
-  space?: ResponsiveProp<T>,
+  space?: ResponsiveProp<T>
 ): ResponsiveValue<T> | undefined => {
   if (typeof space === "string") {
     return space;

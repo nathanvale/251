@@ -12,17 +12,17 @@ test("it selects only one Radio in the group when one clicked", () => {
     <RadioGroup
       name="cities"
       value={value}
-      onChange={e => setValue(e.target.value)}
+      onChange={(e) => setValue(e.target.value)}
       label="Cities"
     >
       <Radio label="Melbourne" id="mlb" value="mlb" />
       <Radio label="Sydney" id="syd" value="syd" />
       <Radio label="Perth" id="prt" value="prt" />
-    </RadioGroup>,
+    </RadioGroup>
   );
 
   const [mlbInput, sydInput, prtInput] = Array.from(
-    container.getElementsByTagName("input"),
+    container.getElementsByTagName("input")
   );
 
   sydInput.click();

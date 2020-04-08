@@ -57,25 +57,25 @@ interface CardSectionProps {
 }
 
 const CardSection = styled(Box)<CardSectionProps>`
-${p => css`
+${(p) => css`
   @media (min-width: ${p.theme.breakpoints.sm}) {
     max-width: ${cardSizeForVariant[p.cardSize].sm}px;
   }
 `}
 
-${p => css`
+${(p) => css`
   @media (min-width: ${p.theme.breakpoints.md}) {
     max-width: ${cardSizeForVariant[p.cardSize].md}px;
   }
 `}
 
-${p => css`
+${(p) => css`
   @media (min-width: ${p.theme.breakpoints.lg}) {
     max-width: ${cardSizeForVariant[p.cardSize].lg}px;
   }
 `}
 
-${p => css`
+${(p) => css`
   @media (min-width: ${p.theme.breakpoints.xl}) {
     max-width: ${cardSizeForVariant[p.cardSize].xl}px;
   }
@@ -131,7 +131,7 @@ const CardCenteredStack = ({
 interface WidgetContainerProps extends MarginBottomProps, MarginTopProps {}
 
 const WidgetContainer = styled<Omit<BoxProps, "marginTop" | "marginBottom">>(
-  Box,
+  Box
 )<WidgetContainerProps>`
   ${marginTop} ${marginBottom};
 `;

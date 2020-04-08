@@ -44,7 +44,7 @@ function formControlState({
 
       return acc;
     },
-    {} as FormControlState,
+    {} as FormControlState
   );
 }
 

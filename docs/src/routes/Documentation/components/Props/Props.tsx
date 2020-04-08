@@ -45,9 +45,9 @@ function updateDescForMuiProps<T>(
     required: boolean;
     type: NormalisedPropType;
   }[],
-  propDescriptions: ComponentDocs<T>["propDescriptions"],
+  propDescriptions: ComponentDocs<T>["propDescriptions"]
 ) {
-  if (props.find(prop => prop.propName === "muiProps")) {
+  if (props.find((prop) => prop.propName === "muiProps")) {
     return {
       ...propDescriptions,
       muiProps: "See component's code for the details of this prop.",
@@ -57,7 +57,7 @@ function updateDescForMuiProps<T>(
 }
 
 const isValidComponentName = (
-  componentName: string | number | symbol,
+  componentName: string | number | symbol
 ): componentName is ComponentName => {
   return componentDocs.hasOwnProperty(componentName);
 };
@@ -111,7 +111,7 @@ export function Props<T = {}>({
 
   const [requiredProps, optionalProps] = partition(
     props,
-    prop => prop.required,
+    (prop) => prop.required
   );
 
   propDescriptions = updateDescForMuiProps(optionalProps, propDescriptions);
@@ -122,7 +122,7 @@ export function Props<T = {}>({
 
   const defaultProps = mapValues(
     (component && component.defaultProps) || {},
-    value => {
+    (value) => {
       if (typeof value === "boolean") {
         return Boolean(value).toString();
       }
@@ -133,7 +133,7 @@ export function Props<T = {}>({
         return JSON.stringify(value, null, 2);
       }
       return value;
-    },
+    }
   );
 
   const hasDefaultProps = !isEmpty(defaultProps);

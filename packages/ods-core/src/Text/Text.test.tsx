@@ -47,7 +47,7 @@ test("It can render body text critical tone", () => {
   const { container } = render(
     <Text weight="strong" tone="critcal">
       Body Text
-    </Text>,
+    </Text>
   );
   expect(container.firstChild).toMatchSnapshot();
 });
@@ -56,7 +56,7 @@ test("It can render body text positive tone", () => {
   const { container } = render(
     <Text weight="strong" tone="positive">
       Body Text
-    </Text>,
+    </Text>
   );
   expect(container.firstChild).toMatchSnapshot();
 });
@@ -65,7 +65,7 @@ test("It can render body text truncated", () => {
   const { container } = render(
     <Box style={{ width: 90 }}>
       <Text truncate>Truncated text</Text>
-    </Box>,
+    </Box>
   );
   expect(container.firstChild).toMatchSnapshot();
 });

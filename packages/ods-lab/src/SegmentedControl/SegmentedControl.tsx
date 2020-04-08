@@ -21,7 +21,7 @@ export const SegmentedControl = (props: SegmentedControlProps) => {
       </Grid>
       <Grid item>
         <ToggleButtonGroup value={value} exclusive onChange={onChange}>
-          {options.map(s => (
+          {options.map((s) => (
             <ToggleButton key={s.value} value={s.value}>
               {s.content}
             </ToggleButton>

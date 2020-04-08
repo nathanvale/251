@@ -12,7 +12,7 @@ test("renders a legend element", () => {
   const { container } = render(
     <FormLabel id="mylbl" component="legend">
       Some label
-    </FormLabel>,
+    </FormLabel>
   );
 
   expect(container.getElementsByTagName("label")).toHaveLength(0);

@@ -24,7 +24,7 @@ test("it renders a card with large padding", () => {
 
 test("it renders a card with a selected background color", () => {
   const { container } = render(
-    <Card padding="large" backgroundColor="grey50" />,
+    <Card padding="large" backgroundColor="grey50" />
   );
   expect(container.firstChild).toMatchSnapshot();
 });

@@ -19,14 +19,14 @@ test("it spaces column comps with small space", () => {
       <Column>
         <Placeholder />
       </Column>
-    </Columns>,
+    </Columns>
   );
   //Parent container sets initial margin to negative of the space value.
   const style = window.getComputedStyle(container.firstChild as Element);
   expect(style.marginLeft).toEqual("-12px");
 
   // Each Column then sets a left padding of space (small = 12px).
-  queryAllByAttribute("data-id", container, "column").forEach(colEl => {
+  queryAllByAttribute("data-id", container, "column").forEach((colEl) => {
     const elStyle = window.getComputedStyle(colEl.firstChild as Element);
     expect(elStyle.paddingLeft).toEqual("12px");
   });
@@ -44,7 +44,7 @@ test("it top-aligns children by default", () => {
       <Column>
         <Placeholder height="70px" />
       </Column>
-    </Columns>,
+    </Columns>
   );
 
   const columnsEl = queryAllByAttribute("data-id", container, "columns")[0];
@@ -64,7 +64,7 @@ test("it vertically aligns children middle if alignY is center", () => {
       <Column>
         <Placeholder height="70px" />
       </Column>
-    </Columns>,
+    </Columns>
   );
 
   const columnsEl = queryAllByAttribute("data-id", container, "columns")[0];
@@ -84,7 +84,7 @@ test("it vertically aligns children bottom if alignY is bottom", () => {
       <Column>
         <Placeholder height="70px" />
       </Column>
-    </Columns>,
+    </Columns>
   );
 
   const columnsEl = queryAllByAttribute("data-id", container, "columns")[0];

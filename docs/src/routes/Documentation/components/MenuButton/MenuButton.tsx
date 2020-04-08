@@ -27,7 +27,7 @@ const Bar = styled(Box)`
 
 const Bar1 = styled(Bar)<{ open: boolean }>`
   top: 0;
-  ${p =>
+  ${(p) =>
     p.open &&
     css`
       transform: translateY(11px) rotate(45deg);
@@ -36,7 +36,7 @@ const Bar1 = styled(Bar)<{ open: boolean }>`
 
 const Bar2 = styled(Bar)`
   top: 11px;
-  ${p =>
+  ${(p) =>
     p.open &&
     css`
       opacity: 0;
@@ -44,7 +44,7 @@ const Bar2 = styled(Bar)`
 `;
 const Bar3 = styled(Bar)`
   top: 22px;
-  ${p =>
+  ${(p) =>
     p.open &&
     css`
       transform: translateY(-11px) rotate(-45deg);

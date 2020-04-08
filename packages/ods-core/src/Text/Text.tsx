@@ -41,7 +41,7 @@ const typographyVariants: Record<TextVariants, MUITypographyVariants> = {
 };
 
 const getToneVariants = (
-  theme: Theme,
+  theme: Theme
 ): Record<TextToneVariants, React.CSSProperties["color"]> => ({
   neutral: theme.palette.grey[500],
   critcal: theme.palette.critical.main,
@@ -49,7 +49,7 @@ const getToneVariants = (
 });
 
 const getWeightVariants = (
-  theme: Theme,
+  theme: Theme
 ): Record<TextWeightVariants, React.CSSProperties["fontWeight"]> => ({
   regular: theme.typography.fontWeightRegular,
   medium: theme.typography.fontWeightMedium,

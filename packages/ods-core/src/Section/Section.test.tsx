@@ -9,7 +9,7 @@ test("It sets the grey50 background correctly", () => {
       <Placeholder />
       <Placeholder />
       <Placeholder />
-    </Section>,
+    </Section>
   );
   const style = window.getComputedStyle(container.firstChild as Element);
   expect(style.backgroundColor).toEqual("rgb(248, 248, 248)");
@@ -21,7 +21,7 @@ test("It sets the white background correctly", () => {
       <Placeholder />
       <Placeholder />
       <Placeholder />
-    </Section>,
+    </Section>
   );
   const style = window.getComputedStyle(container.firstChild as Element);
   expect(style.backgroundColor).toEqual("rgb(255, 255, 255)");
@@ -33,7 +33,7 @@ test("It sets the transparent background if no background is provided", () => {
       <Placeholder />
       <Placeholder />
       <Placeholder />
-    </Section>,
+    </Section>
   );
   const style = window.getComputedStyle(container.firstChild as Element);
   expect(style.backgroundColor).toEqual("rgb(255, 255, 255)");
@@ -45,7 +45,7 @@ test("should have no max-width if fluidity is set to full-width", () => {
       <Placeholder />
       <Placeholder />
       <Placeholder />
-    </Section>,
+    </Section>
   );
   const style = window.getComputedStyle(container.firstChild as Element);
   expect(style.maxWidth).toEqual("");
@@ -55,7 +55,7 @@ test("should hide gutters if hideGutter is true", () => {
   const { container } = render(
     <Section hideGutter={true}>
       <Placeholder />
-    </Section>,
+    </Section>
   );
   const style = window.getComputedStyle(container.firstChild as Element);
   expect(style.paddingLeft).toEqual("0px");
@@ -66,7 +66,7 @@ test("should have gutters by default", () => {
   const { container } = render(
     <Section>
       <Placeholder />
-    </Section>,
+    </Section>
   );
 
   const subContainer = container.firstChild && container.firstChild.firstChild;
@@ -79,7 +79,7 @@ test("should stretch the height to full if stretchY is true", () => {
   const { container } = render(
     <Section stretchY>
       <Placeholder />
-    </Section>,
+    </Section>
   );
   const style = window.getComputedStyle(container.firstChild as Element);
   expect(style.height).toEqual("100%");
@@ -89,7 +89,7 @@ test("should not stretch the height by default", () => {
   const { container } = render(
     <Section>
       <Placeholder />
-    </Section>,
+    </Section>
   );
   const style = window.getComputedStyle(container.firstChild as Element);
   expect(style.height).toEqual("");
@@ -99,7 +99,7 @@ test("should show paddingY none", () => {
   const { container } = render(
     <Section paddingY="none">
       <Placeholder />
-    </Section>,
+    </Section>
   );
   const style = window.getComputedStyle(container.firstChild as Element);
   expect(style.padding).toEqual("0px 0px 0px 0px");
@@ -109,7 +109,7 @@ test("should show paddingY small", () => {
   const { container } = render(
     <Section>
       <Placeholder />
-    </Section>,
+    </Section>
   );
   const style = window.getComputedStyle(container.firstChild as Element);
   expect(style.padding).toEqual("32px 0px 32px 0px");
@@ -119,7 +119,7 @@ test("should show paddingY medium", () => {
   const { container } = render(
     <Section paddingY="medium">
       <Placeholder />
-    </Section>,
+    </Section>
   );
   const style = window.getComputedStyle(container.firstChild as Element);
   expect(style.padding).toEqual("32px 0px 32px 0px");

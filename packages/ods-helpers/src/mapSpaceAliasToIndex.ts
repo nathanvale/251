@@ -27,14 +27,14 @@ export const mapSpaceAliasToIndex = ({
 }: MapSpaceAliasToIndexProps) => {
   const sign = isNegative ? -1 : 1;
   if (space instanceof Array) {
-    return space.map(alias =>
-      alias ? spacingAliasToIndex[alias] * sign : null,
+    return space.map((alias) =>
+      alias ? spacingAliasToIndex[alias] * sign : null
     );
   } else if (typeof space === "string") {
     return spacingAliasToIndex[space] * sign;
   } else if (space instanceof Object) {
     const obj: Partial<Record<BreakpointVariants, number>> = {};
-    Object.keys(space).forEach(alias => {
+    Object.keys(space).forEach((alias) => {
       const value = space[alias as BreakpointVariants];
       obj[alias as BreakpointVariants] = spacingAliasToIndex[value!] * sign;
     });
