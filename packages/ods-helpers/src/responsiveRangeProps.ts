@@ -8,7 +8,7 @@ export interface ResponsiveRangeProps {
 }
 
 export const resolveResponsiveRangeProps = (
-  props: ResponsiveRangeProps,
+  props: ResponsiveRangeProps
 ): [boolean, boolean, boolean, boolean, boolean] => {
   const { above, below } = props;
 

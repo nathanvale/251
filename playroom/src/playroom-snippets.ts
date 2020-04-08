@@ -4,8 +4,8 @@ import { getCodeAsString } from "@origin-digital/ods-scripts";
 
 const components = Object.keys(odsCore);
 const config = components
-  .filter(name => !/^(OriginThemeProvider|Box)/.test(name))
-  .map(name => {
+  .filter((name) => !/^(OriginThemeProvider|Box)/.test(name))
+  .map((name) => {
     let snippets: ComponentDocs["snippets"];
     try {
       snippets = require(`../../packages/ods-core/src/${name}/${name}.docs.tsx`).docs.snippets.map(
@@ -13,13 +13,13 @@ const config = components
           name: snippet.label,
           code: getCodeAsString(snippet.Code),
           group: name,
-        }),
+        })
       );
     } catch (error) {
       snippets = [];
     }
     return snippets;
   })
-  .flatMap(x => x);
+  .flatMap((x) => x);
 
 export default config;

@@ -17,7 +17,7 @@ export const getHeightCorrection = (
   lineHeight: number,
   fontSize: number,
   capHeightScale: number,
-  gridRow: number,
+  gridRow: number
 ) => {
   const topSpace = lineHeight - capHeightScale * fontSize;
   return topSpace > gridRow ? topSpace - (topSpace % gridRow) : 0;
@@ -25,7 +25,7 @@ export const getHeightCorrection = (
 
 export function getBasekickStyles(
   fontSizeValue: FontSizeMetrics,
-  adjustY: number = 0,
+  adjustY: number = 0
 ): BasekickStyles {
   const baseFontSize = 1;
   const fontSize = fontSizeValue.size * baseFontSize;
@@ -35,7 +35,7 @@ export function getBasekickStyles(
     lineHeight,
     fontSize,
     capHeightScale,
-    gridRow,
+    gridRow
   );
 
   const preventCollapse = 1;

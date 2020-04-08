@@ -29,7 +29,7 @@ test("it renders a disabled RadioBase", () => {
 describe("uncontrolled RadioBase", () => {
   test("it passes down id and data-id", () => {
     const { container } = render(
-      <RadioBase data-id="radioRoot" id="myRadio" />,
+      <RadioBase data-id="radioRoot" id="myRadio" />
     );
 
     const chkRoot = queryByAttribute("data-id", container, "radioRoot");
@@ -41,7 +41,7 @@ describe("uncontrolled RadioBase", () => {
 
   test("it is clicked, it will set Mui-Checked prop", () => {
     const { container } = render(
-      <RadioBase data-id="radioRoot" id="myRadio" />,
+      <RadioBase data-id="radioRoot" id="myRadio" />
     );
 
     const chkRoot = queryByAttribute("data-id", container, "radioRoot");

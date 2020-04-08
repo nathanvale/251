@@ -12,16 +12,16 @@ test("it selects only one Radio in the group when one clicked", () => {
     <RadioGroupBase
       name="cities"
       value={value}
-      onChange={e => setValue(e.target.value)}
+      onChange={(e) => setValue(e.target.value)}
     >
       <Radio label="Melbourne" id="mlb" value="mlb" />
       <Radio label="Sydney" id="syd" value="syd" />
       <Radio label="Perth" id="prt" value="prt" />
-    </RadioGroupBase>,
+    </RadioGroupBase>
   );
 
   const [mlbInput, sydInput, prtInput] = Array.from(
-    container.getElementsByTagName("input"),
+    container.getElementsByTagName("input")
   );
 
   mlbInput.click();
@@ -52,16 +52,16 @@ test("when value is undefined, no radio is selected", () => {
     <RadioGroupBase
       name="cities"
       value={value}
-      onChange={e => setValue(e.target.value)}
+      onChange={(e) => setValue(e.target.value)}
     >
       <Radio label="Melbourne" id="mlb" value="mlb" />
       <Radio label="Sydney" id="syd" value="syd" />
       <Radio label="Perth" id="prt" value="prt" />
-    </RadioGroupBase>,
+    </RadioGroupBase>
   );
 
   const [mlbInput, sydInput, prtInput] = Array.from(
-    container.getElementsByTagName("input"),
+    container.getElementsByTagName("input")
   );
 
   expect(mlbInput.checked).toBe(false);
@@ -78,16 +78,16 @@ test("when value is set, the corresponding radio is selected", () => {
     <RadioGroupBase
       name="cities"
       value={value}
-      onChange={e => setValue(e.target.value)}
+      onChange={(e) => setValue(e.target.value)}
     >
       <Radio label="Melbourne" id="mlb" value="mlb" />
       <Radio label="Sydney" id="syd" value="syd" />
       <Radio label="Perth" id="prt" value="prt" />
-    </RadioGroupBase>,
+    </RadioGroupBase>
   );
 
   const [mlbInput, sydInput, prtInput] = Array.from(
-    container.getElementsByTagName("input"),
+    container.getElementsByTagName("input")
   );
 
   expect(mlbInput.checked).toBe(false);

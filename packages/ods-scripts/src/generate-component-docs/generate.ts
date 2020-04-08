@@ -34,8 +34,8 @@ const reactNodeTypes = [
 // eslint-disable-next-line consistent-return
 export default () => {
   const basePath = path.dirname(tsconfigPath);
-  const { config, error } = ts.readConfigFile(tsconfigPath, filename =>
-    fs.readFileSync(filename, "utf8"),
+  const { config, error } = ts.readConfigFile(tsconfigPath, (filename) =>
+    fs.readFileSync(filename, "utf8")
   );
 
   if (error) {
@@ -49,7 +49,7 @@ export default () => {
     ts.sys,
     basePath,
     {},
-    tsconfigPath,
+    tsconfigPath
   );
 
   if (errors && errors.length) {
@@ -65,7 +65,7 @@ export default () => {
   const getComponentPropsType = (exp: ts.Symbol) => {
     const type = checker.getTypeOfSymbolAtLocation(
       exp,
-      exp.valueDeclaration || exp.declarations[0],
+      exp.valueDeclaration || exp.declarations[0]
     );
 
     const callSignatures = type.getCallSignatures();
@@ -90,7 +90,7 @@ export default () => {
 
   const normalizeInterface = (
     propsType: ts.Type,
-    propsObj: ts.Symbol,
+    propsObj: ts.Symbol
   ): NormalisedInterface => {
     return {
       type: "interface",
@@ -98,8 +98,8 @@ export default () => {
         {},
         ...propsType
           .getProperties()
-          .filter(prop => !propBlacklist.includes(prop.getName()))
-          .map(prop => {
+          .filter((prop) => !propBlacklist.includes(prop.getName()))
+          .map((prop) => {
             const propName = prop.getName();
 
             // Find type of prop by looking in context of the props object itself.
@@ -111,7 +111,7 @@ export default () => {
               (prop.getFlags() & ts.SymbolFlags.Optional) !== 0;
 
             const typeAlias = checker.typeToString(
-              checker.getTypeAtLocation(prop.valueDeclaration),
+              checker.getTypeAtLocation(prop.valueDeclaration)
             );
 
             return {
@@ -125,14 +125,14 @@ export default () => {
                     : normaliseType(propType, propsObj),
               },
             };
-          }),
+          })
       ),
     };
   };
 
   const normaliseType = (
     type: ts.Type,
-    propsObj: ts.Symbol,
+    propsObj: ts.Symbol
   ): NormalisedPropType => {
     const typeString = checker.typeToString(type);
 
@@ -146,8 +146,8 @@ export default () => {
       if (aliasWhitelist.includes(alias)) {
         return {
           params: type.aliasTypeArguments
-            ? type.aliasTypeArguments.map(aliasArg =>
-                normaliseType(aliasArg, propsObj),
+            ? type.aliasTypeArguments.map((aliasArg) =>
+                normaliseType(aliasArg, propsObj)
               )
             : [],
           alias,
@@ -157,16 +157,16 @@ export default () => {
     }
 
     if (type.isUnion()) {
-      const types = type.types.map(unionItem =>
-        checker.typeToString(unionItem),
+      const types = type.types.map((unionItem) =>
+        checker.typeToString(unionItem)
       );
 
       return isEqual(types, reactNodeTypes)
         ? "ReactNode"
         : {
             type: "union",
-            types: type.types.map(unionItem =>
-              normaliseType(unionItem, propsObj),
+            types: type.types.map((unionItem) =>
+              normaliseType(unionItem, propsObj)
             ),
           };
     }
@@ -187,7 +187,7 @@ export default () => {
 
     const propsType = checker.getTypeOfSymbolAtLocation(
       propsObj,
-      propsObj.valueDeclaration,
+      propsObj.valueDeclaration
     );
 
     return normalizeInterface(propsType, propsObj);
@@ -206,16 +206,16 @@ export default () => {
           ...checker
             .getExportsOfModule(moduleSymbol)
             .filter(
-              moduleExport =>
-                !moduleExport.escapedName.toString().match(/^.*Props$/),
+              (moduleExport) =>
+                !moduleExport.escapedName.toString().match(/^.*Props$/)
             )
-            .map(moduleExport => {
+            .map((moduleExport) => {
               return {
                 [moduleExport.escapedName as string]: getComponentDocs(
-                  moduleExport,
+                  moduleExport
                 ),
               };
-            }),
+            })
         );
       }
     }

@@ -6,14 +6,14 @@ export const typeSerializer = {
     type: NormalisedPropType,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     serializer: (value: any) => string,
-    indent: (value: string) => string,
+    indent: (value: string) => string
   ) => {
     if (typeof type === "string") {
       return type;
     } else if (type.type === "union") {
       return type.types
         .sort()
-        .map(subType => {
+        .map((subType) => {
           return `\n${indent(`| ${serializer(subType)}`)}`;
         })
         .join("");
@@ -22,8 +22,8 @@ export const typeSerializer = {
         .map(
           ({ propName, required, type: propType }) =>
             `\n${indent(
-              `${propName}${required ? "" : "?"}: ${serializer(propType)}`,
-            )}`,
+              `${propName}${required ? "" : "?"}: ${serializer(propType)}`
+            )}`
         )
         .join("")}\n}`;
     } else {

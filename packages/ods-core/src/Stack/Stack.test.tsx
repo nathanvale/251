@@ -12,7 +12,7 @@ test("It can stack", () => {
       <Placeholder />
       <Placeholder />
       <Placeholder />
-    </Stack>,
+    </Stack>
   );
   expect(container.firstChild).toMatchSnapshot();
 });
@@ -23,7 +23,7 @@ test("It can distribute space", () => {
       <Placeholder />
       <Placeholder />
       <Placeholder />
-    </Stack>,
+    </Stack>
   );
 
   const stackChildren = container.firstChild!.childNodes;
@@ -37,7 +37,7 @@ test("It can distribute space", () => {
 
   // last element has padding-bottom set to 0.
   const style = window.getComputedStyle(
-    stackChildren[stackChildren.length - 1] as Element,
+    stackChildren[stackChildren.length - 1] as Element
   );
   expect(style.paddingBottom).toEqual("0px");
 });
@@ -48,7 +48,7 @@ test("It adds dividers", () => {
       <Placeholder />
       <Placeholder />
       <Placeholder />
-    </Stack>,
+    </Stack>
   );
   expect(container.firstChild).toMatchSnapshot();
 });
@@ -56,7 +56,7 @@ test("It does not add dividers if there is only 1 child", () => {
   const { container } = render(
     <Stack space="medium" dividers>
       <Placeholder />
-    </Stack>,
+    </Stack>
   );
   expect(container.children).toHaveLength(1);
 });
@@ -66,7 +66,7 @@ test("It stretches children by default", () => {
     <Stack>
       <Placeholder />
       <Placeholder />
-    </Stack>,
+    </Stack>
   );
 
   const columnsEl = queryAllByAttribute("data-id", container, "stack")[0];
@@ -79,7 +79,7 @@ test("It can right-align components", () => {
     <Stack alignX="right">
       <Placeholder width="120px" />
       <Placeholder width="120px" />
-    </Stack>,
+    </Stack>
   );
   const columnsEl = queryAllByAttribute("data-id", container, "stack")[0];
   const style = window.getComputedStyle(columnsEl as Element);
@@ -91,7 +91,7 @@ test("It can center-align components", () => {
     <Stack alignX="center">
       <Placeholder width="120px" />
       <Placeholder width="120px" />
-    </Stack>,
+    </Stack>
   );
   const columnsEl = queryAllByAttribute("data-id", container, "stack")[0];
   const style = window.getComputedStyle(columnsEl as Element);
@@ -102,7 +102,7 @@ test("It can left-align children", () => {
   const { container } = render(
     <Stack alignX="left">
       <Placeholder data-id="childElement" width="120px" />
-    </Stack>,
+    </Stack>
   );
   const columnsEl = queryAllByAttribute("data-id", container, "stack")[0];
   const style = window.getComputedStyle(columnsEl as Element);
@@ -114,10 +114,10 @@ test("It adds data-id", () => {
     <Stack data-id="MyCustomStack">
       <Placeholder />
       <Placeholder />
-    </Stack>,
+    </Stack>
   );
 
   expect(
-    queryAllByAttribute("data-id", dom.container, "MyCustomStack"),
+    queryAllByAttribute("data-id", dom.container, "MyCustomStack")
   ).toHaveLength(1);
 });

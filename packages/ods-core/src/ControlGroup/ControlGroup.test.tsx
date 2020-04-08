@@ -16,11 +16,11 @@ test("It renders a label and a helper text", () => {
         <Radio label="Sydney" id="syd" value="syd" />
         <Radio label="Perth" id="prt" value="prt" />
       </RadioGroupBase>
-    </ControlGroup>,
+    </ControlGroup>
   );
 
   expect(container.querySelector("#cityGroup")?.tagName.toLowerCase()).toBe(
-    "fieldset",
+    "fieldset"
   );
   expect(getByText("Australia cities").tagName.toLowerCase()).toBe("legend");
   expect(getByText("These are just a few").tagName.toLowerCase()).toBe("p");
@@ -39,11 +39,11 @@ test("when it is in error state, the Radio Svgs pick up that state too", () => {
         <Radio label="Sydney" id="syd" value="syd" />
         <Radio label="Perth" id="prt" value="prt" />
       </RadioGroupBase>
-    </ControlGroup>,
+    </ControlGroup>
   );
 
   const [mlbSvg, sydSvg, prtSvg] = Array.from(
-    container.getElementsByTagName("svg"),
+    container.getElementsByTagName("svg")
   );
 
   expect(window.getComputedStyle(mlbSvg).color).toBe("rgb(236, 0, 0)");
@@ -64,7 +64,7 @@ test("when disabled, the Radio inputs become disabled as well", () => {
         <Radio label="Sydney" id="syd" value="syd" />
         <Radio label="Perth" id="prt" value="prt" />
       </RadioGroupBase>
-    </ControlGroup>,
+    </ControlGroup>
   );
 
   const [mlb, syd, prt] = Array.from(container.getElementsByTagName("input"));
@@ -88,10 +88,10 @@ test("overrides components for root and label", () => {
         <Radio label="Sydney" id="syd" value="syd" />
         <Radio label="Perth" id="prt" value="prt" />
       </RadioGroupBase>
-    </ControlGroup>,
+    </ControlGroup>
   );
   expect(container.querySelector("#cityGroup")?.tagName.toLowerCase()).toBe(
-    "div",
+    "div"
   );
   expect(getByText("Australia cities").tagName.toLowerCase()).toBe("label");
 });

@@ -14,7 +14,7 @@ export interface OverlayProps {
 }
 
 const StyledBox = styled(Box)<OverlayProps>`
-  opacity: ${p => (p.visible ? "1" : "0")};
+  opacity: ${(p) => (p.visible ? "1" : "0")};
   top: 0;
   right: 0;
   bottom: 0;

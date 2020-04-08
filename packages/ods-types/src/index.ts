@@ -85,7 +85,7 @@ export type Space = [
   number,
   number,
   number,
-  number,
+  number
 ] &
   SpaceTShirts;
 
@@ -218,7 +218,7 @@ export interface BaseInputProps extends BaseFormStateProps {
   name?: string;
   onChange?: (
     event: React.ChangeEvent<HTMLInputElement>,
-    value: string,
+    value: string
   ) => void;
   value?: InputValueType;
 }
@@ -227,7 +227,7 @@ export interface BaseSwitchBaseProps extends Omit<BaseInputProps, "onChange"> {
   checked?: boolean;
   onChange?: (
     event: React.ChangeEvent<HTMLInputElement>,
-    checked: boolean,
+    checked: boolean
   ) => void;
 }
 

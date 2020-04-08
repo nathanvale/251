@@ -22,7 +22,7 @@ module.exports = {
           webpackConfig.module.rules[2].oneOf[1].include = [
             path.resolve(__dirname, "src"),
             // Allow babel-loader to include src code for packages
-            ...packagesMetadata.map(package => `${package.location}/src`),
+            ...packagesMetadata.map((package) => `${package.location}/src`),
           ];
           return webpackConfig;
         },

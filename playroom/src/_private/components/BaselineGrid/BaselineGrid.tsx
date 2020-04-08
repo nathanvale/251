@@ -17,9 +17,9 @@ export const BaselineGrid = ({
     height: 100%;
     background: linear-gradient(
       to bottom,
-      ${p => p.theme.colors.white},
-      ${p => p.theme.colors.white} 75%,
-      ${p => p.theme.colors.grey200} 100%
+      ${(p) => p.theme.colors.white},
+      ${(p) => p.theme.colors.white} 75%,
+      ${(p) => p.theme.colors.grey200} 100%
     );
     background-size: 100% 4px;
   `;

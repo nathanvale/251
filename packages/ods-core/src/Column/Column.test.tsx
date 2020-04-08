@@ -16,7 +16,7 @@ test("it sets width to flex by default", () => {
       <Column>
         <Placeholder />
       </Column>
-    </Columns>,
+    </Columns>
   );
   expect(container.firstChild).toMatchSnapshot();
 });
@@ -33,7 +33,7 @@ test('it correctly allocates required width for "content"', () => {
       <Column>
         <Placeholder />
       </Column>
-    </Columns>,
+    </Columns>
   );
   expect(container.firstChild).toMatchSnapshot();
 });
@@ -47,7 +47,7 @@ test("it correctly sets width for proportions 1/3 and 2/3", () => {
       <Column width="2/3">
         <Placeholder label="This is 2/3" />
       </Column>
-    </Columns>,
+    </Columns>
   );
   expect(container.firstChild).toMatchSnapshot();
 });
@@ -64,7 +64,7 @@ test("it correctly sets width for proportions 1/12, 7/12, 1/3", () => {
       <Column width="1/3">
         <Placeholder label="This is 1/3" />
       </Column>
-    </Columns>,
+    </Columns>
   );
   expect(container.firstChild).toMatchSnapshot();
 });

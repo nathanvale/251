@@ -7,7 +7,7 @@ test("it renders a Hidden", () => {
   const { container } = render(
     <Hidden>
       <Placeholder label="Not hidden" />
-    </Hidden>,
+    </Hidden>
   );
   expect(container.firstChild).toMatchSnapshot();
 });
@@ -16,7 +16,7 @@ test("it hides components below the md breakpoint", () => {
   const { container } = render(
     <Hidden below="md">
       <Placeholder label="Hidden below md." />
-    </Hidden>,
+    </Hidden>
   );
   expect(container.firstChild).toMatchSnapshot();
 });
@@ -25,7 +25,7 @@ test("it hides components above the sm breakpoint", () => {
   const { container } = render(
     <Hidden above="sm">
       <Placeholder label="Hidden above sm." />
-    </Hidden>,
+    </Hidden>
   );
   expect(container.firstChild).toMatchSnapshot();
 });
@@ -37,7 +37,7 @@ test("it hides text nodes below md", () => {
       <Hidden below="md" inline={true}>
         Hidden below md.
       </Hidden>
-    </span>,
+    </span>
   );
   expect(container.firstChild).toMatchSnapshot();
 });
@@ -49,7 +49,7 @@ test("it hides text nodes above md", () => {
       <Hidden above="md" inline={true}>
         Hidden above md.
       </Hidden>
-    </span>,
+    </span>
   );
   expect(container.firstChild).toMatchSnapshot();
 });

@@ -5,14 +5,14 @@ import babylonParser from "prettier/parser-babylon";
 import { ExampleDocs } from "@origin-digital/ods-types";
 
 const formatSnippet = memoize(
-  snippet =>
+  (snippet) =>
     prettier
       .format(snippet, {
         parser: "babel",
         plugins: [babylonParser],
         semi: false,
       })
-      .replace(/^;/, ""), // Remove leading semicolons from JSX
+      .replace(/^;/, "") // Remove leading semicolons from JSX
 );
 
 export const getCodeAsString = (Example: ExampleDocs["Code"]) => {
@@ -24,7 +24,7 @@ export const getCodeAsString = (Example: ExampleDocs["Code"]) => {
           showDefaultProps: false,
           showFunctions: false,
           filterProps: ["onChange", "onBlur", "onFocus"],
-        }),
+        })
   );
 
   return codeAsString;

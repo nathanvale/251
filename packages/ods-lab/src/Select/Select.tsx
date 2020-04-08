@@ -43,7 +43,7 @@ export const Select = (props: SelectProps) => {
         error={error}
         {...other}
       >
-        {selects.map(r => (
+        {selects.map((r) => (
           <MenuItem
             key={r.value}
             data-id={props["data-id"]}

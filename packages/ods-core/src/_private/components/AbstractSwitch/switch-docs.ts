@@ -6,7 +6,7 @@ export const getSwitchBaseDocs = (compName: string) => {
     id: `The unique id of the ${compName}, required for accessibility`,
 
     checked: `The value of the component. For controlled ${capitalise(
-      compName,
+      compName
     )}es this value needs to be provided.`,
     error: `If true means the component is in error state.`,
 

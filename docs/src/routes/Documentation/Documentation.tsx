@@ -22,7 +22,7 @@ interface MenuItem {
 }
 
 function getDocPaths(module: any, packageName: string) {
-  return Object.keys(module).map(name => ({
+  return Object.keys(module).map((name) => ({
     name,
     packageName,
   }));
@@ -30,14 +30,14 @@ function getDocPaths(module: any, packageName: string) {
 const componentPaths = [
   ...getDocPaths(
     odsCore,
-    "ods-core",
+    "ods-core"
   ) /*,
    ...getDocPaths(odsLab, "ods-lab"), */,
 ];
 
 const componentPathsByCategory = groupBy(
   componentPaths,
-  component => component.name,
+  (component) => component.name
 );
 
 const components = {
@@ -92,7 +92,7 @@ const MenuSectionList = ({
 const Header = styled(Box)<{ isOpen: boolean }>`
   background: white;
   z-index: 3;
-  ${p => (p.isOpen ? "position: fixed;" : undefined)}
+  ${(p) => (p.isOpen ? "position: fixed;" : undefined)}
   ${media.lg`
     position: fixed;
     width:  284px;
@@ -121,7 +121,7 @@ const Menu = styled(Box)<{ isOpen: boolean }>`
       opacity: 0;
       transform: translateY(-5px);
       pointer-events: none;
-      ${p =>
+      ${(p) =>
         p.isOpen
           ? css`
               opacity: 1;
@@ -153,12 +153,12 @@ const Content = styled(Box)`
 export const Documentation = () => {
   const location = useLocation();
   const [isMenuOpen, setMenuOpen] = useState(
-    !/^\/(guides|components|foundations|icons)\/(.*)/.test(location.pathname),
+    !/^\/(guides|components|foundations|icons)\/(.*)/.test(location.pathname)
   );
 
   const isComponentsHome = location.pathname === "/components";
   const showMenuButton = /(\/(guides|components|foundations)\/).*/.test(
-    location.pathname,
+    location.pathname
   );
 
   const componentsByCategory = groupBy(
@@ -180,7 +180,7 @@ export const Documentation = () => {
 
         return { name, ...docs };
       }),
-    component => component.category,
+    (component) => component.category
   );
 
   return (
@@ -274,7 +274,7 @@ export const Documentation = () => {
                     }))}
                   />
 
-                  {["Layout", "Content", "Form"].map(category => (
+                  {["Layout", "Content", "Form"].map((category) => (
                     <MenuSectionList
                       key={category}
                       title={`${category} Components`}
@@ -290,9 +290,9 @@ export const Documentation = () => {
                   <MenuSectionList
                     title="All Components"
                     items={Object.keys(odsCore)
-                      .filter(x => !/^(Icon|use|OriginThemeProvider)/.test(x))
+                      .filter((x) => !/^(Icon|use|OriginThemeProvider)/.test(x))
                       .sort()
-                      .map(componentName => ({
+                      .map((componentName) => ({
                         name: componentName,
                         path: `/components/${componentName}`,
                         external: false,

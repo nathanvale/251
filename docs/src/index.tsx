@@ -63,5 +63,5 @@ ReactDOM.render(
       </Router>
     </DebugProvider>
   </OriginThemeProvider>,
-  document.getElementById("root"),
+  document.getElementById("root")
 );

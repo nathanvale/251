@@ -7,7 +7,7 @@ export interface ListItemSecondaryActionProps
   extends IListItemSecondaryAction {}
 
 export const ListItemSecondaryAction = (
-  props: ListItemSecondaryActionProps,
+  props: ListItemSecondaryActionProps
 ) => (
   <MuiListItemSecondaryAction {...props}>
     {props.children}

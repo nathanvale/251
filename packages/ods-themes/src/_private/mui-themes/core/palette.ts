@@ -22,7 +22,7 @@ function getContrastText(background: string, contrastThreshold: number = 3) {
 
 function getPaletteColor(
   color: string,
-  tonalOffset: number = 0.2,
+  tonalOffset: number = 0.2
 ): PaletteColor {
   return {
     main: color,

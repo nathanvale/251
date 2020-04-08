@@ -12,7 +12,7 @@ test("it renders a CardStackSection", () => {
       <Card>
         <Placeholder />
       </Card>
-    </CardStackSection>,
+    </CardStackSection>
   );
   expect(container.firstChild).toMatchSnapshot();
 });
@@ -26,7 +26,7 @@ test("it renders a CardStackSection with custom data-id", () => {
       <Card>
         <Placeholder />
       </Card>
-    </CardStackSection>,
+    </CardStackSection>
   );
 
   expect(container.firstChild).toHaveAttribute("data-id", "myId");

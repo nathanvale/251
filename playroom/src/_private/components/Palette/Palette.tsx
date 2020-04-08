@@ -18,7 +18,7 @@ export interface SwatchProps {
 const StyledBox = styled(Box)<SwatchProps>`
   height: 48px;
   width: 48px;
-  background-color: ${p => p.color};
+  background-color: ${(p) => p.color};
 `;
 
 export const Swatch = ({

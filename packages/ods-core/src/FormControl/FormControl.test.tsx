@@ -12,7 +12,7 @@ test("renders a div element", () => {
   const { container } = render(
     <FormControl id="mylbl" component="div">
       Some label
-    </FormControl>,
+    </FormControl>
   );
 
   expect(container.getElementsByTagName("fieldset")).toHaveLength(0);

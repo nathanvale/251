@@ -40,12 +40,12 @@ type StyledBoxProps = Omit<SectionProps, "paddingY">;
 
 const StyledBox = styled(Box)<StyledBoxProps>`
 
-  ${p =>
+  ${(p) =>
     p.fluidity !== "full-width"
       ? `max-width: ${p.theme.section.maxWidth.xl}px;`
       : ""}
 
-  ${p =>
+  ${(p) =>
     p.fluidity === "off" &&
     css`
       @media (min-width: ${p.theme.breakpoints.sm}) {
@@ -53,7 +53,7 @@ const StyledBox = styled(Box)<StyledBoxProps>`
       }
     `}
 
-  ${p =>
+  ${(p) =>
     p.fluidity === "off" &&
     css`
       @media (min-width: ${p.theme.breakpoints.md}) {
@@ -61,7 +61,7 @@ const StyledBox = styled(Box)<StyledBoxProps>`
       }
     `}
 
-  ${p =>
+  ${(p) =>
     p.fluidity === "off" &&
     css`
       @media (min-width: ${p.theme.breakpoints.lg}) {
@@ -69,7 +69,7 @@ const StyledBox = styled(Box)<StyledBoxProps>`
       }
     `}
 
-  ${p =>
+  ${(p) =>
     p.fluidity === "full-width"
       ? css`
           @media (min-width: ${p.theme.breakpoints.xl}) {

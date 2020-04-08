@@ -223,7 +223,7 @@ const ToneDefinition = ({
           <TextStack space="large">
             <Text>{description}</Text>
 
-            {usageTypes.map(usageType =>
+            {usageTypes.map((usageType) =>
               usage[usageType].length > 0 ? (
                 <Columns
                   key={usageType}
@@ -241,7 +241,7 @@ const ToneDefinition = ({
                     </Stack>
                   </Column>
                 </Columns>
-              ) : null,
+              ) : null
             )}
           </TextStack>
         </Column>
@@ -265,7 +265,7 @@ function TonePage() {
           component suite.
         </Text>
         <Columns space={["small", "medium"]}>
-          {tones.map(tone => (
+          {tones.map((tone) => (
             <Column key={tone}>
               <Stack space={["none", "xsmall"]}>
                 <Rectangle
@@ -285,7 +285,7 @@ function TonePage() {
 
       <Divider />
 
-      {tones.map(tone => (
+      {tones.map((tone) => (
         <ToneDefinition key={tone} tone={tone} />
       ))}
     </TextStack>

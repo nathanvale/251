@@ -24,7 +24,7 @@ const Container = styled<Omit<BoxProps, "width" | "height">>(Box)<
   ${width}
   ${height}
   border: 2px solid rgba(51, 51, 51, 0.3);
-  ${p =>
+  ${(p) =>
     p.shape === "round"
       ? css`
           border-radius: 50%;

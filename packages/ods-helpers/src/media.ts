@@ -45,7 +45,7 @@ type MediaObject = MapMediaToQuery & {
 };
 
 type GetBreakpointsFn = <P extends {} = {}>(
-  props: ThemedStyledProps<P, {}>,
+  props: ThemedStyledProps<P, {}>
 ) => Record<BreakpointVariants, number>;
 
 const defaultBreakpoints: Record<BreakpointVariants, number> = {
@@ -61,14 +61,15 @@ const getBreakpoints: GetBreakpointsFn = () => ({
 });
 
 export const media: MediaObject = (Object.keys(
-  defaultBreakpoints,
+  defaultBreakpoints
 ) as Media[]).reduce(
   (accumulator, label) => {
     const minMedia = (
       strings: TemplateStringsArray,
       ...interpolations: SimpleInterpolation[]
     ) => css`
-      @media (min-width: ${props => (getBreakpoints(props) as any)[label]}px) {
+      @media (min-width: ${(props) =>
+          (getBreakpoints(props) as any)[label]}px) {
         ${css(strings, ...interpolations)}
       }
     `;
@@ -77,7 +78,8 @@ export const media: MediaObject = (Object.keys(
       strings: TemplateStringsArray,
       ...interpolations: SimpleInterpolation[]
     ) => css`
-      @media (max-width: ${props => (getBreakpoints(props) as any)[label]}px) {
+      @media (max-width: ${(props) =>
+          (getBreakpoints(props) as any)[label]}px) {
         ${css(strings, ...interpolations)}
       }
     `;
@@ -90,5 +92,5 @@ export const media: MediaObject = (Object.keys(
     return accumulator;
   },
   // eslint-disable-next-line @typescript-eslint/no-object-literal-type-assertion
-  { min: {}, max: {} } as MediaObject,
+  { min: {}, max: {} } as MediaObject
 );
