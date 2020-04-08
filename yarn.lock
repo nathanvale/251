@@ -2499,6 +2499,13 @@
   dependencies:
     "@origin-digital/helper" "^3.0.1"
 
+"@origin-digital/icon@^1.5.2":
+  version "1.5.2"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/icon/-/@origin-digital/icon-1.5.2.tgz#4006db92a4a9c17b98d6b46336bc6beb02bf8e40"
+  integrity sha1-QAbbkqSpwXuY1rRjNrxr6wK/jkA=
+  dependencies:
+    "@origin-digital/helper" "^3.0.1"
+
 "@origin-digital/layout@^5.2.0":
   version "5.2.0"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/layout/-/@origin-digital/layout-5.2.0.tgz#5f92ad59f49659f7475e252182b5c5dc03a9e8ae"
@@ -2645,6 +2652,33 @@
     polished "2.0.3"
     prop-types "^15.6.2"
     react-day-picker "^7.1.10"
+
+"@origin-digital/style-guide@^21.4.2":
+  version "21.4.2"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/style-guide/-/@origin-digital/style-guide-21.4.2.tgz#60ecefe518ec5f0ae02903641f8d8f08831401b2"
+  integrity sha1-YOzv5RjsXwrgKQNkH42PCIMUAbI=
+  dependencies:
+    "@babel/runtime-corejs2" "^7.0.0"
+    "@material-ui/core" "^3.8.1"
+    "@origin-digital/helper" "^3.0.1"
+    "@origin-digital/icon" "^1.5.2"
+    "@origin-digital/layout" "^5.2.0"
+    custom-event-polyfill "^1.0.6"
+    date-fns "^2.0.0-alpha.25"
+    dom-helpers "^3.3.1"
+    keycode "^2.2.0"
+    lodash.clamp "^4.0.3"
+    polished "2.0.3"
+    prop-types "^15.6.2"
+    react-day-picker "^7.1.10"
+
+"@origin-digital/tile-selector@*":
+  version "1.1.10"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/tile-selector/-/@origin-digital/tile-selector-1.1.10.tgz#df6c68de9963a59b420996f06c0775cabf89a2aa"
+  integrity sha1-32xo3pljpZtCCZbwbAd1yr+Joqo=
+  dependencies:
+    "@babel/runtime-corejs2" "^7.0.0"
+    "@origin-digital/style-guide" "^21.4.2"
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"

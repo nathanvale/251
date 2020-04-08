@@ -17,6 +17,12 @@ export {
   ErrorMessage as ZErrorMessage,
 } from "@origin-digital/messages";
 
+export {
+  TileRadioSelector as ZTileRadioSelector,
+  TileSelector as ZTileSelector,
+  TileSelectorGroup as ZTileSelectorGroup,
+} from "@origin-digital/tile-selector";
+
 export { Accordion as ZAccordion } from "@origin-digital/style-guide";
 export { AlertBanner as ZAlertBanner } from "@origin-digital/style-guide";
 export { AlertBox as ZAlertBox } from "@origin-digital/style-guide";
