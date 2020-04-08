@@ -20,6 +20,7 @@
     "@origin-digital/ods-scripts": "^0.18.0",
     "@origin-digital/ods-types": "^0.13.0",
     "@origin-digital/style-guide": "*",
+    "@origin-digital/tile-selector": "*",
     "playroom": "^0.15.1"
   }
 }
