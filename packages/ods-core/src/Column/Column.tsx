@@ -5,6 +5,7 @@ import {
   mapSpaceAliasToIndex,
   setBreakpoint,
 } from "@origin-digital/ods-helpers";
+import { BreakpointVariants } from "@origin-digital/ods-types";
 import { ColumnsContext } from "../Columns/Columns";
 import { Box } from "../Box/Box";
 import { BoxDebug } from "../_private/components/BoxDebug/BoxDebug";
@@ -28,7 +29,10 @@ export interface ColumnProps {
   "data-id"?: string;
 }
 
-const OuterStyledBox = styled(Box)<{ columnWidth: ColumnProps["width"] }>`
+const OuterStyledBox = styled(Box)<{
+  columnWidth: ColumnProps["width"];
+  collapseBelow?: BreakpointVariants;
+}>`
   min-width: 0;
   ${p => (p.columnWidth === "content" ? "flex-shrink: 0;" : undefined)}
   ${p =>
@@ -37,6 +41,13 @@ const OuterStyledBox = styled(Box)<{ columnWidth: ColumnProps["width"] }>`
           flex: 0 0 ${eval(p.columnWidth) * 100}%;
         `
       : undefined}
+  ${p =>
+    p.collapseBelow &&
+    `
+      @media (max-width: ${p.theme.breakpoints[p.collapseBelow]}) {
+        width: 100%;
+      }
+    `}
 `;
 
 const InnerStyledBox = styled(Box)`
@@ -52,9 +63,11 @@ export const Column = ({
 }: ColumnProps) => {
   const { collapseBelow, space } = useContext(ColumnsContext);
   const spaceIndex = space && mapSpaceAliasToIndex({ space });
+
   return (
     <OuterStyledBox
       data-id={dataId}
+      collapseBelow={collapseBelow}
       columnWidth={width}
       width={width !== "content" ? "full" : undefined}
     >
