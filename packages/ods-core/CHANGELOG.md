@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.18.1...@origin-digital/ods-core@0.18.2) (2020-04-14)
+
+
+### Bug Fixes
+
+* **column/s:** full width on columns collapse ([40a16fa](https://bitbucket.orgn.io/od/origin-ui/commits/40a16fa42e320f2a021e29dfd033ec936ec3965b))
+
+
+
+
+
 ## [0.18.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.18.0...@origin-digital/ods-core@0.18.1) (2020-04-08)
 
 **Note:** Version bump only for package @origin-digital/ods-core
