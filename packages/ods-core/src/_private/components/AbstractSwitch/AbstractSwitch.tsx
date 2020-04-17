@@ -52,7 +52,8 @@ const useLabelStyles = makeStyles({
   root: {
     alignItems: "flex-start",
     "& .MuiFormControlLabel-label": {
-      padding: "12px 0",
+      padding: "14px 0",
+      marginTop: "1px",
     },
   },
 });
