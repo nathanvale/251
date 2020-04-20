@@ -35,6 +35,9 @@ export type ColumnsProps = import("./Columns/Columns").ColumnsProps;
 export { Divider } from "./Divider/Divider";
 export type DividerProps = import("./Divider/Divider").DividerProps;
 
+export { Emphasis } from "./Emphasis/Emphasis";
+export type EmphasisProps = import("./Emphasis/Emphasis").EmphasisProps;
+
 export { FormControl } from "./FormControl/FormControl";
 export type FormControlProps = import("./FormControl/FormControl").FormControlProps;
 
@@ -47,8 +50,14 @@ export type FormControlLabelProps = import("./FormControlLabel/FormControlLabel"
 export { FormHelperText } from "./FormHelperText/FormHelperText";
 export type FormHelperTextProps = import("./FormHelperText/FormHelperText").FormHelperTextProps;
 
+export { Heading } from "./Heading/Heading";
+export type HeadingProps = import("./Heading/Heading").HeadingProps;
+
 export { Hidden } from "./Hidden/Hidden";
 export type HiddenProps = import("./Hidden/Hidden").HiddenProps;
+
+export { TextLink } from "./TextLink/TextLink";
+export type TextLinkProps = import("./TextLink/TextLink").TextLinkProps;
 
 export { Placeholder } from "./Placeholder/Placeholder";
 export type PlaceholderProps = import("./Placeholder/Placeholder").PlaceholderProps;
@@ -71,8 +80,14 @@ export type SectionProps = import("./Section/Section").SectionProps;
 export { Stack } from "./Stack/Stack";
 export type StackProps = import("./Stack/Stack").StackProps;
 
+export { Strong } from "./Strong/Strong";
+export type StrongProps = import("./Strong/Strong").StrongProps;
+
 export { Text } from "./Text/Text";
 export type TextProps = import("./Text/Text").TextProps;
+
+export { TextLinkRenderer } from "./TextLinkRenderer/TextLinkRenderer";
+export type TextLinkRendererProps = import("./TextLinkRenderer/TextLinkRenderer").TextLinkRendererProps;
 
 // Themes
 export { OriginThemeProvider } from "@origin-digital/ods-themes";

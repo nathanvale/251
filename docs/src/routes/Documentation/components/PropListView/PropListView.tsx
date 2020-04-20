@@ -1,7 +1,7 @@
 import React from "react";
 import { NormalisedPropType } from "@origin-digital/ods-scripts";
 import { Stack } from "@origin-digital/ods-core";
-import { Text } from "@origin-digital/ods-lab";
+import { DocsText } from "@origin-digital/ods-lab";
 import { PropType } from "../PropType/PropType";
 
 export interface PropListViewProps {
@@ -24,13 +24,13 @@ const Props = ({
   type: NormalisedPropType;
   description?: string;
 }) => (
-  <Stack space="xsmall">
-    <Text weight="medium">{propName}</Text>
+  <Stack space={["small", "medium"]}>
+    <DocsText weight="medium">{propName}</DocsText>
     <Stack space="small">
-      <Text>
+      <DocsText>
         <PropType type={type} />
-      </Text>
-      {description && <Text size="xxxsmall">{description}</Text>}
+      </DocsText>
+      {description && <DocsText size="xxsmall">{description}</DocsText>}
     </Stack>
   </Stack>
 );
@@ -40,7 +40,12 @@ export const PropListView = ({
   optionalProps,
   propDescriptions = {},
 }: PropListViewProps) => (
-  <Stack space="small">
+  <Stack space="large">
+    {requiredProps.length > 0 && (
+      <DocsText weight="medium" color="grey600" size="xsmall">
+        Required Props
+      </DocsText>
+    )}
     {requiredProps.map(({ propName, type }) => {
       return (
         <Props
@@ -51,6 +56,11 @@ export const PropListView = ({
         />
       );
     })}
+    {optionalProps.length > 0 && (
+      <DocsText weight="medium" color="grey600" size="xsmall">
+        Optional Props
+      </DocsText>
+    )}
     {optionalProps.map(({ propName, type }) => {
       return (
         <Props

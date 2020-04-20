@@ -6,9 +6,13 @@ import { Text, TextProps, Box, Stack } from "..";
 export const docs: ComponentDocs<TextProps> = {
   category: "Content",
   componentName: "Text",
-  description:
-    "This component is experimental and is currently only used internally by these design system docs. It will eventually be replaced with a MUI implementation.",
-  propDescriptions: {},
+  description: "",
+  propDescriptions: {
+    tone:
+      "Tones represent colours. The usage of colour in our design system is designed to have a strong correlation with the tone of voice being used",
+    truncate:
+      "This will add an ellipsis to the end of the text if the text drops onto more than one line",
+  },
   migrationGuide: false,
   examples: [
     { label: "Body Text", Code: () => <Text>Body text</Text> },
@@ -37,16 +41,12 @@ export const docs: ComponentDocs<TextProps> = {
       Code: () => <Text tone="positive">Positive text</Text>,
     },
     {
-      label: "Tone (critcal)",
-      Code: () => <Text tone="critcal">Critcal text</Text>,
+      label: "Tone (critical)",
+      Code: () => <Text tone="critical">Critical text</Text>,
     },
     {
       label: "Weight (medium)",
       Code: () => <Text weight="medium">Medium text</Text>,
-    },
-    {
-      label: "Weight (strong)",
-      Code: () => <Text weight="strong">Strong text</Text>,
     },
     {
       label: "Truncating long text",
@@ -81,16 +81,12 @@ export const docs: ComponentDocs<TextProps> = {
       Code: () => <Text tone="positive">Positive text</Text>,
     },
     {
-      label: "Tone (critcal)",
-      Code: () => <Text tone="critcal">Critcal text</Text>,
+      label: "Tone (critical)",
+      Code: () => <Text tone="critical">Critical text</Text>,
     },
     {
       label: "Weight (medium)",
       Code: () => <Text weight="medium">Medium text</Text>,
-    },
-    {
-      label: "Weight (strong)",
-      Code: () => <Text weight="strong">Strong text</Text>,
     },
   ],
 };

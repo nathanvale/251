@@ -2,7 +2,6 @@ import reactElementToJSXString from "react-element-to-jsx-string";
 import memoize from "lodash/memoize";
 import prettier from "prettier/standalone";
 import babylonParser from "prettier/parser-babylon";
-import { ExampleDocs } from "@origin-digital/ods-types";
 
 const formatSnippet = memoize(
   (snippet) =>
@@ -15,11 +14,11 @@ const formatSnippet = memoize(
       .replace(/^;/, "") // Remove leading semicolons from JSX
 );
 
-export const getCodeAsString = (Example: ExampleDocs["Code"]) => {
+export const getCodeAsString = (Code: () => JSX.Element) => {
   const codeAsString = formatSnippet(
-    typeof Example === "string"
-      ? Example
-      : reactElementToJSXString(Example(), {
+    typeof Code === "string"
+      ? Code
+      : reactElementToJSXString(Code(), {
           useBooleanShorthandSyntax: false,
           showDefaultProps: false,
           showFunctions: false,

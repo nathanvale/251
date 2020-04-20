@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It can render h1 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+<h1
+  class="typography-basekick-1 typography-color-2 typography-strong-3 typography-weight-4 -h1 c0"
+  data-id="heading"
+>
+  Heading H1
+</h1>
+`;
+
+exports[`It can render h1 medium weight 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+<h1
+  class="typography-basekick-21 typography-color-22 typography-strong-23 typography-weight-24 -h1 c0"
+  data-id="heading"
+>
+  Heading H1
+</h1>
+`;
+
+exports[`It can render h2 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+<h1
+  class="typography-basekick-6 typography-color-7 typography-strong-8 typography-weight-9 -h1 c0"
+  data-id="heading"
+>
+  Heading H1
+</h1>
+`;
+
+exports[`It can render h2 medium weight 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+<h2
+  class="typography-basekick-26 typography-color-27 typography-strong-28 typography-weight-29 -h2 c0"
+  data-id="heading"
+>
+  Heading H1
+</h2>
+`;
+
+exports[`It can render h3 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+<h1
+  class="typography-basekick-11 typography-color-12 typography-strong-13 typography-weight-14 -h1 c0"
+  data-id="heading"
+>
+  Heading H1
+</h1>
+`;
+
+exports[`It can render h4 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+<h1
+  class="typography-basekick-16 typography-color-17 typography-strong-18 typography-weight-19 -h1 c0"
+  data-id="heading"
+>
+  Heading H1
+</h1>
+`;
+
+exports[`It can render heaading truncated 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+<div
+  class="MuiBox-root MuiBox-root-32"
+  style="width: 90px;"
+>
+  <h2
+    class="typography-basekick-33 typography-color-34 typography-strong-35 typography-weight-36 -h2 c0"
+    data-id="heading"
+  >
+    <div
+      class="MuiBox-root MuiBox-root-38 typography-truncate-37"
+    >
+      Truncated text
+    </div>
+  </h2>
+</div>
+`;

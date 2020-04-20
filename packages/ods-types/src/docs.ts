@@ -7,7 +7,6 @@ export interface ComponentDocs<T = {}> {
     | "Layout"
     | "Content"
     | "Interaction"
-    | "Form"
     | "Icon"
     | "Internal"
     | "Experimental"
@@ -18,6 +17,14 @@ export interface ComponentDocs<T = {}> {
   migrationGuide?: boolean;
   variant?: "list" | "table";
   snippets: DocsSnippet[];
+  specialRequiredProps?: SpecialProps[];
+  specialOptionalProps?: SpecialProps[];
+}
+
+export interface SpecialProps {
+  name: string;
+  type: { label: string; description?: string };
+  defaultValue: string;
 }
 
 export interface ExampleDocs {
@@ -27,7 +34,7 @@ export interface ExampleDocs {
   noSection?: boolean;
   // Set playroom to false when you want to hide the open in playroom link
   playroom?: boolean;
-  Code: () => JSX.Element;
+  Code?: () => JSX.Element;
   Container?: (props: { children: ReactNode }) => JSX.Element;
   // Use this when you need to output a code string that contains state
   codeString?: string;

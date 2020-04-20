@@ -1,6 +1,6 @@
 import React from "react";
 import { Column, Box, Columns, Stack } from "@origin-digital/ods-core";
-import { Text } from "@origin-digital/ods-lab";
+import { DocsText } from "@origin-digital/ods-lab";
 import { coreMuiTheme } from "@origin-digital/ods-themes";
 
 import styled from "styled-components";
@@ -33,8 +33,8 @@ const Row = ({ color, variation }: RowProps) => (
     </Column>
     <Column width="content">
       <Stack space="xsmall">
-        <Text weight="medium">{variation}</Text>
-        <Text>{color}</Text>
+        <DocsText weight="medium">{variation}</DocsText>
+        <DocsText>{color}</DocsText>
       </Stack>
     </Column>
   </Columns>
@@ -65,10 +65,10 @@ export const Palette = () => {
             <Column key={index} width="content">
               <Stack space="xxlarge">
                 <Stack space="large">
-                  <Text weight="medium" size="xsmall">
+                  <DocsText weight="medium" size="xsmall">
                     {tone}
-                  </Text>
-                  <Text>{colors["main"]}</Text>
+                  </DocsText>
+                  <DocsText>{colors["main"]}</DocsText>
                   <Swatch color={colors["main"]} />
                 </Stack>
                 <Stack space="large">

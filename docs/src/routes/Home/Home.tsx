@@ -1,7 +1,7 @@
 import React, { Fragment, ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { Box } from "@origin-digital/ods-core";
-import { Text } from "@origin-digital/ods-lab";
+import { DocsText } from "@origin-digital/ods-lab";
 import { Button } from "@origin-digital/style-guide";
 import styled from "styled-components";
 import { ConfigConsumer } from "../../shared/ConfigContext/ConfigContext";
@@ -56,7 +56,7 @@ export const Home = () => {
               width="full"
               paddingBottom={["xxxlarge", "xxlarge"]}
             >
-              <Text color="grey600" weight="medium" size="medium">
+              <DocsText color="grey600" weight="medium" size="medium">
                 <Box
                   component="span"
                   display="flex"
@@ -67,7 +67,7 @@ export const Home = () => {
                     Origin Design System
                   </span>
                 </Box>
-              </Text>
+              </DocsText>
             </ActionsContainer>
 
             <ActionsContainer width="full" display={["block", "flex"]}>

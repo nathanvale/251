@@ -41,7 +41,7 @@ const OuterStyledBox = styled(Box)<{
           flex: 0 0 ${eval(p.columnWidth) * 100}%;
         `
       : undefined}
-  ${p =>
+  ${(p) =>
     p.collapseBelow &&
     `
       @media (max-width: ${p.theme.breakpoints[p.collapseBelow]}) {

@@ -38,29 +38,6 @@ test("It can render body text medium weight", () => {
   expect(container.firstChild).toMatchSnapshot();
 });
 
-test("It can render body text medium strong", () => {
-  const { container } = render(<Text weight="strong">Body Text</Text>);
-  expect(container.firstChild).toMatchSnapshot();
-});
-
-test("It can render body text critical tone", () => {
-  const { container } = render(
-    <Text weight="strong" tone="critcal">
-      Body Text
-    </Text>
-  );
-  expect(container.firstChild).toMatchSnapshot();
-});
-
-test("It can render body text positive tone", () => {
-  const { container } = render(
-    <Text weight="strong" tone="positive">
-      Body Text
-    </Text>
-  );
-  expect(container.firstChild).toMatchSnapshot();
-});
-
 test("It can render body text truncated", () => {
   const { container } = render(
     <Box style={{ width: 90 }}>

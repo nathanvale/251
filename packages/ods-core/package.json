@@ -24,9 +24,11 @@
     "@origin-digital/ods-helpers": "^0.6.2",
     "@origin-digital/ods-themes": "^0.11.1",
     "@origin-digital/ods-types": "^0.13.1",
+    "@types/react-router-hash-link": "^1.2.1",
     "clsx": "^1.1.0",
     "csstype": "^2.6.4",
     "polished": "^3.4.2",
+    "react-router-hash-link": "^1.2.2",
     "styled-system": "4.2.3",
     "utility-types": "^3.7.0"
   },

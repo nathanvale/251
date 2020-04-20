@@ -5,6 +5,7 @@ import {
   BasekickStyles,
 } from "@material-ui/core/styles/createTypography";
 import { getBasekickStyles } from "../../helpers/getBasekickStyles";
+import { breakpoints } from "./breakpoints";
 import { colors } from "./colors";
 
 interface Typography {
@@ -83,7 +84,10 @@ export const typography: Typography = {
       ...getBasekickStyles(text.medium),
     },
     large: {
-      ...getBasekickStyles(text.large),
+      ...getBasekickStyles(text.large, -0.05),
+      [breakpoints.up("md")]: {
+        ...getBasekickStyles(text.large, 0.05),
+      },
     },
     xlarge: {
       ...getBasekickStyles(text.xlarge),

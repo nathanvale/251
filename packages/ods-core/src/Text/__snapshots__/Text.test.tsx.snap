@@ -9,17 +9,15 @@ exports[`It can render body small text 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-align: left;
 }
 
-<div
-  class="c0"
+<span
+  class="typography-basekick-6 typography-color-7 typography-weight-8 typography-strong-9 -span c0"
+  data-id="text"
 >
-  <span
-    class="MuiTypography-root makeStyles-root-33 makeStyles-root-34 MuiTypography-body2"
-  >
-    Body Text
-  </span>
-</div>
+  Body Text
+</span>
 `;
 
 exports[`It can render body text 1`] = `
@@ -31,61 +29,15 @@ exports[`It can render body text 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-align: left;
 }
 
-<div
-  class="c0"
+<span
+  class="typography-basekick-1 typography-color-2 typography-weight-3 typography-strong-4 -span c0"
+  data-id="text"
 >
-  <span
-    class="MuiTypography-root makeStyles-root-1 makeStyles-root-2 MuiTypography-body1"
-  >
-    Body Text
-  </span>
-</div>
-`;
-
-exports[`It can render body text critical tone 1`] = `
-.c0 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-<div
-  class="c0"
->
-  <span
-    class="MuiTypography-root makeStyles-root-257 makeStyles-root-258 MuiTypography-body1"
-  >
-    Body Text
-  </span>
-</div>
-`;
-
-exports[`It can render body text medium strong 1`] = `
-.c0 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-<div
-  class="c0"
->
-  <span
-    class="MuiTypography-root makeStyles-root-225 makeStyles-root-226 MuiTypography-body1"
-  >
-    Body Text
-  </span>
-</div>
+  Body Text
+</span>
 `;
 
 exports[`It can render body text medium weight 1`] = `
@@ -97,39 +49,15 @@ exports[`It can render body text medium weight 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-align: left;
 }
 
-<div
-  class="c0"
+<span
+  class="typography-basekick-31 typography-color-32 typography-weight-33 typography-strong-34 -span c0"
+  data-id="text"
 >
-  <span
-    class="MuiTypography-root makeStyles-root-193 makeStyles-root-194 MuiTypography-body1"
-  >
-    Body Text
-  </span>
-</div>
-`;
-
-exports[`It can render body text positive tone 1`] = `
-.c0 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-<div
-  class="c0"
->
-  <span
-    class="MuiTypography-root makeStyles-root-289 makeStyles-root-290 MuiTypography-body1"
-  >
-    Body Text
-  </span>
-</div>
+  Body Text
+</span>
 `;
 
 exports[`It can render body text truncated 1`] = `
@@ -151,31 +79,23 @@ exports[`It can render body text truncated 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  display: block;
-  overflow: hidden;
+  text-align: left;
 }
 
 <div
   class="c0"
   style="width: 90px;"
 >
-  <div
-    class="c0"
+  <span
+    class="typography-basekick-36 typography-color-37 typography-weight-38 typography-strong-39 -span c1"
+    data-id="text"
   >
-    <span
-      class="MuiTypography-root makeStyles-root-321 makeStyles-root-322 MuiTypography-body1"
+    <div
+      class="MuiBox-root MuiBox-root-42 typography-truncate-40"
     >
-      <span
-        class="-span c1"
-        data-id="text"
-        display="block"
-        overflow="hidden"
-        style="white-space: nowrap; text-overflow: ellipsis;"
-      >
-        Truncated text
-      </span>
-    </span>
-  </div>
+      Truncated text
+    </div>
+  </span>
 </div>
 `;
 
@@ -188,17 +108,15 @@ exports[`It can render subtitle caption text 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-align: left;
 }
 
-<div
-  class="c0"
+<span
+  class="typography-basekick-21 typography-color-22 typography-weight-23 typography-strong-24 -span c0"
+  data-id="text"
 >
-  <span
-    class="MuiTypography-root makeStyles-root-129 makeStyles-root-130 MuiTypography-caption"
-  >
-    Body Text
-  </span>
-</div>
+  Body Text
+</span>
 `;
 
 exports[`It can render subtitle overline text 1`] = `
@@ -210,17 +128,15 @@ exports[`It can render subtitle overline text 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-align: left;
 }
 
-<div
-  class="c0"
+<span
+  class="typography-basekick-26 typography-color-27 typography-weight-28 typography-strong-29 -span c0"
+  data-id="text"
 >
-  <span
-    class="MuiTypography-root makeStyles-root-161 makeStyles-root-162 MuiTypography-overline"
-  >
-    Body Text
-  </span>
-</div>
+  Body Text
+</span>
 `;
 
 exports[`It can render subtitle small text 1`] = `
@@ -232,17 +148,15 @@ exports[`It can render subtitle small text 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-align: left;
 }
 
-<div
-  class="c0"
+<span
+  class="typography-basekick-16 typography-color-17 typography-weight-18 typography-strong-19 -span c0"
+  data-id="text"
 >
-  <span
-    class="MuiTypography-root makeStyles-root-97 makeStyles-root-98 MuiTypography-subtitle2"
-  >
-    Body Text
-  </span>
-</div>
+  Body Text
+</span>
 `;
 
 exports[`It can render subtitle text 1`] = `
@@ -254,15 +168,13 @@ exports[`It can render subtitle text 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-align: left;
 }
 
-<div
-  class="c0"
+<span
+  class="typography-basekick-11 typography-color-12 typography-weight-13 typography-strong-14 -span c0"
+  data-id="text"
 >
-  <span
-    class="MuiTypography-root makeStyles-root-65 makeStyles-root-66 MuiTypography-subtitle1"
-  >
-    Body Text
-  </span>
-</div>
+  Body Text
+</span>
 `;

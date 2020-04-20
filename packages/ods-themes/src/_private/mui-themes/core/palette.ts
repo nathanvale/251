@@ -44,7 +44,6 @@ export const palette: Theme["palette"] = createMuiTheme({
     background: {
       default: colors.grey[100],
       paper: "white",
-      light: colors.grey[50],
     },
     primary: getPaletteColor(colors.red),
     secondary: getPaletteColor(colors.lightOrange),

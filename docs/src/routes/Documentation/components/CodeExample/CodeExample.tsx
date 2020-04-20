@@ -7,7 +7,7 @@ interface CodeExampleProps {
   Container?: ExampleDocs["Container"];
   noSection?: ExampleDocs["noSection"];
   stretch?: ExampleDocs["stretch"];
-  Code: ExampleDocs["Code"];
+  Code: () => JSX.Element;
 }
 
 interface CodeContainerProps {

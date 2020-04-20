@@ -10,7 +10,7 @@ import { getCGPropsDocs } from "../ControlGroup/ControlGroup.docs";
 import { RadioGroup, RadioGroupProps } from "./RadioGroup";
 
 export const docs: ComponentDocs<RadioGroupProps> = {
-  category: "Form",
+  category: "Interaction",
   componentName: "RadioGroup",
   description: getRadioGroupDesc("RadioGroup"),
   propDescriptions: {
@@ -69,25 +69,23 @@ export const docs: ComponentDocs<RadioGroupProps> = {
           </>
         );
       },
-      codeString: `
-        const [city, setCity] = React.useState();
-        return (
-          <>
-            <div>
-              Current city: <span>{city}</span>
-            </div>
-            <RadioGroup
-              name="cities"
-              value={city}
-              onChange={e => setCity(e.target.value)}
-            >
-              <Radio label="Melbourne" id="mlb" value="mlb" />
-              <Radio label="Sydney" id="syd" value="syd" />
-              <Radio label="Perth" id="prt" value="prt" />
-            </RadioGroup>
-          </>
-        );
-      `,
+      codeString: `const [city, setCity] = React.useState();
+return (
+  <>
+    <div>
+      Current city: <span>{city}</span>
+    </div>
+    <RadioGroup
+      name="cities"
+      value={city}
+      onChange={e => setCity(e.target.value)}
+    >
+      <Radio label="Melbourne" id="mlb" value="mlb" />
+      <Radio label="Sydney" id="syd" value="syd" />
+      <Radio label="Perth" id="prt" value="prt" />
+    </RadioGroup>
+  </>
+);`,
     },
   ],
   snippets: [

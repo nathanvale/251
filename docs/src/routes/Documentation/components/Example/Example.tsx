@@ -1,7 +1,7 @@
 import React from "react";
 import lzString from "lz-string";
 import { Stack, Box, Section } from "@origin-digital/ods-core";
-import { Text, Link } from "@origin-digital/ods-lab";
+import { DocsText, Link } from "@origin-digital/ods-lab";
 import { IconPlay, IconCopy } from "@origin-digital/ods-icons";
 import copy from "copy-to-clipboard";
 import { getCodeAsString } from "@origin-digital/ods-scripts";
@@ -37,8 +37,13 @@ export const Example = ({
   playroom = true,
   codeString,
 }: ExampleProps) => {
-  const snippet =
-    Code && !codeString ? getCodeAsString(Code) : (codeString as string);
+  let snippet = "";
+  if (Code) {
+    snippet = getCodeAsString(Code);
+  }
+  if (codeString) {
+    snippet = codeString;
+  }
 
   return (
     <Stack space="none">
@@ -46,25 +51,27 @@ export const Example = ({
         <DocsContainer>
           <Stack space="large">
             {label && (
-              <Text color="grey600" weight="medium" size="xsmall">
+              <DocsText color="grey600" weight="medium" size="xsmall">
                 {label}
-              </Text>
+              </DocsText>
             )}
-            {description && <Text color="grey600">{description}</Text>}
+            {description && <DocsText color="grey600">{description}</DocsText>}
             <Box style={{ marginBottom: -20 }}>
               <Stack space="xxsmall">
-                <CodeBlock Code={snippet} />
+                {snippet && <CodeBlock codeString={snippet} />}
                 <Box display="flex" justifyContent="flex-end">
-                  <Link onClick={() => copy(snippet)} Icon={<IconCopy />}>
-                    Copy
-                  </Link>
-                  {playroom && (
+                  {snippet && (
+                    <Link onClick={() => copy(snippet)} Icon={<IconCopy />}>
+                      Copy
+                    </Link>
+                  )}
+                  {playroom && Code && (
                     <Link
                       target="_blank"
                       component="a"
                       href={createUrl({
                         playroomUrl,
-                        code: snippet,
+                        code: getCodeAsString(Code),
                       })}
                       Icon={<IconPlay />}
                     >
@@ -79,12 +86,14 @@ export const Example = ({
       </Section>
       <Stack space="medium">
         <Section paddingY="none">
-          <CodeExample
-            Container={Container}
-            Code={Code}
-            noSection={noSection}
-            stretch={stretch}
-          />
+          {Code && (
+            <CodeExample
+              Container={Container}
+              Code={Code}
+              noSection={noSection}
+              stretch={stretch}
+            />
+          )}
         </Section>
       </Stack>
     </Stack>
