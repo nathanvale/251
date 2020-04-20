@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.19.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.19.0...@origin-digital/ods-scripts@0.19.1) (2020-04-20)
+
+
+### Bug Fixes
+
+* **Heading:** add missing SEO component ([103c6ca](https://bitbucket.orgn.io/od/origin-ui/commits/103c6caef808b54d3218134d28047a797ef34be3))
+
+
+
+
+
 # [0.19.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.18.3...@origin-digital/ods-scripts@0.19.0) (2020-04-20)
 
 
