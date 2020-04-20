@@ -3,7 +3,7 @@ import { FontSizeVariants } from "@material-ui/core/styles/createTypography";
 
 export type BackgroundColorVariants = ColorVariants;
 
-export type HeadingComponentVariants = "h1" | "h2" | "h3" | "h4" | "h6";
+export type HeadingComponentVariants = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
 export interface TextLinkRenderProps {
   style: CSSProperties;
