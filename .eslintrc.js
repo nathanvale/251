@@ -14,6 +14,8 @@ module.exports = {
   extends:
     "./node_modules/@origin-digital/origin-scripts/dist/config/eslintrc.js",
   rules: {
+    "react/no-unescaped-entities": "off",
+    "no-console": "error",
     "import/no-default-export": "error",
     "jest/require-top-level-describe": "off",
     "jest/no-empty-title": "off",

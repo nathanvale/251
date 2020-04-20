@@ -1,7 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import React, { ReactNode } from "react";
 import { Page } from "docs/src/types";
-import { Text } from "@origin-digital/ods-lab";
+import { DocsText } from "@origin-digital/ods-lab";
 import { ToneVariants } from "@origin-digital/ods-types";
 import {
   Columns,
@@ -15,9 +15,9 @@ import styled from "styled-components";
 import { TextStack } from "../../components/TextStack/TextStack";
 
 const Heading = ({ children }: { children: ReactNode }) => (
-  <Text color="grey600" weight="medium" size="xsmall">
+  <DocsText color="grey600" weight="medium" size="xsmall">
     {children}
-  </Text>
+  </DocsText>
 );
 
 const tones: Exclude<ToneVariants, "grey" | "background">[] = [
@@ -221,7 +221,7 @@ const ToneDefinition = ({
         </Column>
         <Column>
           <TextStack space="large">
-            <Text>{description}</Text>
+            <DocsText>{description}</DocsText>
 
             {usageTypes.map((usageType) =>
               usage[usageType].length > 0 ? (
@@ -231,12 +231,12 @@ const ToneDefinition = ({
                   collapseBelow="md"
                 >
                   <Column width="1/6">
-                    <Text>{usageType}</Text>
+                    <DocsText>{usageType}</DocsText>
                   </Column>
                   <Column>
                     <Stack space="small">
                       {usage[usageType].map((usageItem, index) => (
-                        <Text key={index}>- {usageItem}</Text>
+                        <DocsText key={index}>- {usageItem}</DocsText>
                       ))}
                     </Stack>
                   </Column>
@@ -255,15 +255,15 @@ function TonePage() {
     <TextStack>
       <Stack space={["xxlarge", "xxxlarge"]}>
         {" "}
-        <Text color="grey600" size="xlarge">
+        <DocsText color="grey600" size="xlarge">
           Tones
-        </Text>
-        <Text color="grey600" size="xsmall">
+        </DocsText>
+        <DocsText color="grey600" size="xsmall">
           The usage of colour in the system is designed to have a strong
           correlation with the tone of voice being used. The system makes
           available a spectrum of tones which are leveraged across the entire
           component suite.
-        </Text>
+        </DocsText>
         <Columns space={["small", "medium"]}>
           {tones.map((tone) => (
             <Column key={tone}>
@@ -274,7 +274,7 @@ function TonePage() {
                 />
                 <Hidden below="md">
                   <Box textAlign="center">
-                    <Text size="xxxsmall">{tone}</Text>
+                    <DocsText size="xxxsmall">{tone}</DocsText>
                   </Box>
                 </Hidden>
               </Stack>

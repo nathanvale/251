@@ -1,12 +1,13 @@
 import React from "react";
 import { StackProps, Stack, Section } from "@origin-digital/ods-core";
-import { Text } from "@origin-digital/ods-lab";
+import { DocsText } from "@origin-digital/ods-lab";
 import { ComponentDocs } from "@origin-digital/ods-types";
 import { Page } from "./components/Page/Page";
 import { Props } from "./components/Props/Props";
 import { Example } from "./components/Example/Example";
 import { CodeBlock } from "./components/CodeBlock/CodeBlock";
 import { DocsContainer } from "./components/DocsContainer/DocsContainer";
+import { Header } from "./components/Header/Header";
 
 interface ComponentRouteProps {
   componentName: string;
@@ -40,30 +41,35 @@ export const ComponentRoute = ({
     };
   }
 
-  const { description, propDescriptions, examples, variant } = docs;
+  const {
+    description,
+    propDescriptions,
+    examples,
+    variant,
+    specialRequiredProps,
+    specialOptionalProps,
+  } = docs;
   return (
     <Page>
       <Stack space="xxxlarge">
-        <Props<StackProps>
-          sourceUrl={sourceUrl}
-          variant={variant}
+        <Header
           componentName={componentName}
+          sourceUrl={sourceUrl}
           description={description}
-          propDescriptions={propDescriptions || {}}
         />
         <Stack>
           <Section paddingY="none">
             <Stack space="large">
-              <Text color="grey600" weight="medium" size="xsmall">
+              <DocsText color="grey600" weight="medium" size="xsmall">
                 {`Usage ${
                   packageName === "ods-lab"
                     ? "(Beware experiemental components have an API that is subject to change)"
                     : ""
                 }`}
-              </Text>
+              </DocsText>
               <DocsContainer>
                 <CodeBlock
-                  Code={`import {${componentName}} from "@origin-digital/${packageName}"`}
+                  codeString={`import {${componentName}} from "@origin-digital/${packageName}"`}
                 />
               </DocsContainer>
             </Stack>
@@ -72,6 +78,13 @@ export const ComponentRoute = ({
             <Example key={index} {...props} playroomUrl={playroomUrl} />
           ))}
         </Stack>
+        <Props<StackProps>
+          variant={variant}
+          componentName={componentName}
+          propDescriptions={propDescriptions || {}}
+          specialRequiredProps={specialRequiredProps || []}
+          specialOptionalProps={specialOptionalProps || []}
+        />
       </Stack>
     </Page>
   );

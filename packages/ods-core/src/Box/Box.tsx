@@ -1,10 +1,9 @@
 /* eslint-disable react/prop-types */
-import React, { AllHTMLAttributes } from "react";
+import { AllHTMLAttributes, createElement, ElementType } from "react";
 import styled, { StyledComponentClass } from "styled-components";
 import {
   TransitionVariants,
   TransformVariants,
-  ColorVariants,
   ResponsiveProp,
   AlignItemsVariants,
   FlexDirectionVariants,
@@ -13,6 +12,7 @@ import {
   TLength,
   TextAlignVariants,
   SpaceVariants,
+  BackgroundColorVariants,
 } from "@origin-digital/ods-types";
 import * as CSS from "csstype";
 import { Omit } from "utility-types";
@@ -22,6 +22,7 @@ import {
   BoxShadowVariant,
   StyledSystemBox,
 } from "../_private/components/StyledSystemBox/StyledSystemBox";
+import { renderBackgroundProvider } from "./BackgroundContext";
 
 export type ResponsiveSpace = ResponsiveProp<SpaceVariants>;
 
@@ -35,8 +36,8 @@ export interface BoxProps
   > {
   alignItems?: ResponsiveProp<AlignItemsVariants>;
   alignSelf?: ResponsiveProp<AlignItemsVariants>;
-  backgroundColor?: ResponsiveProp<ColorVariants>;
-  component?: React.ReactType;
+  backgroundColor?: BackgroundColorVariants;
+  component?: ElementType | null;
   display?: ResponsiveProp<DisplayVariants>;
   flexDirection?: ResponsiveProp<FlexDirectionVariants>;
   justifyContent?: ResponsiveProp<JustifyContentVariants>;
@@ -90,6 +91,30 @@ export const StyledAReset = styled(StyledSystemBox.withComponent("a"))<
   color: inherit;
 `;
 
+export const StyledH1Reset = styled(StyledSystemBox.withComponent("h1"))<
+  BoxProps
+>``;
+
+export const StyledH2Reset = styled(StyledSystemBox.withComponent("h2"))<
+  BoxProps
+>``;
+
+export const StyledH3Reset = styled(StyledSystemBox.withComponent("h3"))<
+  BoxProps
+>``;
+
+export const StyledH4Reset = styled(StyledSystemBox.withComponent("h4"))<
+  BoxProps
+>``;
+
+export const StyledH5Reset = styled(StyledSystemBox.withComponent("h5"))<
+  BoxProps
+>``;
+
+export const StyledH6Reset = styled(StyledSystemBox.withComponent("h6"))<
+  BoxProps
+>``;
+
 export const StyledButtonReset = styled(
   StyledSystemBox.withComponent("button")
 )<BoxProps>`
@@ -109,7 +134,6 @@ export const Box = ({
   alignItems,
   alignSelf,
   backgroundColor,
-  children,
   component,
   display,
   flexDirection,
@@ -169,6 +193,18 @@ export const Box = ({
     Container = StyledSpanReset;
   } else if (component === "button") {
     Container = StyledButtonReset;
+  } else if (component === "h1") {
+    Container = StyledH1Reset;
+  } else if (component === "h2") {
+    Container = StyledH2Reset;
+  } else if (component === "h3") {
+    Container = StyledH3Reset;
+  } else if (component === "h4") {
+    Container = StyledH4Reset;
+  } else if (component === "h5") {
+    Container = StyledH5Reset;
+  } else if (component === "h6") {
+    Container = StyledH6Reset;
   } else {
     Container = StyledSystemBox;
   }
@@ -176,7 +212,7 @@ export const Box = ({
   const styledSystemProps = {
     alignItems: normaliseResponsiveProp<AlignItemsVariants>(alignItems),
     alignSelf: normaliseResponsiveProp<AlignItemsVariants>(alignSelf),
-    backgroundColor: normaliseResponsiveProp<ColorVariants>(backgroundColor),
+    backgroundColor,
     display: normaliseResponsiveProp<DisplayVariants>(display),
     flexDirection: normaliseResponsiveProp<FlexDirectionVariants>(
       flexDirection
@@ -203,12 +239,11 @@ export const Box = ({
     ),
     textAlign: normaliseResponsiveProp<CSS.TextAlignProperty>(textAlign),
   };
-
-  return (
-    <Container {...styledSystemProps} {...rest}>
-      {children}
-    </Container>
-  );
+  const element = createElement(Container, {
+    ...styledSystemProps,
+    ...rest,
+  });
+  return renderBackgroundProvider(element, backgroundColor);
 };
 
 Box.displayName = "Box";

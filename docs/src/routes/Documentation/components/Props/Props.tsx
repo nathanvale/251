@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable import/no-duplicates */
 /* eslint-disable no-duplicate-imports */
 import React, { FC } from "react";
@@ -12,9 +13,7 @@ import {
   NormalisedPropType,
 } from "@origin-digital/ods-scripts";
 import { Stack, Columns, Column, Section, Box } from "@origin-digital/ods-core";
-import { Text, Link } from "@origin-digital/ods-lab";
-import { CSSDebugButton } from "@origin-digital/ods-devtools";
-import { IconFlipToBack } from "@origin-digital/ods-icons";
+import { DocsText } from "@origin-digital/ods-lab";
 import { ComponentDocs } from "@origin-digital/ods-types";
 import componentDocs from "../../../../componentDocs.json";
 
@@ -23,10 +22,10 @@ import { PropTableView } from "../PropTableView/PropTableView";
 
 interface PropsProps<T> {
   componentName: ComponentDocs["componentName"];
-  sourceUrl: string;
-  description: ComponentDocs["description"];
   propDescriptions: ComponentDocs<T>["propDescriptions"];
   variant?: ComponentDocs["variant"];
+  specialRequiredProps?: ComponentDocs["specialRequiredProps"];
+  specialOptionalProps?: ComponentDocs["specialOptionalProps"];
 }
 
 type ComponentName = keyof typeof componentDocs;
@@ -65,14 +64,14 @@ const isValidComponentName = (
 const CommonColumns = () => (
   <>
     <Column width="1/4">
-      <Text size="xsmall" color="grey600" weight="medium">
+      <DocsText size="xxsmall" color="grey600" weight="medium">
         Name
-      </Text>
+      </DocsText>
     </Column>
     <Column>
-      <Text size="xsmall" color="grey600" weight="medium">
+      <DocsText size="xxsmall" color="grey600" weight="medium">
         Type
-      </Text>
+      </DocsText>
     </Column>
   </>
 );
@@ -86,9 +85,9 @@ const ColumnsHeader = ({ hasDefaultProps }: { hasDefaultProps: boolean }) =>
     <Columns space="xlarge">
       <CommonColumns />
       <Column width="1/4">
-        <Text size="xsmall" color="grey600" weight="medium">
+        <DocsText size="xxsmall" color="grey600" weight="medium">
           Default
-        </Text>
+        </DocsText>
       </Column>
     </Columns>
   ) : (
@@ -98,11 +97,11 @@ const ColumnsHeader = ({ hasDefaultProps }: { hasDefaultProps: boolean }) =>
   );
 
 export function Props<T = {}>({
-  description,
   componentName,
   variant,
   propDescriptions,
-  sourceUrl,
+  specialRequiredProps,
+  specialOptionalProps,
 }: PropsProps<T>) {
   if (!isValidComponentName(componentName)) {
     return null;
@@ -140,75 +139,58 @@ export function Props<T = {}>({
 
   return (
     <Section paddingY="none">
-      <StyledBox maxWidth={[null, null, "75%", "66%"]}>
-        <Stack space={["xxlarge", "xxxlarge"]}>
-          <Columns alignY="bottom">
-            <Column width="content">
-              <Text color="grey600" size="xlarge">
-                {componentName}
-              </Text>
-            </Column>
-            <Column>
-              <Box />
-            </Column>
-            <Column width="content">
-              <Box display="flex">
-                <a href={sourceUrl} style={{ textDecoration: "none" }}>
-                  <Text size="xxxsmall">View source</Text>
-                </a>
-              </Box>
-            </Column>
-          </Columns>
-          {description && (
-            <Text
-              color="grey600"
-              size="xsmall"
-              dangerouslySetInnerHTML={{ __html: description }}
-            />
-          )}
-          <Stack dividers space="medium">
-            {variant !== "list" ? (
-              <ColumnsHeader hasDefaultProps={hasDefaultProps} />
-            ) : null}
-            {requiredProps.length === 0 && optionalProps.length === 0 ? null : (
-              <Stack space="medium" dividers>
-                {variant === "list" ? (
-                  <PropListView
-                    defaultProps={defaultProps}
-                    hasDefaultProps={hasDefaultProps}
-                    requiredProps={requiredProps}
-                    optionalProps={optionalProps}
-                    propDescriptions={propDescriptions}
-                  />
-                ) : (
-                  <>
-                    <PropTableView
+      <StyledBox
+        id="props"
+        paddingY="small"
+        maxWidth={[null, null, "75%", "66%"]}
+      >
+        <Stack space="large">
+          <Stack space={["xxlarge", "xxxlarge"]}>
+            <Stack dividers space={["medium", "large"]}>
+              {variant !== "list" ? (
+                <ColumnsHeader hasDefaultProps={hasDefaultProps} />
+              ) : null}
+              {requiredProps.length === 0 &&
+              optionalProps.length === 0 ? null : (
+                <Stack space="medium" dividers={variant === "table"}>
+                  {variant === "list" ? (
+                    <PropListView
                       defaultProps={defaultProps}
                       hasDefaultProps={hasDefaultProps}
                       requiredProps={requiredProps}
                       optionalProps={optionalProps}
                       propDescriptions={propDescriptions}
                     />
-                  </>
-                )}
+                  ) : (
+                    <>
+                      <PropTableView
+                        defaultProps={defaultProps}
+                        hasDefaultProps={hasDefaultProps}
+                        requiredProps={requiredProps}
+                        optionalProps={optionalProps}
+                        propDescriptions={propDescriptions}
+                        specialRequiredProps={specialRequiredProps}
+                        specialOptionalProps={specialOptionalProps}
+                      />
+                    </>
+                  )}
 
-                <Box style={{ marginBottom: -20 }}>
-                  <Columns>
-                    <Column width="content">
-                      {requiredProps.length > 0 && (
-                        <Text size="xxxsmall">* Required Property</Text>
-                      )}
-                    </Column>
-                    <Column>
-                      <Box />
-                    </Column>
-                    <Column width="content">
-                      <CSSDebugButton Button={Link} Icon={<IconFlipToBack />} />
-                    </Column>
-                  </Columns>
-                </Box>
-              </Stack>
-            )}
+                  {variant === "table" && (
+                    <Box style={{ marginBottom: -20 }}>
+                      <Columns>
+                        <Column width="content">
+                          {requiredProps.length > 0 && (
+                            <DocsText size="xxxsmall">
+                              * Required Property
+                            </DocsText>
+                          )}
+                        </Column>
+                      </Columns>
+                    </Box>
+                  )}
+                </Stack>
+              )}
+            </Stack>
           </Stack>
         </Stack>
       </StyledBox>

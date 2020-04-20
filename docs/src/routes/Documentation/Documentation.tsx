@@ -45,8 +45,7 @@ const components = {
   ...odsCore,
 };
 
-const { Box, Stack, Hidden, Link } = components;
-const Text = odsLab.Text;
+const { Box, Stack, Hidden, Link, DocsText } = components;
 
 const responsiveGutter: odsCore.BoxProps["paddingX"] = ["large", "xlarge"];
 const headerHeight = "100px";
@@ -65,13 +64,13 @@ const MenuSectionList = ({
   items: MenuItem[];
 }) => (
   <Stack space={["medium", "large"]}>
-    <Text weight="medium" component="h2">
+    <DocsText weight="medium" component="h2">
       {title}
-    </Text>
+    </DocsText>
 
     <Stack space={["xsmall", "small"]}>
       {items.map(({ name, path, onClick, external }) => (
-        <Text key={name}>
+        <DocsText key={name}>
           {external ? (
             <Box display="flex">
               <Link component="a" href={path}>
@@ -83,7 +82,7 @@ const MenuSectionList = ({
               <Link>{name}</Link>
             </ReactRouterLink>
           )}
-        </Text>
+        </DocsText>
       ))}
     </Stack>
   </Stack>
@@ -182,7 +181,6 @@ export const Documentation = () => {
       }),
     (component) => component.category
   );
-
   return (
     <ConfigConsumer>
       {({ playroomUrl, sourceUrlPrefix, zeplinUrl }) => (
@@ -197,13 +195,13 @@ export const Documentation = () => {
             justifyContent="space-between"
             width="full"
           >
-            <Text baseline={false}>
+            <DocsText baseline={false}>
               <ReactRouterLink to="/">
                 <LogoContainer>
                   <Logo width="100%" />
                 </LogoContainer>
               </ReactRouterLink>
-            </Text>
+            </DocsText>
             {showMenuButton && (
               <Hidden above="md">
                 <MenuButton
@@ -274,7 +272,7 @@ export const Documentation = () => {
                     }))}
                   />
 
-                  {["Layout", "Content", "Form"].map((category) => (
+                  {["Layout", "Content", "Interaction"].map((category) => (
                     <MenuSectionList
                       key={category}
                       title={`${category} Components`}

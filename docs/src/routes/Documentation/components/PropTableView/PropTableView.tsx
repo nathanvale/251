@@ -1,7 +1,8 @@
 import React from "react";
 import { NormalisedPropType } from "@origin-digital/ods-scripts";
-import { Column, Columns, Stack } from "@origin-digital/ods-core";
-import { Text } from "@origin-digital/ods-lab";
+import { Column, Columns, Stack, Text } from "@origin-digital/ods-core";
+import { DocsText } from "@origin-digital/ods-lab";
+import { ComponentDocs } from "@origin-digital/ods-types";
 import { PropType } from "../PropType/PropType";
 
 export interface PropListViewProps {
@@ -13,6 +14,8 @@ export interface PropListViewProps {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     [x: string]: any;
   };
+  specialOptionalProps?: ComponentDocs["specialOptionalProps"];
+  specialRequiredProps?: ComponentDocs["specialRequiredProps"];
 }
 
 const TypeRenderer = ({
@@ -41,17 +44,17 @@ const CommonColumns = ({
 }) => (
   <>
     <Column width="1/4">
-      <Text size="xxsmall">
+      <Text truncate>
         {propName}
         {required && "*"}
       </Text>
     </Column>
     <Column>
       <Stack space="medium">
-        <Text size="xxsmall">
+        <DocsText size="xxsmall">
           <TypeRenderer propName={propName} type={type} />
-        </Text>
-        {description && <Text size="xxxsmall">{description}</Text>}
+        </DocsText>
+        {description && <DocsText size="xxxsmall">{description}</DocsText>}
       </Stack>
     </Column>
   </>
@@ -84,7 +87,7 @@ const Props = ({
         description={description}
       />
       <Column width="1/4">
-        <Text>{defaultProps[propName!]}</Text>
+        <DocsText>{defaultProps[propName!]}</DocsText>
       </Column>
     </Columns>
   ) : (
@@ -105,6 +108,8 @@ export const PropTableView = ({
   hasDefaultProps,
   defaultProps,
   propDescriptions = {},
+  specialRequiredProps = [],
+  specialOptionalProps = [],
 }: PropListViewProps) => (
   <Stack space="small" dividers>
     {requiredProps.map(({ propName, type }) => {
@@ -120,6 +125,20 @@ export const PropTableView = ({
         />
       );
     })}
+    {specialRequiredProps.length > 0 &&
+      specialRequiredProps.map(({ name, type }) => {
+        return (
+          <Props
+            required
+            hasDefaultProps={hasDefaultProps}
+            defaultProps={defaultProps}
+            propName={name}
+            description={type.description}
+            type={type.label}
+            key={name}
+          />
+        );
+      })}
     {optionalProps.map(({ propName, type }) => {
       return (
         <Props
@@ -132,5 +151,18 @@ export const PropTableView = ({
         />
       );
     })}
+    {specialOptionalProps.length > 0 &&
+      specialOptionalProps.map(({ name, type }) => {
+        return (
+          <Props
+            hasDefaultProps={hasDefaultProps}
+            defaultProps={defaultProps}
+            propName={name}
+            description={type.description}
+            type={type.label}
+            key={name}
+          />
+        );
+      })}
   </Stack>
 );

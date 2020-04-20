@@ -1,12 +1,12 @@
 import React, { ReactNode } from "react";
 import { Page } from "docs/src/types";
-import { Text } from "@origin-digital/ods-lab";
+import { DocsText } from "@origin-digital/ods-lab";
 import { TextStack } from "../../components/TextStack/TextStack";
 
 const Heading = ({ children }: { children: ReactNode }) => (
-  <Text color="grey600" weight="medium" size="xsmall">
+  <DocsText color="grey600" weight="medium" size="xsmall">
     {children}
-  </Text>
+  </DocsText>
 );
 
 export const page: Page = {
@@ -16,7 +16,7 @@ export const page: Page = {
     return (
       <TextStack>
         <Heading>Iconography</Heading>
-        <Text>
+        <DocsText>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -24,7 +24,7 @@ export const page: Page = {
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
-        </Text>
+        </DocsText>
       </TextStack>
     );
   },

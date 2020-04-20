@@ -6,7 +6,7 @@ import {
   Breakpoints,
   BreakpointVariants,
   Space,
-  Color,
+  Colors,
   ColorVariants,
   Shadow,
   ShadowVariants,

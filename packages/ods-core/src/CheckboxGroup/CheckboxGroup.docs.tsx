@@ -6,7 +6,7 @@ import { getCGPropsDocs } from "../ControlGroup/ControlGroup.docs";
 import { CheckboxGroup, CheckboxGroupProps } from "./CheckboxGroup";
 
 export const docs: ComponentDocs<CheckboxGroupProps> = {
-  category: "Form",
+  category: "Interaction",
   componentName: "ControlGroup",
   description: [
     `Use this component to group a number of Checkboxes.`,

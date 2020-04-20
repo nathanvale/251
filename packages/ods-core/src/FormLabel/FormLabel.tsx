@@ -16,7 +16,7 @@ export interface FormLabelProps extends BaseFormStateProps {
  * In MUI FormLabel gets the palette.primary.main colour when it is focused on, however we do not want our
  * labels to change colour when they are focused.
  */
-const useLabelClasses = makeStyles((theme) => ({
+const useLabelStyles = makeStyles((theme) => ({
   root: {
     "&$focused": {
       color: theme.palette.text.primary,
@@ -30,7 +30,7 @@ export const FormLabel = ({
   className,
   ...others
 }: FormLabelProps) => {
-  const lblClasses = useLabelClasses();
+  const lblClasses = useLabelStyles();
   return (
     <MuiFormLabel
       {...muiProps}

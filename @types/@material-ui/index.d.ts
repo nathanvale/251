@@ -49,10 +49,6 @@ declare module "@material-ui/core/styles/createPalette" {
     secondaryB: PaletteColor;
   }
 
-  interface TypeBackground {
-    light: string;
-  }
-
   interface PaletteOptions {
     critical?: SimplePaletteColorOptions;
     positive?: SimplePaletteColorOptions;
@@ -66,6 +62,10 @@ declare module "@material-ui/core/styles/createPalette" {
 
 declare module "@material-ui/core/styles/createMuiTheme" {
   interface Theme {
-    // Add your custom type props here
+    colors: Colors;
+  }
+
+  interface ThemeOptions {
+    colors?: Colors;
   }
 }

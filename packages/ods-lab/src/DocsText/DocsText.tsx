@@ -1,7 +1,7 @@
 import React, { ReactNode, ReactType } from "react";
 import styled from "styled-components";
 import { Box, BoxProps } from "@origin-digital/ods-core";
-import { Color } from "@origin-digital/ods-types";
+import { Colors } from "@origin-digital/ods-types";
 import { style } from "styled-system";
 
 import { basekick } from "../_private/hooks/typography/basekick";
@@ -13,7 +13,7 @@ export const textColor = style({
 
 /* import {useText} from './_private/hooks/typography/use-text'; */
 
-export interface TextProps {
+export interface DocsTextProps {
   children?: ReactNode;
   component?: ReactType;
   size?:
@@ -26,7 +26,7 @@ export interface TextProps {
     | "xlarge"
     | "xxlarge"
     | "xxxlarge";
-  color?: keyof Color;
+  color?: keyof Colors;
   weight?: "regular" | "medium";
   baseline?: boolean;
   className?: string;
@@ -50,7 +50,7 @@ const StyledBox = styled(Box)<any>`
   ${textColor};
 `;
 
-export const Text = ({
+export const DocsText = ({
   children,
   component = "span",
   size = "xxsmall",
@@ -59,7 +59,7 @@ export const Text = ({
   align,
   className,
   dangerouslySetInnerHTML,
-}: TextProps) => {
+}: DocsTextProps) => {
   return (
     <StyledBox
       data-id="text"
@@ -77,8 +77,8 @@ export const Text = ({
   );
 };
 
-Text.defaultValues = {
+DocsText.defaultValues = {
   color: "grey500",
 };
 
-Text.displayName = "Text";
+DocsText.displayName = "DocsText";

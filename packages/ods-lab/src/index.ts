@@ -4,8 +4,8 @@
  * issue to explain our work around.
  * https://github.com/microsoft/TypeScript/issues/28481#issuecomment-552938424
  */
-export { Text } from "./Text/Text";
-export type TextProps = import("./Text/Text").TextProps;
+export { DocsText } from "./DocsText/DocsText";
+export type DocsTextProps = import("./DocsText/DocsText").DocsTextProps;
 
 // PLEASE EXPORT LAB UI COMPONENTS ONLY
 

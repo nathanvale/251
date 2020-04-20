@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Box, BoxProps } from "@origin-digital/ods-core";
 import { FieldOverlay } from "../_private/components/FieldOverlay/FieldOverlay";
 
-import { Text } from "../Text/Text";
+import { DocsText } from "../DocsText/DocsText";
 
 export interface LinkProps {
   children?: React.ReactNode;
@@ -40,7 +40,7 @@ export const Link = ({
   >
     <HoverOverlay />
     <Box component="span" position="relative" pointerEvents="none">
-      <Text size="xxsmall" baseline={false}>
+      <DocsText size="xxsmall" baseline={false}>
         {Icon ? (
           <Box
             style={{
@@ -56,7 +56,7 @@ export const Link = ({
           </Box>
         ) : null}
         {children}
-      </Text>
+      </DocsText>
     </Box>
   </StyledBox>
 );

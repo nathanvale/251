@@ -1,5 +1,35 @@
-import React from "react";
+import React, { AnchorHTMLAttributes, CSSProperties } from "react";
 import { FontSizeVariants } from "@material-ui/core/styles/createTypography";
+
+export type BackgroundColorVariants = ColorVariants;
+
+export type HeadingComponentVariants = "h1" | "h2" | "h3" | "h4" | "h6";
+
+export interface TextLinkRenderProps {
+  style: CSSProperties;
+  className: string;
+}
+
+export type TextToneVariants =
+  | keyof Pick<Colors, "critical" | "positive">
+  | "neutral";
+export type TypographyWeightVariants = "regular" | "medium" | "bold";
+export type TextVariants =
+  | "subtitle"
+  | "subtitle-small"
+  | "body"
+  | "body-small"
+  | "caption"
+  | "overline-text";
+
+export type Heading12Variants = "h1" | "h2";
+export type Heading34Variants = "h3" | "h4";
+export type HeadingVariants = Heading12Variants | Heading34Variants;
+
+export type TypographyVariants =
+  | TextVariants
+  | Heading12Variants
+  | Heading34Variants;
 
 export * from "./docs";
 export * from "./palette";
@@ -89,10 +119,9 @@ export type Space = [
 ] &
   SpaceTShirts;
 
-export interface Color {
+export interface Colors {
   backgroundDefault: string;
   backgroundPaper: string;
-  backgroundLight: string;
   caution: string;
   cautionDark: string;
   cautionLight: string;
@@ -134,7 +163,7 @@ export interface Color {
   transparent: string;
 }
 
-export type ColorVariants = keyof Color;
+export type ColorVariants = keyof Colors;
 
 export interface Shadow {
   small: string;
@@ -178,7 +207,7 @@ export interface Typography {
 
 export interface Theme {
   typography: Typography;
-  colors?: Color;
+  colors?: Colors;
   space: Space;
   shadows: Shadow;
   breakpoints: Breakpoints;
@@ -192,6 +221,12 @@ export interface Theme {
 
 export interface OptionalTrackableProps {
   "data-id"?: string;
+}
+
+export interface LinkComponentProps
+  extends AnchorHTMLAttributes<HTMLAnchorElement>,
+    OptionalTrackableProps {
+  href: string;
 }
 
 export interface ComponentBaseProps extends OptionalTrackableProps {

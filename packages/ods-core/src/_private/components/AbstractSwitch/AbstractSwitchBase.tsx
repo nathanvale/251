@@ -4,7 +4,7 @@ import { BaseSwitchBaseProps } from "@origin-digital/ods-types";
 import { makeStyles } from "@material-ui/core/styles";
 import { AbstractSwitchBaseProps, SwitchBaseMuiProps } from "./abstract-types";
 
-const useSwitchBaseStyle = makeStyles((theme: Theme) => ({
+const useSwitchBaseStyles = makeStyles((theme: Theme) => ({
   root: ({ error }: BaseSwitchBaseProps) => ({
     padding: "8px",
     border: "none",
@@ -28,7 +28,7 @@ export function AbstractSwitchBase<T extends SwitchBaseMuiProps>(
     muiProps,
     ...others
   } = props;
-  const switchBaseClasses = useSwitchBaseStyle(props);
+  const switchBaseClasses = useSwitchBaseStyles(props);
 
   return (
     <Component
