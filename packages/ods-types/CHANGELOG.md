@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.13.1...@origin-digital/ods-types@0.14.0) (2020-04-20)
+
+
+### Features
+
+* implement TextLink, Heading, Strong, Emphasis ([3f0f7a7](https://bitbucket.orgn.io/od/origin-ui/commits/3f0f7a7378a9775c306b399a617eff890458aafb))
+
+
+
+
+
 ## [0.13.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.13.0...@origin-digital/ods-types@0.13.1) (2020-04-08)
 
 **Note:** Version bump only for package @origin-digital/ods-types

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.19.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.18.3...@origin-digital/ods-core@0.19.0) (2020-04-20)
+
+
+### Features
+
+* implement TextLink, Heading, Strong, Emphasis ([3f0f7a7](https://bitbucket.orgn.io/od/origin-ui/commits/3f0f7a7378a9775c306b399a617eff890458aafb))
+
+
+
+
+
 ## [0.18.3](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.18.2...@origin-digital/ods-core@0.18.3) (2020-04-17)
 
 
