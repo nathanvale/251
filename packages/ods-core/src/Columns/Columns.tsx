@@ -56,6 +56,7 @@ export const Columns = ({
   ]);
 
   const spaceIndex = mapSpaceAliasToIndex({ space, isNegative: true });
+  const alignItems = mapVAlignToAlignItems(alignY);
   return (
     <BoxDebug
       data-id={dataId}
@@ -68,7 +69,15 @@ export const Columns = ({
           value2: "row",
         })
       }
-      alignItems={mapVAlignToAlignItems(alignY)}
+      alignItems={
+        collapseBelow
+          ? setBreakpoint({
+              breakpoint: collapseBelow,
+              value1: "flex-start",
+              value2: alignItems,
+            })
+          : alignItems
+      }
       marginLeft={
         (collapseBelow
           ? setBreakpoint({
