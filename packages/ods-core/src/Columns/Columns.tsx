@@ -35,7 +35,7 @@ const mapVAlignToAlignItems = (alignY: AlignYType): AlignItemsVariants => {
 };
 
 export interface ColumnsProps {
-  children: ReactElement<ColumnProps>[] | ReactElement<ColumnProps> | null;
+  children: ReactElement<ColumnProps>[] | ReactElement<ColumnProps>;
   space?: ResponsiveSpace;
   collapseBelow?: BreakpointVariants;
   alignY?: AlignYType;

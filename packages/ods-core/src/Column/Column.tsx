@@ -11,7 +11,7 @@ import { Box } from "../Box/Box";
 import { BoxDebug } from "../_private/components/BoxDebug/BoxDebug";
 
 export interface ColumnProps {
-  children: ReactNode;
+  children?: ReactNode;
   width?:
     | "content"
     | "1/2"
