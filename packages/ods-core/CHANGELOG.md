@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.19.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.19.1...@origin-digital/ods-core@0.19.2) (2020-04-23)
+
+
+### Bug Fixes
+
+* **columns:** ignore aligny on collapse ([d7e74f0](https://bitbucket.orgn.io/od/origin-ui/commits/d7e74f01f6831a93e9800d0560b585120f538df6))
+* **typography hook:** add missing background color from Section ([f9328c4](https://bitbucket.orgn.io/od/origin-ui/commits/f9328c4f96bdd1ba737c2122d397e8adc813125f))
+
+
+
+
+
 ## [0.19.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.19.0...@origin-digital/ods-core@0.19.1) (2020-04-20)
 
 **Note:** Version bump only for package @origin-digital/ods-core
