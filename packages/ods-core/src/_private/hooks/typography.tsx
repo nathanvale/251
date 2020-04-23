@@ -162,6 +162,7 @@ export function useCheckTypographyBackground() {
     backgroundColor === "white" ||
     backgroundColor === "backgroundDefault" ||
     backgroundColor === "transparent" ||
+    backgroundColor === "grey50" ||
     !backgroundColor;
   if (!hasValidBackground) {
     throw new Error(
