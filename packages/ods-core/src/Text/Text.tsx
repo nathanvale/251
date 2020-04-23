@@ -1,4 +1,5 @@
 import React, { ReactNode, useMemo } from "react";
+import clsx from "clsx";
 import { BoxProps, Box } from "@origin-digital/ods-core";
 import {
   TextVariants,
@@ -6,8 +7,12 @@ import {
   TypographyWeightVariants,
 } from "@origin-digital/ods-types";
 import {
-  useTextStyles,
   useTruncatedContent,
+  useCheckTypographyBackground,
+  useBasekickStyles,
+  useToneStyles,
+  useWeightStyles,
+  useStrongStyles,
 } from "../_private/hooks/typography";
 import { TextContext } from "./TextContext";
 
@@ -28,8 +33,24 @@ export interface TextProps {
   component?: BoxProps["component"];
 }
 
+interface UseTextStylesProps {
+  weight: Exclude<TypographyWeightVariants, "bold">;
+  tone?: TextToneVariants;
+  variant: TextVariants;
+}
+
 const defaultWeight = "regular";
 const defaultVariant = "body";
+
+function useTextStyles(props: UseTextStylesProps) {
+  const { tone = "neutral", weight, variant } = props;
+  useCheckTypographyBackground();
+  const basekickStyles = useBasekickStyles({ variant });
+  const toneStyles = useToneStyles({ tone });
+  const weightStyles = useWeightStyles(weight);
+  const strongStyles = useStrongStyles("medium");
+  return clsx(basekickStyles, toneStyles, weightStyles, strongStyles);
+}
 
 export const Text = (props: TextProps) => {
   const {

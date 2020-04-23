@@ -6,7 +6,7 @@ import { Text, TextProps, TextLink } from "..";
 export const docs: ComponentDocs<TextProps> = {
   category: "Interaction",
   componentName: "TextLink",
-  description: `By default, this component renders a native "a" element. If you’d like to customise the implementation of this component (e.g. to use a React Router link instead) or render something that looks like a link but isn’t semantically a link (e.g. a button), you should use TextLinkRenderer instead.`,
+  description: `By default, this component renders a native "a" element. If you’d like to customise the implementation of this component (e.g. to use a React Router link) you should use TextLinkRenderer instead.`,
   propDescriptions: {},
   migrationGuide: false,
   variant: "list",

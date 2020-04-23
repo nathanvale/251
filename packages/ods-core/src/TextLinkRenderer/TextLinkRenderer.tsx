@@ -1,11 +1,11 @@
 import React, { ReactElement, useContext } from "react";
 import { TextLinkRenderProps } from "@origin-digital/ods-types";
 import { TextContext } from "../Text/TextContext";
-import { useLinkStyles } from "../_private/hooks/typography";
+import { useTextLinkStyles } from "../_private/hooks/typography";
 import { HeadingContext } from "../Heading/HeadingContext";
 
 export interface TextLinkRendererProps {
-  children: (styleProps: TextLinkRenderProps) => ReactElement;
+  children: (renderProps: TextLinkRenderProps) => ReactElement;
 }
 
 export const TextLinkRenderer = (props: TextLinkRendererProps) => {
@@ -23,20 +23,15 @@ export const TextLinkRenderer = (props: TextLinkRendererProps) => {
     }
   }
 
-  return <InlineLink {...props} />;
-};
-
-function InlineLink(props: TextLinkRendererProps) {
   const { children } = props;
-  const className = useLinkStyles();
+  const textLinkStyles = useTextLinkStyles();
   return (
     <>
       {children({
-        style: {},
-        className,
+        textLinkStyles,
       })}
     </>
   );
-}
+};
 
 TextLinkRenderer.displayName = "TextLinkRenderer";

@@ -7,6 +7,9 @@ export {
   Checkbox,
   CheckboxBase,
   CheckboxGroup,
+  ChevronButton,
+  ChevronLink,
+  ChevronLinkRenderer,
   Column,
   Columns,
   Divider,
@@ -31,3 +34,4 @@ export {
 } from "@origin-digital/ods-core";
 export { Button } from "@origin-digital/ods-lab";
 export { Palette, BaselineGrid, Heading } from "./_private/components";
+export { ButtonBase } from "@material-ui/core";

@@ -16,7 +16,7 @@ export interface TextLinkProps
 
 export const TextLink = ({ "data-id": dataId, ...props }: TextLinkProps) => (
   <TextLinkRenderer data-id={dataId}>
-    {(styleProps) => <a {...props} {...styleProps} />}
+    {({ textLinkStyles }) => <a className={textLinkStyles} {...props} />}
   </TextLinkRenderer>
 );
 

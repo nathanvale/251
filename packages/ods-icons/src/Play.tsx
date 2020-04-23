@@ -1,6 +1,6 @@
 import React from "react";
-
-import { IconProps, IconSVG } from "./_private/IconSvg";
+import { IconProps } from "@origin-digital/ods-types";
+import { IconSVG } from "./_private/IconSvg";
 
 export const IconPlay = ({ color }: IconProps) => (
   <IconSVG color={color}>

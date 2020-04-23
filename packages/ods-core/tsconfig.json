@@ -10,6 +10,7 @@
     { "path": "../ods-helpers/tsconfig.json" },
     { "path": "../ods-types/tsconfig.json" },
     { "path": "../ods-testing-library/tsconfig.json" },
-    { "path": "../ods-devtools/tsconfig.json" }
+    { "path": "../ods-devtools/tsconfig.json" },
+    { "path": "../ods-icons/tsconfig.json" }
   ]
 }
