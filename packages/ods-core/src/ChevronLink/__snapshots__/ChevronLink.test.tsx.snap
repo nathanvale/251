@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It can render 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+<a
+  class="typography-linkReset-1 typography-chevron-link-2"
+  data-id="chevron-link"
+  href=""
+>
+  <div
+    class="c0"
+    display="flex"
+  >
+    <svg
+      class=""
+      fill="currentColor"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <path
+        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+      />
+    </svg>
+    <div
+      class="c1"
+      style="margin-top: 14px; margin-bottom: -1px;"
+    >
+      <span>
+        Chevron link
+      </span>
+    </div>
+  </div>
+</a>
+`;
+
+exports[`It can render another tone 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+<a
+  class="typography-linkReset-3 typography-chevron-link-4"
+  data-id="chevron-link"
+  href=""
+>
+  <div
+    class="c0"
+    display="flex"
+  >
+    <svg
+      class=""
+      fill="currentColor"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <path
+        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+      />
+    </svg>
+    <div
+      class="c1"
+      style="margin-top: 14px; margin-bottom: -1px;"
+    >
+      <span>
+        Chevron link
+      </span>
+    </div>
+  </div>
+</a>
+`;

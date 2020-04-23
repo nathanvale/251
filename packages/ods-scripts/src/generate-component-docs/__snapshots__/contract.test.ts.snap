@@ -1107,6 +1107,43 @@ exports[`CheckboxGroup 1`] = `
 }
 `;
 
+exports[`ChevronButton 1`] = `
+{
+  children?: ReactNode
+  data-id?: string
+  domProps?: Pick<AllHTMLAttributes<HTMLButtonElement>, "width" | "height" | "suppressContentEditableWarning" | "suppressHydrationWarning" | "accept" | ... 350 more ... | "onTransitionEndCapture">
+  onClick?: (event: MouseEvent<HTMLButtonElement, MouseEvent>) => void
+  type?: 
+    | "button"
+    | "reset"
+    | "submit"
+  variant?: 
+    | "primary"
+    | "secondary"
+}
+`;
+
+exports[`ChevronLink 1`] = `
+{
+  children?: ReactNode
+  data-id?: string
+  domProps?: Pick<AnchorHTMLAttributes<HTMLAnchorElement>, "suppressContentEditableWarning" | "suppressHydrationWarning" | "download" | "hrefLang" | ... 256 more ... | "referrerPolicy">
+  href: string
+  variant?: 
+    | "primary"
+    | "secondary"
+}
+`;
+
+exports[`ChevronLinkRenderer 1`] = `
+{
+  children: (renderProps: ChevronLinkRenderProps) => ReactElement<any, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>
+  variant: 
+    | "primary"
+    | "secondary"
+}
+`;
+
 exports[`Column 1`] = `
 {
   children: ReactNode
@@ -2416,6 +2453,6 @@ exports[`TextLink 1`] = `
 
 exports[`TextLinkRenderer 1`] = `
 {
-  children: (styleProps: TextLinkRenderProps) => ReactElement<any, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>
+  children: (renderProps: TextLinkRenderProps) => ReactElement<any, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>
 }
 `;

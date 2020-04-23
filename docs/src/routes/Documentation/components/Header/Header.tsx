@@ -57,10 +57,10 @@ export function Header({ description, componentName, sourceUrl }: HeaderProps) {
             <Column width="content">
               <Text variant="overline-text">
                 <TextLinkRenderer>
-                  {(styleProps) => (
+                  {({ textLinkStyles }) => (
                     <Link
                       smooth
-                      {...styleProps}
+                      className={textLinkStyles}
                       to={`/components/${componentName}/#props`}
                     >
                       Props

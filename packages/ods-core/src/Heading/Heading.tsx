@@ -5,10 +5,16 @@ import {
   TypographyWeightVariants,
   Heading12Variants,
   Heading34Variants,
+  HeadingVariants,
 } from "@origin-digital/ods-types";
+import clsx from "clsx";
 import {
-  useHeadingStyles,
   useTruncatedContent,
+  useCheckTypographyBackground,
+  useBasekickStyles,
+  useToneStyles,
+  useStrongStyles,
+  useWeightStyles,
 } from "../_private/hooks/typography";
 import { Text } from "../Text/Text";
 import { HeadingContext } from "./HeadingContext";
@@ -35,6 +41,30 @@ type Heading34Props = Omit<HeadingBaseProps, "variant" | "weight"> & {
 };
 
 export type HeadingProps = Heading12Props | Heading34Props;
+
+interface UseHeadingStylesProps {
+  variant: Heading12Variants | Heading34Variants;
+  weight: Exclude<TypographyWeightVariants, "bold">;
+}
+
+function useHeadingStyles(props: UseHeadingStylesProps) {
+  const { variant, weight } = props;
+  useCheckTypographyBackground();
+  const basekickStyles = useBasekickStyles({ variant });
+  const toneStyles = useToneStyles({ tone: "grey600" });
+  const strongStyles = useStrongStyles("bold");
+  const weightMap: Record<
+    HeadingVariants,
+    Exclude<TypographyWeightVariants, "bold">
+  > = {
+    h1: weight,
+    h2: weight,
+    h3: "medium",
+    h4: "medium",
+  };
+  const weightStyles = useWeightStyles(weightMap[variant!]);
+  return clsx(basekickStyles, toneStyles, strongStyles, weightStyles);
+}
 
 export const Heading = (props: HeadingProps) => {
   const {

@@ -4,14 +4,12 @@ import { Theme } from "@material-ui/core/styles/createMuiTheme";
 import { CSSProperties } from "@material-ui/core/styles/withStyles";
 import useTheme from "@material-ui/core/styles/useTheme";
 import {
-  TextToneVariants,
   TypographyVariants,
   TypographyWeightVariants,
   Heading12Variants,
   Heading34Variants,
   TextVariants,
   ColorVariants,
-  HeadingVariants,
 } from "@origin-digital/ods-types";
 import clsx from "clsx";
 import { Box } from "@material-ui/core";
@@ -20,19 +18,8 @@ import { useBackgroundColor } from "../../Box/BackgroundContext";
 import { TextContext } from "../../Text/TextContext";
 import { UseTextProps } from "../../Text/Text";
 
-export interface UseTextStylesProps {
-  weight: Exclude<TypographyWeightVariants, "bold">;
-  tone?: TextToneVariants;
-  variant: TextVariants;
-}
-
 export interface UseBasekickStylesProps {
   variant: TextVariants | Heading12Variants | Heading34Variants;
-}
-
-export interface UseHeadingStylesProps {
-  variant: Heading12Variants | Heading34Variants;
-  weight: Exclude<TypographyWeightVariants, "bold">;
 }
 
 export interface UseTruncatedContentProps {
@@ -44,20 +31,20 @@ export interface UseTruncatedContentProps {
 /**
  * Maps our Text and Heading component variants to the MUI typography theme
  */
-function getTypographyForVariant(
-  theme: Theme
+export function getTypographyForVariant(
+  typography: Theme["typography"]
 ): Record<TypographyVariants, CSSProperties> {
   return {
-    body: theme.typography.body1,
-    "body-small": theme.typography.body2,
-    "overline-text": theme.typography.overline,
-    "subtitle-small": theme.typography.subtitle2,
-    subtitle: theme.typography.subtitle1,
-    caption: theme.typography.caption,
-    h1: theme.typography.h1,
-    h2: theme.typography.h2,
-    h3: theme.typography.h3,
-    h4: theme.typography.h4,
+    body: typography.body1,
+    "body-small": typography.body2,
+    "overline-text": typography.overline,
+    "subtitle-small": typography.subtitle2,
+    subtitle: typography.subtitle1,
+    caption: typography.caption,
+    h1: typography.h1,
+    h2: typography.h2,
+    h3: typography.h3,
+    h4: typography.h4,
   };
 }
 /**
@@ -113,22 +100,22 @@ export function useToneStyles({
  */
 export function useBasekickStyles({ variant }: UseBasekickStylesProps) {
   return makeStyles(
-    (theme: Theme) => {
+    ({ breakpoints, typography }) => {
       const responsiveFontSize: Record<"h1" | "h2" | "h3", any> = {
         h1: {
-          [theme.breakpoints.up("lg")]: {
+          [breakpoints.up("lg")]: {
             fontSize: "56px",
             lineHeight: "64px",
           },
         },
         h2: {
-          [theme.breakpoints.up("lg")]: {
+          [breakpoints.up("lg")]: {
             fontSize: "32px",
             lineHeight: "40px",
           },
         },
         h3: {
-          [theme.breakpoints.up("lg")]: {
+          [breakpoints.up("lg")]: {
             fontSize: "20px",
             lineHeight: "28px",
           },
@@ -141,8 +128,8 @@ export function useBasekickStyles({ variant }: UseBasekickStylesProps) {
       }
       return {
         basekick: {
-          fontFamily: theme.typography.fontFamily,
-          ...getTypographyForVariant(theme)[variant!],
+          fontFamily: typography.fontFamily,
+          ...getTypographyForVariant(typography)[variant!],
           display: "block",
           ...responsiveBasekick,
         },
@@ -209,45 +196,34 @@ export function useStrongStyles(
 }
 
 /**
- * Styles for the Heading component
+ * Link reset styles
  */
-export function useHeadingStyles(props: UseHeadingStylesProps) {
-  const { variant, weight } = props;
-  useCheckTypographyBackground();
-  const basekickStyles = useBasekickStyles({ variant });
-  const toneStyles = useToneStyles({ tone: "grey600" });
-  const strongStyles = useStrongStyles("bold");
-  const weightMap: Record<
-    HeadingVariants,
-    Exclude<TypographyWeightVariants, "bold">
-  > = {
-    h1: weight,
-    h2: weight,
-    h3: "medium",
-    h4: "medium",
-  };
-  const weightStyles = useWeightStyles(weightMap[variant!]);
-  return clsx(basekickStyles, toneStyles, strongStyles, weightStyles);
-}
-
-/**
- * Styles for the Text component
- * @param props
- */
-export function useTextStyles(props: UseTextStylesProps) {
-  const { tone = "neutral", weight, variant } = props;
-  useCheckTypographyBackground();
-  const basekickStyles = useBasekickStyles({ variant });
-  const toneStyles = useToneStyles({ tone });
-  const weightStyles = useWeightStyles(weight);
-  const strongStyles = useStrongStyles("medium");
-  return clsx(basekickStyles, toneStyles, weightStyles, strongStyles);
+export function useLinkResetStyles() {
+  return makeStyles(
+    () => {
+      return {
+        linkReset: {
+          color: "inherit",
+          margin: 0,
+          padding: 0,
+          border: 0,
+          boxSizing: "border-box",
+          cursor: "pointer",
+          verticalAlign: "baseline",
+          textDecoration: "underline",
+          background: "none",
+          outline: "none",
+        },
+      };
+    },
+    { classNamePrefix: "typography" }
+  )().linkReset;
 }
 
 /**
  * Styles for the TextLinkRenderer component
  */
-export function useLinkStyles() {
+export function useTextLinkStyles() {
   const inText = useContext(TextContext);
   const inHeading = useContext(HeadingContext);
   let tone: UseTextProps["tone"] | "grey600";
@@ -257,7 +233,8 @@ export function useLinkStyles() {
   if (inHeading) {
     tone = "grey600";
   }
-  return makeStyles(
+  const linkResetStyles = useLinkResetStyles();
+  const textLinkStyles = makeStyles(
     ({ colors }) => {
       const hoverColor =
         tone === "neutral" || tone === "grey600"
@@ -265,17 +242,8 @@ export function useLinkStyles() {
           : colors[`${tone}Dark`];
       return {
         link: {
-          color: "inherit",
-          margin: 0,
-          padding: 0,
-          border: 0,
-          boxSizing: "border-box",
           fontSize: "100%",
           font: "inherit",
-          cursor: "pointer",
-          verticalAlign: "baseline",
-          textDecoration: "underline",
-          background: "none",
           "&:hover": {
             textDecoration: "none",
             color: hoverColor,
@@ -285,8 +253,8 @@ export function useLinkStyles() {
     },
     { classNamePrefix: "typography" }
   )().link;
+  return clsx(linkResetStyles, textLinkStyles);
 }
-
 /**
  * Wraps a div around a typography component that needs to be truncated
  */

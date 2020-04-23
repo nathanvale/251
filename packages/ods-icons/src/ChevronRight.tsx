@@ -2,8 +2,8 @@ import React from "react";
 import { IconProps } from "@origin-digital/ods-types";
 import { IconSVG } from "./_private/IconSvg";
 
-export const IconCheck = ({ color }: IconProps) => (
+export const IconChevronRight = ({ color }: IconProps) => (
   <IconSVG color={color}>
-    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
   </IconSVG>
 );

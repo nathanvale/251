@@ -18,7 +18,9 @@ export const docs: ComponentDocs = {
         <Text>
           Even though it looks like a link, the last word is a{" "}
           <TextLinkRenderer>
-            {(linkStyles) => <button {...linkStyles}>button</button>}
+            {({ textLinkStyles }) => (
+              <button className={textLinkStyles}>button</button>
+            )}
           </TextLinkRenderer>
           .
         </Text>
@@ -30,31 +32,31 @@ export default () => (
   <Text>
     Even though it looks like a link, the last word is a
     <TextLinkRenderer>
-      {linkStyles => <button {...linkStyles}>button</button>}
+      {({ textLinkStyles }) => <button className={textLinkStyles}>button</button>}
     </TextLinkRenderer>
     .
   </Text>
 );`,
     },
     {
-      label: "TextLink with Custom React Router Link Renderer",
+      label: "TextLink with custom React Router Link",
       playroom: false,
       codeString: `import React from 'react';
-  import { Link } from 'react-router-dom';
-  import { TextLinkRenderer, Text } from '@origin-digital/ods-core';
+import { Link } from 'react-router-dom';
+import { TextLinkRenderer, Text } from '@origin-digital/ods-core';
 
-  export default () => (
-    <Text>
-      The last word of this sentence is a
-      <TextLinkRenderer>
-        {linkStyles => (
-          <Link to="" {...linkStyles}>
-            link
-          </Link>
-        )}
-      </TextLinkRenderer>
-    </Text>
-  );
+export default () => (
+  <Text>
+    The last word of this sentence is a
+    <TextLinkRenderer>
+      {({ textLinkStyles }) => (
+        <Link to="" className={textLinkStyles}>
+          link
+        </Link>
+      )}
+    </TextLinkRenderer>
+  </Text>
+);
 `,
     },
   ],
