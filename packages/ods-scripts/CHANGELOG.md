@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.19.3](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.19.2...@origin-digital/ods-scripts@0.19.3) (2020-04-23)
+
+
+### Bug Fixes
+
+* **column/s:** make children optional ([5723113](https://bitbucket.orgn.io/od/origin-ui/commits/5723113d9f590a783c4b937899a391f840af60cd))
+
+
+
+
+
 ## [0.19.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.19.1...@origin-digital/ods-scripts@0.19.2) (2020-04-23)
 
 **Note:** Version bump only for package @origin-digital/ods-scripts
