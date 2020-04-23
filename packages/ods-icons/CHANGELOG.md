@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.6.4...@origin-digital/ods-icons@0.7.0) (2020-04-23)
+
+
+### Features
+
+* implement ChevronLink, ChevronButton ([80f471d](https://bitbucket.orgn.io/od/origin-ui/commits/80f471dfdf21600c8526b9b681fae8e5c18d8046))
+
+
+
+
+
 ## [0.6.4](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.6.3...@origin-digital/ods-icons@0.6.4) (2020-04-20)
 
 **Note:** Version bump only for package @origin-digital/ods-icons
