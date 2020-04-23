@@ -1109,7 +1109,7 @@ exports[`CheckboxGroup 1`] = `
 
 exports[`Column 1`] = `
 {
-  children: ReactNode
+  children?: ReactNode
   data-id?: string
   width?: 
     | "1/12"
