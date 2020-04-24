@@ -19,7 +19,7 @@ export const docs: ComponentDocs<ChevronLinkProps> = {
       Code: () => <ChevronLink href="">Chevron link</ChevronLink>,
     },
     {
-      label: "Setting the tone",
+      label: "Setting the variant",
       Code: () => (
         <ChevronLink variant="secondary" href="">
           Chevron link
