@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.1](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.11.0...playroom@0.11.1) (2020-04-24)
+
+
+### Bug Fixes
+
+* **playroom:** missing heading autocomplete ([ffaab38](https://bitbucket.orgn.io/od/origin-ui/commits/ffaab38a0bed3dc409c0bbcb8767e834aa57e341))
+
+
+
+
+
 # [0.11.0](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.10.3...playroom@0.11.0) (2020-04-23)
 
 
