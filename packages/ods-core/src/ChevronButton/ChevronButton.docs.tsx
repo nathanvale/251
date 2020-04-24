@@ -20,7 +20,7 @@ export const docs: ComponentDocs<ChevronButtonProps> = {
       Code: () => <ChevronButton>Chevron button</ChevronButton>,
     },
     {
-      label: "Setting the tone",
+      label: "Setting the variant",
       Code: () => (
         <ChevronButton variant="secondary">Chevron button</ChevronButton>
       ),

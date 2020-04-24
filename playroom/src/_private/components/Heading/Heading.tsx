@@ -1,16 +1,17 @@
-/* eslint-disable babel/no-unused-expressions */
 import React from "react";
-import { HeadingVariants } from "@origin-digital/ods-types";
 import {
   HeadingBaseProps,
   Heading as HeadingOriginal,
-  HeadingProps as HeadingPropsOriginal,
 } from "../../../../../packages/ods-core/src/Heading/Heading";
 
 interface HeadingProps extends HeadingBaseProps {
-  variant: HeadingVariants;
+  variant: "h1" | "h2" | "h3" | "h4";
 }
-
-export const Heading = (props: HeadingProps) => (
-  <HeadingOriginal {...(props as HeadingPropsOriginal)} />
-);
+/**
+ * We are pointing Heading here for autocomplete in playroonm
+ * because of the type intersection we have in core HeadingProps.
+ * Weight prop doesn't exist on the interface unless it is in
+ * a variant conditional so we have to force playroom to look at a
+ * faux type instead.
+ */
+export const Heading = (props: HeadingProps) => <HeadingOriginal {...props} />;
