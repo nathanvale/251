@@ -1806,7 +1806,8 @@ exports[`Section 1`] = `
     | "full-width"
     | "max-width-at-xl"
     | "off"
-  hideGutter?: boolean
+  hideGutter?: ResponsiveProp<boolean
+  >
   paddingY?: 
     | "medium"
     | "none"
