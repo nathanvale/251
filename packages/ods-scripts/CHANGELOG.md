@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.21.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.20.1...@origin-digital/ods-scripts@0.21.0) (2020-04-28)
+
+
+### Features
+
+* **Section:** make hideGutter prop responsive ([c6d4faa](https://bitbucket.orgn.io/od/origin-ui/commits/c6d4faa850bae4269db1364bf2a57dcc49afa1d4))
+
+
+
+
+
 ## [0.20.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.20.0...@origin-digital/ods-scripts@0.20.1) (2020-04-24)
 
 **Note:** Version bump only for package @origin-digital/ods-scripts
