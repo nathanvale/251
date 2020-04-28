@@ -7,14 +7,14 @@ import {
   BackgroundVariant,
   FluidityVariant,
 } from "@origin-digital/ods-types";
-import { Box } from "../Box/Box";
+import { Box, ResponsiveSpace } from "../Box/Box";
 
 export interface SectionProps {
   children: React.ReactNode;
   backgroundColor?: BackgroundVariant;
   "data-id"?: string;
   fluidity?: FluidityVariant;
-  hideGutter?: boolean;
+  hideGutter?: ResponsiveProp<boolean>;
   stretchY?: boolean;
   paddingY?: PaddingYVariants;
 }
@@ -22,6 +22,7 @@ export interface SectionProps {
 const defaultPaddingY = "small";
 const defaultFluidity = "off";
 const defaultBackgroundColor = "white";
+const defaultHideGutter = false;
 
 const cardPaddingYForVariant: Record<
   PaddingYVariants,
@@ -84,9 +85,33 @@ const StyledBox = styled(Box)<StyledBoxProps>`
 
 `;
 
+export function getResponsiveSpace(
+  hideGutter: ResponsiveProp<boolean>
+): ResponsiveSpace {
+  if (typeof hideGutter === "boolean") {
+    return hideGutter ? "none" : "medium";
+  } else if (hideGutter instanceof Array) {
+    const { length } = hideGutter;
+    if (length === 2) {
+      const mobile = hideGutter[0] ? "none" : "medium";
+      const desktop = hideGutter[1] ? "none" : "medium";
+      return [mobile, desktop];
+    }
+  } else if (hideGutter instanceof Object) {
+    return {
+      xs: hideGutter.xs ? "none" : "medium",
+      sm: hideGutter.sm ? "none" : "medium",
+      md: hideGutter.md ? "none" : "medium",
+      lg: hideGutter.lg ? "none" : "medium",
+      xl: hideGutter.xl ? "none" : "medium",
+    };
+  }
+  return "none";
+}
+
 export const Section = ({
   stretchY,
-  hideGutter,
+  hideGutter = defaultHideGutter,
   children,
   "data-id": dataId,
   paddingY = defaultPaddingY,
@@ -105,7 +130,7 @@ export const Section = ({
       <StyledBox
         {...rest}
         height={stretchY ? "full" : undefined}
-        paddingX={hideGutter ? undefined : "medium"}
+        paddingX={getResponsiveSpace(hideGutter)}
         width="full"
         style={{ marginLeft: "auto", marginRight: "auto" }}
       >
@@ -120,7 +145,7 @@ Section.defaultProps = {
   backgroundColor: defaultBackgroundColor,
   paddingY: defaultPaddingY,
   fluidity: defaultFluidity,
-  hideGutter: false,
+  hideGutter: defaultHideGutter,
   stretchY: false,
 };
 

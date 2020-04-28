@@ -1,7 +1,44 @@
 import React from "react";
 import { render } from "@origin-digital/ods-testing-library";
 import { Placeholder } from "../Placeholder/Placeholder";
-import { Section } from "./Section";
+import { Section, getResponsiveSpace } from "./Section";
+
+test("hideGutter is responsive with a Boolean", () => {
+  const result = getResponsiveSpace(false);
+  expect(result).toBe("medium");
+});
+
+test("hideGutter is responsive with a Boolean 2", () => {
+  const result = getResponsiveSpace(true);
+  expect(result).toBe("none");
+});
+
+test("hideGutter is responsive with an array", () => {
+  const result = getResponsiveSpace([false, true]);
+  expect(result).toEqual(["medium", "none"]);
+});
+
+test("hideGutter is responsive with an array 2", () => {
+  const result = getResponsiveSpace([true, false]);
+  expect(result).toEqual(["none", "medium"]);
+});
+
+test("hideGutter is responsive with an object", () => {
+  const result = getResponsiveSpace({
+    xs: false,
+    sm: true,
+    md: false,
+    lg: true,
+    xl: false,
+  });
+  expect(result).toEqual({
+    xs: "medium",
+    sm: "none",
+    md: "medium",
+    lg: "none",
+    xl: "medium",
+  });
+});
 
 test("It sets the grey50 background correctly", () => {
   const { container } = render(

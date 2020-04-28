@@ -62,6 +62,40 @@ export const docs: ComponentDocs<SectionProps> = {
     },
     {
       noSection: true,
+      label: "Hiding Gutters on Mobile and Desktop Breakpoints",
+      description: `Hiding gutters cans be controlled responsively by passing in an array of boolean values (true or false) - one for mobile and one for desktop. Open in Playroom to see the responsive behaviour of this example.`,
+      Code: () => (
+        <Section
+          hideGutter={[true, false]}
+          fluidity="full-width"
+          backgroundColor="transparent"
+        >
+          <Placeholder />
+        </Section>
+      ),
+    },
+    {
+      noSection: true,
+      label: "Hiding Gutters Across All Five Breakpoints",
+      description: `Hiding gutters cans be controlled responsively across all 5 breakpoints, xs, sm, md, lg and xl by passing in an object with breakpoints as keys and booleans (true or false) as values. Open in Playroom to see the responsive behaviour of this example.`,
+      Code: () => (
+        <Section
+          hideGutter={{
+            xs: false,
+            sm: true,
+            md: false,
+            lg: true,
+            xl: false,
+          }}
+          fluidity="full-width"
+          backgroundColor="transparent"
+        >
+          <Placeholder />
+        </Section>
+      ),
+    },
+    {
+      noSection: true,
       stretch: true,
       label: "Vertically Stretching",
       description: `In situations where you would like to vertically stretch Section to its parent height pass in "stretchY."`,
