@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.11.2...playroom@0.12.0) (2020-04-30)
+
+
+### Features
+
+* **button:** create new button component ([b6f5bd1](https://bitbucket.orgn.io/od/origin-ui/commits/b6f5bd1e72612ab60df95624868a829d1ed9b608))
+
+
+
+
+
 ## [0.11.2](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.11.1...playroom@0.11.2) (2020-04-28)
 
 **Note:** Version bump only for package playroom
