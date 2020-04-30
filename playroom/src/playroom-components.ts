@@ -35,4 +35,4 @@ export {
   TextLinkRenderer,
 } from "@origin-digital/ods-core";
 
-export { Phone } from "@material-ui/icons";
+export { IconCheck } from "@origin-digital/ods-icons";

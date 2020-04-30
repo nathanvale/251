@@ -18,8 +18,10 @@ module.exports = {
   openBrowser: false,
   typeScriptFiles: [
     "packages/ods-core/src/**/*.{ts,tsx}",
+    // I think we should remove ods-lab to avoid conflicting with ods-core comps with same names
     "packages/ods-lab/src/**/*.{ts,tsx}",
     "packages/ods-types/src/**/*.{ts,tsx}",
+    "packages/ods-icons/src/**/*.{ts,tsx}",
     /**
      * We are pointing Heading here for autocomplete in playroonm
      * because of the type intersection we have in core HeadingProps.

@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Phone } from "@material-ui/icons";
+import { IconCheck } from "@origin-digital/ods-icons";
 import { Stack } from "../Stack/Stack";
 import { Columns } from "../Columns/Columns";
 import { Column } from "../Column/Column";
@@ -208,16 +208,22 @@ export const docs: ComponentDocs<ButtonProps> = {
       label: "Button with Icon",
       description: "Button can render an icon before the text",
       Code: () => (
-        <>
-          <Box>
-            <Button icon={<Phone />}>Medium</Button>
-            <Box style={{ display: "inline-block", width: "20px" }} />
-            <Button size="small" icon={<Phone />}>
-              Small
-            </Button>
-          </Box>
-        </>
+        <Box>
+          <Button icon={<IconCheck />}>Medium</Button>
+          <Box style={{ display: "inline-block", width: "20px" }} />
+          <Button size="small" icon={<IconCheck />}>
+            Small
+          </Button>
+        </Box>
       ),
+      playroom: false,
+      codeString: `<Box>
+  <Button icon={<IconCheck />}>Medium</Button>
+  <Box style={{ display: "inline-block", width: "20px" }} />
+  <Button size="small" icon={<IconCheck />}>
+    Small
+  </Button>
+</Box>`,
     },
     {
       label: "Button sizes",
