@@ -1,7 +1,8 @@
 import * as React from "react";
 import makeStyles from "@material-ui/styles/makeStyles";
+import { Button } from "@origin-digital/ods-core";
 import { AllColors } from "../AllColors/AllColors";
-import { Button, Grid } from "..";
+import { Grid } from "../Grid/Grid";
 
 const useStyles = makeStyles({
   select: {

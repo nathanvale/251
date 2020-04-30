@@ -17,8 +17,6 @@ export { AlertTitle } from "./Alert/AlertTitle";
 export type AlertTitleProps = import("./Alert/AlertTitle").AlertTitleProps;
 export { AppBar } from "./AppBar/AppBar";
 export type AppBarProps = import("./AppBar/AppBar").AppBarProps;
-export { Button } from "./Button/Button";
-export type ButtonProps = import("./Button/Button").ButtonProps;
 export { CardActionArea } from "./Card/CardActionArea";
 export type CardActionAreaProps = import("./Card/CardActionArea").CardActionAreaProps;
 export { CardActions } from "./Card/CardActions";

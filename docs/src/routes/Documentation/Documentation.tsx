@@ -3,7 +3,7 @@ import map from "lodash/map";
 import groupBy from "lodash/groupBy";
 import { Route, useLocation, Link as ReactRouterLink } from "react-router-dom";
 import * as odsCore from "@origin-digital/ods-core";
-import * as odsLab from "@origin-digital/ods-lab";
+import { DocsText, Link } from "@origin-digital/ods-lab";
 import styled, { css } from "styled-components";
 import { media } from "@origin-digital/ods-helpers";
 import { ComponentDocs } from "@origin-digital/ods-types";
@@ -40,12 +40,7 @@ const componentPathsByCategory = groupBy(
   (component) => component.name
 );
 
-const components = {
-  ...odsLab,
-  ...odsCore,
-};
-
-const { Box, Stack, Hidden, Link, DocsText } = components;
+const { Box, Stack, Hidden } = odsCore;
 
 const responsiveGutter: odsCore.BoxProps["paddingX"] = ["large", "xlarge"];
 const headerHeight = "100px";

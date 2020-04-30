@@ -4,6 +4,7 @@ import { style, MarginBottomProps, get } from "styled-system";
 import {
   AlignXType,
   AlignItemsVariants,
+  ResponsiveSpace,
   TLength,
 } from "@origin-digital/ods-types";
 import {
@@ -11,7 +12,6 @@ import {
   cssLengthToString,
 } from "@origin-digital/ods-helpers";
 import * as CSS from "csstype";
-import { ResponsiveSpace } from "../Box/Box";
 import { Divider } from "../Divider/Divider";
 
 const mapHAlignToAlignItems = (alignX: AlignXType): AlignItemsVariants => {

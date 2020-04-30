@@ -168,4 +168,8 @@ export const muiTypography: Partial<Theme["typography"]> = {
     color: colors.grey[500],
     textTransform: "uppercase",
   },
+  button: {
+    ...typography.text.xsmall,
+    textTransform: "none",
+  },
 };

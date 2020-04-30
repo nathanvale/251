@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders a contained disabled 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root Button-root-129 Button-root-140 MuiButton-contained Button-contained-132 MuiButton-containedPrimary Button-containedPrimary-133 Mui-disabled Button-disabled-139 Mui-disabled"
+    disabled=""
+    tabindex="-1"
+    type="button"
+  >
+    <span
+      class="MuiButton-label"
+    >
+      Primary
+    </span>
+  </button>
+</div>
+`;
+
+exports[`it renders a contained primary by default 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root Button-root-1 Button-root-12 MuiButton-contained Button-contained-4 MuiButton-containedPrimary Button-containedPrimary-5"
+    data-id="primary-button"
+    tabindex="0"
+    type="button"
+  >
+    <span
+      class="MuiButton-label"
+    >
+      Primary
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </button>
+</div>
+`;
+
+exports[`it renders a contained secondary 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root Button-root-65 Button-root-76 MuiButton-contained Button-contained-68 MuiButton-containedSecondary Button-containedSecondary-70"
+    tabindex="0"
+    type="button"
+  >
+    <span
+      class="MuiButton-label"
+    >
+      Primary
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </button>
+</div>
+`;
+
+exports[`it renders a primary inverse button 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root Button-inverse-root-696 Button-inverse-root-705 MuiButton-contained Button-inverse-contained-699 MuiButton-containedPrimary Button-inverse-containedPrimary-700"
+    tabindex="0"
+    type="button"
+  >
+    <span
+      class="MuiButton-label"
+    >
+      Inverse
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </button>
+</div>
+`;
+
+exports[`it renders an icon 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root Button-root-611 Button-root-622 MuiButton-contained Button-contained-614 MuiButton-containedPrimary Button-containedPrimary-615"
+    tabindex="0"
+    type="button"
+  >
+    <span
+      class="MuiButton-label"
+    >
+      <span
+        class="MuiButton-startIcon MuiButton-iconSizeMedium"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+          />
+        </svg>
+      </span>
+      Primary
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </button>
+</div>
+`;
+
+exports[`it renders an outlined disabled 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root Button-root-311 Button-root-322 MuiButton-outlined Button-outlined-317 MuiButton-outlinedPrimary Button-outlinedPrimary-318 Mui-disabled Button-disabled-321 Mui-disabled"
+    disabled=""
+    tabindex="-1"
+    type="button"
+  >
+    <span
+      class="MuiButton-label"
+    >
+      Primary
+    </span>
+  </button>
+</div>
+`;
+
+exports[`it renders an outlined primary 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root Button-root-183 Button-root-194 MuiButton-outlined Button-outlined-189 MuiButton-outlinedPrimary Button-outlinedPrimary-190"
+    tabindex="0"
+    type="button"
+  >
+    <span
+      class="MuiButton-label"
+    >
+      Primary
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </button>
+</div>
+`;
+
+exports[`it renders an outlined secondary 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root Button-root-247 Button-root-258 MuiButton-outlined Button-outlined-253 MuiButton-outlinedSecondary Button-outlinedSecondary-255"
+    tabindex="0"
+    type="button"
+  >
+    <span
+      class="MuiButton-label"
+    >
+      Primary
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </button>
+</div>
+`;
+
+exports[`it renders an text disabled 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root Button-root-493 Button-root-504 MuiButton-text MuiButton-textPrimary Mui-disabled Button-disabled-503 Mui-disabled"
+    disabled=""
+    tabindex="-1"
+    type="button"
+  >
+    <span
+      class="MuiButton-label"
+    >
+      Primary
+    </span>
+  </button>
+</div>
+`;
+
+exports[`it renders an text primary 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root Button-root-365 Button-root-376 MuiButton-text MuiButton-textPrimary"
+    tabindex="0"
+    type="button"
+  >
+    <span
+      class="MuiButton-label"
+    >
+      Primary
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </button>
+</div>
+`;
+
+exports[`it renders an text secondary 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root Button-root-429 Button-root-440 MuiButton-text MuiButton-textSecondary Button-textSecondary-438"
+    tabindex="0"
+    type="button"
+  >
+    <span
+      class="MuiButton-label"
+    >
+      Primary
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </button>
+</div>
+`;

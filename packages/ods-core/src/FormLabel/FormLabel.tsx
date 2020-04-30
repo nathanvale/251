@@ -16,15 +16,28 @@ export interface FormLabelProps extends BaseFormStateProps {
  * In MUI FormLabel gets the palette.primary.main colour when it is focused on, however we do not want our
  * labels to change colour when they are focused.
  */
-const useLabelStyles = makeStyles((theme) => ({
-  root: {
-    "&$focused": {
-      color: theme.palette.text.primary,
+const useLabelStyles = makeStyles(
+  (theme) => ({
+    root: {
+      "&.Mui-error": {
+        color: theme.palette.text.primary,
+      },
+      "&$focused": {
+        color: theme.palette.text.primary,
+      },
+      // In Material-UI error has priority over disabled. However, for us disabled should override others as the highest priority.
+      "&.Mui-disabled": {
+        color: theme.palette.text.disabled,
+      },
     },
-  },
-  focused: {},
-}));
+    focused: {},
+  }),
+  { classNamePrefix: "FormLabel" }
+);
+
 export const FormLabel = ({
+  disabled,
+  focused,
   muiProps = {} as any,
   classes,
   className,
@@ -35,8 +48,16 @@ export const FormLabel = ({
     <MuiFormLabel
       {...muiProps}
       {...others}
-      className={clsx(lblClasses.root, lblClasses.focused, className)}
+      className={clsx(
+        lblClasses.root,
+        {
+          [lblClasses.focused]: focused,
+        },
+        className
+      )}
       classes={classes}
+      disabled={disabled}
+      focused={focused}
     />
   );
 };

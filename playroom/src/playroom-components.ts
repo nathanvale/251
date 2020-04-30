@@ -1,7 +1,9 @@
 export * from "./legacy-icons";
 export * from "./legacy-components";
+export { Palette, BaselineGrid, Heading } from "./_private/components";
 export {
   Box,
+  Button,
   Card,
   CardStackSection,
   Checkbox,
@@ -32,6 +34,5 @@ export {
   TextLink,
   TextLinkRenderer,
 } from "@origin-digital/ods-core";
-export { Button } from "@origin-digital/ods-lab";
-export { Palette, BaselineGrid, Heading } from "./_private/components";
-export { ButtonBase } from "@material-ui/core";
+
+export { Phone } from "@material-ui/icons";
