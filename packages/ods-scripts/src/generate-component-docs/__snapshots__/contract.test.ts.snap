@@ -980,6 +980,53 @@ exports[`Box 1`] = `
 }
 `;
 
+exports[`Button 1`] = `
+{
+  buttonRef?: 
+    | (instance: unknown) => void
+    | RefObject<unknown>
+  children?: ReactNode
+  className?: string
+  classes?: Partial<Record<ButtonClassKey, string>>
+  color?: 
+    | "primary"
+    | "secondary"
+  component?: 
+    | "a"
+    | "button"
+    | "input"
+  data-id?: string
+  disabled?: boolean
+  fullWidth?: ResponsiveProp<boolean
+  >
+  href?: string
+  icon?: ReactNode
+  id?: string
+  inverse?: boolean
+  muiProps?: OverrideProps<ButtonTypeMap<{}, "button">, "button"> | undefined
+  noTextPadding?: boolean
+  onBlur?: (event: FocusEvent<HTMLButtonElement>) => void
+  onClick?: (event: MouseEvent<HTMLButtonElement, MouseEvent>) => void
+  onClickCapture?: (event: MouseEvent<HTMLButtonElement, MouseEvent>) => void
+  onFocus?: (event: FocusEvent<HTMLButtonElement>) => void
+  onKeyDown?: (event: KeyboardEvent<HTMLButtonElement>) => void
+  onKeyPress?: (event: KeyboardEvent<HTMLButtonElement>) => void
+  onKeyUp?: (event: KeyboardEvent<HTMLButtonElement>) => void
+  size?: 
+    | "medium"
+    | "small"
+  target?: string
+  type?: 
+    | "button"
+    | "reset"
+    | "submit"
+  variant?: 
+    | "contained"
+    | "outlined"
+    | "text"
+}
+`;
+
 exports[`Card 1`] = `
 {
   backgroundColor?: 
@@ -1027,6 +1074,7 @@ exports[`Checkbox 1`] = `
   data-id?: string
   disabled?: boolean
   error?: boolean
+  focused?: boolean
   helperText?: ReactNode
   id: string
   inputRef?: 
@@ -1056,6 +1104,7 @@ exports[`CheckboxBase 1`] = `
   data-id?: string
   disabled?: boolean
   error?: boolean
+  focused?: boolean
   id: string
   inputRef?: 
     | (instance: any) => void
@@ -1079,6 +1128,7 @@ exports[`CheckboxGroup 1`] = `
   data-id?: string
   disabled?: boolean
   error?: boolean
+  focused?: boolean
   groupComponent?: 
     | "div"
     | "fieldset"
@@ -1222,6 +1272,7 @@ exports[`FormControl 1`] = `
   data-id?: string
   disabled?: boolean
   error?: boolean
+  focused?: boolean
   id?: string
   muiProps?: OverrideProps<FormControlTypeMap<{}, "div">, "div"> | undefined
   required?: boolean
@@ -1251,6 +1302,7 @@ exports[`FormHelperText 1`] = `
   data-id?: string
   disabled?: boolean
   error?: boolean
+  focused?: boolean
   id: string
   muiProps?: FormHelperTextProps | undefined
   required?: boolean
@@ -1279,6 +1331,7 @@ exports[`FormLabel 1`] = `
   data-id?: string
   disabled?: boolean
   error?: boolean
+  focused?: boolean
   id?: string
   muiProps?: OverrideProps<FormLabelTypeMap<{}, "label">, "label"> | undefined
   required?: boolean
@@ -1677,6 +1730,7 @@ exports[`Radio 1`] = `
   data-id?: string
   disabled?: boolean
   error?: boolean
+  focused?: boolean
   helperText?: ReactNode
   id: string
   inputRef?: 
@@ -1706,6 +1760,7 @@ exports[`RadioBase 1`] = `
   data-id?: string
   disabled?: boolean
   error?: boolean
+  focused?: boolean
   id: string
   inputRef?: 
     | (instance: any) => void
@@ -1733,6 +1788,7 @@ exports[`RadioGroup 1`] = `
     | string[]
   disabled?: boolean
   error?: boolean
+  focused?: boolean
   groupComponent?: 
     | "div"
     | "fieldset"
@@ -1782,6 +1838,7 @@ exports[`RadioGroupBase 1`] = `
     | string[]
   disabled?: boolean
   error?: boolean
+  focused?: boolean
   id?: string
   muiProps?: RadioGroupProps | undefined
   name: string

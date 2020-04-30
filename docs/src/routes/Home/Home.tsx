@@ -1,8 +1,7 @@
 import React, { Fragment, ReactNode } from "react";
 import { Link } from "react-router-dom";
-import { Box } from "@origin-digital/ods-core";
+import { Box, Button } from "@origin-digital/ods-core";
 import { DocsText } from "@origin-digital/ods-lab";
-import { Button } from "@origin-digital/style-guide";
 import styled from "styled-components";
 import { ConfigConsumer } from "../../shared/ConfigContext/ConfigContext";
 import { Logo } from "../../shared/Logo/Logo";
@@ -34,6 +33,23 @@ const ActionsContainer = styled(Box)`
     max-width: 450px;
   }
 `;
+
+const CustomLink = ({ onClick, children, ...others }: any) => (
+  <a
+    {...others}
+    onClick={(e) => {
+      e.stopPropagation();
+      if (onClick) {
+        onClick(e);
+      }
+    }}
+    onKeyUp={(e) => {
+      e.stopPropagation();
+    }}
+  >
+    {children}
+  </a>
+);
 
 export const Home = () => {
   return (
@@ -77,21 +93,22 @@ export const Home = () => {
                   tabIndex={-1}
                   style={{ width: "100%", textDecoration: "none" }}
                 >
-                  <Button
-                    kind="secondary"
-                    text="Documentation"
-                    block
-                    color="grey"
-                  />
+                  <Button variant="outlined" color="secondary" fullWidth>
+                    Documentation
+                  </Button>
                 </Link>
               </Action>
               <Action>
-                <a
+                <CustomLink
                   href={playroomUrl}
                   style={{ width: "100%", textDecoration: "none" }}
+                  target="_blank"
+                  rel="noopener"
                 >
-                  <Button kind="secondary" text="Playroom" block color="grey" />
-                </a>
+                  <Button variant="outlined" color="secondary" fullWidth>
+                    Playroom
+                  </Button>
+                </CustomLink>
               </Action>
             </ActionsContainer>
           </Content>

@@ -11,6 +11,9 @@
 export { Box } from "./Box/Box";
 export type BoxProps = import("./Box/Box").BoxProps;
 
+export { Button } from "./Button/Button";
+export type ButtonProps = import("./Button/Button").ButtonProps;
+
 export { Card } from "./Card/Card";
 export type CardProps = import("./Card/Card").CardProps;
 

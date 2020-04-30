@@ -2298,6 +2298,15 @@
     prop-types "^15.6.0"
     warning "^4.0.1"
 
+"@material-ui/system@^4.9.10":
+  version "4.9.10"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@material-ui/system/-/system-4.9.10.tgz#5de6ec7bea0f222b10b45e5bd5bb8b9a7b938926"
+  integrity sha1-Xebse+oPIisQtF5b1buLmnuTiSY=
+  dependencies:
+    "@babel/runtime" "^7.4.4"
+    "@material-ui/utils" "^4.9.6"
+    prop-types "^15.7.2"
+
 "@material-ui/system@^4.9.3":
   version "4.9.3"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@material-ui/system/-/system-4.9.3.tgz#ee48990d7941237fdaf21b7b399981d614bb0875"
@@ -2325,6 +2334,15 @@
   version "4.7.1"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@material-ui/utils/-/utils-4.7.1.tgz#dc16c7f0d2cd02fbcdd5cfe601fd6863ae3cc652"
   integrity sha1-3BbH8NLNAvvN1c/mAf1oY648xlI=
+  dependencies:
+    "@babel/runtime" "^7.4.4"
+    prop-types "^15.7.2"
+    react-is "^16.8.0"
+
+"@material-ui/utils@^4.9.6":
+  version "4.9.12"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@material-ui/utils/-/utils-4.9.12.tgz#0d639f1c1ed83fffb2ae10c21d15a938795d9e65"
+  integrity sha1-DWOfHB7YP/+yrhDCHRWpOHldnmU=
   dependencies:
     "@babel/runtime" "^7.4.4"
     prop-types "^15.7.2"

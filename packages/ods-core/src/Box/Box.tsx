@@ -5,13 +5,13 @@ import {
   TransitionVariants,
   TransformVariants,
   ResponsiveProp,
+  ResponsiveSpace,
   AlignItemsVariants,
   FlexDirectionVariants,
   JustifyContentVariants,
   DisplayVariants,
   TLength,
   TextAlignVariants,
-  SpaceVariants,
   BackgroundColorVariants,
 } from "@origin-digital/ods-types";
 import * as CSS from "csstype";
@@ -23,8 +23,6 @@ import {
   StyledSystemBox,
 } from "../_private/components/StyledSystemBox/StyledSystemBox";
 import { renderBackgroundProvider } from "./BackgroundContext";
-
-export type ResponsiveSpace = ResponsiveProp<SpaceVariants>;
 
 export interface BoxProps
   extends Omit<

@@ -7,6 +7,8 @@ export interface ChevronContainerProps {
 }
 export interface IconProps extends React.SVGProps<SVGSVGElement> {
   color?: ColorVariants;
+  width?: number | string;
+  height?: number | string;
 }
 
 export type BackgroundColorVariants = ColorVariants;
@@ -112,6 +114,8 @@ interface SpaceTShirts {
 }
 
 export type SpaceVariants = keyof SpaceTShirts;
+
+export type ResponsiveSpace = ResponsiveProp<SpaceVariants>;
 
 export type Breakpoints = [string, string, string, string] &
   Partial<Breakpoint>;
@@ -254,6 +258,7 @@ export type InputValueType = string | number | string[];
 export interface BaseFormStateProps extends ComponentBaseProps {
   error?: boolean;
   required?: boolean;
+  focused?: boolean;
 }
 
 export interface BaseInputProps extends BaseFormStateProps {
@@ -305,3 +310,9 @@ export type FormGroupElements =
   | "div"
   | "fieldset"
   | "section";
+
+export type ButtonVariant = "contained" | "outlined" | "text";
+export type ButtonSize = "small" | "medium";
+export type ButtonColor = "primary" | "secondary";
+export type ButtonElements = "button" | "a" | "input";
+export type InputType = "button" | "submit" | "reset";

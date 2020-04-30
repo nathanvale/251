@@ -2,6 +2,7 @@ import React, { ReactElement, createContext, useMemo } from "react";
 import {
   BreakpointVariants,
   AlignItemsVariants,
+  ResponsiveSpace,
 } from "@origin-digital/ods-types";
 import {
   setBreakpoint,
@@ -9,7 +10,6 @@ import {
 } from "@origin-digital/ods-helpers";
 import { ColumnProps } from "../Column/Column";
 import { BoxDebug } from "../_private/components/BoxDebug/BoxDebug";
-import { ResponsiveSpace } from "../Box/Box";
 
 interface ColumnsContextValue {
   collapseBelow?: ColumnsProps["collapseBelow"];

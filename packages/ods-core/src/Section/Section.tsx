@@ -6,8 +6,9 @@ import {
   ResponsiveProp,
   BackgroundVariant,
   FluidityVariant,
+  ResponsiveSpace,
 } from "@origin-digital/ods-types";
-import { Box, ResponsiveSpace } from "../Box/Box";
+import { Box } from "../Box/Box";
 
 export interface SectionProps {
   children: React.ReactNode;

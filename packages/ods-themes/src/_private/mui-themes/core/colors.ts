@@ -23,4 +23,5 @@ export const colors = {
   lightOrange: "#ffb432",
   purple: "#c34789",
   red: "#ec0000",
+  white: "#ffffff",
 };
