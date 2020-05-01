@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.7.1...@origin-digital/ods-icons@0.7.2) (2020-05-01)
+
+
+### Bug Fixes
+
+* **docs:** icons are not portable from docs snippets to playroom ([0e57a26](https://bitbucket.orgn.io/od/origin-ui/commits/0e57a2602797dc3ecccc67c86b101d52506ff7dc))
+
+
+
+
+
 ## [0.7.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.7.0...@origin-digital/ods-icons@0.7.1) (2020-04-30)
 
 **Note:** Version bump only for package @origin-digital/ods-icons
