@@ -21,6 +21,7 @@
     "@origin-digital/style-guide": "^21.1.2",
     "@types/react-router-hash-link": "^1.2.1",
     "copy-to-clipboard": "^3.2.0",
+    "http-server": "^0.12.3",
     "lz-string": "^1.4.4",
     "polished": "3.4.2",
     "prettier": "^1.19.1",
