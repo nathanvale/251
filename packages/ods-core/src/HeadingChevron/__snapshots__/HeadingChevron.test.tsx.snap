@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It can render 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+<a
+  class="typography-linkReset-1 typography-chevron-link-2 typography-heading-chevron-3"
+  data-id="heading-chevron"
+  href=""
+>
+  <div
+    class="c0"
+    display="flex"
+  >
+    <h4
+      class="typography-basekick-6 typography-color-7 typography-strong-8 typography-weight-9 -h4 c1"
+      data-id="heading"
+    >
+      Chevron link
+    </h4>
+    <svg
+      class=""
+      fill="currentColor"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <path
+        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+      />
+    </svg>
+  </div>
+</a>
+`;

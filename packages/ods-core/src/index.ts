@@ -65,6 +65,9 @@ export type FormHelperTextProps = import("./FormHelperText/FormHelperText").Form
 export { Heading } from "./Heading/Heading";
 export type HeadingProps = import("./Heading/Heading").HeadingProps;
 
+export { HeadingChevron } from "./HeadingChevron/HeadingChevron";
+export type HeadingChevronProps = import("./HeadingChevron/HeadingChevron").HeadingChevronProps;
+
 export { Hidden } from "./Hidden/Hidden";
 export type HiddenProps = import("./Hidden/Hidden").HiddenProps;
 
