@@ -35,7 +35,7 @@ export interface BoxProps
   alignItems?: ResponsiveProp<AlignItemsVariants>;
   alignSelf?: ResponsiveProp<AlignItemsVariants>;
   backgroundColor?: BackgroundColorVariants;
-  component?: ElementType | null;
+  component?: ElementType;
   display?: ResponsiveProp<DisplayVariants>;
   flexDirection?: ResponsiveProp<FlexDirectionVariants>;
   justifyContent?: ResponsiveProp<JustifyContentVariants>;
@@ -87,6 +87,12 @@ export const StyledAReset = styled(StyledSystemBox.withComponent("a"))<
 >`
   text-decoration: none;
   color: inherit;
+`;
+
+export const StyledPReset = styled(StyledSystemBox.withComponent("p"))<
+  BoxProps
+>`
+  margin: 0;
 `;
 
 export const StyledH1Reset = styled(StyledSystemBox.withComponent("h1"))<
@@ -189,6 +195,8 @@ export const Box = ({
     Container = StyledPreReset;
   } else if (component === "span") {
     Container = StyledSpanReset;
+  } else if (component === "p") {
+    Container = StyledPReset;
   } else if (component === "button") {
     Container = StyledButtonReset;
   } else if (component === "h1") {

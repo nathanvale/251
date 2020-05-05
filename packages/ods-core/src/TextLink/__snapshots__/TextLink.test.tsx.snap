@@ -13,12 +13,12 @@ exports[`It can render 1`] = `
 }
 
 <span
-  class="typography-basekick-1 typography-color-2 typography-weight-3 typography-strong-4 -span c0"
+  class="typography-body-variant-basekick-1 typography-neutral-color-2 typography-regular-weight-3 typography-strong-support-4 -span c0"
   data-id="text"
 >
   <a
-    class="typography-linkReset-6 typography-link-7"
-    href=""
+    class="typography-linkReset-6 typography-neutral-tone-link-7"
+    href="someUrl"
   >
     Text link
   </a>

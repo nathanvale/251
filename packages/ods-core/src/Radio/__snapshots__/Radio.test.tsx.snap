@@ -16,13 +16,13 @@ exports[`it renders a Radio in error state correctly 1`] = `
     class="c0"
   >
     <label
-      class="MuiFormControlLabel-root makeStyles-root-167"
+      class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-167"
       data-id="my-radio"
       id="my-radio-label"
     >
       <span
         aria-disabled="false"
-        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-182 MuiRadio-root makeStyles-root-175 makeStyles-root-176 MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-182 MuiRadio-root AbstractSwitchBase-error-root-175 AbstractSwitchBase-error-root-176 MuiRadio-colorSecondary MuiIconButton-colorSecondary"
         data-id="my-radio-RadioBase"
       >
         <span
@@ -92,13 +92,13 @@ exports[`it renders a disabled Radio 1`] = `
     class="c0"
   >
     <label
-      class="MuiFormControlLabel-root makeStyles-root-250 Mui-disabled"
+      class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-250 Mui-disabled"
       data-id="my-radio"
       id="my-radio-label"
     >
       <span
         aria-disabled="true"
-        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-265 MuiRadio-root makeStyles-root-258 makeStyles-root-259 MuiRadio-colorSecondary PrivateSwitchBase-disabled-267 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
+        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-265 MuiRadio-root AbstractSwitchBase-root-258 AbstractSwitchBase-root-259 MuiRadio-colorSecondary PrivateSwitchBase-disabled-267 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
         data-id="my-radio-RadioBase"
         tabindex="-1"
       >
@@ -167,13 +167,13 @@ exports[`it renders an unchecked Radio with label 1`] = `
     class="c0"
   >
     <label
-      class="MuiFormControlLabel-root makeStyles-root-1"
+      class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-1"
       data-id="my-radio"
       id="my-radio-label"
     >
       <span
         aria-disabled="false"
-        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-16 MuiRadio-root makeStyles-root-9 makeStyles-root-10 MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-16 MuiRadio-root AbstractSwitchBase-root-9 AbstractSwitchBase-root-10 MuiRadio-colorSecondary MuiIconButton-colorSecondary"
         data-id="my-radio-RadioBase"
       >
         <span

@@ -1139,12 +1139,9 @@ exports[`CheckboxGroup 1`] = `
   id?: string
   label?: string
   labelComponent?: 
-    | "a"
     | "abbr"
     | "cite"
     | "div"
-    | "fieldset"
-    | "form"
     | "label"
     | "legend"
     | "p"
@@ -1315,12 +1312,9 @@ exports[`FormLabel 1`] = `
   className?: string
   classes?: Record<string, string>
   component?: 
-    | "a"
     | "abbr"
     | "cite"
     | "div"
-    | "fieldset"
-    | "form"
     | "label"
     | "legend"
     | "p"
@@ -1799,12 +1793,9 @@ exports[`RadioGroup 1`] = `
   id?: string
   label?: string
   labelComponent?: 
-    | "a"
     | "abbr"
     | "cite"
     | "div"
-    | "fieldset"
-    | "form"
     | "label"
     | "legend"
     | "p"

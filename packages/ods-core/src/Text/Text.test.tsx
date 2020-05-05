@@ -3,9 +3,11 @@ import { render } from "@origin-digital/ods-testing-library";
 import { Text } from "./Text";
 import { Box } from "..";
 
-test("It can render body text", () => {
+test("It should render a p tag by default", () => {
   const { container } = render(<Text>Body Text</Text>);
-  expect(container.firstChild).toMatchSnapshot();
+  const textEl = container.firstElementChild;
+  expect(textEl?.tagName.toLowerCase()).toBe("span");
+  expect(textEl).toMatchSnapshot();
 });
 
 test("It can render body small text", () => {
@@ -35,6 +37,24 @@ test("It can render subtitle overline text", () => {
 
 test("It can render body text medium weight", () => {
   const { container } = render(<Text weight="medium">Body Text</Text>);
+  expect(container.firstChild).toMatchSnapshot();
+});
+
+test("It can render body text critical tone", () => {
+  const { container } = render(
+    <Text weight="medium" tone="critical">
+      Body Text
+    </Text>
+  );
+  expect(container.firstChild).toMatchSnapshot();
+});
+
+test("It can render body text positive tone", () => {
+  const { container } = render(
+    <Text weight="medium" tone="positive">
+      Body Text
+    </Text>
+  );
   expect(container.firstChild).toMatchSnapshot();
 });
 

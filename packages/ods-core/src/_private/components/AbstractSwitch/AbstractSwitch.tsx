@@ -48,24 +48,30 @@ function formControlState({
   );
 }
 
-const useLabelStyles = makeStyles({
-  root: {
-    alignItems: "flex-start",
-    "& .MuiFormControlLabel-label": {
-      padding: "14px 0",
-      marginTop: "1px",
+const useLabelStyles = makeStyles(
+  {
+    formControlLabel: {
+      alignItems: "flex-start",
+      "& .MuiFormControlLabel-label": {
+        padding: "14px 0",
+        marginTop: "1px",
+      },
     },
   },
-});
+  { classNamePrefix: `AbstractSwitch` }
+);
 
-const useHelperTextStyles = makeStyles((theme: Theme) => ({
-  inlineHelper: {
-    paddingLeft: "29px",
-    marginTop: "-5px",
-    paddingBottom: "5px",
-    color: theme.palette.grey[400],
-  },
-}));
+const useHelperTextStyles = makeStyles(
+  (theme: Theme) => ({
+    formHelperText: {
+      paddingLeft: "29px",
+      marginTop: "-5px",
+      paddingBottom: "5px",
+      color: theme.palette.grey[400],
+    },
+  }),
+  { classNamePrefix: `AbstractSwitch` }
+);
 
 export function AbstractSwitch<
   CompMuiProps,
@@ -97,7 +103,7 @@ export function AbstractSwitch<
   return (
     <Box>
       <FormControlLabel
-        className={lblClasses.root}
+        className={lblClasses.formControlLabel}
         data-id={dataId || id}
         disabled={disabledVal}
         id={`${id}-label`}
@@ -118,7 +124,7 @@ export function AbstractSwitch<
       />
       {helperText ? (
         <FormHelperText
-          className={hlpClasses.inlineHelper}
+          className={hlpClasses.formHelperText}
           id={getHelperId(id)}
           data-id={getHelperId(dataId || id)}
           disabled={disabledVal}

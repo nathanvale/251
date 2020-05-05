@@ -5,7 +5,7 @@ import { TextLink, Text } from "..";
 test("It can render", () => {
   const { container } = render(
     <Text>
-      <TextLink href="">Text link</TextLink>
+      <TextLink href="someUrl">Text link</TextLink>
     </Text>
   );
   expect(container.firstChild).toMatchSnapshot();

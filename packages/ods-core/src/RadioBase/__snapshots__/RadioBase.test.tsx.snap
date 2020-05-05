@@ -4,7 +4,7 @@ exports[`it renders a RadioBase in error 1`] = `
 <div>
   <span
     aria-disabled="false"
-    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-98 MuiRadio-root makeStyles-root-91 makeStyles-root-92 MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-98 MuiRadio-root AbstractSwitchBase-error-root-91 AbstractSwitchBase-error-root-92 MuiRadio-colorSecondary MuiIconButton-colorSecondary"
     data-id="radioBase"
   >
     <span
@@ -54,7 +54,7 @@ exports[`it renders a checked RadioBase 1`] = `
 <div>
   <span
     aria-disabled="false"
-    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-53 MuiRadio-root makeStyles-root-46 makeStyles-root-47 MuiRadio-colorSecondary PrivateSwitchBase-checked-54 Mui-checked MuiIconButton-colorSecondary"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-53 MuiRadio-root AbstractSwitchBase-root-46 AbstractSwitchBase-root-47 MuiRadio-colorSecondary PrivateSwitchBase-checked-54 Mui-checked MuiIconButton-colorSecondary"
     data-id="radioBase"
   >
     <span
@@ -105,7 +105,7 @@ exports[`it renders a disabled RadioBase 1`] = `
 <div>
   <span
     aria-disabled="true"
-    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-143 MuiRadio-root makeStyles-root-136 makeStyles-root-137 MuiRadio-colorSecondary PrivateSwitchBase-disabled-145 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-143 MuiRadio-root AbstractSwitchBase-root-136 AbstractSwitchBase-root-137 MuiRadio-colorSecondary PrivateSwitchBase-disabled-145 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
     data-id="radioBase"
     tabindex="-1"
   >
@@ -154,7 +154,7 @@ exports[`it renders an unchecked RadioBase 1`] = `
 <div>
   <span
     aria-disabled="false"
-    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-8 MuiRadio-root makeStyles-root-1 makeStyles-root-2 MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-8 MuiRadio-root AbstractSwitchBase-root-1 AbstractSwitchBase-root-2 MuiRadio-colorSecondary MuiIconButton-colorSecondary"
     data-id="radioBase"
   >
     <span
