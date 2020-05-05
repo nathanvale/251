@@ -291,13 +291,10 @@ export interface BaseSwitchProps
 
 export type LabelElements =
   | "cite"
-  | "form"
   | "label"
   | "span"
-  | "a"
   | "abbr"
   | "div"
-  | "fieldset"
   | "legend"
   | "p"
   | "pre"

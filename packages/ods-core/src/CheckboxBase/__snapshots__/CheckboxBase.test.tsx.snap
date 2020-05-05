@@ -4,7 +4,7 @@ exports[`it renders a CheckboxBase in error 1`] = `
 <div>
   <span
     aria-disabled="false"
-    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-95 MuiCheckbox-root makeStyles-root-87 makeStyles-root-88 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-95 MuiCheckbox-root AbstractSwitchBase-error-root-87 AbstractSwitchBase-error-root-88 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
     data-id="checkboxBase"
   >
     <span
@@ -40,7 +40,7 @@ exports[`it renders a checked CheckboxBase 1`] = `
 <div>
   <span
     aria-disabled="false"
-    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-52 MuiCheckbox-root makeStyles-root-44 makeStyles-root-45 MuiCheckbox-colorSecondary PrivateSwitchBase-checked-53 Mui-checked MuiIconButton-colorSecondary"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-52 MuiCheckbox-root AbstractSwitchBase-root-44 AbstractSwitchBase-root-45 MuiCheckbox-colorSecondary PrivateSwitchBase-checked-53 Mui-checked MuiIconButton-colorSecondary"
     data-id="checkboxBase"
   >
     <span
@@ -77,7 +77,7 @@ exports[`it renders a disabled CheckboxBase 1`] = `
 <div>
   <span
     aria-disabled="true"
-    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-138 MuiCheckbox-root makeStyles-root-130 makeStyles-root-131 MuiCheckbox-colorSecondary PrivateSwitchBase-disabled-140 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-138 MuiCheckbox-root AbstractSwitchBase-root-130 AbstractSwitchBase-root-131 MuiCheckbox-colorSecondary PrivateSwitchBase-disabled-140 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
     data-id="checkboxBase"
     tabindex="-1"
   >
@@ -112,7 +112,7 @@ exports[`it renders an unchecked CheckboxBase 1`] = `
 <div>
   <span
     aria-disabled="false"
-    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-9 MuiCheckbox-root makeStyles-root-1 makeStyles-root-2 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-9 MuiCheckbox-root AbstractSwitchBase-root-1 AbstractSwitchBase-root-2 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
     data-id="checkboxBase"
   >
     <span

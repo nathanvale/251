@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable import/no-duplicates */
 /* eslint-disable no-duplicate-imports */
 import React, { FC } from "react";

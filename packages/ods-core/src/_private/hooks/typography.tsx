@@ -64,7 +64,7 @@ export function useWeightStyles(weight: TypographyWeightVariants) {
         fontWeight: getWeightVariants(theme)[weight],
       },
     }),
-    { classNamePrefix: "typography" }
+    { classNamePrefix: `typography-${weight}` }
   )().weight;
 }
 
@@ -85,7 +85,7 @@ export function useToneStyles({
         color,
       },
     },
-    { classNamePrefix: "typography" }
+    { classNamePrefix: `typography-${tone}` }
   )().color;
 }
 
@@ -135,7 +135,7 @@ export function useBasekickStyles({ variant }: UseBasekickStylesProps) {
         },
       };
     },
-    { classNamePrefix: "typography" }
+    { classNamePrefix: `typography-${variant}-variant` }
   )().basekick;
 }
 
@@ -175,7 +175,7 @@ export function useTruncateStyles() {
 }
 
 /**
- * This style is used incase a user uses html strong instead of our Strong component
+ * This style is used in case a user uses html strong instead of our Strong component
  */
 export function useStrongStyles(
   weight: Exclude<TypographyWeightVariants, "regular">
@@ -188,12 +188,12 @@ export function useStrongStyles(
   });
   return makeStyles(
     (theme: Theme) => ({
-      strong: {
+      "strong-support": {
         "& > strong": getWeightVariants(theme)[weight!],
       },
     }),
     { classNamePrefix: "typography" }
-  )().strong;
+  )()["strong-support"];
 }
 
 /**
@@ -252,7 +252,7 @@ export function useTextLinkStyles() {
         },
       };
     },
-    { classNamePrefix: "typography" }
+    { classNamePrefix: `typography-${tone}-tone` }
   )().link;
   return clsx(linkResetStyles, textLinkStyles);
 }

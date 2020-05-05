@@ -2,8 +2,10 @@ import React from "react";
 import { render } from "@origin-digital/ods-testing-library";
 import { Checkbox } from "./Checkbox";
 
-test("it renders an unchecked Checkbox with label", () => {
-  const { container } = render(<Checkbox label="Check 1" id="my-checkbox" />);
+test("it renders an unchecked Checkbox with label and helperText", () => {
+  const { container } = render(
+    <Checkbox label="Check 1" id="my-checkbox" helperText="This is more info" />
+  );
 
   expect(container).toMatchSnapshot();
 });
