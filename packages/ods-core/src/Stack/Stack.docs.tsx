@@ -14,7 +14,14 @@ export const docs: ComponentDocs<StackProps> = {
   componentName: "Stack",
   description:
     "Stack is a low-level atomic layout component. Its main concerns are vertically stacking and evenly distributing white space between its children. Open the examples in Playroom to see the responsive behaviour of this component.",
-  propDescriptions: {},
+  propDescriptions: {
+    alignX:
+      "This is a responsive prop which aligns the children Stack horizontally",
+    space:
+      "The T-shirt sized vertical space that Stack will add between its children.",
+    dividers: "If true it will show a horizontal divider line between children",
+    "data-id": "The unique identifier that could be used for e2e testing",
+  },
   migrationGuide: false,
   examples: [
     {
@@ -79,6 +86,21 @@ export const docs: ComponentDocs<StackProps> = {
       Container,
       Code: () => (
         <Stack space="small" dividers alignX="center">
+          <Placeholder shape="round" width="120px" />
+          <Placeholder shape="round" width="120px" />
+          <Placeholder shape="round" width="120px" />
+        </Stack>
+      ),
+    },
+    {
+      label: "Horizontal Alignment - responsive",
+      description: [
+        "In this example, for mobile and tablet screens the Stack stretches its children",
+        "while on larger screens it left aligns them.",
+      ].join(" "),
+      Container,
+      Code: () => (
+        <Stack space="small" dividers alignX={["stretch", "left"]}>
           <Placeholder shape="round" width="120px" />
           <Placeholder shape="round" width="120px" />
           <Placeholder shape="round" width="120px" />
@@ -159,6 +181,24 @@ export const docs: ComponentDocs<StackProps> = {
             xl: "xxxlarge",
           }}
         >
+          <Placeholder />
+          <Placeholder />
+          <Placeholder />
+        </Stack>
+      ),
+    },
+    {
+      label: "Horizontal Alignment",
+      Code: () => (
+        <Stack space="small" dividers alignX="center">
+          <Placeholder shape="round" width="120px" />
+        </Stack>
+      ),
+    },
+    {
+      label: "Responsive Horiz. Alignment",
+      Code: () => (
+        <Stack space="small" dividers alignX={["stretch", "left"]}>
           <Placeholder />
           <Placeholder />
           <Placeholder />

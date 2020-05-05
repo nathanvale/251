@@ -1,7 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`It adds dividers 1`] = `
-.c2 {
+.c1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+}
+
+.c3 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -26,7 +48,7 @@ exports[`It adds dividers 1`] = `
   overflow: hidden;
 }
 
-.c3 {
+.c4 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -40,7 +62,7 @@ exports[`It adds dividers 1`] = `
   position: relative;
 }
 
-.c5 {
+.c6 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -52,30 +74,16 @@ exports[`It adds dividers 1`] = `
   width: 100%;
 }
 
-.c1 {
+.c2 {
   width: auto;
+  min-width: 40px;
   height: 120px;
   border: 2px solid rgba(51,51,51,0.3);
 }
 
-.c4 {
+.c5 {
   height: 1px;
   box-shadow: inset 0 0 0 1px #e3e3e3;
-}
-
-.c0 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
 }
 
 .c0.c0.c0 > *:not(:last-child) {
@@ -83,11 +91,13 @@ exports[`It adds dividers 1`] = `
 }
 
 <div
-  class="c0"
+  class="c0 c1"
   data-id="stack"
+  display="flex"
+  width="full"
 >
   <div
-    class="c1 c2"
+    class="c2 c3"
     data-id="placeholder"
     display="flex"
     height="120"
@@ -116,16 +126,16 @@ exports[`It adds dividers 1`] = `
     </svg>
   </div>
   <div
-    class="c3"
+    class="c4"
     data-id="divider"
   >
     <div
-      class="c4 c5"
+      class="c5 c6"
       width="full"
     />
   </div>
   <div
-    class="c1 c2"
+    class="c2 c3"
     data-id="placeholder"
     display="flex"
     height="120"
@@ -154,16 +164,16 @@ exports[`It adds dividers 1`] = `
     </svg>
   </div>
   <div
-    class="c3"
+    class="c4"
     data-id="divider"
   >
     <div
-      class="c4 c5"
+      class="c5 c6"
       width="full"
     />
   </div>
   <div
-    class="c1 c2"
+    class="c2 c3"
     data-id="placeholder"
     display="flex"
     height="120"
@@ -195,7 +205,29 @@ exports[`It adds dividers 1`] = `
 `;
 
 exports[`It can stack 1`] = `
-.c2 {
+.c1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+}
+
+.c3 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -220,25 +252,11 @@ exports[`It can stack 1`] = `
   overflow: hidden;
 }
 
-.c1 {
+.c2 {
   width: auto;
+  min-width: 40px;
   height: 120px;
   border: 2px solid rgba(51,51,51,0.3);
-}
-
-.c0 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
 }
 
 .c0.c0.c0 > *:not(:last-child) {
@@ -246,11 +264,13 @@ exports[`It can stack 1`] = `
 }
 
 <div
-  class="c0"
+  class="c0 c1"
   data-id="stack"
+  display="flex"
+  width="full"
 >
   <div
-    class="c1 c2"
+    class="c2 c3"
     data-id="placeholder"
     display="flex"
     height="120"
@@ -279,7 +299,7 @@ exports[`It can stack 1`] = `
     </svg>
   </div>
   <div
-    class="c1 c2"
+    class="c2 c3"
     data-id="placeholder"
     display="flex"
     height="120"
@@ -308,7 +328,7 @@ exports[`It can stack 1`] = `
     </svg>
   </div>
   <div
-    class="c1 c2"
+    class="c2 c3"
     data-id="placeholder"
     display="flex"
     height="120"

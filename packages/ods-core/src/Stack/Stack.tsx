@@ -1,11 +1,13 @@
 import React, { ReactNode, Children } from "react";
-import styled, { css } from "styled-components";
-import { style, MarginBottomProps, get } from "styled-system";
+import styled from "styled-components";
+import { style, get } from "styled-system";
 import {
   AlignXType,
   AlignItemsVariants,
   ResponsiveSpace,
   TLength,
+  ResponsiveProp,
+  BreakpointVariants,
 } from "@origin-digital/ods-types";
 import {
   normaliseResponsiveProp,
@@ -13,6 +15,7 @@ import {
 } from "@origin-digital/ods-helpers";
 import * as CSS from "csstype";
 import { Divider } from "../Divider/Divider";
+import { Box, BoxProps } from "../Box/Box";
 
 const mapHAlignToAlignItems = (alignX: AlignXType): AlignItemsVariants => {
   const map = {
@@ -21,33 +24,45 @@ const mapHAlignToAlignItems = (alignX: AlignXType): AlignItemsVariants => {
     right: "flex-end",
     stretch: "stretch",
   } as { [k in AlignXType]: AlignItemsVariants };
-  return map[alignX];
+  return map[alignX] || "stretch";
+};
+const mapResponsive = (
+  alignX: ResponsiveProp<AlignXType>
+): ResponsiveProp<AlignItemsVariants> => {
+  if (typeof alignX === "string") {
+    return mapHAlignToAlignItems(alignX);
+  } else if (alignX instanceof Array) {
+    return (alignX as [AlignXType, AlignXType]).map(mapHAlignToAlignItems) as [
+      AlignItemsVariants,
+      AlignItemsVariants
+    ];
+  } else if (alignX instanceof Object) {
+    return (Object.keys(alignX) as BreakpointVariants[]).reduce(
+      (newObj, breakpoint: BreakpointVariants) => {
+        newObj[breakpoint] = mapHAlignToAlignItems(
+          alignX[breakpoint] || "stretch"
+        );
+        return newObj;
+      },
+      {} as any
+    );
+  }
+  return "stretch";
 };
 
 export interface StackProps {
   children: ReactNode;
   space?: ResponsiveSpace;
-  alignX?: AlignXType;
+  alignX?: ResponsiveProp<AlignXType>;
   dividers?: boolean;
   "data-id"?: string;
 }
 
-interface ContainerProps extends MarginBottomProps {
-  alignItems?: AlignItemsVariants;
-}
-
-const Container = styled.div<ContainerProps>`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  ${(p) =>
-    p.alignItems &&
-    css`
-      align-items: ${p.alignItems};
-    `}
+const Container = styled<StackProps & BoxProps>(Box)`
   &&& > *:not(:last-child) {
     ${style({
-      prop: "marginBottom",
+      prop: "space",
+      cssProperty: "margin-bottom",
       key: "space",
       transformValue: (n, scale) => cssLengthToString(get(scale, n)),
     })}
@@ -62,13 +77,17 @@ export const Stack = ({
   alignX = "stretch",
 }: StackProps) => {
   const stackItems = Children.toArray(children);
+
   return (
     <Container
-      marginBottom={normaliseResponsiveProp<CSS.MarginBottomProperty<TLength>>(
-        space
-      )}
+      width="full"
+      display="flex"
+      flexDirection="column"
+      space={
+        normaliseResponsiveProp<CSS.MarginBottomProperty<TLength>>(space) as any
+      }
       data-id={dataId}
-      alignItems={mapHAlignToAlignItems(alignX)}
+      alignItems={mapResponsive(alignX)}
     >
       {!dividers
         ? children
