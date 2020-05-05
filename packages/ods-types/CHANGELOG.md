@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.16.0...@origin-digital/ods-types@0.17.0) (2020-05-05)
+
+
+### Features
+
+* **text:** add more tests, improve classnames ([3c490fa](https://bitbucket.orgn.io/od/origin-ui/commits/3c490faff8b48f02ebb10c6f2a44d5e99a82f82d))
+
+
+
+
+
 # [0.16.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.15.0...@origin-digital/ods-types@0.16.0) (2020-04-30)
 
 
