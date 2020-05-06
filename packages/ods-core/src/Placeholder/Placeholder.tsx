@@ -1,6 +1,13 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { width, height, WidthProps, HeightProps } from "styled-system";
+import {
+  width,
+  height,
+  minWidth,
+  WidthProps,
+  HeightProps,
+  MinWidthProps,
+} from "styled-system";
 import { ResponsiveProp } from "@origin-digital/ods-types";
 import { normaliseResponsiveProp } from "@origin-digital/ods-helpers";
 import { Box, BoxProps } from "../Box/Box";
@@ -12,9 +19,10 @@ export interface PlaceholderProps {
   label?: string;
   shape?: PlaceholderShapeVariant;
   width?: ResponsiveProp<string | number>;
+  minWidth?: ResponsiveProp<string | number>;
 }
 
-interface ContainerProps extends WidthProps, HeightProps {
+interface ContainerProps extends WidthProps, HeightProps, MinWidthProps {
   shape: PlaceholderProps["shape"];
 }
 
@@ -22,6 +30,7 @@ const Container = styled<Omit<BoxProps, "width" | "height">>(Box)<
   ContainerProps
 >`
   ${width}
+  ${minWidth}
   ${height}
   border: 2px solid rgba(51, 51, 51, 0.3);
   ${(p) =>
@@ -34,6 +43,7 @@ const Container = styled<Omit<BoxProps, "width" | "height">>(Box)<
 
 const defaultHeight = 120;
 const defaultWidth = "auto";
+const defaultMinWidth = "40px";
 const defaultShape = "rectangle";
 
 export const Placeholder = ({
@@ -41,6 +51,7 @@ export const Placeholder = ({
   label,
   width = defaultWidth,
   height = defaultHeight,
+  minWidth = defaultMinWidth,
   shape = defaultShape,
 }: PlaceholderProps) => {
   return (
@@ -52,6 +63,7 @@ export const Placeholder = ({
       alignItems="center"
       justifyContent="center"
       width={normaliseResponsiveProp<string | number>(width)}
+      minWidth={normaliseResponsiveProp<string | number>(minWidth)}
       height={normaliseResponsiveProp<string | number>(height)}
       shape={shape}
       backgroundColor="grey200"
@@ -96,6 +108,7 @@ Placeholder.defaultProps = {
   inline: false,
   shape: defaultShape,
   width: defaultWidth,
+  minWidth: defaultMinWidth,
 };
 
 Placeholder.displayName = "Placeholder";

@@ -1716,6 +1716,10 @@ exports[`Placeholder 1`] = `
     | string
   >
   label?: string
+  minWidth?: ResponsiveProp<
+    | number
+    | string
+  >
   shape?: 
     | "rectangle"
     | "round"
@@ -1879,11 +1883,12 @@ exports[`Section 1`] = `
 
 exports[`Stack 1`] = `
 {
-  alignX?: 
+  alignX?: ResponsiveProp<
     | "center"
     | "left"
     | "right"
     | "stretch"
+  >
   children: ReactNode
   data-id?: string
   dividers?: boolean
