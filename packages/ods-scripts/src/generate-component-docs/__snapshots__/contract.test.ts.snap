@@ -1357,6 +1357,19 @@ exports[`Heading 1`] = `
 }
 `;
 
+exports[`HeadingChevron 1`] = `
+{
+  children?: ReactNode
+  className?: string
+  classes?: Record<string, string>
+  data-id?: string
+  disabled?: boolean
+  domProps?: Pick<AnchorHTMLAttributes<HTMLAnchorElement>, "suppressContentEditableWarning" | "suppressHydrationWarning" | "download" | "hrefLang" | ... 256 more ... | "referrerPolicy">
+  href: string
+  id?: string
+}
+`;
+
 exports[`Hidden 1`] = `
 {
   above?: 

@@ -21,6 +21,7 @@ export {
   FormHelperText,
   FormLabel,
   Hidden,
+  HeadingChevron,
   OriginThemeProvider,
   Placeholder,
   Radio,
