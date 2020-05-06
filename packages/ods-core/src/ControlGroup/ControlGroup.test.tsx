@@ -95,3 +95,41 @@ test("overrides components for root and label", () => {
   );
   expect(getByText("Australia cities").tagName.toLowerCase()).toBe("label");
 });
+
+test("does not render label if not provided", () => {
+  const { queryByTestId } = render(
+    <ControlGroup
+      id="cityGroup"
+      helperText="These are just a few"
+      groupComponent="div"
+      labelComponent="label"
+    >
+      <RadioGroupBase name="cities">
+        <Radio label="Melbourne" id="mlb" value="mlb" />
+        <Radio label="Sydney" id="syd" value="syd" />
+        <Radio label="Perth" id="prt" value="prt" />
+      </RadioGroupBase>
+    </ControlGroup>
+  );
+
+  expect(queryByTestId("cityGroup-label")).toBeNull();
+});
+
+test("does not render helper text if not provided", () => {
+  const { queryByTestId } = render(
+    <ControlGroup
+      id="cityGroup"
+      label="Australia cities"
+      groupComponent="div"
+      labelComponent="label"
+    >
+      <RadioGroupBase name="cities">
+        <Radio label="Melbourne" id="mlb" value="mlb" />
+        <Radio label="Sydney" id="syd" value="syd" />
+        <Radio label="Perth" id="prt" value="prt" />
+      </RadioGroupBase>
+    </ControlGroup>
+  );
+
+  expect(queryByTestId("cityGroup-helperText")).toBeNull();
+});

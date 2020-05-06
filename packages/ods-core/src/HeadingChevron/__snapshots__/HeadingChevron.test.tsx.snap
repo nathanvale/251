@@ -36,7 +36,7 @@ exports[`It can render 1`] = `
     display="flex"
   >
     <h4
-      class="typography-basekick-6 typography-color-7 typography-strong-8 typography-weight-9 -h4 c1"
+      class="typography-h4-variant-basekick-6 typography-grey600-color-7 typography-strong-support-8 typography-medium-weight-9 -h4 c1"
       data-id="heading"
     >
       Chevron link

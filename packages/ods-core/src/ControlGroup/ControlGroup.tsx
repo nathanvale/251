@@ -57,23 +57,27 @@ export const ControlGroup: React.FunctionComponent<ControlGroupProps> = ({
       id={id}
       muiProps={muiProps?.formControlProps}
     >
-      <FormLabel
-        classes={flClasses}
-        error={false}
-        id={getLabelId(id)}
-        component={labelComponent}
-        muiProps={muiProps?.formLabelProps}
-      >
-        {label}
-      </FormLabel>
+      {label ? (
+        <FormLabel
+          classes={flClasses}
+          error={false}
+          id={getLabelId(id)}
+          component={labelComponent}
+          muiProps={muiProps?.formLabelProps}
+        >
+          {label}
+        </FormLabel>
+      ) : null}
       {children}
-      <FormHelperText
-        error={error}
-        id={getHelperId(id)}
-        muiProps={muiProps?.formHelperTextProps}
-      >
-        {helperText}
-      </FormHelperText>
+      {helperText ? (
+        <FormHelperText
+          error={error}
+          id={getHelperId(id)}
+          muiProps={muiProps?.formHelperTextProps}
+        >
+          {helperText}
+        </FormHelperText>
+      ) : null}
     </FormControl>
   );
 };
