@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.12.2...playroom@0.13.0) (2020-05-07)
+
+
+### Features
+
+* **headingchevron:** new typography component ([9cc84d2](https://bitbucket.orgn.io/od/origin-ui/commits/9cc84d287a66387296c0df52810360c074c3e827))
+
+
+
+
+
 ## [0.12.2](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.12.1...playroom@0.12.2) (2020-05-05)
 
 **Note:** Version bump only for package playroom
