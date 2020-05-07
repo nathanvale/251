@@ -6,6 +6,7 @@
   "main": "src/index.tsx",
   "scripts": {
     "build": "craco build",
+    "serve:static": "http-server ./build -p 3020",
     "start": "craco start"
   },
   "dependencies": {
