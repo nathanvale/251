@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.25.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.24.0...@origin-digital/ods-scripts@0.25.0) (2020-05-08)
+
+
+### Features
+
+* implement a tracking provider ([13b2ddc](https://bitbucket.orgn.io/od/origin-ui/commits/13b2ddcc8fdd5632204bbb24c2d7aa98a77b59ac))
+
+
+
+
+
 # [0.24.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.23.0...@origin-digital/ods-scripts@0.24.0) (2020-05-07)
 
 

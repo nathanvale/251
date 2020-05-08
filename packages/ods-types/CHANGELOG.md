@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.18.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.17.0...@origin-digital/ods-types@0.18.0) (2020-05-08)
+
+
+### Features
+
+* implement a tracking provider ([13b2ddc](https://bitbucket.orgn.io/od/origin-ui/commits/13b2ddcc8fdd5632204bbb24c2d7aa98a77b59ac))
+
+
+
+
+
 # [0.17.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.16.0...@origin-digital/ods-types@0.17.0) (2020-05-05)
 
 
