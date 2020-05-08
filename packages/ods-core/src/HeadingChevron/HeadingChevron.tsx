@@ -1,4 +1,4 @@
-import React, { FunctionComponent, AnchorHTMLAttributes } from "react";
+import React, { AnchorHTMLAttributes } from "react";
 import clsx from "clsx";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 
@@ -7,9 +7,10 @@ import { IconChevronRight } from "@origin-digital/ods-icons";
 import { Heading } from "../Heading/Heading";
 import {
   ChevronLinkRenderer,
-  useChevronLinkStyles
+  useChevronLinkStyles,
 } from "../ChevronLinkRenderer/ChevronLinkRenderer";
 import { Box } from "../Box/Box";
+import { useTracking } from "../_private/hooks/tracking";
 
 export interface HeadingChevronProps extends ComponentBaseProps {
   "data-id"?: string;
@@ -27,27 +28,36 @@ export const useHeadingChevronStyles = () => {
           height: "24px",
           width: "24px",
           marginTop: "-5px",
-          marginBottom: "-8px"
-        }
-      }
+          marginBottom: "-8px",
+        },
+      },
     },
     { classNamePrefix: "typography" }
   )()["heading-chevron"];
   return clsx(linkStyles, headingChevronStyles);
 };
-
-export const HeadingChevron: FunctionComponent<HeadingChevronProps> = ({
-  "data-id": dataId,
+const defaultDataId = "heading-chevron";
+export const HeadingChevron = ({
+  "data-id": dataId = defaultDataId,
   children,
   domProps,
   ...rest
-}) => {
+}: HeadingChevronProps) => {
   const headingChevronStyles = useHeadingChevronStyles();
+
+  const { onClickCapture, ref } = useTracking({
+    children,
+    "data-id": dataId,
+    type: HeadingChevron.displayName,
+  });
+
   return (
     <ChevronLinkRenderer variant="primary">
       {() => (
         <a
           {...domProps}
+          ref={ref}
+          onClickCapture={onClickCapture}
           data-id={dataId}
           {...rest}
           className={headingChevronStyles}
@@ -63,7 +73,7 @@ export const HeadingChevron: FunctionComponent<HeadingChevronProps> = ({
 };
 
 HeadingChevron.defaultProps = {
-  "data-id": "heading-chevron"
+  "data-id": defaultDataId,
 };
 
 HeadingChevron.displayName = "HeadingChevron";

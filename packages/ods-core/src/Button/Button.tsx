@@ -16,6 +16,7 @@ import {
   InputType,
   ResponsiveProp,
 } from "@origin-digital/ods-types";
+import { useTracking } from "../_private/hooks/tracking";
 import { useButtonStyles, useInverseStyles } from "./button-styles";
 
 interface ButtonActionProps {
@@ -47,6 +48,8 @@ export interface ButtonProps
   muiProps?: MuiButtonProps;
 }
 
+const defaultDataId = "button";
+
 export const Button = (props: ButtonProps) => {
   const {
     children,
@@ -61,6 +64,7 @@ export const Button = (props: ButtonProps) => {
     type,
     size = "medium",
     variant = "contained",
+    "data-id": dataId = defaultDataId,
     ...others
   } = props;
 
@@ -81,10 +85,18 @@ export const Button = (props: ButtonProps) => {
 
   const newComp = href ? "a" : component;
 
+  const { onClickCapture, ref } = useTracking({
+    children,
+    "data-id": dataId,
+    type: Button.displayName,
+  });
+
   return (
     <MuiButton
       {...muiProps}
       {...others}
+      data-id={dataId}
+      ref={ref}
       classes={inverse ? inverseClasses : btnClasses}
       color={color}
       component={newComp}
@@ -93,6 +105,7 @@ export const Button = (props: ButtonProps) => {
       size={size}
       startIcon={icon}
       variant={variant}
+      onClickCapture={onClickCapture}
     >
       {children}
     </MuiButton>
@@ -100,7 +113,9 @@ export const Button = (props: ButtonProps) => {
 };
 
 Button.displayName = "Button";
+
 Button.defaultProps = {
+  "data-id": defaultDataId,
   variant: "contained",
   size: "medium",
   color: "primary",

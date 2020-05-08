@@ -100,6 +100,7 @@ export function AbstractSwitch<
   }) as FormControlState;
 
   const disabledVal = disabled || !!fcs.disabled;
+
   return (
     <Box>
       <FormControlLabel

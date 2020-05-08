@@ -267,18 +267,22 @@ export const Documentation = () => {
                     }))}
                   />
 
-                  {["Layout", "Content", "Interaction"].map((category) => (
-                    <MenuSectionList
-                      key={category}
-                      title={`${category} Components`}
-                      items={componentsByCategory[category].map(({ name }) => ({
-                        name,
-                        path: `/components/${name}`,
-                        external: false,
-                        onClick: () => setMenuOpen(false),
-                      }))}
-                    />
-                  ))}
+                  {["Logic", "Layout", "Content", "Interaction"].map(
+                    (category) => (
+                      <MenuSectionList
+                        key={category}
+                        title={`${category} Components`}
+                        items={componentsByCategory[category].map(
+                          ({ name }) => ({
+                            name,
+                            path: `/components/${name}`,
+                            external: false,
+                            onClick: () => setMenuOpen(false),
+                          })
+                        )}
+                      />
+                    )
+                  )}
 
                   <MenuSectionList
                     title="All Components"

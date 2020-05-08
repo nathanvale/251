@@ -1,6 +1,10 @@
 import React, { AnchorHTMLAttributes } from "react";
 import { FontSizeVariants } from "@material-ui/core/styles/createTypography";
 
+export * from "./docs";
+export * from "./palette";
+export * from "./tracking";
+
 export type ChevronVaraints = keyof Pick<Colors, "primary" | "secondary">;
 export interface ChevronContainerProps {
   children: React.ReactNode;
@@ -44,9 +48,6 @@ export type TypographyVariants =
   | TextVariants
   | Heading12Variants
   | Heading34Variants;
-
-export * from "./docs";
-export * from "./palette";
 
 export type TextAlignVariants = "left" | "right" | "center";
 

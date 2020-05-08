@@ -17,13 +17,13 @@ exports[`it renders a Radio in error state correctly 1`] = `
   >
     <label
       class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-167"
-      data-id="my-radio"
+      data-id="radio"
       id="my-radio-label"
     >
       <span
         aria-disabled="false"
         class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-182 MuiRadio-root AbstractSwitchBase-error-root-175 AbstractSwitchBase-error-root-176 MuiRadio-colorSecondary MuiIconButton-colorSecondary"
-        data-id="my-radio-RadioBase"
+        data-id="radio-RadioBase"
       >
         <span
           class="MuiIconButton-label"
@@ -93,13 +93,13 @@ exports[`it renders a disabled Radio 1`] = `
   >
     <label
       class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-250 Mui-disabled"
-      data-id="my-radio"
+      data-id="radio"
       id="my-radio-label"
     >
       <span
         aria-disabled="true"
         class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-265 MuiRadio-root AbstractSwitchBase-root-258 AbstractSwitchBase-root-259 MuiRadio-colorSecondary PrivateSwitchBase-disabled-267 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
-        data-id="my-radio-RadioBase"
+        data-id="radio-RadioBase"
         tabindex="-1"
       >
         <span
@@ -168,13 +168,13 @@ exports[`it renders an unchecked Radio with label 1`] = `
   >
     <label
       class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-1"
-      data-id="my-radio"
+      data-id="radio"
       id="my-radio-label"
     >
       <span
         aria-disabled="false"
         class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-16 MuiRadio-root AbstractSwitchBase-root-9 AbstractSwitchBase-root-10 MuiRadio-colorSecondary MuiIconButton-colorSecondary"
-        data-id="my-radio-RadioBase"
+        data-id="radio-RadioBase"
       >
         <span
           class="MuiIconButton-label"

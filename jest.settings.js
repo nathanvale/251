@@ -15,6 +15,7 @@ module.exports = {
   },
   testRegex: "^.+\\.test\\.(ts|tsx|js|jsx)$",
   moduleNameMapper: {
-    "@origin-digital/((?!style-guide)[^/]*)$": "<rootDir>../$1/src",
+    "@origin-digital/((?!style-guide|reporting-client)[^/]*)$":
+      "<rootDir>../$1/src",
   },
 };

@@ -21,4 +21,4 @@ export const Checkbox = (props: CheckboxProps) => {
 };
 
 Checkbox.displayName = "Checkbox";
-Checkbox.defaultProps = {};
+Checkbox.defaultProps = { "data-id": "checkbox" };
