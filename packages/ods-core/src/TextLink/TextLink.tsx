@@ -8,20 +8,46 @@ import {
   TextLinkRenderer,
   TextLinkRendererProps,
 } from "../TextLinkRenderer/TextLinkRenderer";
+import { useTracking } from "../_private/hooks/tracking";
 
 export interface TextLinkProps
   extends Omit<TextLinkRendererProps, "children">,
     OptionalTrackableProps,
     Omit<LinkComponentProps, "className" | "style"> {}
 
-export const TextLink = ({ "data-id": dataId, ...props }: TextLinkProps) => (
-  <TextLinkRenderer data-id={dataId}>
-    {({ textLinkStyles }) => <a className={textLinkStyles} {...props} />}
-  </TextLinkRenderer>
-);
+const defaultDataId = "text-link";
+
+export const TextLink = ({
+  "data-id": dataId = defaultDataId,
+  children,
+  ...props
+}: TextLinkProps) => {
+  const { onClickCapture, ref } = useTracking({
+    children,
+    "data-id": dataId,
+    type: TextLink.displayName,
+  });
+  return (
+    <>
+      <TextLinkRenderer>
+        {({ textLinkStyles }) => (
+          <a
+            ref={ref}
+            data-id={dataId}
+            className={textLinkStyles}
+            onClickCapture={onClickCapture}
+            {...props}
+          >
+            {children}
+          </a>
+        )}
+      </TextLinkRenderer>
+    </>
+  );
+};
 
 TextLink.defaultProps = {
-  "data-id": "text-link",
+  "data-id": defaultDataId,
 };
 
 TextLink.displayName = "TextLink";

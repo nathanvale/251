@@ -2523,3 +2523,10 @@ exports[`TextLinkRenderer 1`] = `
   children: (renderProps: TextLinkRenderProps) => ReactElement<any, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>
 }
 `;
+
+exports[`TrackingProvider 1`] = `
+{
+  children: ReactNode
+  onTrackingCapture: TrackingEventHandler
+}
+`;

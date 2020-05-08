@@ -39,7 +39,7 @@ export const docs: ComponentDocs<HeadingProps> = {
       Code: () => <Heading variant="h2">Heading 2</Heading>,
     },
     {
-      label: "Heading H2",
+      label: "Heading H3",
       Code: () => <Heading variant="h3">Heading 3</Heading>,
     },
     {

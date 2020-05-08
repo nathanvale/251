@@ -21,7 +21,7 @@ export const getCodeAsString = (Code: () => JSX.Element) => {
       : reactElementToJSXString(Code(), {
           useBooleanShorthandSyntax: false,
           showDefaultProps: false,
-          showFunctions: false,
+          showFunctions: true,
           filterProps: ["onChange", "onBlur", "onFocus"],
         })
   );

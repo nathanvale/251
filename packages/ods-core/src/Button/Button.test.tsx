@@ -1,7 +1,12 @@
 import React from "react";
 import { Phone } from "@material-ui/icons";
-import { render, queryByAttribute } from "@origin-digital/ods-testing-library";
-import { Button } from "./Button";
+import {
+  render,
+  queryByAttribute,
+  fireEvent,
+} from "@origin-digital/ods-testing-library";
+import { TrackingEventHandler } from "@origin-digital/ods-types";
+import { Button, TrackingProvider } from "..";
 
 test("it renders a contained primary by default", () => {
   const { container } = render(
@@ -117,4 +122,24 @@ test("it calls onClick when clicked", () => {
   const buttonEl = queryByAttribute("data-id", container, "my-button");
   buttonEl?.click();
   expect(onClick).toHaveBeenCalledTimes(1);
+});
+
+it("should call tracking handler when passed into the TrackingProvider", () => {
+  const label = "label";
+
+  const onTrackingCapture: TrackingEventHandler = jest.fn();
+
+  const { getByTestId } = render(
+    <TrackingProvider onTrackingCapture={onTrackingCapture}>
+      <Button>{label}</Button>
+    </TrackingProvider>
+  );
+  const node = getByTestId("button");
+  fireEvent.click(node);
+  expect(onTrackingCapture).toHaveBeenCalledWith({
+    "data-id": "button",
+    type: "Button",
+    label,
+    postClickState: undefined,
+  });
 });

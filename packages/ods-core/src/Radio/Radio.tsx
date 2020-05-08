@@ -21,4 +21,4 @@ export const Radio = (props: RadioProps) => {
 };
 
 Radio.displayName = "Radio";
-Radio.defaultProps = {};
+Radio.defaultProps = { "data-id": "radio" };

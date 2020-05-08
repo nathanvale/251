@@ -18,6 +18,7 @@ exports[`It can render 1`] = `
 >
   <a
     class="typography-linkReset-6 typography-neutral-tone-link-7"
+    data-id="text-link"
     href="someUrl"
   >
     Text link

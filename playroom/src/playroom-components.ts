@@ -34,6 +34,7 @@ export {
   Text,
   TextLink,
   TextLinkRenderer,
+  TrackingProvider,
 } from "@origin-digital/ods-core";
 
 export { IconCheck } from "@origin-digital/ods-icons";

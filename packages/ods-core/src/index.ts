@@ -104,5 +104,8 @@ export type TextProps = import("./Text/Text").TextProps;
 export { TextLinkRenderer } from "./TextLinkRenderer/TextLinkRenderer";
 export type TextLinkRendererProps = import("./TextLinkRenderer/TextLinkRenderer").TextLinkRendererProps;
 
+export { TrackingProvider } from "./TrackingProvider/TrackingProvider";
+export type TrackingProviderProps = import("./TrackingProvider/TrackingProvider").TrackingProviderProps;
+
 // Themes
 export { OriginThemeProvider } from "@origin-digital/ods-themes";

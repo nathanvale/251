@@ -4,6 +4,7 @@ exports[`it renders a contained disabled 1`] = `
 <div>
   <button
     class="MuiButtonBase-root MuiButton-root Button-root-129 Button-root-140 MuiButton-contained Button-contained-132 MuiButton-containedPrimary Button-containedPrimary-133 Mui-disabled Button-disabled-139 Mui-disabled"
+    data-id="button"
     disabled=""
     tabindex="-1"
     type="button"
@@ -41,6 +42,7 @@ exports[`it renders a contained secondary 1`] = `
 <div>
   <button
     class="MuiButtonBase-root MuiButton-root Button-root-65 Button-root-76 MuiButton-contained Button-contained-68 MuiButton-containedSecondary Button-containedSecondary-70"
+    data-id="button"
     tabindex="0"
     type="button"
   >
@@ -60,6 +62,7 @@ exports[`it renders a primary inverse button 1`] = `
 <div>
   <button
     class="MuiButtonBase-root MuiButton-root Button-inverse-root-696 Button-inverse-root-705 MuiButton-contained Button-inverse-contained-699 MuiButton-containedPrimary Button-inverse-containedPrimary-700"
+    data-id="button"
     tabindex="0"
     type="button"
   >
@@ -79,6 +82,7 @@ exports[`it renders an icon 1`] = `
 <div>
   <button
     class="MuiButtonBase-root MuiButton-root Button-root-611 Button-root-622 MuiButton-contained Button-contained-614 MuiButton-containedPrimary Button-containedPrimary-615"
+    data-id="button"
     tabindex="0"
     type="button"
   >
@@ -113,6 +117,7 @@ exports[`it renders an outlined disabled 1`] = `
 <div>
   <button
     class="MuiButtonBase-root MuiButton-root Button-root-311 Button-root-322 MuiButton-outlined Button-outlined-317 MuiButton-outlinedPrimary Button-outlinedPrimary-318 Mui-disabled Button-disabled-321 Mui-disabled"
+    data-id="button"
     disabled=""
     tabindex="-1"
     type="button"
@@ -130,6 +135,7 @@ exports[`it renders an outlined primary 1`] = `
 <div>
   <button
     class="MuiButtonBase-root MuiButton-root Button-root-183 Button-root-194 MuiButton-outlined Button-outlined-189 MuiButton-outlinedPrimary Button-outlinedPrimary-190"
+    data-id="button"
     tabindex="0"
     type="button"
   >
@@ -149,6 +155,7 @@ exports[`it renders an outlined secondary 1`] = `
 <div>
   <button
     class="MuiButtonBase-root MuiButton-root Button-root-247 Button-root-258 MuiButton-outlined Button-outlined-253 MuiButton-outlinedSecondary Button-outlinedSecondary-255"
+    data-id="button"
     tabindex="0"
     type="button"
   >
@@ -168,6 +175,7 @@ exports[`it renders an text disabled 1`] = `
 <div>
   <button
     class="MuiButtonBase-root MuiButton-root Button-root-493 Button-root-504 MuiButton-text MuiButton-textPrimary Mui-disabled Button-disabled-503 Mui-disabled"
+    data-id="button"
     disabled=""
     tabindex="-1"
     type="button"
@@ -185,6 +193,7 @@ exports[`it renders an text primary 1`] = `
 <div>
   <button
     class="MuiButtonBase-root MuiButton-root Button-root-365 Button-root-376 MuiButton-text MuiButton-textPrimary"
+    data-id="button"
     tabindex="0"
     type="button"
   >
@@ -204,6 +213,7 @@ exports[`it renders an text secondary 1`] = `
 <div>
   <button
     class="MuiButtonBase-root MuiButton-root Button-root-429 Button-root-440 MuiButton-text MuiButton-textSecondary Button-textSecondary-438"
+    data-id="button"
     tabindex="0"
     type="button"
   >
