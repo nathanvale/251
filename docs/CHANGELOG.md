@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.1](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.20.0...docs@0.20.1) (2020-05-13)
+
+
+### Bug Fixes
+
+* **originthemeprovider:** remove loading fonts ([304a912](https://bitbucket.orgn.io/od/origin-ui/commits/304a9127cc952419db94c32467c751a350cca187))
+
+
+
+
+
 # [0.20.0](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.19.2...docs@0.20.0) (2020-05-08)
 
 

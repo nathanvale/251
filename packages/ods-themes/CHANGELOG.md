@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.3](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-themes@0.13.2...@origin-digital/ods-themes@0.13.3) (2020-05-13)
+
+
+### Bug Fixes
+
+* **originthemeprovider:** remove loading fonts ([304a912](https://bitbucket.orgn.io/od/origin-ui/commits/304a9127cc952419db94c32467c751a350cca187))
+
+
+
+
+
 ## [0.13.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-themes@0.13.1...@origin-digital/ods-themes@0.13.2) (2020-05-08)
 
 **Note:** Version bump only for package @origin-digital/ods-themes

@@ -3,7 +3,7 @@
   "description": "",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
-  "version": "0.13.2",
+  "version": "0.13.3",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "files": [
