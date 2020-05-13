@@ -22,7 +22,7 @@ const useLabelStyles = makeStyles(
       "&.Mui-error": {
         color: theme.palette.text.primary,
       },
-      "&$focused": {
+      "&.Mui-focused": {
         color: theme.palette.text.primary,
       },
       // In Material-UI error has priority over disabled. However, for us disabled should override others as the highest priority.
@@ -30,7 +30,6 @@ const useLabelStyles = makeStyles(
         color: theme.palette.text.disabled,
       },
     },
-    focused: {},
   }),
   { classNamePrefix: "FormLabel" }
 );
@@ -48,13 +47,7 @@ export const FormLabel = ({
     <MuiFormLabel
       {...muiProps}
       {...others}
-      className={clsx(
-        lblClasses.root,
-        {
-          [lblClasses.focused]: focused,
-        },
-        className
-      )}
+      className={clsx(lblClasses.root, className)}
       classes={classes}
       disabled={disabled}
       focused={focused}
