@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.25.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.25.1...@origin-digital/ods-core@0.25.2) (2020-05-14)
+
+
+### Bug Fixes
+
+* **formlabel:** should not change to primary colour on focus ([69666e7](https://bitbucket.orgn.io/od/origin-ui/commits/69666e7ea76b69f7ff23cf90a72dc586b13bf16d))
+
+
+
+
+
 ## [0.25.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.25.0...@origin-digital/ods-core@0.25.1) (2020-05-13)
 
 **Note:** Version bump only for package @origin-digital/ods-core
