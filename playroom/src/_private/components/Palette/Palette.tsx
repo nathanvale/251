@@ -1,6 +1,5 @@
 import React from "react";
-import { Column, Box, Columns, Stack } from "@origin-digital/ods-core";
-import { DocsText } from "@origin-digital/ods-lab";
+import { Column, Box, Columns, Stack, Text } from "@origin-digital/ods-core";
 import { coreMuiTheme } from "@origin-digital/ods-themes";
 
 import styled from "styled-components";
@@ -22,7 +21,7 @@ const StyledBox = styled(Box)<SwatchProps>`
 `;
 
 export const Swatch = ({
-  "data-id": dataId = "Swatch",
+  "data-id": dataId = "swatch",
   color,
 }: SwatchProps) => <StyledBox data-id={dataId} color={color} />;
 
@@ -33,8 +32,8 @@ const Row = ({ color, variation }: RowProps) => (
     </Column>
     <Column width="content">
       <Stack space="xsmall">
-        <DocsText weight="medium">{variation}</DocsText>
-        <DocsText>{color}</DocsText>
+        <Text weight="medium">{variation}</Text>
+        <Text>{color}</Text>
       </Stack>
     </Column>
   </Columns>
@@ -65,10 +64,8 @@ export const Palette = () => {
             <Column key={index} width="content">
               <Stack space="xxlarge">
                 <Stack space="large">
-                  <DocsText weight="medium" size="xsmall">
-                    {tone}
-                  </DocsText>
-                  <DocsText>{colors["main"]}</DocsText>
+                  <Text weight="medium">{tone}</Text>
+                  <Text>{colors["main"]}</Text>
                   <Swatch color={colors["main"]} />
                 </Stack>
                 <Stack space="large">

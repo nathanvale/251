@@ -1,12 +1,12 @@
 import React, { ReactElement, useContext } from "react";
 import {
   ChevronLinkRenderProps,
-  ChevronContainerProps,
   ChevronVaraints,
 } from "@origin-digital/ods-types";
 import clsx from "clsx";
 import { IconChevronRight } from "@origin-digital/ods-icons";
 import makeStyles from "@material-ui/core/styles/makeStyles";
+import { useTheme } from "@material-ui/core/styles";
 import { TextContext } from "../Text/TextContext";
 import {
   useLinkResetStyles,
@@ -23,18 +23,25 @@ interface UseChevronLinkProps {
   variant: ChevronVaraints;
 }
 
-function ChevronContainer({ children }: ChevronContainerProps) {
+function IconChevron() {
+  const theme = useTheme();
+  const basekickActive = theme.typography.basekickActive;
+
   return (
-    <Box display="flex">
+    <Box
+      style={{
+        marginLeft: "-8px",
+        marginTop: basekickActive ? "-10px" : "0px",
+        marginBottom: basekickActive ? "-14px" : "0px",
+        height: basekickActive ? "auto" : "24px",
+      }}
+    >
       <IconChevronRight />
-      <Box style={{ marginTop: "14px", marginBottom: "-1px" }}>
-        <span>{children}</span>
-      </Box>
     </Box>
   );
 }
 
-export function useChevronLinkStyles({ variant }: UseChevronLinkProps) {
+function useChevronLinkStyles({ variant }: UseChevronLinkProps) {
   const linkResetStyles = useLinkResetStyles();
   const chevronLinkStyles = makeStyles(
     ({ colors, typography }) => {
@@ -42,14 +49,15 @@ export function useChevronLinkStyles({ variant }: UseChevronLinkProps) {
         variant === "secondary" ? colors["secondaryB"] : colors[variant];
       return {
         "chevron-link": {
-          display: "inline-flex",
-          padding: "12px",
+          display: "flex",
+          alignItems: "center",
           textDecoration: "none",
           color,
-          "& * span": {
+          "& > span": {
             ...getTypographyForVariant(typography)["body"],
             color,
             transform: "none",
+            margin: undefined,
           },
           "& * svg": {
             "-webkit-transition": "transform 0.25s ease-out",
@@ -84,13 +92,13 @@ export const ChevronLinkRenderer = (props: ChevronLinkRendererProps) => {
     }
   }
 
-  const { children, variant: tone = "primary" } = props;
-  const chevronLinkStyles = useChevronLinkStyles({ variant: tone });
+  const { children, variant = "primary" } = props;
+  const chevronLinkStyles = useChevronLinkStyles({ variant });
   return (
     <>
       {children({
         chevronLinkStyles,
-        ChevronContainer,
+        IconChevron,
       })}
     </>
   );

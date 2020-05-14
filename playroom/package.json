@@ -18,6 +18,7 @@
     "@origin-digital/ods-icons": "^0.7.4",
     "@origin-digital/ods-lab": "^0.17.6",
     "@origin-digital/ods-scripts": "^0.25.2",
+    "@origin-digital/ods-themes": "*",
     "@origin-digital/ods-types": "^0.18.0",
     "@origin-digital/style-guide": "*",
     "@origin-digital/tile-selector": "*",

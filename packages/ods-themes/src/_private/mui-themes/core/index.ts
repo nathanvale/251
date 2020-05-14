@@ -1,12 +1,14 @@
-import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
+import createMuiTheme, {
+  ThemeOptions,
+} from "@material-ui/core/styles/createMuiTheme";
 
 import { flattenPalette } from "../../helpers/flattenPalette";
 import { palette } from "./palette";
 import { breakpoints } from "./breakpoints";
 import { shadows } from "./shadows";
-import { muiTypography } from "./typography";
+import { getMUITypography } from "./typography";
 
-export const coreMuiTheme = createMuiTheme({
+export const themeOptions: ThemeOptions = {
   colors: flattenPalette(palette),
   palette,
   // Breakpoint
@@ -16,7 +18,7 @@ export const coreMuiTheme = createMuiTheme({
   shape: {
     borderRadius: 0,
   },
-  typography: muiTypography,
+  typography: getMUITypography(false),
 
   // Default props
   props: {
@@ -31,4 +33,6 @@ export const coreMuiTheme = createMuiTheme({
   // overrides: {
   //
   // }
-});
+};
+
+export const coreMuiTheme = createMuiTheme(themeOptions);

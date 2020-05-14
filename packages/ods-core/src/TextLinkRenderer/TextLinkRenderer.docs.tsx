@@ -10,9 +10,8 @@ export const docs: ComponentDocs = {
   description:
     "TextLinkRenderer abstracts away our link styling. This allows you to render something that looks like a TextLink but is semantically something different, e.g. a button. If what you’re rendering is semantically a link, consider using a TextLink instead.",
   propDescriptions: {},
-  examples: [
-    {
-      label: "TextLink with Custom Button Renderer",
+  examples: {
+    default: {
       playroom: false,
       Code: () => (
         <Text>
@@ -38,10 +37,11 @@ export default () => (
   </Text>
 );`,
     },
-    {
-      label: "TextLink with custom React Router Link",
-      playroom: false,
-      codeString: `import React from 'react';
+    additional: [
+      {
+        label: "TextLink with custom React Router Link",
+        playroom: false,
+        codeString: `import React from 'react';
 import { Link } from 'react-router-dom';
 import { TextLinkRenderer, Text } from '@origin-digital/ods-core';
 
@@ -58,7 +58,8 @@ export default () => (
   </Text>
 );
 `,
-    },
-  ],
+      },
+    ],
+  },
   snippets: [],
 };

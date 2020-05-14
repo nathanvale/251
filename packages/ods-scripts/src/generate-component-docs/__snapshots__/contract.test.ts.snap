@@ -504,6 +504,7 @@ exports[`Box 1`] = `
   httpEquiv?: string
   id?: string
   inlist?: any
+  innerRef?: any
   inputMode?: 
     | "decimal"
     | "email"
@@ -1242,6 +1243,40 @@ exports[`Columns 1`] = `
 }
 `;
 
+exports[`ControlGroup 1`] = `
+{
+  children?: ReactNode
+  className?: string
+  classes?: Record<string, string>
+  data-id?: string
+  disabled?: boolean
+  error?: boolean
+  focused?: boolean
+  groupComponent?: 
+    | "div"
+    | "fieldset"
+    | "form"
+    | "section"
+    | "span"
+  helperText?: string
+  id?: string
+  label?: string
+  labelComponent?: 
+    | "abbr"
+    | "cite"
+    | "div"
+    | "label"
+    | "legend"
+    | "p"
+    | "pre"
+    | "q"
+    | "section"
+    | "span"
+  muiProps?: ControlGroupMuiProps | undefined
+  required?: boolean
+}
+`;
+
 exports[`Divider 1`] = `
 {
   data-id?: string
@@ -1357,7 +1392,7 @@ exports[`Heading 1`] = `
 }
 `;
 
-exports[`HeadingChevron 1`] = `
+exports[`HeadingChevronLink 1`] = `
 {
   children?: ReactNode
   className?: string
@@ -1562,6 +1597,7 @@ exports[`OriginThemeProvider 1`] = `
       getAutoHeightDuration: (height: number) => number
     }
     typography: {
+      basekickActive: boolean
       body1: CSSProperties
       body2: CSSProperties
       button: CSSProperties
@@ -1622,7 +1658,6 @@ exports[`OriginThemeProvider 1`] = `
       pxToRem: (px: number) => string
       subtitle1: CSSProperties
       subtitle2: CSSProperties
-      text: Record<FontSizeVariants, BasekickStyles>
     }
     zIndex: {
       appBar: number

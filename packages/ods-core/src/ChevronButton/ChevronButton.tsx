@@ -8,6 +8,7 @@ import {
   ChevronLinkRenderer,
   ChevronLinkRendererProps,
 } from "../ChevronLinkRenderer/ChevronLinkRenderer";
+import { Text } from "../Text/Text";
 import { useTracking } from "../_private/hooks/tracking";
 
 export interface ChevronButtonProps
@@ -38,7 +39,7 @@ export const ChevronButton = ({
   });
   return (
     <ChevronLinkRenderer variant={variant}>
-      {({ chevronLinkStyles, ChevronContainer }) => (
+      {({ chevronLinkStyles, IconChevron }) => (
         <button
           {...domProps}
           data-id={dataId}
@@ -47,7 +48,8 @@ export const ChevronButton = ({
           className={chevronLinkStyles}
           {...rest}
         >
-          <ChevronContainer>{children}</ChevronContainer>
+          <IconChevron />
+          <Text>{children}</Text>
         </button>
       )}
     </ChevronLinkRenderer>

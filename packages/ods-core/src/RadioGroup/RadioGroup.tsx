@@ -74,7 +74,7 @@ export const RadioGroup = ({
 
 RadioGroup.displayName = "RadioGroup";
 RadioGroup.defaultProps = {
-  "data-id": "RadioGroup",
+  "data-id": "radio-group",
   groupComponent: "fieldset",
   labelComponent: "legend",
 };

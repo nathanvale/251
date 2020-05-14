@@ -9,13 +9,13 @@ declare module "@material-ui/core/styles/createTypography" {
   export interface BasekickStyles {
     fontSize: number;
     lineHeight: string;
-    "-webkit-transform": string;
-    "-ms-transform": string;
-    transform: string;
-    "padding-top": "1px";
     margin: 0;
-    verticalAlign: "baseline";
-    "&::before": {
+    verticalAlign?: "baseline";
+    "-webkit-transform"?: string;
+    "-ms-transform"?: string;
+    transform?: string;
+    "padding-top"?: "1px";
+    "&::before"?: {
       content: '""';
       marginTop: string;
       display: "block";
@@ -35,7 +35,7 @@ declare module "@material-ui/core/styles/createTypography" {
     | "xxlarge"
     | "xxxlarge";
   interface Typography {
-    text: Record<FontSizeVariants, BasekickStyles>;
+    basekickActive: boolean;
   }
 }
 declare module "@material-ui/core/styles/createPalette" {

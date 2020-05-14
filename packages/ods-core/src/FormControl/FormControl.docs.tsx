@@ -5,7 +5,7 @@ import { Checkbox } from "../Checkbox/Checkbox";
 import { FormControl, FormControlProps } from "./FormControl";
 
 export const docs: ComponentDocs<FormControlProps> = {
-  category: "Internal",
+  category: "Atomic",
   componentName: "FormControl",
   description: [
     "This is an important atomic component that can be used as a wrapper",
@@ -35,42 +35,42 @@ export const docs: ComponentDocs<FormControlProps> = {
     ].join(" "),
   },
   migrationGuide: false,
-  examples: [
-    {
-      label: "Simple",
-      description: ["A form control that renders a fieldset"].join(" "),
+  examples: {
+    default: {
       Code: () => <FormControl>This is a fieldset</FormControl>,
     },
-    {
-      label: "Custom component",
-      description: ["Render a div element"].join(" "),
-      Code: () => <FormControl component="div">This is a div</FormControl>,
-    },
-    {
-      label: "Complex use-case, error state",
-      description: [
-        "Checkboxes under the hood respond to 'error' states of this component",
-      ].join(" "),
-      Code: () => (
-        <FormControl error>
-          <Checkbox id="chk1" label="Check 1" helperText="Some description" />
-          <Checkbox id="chk2" label="Check 2" />
-        </FormControl>
-      ),
-    },
-    {
-      label: "Complex use-case, disabled state",
-      description: [
-        "Checkboxes under the hood respond to 'disabled' states of this component",
-      ].join(" "),
-      Code: () => (
-        <FormControl disabled>
-          <Checkbox id="chk1" label="Check 1" />
-          <Checkbox id="chk2" label="Check 2" />
-        </FormControl>
-      ),
-    },
-  ],
+    additional: [
+      {
+        label: "Custom component",
+        description: ["Render a div element"].join(" "),
+        Code: () => <FormControl component="div">This is a div</FormControl>,
+      },
+      {
+        label: "Complex use-case, error state",
+        description: [
+          "Checkboxes under the hood respond to 'error' states of this component",
+        ].join(" "),
+        Code: () => (
+          <FormControl error>
+            <Checkbox id="chk1" label="Check 1" helperText="Some description" />
+            <Checkbox id="chk2" label="Check 2" />
+          </FormControl>
+        ),
+      },
+      {
+        label: "Complex use-case, disabled state",
+        description: [
+          "Checkboxes under the hood respond to 'disabled' states of this component",
+        ].join(" "),
+        Code: () => (
+          <FormControl disabled>
+            <Checkbox id="chk1" label="Check 1" />
+            <Checkbox id="chk2" label="Check 2" />
+          </FormControl>
+        ),
+      },
+    ],
+  },
   snippets: [
     {
       label: "Set error state of children",

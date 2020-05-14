@@ -4,13 +4,9 @@
  * issue to explain our work around.
  * https://github.com/microsoft/TypeScript/issues/28481#issuecomment-552938424
  */
-export { DocsText } from "./DocsText/DocsText";
-export type DocsTextProps = import("./DocsText/DocsText").DocsTextProps;
 
 // PLEASE EXPORT LAB UI COMPONENTS ONLY
 
-export { Link } from "./Link/Link";
-export type LinkProps = import("./Link/Link").LinkProps;
 export { Alert } from "./Alert/Alert";
 export type AlertProps = import("./Alert/Alert").AlertProps;
 export { AlertTitle } from "./Alert/AlertTitle";

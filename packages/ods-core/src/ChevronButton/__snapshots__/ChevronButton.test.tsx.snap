@@ -9,10 +9,6 @@ exports[`It can render 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .c1 {
@@ -23,6 +19,7 @@ exports[`It can render 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-align: left;
 }
 
 <button
@@ -31,7 +28,7 @@ exports[`It can render 1`] = `
 >
   <div
     class="c0"
-    display="flex"
+    style="margin-left: -8px; margin-top: 0px; margin-bottom: 0px; height: 24px;"
   >
     <svg
       class=""
@@ -44,15 +41,13 @@ exports[`It can render 1`] = `
         d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
       />
     </svg>
-    <div
-      class="c1"
-      style="margin-top: 14px; margin-bottom: -1px;"
-    >
-      <span>
-        Chevron link
-      </span>
-    </div>
   </div>
+  <span
+    class="typography-body-variant-basekick-3 typography-neutral-color-4 typography-regular-weight-5 typography-strong-support-6 -span c1"
+    data-id="text"
+  >
+    Chevron link
+  </span>
 </button>
 `;
 
@@ -65,10 +60,6 @@ exports[`It can render another tone 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .c1 {
@@ -79,15 +70,16 @@ exports[`It can render another tone 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-align: left;
 }
 
 <button
-  class="typography-linkReset-3 typography-chevron-link-4"
+  class="typography-linkReset-8 typography-chevron-link-9"
   data-id="chevron-button"
 >
   <div
     class="c0"
-    display="flex"
+    style="margin-left: -8px; margin-top: 0px; margin-bottom: 0px; height: 24px;"
   >
     <svg
       class=""
@@ -100,14 +92,12 @@ exports[`It can render another tone 1`] = `
         d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
       />
     </svg>
-    <div
-      class="c1"
-      style="margin-top: 14px; margin-bottom: -1px;"
-    >
-      <span>
-        Chevron button
-      </span>
-    </div>
   </div>
+  <span
+    class="typography-body-variant-basekick-10 typography-neutral-color-11 typography-regular-weight-12 typography-strong-support-13 -span c1"
+    data-id="text"
+  >
+    Chevron button
+  </span>
 </button>
 `;

@@ -21,7 +21,7 @@ export interface ChevronLinkProps
 }
 const defaultDataId = "chevron-link";
 const defaultVariant = "primary";
-
+const defaultPadding = "none";
 export const ChevronLink = ({
   "data-id": dataId = defaultDataId,
   variant = defaultVariant,
@@ -34,19 +34,19 @@ export const ChevronLink = ({
     "data-id": dataId,
     type: ChevronLink.displayName,
   });
-
   return (
     <ChevronLinkRenderer variant={variant}>
-      {({ chevronLinkStyles, ChevronContainer }) => (
+      {({ chevronLinkStyles, IconChevron }) => (
         <a
           {...domProps}
-          {...rest}
           data-id={dataId}
           ref={ref}
-          className={chevronLinkStyles}
           onClickCapture={onClickCapture}
+          {...rest}
+          className={chevronLinkStyles}
         >
-          <ChevronContainer>{children}</ChevronContainer>
+          <IconChevron />
+          <span>{children}</span>
         </a>
       )}
     </ChevronLinkRenderer>
@@ -56,6 +56,7 @@ export const ChevronLink = ({
 ChevronLink.defaultProps = {
   "data-id": defaultDataId,
   variant: defaultVariant,
+  padding: defaultPadding,
 };
 
 ChevronLink.displayName = "ChevronLink";

@@ -25,5 +25,5 @@ export const CheckboxBase = (props: CheckboxBaseProps) => {
 
 CheckboxBase.displayName = "CheckboxBase";
 CheckboxBase.defaultProps = {
-  "data-id": "checkboxBase",
+  "data-id": "checkbox-base",
 };

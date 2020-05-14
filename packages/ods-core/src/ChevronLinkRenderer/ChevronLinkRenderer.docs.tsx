@@ -7,25 +7,26 @@ export const docs: ComponentDocs = {
   description:
     "ChevronLinkRenderer abstracts away our chevron link styling and chevron icon behaviour. This allows you to render something that looks like a ChevronLink but is semantically something different, e.g. React Router Link. If what you’re rendering is semantically a link or button, consider using a ChevronLink or ChevronButton instead.",
   propDescriptions: {},
-  examples: [
-    {
-      label: "ChevronLink with custom React Router Link",
-      playroom: false,
+  examples: {
+    default: {
       codeString: `import React from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronLinkRenderer, Text } from '@origin-digital/ods-core';
+import { ChevronLinkRenderer } from '@origin-digital/ods-core';
 
 export default () => (
-  <ChevronLinkRenderer tone="primary">
-    {({ chevronLinkStyles, ChevronContainer }) => (
-      <Link to="" className={chevronLinkStyles}>
-        <ChevronContainer>Chevron link</ChevronContainer>
-      </Link>
-    )}
-  </ChevronLinkRenderer>
+  <ChevronLinkRenderer variant="primary">
+  {({ chevronLinkStyles, IconChevron }) => (
+    <Link to="" className={chevronLinkStyles}>
+      <IconChevron />
+      <span>Chevron link</span>
+    </Link>
+  )}
+</ChevronLinkRenderer>
 );
 `,
+      playroom: false,
     },
-  ],
+    additional: [],
+  },
   snippets: [],
 };

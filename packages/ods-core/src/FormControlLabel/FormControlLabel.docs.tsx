@@ -6,7 +6,7 @@ import { CheckboxBase } from "../CheckboxBase/CheckboxBase";
 import { FormControlLabel, FormControlLabelProps } from "./FormControlLabel";
 
 export const docs: ComponentDocs<FormControlLabelProps> = {
-  category: "Internal",
+  category: "Atomic",
   componentName: "FormControlLabel",
   description:
     "This is a low level and atomic component used to provide a label for interactive form components.",
@@ -19,10 +19,8 @@ export const docs: ComponentDocs<FormControlLabelProps> = {
     control: ["The control component for which this label is shown."].join(" "),
   },
   migrationGuide: false,
-  examples: [
-    {
-      label: "Simple case",
-      description: ["A checkbox with a string label"].join(" "),
+  examples: {
+    default: {
       Code: () => (
         <FormControlLabel
           label="Simple table"
@@ -30,21 +28,23 @@ export const docs: ComponentDocs<FormControlLabelProps> = {
         />
       ),
     },
-    {
-      label: "Checkbox",
-      description: ["Rendering a more complicated label."].join(" "),
-      Code: () => (
-        <FormControlLabel
-          label={
-            <Box style={{ fontWeight: "bold", color: "red" }}>
-              Red bold label
-            </Box>
-          }
-          control={<CheckboxBase id="myCheckbox" />}
-        />
-      ),
-    },
-  ],
+    additional: [
+      {
+        label: "Checkbox",
+        description: ["Rendering a more complicated label."].join(" "),
+        Code: () => (
+          <FormControlLabel
+            label={
+              <Box style={{ fontWeight: "bold", color: "red" }}>
+                Red bold label
+              </Box>
+            }
+            control={<CheckboxBase id="myCheckbox" />}
+          />
+        ),
+      },
+    ],
+  },
   snippets: [
     {
       label: "Basic",

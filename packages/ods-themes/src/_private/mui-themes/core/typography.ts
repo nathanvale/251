@@ -57,7 +57,7 @@ const text: Record<FontSizeVariants, FontSizeMetrics> = {
   },
 };
 
-export const typography: Typography = {
+const getTypography = (basekickActive: boolean): Typography => ({
   fontFamily: ["gordita", "Arial", "Sans-Serif"].join(","),
   weight: {
     regular: 400,
@@ -66,110 +66,115 @@ export const typography: Typography = {
   },
   text: {
     xxxxsmall: {
-      ...getBasekickStyles(text.xxxxsmall),
+      ...getBasekickStyles(text.xxxxsmall, basekickActive),
     },
     xxxsmall: {
-      ...getBasekickStyles(text.xxxsmall, -0.02),
+      ...getBasekickStyles(text.xxxsmall, basekickActive, -0.02),
     },
     xxsmall: {
-      ...getBasekickStyles(text.xxsmall, 0.05),
+      ...getBasekickStyles(text.xxsmall, basekickActive, 0.05),
     },
     xsmall: {
-      ...getBasekickStyles(text.xsmall),
+      ...getBasekickStyles(text.xsmall, basekickActive),
     },
     small: {
-      ...getBasekickStyles(text.small),
+      ...getBasekickStyles(text.small, basekickActive),
     },
     medium: {
-      ...getBasekickStyles(text.medium),
+      ...getBasekickStyles(text.medium, basekickActive),
     },
     large: {
-      ...getBasekickStyles(text.large, -0.05),
+      ...getBasekickStyles(text.large, basekickActive, -0.05),
       [breakpoints.up("md")]: {
-        ...getBasekickStyles(text.large, 0.05),
+        ...getBasekickStyles(text.large, basekickActive, 0.05),
       },
     },
     xlarge: {
-      ...getBasekickStyles(text.xlarge),
+      ...getBasekickStyles(text.xlarge, basekickActive),
     },
     xxlarge: {
-      ...getBasekickStyles(text.xxlarge),
+      ...getBasekickStyles(text.xxlarge, basekickActive),
     },
     xxxlarge: {
-      ...getBasekickStyles(text.xxxlarge),
+      ...getBasekickStyles(text.xxxlarge, basekickActive),
     },
   },
-};
+});
 
-export const muiTypography: Partial<Theme["typography"]> = {
-  fontFamily: typography.fontFamily,
-  fontWeightMedium: typography.weight.medium,
-  fontWeightRegular: typography.weight.regular,
-  fontWeightBold: typography.weight.bold,
-  text: typography.text,
-  h1: {
-    fontWeight: typography.weight.regular,
-    ...typography.text.xxlarge,
-    color: colors.grey[600],
-  },
-  h2: {
-    fontWeight: typography.weight.regular,
-    ...typography.text.large,
-    color: colors.grey[600],
-  },
-  h3: {
-    fontWeight: typography.weight.medium,
-    ...typography.text.small,
-    color: colors.grey[600],
-  },
-  h4: {
-    fontWeight: typography.weight.medium,
-    ...typography.text.xsmall,
-    color: colors.grey[600],
-  },
-  h5: {
-    fontWeight: typography.weight.medium,
-    ...typography.text.xsmall,
-    color: colors.grey[600],
-  },
-  h6: {
-    fontWeight: typography.weight.medium,
-    ...typography.text.xsmall,
-    color: colors.grey[600],
-  },
-  subtitle1: {
-    fontWeight: typography.weight.regular,
-    ...typography.text.small,
-    color: colors.grey[600],
-  },
-  subtitle2: {
-    fontWeight: typography.weight.regular,
-    ...typography.text.xsmall,
-    color: colors.grey[600],
-  },
-  body1: {
-    fontWeight: typography.weight.regular,
-    ...typography.text.xxsmall,
-    color: colors.grey[500],
-  },
-  body2: {
-    fontWeight: typography.weight.regular,
-    ...typography.text.xxxsmall,
-    color: colors.grey[500],
-  },
-  caption: {
-    fontWeight: typography.weight.regular,
-    ...typography.text.xxxsmall,
-    color: colors.grey[500],
-  },
-  overline: {
-    fontWeight: typography.weight.regular,
-    ...typography.text.xxxxsmall,
-    color: colors.grey[500],
-    textTransform: "uppercase",
-  },
-  button: {
-    ...typography.text.xsmall,
-    textTransform: "none",
-  },
+export const getMUITypography = (
+  basekickActive: boolean
+): Partial<Theme["typography"]> => {
+  const typography = getTypography(basekickActive);
+  return {
+    fontFamily: typography.fontFamily,
+    fontWeightMedium: typography.weight.medium,
+    fontWeightRegular: typography.weight.regular,
+    fontWeightBold: typography.weight.bold,
+    basekickActive,
+    h1: {
+      fontWeight: typography.weight.regular,
+      ...typography.text.xxlarge,
+      color: colors.grey[600],
+    },
+    h2: {
+      fontWeight: typography.weight.regular,
+      ...typography.text.large,
+      color: colors.grey[600],
+    },
+    h3: {
+      fontWeight: typography.weight.medium,
+      ...typography.text.small,
+      color: colors.grey[600],
+    },
+    h4: {
+      fontWeight: typography.weight.medium,
+      ...typography.text.xsmall,
+      color: colors.grey[600],
+    },
+    h5: {
+      fontWeight: typography.weight.medium,
+      ...typography.text.xsmall,
+      color: colors.grey[600],
+    },
+    h6: {
+      fontWeight: typography.weight.medium,
+      ...typography.text.xsmall,
+      color: colors.grey[600],
+    },
+    subtitle1: {
+      fontWeight: typography.weight.regular,
+      ...typography.text.small,
+      color: colors.grey[600],
+    },
+    subtitle2: {
+      fontWeight: typography.weight.regular,
+      ...typography.text.xsmall,
+      color: colors.grey[600],
+    },
+    body1: {
+      fontWeight: typography.weight.regular,
+      ...typography.text.xxsmall,
+      color: colors.grey[500],
+    },
+    body2: {
+      fontWeight: typography.weight.regular,
+      ...typography.text.xxxsmall,
+      color: colors.grey[500],
+    },
+    caption: {
+      fontWeight: typography.weight.regular,
+      ...typography.text.xxxsmall,
+      color: colors.grey[500],
+    },
+    overline: {
+      fontWeight: typography.weight.regular,
+      ...typography.text.xxxxsmall,
+      color: colors.grey[500],
+      textTransform: "uppercase",
+    },
+    button: {
+      ...getBasekickStyles(text.xsmall, false),
+      textTransform: "none",
+    },
+  };
 };

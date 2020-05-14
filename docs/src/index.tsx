@@ -1,67 +1,26 @@
-import React, { StrictMode } from "react";
+import React from "react";
 import * as ReactDOM from "react-dom";
-import transition from "styled-transition-group";
-import { HashRouter as Router, Route } from "react-router-dom";
-import { DebugProvider } from "@origin-digital/ods-devtools";
-import { OriginThemeProvider, Box } from "@origin-digital/ods-core";
-import { Documentation } from "./routes/Documentation/Documentation";
-import { Home } from "./routes/Home/Home";
+import { HashRouter as Router } from "react-router-dom";
+import ScrollMemory from "react-router-scroll-memory";
+import { ConfigProvider } from "./App/ConfigContext";
+import { App } from "./App/App";
+import ScrollToTop from "./App/ScrollToTop/ScrollToTop";
 
-const routes = [
-  { path: "/", name: "Home", exact: true, Component: Home },
-  {
-    path: "/(guides|components|foundations)",
-    name: "Documentation",
-    exact: false,
-    Component: Documentation,
-  },
-];
-
-const transitionSpeed = "0.15s";
-
-const CSSTransition = transition.div`
-  &:enter {
-    opacity: 0;
-  }
-  &:enter-active {
-    opacity: 1;
-    transition: opacity ${transitionSpeed};
-    transition-delay: transitionSpeed,
-  }
-  &:exit {
-    opacity: 1;
-  }
-  &:exit-active {
-  opacity: 0,
-  transition: opacity ${transitionSpeed},
-  }
-`;
+const playroomUrl =
+  window.location.hostname === "localhost"
+    ? "localhost:9999"
+    : `${window.location.origin + window.location.pathname}playroom`;
+const sourceUrlPrefix =
+  "https://bitbucket.origin.com.au/projects/OD/repos/origin-ui/browse";
+const zeplinUrl = "https://app.zeplin.io/project/5a04e5b2e5f0b90b17771a32";
 
 ReactDOM.render(
-  <OriginThemeProvider>
-    <DebugProvider>
-      <Router>
-        <Box backgroundColor="white">
-          {routes.map(({ path, exact, Component }) => (
-            <Route key={path} exact={exact} path={path}>
-              {({ match }) => (
-                <CSSTransition in={match != null} timeout={350} unmountOnExit>
-                  <StrictMode>
-                    <Box
-                      position="absolute"
-                      backgroundColor="white"
-                      style={{ top: 0, bottom: 0, left: 0, right: 0 }}
-                    >
-                      <Component />
-                    </Box>
-                  </StrictMode>
-                </CSSTransition>
-              )}
-            </Route>
-          ))}
-        </Box>
-      </Router>
-    </DebugProvider>
-  </OriginThemeProvider>,
+  <Router>
+    <ScrollToTop />
+    <ConfigProvider value={{ playroomUrl, sourceUrlPrefix, zeplinUrl }}>
+      <ScrollMemory />
+      <App />
+    </ConfigProvider>
+  </Router>,
   document.getElementById("root")
 );

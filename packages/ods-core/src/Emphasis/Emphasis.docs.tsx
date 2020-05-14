@@ -8,16 +8,15 @@ export const docs: ComponentDocs = {
   description:
     "This component marks text that has stress emphasis which traditionally means that the text is displayed in italics. ",
   migrationGuide: true,
-  examples: [
-    {
+  examples: {
+    default: {
       Code: () => (
         <Text>
-          The last word of this sentence is marked as{" "}
-          <Emphasis>stressed</Emphasis>.
+          The quick brown fox <Emphasis>jumps</Emphasis> over the lazy dog.
         </Text>
       ),
     },
-  ],
+  },
   snippets: [
     {
       label: "Standard",

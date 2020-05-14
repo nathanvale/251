@@ -1,8 +1,8 @@
+import { RouteProps } from "react-router";
 import { ReactNode, ComponentType } from "react";
 
-export interface Page {
+export interface DocsPage extends RouteProps {
   title: string;
-  Component: ComponentType;
 }
 
 export interface AppConfig {

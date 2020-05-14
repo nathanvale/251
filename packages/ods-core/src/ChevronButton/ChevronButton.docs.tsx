@@ -13,19 +13,20 @@ export const docs: ComponentDocs<ChevronButtonProps> = {
       "DOM AnchorHTMLAttributes with exception of type, onClick and children",
   },
   migrationGuide: false,
-  variant: "table",
-  examples: [
-    {
-      label: "Default Behaviour",
+
+  examples: {
+    default: {
       Code: () => <ChevronButton>Chevron button</ChevronButton>,
     },
-    {
-      label: "Setting the variant",
-      Code: () => (
-        <ChevronButton variant="secondary">Chevron button</ChevronButton>
-      ),
-    },
-  ],
+    additional: [
+      {
+        label: "Setting the variant",
+        Code: () => (
+          <ChevronButton variant="secondary">Chevron button</ChevronButton>
+        ),
+      },
+    ],
+  },
   snippets: [
     {
       label: "Default",

@@ -26,7 +26,7 @@ export const getCGPropsDocs = (name: string) => ({
 });
 
 export const docs: ComponentDocs<ControlGroupProps> = {
-  category: "Internal",
+  category: "Atomic",
   componentName: "ControlGroup",
   description: [
     `This atomic component is a container that can be used to group for components, such as multiple checkboxes or radios.`,
@@ -38,11 +38,8 @@ export const docs: ComponentDocs<ControlGroupProps> = {
   ].join(" "),
   propDescriptions: getCGPropsDocs("ControlGroup"),
   migrationGuide: false,
-  examples: [
-    {
-      label: "Simple example",
-      description:
-        "Automatically wraps the children in a fieldset and provide a legend.",
+  examples: {
+    default: {
       Code: () => (
         <ControlGroup
           id="cityGroup"
@@ -57,45 +54,47 @@ export const docs: ComponentDocs<ControlGroupProps> = {
         </ControlGroup>
       ),
     },
-    {
-      label: "In error state",
-      description: "All children will also be in error state",
-      Code: () => (
-        <ControlGroup
-          id="cityGroup"
-          label="Australia cities"
-          helperText="You have to select at least one city."
-          error
-        >
-          <RadioGroupBase name="cities">
-            <Radio label="Melbourne" id="mlb" value="mlb" />
-            <Radio label="Sydney" id="syd" value="syd" />
-            <Radio label="Perth" id="prt" value="prt" />
-          </RadioGroupBase>
-        </ControlGroup>
-      ),
-    },
-    {
-      label: "In disabled state",
-      description: "All children will also be in disabled state.",
-      Code: () => (
-        <ControlGroup
-          id="cityGroup"
-          label="Australia cities"
-          helperText="You have to select at least one city."
-          disabled
-        >
-          <Checkbox label="Melbourne" id="mlb" />
-          <Checkbox
-            label="Sydney"
-            id="syd"
-            helperText="The heart of Australia"
-          />
-          <Checkbox label="Perth" id="prt" />
-        </ControlGroup>
-      ),
-    },
-  ],
+    additional: [
+      {
+        label: "In error state",
+        description: "All children will also be in error state",
+        Code: () => (
+          <ControlGroup
+            id="cityGroup"
+            label="Australia cities"
+            helperText="You have to select at least one city."
+            error
+          >
+            <RadioGroupBase name="cities">
+              <Radio label="Melbourne" id="mlb" value="mlb" />
+              <Radio label="Sydney" id="syd" value="syd" />
+              <Radio label="Perth" id="prt" value="prt" />
+            </RadioGroupBase>
+          </ControlGroup>
+        ),
+      },
+      {
+        label: "In disabled state",
+        description: "All children will also be in disabled state.",
+        Code: () => (
+          <ControlGroup
+            id="cityGroup"
+            label="Australia cities"
+            helperText="You have to select at least one city."
+            disabled
+          >
+            <Checkbox label="Melbourne" id="mlb" />
+            <Checkbox
+              label="Sydney"
+              id="syd"
+              helperText="The heart of Australia"
+            />
+            <Checkbox label="Perth" id="prt" />
+          </ControlGroup>
+        ),
+      },
+    ],
+  },
   snippets: [
     {
       label: "Simple example",

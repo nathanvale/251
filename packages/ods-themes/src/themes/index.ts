@@ -1,3 +1,7 @@
 export { originRetailTheme } from "./originRetail";
-export { coreMuiTheme } from "../_private/mui-themes";
-export { originRetailMUITheme } from "../_private/mui-themes";
+export {
+  coreMuiTheme,
+  coreBasekickMuiTheme,
+  originRetailMUITheme,
+} from "../_private/mui-themes";
+export { odsMasterTheme } from "../_private/odsMasterTheme";

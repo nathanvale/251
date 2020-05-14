@@ -25,6 +25,7 @@ export const getHeightCorrection = (
 
 export function getBasekickStyles(
   fontSizeValue: FontSizeMetrics,
+  basekickActive: boolean = false,
   adjustY: number = 0
 ): BasekickStyles {
   const baseFontSize = 1;
@@ -40,22 +41,23 @@ export function getBasekickStyles(
 
   const preventCollapse = 1;
 
-  const transform = `translateY(${typeOffset}em)`;
-
+  const transform = basekickActive ? `translateY(${typeOffset}em)` : undefined;
   return {
     fontSize: fontSizeValue.size,
     lineHeight: `${fontSizeValue.rows * gridRow}px`,
-    transform,
+    margin: 0,
+    verticalAlign: basekickActive ? "baseline" : undefined,
     "-webkit-transform": transform,
     "-ms-transform": transform,
-    "padding-top": "1px",
-    margin: 0,
-    verticalAlign: "baseline",
-    "&::before": {
-      content: '""',
-      marginTop: `${-(heightCorrection + preventCollapse)}px`,
-      display: "block",
-      height: 0,
-    },
+    transform,
+    "padding-top": basekickActive ? "1px" : undefined,
+    "&::before": basekickActive
+      ? {
+          content: '""',
+          marginTop: `${-(heightCorrection + preventCollapse)}px`,
+          display: "block",
+          height: 0,
+        }
+      : undefined,
   };
 }

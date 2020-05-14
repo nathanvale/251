@@ -12,21 +12,22 @@ export const docs: ComponentDocs<ChevronLinkProps> = {
     domProps: "DOM AnchorHTMLAttributes with exception of href and children",
   },
   migrationGuide: false,
-  variant: "table",
-  examples: [
-    {
-      label: "Default Behaviour",
+
+  examples: {
+    default: {
       Code: () => <ChevronLink href="">Chevron link</ChevronLink>,
     },
-    {
-      label: "Setting the variant",
-      Code: () => (
-        <ChevronLink variant="secondary" href="">
-          Chevron link
-        </ChevronLink>
-      ),
-    },
-  ],
+    additional: [
+      {
+        label: "Setting the variant",
+        Code: () => (
+          <ChevronLink variant="secondary" href="">
+            Chevron link
+          </ChevronLink>
+        ),
+      },
+    ],
+  },
   snippets: [
     {
       label: "Default",
