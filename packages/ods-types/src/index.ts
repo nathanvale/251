@@ -25,7 +25,7 @@ export interface TextLinkRenderProps {
 
 export interface ChevronLinkRenderProps {
   chevronLinkStyles: string;
-  ChevronContainer: (props: ChevronContainerProps) => JSX.Element;
+  IconChevron: () => JSX.Element;
 }
 
 export type TextToneVariants =

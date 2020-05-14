@@ -21,5 +21,5 @@ export const FormControl = ({
 FormControl.displayName = "FormControl";
 FormControl.defaultProps = {
   component: "fieldset",
-  "data-id": "formControl",
+  "data-id": "form-control",
 };

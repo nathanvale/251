@@ -151,7 +151,7 @@ export function useCheckTypographyBackground() {
     backgroundColor === "transparent" ||
     backgroundColor === "grey50" ||
     !backgroundColor;
-  if (!hasValidBackground) {
+  if (!hasValidBackground && process.env.NODE_ENV !== "production") {
     throw new Error(
       `Typography background colors must be "white", "backgroundDefault", "transparent" or "undefined`
     );

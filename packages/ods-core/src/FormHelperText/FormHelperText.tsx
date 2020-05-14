@@ -21,5 +21,5 @@ export const FormHelperText = ({
 
 FormHelperText.displayName = "FormHelperText";
 FormHelperText.defaultProps = {
-  "data-id": "formHelperText",
+  "data-id": "form-helper-text",
 };

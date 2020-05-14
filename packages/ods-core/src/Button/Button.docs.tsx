@@ -46,261 +46,256 @@ export const docs: ComponentDocs<ButtonProps> = {
       "The button could visually have 3 variations as defined by this value",
   },
   migrationGuide: false,
-  examples: [
-    {
-      label: "Contained Button",
-      description: "Contained Button",
-      Code: () => (
-        <Stack space="medium">
-          <Columns space="medium">
-            <Column width="content">
-              <Button>Primary</Button>
-            </Column>
-            <Column>
-              <Button disabled>Primary</Button>
-            </Column>
-          </Columns>
-          <Columns space="medium">
-            <Column width="content">
-              <Button color="secondary">Secondary</Button>
-            </Column>
-            <Column>
-              <Button disabled color="secondary">
-                Secondary
-              </Button>
-            </Column>
-          </Columns>
-        </Stack>
-      ),
-      codeString: `<Box>
+  examples: {
+    default: {
+      Code: () => <Button>Button</Button>,
+    },
+    additional: [
+      {
+        label: "Contained Button",
+        Code: () => (
+          <Stack space="medium">
+            <Columns space="medium">
+              <Column width="content">
+                <Button>Primary</Button>
+              </Column>
+              <Column>
+                <Button disabled>Primary</Button>
+              </Column>
+            </Columns>
+            <Columns space="medium">
+              <Column width="content">
+                <Button color="secondary">Secondary</Button>
+              </Column>
+              <Column>
+                <Button disabled color="secondary">
+                  Secondary
+                </Button>
+              </Column>
+            </Columns>
+          </Stack>
+        ),
+        codeString: `<Box>
    <Button>Primary</Button>
    <Button disabled>Primary</Button>
    <Button color="secondary">Secondary</Button>
    <Button disabled color="secondary">Secondary</Button>
 </Box>`,
-    },
-    {
-      label: "Outlined Button",
-      description: "Outlined Button",
-      Code: () => (
-        <Stack space="medium">
-          <Columns space="medium">
-            <Column width="content">
-              <Button variant="outlined">Primary</Button>
-            </Column>
-            <Column>
-              <Button disabled variant="outlined">
-                Primary
-              </Button>
-            </Column>
-          </Columns>
-          <Columns space="medium">
-            <Column width="content">
-              <Button variant="outlined" color="secondary">
-                Secondary
-              </Button>
-            </Column>
-            <Column>
-              <Button disabled variant="outlined" color="secondary">
-                Secondary
-              </Button>
-            </Column>
-          </Columns>
-        </Stack>
-      ),
-      codeString: `<Box>
+      },
+      {
+        label: "Outlined Button",
+        Code: () => (
+          <Stack space="medium">
+            <Columns space="medium">
+              <Column width="content">
+                <Button variant="outlined">Primary</Button>
+              </Column>
+              <Column>
+                <Button disabled variant="outlined">
+                  Primary
+                </Button>
+              </Column>
+            </Columns>
+            <Columns space="medium">
+              <Column width="content">
+                <Button variant="outlined" color="secondary">
+                  Secondary
+                </Button>
+              </Column>
+              <Column>
+                <Button disabled variant="outlined" color="secondary">
+                  Secondary
+                </Button>
+              </Column>
+            </Columns>
+          </Stack>
+        ),
+        codeString: `<Box>
   <Button variant="outlined">Primary</Button>
   <Button disabled variant="outlined">Primary</Button>
   <Button variant="outlined" color="secondary">Secondary</Button>
   <Button disabled variant="outlined" color="secondary">Secondary</Button>
 </Box>`,
-    },
-    {
-      label: "Text Button",
-      description: "Text Button",
-      Code: () => (
-        <Stack space="medium">
-          <Columns space="medium">
-            <Column width="content">
-              <Button variant="text">Primary</Button>
-            </Column>
-            <Column>
-              <Button disabled variant="text">
-                Primary
-              </Button>
-            </Column>
-          </Columns>
-          <Columns space="medium">
-            <Column width="content">
-              <Button variant="text" color="secondary">
-                Secondary
-              </Button>
-            </Column>
-            <Column>
-              <Button disabled variant="text" color="secondary">
-                Secondary
-              </Button>
-            </Column>
-          </Columns>
-        </Stack>
-      ),
-      codeString: `<Box>
+      },
+      {
+        label: "Text Button",
+        Code: () => (
+          <Stack space="medium">
+            <Columns space="medium">
+              <Column width="content">
+                <Button variant="text">Primary</Button>
+              </Column>
+              <Column>
+                <Button disabled variant="text">
+                  Primary
+                </Button>
+              </Column>
+            </Columns>
+            <Columns space="medium">
+              <Column width="content">
+                <Button variant="text" color="secondary">
+                  Secondary
+                </Button>
+              </Column>
+              <Column>
+                <Button disabled variant="text" color="secondary">
+                  Secondary
+                </Button>
+              </Column>
+            </Columns>
+          </Stack>
+        ),
+        codeString: `<Box>
   <Button variant="text">Primary</Button>
   <Button disabled variant="text">Primary</Button>
   <Button variant="text" color="secondary">Secondary </Button>
   <Button disabled variant="text" color="secondary">Secondary</Button>
 </Box>`,
-    },
-    {
-      label: "Text Button",
-      description:
-        "To left-align with text under or above it the padding is cancelled by negative margins",
-      Code: () => (
-        <Stack space="medium" alignX="left">
-          <Button noTextPadding variant="text">
-            Primary
-          </Button>
-          <Text>This text should left-align with the button above</Text>
-        </Stack>
-      ),
-      codeString: `<Stack space="medium" alignX="left">
+      },
+      {
+        label: "Text Button",
+        description:
+          "To left-align with text under or above it the padding is cancelled by negative margins",
+        Code: () => (
+          <Stack space="medium" alignX="left">
+            <Button noTextPadding variant="text">
+              Primary
+            </Button>
+            <Text>This text should left-align with the button above</Text>
+          </Stack>
+        ),
+        codeString: `<Stack space="medium" alignX="left">
   <Button noTextPadding variant="text">
     Primary
   </Button>
   <Text>This text should left-align with the button above</Text>
 </Stack>`,
-    },
-    {
-      label: "Link Button",
-      description: "A button with href will render an <a /> tag.",
-      Code: () => (
-        <Button
-          variant="text"
-          href="https://www.originenergy.com.au"
-          target="_blank"
-        >
-          Origin website
-        </Button>
-      ),
-    },
-    {
-      label: "FullWidth Button",
-      description: "A button that takes up the full width of its container.",
-      Code: () => (
-        <Stack alignX="left" space="small">
-          <Button fullWidth>Full width</Button>
-          <Button fullWidth={[true, false]}>Full width on xs, sm, md</Button>
+      },
+      {
+        label: "Link Button",
+        description: "A button with href will render an <a /> tag.",
+        Code: () => (
           <Button
-            fullWidth={{
-              xs: true,
-              sm: true,
-              md: false,
-              lg: false,
-              xl: false,
-            }}
+            variant="text"
+            href="https://www.originenergy.com.au"
+            target="_blank"
           >
-            Full width on xs, sm
+            Origin website
           </Button>
-        </Stack>
-      ),
-    },
-    {
-      label: "Button with Icon",
-      description: "Button can render an icon before the text",
-      Code: () => (
-        <Box>
-          <Button icon={<IconCheck />}>Medium</Button>
-          <Box style={{ display: "inline-block", width: "20px" }} />
-          <Button size="small" icon={<IconCheck />}>
-            Small
-          </Button>
-        </Box>
-      ),
-      playroom: false,
-      codeString: `<Box>
+        ),
+      },
+      {
+        label: "FullWidth Button",
+        description: "A button that takes up the full width of its container.",
+        Code: () => (
+          <Stack alignX="left" space="small">
+            <Button fullWidth>Full width</Button>
+            <Button fullWidth={[true, false]}>Full width on xs, sm, md</Button>
+            <Button
+              fullWidth={{
+                xs: true,
+                sm: true,
+                md: false,
+                lg: false,
+                xl: false,
+              }}
+            >
+              Full width on xs, sm
+            </Button>
+          </Stack>
+        ),
+      },
+      {
+        label: "Button with Icon",
+        description: "Button can render an icon before the text",
+        Code: () => (
+          <Box>
+            <Button icon={<IconCheck />}>Medium</Button>
+            <Box style={{ display: "inline-block", width: "20px" }} />
+            <Button size="small" icon={<IconCheck />}>
+              Small
+            </Button>
+          </Box>
+        ),
+        playroom: false,
+        codeString: `<Box>
   <Button icon={<IconCheck />}>Medium</Button>
   <Box style={{ display: "inline-block", width: "20px" }} />
   <Button size="small" icon={<IconCheck />}>
     Small
   </Button>
 </Box>`,
-    },
-    {
-      label: "Button sizes",
-      description:
-        "Buttons can have 2 different sizes, 'medium' being the default.",
-      Code: () => (
-        <>
-          <Box>
-            <Button size="small">Small</Button>
-            <Box style={{ display: "inline-block", width: "20px" }} />
-            <Button size="medium">Medium</Button>
-          </Box>
-        </>
-      ),
-      codeString: `<Box>
+      },
+      {
+        label: "Button sizes",
+        description:
+          "Buttons can have 2 different sizes, 'medium' being the default.",
+        Code: () => (
+          <>
+            <Box>
+              <Button size="small">Small</Button>
+              <Box style={{ display: "inline-block", width: "20px" }} />
+              <Button size="medium">Medium</Button>
+            </Box>
+          </>
+        ),
+        codeString: `<Box>
   <Button size="small">Small</Button>
   <Button size="medium">Medium</Button>
 </Box>`,
-    },
-    {
-      label: "Inverse Button",
-      description:
-        "Button can swap out its color and background-color if is rendered on a dark background",
-      Code: () => (
-        <Box backgroundColor="grey600" height="full" padding="medium">
-          <Stack space="small">
+      },
+      {
+        label: "Inverse Button",
+        description:
+          "Button can swap out its color and background-color if is rendered on a dark background",
+        Code: () => (
+          <Box backgroundColor="grey600" height="full" padding="medium">
             <Columns space="small">
-              <Column width="content">
-                <Button inverse>Contained</Button>
+              <Column>
+                <Stack space="small">
+                  <Button inverse>Contained</Button>
+                  <Button inverse variant="outlined">
+                    Outlined
+                  </Button>
+                  <Button inverse variant="text">
+                    Text
+                  </Button>
+                  <Button inverse disabled>
+                    Disabled
+                  </Button>
+                  <Button inverse disabled variant="text">
+                    Disabled
+                  </Button>
+                </Stack>
               </Column>
-              <Column width="content">
-                <Button inverse variant="outlined">
-                  Outlined
-                </Button>
-              </Column>
-              <Column width="content">
-                <Button inverse variant="text">
-                  Text
-                </Button>
-              </Column>
-              <Column width="content">
-                <Button inverse disabled>
-                  Disabled
-                </Button>
+              <Column>
+                {" "}
+                <Stack space="small">
+                  <Button inverse color="secondary">
+                    Contained
+                  </Button>
+
+                  <Button inverse variant="outlined" color="secondary">
+                    Outlined
+                  </Button>
+
+                  <Button inverse variant="text" color="secondary">
+                    Text
+                  </Button>
+
+                  <Button inverse disabled variant="outlined" color="secondary">
+                    Disabled
+                  </Button>
+
+                  <Button inverse disabled variant="text" color="secondary">
+                    Disabled
+                  </Button>
+                </Stack>
               </Column>
             </Columns>
-            <Columns space="small">
-              <Column width="content">
-                <Button inverse color="secondary">
-                  Contained
-                </Button>
-              </Column>
-              <Column width="content">
-                <Button inverse variant="outlined" color="secondary">
-                  Outlined
-                </Button>
-              </Column>
-              <Column width="content">
-                <Button inverse variant="text" color="secondary">
-                  Text
-                </Button>
-              </Column>
-              <Column width="content">
-                <Button inverse disabled variant="outlined" color="secondary">
-                  Disabled
-                </Button>
-              </Column>
-              <Column width="content">
-                <Button inverse disabled variant="text" color="secondary">
-                  Disabled
-                </Button>
-              </Column>
-            </Columns>
-          </Stack>
-        </Box>
-      ),
-      codeString: `<Box>
+          </Box>
+        ),
+        codeString: `<Box>
   <Button inverse>Contained</Button>
   <Button inverse variant="outlined">Outlined</Button>
   <Button inverse variant="text">Text</Button>
@@ -311,14 +306,15 @@ export const docs: ComponentDocs<ButtonProps> = {
   <Button inverse variant="text" color="secondary">Text</Button>
   <Button inverse disabled color="secondary">Disabled</Button>
 </Box>`,
-    },
-    {
-      label: "Button with action",
-      description: "Button has onClick handler",
-      // eslint-disable-next-line no-alert
-      Code: () => <Button onClick={(e) => alert(e.target)}>Click !</Button>,
-    },
-  ],
+      },
+      {
+        label: "Button with action",
+        description: "Button has onClick handler",
+        // eslint-disable-next-line no-alert
+        Code: () => <Button onClick={(e) => alert(e.target)}>Click !</Button>,
+      },
+    ],
+  },
   snippets: [
     {
       label: "Simple case - 2 Buttons",

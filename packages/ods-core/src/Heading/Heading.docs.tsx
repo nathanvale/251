@@ -16,7 +16,8 @@ export const headingPropDescriptions: Partial<Record<
 export const docs: ComponentDocs<HeadingProps> = {
   category: "Content",
   componentName: "Heading",
-  description: "",
+  description:
+    "Heading is used to define HTML headings. The variant h1 is the most important heading. The variant h4 defines the least important heading.",
   propDescriptions: { ...headingPropDescriptions },
   specialOptionalProps: [
     {
@@ -29,73 +30,92 @@ export const docs: ComponentDocs<HeadingProps> = {
     },
   ],
   migrationGuide: false,
-  examples: [
-    {
-      label: "Heading H1",
-      Code: () => <Heading variant="h1">Heading 1</Heading>,
-    },
-    {
-      label: "Heading H2",
-      Code: () => <Heading variant="h2">Heading 2</Heading>,
-    },
-    {
-      label: "Heading H3",
-      Code: () => <Heading variant="h3">Heading 3</Heading>,
-    },
-    {
-      label: "Heading H4",
-      Code: () => <Heading variant="h4">Heading 4</Heading>,
-    },
-    {
-      label: "Truncating long headings",
+  examples: {
+    default: {
       Code: () => (
-        <Box style={{ width: 120 }}>
-          <Heading variant="h4" truncate>
-            Truncated heading
-          </Heading>
-        </Box>
-      ),
-    },
-    {
-      label: "Heading Alignment",
-      Code: () => (
-        <Stack space="medium">
-          <Heading variant="h4">Left</Heading>
-          <Heading variant="h4" align="center">
-            Center
-          </Heading>
-          <Heading variant="h4" align="right">
-            Right
-          </Heading>
-        </Stack>
-      ),
-    },
-    {
-      label: "Heading Alignment (responsive)",
-      Code: () => (
-        <Heading variant="h4" align={["left", "center"]}>
-          Aligment
+        <Heading variant="h1">
+          The quick brown fox jumps over the lazy dog
         </Heading>
       ),
     },
-    {
-      label: `Applying medium weight`,
-      description: `This only applies to heading variants of "h1" or "h2". Other use cases will throw a typescript error or a runtime error in playroom.`,
-      Code: () => (
-        <Heading variant="h2" weight="medium">
-          Heading 2 with medium weight
-        </Heading>
-      ),
-    },
-    {
-      label: "Changing the semantic meaning for SEO",
-      Code: () => (
-        <Heading variant="h4" component="h1">
-          {`This heading is actually a h1`}
-        </Heading>
-      ),
-    },
-  ],
+    additional: [
+      {
+        label: "Heading H2",
+        Code: () => (
+          <Heading variant="h2">
+            The quick brown fox jumps over the lazy dog
+          </Heading>
+        ),
+      },
+      {
+        label: "Heading H3",
+        Code: () => (
+          <Heading variant="h3">
+            The quick brown fox jumps over the lazy dog
+          </Heading>
+        ),
+      },
+      {
+        label: "Heading H4",
+        Code: () => (
+          <Heading variant="h4">
+            The quick brown fox jumps over the lazy dog
+          </Heading>
+        ),
+      },
+      {
+        label: "Truncating long headings",
+        Code: () => (
+          <Box style={{ width: 120 }}>
+            <Heading variant="h4" truncate>
+              The quick brown fox jumps over the lazy dog
+            </Heading>
+          </Box>
+        ),
+      },
+      {
+        label: "Heading Alignment",
+        Code: () => (
+          <Stack space="medium">
+            <Heading variant="h4">
+              The quick brown fox jumps over the lazy dog
+            </Heading>
+            <Heading variant="h4" align="center">
+              The quick brown fox jumps over the lazy dog
+            </Heading>
+            <Heading variant="h4" align="right">
+              The quick brown fox jumps over the lazy dog
+            </Heading>
+          </Stack>
+        ),
+      },
+      {
+        label: "Heading Alignment (responsive)",
+        Code: () => (
+          <Heading variant="h4" align={["left", "center"]}>
+            The quick brown fox jumps over the lazy dog
+          </Heading>
+        ),
+      },
+      {
+        label: `Applying medium weight`,
+        description: `This only applies to heading variants of "h1" or "h2". Other use cases will throw a typescript error or a runtime error in playroom.`,
+        Code: () => (
+          <Heading variant="h2" weight="medium">
+            The quick brown fox jumps over the lazy dog
+          </Heading>
+        ),
+      },
+      {
+        label: "Changing the semantic meaning for SEO",
+        Code: () => (
+          <Heading variant="h4" component="h1">
+            The quick brown fox jumps over the lazy dog
+          </Heading>
+        ),
+      },
+    ],
+  },
   snippets: [
     {
       label: "Heading 1",

@@ -4,7 +4,7 @@ import { ComponentDocs } from "@origin-digital/ods-types";
 import { FormLabel, FormLabelProps } from "./FormLabel";
 
 export const docs: ComponentDocs<FormLabelProps> = {
-  category: "Internal",
+  category: "Atomic",
   componentName: "FormLabel",
   description:
     "This is a low level and atomic component used to provide a label for interactive form components.",
@@ -14,18 +14,18 @@ export const docs: ComponentDocs<FormLabelProps> = {
     component: ["The html element type to be used under the hood."].join(" "),
   },
   migrationGuide: false,
-  examples: [
-    {
-      label: "Simple",
-      description: ["Label"].join(" "),
+  examples: {
+    default: {
       Code: () => <FormLabel>This is a label</FormLabel>,
     },
-    {
-      label: "Custom component",
-      description: ["Label"].join(" "),
-      Code: () => <FormLabel component="legend">This is a legend</FormLabel>,
-    },
-  ],
+    additional: [
+      {
+        label: "Custom component",
+        description: ["Label"].join(" "),
+        Code: () => <FormLabel component="legend">This is a legend</FormLabel>,
+      },
+    ],
+  },
   snippets: [
     {
       label: "Simple",

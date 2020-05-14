@@ -7,32 +7,49 @@ export const docs: ComponentDocs = {
   componentName: "Strong",
   description: `This component is a phrase tag. It defines important text.`,
   migrationGuide: true,
-  examples: [
-    {
-      label: "Inline Text",
+  examples: {
+    default: {
       Code: () => (
         <Text>
-          The last word of this sentence is <Strong>strong</Strong>.
+          The quick brown fox <Strong>jumps</Strong> over the lazy dog.
         </Text>
       ),
     },
-    {
-      label: "Inline Heading1",
-      Code: () => (
-        <Heading variant="h1">
-          The last word of this heading is <Strong>strong</Strong>.
-        </Heading>
-      ),
-    },
-    {
-      label: "Inline Heading3",
-      Code: () => (
-        <Heading variant="h3">
-          The last word of this heading is <Strong>strong</Strong>.
-        </Heading>
-      ),
-    },
-  ],
+    additional: [
+      {
+        label: "Inline Heading Variant H1",
+        Code: () => (
+          <Heading variant="h1">
+            The quick brown fox <Strong>jumps</Strong> over the lazy dog.
+          </Heading>
+        ),
+      },
+      {
+        label: "Inline Heading Variant H2",
+        Code: () => (
+          <Heading variant="h2">
+            The quick brown fox <Strong>jumps</Strong> over the lazy dog.
+          </Heading>
+        ),
+      },
+      {
+        label: "Inline Heading Variant H3",
+        Code: () => (
+          <Heading variant="h3">
+            The quick brown fox <Strong>jumps</Strong> over the lazy dog.
+          </Heading>
+        ),
+      },
+      {
+        label: "Inline Heading Variant H4",
+        Code: () => (
+          <Heading variant="h4">
+            The quick brown fox <Strong>jumps</Strong> over the lazy dog.
+          </Heading>
+        ),
+      },
+    ],
+  },
   snippets: [
     {
       label: "Standard",

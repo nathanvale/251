@@ -4,7 +4,7 @@ exports[`it renders an icon and embeds the control inside it 1`] = `
 <div>
   <label
     class="MuiFormControlLabel-root"
-    data-id="formControlLabel"
+    data-id="form-control-label"
     id="helperText"
   >
     <div

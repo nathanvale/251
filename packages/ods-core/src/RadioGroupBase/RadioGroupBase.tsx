@@ -29,5 +29,5 @@ export const RadioGroupBase = ({
 
 RadioGroupBase.displayName = "RadioGroupBase";
 RadioGroupBase.defaultProps = {
-  "data-id": "RadioGroupBase",
+  "data-id": "radio-group-base",
 };

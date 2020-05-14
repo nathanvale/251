@@ -64,6 +64,7 @@ export interface BoxProps
   width?: "full";
   cursor?: CSS.CursorProperty;
   overflow?: "auto" | "hidden" | "visible" | "scroll";
+  innerRef?: any;
 }
 
 export const StyledCodeReset = styled(StyledSystemBox.withComponent("code"))<
@@ -73,9 +74,8 @@ export const StyledCodeReset = styled(StyledSystemBox.withComponent("code"))<
 export const StyledPreReset = styled(StyledSystemBox.withComponent("pre"))<
   BoxProps
 >`
-  overflow-x: auto;
   word-wrap: break-word;
-  overflow-y: hidden;
+  overflow: visible;
 `;
 
 export const StyledSpanReset = styled(StyledSystemBox.withComponent("span"))<

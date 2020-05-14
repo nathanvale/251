@@ -51,11 +51,7 @@ function formControlState({
 const useLabelStyles = makeStyles(
   {
     formControlLabel: {
-      alignItems: "flex-start",
-      "& .MuiFormControlLabel-label": {
-        padding: "14px 0",
-        marginTop: "1px",
-      },
+      alignItems: "center",
     },
   },
   { classNamePrefix: `AbstractSwitch` }

@@ -86,5 +86,5 @@ ControlGroup.displayName = "ControlGroup";
 ControlGroup.defaultProps = {
   groupComponent: "fieldset",
   labelComponent: "legend",
-  "data-id": "controlGroup",
+  "data-id": "control-group",
 };

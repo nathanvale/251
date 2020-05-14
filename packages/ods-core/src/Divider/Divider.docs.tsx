@@ -1,13 +1,7 @@
 /* eslint-disable react/display-name */
-import React, { ReactNode } from "react";
+import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Divider, DividerProps, Section, Box } from "..";
-
-const Container = ({ children }: { children: ReactNode }) => (
-  <Box width="full" backgroundColor="white" paddingY={["xlarge", "xxlarge"]}>
-    <Section>{children}</Section>
-  </Box>
-);
+import { Divider, DividerProps } from "..";
 
 export const docs: ComponentDocs<DividerProps> = {
   category: "Layout",
@@ -15,11 +9,10 @@ export const docs: ComponentDocs<DividerProps> = {
   description: "Dividers are useful for separating content.",
   propDescriptions: {},
   migrationGuide: false,
-  examples: [
-    {
-      Container,
+  examples: {
+    default: {
       Code: () => <Divider />,
     },
-  ],
+  },
   snippets: [],
 };

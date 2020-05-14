@@ -8,5 +8,6 @@ module.exports = {
   name: pack.name,
   globals: {
     __DEV__: true,
+    __PLAYROOM__: true,
   },
 };

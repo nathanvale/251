@@ -1,5 +1,6 @@
 const path = require("path");
-
+// eslint-disable-next-line import/no-extraneous-dependencies
+const webpack = require("webpack");
 const getPackagesMetaData = require("../packages/ods-scripts/src/packages-metadata")
   .getPackagesMetaData;
 const getResolveAliases = require("../packages/ods-scripts/src/packages-metadata")
@@ -35,7 +36,8 @@ module.exports = {
   ],
   exampleCode: `<Section>
   <Placeholder />
-</Section>`,
+</Section>
+`,
   webpackConfig: () => ({
     module: {
       rules: [
@@ -70,5 +72,10 @@ module.exports = {
       extensions: [".js", ".ts", ".tsx"],
       alias: getResolveAliases(packagesMetadata),
     },
+    plugins: [
+      new webpack.DefinePlugin({
+        "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV),
+      }),
+    ],
   }),
 };

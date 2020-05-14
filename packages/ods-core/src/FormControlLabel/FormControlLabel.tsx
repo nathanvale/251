@@ -18,5 +18,5 @@ export const FormControlLabel = ({
 
 FormControlLabel.displayName = "FormControlLabel";
 FormControlLabel.defaultProps = {
-  "data-id": "formControlLabel",
+  "data-id": "form-control-label",
 };

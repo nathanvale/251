@@ -16,5 +16,5 @@ export const RadioBase = (props: RadioBaseProps) => {
 
 RadioBase.displayName = "RadioBase";
 RadioBase.defaultProps = {
-  "data-id": "radioBase",
+  "data-id": "radio-base",
 };

@@ -5,7 +5,7 @@ import { getSwitchBaseDocs } from "../_private/components/AbstractSwitch/switch-
 import { CheckboxBase, CheckboxBaseProps } from "./CheckboxBase";
 
 export const docs: ComponentDocs<CheckboxBaseProps> = {
-  category: "Internal",
+  category: "Atomic",
   componentName: "CheckboxBase",
   description: [
     "This is a basic checkbox component without any labels or helper text.",
@@ -14,28 +14,30 @@ export const docs: ComponentDocs<CheckboxBaseProps> = {
   ].join(" "),
   propDescriptions: getSwitchBaseDocs("checkbox"),
   migrationGuide: false,
-  examples: [
-    {
-      label: "Uncontrolled",
-      description: "Simple use case of an uncontrolled checkbox",
+  examples: {
+    default: {
       Code: () => <CheckboxBase id="tc-checkbox" />,
     },
-    {
-      label: "Controlled",
-      description: "It becomes controlled when checked prop is provided",
-      Code: () => <CheckboxBase id="tc-checkbox" checked />,
-    },
-    {
-      label: "Error",
-      description: "Turns red when it is in error state and it is not checked",
-      Code: () => <CheckboxBase id="tc-checkbox" error />,
-    },
-    {
-      label: "Disabled",
-      description: "All turn grey when it is disabled",
-      Code: () => <CheckboxBase id="tc-checkbox" disabled checked />,
-    },
-  ],
+    additional: [
+      {
+        label: "Controlled",
+        description:
+          "CheckboxBase becomes controlled when checked prop is provided",
+        Code: () => <CheckboxBase id="tc-checkbox" checked />,
+      },
+      {
+        label: "Error",
+        description:
+          "Turns red when it is in error state and it is not checked",
+        Code: () => <CheckboxBase id="tc-checkbox" error />,
+      },
+      {
+        label: "Disabled",
+        description: "All turn grey when it is disabled",
+        Code: () => <CheckboxBase id="tc-checkbox" disabled checked />,
+      },
+    ],
+  },
   snippets: [
     {
       label: "Uncontrolled",

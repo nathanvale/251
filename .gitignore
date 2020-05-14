@@ -9,3 +9,4 @@ build
 componentDocs.json
 .vscode
 lerna-debug.log
+yarn-error.log

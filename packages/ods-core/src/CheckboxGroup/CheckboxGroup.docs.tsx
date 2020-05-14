@@ -15,67 +15,76 @@ export const docs: ComponentDocs<CheckboxGroupProps> = {
   ].join(" "),
   propDescriptions: getCGPropsDocs("CheckboxGroup"),
   migrationGuide: false,
-  examples: [
-    {
-      label: "Simple example",
-      description:
-        "Automatically wraps the children in a fieldset and provide a legend.",
+  examples: {
+    default: {
       Code: () => (
-        <CheckboxGroup
-          id="cityGroup"
-          label="Australia cities"
-          helperText="You have to select at least one city."
-        >
+        <CheckboxGroup id="cityGroup">
           <Checkbox label="Melbourne" id="mlb" />
           <Checkbox label="Sydney" id="syd" />
           <Checkbox label="Perth" id="prt" />
         </CheckboxGroup>
       ),
     },
-    {
-      label: "In error state",
-      description: "All children will also be in error state",
-      Code: () => (
-        <CheckboxGroup
-          id="cityGroup"
-          label="Australia cities"
-          helperText="You have to select at least one city."
-          error
-        >
-          <Checkbox label="Melbourne" id="mlb" />
-          <Checkbox label="Sydney" id="syd" />
-          <Checkbox label="Perth" id="prt" />
-        </CheckboxGroup>
-      ),
-    },
-    {
-      label: "In disabled state",
-      description: "All children will also be in disabled state.",
-      Code: () => (
-        <CheckboxGroup
-          id="cityGroup"
-          label="Australia cities:"
-          helperText="You have to select at least one city."
-          disabled
-        >
-          <Checkbox label="Melbourne" id="mlb" />
-          <Checkbox
-            label="Sydney"
-            id="syd"
-            helperText="The heart of Australia"
-          />
-          <Checkbox label="Perth" id="prt" />
-        </CheckboxGroup>
-      ),
-    },
-  ],
+    additional: [
+      {
+        label: "Label and helper text",
+        Code: () => (
+          <CheckboxGroup
+            id="cityGroup"
+            label="Australian cities"
+            helperText="You have to select at least one city."
+          >
+            <Checkbox label="Melbourne" id="mlb" />
+            <Checkbox label="Sydney" id="syd" />
+            <Checkbox label="Perth" id="prt" />
+          </CheckboxGroup>
+        ),
+      },
+      {
+        label: "In error state",
+        description: "All children will also be in error state",
+        Code: () => (
+          <CheckboxGroup
+            id="cityGroup"
+            label="Australian cities"
+            helperText="You have to select at least one city."
+            error
+          >
+            <Checkbox label="Melbourne" id="mlb" />
+            <Checkbox label="Sydney" id="syd" />
+            <Checkbox label="Perth" id="prt" />
+          </CheckboxGroup>
+        ),
+      },
+      {
+        label: "In disabled state",
+        description: "All children will also be in disabled state.",
+        Code: () => (
+          <CheckboxGroup
+            id="cityGroup"
+            label="Australian cities:"
+            helperText="You have to select at least one city."
+            disabled
+          >
+            <Checkbox label="Melbourne" id="mlb" />
+            <Checkbox
+              label="Sydney"
+              id="syd"
+              helperText="The heart of Australia"
+            />
+            <Checkbox label="Perth" id="prt" />
+          </CheckboxGroup>
+        ),
+      },
+    ],
+  },
   snippets: [
     {
       label: "Simple example",
       Code: () => (
         <CheckboxGroup
           id="cityGroup"
-          label="Australia cities"
+          label="Australian cities"
           helperText="You have to select at least one city."
         >
           <Checkbox label="Melbourne" id="mlb" />

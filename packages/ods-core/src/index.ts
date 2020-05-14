@@ -35,6 +35,9 @@ export type ColumnProps = import("./Column/Column").ColumnProps;
 export { Columns } from "./Columns/Columns";
 export type ColumnsProps = import("./Columns/Columns").ColumnsProps;
 
+export { ControlGroup } from "./ControlGroup/ControlGroup";
+export type ControlGroupProps = import("./ControlGroup/ControlGroup").ControlGroupProps;
+
 export { ChevronButton } from "./ChevronButton/ChevronButton";
 export type ChevronButtonProps = import("./ChevronButton/ChevronButton").ChevronButtonProps;
 
@@ -65,8 +68,8 @@ export type FormHelperTextProps = import("./FormHelperText/FormHelperText").Form
 export { Heading } from "./Heading/Heading";
 export type HeadingProps = import("./Heading/Heading").HeadingProps;
 
-export { HeadingChevron } from "./HeadingChevron/HeadingChevron";
-export type HeadingChevronProps = import("./HeadingChevron/HeadingChevron").HeadingChevronProps;
+export { HeadingChevronLink } from "./HeadingChevronLink/HeadingChevronLink";
+export type HeadingChevronLinkProps = import("./HeadingChevronLink/HeadingChevronLink").HeadingChevronLinkProps;
 
 export { Hidden } from "./Hidden/Hidden";
 export type HiddenProps = import("./Hidden/Hidden").HiddenProps;
