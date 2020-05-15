@@ -33,3 +33,27 @@ export const normaliseResponsiveProp = <T>(
   }
   throw new Error(`Invalid responsive prop length: ${JSON.stringify(space)}`);
 };
+
+export const normaliseObjectResponsiveProp = <T>(
+  value?: ResponsiveProp<T>
+): ResponsiveValue<T> | undefined => {
+  const normArr: ResponsiveValue<T> = normaliseResponsiveProp<T>(value) ?? [];
+  if (typeof normArr === "string" || typeof normArr === "number") {
+    return {
+      xs: normArr,
+      sm: normArr,
+      md: normArr,
+      lg: normArr,
+      xl: normArr,
+    };
+  } else if (normArr instanceof Array && normArr.length === 5) {
+    return {
+      xs: normArr[0] as T,
+      sm: normArr[1] as T,
+      md: normArr[2] as T,
+      lg: normArr[3] as T,
+      xl: normArr[4] as T,
+    };
+  }
+  throw new Error(`Invalid responsive prop: ${JSON.stringify(value)}`);
+};

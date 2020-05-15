@@ -58,12 +58,7 @@ const SpecialSection = styled(Section as any)`
 
 const FixedContentBlock = forwardRef<HTMLElement, BoxProps>(
   ({ children, ...props }, forwardedRef) => (
-    <Box
-      transition="fast"
-      {...props}
-      position="fixed"
-      innerRef={forwardedRef as TS_FIXME}
-    >
+    <Box transition="fast" {...props} position="fixed" innerRef={forwardedRef}>
       <SpecialSection
         backgroundColor="transparent"
         paddingY="none"

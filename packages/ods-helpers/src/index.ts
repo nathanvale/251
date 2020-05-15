@@ -14,5 +14,5 @@ export { media } from "./media";
 export { normaliseResponsiveProp } from "./normaliseResponsiveProp";
 export { resolveResponsiveRangeProps } from "./responsiveRangeProps";
 export type ResponsiveRangeProps = import("./responsiveRangeProps").ResponsiveRangeProps;
-export { setBreakpoint } from "./setBreakpoint";
+export { getRespValForBreakpoint } from "./getRespValForBreakpoint";
 export { themeChecker } from "./themeChecker";

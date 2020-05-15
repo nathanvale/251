@@ -5,7 +5,7 @@ import {
   ResponsiveSpace,
 } from "@origin-digital/ods-types";
 import {
-  setBreakpoint,
+  getRespValForBreakpoint,
   mapSpaceAliasToIndex,
 } from "@origin-digital/ods-helpers";
 import { ColumnProps } from "../Column/Column";
@@ -63,29 +63,29 @@ export const Columns = ({
       display="flex"
       flexDirection={
         collapseBelow &&
-        setBreakpoint({
+        getRespValForBreakpoint({
           breakpoint: collapseBelow,
-          value1: "column",
-          value2: "row",
+          valOnBelow: "column",
+          valOnAbove: "row",
         })
       }
       alignItems={
         collapseBelow
-          ? setBreakpoint({
+          ? getRespValForBreakpoint({
               breakpoint: collapseBelow,
-              value1: "flex-start",
-              value2: alignItems,
+              valOnBelow: "flex-start",
+              valOnAbove: alignItems,
             })
           : alignItems
       }
       marginLeft={
-        (collapseBelow
-          ? setBreakpoint({
+        collapseBelow
+          ? getRespValForBreakpoint({
               breakpoint: collapseBelow,
-              value1: "none",
-              value2: spaceIndex,
+              valOnBelow: "none",
+              valOnAbove: spaceIndex,
             })
-          : spaceIndex) as TS_FIXME
+          : spaceIndex
       }
     >
       <ColumnsContext.Provider value={columnsContextValue}>
