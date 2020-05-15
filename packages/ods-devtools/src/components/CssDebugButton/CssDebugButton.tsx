@@ -1,10 +1,10 @@
-import React from "react";
+import React, { ButtonHTMLAttributes } from "react";
 
 import { useDebugState, useDebugDispatch } from "../../context/debug-context";
 
 export interface CSSDebugButtonProps {
-  Button: TS_FIXME;
-  Icon: TS_FIXME;
+  Button: React.ComponentType<ButtonHTMLAttributes<HTMLButtonElement>>;
+  Icon: React.ReactNode;
 }
 
 export const CSSDebugButton = ({ Button, ...rest }: CSSDebugButtonProps) => {

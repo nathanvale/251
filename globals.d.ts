@@ -1,6 +1,4 @@
 /* eslint-disable import/no-unused-modules */
-/* eslint-disable @typescript-eslint/no-explicit-any */
-declare type TS_FIXME = any;
 
 declare const __DEV__: boolean;
 

@@ -3,7 +3,7 @@ import React, { ReactNode, useContext } from "react";
 import styled, { css } from "styled-components";
 import {
   mapSpaceAliasToIndex,
-  setBreakpoint,
+  getRespValForBreakpoint,
 } from "@origin-digital/ods-helpers";
 import { BreakpointVariants } from "@origin-digital/ods-types";
 import { ColumnsContext } from "../Columns/Columns";
@@ -74,22 +74,22 @@ export const Column = ({
       <InnerStyledBox
         height="full"
         paddingLeft={
-          (collapseBelow
-            ? setBreakpoint({
+          collapseBelow
+            ? getRespValForBreakpoint({
                 breakpoint: collapseBelow,
-                value1: "none",
-                value2: spaceIndex,
+                valOnBelow: "none",
+                valOnAbove: spaceIndex,
               })
-            : spaceIndex) as TS_FIXME
+            : spaceIndex
         }
         paddingTop={
-          (collapseBelow
-            ? setBreakpoint({
+          collapseBelow
+            ? getRespValForBreakpoint({
                 breakpoint: collapseBelow,
-                value1: spaceIndex,
-                value2: "none",
+                valOnBelow: spaceIndex,
+                valOnAbove: "none",
               })
-            : "none") as TS_FIXME
+            : "none"
         }
       >
         <BoxDebug>{children}</BoxDebug>
