@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-devtools@0.4.1...@origin-digital/ods-devtools@0.4.2) (2020-05-15)
+
+
+### Bug Fixes
+
+* **columns:** collapseBelow and responsive space work together ([efbd887](https://bitbucket.orgn.io/od/origin-ui/commits/efbd88710a297066daf3927b63c5a089ecaa283c))
+
+
+
+
+
 ## [0.4.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-devtools@0.4.0...@origin-digital/ods-devtools@0.4.1) (2020-03-06)
 
 **Note:** Version bump only for package @origin-digital/ods-devtools

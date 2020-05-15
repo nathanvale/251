@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.26.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.26.0...@origin-digital/ods-core@0.26.1) (2020-05-15)
+
+
+### Bug Fixes
+
+* **columns:** collapseBelow and responsive space work together ([efbd887](https://bitbucket.orgn.io/od/origin-ui/commits/efbd88710a297066daf3927b63c5a089ecaa283c))
+
+
+
+
+
 # [0.26.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.25.2...@origin-digital/ods-core@0.26.0) (2020-05-15)
 
 

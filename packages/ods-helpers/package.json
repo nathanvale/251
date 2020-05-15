@@ -3,7 +3,7 @@
   "description": "Utilities for building components",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
-  "version": "0.6.10",
+  "version": "0.6.11",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "files": [
