@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-themes@0.13.3...@origin-digital/ods-themes@0.14.0) (2020-05-15)
+
+
+### Features
+
+* uplift docs ([c6ba10f](https://bitbucket.orgn.io/od/origin-ui/commits/c6ba10fdadaf6a8640ea2473ba5facfa9f2c2123))
+
+
+
+
+
 ## [0.13.3](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-themes@0.13.2...@origin-digital/ods-themes@0.13.3) (2020-05-13)
 
 

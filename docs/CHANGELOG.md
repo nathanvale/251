@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.21.0](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.20.2...docs@0.21.0) (2020-05-15)
+
+
+### Features
+
+* uplift docs ([c6ba10f](https://bitbucket.orgn.io/od/origin-ui/commits/c6ba10fdadaf6a8640ea2473ba5facfa9f2c2123))
+
+
+
+
+
 ## [0.20.2](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.20.1...docs@0.20.2) (2020-05-14)
 
 **Note:** Version bump only for package docs
