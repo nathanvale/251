@@ -16,3 +16,4 @@ export { resolveResponsiveRangeProps } from "./responsiveRangeProps";
 export type ResponsiveRangeProps = import("./responsiveRangeProps").ResponsiveRangeProps;
 export { getRespValForBreakpoint } from "./getRespValForBreakpoint";
 export { themeChecker } from "./themeChecker";
+export { slugify } from "./slugify";

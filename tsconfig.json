@@ -5,7 +5,7 @@
     "skipLibCheck": true,
     "target": "es5",
     "lib": ["dom", "esnext"],
-    "jsx": "preserve",
+    "jsx": "react",
     "rootDir": ".",
     "outDir": "lib",
     "downlevelIteration": true,
@@ -57,6 +57,9 @@
     },
     {
       "path": "packages/ods-types/tsconfig.json"
+    },
+    {
+      "path": "packages/ods-scripts/tsconfig.json"
     },
     {
       "path": "docs/tsconfig.json"

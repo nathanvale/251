@@ -8,21 +8,27 @@ import home from "./routes/home";
 import guides from "./routes/guides";
 import foundations from "./routes/foundations";
 import components from "./routes/components";
+import e2e from "./routes/e2e";
 
 export const App = () => (
   <StrictMode>
     <OriginThemeProvider muiTheme={coreBasekickMuiTheme}>
-      <Navigation>
-        <Switch>
-          {map(
-            { ...home, ...guides, ...foundations, ...components },
-            (routeProps, path) => (
-              <Route key={path} {...routeProps} path={path} />
-            )
-          )}
-          <Redirect path="/components" exact to="/" />
-        </Switch>
-      </Navigation>
+      <Switch>
+        {map({ ...e2e }, (routeProps, path) => (
+          <Route key={path} {...routeProps} path={path} />
+        ))}
+        <Navigation>
+          <Switch>
+            {map(
+              { ...home, ...guides, ...foundations, ...components },
+              (routeProps, path) => (
+                <Route key={path} {...routeProps} path={path} />
+              )
+            )}
+            <Redirect path="/components" exact to="/" />
+          </Switch>
+        </Navigation>
+      </Switch>
     </OriginThemeProvider>
   </StrictMode>
 );
