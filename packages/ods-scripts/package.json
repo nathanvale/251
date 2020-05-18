@@ -2,12 +2,12 @@
   "private": true,
   "name": "@origin-digital/ods-scripts",
   "description": "Build scripts for the monorepo",
-  "version": "0.26.1",
+  "version": "0.26.2",
   "dependencies": {
-    "@origin-digital/ods-core": "^0.26.1",
-    "@origin-digital/ods-helpers": "*",
-    "@origin-digital/ods-lab": "^0.18.1",
-    "@origin-digital/ods-types": "*",
+    "@origin-digital/ods-core": "^0.26.2",
+    "@origin-digital/ods-helpers": "^0.6.12",
+    "@origin-digital/ods-lab": "^0.18.2",
+    "@origin-digital/ods-types": "^0.19.1",
     "lodash": "^4.17.15",
     "prettier": "^1.19.1",
     "react-element-to-jsx-string": "^14.0.1"
