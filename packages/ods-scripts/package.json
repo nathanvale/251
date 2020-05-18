@@ -5,7 +5,9 @@
   "version": "0.26.1",
   "dependencies": {
     "@origin-digital/ods-core": "^0.26.1",
+    "@origin-digital/ods-helpers": "*",
     "@origin-digital/ods-lab": "^0.18.1",
+    "@origin-digital/ods-types": "*",
     "lodash": "^4.17.15",
     "prettier": "^1.19.1",
     "react-element-to-jsx-string": "^14.0.1"

@@ -21,6 +21,14 @@ export interface ComponentDocs<T = {}> {
   specialOptionalProps?: SpecialProps[];
 }
 
+export type E2ETests = E2ETest[];
+
+export interface E2ETest {
+  label: string;
+  Code: () => JSX.Element;
+  responsive?: boolean;
+}
+
 export interface SpecialProps {
   name: string;
   type: { label: string; description?: string };

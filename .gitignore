@@ -9,4 +9,5 @@ build
 componentDocs.json
 .vscode
 lerna-debug.log
+docs/public/e2e-manifest.json
 yarn-error.log

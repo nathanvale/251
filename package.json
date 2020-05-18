@@ -17,11 +17,12 @@
     "build": "lerna run build --ignore docs --ignore playroom --parallel && yarn tsc",
     "clean": "rm -rf coverage packages/*/dist",
     "cz": "git-cz",
-    "docs:build": "yarn generate-component-docs && cd docs && yarn build && cd ../playroom && yarn build && mv dist ../docs/build/playroom",
+    "docs:build": "yarn generate-component-docs && yarn generate-e2e-manifest && cd docs && yarn build && cd ../playroom && yarn build && mv dist ../docs/build/playroom",
     "docs:build:serve:static": "yarn docs:build && yarn serve:static",
     "docs:deploy": "cd docs && yarn deploy",
     "format": "origin-scripts format",
     "generate-component-docs": "ts-node packages/ods-scripts/src/generate-component-docs",
+    "generate-e2e-manifest": "ts-node packages/ods-scripts/src/generate-e2e-manifest",
     "postinstall": "origin-scripts postinstall",
     "lint": "origin-scripts lint",
     "playroom": "cd playroom && yarn start",
@@ -59,7 +60,7 @@
     "lodash": "^4.17.15",
     "react": "^16.9.0",
     "styled-components": "3.4.5",
-    "ts-node": "^8.2.0",
+    "ts-node": "^8.10.1",
     "typescript": "^3.7.3"
   },
   "engines": {
