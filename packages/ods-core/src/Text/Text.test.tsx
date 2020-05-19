@@ -40,18 +40,21 @@ test("It can render body text medium weight", () => {
   expect(container.firstChild).toMatchSnapshot();
 });
 
+test.each(["critical", "positive", "neutral.dark", "neutral.light", "neutral"])(
+  "It can render body text %p tone",
+  (tone: any) => {
+    const { container } = render(
+      <Text weight="medium" tone={tone}>
+        Body Text
+      </Text>
+    );
+    expect(container.firstChild).toMatchSnapshot();
+  }
+);
+
 test("It can render body text critical tone", () => {
   const { container } = render(
     <Text weight="medium" tone="critical">
-      Body Text
-    </Text>
-  );
-  expect(container.firstChild).toMatchSnapshot();
-});
-
-test("It can render body text positive tone", () => {
-  const { container } = render(
-    <Text weight="medium" tone="positive">
       Body Text
     </Text>
   );

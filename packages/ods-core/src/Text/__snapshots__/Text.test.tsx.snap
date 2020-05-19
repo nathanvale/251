@@ -20,7 +20,7 @@ exports[`It can render body small text 1`] = `
 </span>
 `;
 
-exports[`It can render body text critical tone 1`] = `
+exports[`It can render body text "critical" tone 1`] = `
 .c0 {
   margin: 0;
   padding: 0;
@@ -34,6 +34,106 @@ exports[`It can render body text critical tone 1`] = `
 
 <span
   class="typography-body-variant-basekick-36 typography-critical-color-37 typography-medium-weight-38 typography-strong-support-39 -span c0"
+  data-id="text"
+>
+  Body Text
+</span>
+`;
+
+exports[`It can render body text "neutral" tone 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+<span
+  class="typography-body-variant-basekick-56 typography-neutral-color-57 typography-medium-weight-58 typography-strong-support-59 -span c0"
+  data-id="text"
+>
+  Body Text
+</span>
+`;
+
+exports[`It can render body text "neutral.dark" tone 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+<span
+  class="typography-body-variant-basekick-46 typography-neutral.dark-color-47 typography-medium-weight-48 typography-strong-support-49 -span c0"
+  data-id="text"
+>
+  Body Text
+</span>
+`;
+
+exports[`It can render body text "neutral.light" tone 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+<span
+  class="typography-body-variant-basekick-51 typography-neutral.light-color-52 typography-medium-weight-53 typography-strong-support-54 -span c0"
+  data-id="text"
+>
+  Body Text
+</span>
+`;
+
+exports[`It can render body text "positive" tone 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+<span
+  class="typography-body-variant-basekick-41 typography-positive-color-42 typography-medium-weight-43 typography-strong-support-44 -span c0"
+  data-id="text"
+>
+  Body Text
+</span>
+`;
+
+exports[`It can render body text critical tone 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+<span
+  class="typography-body-variant-basekick-61 typography-critical-color-62 typography-medium-weight-63 typography-strong-support-64 -span c0"
   data-id="text"
 >
   Body Text
@@ -54,26 +154,6 @@ exports[`It can render body text medium weight 1`] = `
 
 <span
   class="typography-body-variant-basekick-31 typography-neutral-color-32 typography-medium-weight-33 typography-strong-support-34 -span c0"
-  data-id="text"
->
-  Body Text
-</span>
-`;
-
-exports[`It can render body text positive tone 1`] = `
-.c0 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-align: left;
-}
-
-<span
-  class="typography-body-variant-basekick-41 typography-positive-color-42 typography-medium-weight-43 typography-strong-support-44 -span c0"
   data-id="text"
 >
   Body Text
@@ -107,11 +187,11 @@ exports[`It can render body text truncated 1`] = `
   style="width: 90px;"
 >
   <span
-    class="typography-body-variant-basekick-46 typography-neutral-color-47 typography-regular-weight-48 typography-strong-support-49 -span c1"
+    class="typography-body-variant-basekick-66 typography-neutral-color-67 typography-regular-weight-68 typography-strong-support-69 -span c1"
     data-id="text"
   >
     <div
-      class="MuiBox-root MuiBox-root-52 typography-truncate-50"
+      class="MuiBox-root MuiBox-root-72 typography-truncate-70"
     >
       Truncated text
     </div>

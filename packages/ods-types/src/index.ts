@@ -30,7 +30,9 @@ export interface ChevronLinkRenderProps {
 
 export type TextToneVariants =
   | keyof Pick<Colors, "critical" | "positive">
-  | "neutral";
+  | "neutral"
+  | "neutral.light"
+  | "neutral.dark";
 export type TypographyWeightVariants = "regular" | "medium" | "bold";
 export type TextVariants =
   | "subtitle"
