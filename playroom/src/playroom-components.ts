@@ -34,6 +34,7 @@ export {
   Text,
   TextLink,
   TextLinkRenderer,
+  TrackingDisable,
   TrackingProvider,
 } from "@origin-digital/ods-core";
 
