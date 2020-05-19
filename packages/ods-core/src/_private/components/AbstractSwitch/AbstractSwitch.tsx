@@ -52,6 +52,7 @@ const useLabelStyles = makeStyles(
   {
     formControlLabel: {
       alignItems: "center",
+      marginLeft: "-10px",
     },
   },
   { classNamePrefix: `AbstractSwitch` }
@@ -60,7 +61,7 @@ const useLabelStyles = makeStyles(
 const useHelperTextStyles = makeStyles(
   (theme: Theme) => ({
     formHelperText: {
-      paddingLeft: "29px",
+      paddingLeft: "30px",
       marginTop: "-5px",
       paddingBottom: "5px",
       color: theme.palette.grey[400],
