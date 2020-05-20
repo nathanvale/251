@@ -16677,11 +16677,6 @@ react-router-hash-link@^1.2.2:
   dependencies:
     prop-types "^15.6.0"
 
-react-router-scroll-memory@^2.0.5:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/react-router-scroll-memory/-/react-router-scroll-memory-2.0.6.tgz#49daff19f62ad1a85af34c16ea06d9825d9387e2"
-  integrity sha512-RPwVuozkP6bbuJr+EMS2BIPxLQ80C8dMFNiiIDW19+8G2uGCFKb0iy+qvMXgriRDoFoTWXCExbgV4q3vYK38Lg==
-
 react-router@5.1.2, react-router@^5.1.2:
   version "5.1.2"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/react-router/-/react-router-5.1.2.tgz#6ea51d789cb36a6be1ba5f7c0d48dd9e817d3418"

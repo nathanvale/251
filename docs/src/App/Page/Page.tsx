@@ -108,12 +108,12 @@ export const Page = ({
 }: PageProps) => {
   return (
     <MaxWidthBox>
-      <Stack space={["xlarge", "xxlarge"]}>
-        <Stack space="xlarge">
+      <Stack space={["medium", "large"]}>
+        <Stack space="medium">
           <Heading variant="h3">{title}</Heading>
           {description ? <Text variant="body">{description}</Text> : null}
           {!hideAnchorLinks ? (
-            <Stack space="small">
+            <Stack space="xxsmall">
               {sections.map((section, index) => {
                 const { title, id } = section;
                 const to = id ? `#${id}` : `#${slugify(title)}`;
@@ -126,7 +126,7 @@ export const Page = ({
             </Stack>
           ) : null}
         </Stack>
-        <Stack space={["xlarge", "xxlarge"]}>
+        <Stack space={["medium", "large"]}>
           {sections.map((section, index) => {
             const { title, description, children } = section;
             const slug = slugify(title);

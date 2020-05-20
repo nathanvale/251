@@ -32,7 +32,7 @@ const Props = ({
     [x: string]: any;
   };
 }) => (
-  <Stack space="small">
+  <Stack space="xxsmall">
     <Text weight="medium">{propName}</Text>
     <Text>
       <PropType type={type} />
@@ -53,7 +53,7 @@ export const PropListView = ({
   specialRequiredProps = [],
   specialOptionalProps = [],
 }: PropListViewProps) => (
-  <Stack space="large">
+  <Stack space="small">
     {requiredProps.length > 0 && <Heading variant="h4">Required Props</Heading>}
     {requiredProps.map(({ propName, type }) => {
       return (

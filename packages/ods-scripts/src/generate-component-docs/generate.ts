@@ -8,7 +8,7 @@ import isEqual from "lodash/isEqual";
 import { NormalisedInterface, NormalisedPropType } from "..";
 
 const aliasWhitelist = ["ResponsiveProp"];
-const noNormalisePropNames = ["muiProps"];
+const noNormalisePropNames = ["muiProps", "domProps"];
 const propBlacklist = ["key"];
 
 const tsconfigPath = path.join(__dirname, "../../../../tsconfig.json");

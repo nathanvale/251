@@ -50,10 +50,10 @@ const SubNavigationGroup = ({ title, items }: SubNavigationGroup) => {
   const location = useLocation();
   return (
     <Box component="nav">
-      <Stack space="large">
+      <Stack space="small">
         <Heading variant="h4">{title}</Heading>
         <Box component="ul">
-          <Stack space="medium">
+          <Stack space="xxsmall">
             {items.map(({ name, path, onClick }) => {
               return (
                 <NavLink
@@ -80,7 +80,7 @@ export const SubNavigation = ({ onSelect }: SubNavigationProps) => {
   const { playroomUrl, sourceUrlPrefix, zeplinUrl } = useConfig();
 
   return (
-    <Stack space="xlarge">
+    <Stack space="medium">
       <SubNavigationGroup
         title="Tools"
         items={[

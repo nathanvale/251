@@ -1159,7 +1159,7 @@ exports[`ChevronButton 1`] = `
 {
   children?: ReactNode
   data-id?: string
-  domProps?: Pick<AllHTMLAttributes<HTMLButtonElement>, "width" | "height" | "suppressContentEditableWarning" | "suppressHydrationWarning" | "accept" | ... 350 more ... | "onTransitionEndCapture">
+  domProps?: Pick<AllHTMLAttributes<HTMLButtonElement>, "width" | "height" | "suppressContentEditableWarning" | "suppressHydrationWarning" | ... 351 more ... | "onTransitionEndCapture"> | undefined
   onClick?: (event: MouseEvent<HTMLButtonElement, MouseEvent>) => void
   type?: 
     | "button"
@@ -1175,7 +1175,7 @@ exports[`ChevronLink 1`] = `
 {
   children?: ReactNode
   data-id?: string
-  domProps?: Pick<AnchorHTMLAttributes<HTMLAnchorElement>, "suppressContentEditableWarning" | "suppressHydrationWarning" | "download" | "hrefLang" | ... 256 more ... | "referrerPolicy">
+  domProps?: Pick<AnchorHTMLAttributes<HTMLAnchorElement>, "suppressContentEditableWarning" | "suppressHydrationWarning" | "download" | "hrefLang" | ... 256 more ... | "referrerPolicy"> | undefined
   href: string
   variant?: 
     | "primary"
@@ -1399,7 +1399,7 @@ exports[`HeadingChevronLink 1`] = `
   classes?: Record<string, string>
   data-id?: string
   disabled?: boolean
-  domProps?: Pick<AnchorHTMLAttributes<HTMLAnchorElement>, "suppressContentEditableWarning" | "suppressHydrationWarning" | "download" | "hrefLang" | ... 256 more ... | "referrerPolicy">
+  domProps?: Pick<AnchorHTMLAttributes<HTMLAnchorElement>, "suppressContentEditableWarning" | "suppressHydrationWarning" | "download" | "hrefLang" | ... 256 more ... | "referrerPolicy"> | undefined
   href: string
   id?: string
 }
