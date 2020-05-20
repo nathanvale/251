@@ -2,7 +2,7 @@
   "private": true,
   "name": "docs",
   "description": "",
-  "version": "0.21.5",
+  "version": "0.21.6",
   "main": "src/index.tsx",
   "scripts": {
     "build": "craco --max_old_space_size=4096 build",
@@ -18,7 +18,7 @@
     "@origin-digital/ods-helpers": "^0.6.14",
     "@origin-digital/ods-icons": "^0.8.2",
     "@origin-digital/ods-lab": "^0.18.5",
-    "@origin-digital/ods-scripts": "^0.28.1",
+    "@origin-digital/ods-scripts": "^0.28.2",
     "@origin-digital/ods-types": "^0.20.0",
     "@origin-digital/reporting-client": "^3.5.0",
     "@origin-digital/style-guide": "^21.1.2",
