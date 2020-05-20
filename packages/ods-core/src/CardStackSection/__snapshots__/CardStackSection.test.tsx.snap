@@ -44,7 +44,19 @@ exports[`it renders a CardStackSection 1`] = `
   width: 100%;
 }
 
-.c4 {
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c5 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -59,14 +71,14 @@ exports[`it renders a CardStackSection 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   width: 100%;
 }
 
-.c5 {
+.c6 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -81,7 +93,7 @@ exports[`it renders a CardStackSection 1`] = `
   padding-right: 16px;
 }
 
-.c7 {
+.c8 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -106,15 +118,41 @@ exports[`it renders a CardStackSection 1`] = `
   overflow: hidden;
 }
 
-.c6 {
-  width: auto;
+.c7 {
+  width: 100%;
   min-width: 40px;
   height: 120px;
   border: 2px solid rgba(51,51,51,0.3);
 }
 
-.c3.c3.c3 > *:not(:last-child) {
-  margin-bottom: 8px;
+.c4:empty {
+  display: none;
+}
+
+.c4:empty + div:before {
+  display: none;
+}
+
+.c4:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c4:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
 }
 
 @media screen and (min-width:576px) {
@@ -166,50 +204,74 @@ exports[`it renders a CardStackSection 1`] = `
 }
 
 @media screen and (min-width:992px) {
-  .c5 {
+  .c6 {
     padding-top: 32px;
   }
 }
 
 @media screen and (min-width:992px) {
-  .c5 {
+  .c6 {
     padding-bottom: 32px;
   }
 }
 
 @media screen and (min-width:576px) {
-  .c5 {
+  .c6 {
     padding-left: 32px;
   }
 }
 
 @media screen and (min-width:576px) {
-  .c5 {
+  .c6 {
     padding-right: 32px;
   }
 }
 
 @media screen and (min-width:576px) {
-  .c3.c3.c3 > *:not(:last-child) {
-    margin-bottom: 8px;
+  .c4:not(:empty) ~ div:not(:empty):before {
+    margin-top: 8px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c3.c3.c3 > *:not(:last-child) {
-    margin-bottom: 8px;
+  .c4:not(:empty) ~ div:not(:empty):before {
+    margin-top: 8px;
   }
 }
 
 @media screen and (min-width:992px) {
-  .c3.c3.c3 > *:not(:last-child) {
-    margin-bottom: 32px;
+  .c4:not(:empty) ~ div:not(:empty):before {
+    margin-top: 32px;
   }
 }
 
 @media screen and (min-width:1200px) {
-  .c3.c3.c3 > *:not(:last-child) {
-    margin-bottom: 32px;
+  .c4:not(:empty) ~ div:not(:empty):before {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c4:nth-child(n + 2):before {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4:nth-child(n + 2):before {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c4:nth-child(n + 2):before {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c4:nth-child(n + 2):before {
+    margin-top: 32px;
   }
 }
 
@@ -249,77 +311,91 @@ exports[`it renders a CardStackSection 1`] = `
     width="full"
   >
     <div
-      class="c3 c4"
+      class="c3"
       data-id="stack"
-      display="flex"
+      display="block"
       width="full"
     >
       <div
-        class="c5"
-        data-id="card"
+        class="c4 c5"
+        data-id="stack-child"
+        display="flex"
+        width="full"
       >
         <div
-          class="c6 c7"
-          data-id="placeholder"
-          display="flex"
-          height="120"
-          overflow="hidden"
-          shape="rectangle"
-          width="auto"
+          class="c6"
+          data-id="card"
         >
-          <svg
-            style="width: 100%; height: 100%; position: absolute;"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="c7 c8"
+            data-id="placeholder"
+            display="flex"
+            height="120"
+            overflow="hidden"
+            shape="rectangle"
+            width="100%"
           >
-            <line
-              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-              x1="0"
-              x2="100%"
-              y1="0"
-              y2="100%"
-            />
-            <line
-              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-              x1="100%"
-              x2="0"
-              y1="0"
-              y2="100%"
-            />
-          </svg>
+            <svg
+              style="width: 100%; height: 100%; position: absolute;"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+                x1="0"
+                x2="100%"
+                y1="0"
+                y2="100%"
+              />
+              <line
+                style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+                x1="100%"
+                x2="0"
+                y1="0"
+                y2="100%"
+              />
+            </svg>
+          </div>
         </div>
       </div>
       <div
-        class="c5"
-        data-id="card"
+        class="c4 c5"
+        data-id="stack-child"
+        display="flex"
+        width="full"
       >
         <div
-          class="c6 c7"
-          data-id="placeholder"
-          display="flex"
-          height="120"
-          overflow="hidden"
-          shape="rectangle"
-          width="auto"
+          class="c6"
+          data-id="card"
         >
-          <svg
-            style="width: 100%; height: 100%; position: absolute;"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="c7 c8"
+            data-id="placeholder"
+            display="flex"
+            height="120"
+            overflow="hidden"
+            shape="rectangle"
+            width="100%"
           >
-            <line
-              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-              x1="0"
-              x2="100%"
-              y1="0"
-              y2="100%"
-            />
-            <line
-              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-              x1="100%"
-              x2="0"
-              y1="0"
-              y2="100%"
-            />
-          </svg>
+            <svg
+              style="width: 100%; height: 100%; position: absolute;"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+                x1="0"
+                x2="100%"
+                y1="0"
+                y2="100%"
+              />
+              <line
+                style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+                x1="100%"
+                x2="0"
+                y1="0"
+                y2="100%"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>

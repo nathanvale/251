@@ -6,6 +6,8 @@ import {
 import { Placeholder } from "../Placeholder/Placeholder";
 import { Stack } from "./Stack";
 
+const RenderNull = () => null;
+
 test("It can stack", () => {
   const { container } = render(
     <Stack>
@@ -25,21 +27,22 @@ test("It can distribute space", () => {
       <Placeholder />
     </Stack>
   );
+  expect(container.firstChild).toMatchSnapshot();
+});
 
-  const stackChildren = container.firstChild!.childNodes;
-
-  // All children except the last one have padding-bottom set to the value of space prop.
-  for (let childIdx = 0; childIdx < stackChildren.length - 1; childIdx++) {
-    const wrapperEl = stackChildren[childIdx];
-    const style = window.getComputedStyle(wrapperEl as Element);
-    expect(style.marginBottom).toEqual("48px");
-  }
-
-  // last element has padding-bottom set to 0.
-  const style = window.getComputedStyle(
-    stackChildren[stackChildren.length - 1] as Element
+test("It can distribute space with null children", () => {
+  const { container } = render(
+    <Stack space="xxlarge">
+      <RenderNull />
+      <Placeholder />
+      <RenderNull />
+      <Placeholder />
+      <RenderNull />
+      <Placeholder />
+      <RenderNull />
+    </Stack>
   );
-  expect(style.paddingBottom).toEqual("0px");
+  expect(container.firstChild).toMatchSnapshot();
 });
 
 test("It adds dividers", () => {
@@ -61,19 +64,6 @@ test("It does not add dividers if there is only 1 child", () => {
   expect(container.children).toHaveLength(1);
 });
 
-test("It stretches children by default", () => {
-  const { container } = render(
-    <Stack>
-      <Placeholder />
-      <Placeholder />
-    </Stack>
-  );
-
-  const columnsEl = queryAllByAttribute("data-id", container, "stack")[0];
-  const style = window.getComputedStyle(columnsEl as Element);
-  expect(style.alignItems).toEqual("stretch");
-});
-
 test("It can right-align components", () => {
   const { container } = render(
     <Stack alignX="right">
@@ -81,7 +71,7 @@ test("It can right-align components", () => {
       <Placeholder width="120px" />
     </Stack>
   );
-  const columnsEl = queryAllByAttribute("data-id", container, "stack")[0];
+  const columnsEl = queryAllByAttribute("data-id", container, "stack-child")[0];
   const style = window.getComputedStyle(columnsEl as Element);
   expect(style.alignItems).toEqual("flex-end");
 });
@@ -93,7 +83,7 @@ test("It can center-align components", () => {
       <Placeholder width="120px" />
     </Stack>
   );
-  const columnsEl = queryAllByAttribute("data-id", container, "stack")[0];
+  const columnsEl = queryAllByAttribute("data-id", container, "stack-child")[0];
   const style = window.getComputedStyle(columnsEl as Element);
   expect(style.alignItems).toEqual("center");
 });
@@ -104,7 +94,7 @@ test("It can left-align children", () => {
       <Placeholder data-id="childElement" width="120px" />
     </Stack>
   );
-  const columnsEl = queryAllByAttribute("data-id", container, "stack")[0];
+  const columnsEl = queryAllByAttribute("data-id", container, "stack-child")[0];
   const style = window.getComputedStyle(columnsEl as Element);
   expect(style.alignItems).toEqual("flex-start");
 });

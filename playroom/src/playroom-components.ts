@@ -1,6 +1,6 @@
 export * from "./legacy-icons";
 export * from "./legacy-components";
-export { Palette, BaselineGrid, Heading } from "./_private/components";
+export * from "./_private/components";
 export {
   Box,
   Button,
