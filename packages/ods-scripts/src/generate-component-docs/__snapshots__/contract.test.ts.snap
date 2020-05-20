@@ -2137,6 +2137,8 @@ exports[`Text 1`] = `
   tone?: 
     | "critical"
     | "neutral"
+    | "neutral.dark"
+    | "neutral.light"
     | "positive"
   truncate?: boolean
   variant?: 

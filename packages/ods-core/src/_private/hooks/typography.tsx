@@ -68,17 +68,27 @@ export function useWeightStyles(weight: TypographyWeightVariants) {
   )().weight;
 }
 
+interface ColorAliases {
+  [key: string]: ColorVariants;
+}
+
+const colorAliases: ColorAliases = {
+  "neutral.light": "grey400",
+  neutral: "grey500",
+  "neutral.dark": "grey600",
+};
+
 /**
- * Used for applying text color. Neutral is an abstract text color tone that needs
- * to map to grey500
+ * Used for applying text color. Aliases can be used as defined in colorAliases above.
  */
 export function useToneStyles({
   tone = "neutral",
 }: {
-  tone: ColorVariants | "neutral";
+  tone: ColorVariants | keyof ColorAliases;
 }) {
   const { colors } = useTheme<Theme>();
-  const color = colors[tone === "neutral" ? "grey500" : tone];
+  const colorAlias = colorAliases[tone];
+  const color = colorAlias ? colors[colorAlias] : colors[tone];
   return makeStyles(
     {
       color: {
