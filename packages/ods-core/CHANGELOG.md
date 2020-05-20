@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.28.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.28.0...@origin-digital/ods-core@0.28.1) (2020-05-20)
+
+
+### Bug Fixes
+
+* **Stack:** implement a CSS solutionfor null children ([187260d](https://bitbucket.orgn.io/od/origin-ui/commits/187260d91d0bd6f3176c72cd9f9cf25f98f8e873))
+
+
+
+
+
 # [0.28.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.27.0...@origin-digital/ods-core@0.28.0) (2020-05-20)
 
 

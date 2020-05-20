@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.16.1](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.16.0...playroom@0.16.1) (2020-05-20)
+
+
+### Bug Fixes
+
+* **Stack:** implement a CSS solutionfor null children ([187260d](https://bitbucket.orgn.io/od/origin-ui/commits/187260d91d0bd6f3176c72cd9f9cf25f98f8e873))
+
+
+
+
+
 # [0.16.0](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.15.4...playroom@0.16.0) (2020-05-20)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.14](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-helpers@0.6.13...@origin-digital/ods-helpers@0.6.14) (2020-05-20)
+
+
+### Bug Fixes
+
+* **Stack:** implement a CSS solutionfor null children ([187260d](https://bitbucket.orgn.io/od/origin-ui/commits/187260d91d0bd6f3176c72cd9f9cf25f98f8e873))
+
+
+
+
+
 ## [0.6.13](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-helpers@0.6.12...@origin-digital/ods-helpers@0.6.13) (2020-05-20)
 
 **Note:** Version bump only for package @origin-digital/ods-helpers
