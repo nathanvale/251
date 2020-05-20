@@ -107,6 +107,9 @@ export type TextProps = import("./Text/Text").TextProps;
 export { TextLinkRenderer } from "./TextLinkRenderer/TextLinkRenderer";
 export type TextLinkRendererProps = import("./TextLinkRenderer/TextLinkRenderer").TextLinkRendererProps;
 
+export { TrackingDisable } from "./TrackingDisable/TrackingDisable";
+export type TrackingDisableProps = import("./TrackingDisable/TrackingDisable").TrackingDisableProps;
+
 export { TrackingProvider } from "./TrackingProvider/TrackingProvider";
 export type TrackingProviderProps = import("./TrackingProvider/TrackingProvider").TrackingProviderProps;
 

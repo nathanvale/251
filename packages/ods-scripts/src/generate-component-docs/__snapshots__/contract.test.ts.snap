@@ -2561,6 +2561,12 @@ exports[`TextLinkRenderer 1`] = `
 }
 `;
 
+exports[`TrackingDisable 1`] = `
+{
+  children: ReactNode
+}
+`;
+
 exports[`TrackingProvider 1`] = `
 {
   children: ReactNode
