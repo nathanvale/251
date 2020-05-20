@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.20.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.19.1...@origin-digital/ods-types@0.20.0) (2020-05-20)
+
+
+### Features
+
+* **text:** ODS-146 add new tones ([ed7de3a](https://bitbucket.orgn.io/od/origin-ui/commits/ed7de3ab4f1dedc06e735fef4df477a49c38bf50))
+
+
+
+
+
 ## [0.19.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.19.0...@origin-digital/ods-types@0.19.1) (2020-05-18)
 
 **Note:** Version bump only for package @origin-digital/ods-types
