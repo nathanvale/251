@@ -51,7 +51,7 @@ const CommonColumns = ({
       </Box>
     </Column>
     <Column>
-      <Stack space="medium">
+      <Stack space="xsmall">
         <Text>
           <TypeRenderer propName={propName} type={type} />
         </Text>
@@ -112,7 +112,7 @@ export const PropTableView = ({
   specialRequiredProps = [],
   specialOptionalProps = [],
 }: PropListViewProps) => (
-  <Stack space="small" dividers>
+  <Stack space="xxsmall" dividers>
     {requiredProps.map(({ propName, type }) => {
       return (
         <Props

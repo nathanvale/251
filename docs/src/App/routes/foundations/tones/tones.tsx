@@ -133,7 +133,7 @@ const AnchorLink = ({
           }
           className={textLinkStyles}
         >
-          <Stack space={["none", "xsmall"]}>
+          <Stack space={["none", "xxsmall"]}>
             <Rectangle
               backgroundColor={backgroundColor}
               width={{
@@ -169,7 +169,7 @@ const ToneType = ({ tones }: { tones: any[] }) => {
   const toneDocs = { ...semanticToneDocs, ...brandToneDocs };
   const theme = useTheme();
   return (
-    <Stack dividers space="large">
+    <Stack dividers space="small">
       <Columns space="large">
         <Column>
           <Text>Tone</Text>
@@ -179,7 +179,7 @@ const ToneType = ({ tones }: { tones: any[] }) => {
         </Column>
       </Columns>
       {tones.map((tone, index) => (
-        <Stack space="small" key={index}>
+        <Stack space="xxsmall" key={index}>
           <Columns space="large">
             <Column>
               <Columns space="large">
@@ -187,7 +187,7 @@ const ToneType = ({ tones }: { tones: any[] }) => {
                   <Square backgroundColor={(toneDocs as any)[tone].swatch} />
                 </Column>
                 <Column>
-                  <Stack space="small">
+                  <Stack space="xxsmall">
                     <Text weight="medium">{capitalize(tone)}</Text>
                     <Text variant="caption">
                       {tone === "neutral"

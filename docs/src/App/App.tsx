@@ -1,6 +1,5 @@
 import React, { StrictMode } from "react";
 import { OriginThemeProvider } from "@origin-digital/ods-core";
-import { coreBasekickMuiTheme } from "@origin-digital/ods-themes";
 import { Route, Switch, Redirect } from "react-router";
 import map from "lodash/map";
 import { Navigation } from "./Navigation/Navigation";
@@ -12,7 +11,7 @@ import e2e from "./routes/e2e";
 
 export const App = () => (
   <StrictMode>
-    <OriginThemeProvider muiTheme={coreBasekickMuiTheme}>
+    <OriginThemeProvider>
       <Switch>
         {map({ ...e2e }, (routeProps, path) => (
           <Route key={path} {...routeProps} path={path} />

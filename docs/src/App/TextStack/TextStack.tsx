@@ -6,6 +6,7 @@ interface TextStackProps {
   space?: StackProps["space"];
 }
 
-export const TextStack = ({ space = "xlarge", children }: TextStackProps) => (
-  <Stack space={space}>{children}</Stack>
-);
+export const TextStack = ({
+  space = ["medium", "large"],
+  children,
+}: TextStackProps) => <Stack space={space}>{children}</Stack>;

@@ -1,7 +1,6 @@
 import React from "react";
 import * as ReactDOM from "react-dom";
 import { HashRouter as Router } from "react-router-dom";
-import ScrollMemory from "react-router-scroll-memory";
 import { ConfigProvider } from "./App/ConfigContext";
 import { App } from "./App/App";
 import ScrollToTop from "./App/ScrollToTop/ScrollToTop";
@@ -18,7 +17,6 @@ ReactDOM.render(
   <Router>
     <ScrollToTop />
     <ConfigProvider value={{ playroomUrl, sourceUrlPrefix, zeplinUrl }}>
-      <ScrollMemory />
       <App />
     </ConfigProvider>
   </Router>,

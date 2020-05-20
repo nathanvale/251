@@ -60,7 +60,7 @@ const DesignWorkflow = () => {
             traditional design tools, including:
           </Text>
           <Box paddingLeft="xsmall">
-            <Stack space="small">
+            <Stack space="xxsmall">
               <Text>- Spacing and layout</Text>
               <Text>- Responsive design</Text>
               <Text>- Theming</Text>

@@ -137,14 +137,14 @@ export function Props<T = {}>({
 
   return (
     <StyledBox id="props" maxWidth={["100%", "100%"]}>
-      <Stack space="large">
-        <Stack space={["xxlarge", "xxxlarge"]}>
-          <Stack dividers space={["medium", "large"]}>
+      <Stack space="small">
+        <Stack space={["large", "xlarge"]}>
+          <Stack dividers space={["xsmall", "small"]}>
             {variant !== "list" ? (
               <ColumnsHeader hasDefaultProps={hasDefaultProps} />
             ) : null}
             {requiredProps.length === 0 && optionalProps.length === 0 ? null : (
-              <Stack space="medium" dividers>
+              <Stack space="xsmall" dividers>
                 {variant === "list" ? (
                   <PropListView
                     defaultProps={defaultProps}
