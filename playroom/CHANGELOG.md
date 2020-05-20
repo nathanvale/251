@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.15.4...playroom@0.16.0) (2020-05-20)
+
+
+### Features
+
+* **trackingdisable:** add component to prevent tracking events ([66b3c51](https://bitbucket.orgn.io/od/origin-ui/commits/66b3c51d70e212efb55fcc3a4403cb5e3c4c4878))
+
+
+
+
+
 ## [0.15.4](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.15.3...playroom@0.15.4) (2020-05-20)
 
 **Note:** Version bump only for package playroom

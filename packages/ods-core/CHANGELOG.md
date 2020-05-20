@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.28.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.27.0...@origin-digital/ods-core@0.28.0) (2020-05-20)
+
+
+### Features
+
+* **trackingdisable:** add component to prevent tracking events ([66b3c51](https://bitbucket.orgn.io/od/origin-ui/commits/66b3c51d70e212efb55fcc3a4403cb5e3c4c4878))
+
+
+
+
+
 # [0.27.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.26.2...@origin-digital/ods-core@0.27.0) (2020-05-20)
 
 
