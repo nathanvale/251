@@ -7,9 +7,9 @@ import { ResponsiveValue } from "styled-system";
  * @param space
  */
 
-export const normaliseResponsiveProp = <T>(
-  space?: ResponsiveProp<T>
-): ResponsiveValue<T> | undefined => {
+export const normaliseResponsiveProp = <Keys extends string | number | boolean>(
+  space?: ResponsiveProp<Keys>
+): ResponsiveValue<Keys> | undefined => {
   if (typeof space === "string") {
     return space;
   }
@@ -34,10 +34,13 @@ export const normaliseResponsiveProp = <T>(
   throw new Error(`Invalid responsive prop length: ${JSON.stringify(space)}`);
 };
 
-export const normaliseObjectResponsiveProp = <T>(
-  value?: ResponsiveProp<T>
-): ResponsiveValue<T> | undefined => {
-  const normArr: ResponsiveValue<T> = normaliseResponsiveProp<T>(value) ?? [];
+export const normaliseObjectResponsiveProp = <
+  Keys extends string | number | boolean
+>(
+  value?: ResponsiveProp<Keys>
+): ResponsiveValue<Keys> | undefined => {
+  const normArr: ResponsiveValue<Keys> =
+    normaliseResponsiveProp<Keys>(value) ?? [];
   if (typeof normArr === "string" || typeof normArr === "number") {
     return {
       xs: normArr,
@@ -48,11 +51,11 @@ export const normaliseObjectResponsiveProp = <T>(
     };
   } else if (normArr instanceof Array && normArr.length === 5) {
     return {
-      xs: normArr[0] as T,
-      sm: normArr[1] as T,
-      md: normArr[2] as T,
-      lg: normArr[3] as T,
-      xl: normArr[4] as T,
+      xs: normArr[0] as Keys,
+      sm: normArr[1] as Keys,
+      md: normArr[2] as Keys,
+      lg: normArr[3] as Keys,
+      xl: normArr[4] as Keys,
     };
   }
   throw new Error(`Invalid responsive prop: ${JSON.stringify(value)}`);

@@ -17,3 +17,5 @@ export type ResponsiveRangeProps = import("./responsiveRangeProps").ResponsiveRa
 export { getRespValForBreakpoint } from "./getRespValForBreakpoint";
 export { themeChecker } from "./themeChecker";
 export { slugify } from "./slugify";
+export { mapResponsiveProp } from "./mapResponsiveProp";
+export { alignToFlexAlign } from "./alignToFlexAlign";

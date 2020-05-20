@@ -1,7 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`It adds dividers 1`] = `
-.c1 {
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -16,36 +28,11 @@ exports[`It adds dividers 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   width: 100%;
-}
-
-.c3 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  background-color: #e3e3e3;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
 }
 
 .c4 {
@@ -56,13 +43,185 @@ exports[`It adds dividers 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  background-color: #e3e3e3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.c3 {
+  width: 100%;
+  min-width: 40px;
+  height: 120px;
+  border: 2px solid rgba(51,51,51,0.3);
+}
+
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
   position: relative;
+  height: 0.1px;
+  height: 1px;
+  box-shadow: inset 0 0 0 1px #e3e3e3;
+  margin-bottom: 47px;
+  margin-top: 48px;
 }
 
-.c6 {
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  height: 1px;
+  box-shadow: inset 0 0 0 1px #e3e3e3;
+  margin-bottom: 47px;
+  margin-top: 48px;
+}
+
+<div
+  class="c0"
+  data-id="stack"
+  display="block"
+  width="full"
+>
+  <div
+    class="c1 c2"
+    data-id="stack-child"
+    display="flex"
+    width="full"
+  >
+    <div
+      class="c3 c4"
+      data-id="placeholder"
+      display="flex"
+      height="120"
+      overflow="hidden"
+      shape="rectangle"
+      width="100%"
+    >
+      <svg
+        style="width: 100%; height: 100%; position: absolute;"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="0"
+          x2="100%"
+          y1="0"
+          y2="100%"
+        />
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="100%"
+          x2="0"
+          y1="0"
+          y2="100%"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    class="c1 c2"
+    data-id="stack-child"
+    display="flex"
+    width="full"
+  >
+    <div
+      class="c3 c4"
+      data-id="placeholder"
+      display="flex"
+      height="120"
+      overflow="hidden"
+      shape="rectangle"
+      width="100%"
+    >
+      <svg
+        style="width: 100%; height: 100%; position: absolute;"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="0"
+          x2="100%"
+          y1="0"
+          y2="100%"
+        />
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="100%"
+          x2="0"
+          y1="0"
+          y2="100%"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    class="c1 c2"
+    data-id="stack-child"
+    display="flex"
+    width="full"
+  >
+    <div
+      class="c3 c4"
+      data-id="placeholder"
+      display="flex"
+      height="120"
+      overflow="hidden"
+      shape="rectangle"
+      width="100%"
+    >
+      <svg
+        style="width: 100%; height: 100%; position: absolute;"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="0"
+          x2="100%"
+          y1="0"
+          y2="100%"
+        />
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="100%"
+          x2="0"
+          y1="0"
+          y2="100%"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It can distribute space 1`] = `
+.c0 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -70,142 +229,11 @@ exports[`It adds dividers 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  position: absolute;
+  display: block;
   width: 100%;
 }
 
 .c2 {
-  width: auto;
-  min-width: 40px;
-  height: 120px;
-  border: 2px solid rgba(51,51,51,0.3);
-}
-
-.c5 {
-  height: 1px;
-  box-shadow: inset 0 0 0 1px #e3e3e3;
-}
-
-.c0.c0.c0 > *:not(:last-child) {
-  margin-bottom: 48px;
-}
-
-<div
-  class="c0 c1"
-  data-id="stack"
-  display="flex"
-  width="full"
->
-  <div
-    class="c2 c3"
-    data-id="placeholder"
-    display="flex"
-    height="120"
-    overflow="hidden"
-    shape="rectangle"
-    width="auto"
-  >
-    <svg
-      style="width: 100%; height: 100%; position: absolute;"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <line
-        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-        x1="0"
-        x2="100%"
-        y1="0"
-        y2="100%"
-      />
-      <line
-        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-        x1="100%"
-        x2="0"
-        y1="0"
-        y2="100%"
-      />
-    </svg>
-  </div>
-  <div
-    class="c4"
-    data-id="divider"
-  >
-    <div
-      class="c5 c6"
-      width="full"
-    />
-  </div>
-  <div
-    class="c2 c3"
-    data-id="placeholder"
-    display="flex"
-    height="120"
-    overflow="hidden"
-    shape="rectangle"
-    width="auto"
-  >
-    <svg
-      style="width: 100%; height: 100%; position: absolute;"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <line
-        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-        x1="0"
-        x2="100%"
-        y1="0"
-        y2="100%"
-      />
-      <line
-        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-        x1="100%"
-        x2="0"
-        y1="0"
-        y2="100%"
-      />
-    </svg>
-  </div>
-  <div
-    class="c4"
-    data-id="divider"
-  >
-    <div
-      class="c5 c6"
-      width="full"
-    />
-  </div>
-  <div
-    class="c2 c3"
-    data-id="placeholder"
-    display="flex"
-    height="120"
-    overflow="hidden"
-    shape="rectangle"
-    width="auto"
-  >
-    <svg
-      style="width: 100%; height: 100%; position: absolute;"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <line
-        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-        x1="0"
-        x2="100%"
-        y1="0"
-        y2="100%"
-      />
-      <line
-        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-        x1="100%"
-        x2="0"
-        y1="0"
-        y2="100%"
-      />
-    </svg>
-  </div>
-</div>
-`;
-
-exports[`It can stack 1`] = `
-.c1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -220,14 +248,14 @@ exports[`It can stack 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   width: 100%;
 }
 
-.c3 {
+.c4 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -252,109 +280,608 @@ exports[`It can stack 1`] = `
   overflow: hidden;
 }
 
-.c2 {
-  width: auto;
+.c3 {
+  width: 100%;
   min-width: 40px;
   height: 120px;
   border: 2px solid rgba(51,51,51,0.3);
 }
 
-.c0.c0.c0 > *:not(:last-child) {
-  margin-bottom: 0px;
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 48px;
+}
+
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 48px;
 }
 
 <div
-  class="c0 c1"
+  class="c0"
   data-id="stack"
-  display="flex"
+  display="block"
   width="full"
 >
   <div
-    class="c2 c3"
-    data-id="placeholder"
+    class="c1 c2"
+    data-id="stack-child"
     display="flex"
-    height="120"
-    overflow="hidden"
-    shape="rectangle"
-    width="auto"
+    width="full"
   >
-    <svg
-      style="width: 100%; height: 100%; position: absolute;"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      class="c3 c4"
+      data-id="placeholder"
+      display="flex"
+      height="120"
+      overflow="hidden"
+      shape="rectangle"
+      width="100%"
     >
-      <line
-        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-        x1="0"
-        x2="100%"
-        y1="0"
-        y2="100%"
-      />
-      <line
-        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-        x1="100%"
-        x2="0"
-        y1="0"
-        y2="100%"
-      />
-    </svg>
+      <svg
+        style="width: 100%; height: 100%; position: absolute;"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="0"
+          x2="100%"
+          y1="0"
+          y2="100%"
+        />
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="100%"
+          x2="0"
+          y1="0"
+          y2="100%"
+        />
+      </svg>
+    </div>
   </div>
   <div
-    class="c2 c3"
-    data-id="placeholder"
+    class="c1 c2"
+    data-id="stack-child"
     display="flex"
-    height="120"
-    overflow="hidden"
-    shape="rectangle"
-    width="auto"
+    width="full"
   >
-    <svg
-      style="width: 100%; height: 100%; position: absolute;"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      class="c3 c4"
+      data-id="placeholder"
+      display="flex"
+      height="120"
+      overflow="hidden"
+      shape="rectangle"
+      width="100%"
     >
-      <line
-        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-        x1="0"
-        x2="100%"
-        y1="0"
-        y2="100%"
-      />
-      <line
-        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-        x1="100%"
-        x2="0"
-        y1="0"
-        y2="100%"
-      />
-    </svg>
+      <svg
+        style="width: 100%; height: 100%; position: absolute;"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="0"
+          x2="100%"
+          y1="0"
+          y2="100%"
+        />
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="100%"
+          x2="0"
+          y1="0"
+          y2="100%"
+        />
+      </svg>
+    </div>
   </div>
   <div
-    class="c2 c3"
-    data-id="placeholder"
+    class="c1 c2"
+    data-id="stack-child"
     display="flex"
-    height="120"
-    overflow="hidden"
-    shape="rectangle"
-    width="auto"
+    width="full"
   >
-    <svg
-      style="width: 100%; height: 100%; position: absolute;"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      class="c3 c4"
+      data-id="placeholder"
+      display="flex"
+      height="120"
+      overflow="hidden"
+      shape="rectangle"
+      width="100%"
     >
-      <line
-        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-        x1="0"
-        x2="100%"
-        y1="0"
-        y2="100%"
-      />
-      <line
-        style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-        x1="100%"
-        x2="0"
-        y1="0"
-        y2="100%"
-      />
-    </svg>
+      <svg
+        style="width: 100%; height: 100%; position: absolute;"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="0"
+          x2="100%"
+          y1="0"
+          y2="100%"
+        />
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="100%"
+          x2="0"
+          y1="0"
+          y2="100%"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It can distribute space with null children 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #e3e3e3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.c3 {
+  width: 100%;
+  min-width: 40px;
+  height: 120px;
+  border: 2px solid rgba(51,51,51,0.3);
+}
+
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 48px;
+}
+
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 48px;
+}
+
+<div
+  class="c0"
+  data-id="stack"
+  display="block"
+  width="full"
+>
+  <div
+    class="c1 c2"
+    data-id="stack-child"
+    display="flex"
+    width="full"
+  />
+  <div
+    class="c1 c2"
+    data-id="stack-child"
+    display="flex"
+    width="full"
+  >
+    <div
+      class="c3 c4"
+      data-id="placeholder"
+      display="flex"
+      height="120"
+      overflow="hidden"
+      shape="rectangle"
+      width="100%"
+    >
+      <svg
+        style="width: 100%; height: 100%; position: absolute;"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="0"
+          x2="100%"
+          y1="0"
+          y2="100%"
+        />
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="100%"
+          x2="0"
+          y1="0"
+          y2="100%"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    class="c1 c2"
+    data-id="stack-child"
+    display="flex"
+    width="full"
+  />
+  <div
+    class="c1 c2"
+    data-id="stack-child"
+    display="flex"
+    width="full"
+  >
+    <div
+      class="c3 c4"
+      data-id="placeholder"
+      display="flex"
+      height="120"
+      overflow="hidden"
+      shape="rectangle"
+      width="100%"
+    >
+      <svg
+        style="width: 100%; height: 100%; position: absolute;"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="0"
+          x2="100%"
+          y1="0"
+          y2="100%"
+        />
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="100%"
+          x2="0"
+          y1="0"
+          y2="100%"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    class="c1 c2"
+    data-id="stack-child"
+    display="flex"
+    width="full"
+  />
+  <div
+    class="c1 c2"
+    data-id="stack-child"
+    display="flex"
+    width="full"
+  >
+    <div
+      class="c3 c4"
+      data-id="placeholder"
+      display="flex"
+      height="120"
+      overflow="hidden"
+      shape="rectangle"
+      width="100%"
+    >
+      <svg
+        style="width: 100%; height: 100%; position: absolute;"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="0"
+          x2="100%"
+          y1="0"
+          y2="100%"
+        />
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="100%"
+          x2="0"
+          y1="0"
+          y2="100%"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    class="c1 c2"
+    data-id="stack-child"
+    display="flex"
+    width="full"
+  />
+</div>
+`;
+
+exports[`It can stack 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #e3e3e3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.c3 {
+  width: 100%;
+  min-width: 40px;
+  height: 120px;
+  border: 2px solid rgba(51,51,51,0.3);
+}
+
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 0px;
+}
+
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 0px;
+}
+
+<div
+  class="c0"
+  data-id="stack"
+  display="block"
+  width="full"
+>
+  <div
+    class="c1 c2"
+    data-id="stack-child"
+    display="flex"
+    width="full"
+  >
+    <div
+      class="c3 c4"
+      data-id="placeholder"
+      display="flex"
+      height="120"
+      overflow="hidden"
+      shape="rectangle"
+      width="100%"
+    >
+      <svg
+        style="width: 100%; height: 100%; position: absolute;"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="0"
+          x2="100%"
+          y1="0"
+          y2="100%"
+        />
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="100%"
+          x2="0"
+          y1="0"
+          y2="100%"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    class="c1 c2"
+    data-id="stack-child"
+    display="flex"
+    width="full"
+  >
+    <div
+      class="c3 c4"
+      data-id="placeholder"
+      display="flex"
+      height="120"
+      overflow="hidden"
+      shape="rectangle"
+      width="100%"
+    >
+      <svg
+        style="width: 100%; height: 100%; position: absolute;"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="0"
+          x2="100%"
+          y1="0"
+          y2="100%"
+        />
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="100%"
+          x2="0"
+          y1="0"
+          y2="100%"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    class="c1 c2"
+    data-id="stack-child"
+    display="flex"
+    width="full"
+  >
+    <div
+      class="c3 c4"
+      data-id="placeholder"
+      display="flex"
+      height="120"
+      overflow="hidden"
+      shape="rectangle"
+      width="100%"
+    >
+      <svg
+        style="width: 100%; height: 100%; position: absolute;"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="0"
+          x2="100%"
+          y1="0"
+          y2="100%"
+        />
+        <line
+          style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+          x1="100%"
+          x2="0"
+          y1="0"
+          y2="100%"
+        />
+      </svg>
+    </div>
   </div>
 </div>
 `;
