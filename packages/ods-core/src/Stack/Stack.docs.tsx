@@ -85,11 +85,11 @@ export const docs: ComponentDocs<StackProps> = {
       {
         label: "Horizontal Alignment - responsive",
         description: [
-          "In this example, for mobile and tablet screens the Stack stretches its children",
+          "In this example, for mobile and tablet screens the Stack centers it's children",
           "while on larger screens it left aligns them.",
         ].join(" "),
         Code: () => (
-          <Stack space="small" dividers alignX={["stretch", "left"]}>
+          <Stack space="small" dividers alignX={["center", "left"]}>
             <Placeholder shape="round" width="120px" />
             <Placeholder shape="round" width="120px" />
             <Placeholder shape="round" width="120px" />
@@ -188,7 +188,7 @@ export const docs: ComponentDocs<StackProps> = {
     {
       label: "Responsive Horiz. Alignment",
       Code: () => (
-        <Stack space="small" dividers alignX={["stretch", "left"]}>
+        <Stack space="small" dividers alignX={["center", "left"]}>
           <Placeholder />
           <Placeholder />
           <Placeholder />

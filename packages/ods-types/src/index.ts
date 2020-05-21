@@ -53,7 +53,7 @@ export type TypographyVariants =
 
 export type TextAlignVariants = "left" | "right" | "center";
 
-export type AlignXType = "left" | "center" | "right" | "stretch";
+export type AlignXType = "left" | "center" | "right";
 
 export type TLength = string | 0 | number;
 

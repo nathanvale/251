@@ -96,7 +96,7 @@ test("It can left-align children", () => {
   );
   const columnsEl = queryAllByAttribute("data-id", container, "stack-child")[0];
   const style = window.getComputedStyle(columnsEl as Element);
-  expect(style.alignItems).toEqual("flex-start");
+  expect(style.alignItems).toEqual("");
 });
 
 test("It adds data-id", () => {

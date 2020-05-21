@@ -64,18 +64,7 @@ exports[`it renders a CardStackSection 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  width: 100%;
+  display: block;
 }
 
 .c6 {
@@ -91,6 +80,7 @@ exports[`it renders a CardStackSection 1`] = `
   padding-bottom: 24px;
   padding-left: 16px;
   padding-right: 16px;
+  width: 100%;
 }
 
 .c8 {
@@ -319,12 +309,12 @@ exports[`it renders a CardStackSection 1`] = `
       <div
         class="c4 c5"
         data-id="stack-child"
-        display="flex"
-        width="full"
+        display="block"
       >
         <div
           class="c6"
           data-id="card"
+          width="full"
         >
           <div
             class="c7 c8"
@@ -360,12 +350,12 @@ exports[`it renders a CardStackSection 1`] = `
       <div
         class="c4 c5"
         data-id="stack-child"
-        display="flex"
-        width="full"
+        display="block"
       >
         <div
           class="c6"
           data-id="card"
+          width="full"
         >
           <div
             class="c7 c8"

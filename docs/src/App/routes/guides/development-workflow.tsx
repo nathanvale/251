@@ -15,6 +15,7 @@ import {
 import Code from "../../Code/Code";
 import { DocsPage } from "../../../types";
 import { Page, PageSection } from "../../Page/Page";
+import { TextStack } from "../../TextStack/TextStack";
 
 const odsSupportLink = (
   <TextLink href="https://origindigital.slack.com/archives/CQ6T5T0R0">
@@ -27,7 +28,7 @@ const DevelopmentWorkflow = () => {
     {
       title: "Working with components",
       children: (
-        <>
+        <TextStack>
           <Text>
             ODS provides consumers with a suite of components that are powered
             by an underlying themed styling system.
@@ -45,13 +46,13 @@ const DevelopmentWorkflow = () => {
             also provides lower level building blocks for generating custom
             components.
           </Text>
-        </>
+        </TextStack>
       ),
     },
     {
       title: "High level components",
       children: (
-        <>
+        <TextStack>
           <Text>
             ODS’s high level components are most likely the ones you would come
             to expect from a design system, e.g.{" "}
@@ -84,13 +85,13 @@ const DevelopmentWorkflow = () => {
             surrounding white space. This is where our layout components come
             in.
           </Text>
-        </>
+        </TextStack>
       ),
     },
     {
       title: "Layout components",
       children: (
-        <>
+        <TextStack>
           <Text>
             In order to distribute white space evenly between components, wrap
             sibling elements in a{" "}
@@ -198,13 +199,13 @@ const DevelopmentWorkflow = () => {
               </Column>
             </Columns>
           </Code>
-        </>
+        </TextStack>
       ),
     },
     {
       title: "Need a custom component?",
       children: (
-        <>
+        <TextStack>
           <Text>
             If you’re unable to satisfy a design using the built-in set of
             higher level components, ODS also provides consumers with the{" "}
@@ -231,13 +232,13 @@ const DevelopmentWorkflow = () => {
             TypeScript users, you should also find that the Box API is available
             for autocompletion and type checking within your editor.
           </Text>
-        </>
+        </TextStack>
       ),
     },
     {
       title: "Need responsive styles?",
       children: (
-        <>
+        <TextStack>
           <Text>
             One of the main reasons for needing to create custom CSS has been to
             define responsive rules. The{" "}
@@ -282,13 +283,13 @@ const DevelopmentWorkflow = () => {
             Other components also support responsive props. Keep an eye out for
             props that are of type {`ResponsiveProp<any>`}.
           </Text>
-        </>
+        </TextStack>
       ),
     },
     {
       title: "Need semantic markup?",
       children: (
-        <>
+        <TextStack>
           {" "}
           <Text>
             A key difference with ODS is that it doesn’t use a standard global
@@ -307,7 +308,7 @@ const DevelopmentWorkflow = () => {
               </Box>
             </Card>
           </Code>
-        </>
+        </TextStack>
       ),
     },
     {
