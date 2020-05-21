@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.28.3](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.28.2...@origin-digital/ods-scripts@0.28.3) (2020-05-21)
+
+
+### Bug Fixes
+
+* **Stack:** make alignLeft block instead of flex ([4033723](https://bitbucket.orgn.io/od/origin-ui/commits/4033723636fe80ff1c661b00684a5df5e7045813))
+
+
+
+
+
 ## [0.28.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.28.1...@origin-digital/ods-scripts@0.28.2) (2020-05-20)
 
 **Note:** Version bump only for package @origin-digital/ods-scripts
