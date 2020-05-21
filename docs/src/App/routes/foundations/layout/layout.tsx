@@ -33,7 +33,7 @@ const Layout = () => {
     {
       title: "Spacing",
       children: (
-        <>
+        <TextStack>
           <Text>
             ODS provides a standard white space scale that is available across
             the entire component suite. As much as possible, ODS tries to make
@@ -65,13 +65,13 @@ const Layout = () => {
                 </Columns>
               ))}
           </Stack>
-        </>
+        </TextStack>
       ),
     },
     {
       title: "Box",
       children: (
-        <>
+        <TextStack>
           <Text>
             {<TextLink href="#/components/Box">Box</TextLink>} is the most
             low-level layout component provided by ODS. Its job is to render an
@@ -131,13 +131,13 @@ const Layout = () => {
               <Text>Lorem ipsum dolor sit amet.</Text>
             </Box>
           </Code>
-        </>
+        </TextStack>
       ),
     },
     {
       title: "Card",
       children: (
-        <>
+        <TextStack>
           <Text>
             Rather than nesting content in arbitrary{" "}
             {<TextLink href="#/components/Box">Box</TextLink>} elements, you may
@@ -150,13 +150,13 @@ const Layout = () => {
               <Text>Lorem ipsum dolor sit amet.</Text>
             </Card>
           </Code>
-        </>
+        </TextStack>
       ),
     },
     {
       title: "Stack",
       children: (
-        <>
+        <TextStack>
           <Text>
             The most common white space on screen is between elements stacked
             vertically. For this use case, ODS provides a{" "}
@@ -259,13 +259,13 @@ const Layout = () => {
               </Stack>
             </Card>
           </Code>
-        </>
+        </TextStack>
       ),
     },
     {
       title: "Columns",
       children: (
-        <>
+        <TextStack>
           <Text>
             If you need to lay out content horizontally, ODS provides the{" "}
             {<TextLink href="#/components/Columns">Columns</TextLink>} and{" "}
@@ -389,13 +389,13 @@ const Layout = () => {
               </Column>
             </Columns>
           </Code>
-        </>
+        </TextStack>
       ),
     },
     {
       title: "Section",
       children: (
-        <>
+        <TextStack>
           <Text>
             By default, all layout components will render full width. However,
             most applications will want to limit the width of content on the
@@ -422,13 +422,13 @@ const Layout = () => {
               </Card>
             </Section>
           </Code>
-        </>
+        </TextStack>
       ),
     },
     {
       title: "CardStackSection",
       children: (
-        <>
+        <TextStack>
           <Text>
             {
               <TextLink href="#/components/CardStackSection">
@@ -449,7 +449,7 @@ const Layout = () => {
               </Card>
             </CardStackSection>
           </Code>
-        </>
+        </TextStack>
       ),
     },
   ];

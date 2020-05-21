@@ -8,5 +8,4 @@ export const alignToFlexAlign = (
     left: "flex-start",
     center: "center",
     right: "flex-end",
-    stretch: "stretch",
   });

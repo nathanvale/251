@@ -64,6 +64,7 @@ export const Card = ({
   backgroundColor = "white",
 }: CardProps) => (
   <Box
+    width="full"
     backgroundColor={backgroundColor}
     data-id={dataId}
     {...cardPaddingForVariant[padding]}

@@ -105,11 +105,11 @@ export const Stack = ({
   return (
     <Box data-id={dataId} display="block" width="full">
       {stackItems.flatMap((child, index) => (
+        // we set flex rules on each StackChild so that the divider can be full width
         <StackChild
-          width="full"
-          display="flex"
-          flexDirection="column"
-          alignItems={alignToFlexAlign(alignX)}
+          display={alignX === "left" ? "block" : "flex"}
+          flexDirection={alignX === "left" ? undefined : "column"}
+          alignItems={alignX === "left" ? undefined : alignToFlexAlign(alignX)}
           key={index}
           divider={dividers}
           data-id="stack-child"

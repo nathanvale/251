@@ -60,8 +60,7 @@ const Home = () => {
     {
       title: "Getting started",
       children: (
-        <>
-          {" "}
+        <TextStack>
           <Text>
             First, we recommend reading the{" "}
             <TextLink href="#/guides/development-workflow">
@@ -90,7 +89,7 @@ const Home = () => {
             you to try out the components without requiring a development
             environment.
           </Text>
-        </>
+        </TextStack>
       ),
     },
     {

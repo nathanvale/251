@@ -1922,7 +1922,6 @@ exports[`Stack 1`] = `
     | "center"
     | "left"
     | "right"
-    | "stretch"
   >
   children: ReactNode
   data-id?: string
