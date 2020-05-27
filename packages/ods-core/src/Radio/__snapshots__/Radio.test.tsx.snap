@@ -16,13 +16,13 @@ exports[`it renders a Radio in error state correctly 1`] = `
     class="c0"
   >
     <label
-      class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-167"
+      class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-169"
       data-id="radio"
       id="my-radio-label"
     >
       <span
         aria-disabled="false"
-        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-182 MuiRadio-root AbstractSwitchBase-error-root-175 AbstractSwitchBase-error-root-176 MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-185 MuiRadio-root AbstractSwitchBase-error-root-178 AbstractSwitchBase-error-root-179 MuiRadio-colorSecondary AbstractSwitch-switchComp-170 MuiIconButton-colorSecondary"
         data-id="radio-RadioBase"
       >
         <span
@@ -30,13 +30,13 @@ exports[`it renders a Radio in error state correctly 1`] = `
         >
           <input
             aria-describedby="my-radio-helperText"
-            class="PrivateSwitchBase-input-185"
+            class="PrivateSwitchBase-input-188"
             id="my-radio"
             type="radio"
             value=""
           />
           <div
-            class="PrivateRadioButtonIcon-root-198"
+            class="PrivateRadioButtonIcon-root-201"
           >
             <svg
               aria-hidden="true"
@@ -51,7 +51,7 @@ exports[`it renders a Radio in error state correctly 1`] = `
             </svg>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-199"
+              class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-202"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -92,13 +92,13 @@ exports[`it renders a disabled Radio 1`] = `
     class="c0"
   >
     <label
-      class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-250 Mui-disabled"
+      class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-253 Mui-disabled"
       data-id="radio"
       id="my-radio-label"
     >
       <span
         aria-disabled="true"
-        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-265 MuiRadio-root AbstractSwitchBase-root-258 AbstractSwitchBase-root-259 MuiRadio-colorSecondary PrivateSwitchBase-disabled-267 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
+        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-269 MuiRadio-root AbstractSwitchBase-root-262 AbstractSwitchBase-root-263 MuiRadio-colorSecondary AbstractSwitch-switchComp-254 PrivateSwitchBase-disabled-271 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
         data-id="radio-RadioBase"
         tabindex="-1"
       >
@@ -107,14 +107,14 @@ exports[`it renders a disabled Radio 1`] = `
         >
           <input
             aria-describedby="my-radio-helperText"
-            class="PrivateSwitchBase-input-268"
+            class="PrivateSwitchBase-input-272"
             disabled=""
             id="my-radio"
             type="radio"
             value=""
           />
           <div
-            class="PrivateRadioButtonIcon-root-281"
+            class="PrivateRadioButtonIcon-root-285"
           >
             <svg
               aria-hidden="true"
@@ -129,7 +129,7 @@ exports[`it renders a disabled Radio 1`] = `
             </svg>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-282"
+              class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-286"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -173,7 +173,7 @@ exports[`it renders an unchecked Radio with label 1`] = `
     >
       <span
         aria-disabled="false"
-        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-16 MuiRadio-root AbstractSwitchBase-root-9 AbstractSwitchBase-root-10 MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-17 MuiRadio-root AbstractSwitchBase-root-10 AbstractSwitchBase-root-11 MuiRadio-colorSecondary AbstractSwitch-switchComp-2 MuiIconButton-colorSecondary"
         data-id="radio-RadioBase"
       >
         <span
@@ -181,13 +181,13 @@ exports[`it renders an unchecked Radio with label 1`] = `
         >
           <input
             aria-describedby="my-radio-helperText"
-            class="PrivateSwitchBase-input-19"
+            class="PrivateSwitchBase-input-20"
             id="my-radio"
             type="radio"
             value=""
           />
           <div
-            class="PrivateRadioButtonIcon-root-32"
+            class="PrivateRadioButtonIcon-root-33"
           >
             <svg
               aria-hidden="true"
@@ -202,7 +202,7 @@ exports[`it renders an unchecked Radio with label 1`] = `
             </svg>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-33"
+              class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-34"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"

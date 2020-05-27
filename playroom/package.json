@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.9.12",
+    "@origin-digital/action-bar": "^9.1.21",
     "@origin-digital/formatters": "*",
     "@origin-digital/icon": "*",
     "@origin-digital/messages": "*",
@@ -22,9 +23,12 @@
     "@origin-digital/ods-types": "^0.21.0",
     "@origin-digital/style-guide": "*",
     "@origin-digital/tile-selector": "*",
-    "playroom": "^0.18.1"
+    "hoist-non-react-statics": "^3.3.2",
+    "playroom": "^0.18.1",
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
+    "@types/hoist-non-react-statics": "^3.3.1",
     "file-loader": "^6.0.0",
     "url-loader": "^4.1.0"
   }

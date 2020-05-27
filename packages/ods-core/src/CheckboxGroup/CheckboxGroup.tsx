@@ -5,6 +5,7 @@ import {
   ControlGroupMuiProps,
   ControlGroupProps,
 } from "../ControlGroup/ControlGroup";
+import { Stack } from "../Stack/Stack";
 
 export interface CheckboxGroupProps extends ControlGroupProps {
   groupComponent?: FormGroupElements;
@@ -15,7 +16,11 @@ export interface CheckboxGroupProps extends ControlGroupProps {
 }
 
 export const CheckboxGroup = ({ children, ...others }: CheckboxGroupProps) => {
-  return <ControlGroup {...others}>{children}</ControlGroup>;
+  return (
+    <ControlGroup {...others}>
+      <Stack space="xsmall">{children}</Stack>
+    </ControlGroup>
+  );
 };
 
 CheckboxGroup.displayName = "CheckboxGroup";

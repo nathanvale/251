@@ -2964,6 +2964,15 @@
   dependencies:
     "@types/node" ">= 8"
 
+"@origin-digital/action-bar@^9.1.21":
+  version "9.1.21"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/action-bar/-/@origin-digital/action-bar-9.1.21.tgz#b72d9b0ff7ff1eb979f5e658e6fb86b9eb040e63"
+  integrity sha1-ty2bD/f/Hrl59eZY5vuGuesEDmM=
+  dependencies:
+    "@babel/runtime-corejs2" "^7.0.0"
+    "@origin-digital/layout" "^5.2.0"
+    "@origin-digital/style-guide" "^22.3.1"
+
 "@origin-digital/eslint-config@^2.1.0":
   version "2.2.0"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/eslint-config/-/@origin-digital/eslint-config-2.2.0.tgz#581d68bea6af4aa3b5bbc0411e6c079a88a7094e"
@@ -3010,6 +3019,13 @@
   version "1.5.2"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/icon/-/@origin-digital/icon-1.5.2.tgz#4006db92a4a9c17b98d6b46336bc6beb02bf8e40"
   integrity sha1-QAbbkqSpwXuY1rRjNrxr6wK/jkA=
+  dependencies:
+    "@origin-digital/helper" "^3.0.1"
+
+"@origin-digital/icon@^1.6.0":
+  version "1.6.0"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/icon/-/@origin-digital/icon-1.6.0.tgz#9793707a7f8ac79636a79bc571ff1f9f8b51dc37"
+  integrity sha1-l5Nwen+Kx5Y2p5vFcf8fn4tR3Dc=
   dependencies:
     "@origin-digital/helper" "^3.0.1"
 
@@ -3169,6 +3185,24 @@
     "@material-ui/core" "^3.8.1"
     "@origin-digital/helper" "^3.0.1"
     "@origin-digital/icon" "^1.5.2"
+    "@origin-digital/layout" "^5.2.0"
+    custom-event-polyfill "^1.0.6"
+    date-fns "^2.0.0-alpha.25"
+    dom-helpers "^3.3.1"
+    keycode "^2.2.0"
+    lodash.clamp "^4.0.3"
+    polished "2.0.3"
+    prop-types "^15.6.2"
+    react-day-picker "^7.1.10"
+
+"@origin-digital/style-guide@^22.3.1":
+  version "22.3.1"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/style-guide/-/@origin-digital/style-guide-22.3.1.tgz#4a52a50c932f03396e29723ad167944530602e72"
+  integrity sha1-SlKlDJMvAzluKXI60WeURTBgLnI=
+  dependencies:
+    "@babel/runtime-corejs2" "^7.0.0"
+    "@origin-digital/helper" "^3.0.1"
+    "@origin-digital/icon" "^1.6.0"
     "@origin-digital/layout" "^5.2.0"
     custom-event-polyfill "^1.0.6"
     date-fns "^2.0.0-alpha.25"
@@ -3565,6 +3599,14 @@
   version "4.7.5"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@types/history/-/history-4.7.5.tgz#527d20ef68571a4af02ed74350164e7a67544860"
   integrity sha1-Un0g72hXGkrwLtdDUBZOemdUSGA=
+
+"@types/hoist-non-react-statics@^3.3.1":
+  version "3.3.1"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
+  integrity sha1-ESSq/lEYy1kZd66xzqrtEHDrA58=
+  dependencies:
+    "@types/react" "*"
+    hoist-non-react-statics "^3.3.0"
 
 "@types/html-minifier-terser@^5.0.0":
   version "5.1.0"
@@ -6947,25 +6989,6 @@ css-loader@^3.4.2:
     schema-utils "^2.6.6"
     semver "^6.3.0"
 
-css-loader@^3.4.2:
-  version "3.5.3"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/css-loader/-/css-loader-3.5.3.tgz#95ac16468e1adcd95c844729e0bb167639eb0bcf"
-  integrity sha1-lawWRo4a3NlchEcp4LsWdjnrC88=
-  dependencies:
-    camelcase "^5.3.1"
-    cssesc "^3.0.0"
-    icss-utils "^4.1.1"
-    loader-utils "^1.2.3"
-    normalize-path "^3.0.0"
-    postcss "^7.0.27"
-    postcss-modules-extract-imports "^2.0.0"
-    postcss-modules-local-by-default "^3.0.2"
-    postcss-modules-scope "^2.2.0"
-    postcss-modules-values "^3.0.0"
-    postcss-value-parser "^4.0.3"
-    schema-utils "^2.6.6"
-    semver "^6.3.0"
-
 css-prefers-color-scheme@^3.1.1:
   version "3.1.1"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/css-prefers-color-scheme/-/css-prefers-color-scheme-3.1.1.tgz#6f830a2714199d4f0d0d0bb8a27916ed65cff1f4"
@@ -9890,7 +9913,7 @@ hoist-non-react-statics@^2.3.1, hoist-non-react-statics@^2.5.0:
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
   integrity sha1-xZA89AnA39kI84jmGdhrnBF0y0c=
 
-hoist-non-react-statics@^3.1.0, hoist-non-react-statics@^3.2.1, hoist-non-react-statics@^3.3.2:
+hoist-non-react-statics@^3.1.0, hoist-non-react-statics@^3.2.1, hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.2:
   version "3.3.2"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
   integrity sha1-7OCsr3HWLClpwuxZ/v9CpLGoW0U=

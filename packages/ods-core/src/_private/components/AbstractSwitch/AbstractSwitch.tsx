@@ -51,8 +51,11 @@ function formControlState({
 const useLabelStyles = makeStyles(
   {
     formControlLabel: {
-      alignItems: "center",
+      alignItems: "flex-start",
       marginLeft: "-10px",
+    },
+    switchComp: {
+      marginTop: "-8px",
     },
   },
   { classNamePrefix: `AbstractSwitch` }
@@ -117,6 +120,7 @@ export function AbstractSwitch<
             error={error || !!fcs.error}
             id={id}
             muiProps={muiProps && muiProps.componentProps}
+            className={lblClasses.switchComp}
           />
         }
       />
