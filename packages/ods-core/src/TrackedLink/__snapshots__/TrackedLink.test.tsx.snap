@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It can render 1`] = `
+<a
+  data-id="tracked-link"
+  href=""
+>
+  Tracked Link
+</a>
+`;

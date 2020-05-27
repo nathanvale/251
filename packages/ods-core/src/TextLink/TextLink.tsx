@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import React from "react";
+import React, { AnchorHTMLAttributes } from "react";
 import {
   OptionalTrackableProps,
   LinkComponentProps,
@@ -8,41 +8,41 @@ import {
   TextLinkRenderer,
   TextLinkRendererProps,
 } from "../TextLinkRenderer/TextLinkRenderer";
-import { useTracking } from "../_private/hooks/tracking";
+import { TrackedLink } from "..";
 
 export interface TextLinkProps
   extends Omit<TextLinkRendererProps, "children">,
-    OptionalTrackableProps,
-    Omit<LinkComponentProps, "className" | "style"> {}
+    OptionalTrackableProps {
+  href: LinkComponentProps["href"];
+  target?: AnchorHTMLAttributes<HTMLAnchorElement>["target"];
+  children?: React.ReactNode;
+  domProps?: AnchorHTMLAttributes<HTMLAnchorElement>;
+}
 
 const defaultDataId = "text-link";
 
 export const TextLink = ({
   "data-id": dataId = defaultDataId,
   children,
-  ...props
+  domProps,
+  target,
+  ...rest
 }: TextLinkProps) => {
-  const { onClickCapture, ref } = useTracking({
-    children,
-    "data-id": dataId,
-    type: TextLink.displayName,
-  });
   return (
-    <>
-      <TextLinkRenderer>
-        {({ textLinkStyles }) => (
-          <a
-            ref={ref}
-            data-id={dataId}
-            className={textLinkStyles}
-            onClickCapture={onClickCapture}
-            {...props}
-          >
-            {children}
-          </a>
-        )}
-      </TextLinkRenderer>
-    </>
+    <TextLinkRenderer>
+      {({ textLinkStyles }) => (
+        <TrackedLink
+          domProps={{ ...domProps, className: textLinkStyles }}
+          trackingType={TextLink.displayName}
+          trackingLabel={children}
+          data-id={dataId}
+          target={target}
+          {...rest}
+        >
+          {children}
+        </TrackedLink>
+      )}
+    </TextLinkRenderer>
   );
 };
 

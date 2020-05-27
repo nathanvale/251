@@ -11,7 +11,7 @@ import {
   ResponsiveProp,
 } from "@origin-digital/ods-types";
 import { Breakpoint } from "@material-ui/core/styles/createBreakpoints";
-import { normaliseResponsiveProp } from "@origin-digital/ods-helpers";
+import { mapToStyledSystem } from "@origin-digital/ods-helpers";
 
 const getHoverBG = (color: string) => {
   return darken(color, 0.16);
@@ -65,7 +65,7 @@ const getFullWidthStyles = (
       width: "auto",
     };
   }
-  const normFullWidth = normaliseResponsiveProp(fullWidth);
+  const normFullWidth = mapToStyledSystem(fullWidth);
   if (typeof normFullWidth === "boolean") {
     return {
       width: normFullWidth ? "100%" : "auto",

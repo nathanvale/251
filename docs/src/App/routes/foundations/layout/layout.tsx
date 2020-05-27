@@ -39,7 +39,7 @@ const Layout = () => {
             the entire component suite. As much as possible, ODS tries to make
             use of this scale rather than generating custom spacing rules.
           </Text>
-          <Stack space="small">
+          <Stack space="xxsmall">
             {spaceScale
               .filter((space: any) => isNaN(space))
               .map((space, index) => (
@@ -73,18 +73,18 @@ const Layout = () => {
       children: (
         <TextStack>
           <Text>
-            {<TextLink href="#/components/Box">Box</TextLink>} is the most
+            {<TextLink href="/components/Box">Box</TextLink>} is the most
             low-level layout component provided by ODS. Its job is to render an
             individual element on the screen.
           </Text>
           <Text>
             In terms of page layout,{" "}
-            {<TextLink href="#/components/Box">Box</TextLink>} most notably
+            {<TextLink href="/components/Box">Box</TextLink>} most notably
             provides a set of padding options which can be used to create
             container elements with internal spacing.
           </Text>
           <Box paddingLeft="xsmall">
-            <Stack space="small">
+            <Stack space="xxsmall">
               <Text>- padding</Text>
               <Text>- paddingX</Text>
               <Text>- paddingY</Text>
@@ -140,9 +140,9 @@ const Layout = () => {
         <TextStack>
           <Text>
             Rather than nesting content in arbitrary{" "}
-            {<TextLink href="#/components/Box">Box</TextLink>} elements, you may
+            {<TextLink href="/components/Box">Box</TextLink>} elements, you may
             prefer to use standard{" "}
-            {<TextLink href="#/components/Card">Card</TextLink>} elements
+            {<TextLink href="/components/Card">Card</TextLink>} elements
             instead.
           </Text>
           <Code>
@@ -160,13 +160,13 @@ const Layout = () => {
           <Text>
             The most common white space on screen is between elements stacked
             vertically. For this use case, ODS provides a{" "}
-            {<TextLink href="#/components/Stack">Stack</TextLink>} component
-            that accepts a space prop.
+            {<TextLink href="/components/Stack">Stack</TextLink>} component that
+            accepts a space prop.
           </Text>
           <Text>
             For example, if you wanted to render a stack of{" "}
-            {<TextLink href="#/components/Heading">Heading</TextLink>} and{" "}
-            {<TextLink href="#/components/Text">Text</TextLink>} elements with
+            {<TextLink href="/components/Heading">Heading</TextLink>} and{" "}
+            {<TextLink href="/components/Text">Text</TextLink>} elements with
             large spacing between them:
           </Text>
           <Code>
@@ -179,9 +179,8 @@ const Layout = () => {
             </Card>
           </Code>
           <Text>
-            Just like {<TextLink href="#/components/Box">Box</TextLink>}, you
-            can also specify different spacing values for different screen
-            sizes:
+            Just like {<TextLink href="/components/Box">Box</TextLink>}, you can
+            also specify different spacing values for different screen sizes:
           </Text>
           <Code>
             <Card>
@@ -208,7 +207,7 @@ const Layout = () => {
           <Text>
             If youd prefer to take control over the placement of dividers, you
             can use the{" "}
-            {<TextLink href="#/components/Divider">Divider</TextLink>} component
+            {<TextLink href="/components/Divider">Divider</TextLink>} component
             directly:
           </Text>
           <Code>
@@ -222,7 +221,7 @@ const Layout = () => {
             </Card>
           </Code>
           <Text>
-            Multiple {<TextLink href="#/components/Stack">Stack</TextLink>}{" "}
+            Multiple {<TextLink href="/components/Stack">Stack</TextLink>}{" "}
             components can be nested to create more complex white space rules.
             For example, if you wanted to create multiple grouped blocks of text
             like you might see on a job summary card:
@@ -245,7 +244,7 @@ const Layout = () => {
             </Card>
           </Code>
           <Text>
-            {<TextLink href="#/components/Stack">Stack</TextLink>} also supports
+            {<TextLink href="/components/Stack">Stack</TextLink>} also supports
             horizontal alignment. For example, if you wanted to centre align all
             content within a card:
           </Text>
@@ -268,8 +267,8 @@ const Layout = () => {
         <TextStack>
           <Text>
             If you need to lay out content horizontally, ODS provides the{" "}
-            {<TextLink href="#/components/Columns">Columns</TextLink>} and{" "}
-            {<TextLink href="#/components/Column">Column</TextLink>} components:
+            {<TextLink href="/components/Columns">Columns</TextLink>} and{" "}
+            {<TextLink href="/components/Column">Column</TextLink>} components:
           </Text>
           <Code>
             <Columns space="small">
@@ -336,9 +335,9 @@ const Layout = () => {
           </Text>
           <Text>
             For example, if you wanted a card with a left-aligned{" "}
-            {<TextLink href="#/components/Heading">Heading</TextLink>} and a
+            {<TextLink href="/components/Heading">Heading</TextLink>} and a
             right-aligned{" "}
-            {<TextLink href="#/components/ChevronLink">ChevronLink</TextLink>}:
+            {<TextLink href="/components/ChevronLink">ChevronLink</TextLink>}:
           </Text>
           <Code>
             <Card>
@@ -400,7 +399,7 @@ const Layout = () => {
             By default, all layout components will render full width. However,
             most applications will want to limit the width of content on the
             screen. In order to address this, ODS provides the{" "}
-            {<TextLink href="#/components/Section">Section</TextLink>} component
+            {<TextLink href="/components/Section">Section</TextLink>} component
             that sets a maximum width and centres content horizontally. This
             component should be at your root and not be nested.
           </Text>
@@ -431,7 +430,7 @@ const Layout = () => {
         <TextStack>
           <Text>
             {
-              <TextLink href="#/components/CardStackSection">
+              <TextLink href="/components/CardStackSection">
                 CardStackSection
               </TextLink>
             }{" "}
@@ -467,9 +466,9 @@ const Layout = () => {
           </Text>
           <Text>
             With exception of{" "}
-            {<TextLink href="#/components/Section">Section</TextLink>} and{" "}
+            {<TextLink href="/components/Section">Section</TextLink>} and{" "}
             {
-              <TextLink href="#/components/CardStackSection">
+              <TextLink href="/components/CardStackSection">
                 CardStackSection
               </TextLink>
             }

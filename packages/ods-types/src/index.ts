@@ -1,4 +1,4 @@
-import React, { AnchorHTMLAttributes } from "react";
+import React, { AnchorHTMLAttributes, ComponentType } from "react";
 import { FontSizeVariants } from "@material-ui/core/styles/createTypography";
 
 export * from "./docs";
@@ -242,10 +242,12 @@ export interface OptionalTrackableProps {
   "data-id"?: string;
 }
 
+export type LinkComponentType = ComponentType<LinkComponentProps>;
 export interface LinkComponentProps
   extends AnchorHTMLAttributes<HTMLAnchorElement>,
     OptionalTrackableProps {
   href: string;
+  ref?: React.RefObject<any>;
 }
 
 export interface ComponentBaseProps extends OptionalTrackableProps {

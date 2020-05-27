@@ -9,7 +9,7 @@
 import React, { ReactNode } from "react";
 import "@testing-library/jest-dom/extend-expect";
 import { render } from "@testing-library/react";
-import { OriginThemeProvider } from "@origin-digital/ods-themes";
+import { OriginThemeProvider } from "@origin-digital/ods-core";
 
 const AllTheProviders = ({ children }: { children: ReactNode }) => {
   return <OriginThemeProvider>{children}</OriginThemeProvider>;

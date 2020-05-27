@@ -1,3 +1,2 @@
-export { OriginThemeProvider } from "./OriginThemeProvider/OriginThemeProvider";
-export type OriginThemeProviderProps = import("./OriginThemeProvider/OriginThemeProvider").OriginThemeProviderProps;
+export { flattenPalette } from "./_private/helpers/flattenPalette";
 export * from "./themes";

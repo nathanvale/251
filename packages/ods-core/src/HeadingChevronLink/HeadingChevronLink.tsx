@@ -1,43 +1,43 @@
 import React, { AnchorHTMLAttributes } from "react";
-import { ComponentBaseProps } from "@origin-digital/ods-types";
+import {
+  OptionalTrackableProps,
+  LinkComponentProps,
+} from "@origin-digital/ods-types";
 import { Heading } from "../Heading/Heading";
 import { ChevronLinkRenderer } from "../ChevronLinkRenderer/ChevronLinkRenderer";
 import { Box } from "../Box/Box";
-import { useTracking } from "../_private/hooks/tracking";
+import { TrackedLink } from "..";
 
-export interface HeadingChevronLinkProps extends ComponentBaseProps {
-  "data-id"?: string;
-  href: string;
-  domProps?: Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href" | "children">;
+export interface HeadingChevronLinkProps extends OptionalTrackableProps {
+  href: LinkComponentProps["href"];
+  target?: AnchorHTMLAttributes<HTMLAnchorElement>["target"];
+  children?: React.ReactNode;
+  domProps?: AnchorHTMLAttributes<HTMLAnchorElement>;
 }
 const defaultDataId = "heading-chevron-link";
 export const HeadingChevronLink = ({
   "data-id": dataId = defaultDataId,
   children,
   domProps,
+  target,
   ...rest
 }: HeadingChevronLinkProps) => {
-  const { onClickCapture, ref } = useTracking({
-    children,
-    "data-id": dataId,
-    type: HeadingChevronLink.displayName,
-  });
   return (
     <ChevronLinkRenderer variant="primary">
       {({ chevronLinkStyles, IconChevron }) => (
-        <a
-          {...domProps}
-          ref={ref}
-          onClickCapture={onClickCapture}
+        <TrackedLink
+          domProps={{ ...domProps, className: chevronLinkStyles }}
+          trackingType={HeadingChevronLink.displayName}
+          trackingLabel={children}
           data-id={dataId}
+          target={target}
           {...rest}
-          className={chevronLinkStyles}
         >
           <Box paddingRight="xsmall">
             <Heading variant="h4">{children}</Heading>
           </Box>
           <IconChevron />
-        </a>
+        </TrackedLink>
       )}
     </ChevronLinkRenderer>
   );

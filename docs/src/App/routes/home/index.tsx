@@ -49,7 +49,7 @@ const Home = () => {
     //         you to spend less time polishing mock ups and more time polishing
     //         the product. For more information about our philosophy, check out
     //         our{" "}
-    //         <TextLink href="#/guides/design-workflow">
+    //         <TextLink href="/guides/design-workflow">
     //           design workflow guide
     //         </TextLink>
     //         .
@@ -63,7 +63,7 @@ const Home = () => {
         <TextStack>
           <Text>
             First, we recommend reading the{" "}
-            <TextLink href="#/guides/development-workflow">
+            <TextLink href="/guides/development-workflow">
               development workflow
             </TextLink>{" "}
             guide. This captures our current views on how best to make use of
@@ -71,15 +71,15 @@ const Home = () => {
           </Text>
           <Text>
             Next, you should read our{" "}
-            <TextLink href="#/foundations/layout">layout guide</TextLink>. This
+            <TextLink href="/foundations/layout">layout guide</TextLink>. This
             goes into detail about how we manage component composition and
             layout, which forms the backbone of our system.
           </Text>
           <Text>
             Then, read our{" "}
-            <TextLink href="#/foundations/tones">tones guide</TextLink> to get
-            an understanding of the common set of tones (positive, critical,
-            etc.) used throughout ODS.
+            <TextLink href="/foundations/tones">tones guide</TextLink> to get an
+            understanding of the common set of tones (positive, critical, etc.)
+            used throughout ODS.
           </Text>
           <Text>
             Finally, there&rsquo;s really no substitute for looking at all the

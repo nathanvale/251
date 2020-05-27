@@ -56,10 +56,10 @@ const DevelopmentWorkflow = () => {
           <Text>
             ODS’s high level components are most likely the ones you would come
             to expect from a design system, e.g.{" "}
-            <TextLink href="#/components/Text">Text</TextLink>,{" "}
-            <TextLink href="#/components/Heading">Heading</TextLink>,{" "}
-            <TextLink href="#/components/Card">Card</TextLink>,{" "}
-            <TextLink href="#/components/Button">Button</TextLink>, etc.
+            <TextLink href="/components/Text">Text</TextLink>,{" "}
+            <TextLink href="/components/Heading">Heading</TextLink>,{" "}
+            <TextLink href="/components/Card">Card</TextLink>,{" "}
+            <TextLink href="/components/Button">Button</TextLink>, etc.
           </Text>
           <Text>
             For these high layout level components, we have opted against
@@ -95,10 +95,10 @@ const DevelopmentWorkflow = () => {
           <Text>
             In order to distribute white space evenly between components, wrap
             sibling elements in a{" "}
-            <TextLink href="#/components/Stack">Stack</TextLink> component with
-            a custom <code>space</code> property. For example, if you wanted{" "}
+            <TextLink href="/components/Stack">Stack</TextLink> component with a
+            custom <code>space</code> property. For example, if you wanted{" "}
             <code>small</code> space between items in a{" "}
-            <TextLink href="#/components/Stack">Stack</TextLink>:
+            <TextLink href="/components/Stack">Stack</TextLink>:
           </Text>
           <Code>
             <Card>
@@ -148,7 +148,7 @@ const DevelopmentWorkflow = () => {
           </Code>
           <Text>
             For horizontal layouts,{" "}
-            <TextLink href="#/components/Columns">Columns</TextLink> provides
+            <TextLink href="/components/Columns">Columns</TextLink> provides
             various responsive rules for laying out content. For example, if you
             wanted to render a two-column layout that collapses to a single
             column on mobile:
@@ -209,7 +209,7 @@ const DevelopmentWorkflow = () => {
           <Text>
             If you’re unable to satisfy a design using the built-in set of
             higher level components, ODS also provides consumers with the{" "}
-            <TextLink href="#/components/Box">Box</TextLink> component that
+            <TextLink href="/components/Box">Box</TextLink> component that
             provides direct access to the themed atomic styles that ODS uses
             internally, without the overhead of having to create and import a
             separate style sheet. A nice side-effect of this approach is that
@@ -217,7 +217,7 @@ const DevelopmentWorkflow = () => {
             generating new ones, keeping your bundle size to a minimum.
           </Text>
           <Text>
-            The prop names for <TextLink href="#/components/Box">Box</TextLink>{" "}
+            The prop names for <TextLink href="/components/Box">Box</TextLink>{" "}
             mostly mimic standard CSS properties, while their values are more
             semantic.
           </Text>
@@ -228,7 +228,7 @@ const DevelopmentWorkflow = () => {
           </Code>
           <Text>
             For more details, view the complete{" "}
-            <TextLink href="#/components/Box">Box documentation</TextLink>. For
+            <TextLink href="/components/Box">Box documentation</TextLink>. For
             TypeScript users, you should also find that the Box API is available
             for autocompletion and type checking within your editor.
           </Text>
@@ -242,10 +242,10 @@ const DevelopmentWorkflow = () => {
           <Text>
             One of the main reasons for needing to create custom CSS has been to
             define responsive rules. The{" "}
-            <TextLink href="#/components/Box">Box</TextLink> component makes
-            this possible via <Strong>responsive props,</Strong> which are
-            provided as an array of values-one for screens smaller than desktop
-            and one for screens at desktop or larger.
+            <TextLink href="/components/Box">Box</TextLink> component makes this
+            possible via <Strong>responsive props,</Strong> which are provided
+            as an array of values-one for screens smaller than desktop and one
+            for screens at desktop or larger.
           </Text>
           <Text>
             For example, if we wanted to change the value for{" "}
@@ -277,7 +277,7 @@ const DevelopmentWorkflow = () => {
           </Code>
           <Text>
             For a list of low-level responsive props, check out the{" "}
-            <TextLink href="#/components/Box">Box documentation.</TextLink>
+            <TextLink href="/components/Box">Box documentation.</TextLink>
           </Text>
           <Text>
             Other components also support responsive props. Keep an eye out for
@@ -294,7 +294,7 @@ const DevelopmentWorkflow = () => {
           <Text>
             A key difference with ODS is that it doesn’t use a standard global
             CSS reset. Instead, element styles are reset at the component level
-            via <TextLink href="#/components/Box">Box</TextLink> and its{" "}
+            via <TextLink href="/components/Box">Box</TextLink> and its{" "}
             <code>component</code> prop.
           </Text>
           <Text>

@@ -16,7 +16,7 @@ export const setupTracking: ExampleDocs = {
   description: (
     <Text>
       To provide tracking, all you have to do is wrap{" "}
-      <TextLink href="#/components/TrackingProvider">TrackingProvider</TextLink>{" "}
+      <TextLink href="/components/TrackingProvider">TrackingProvider</TextLink>{" "}
       around the root of your app and pass in a handler that expects a tracking
       event object that contains a data-id, type of interaction component (e.g.
       Button), a label (e.g. Button label) and an optional postClickState (e.g.

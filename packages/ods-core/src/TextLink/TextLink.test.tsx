@@ -1,6 +1,10 @@
 import React from "react";
 import { render, fireEvent } from "@origin-digital/ods-testing-library";
-import { TrackingEventHandler } from "@origin-digital/ods-types";
+import {
+  TrackingEventHandler,
+  LinkComponentType,
+} from "@origin-digital/ods-types";
+import { OriginThemeProvider } from "../OriginThemeProvider/OriginThemeProvider";
 import { TextLink, Text, TrackingProvider, Strong } from "..";
 
 test("It can render", () => {
@@ -36,4 +40,31 @@ it("should call tracking handler when passed into the TrackingProvider", () => {
     label: "Hello this is strong",
     postClickState: undefined,
   });
+});
+
+test("it handles a custom link implementation", () => {
+  const onClick = jest.fn();
+
+  const CustomLink: LinkComponentType = ({ href, ...restProps }) => (
+    // eslint-disable-next-line jsx-a11y/anchor-has-content
+    <a href={href} onClick={onClick} {...restProps} />
+  );
+
+  const { getByText } = render(
+    <OriginThemeProvider linkComponent={CustomLink}>
+      <Text>
+        <TextLink href="https://www.test.com/">Click me</TextLink>
+      </Text>
+    </OriginThemeProvider>
+  );
+
+  const link = getByText("Click me");
+  fireEvent.click(link);
+
+  expect(onClick).toBeCalledTimes(1);
+
+  expect(getByText("Click me").closest("a")).toHaveAttribute(
+    "href",
+    "https://www.test.com/"
+  );
 });

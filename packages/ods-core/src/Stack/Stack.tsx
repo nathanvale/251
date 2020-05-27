@@ -8,7 +8,7 @@ import {
   SpaceVariants,
 } from "@origin-digital/ods-types";
 import {
-  normaliseResponsiveProp,
+  mapToStyledSystem,
   cssLengthToString,
   alignToFlexAlign,
 } from "@origin-digital/ods-helpers";
@@ -113,7 +113,7 @@ export const Stack = ({
           key={index}
           divider={dividers}
           data-id="stack-child"
-          space={normaliseResponsiveProp(space)}
+          space={mapToStyledSystem(space)}
         >
           {child}
         </StackChild>
