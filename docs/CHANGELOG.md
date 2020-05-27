@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.22.0](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.21.7...docs@0.22.0) (2020-05-27)
+
+
+### Features
+
+* **OriginThemeProvider:** allow configurable link type ([5a39d9d](https://bitbucket.orgn.io/od/origin-ui/commits/5a39d9dd68eb4fe19b7b80c071f020ab73b5df61))
+
+
+
+
+
 ## [0.21.7](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.21.6...docs@0.21.7) (2020-05-21)
 
 

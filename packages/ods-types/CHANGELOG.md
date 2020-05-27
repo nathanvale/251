@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.21.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.20.1...@origin-digital/ods-types@0.21.0) (2020-05-27)
+
+
+### Features
+
+* **OriginThemeProvider:** allow configurable link type ([5a39d9d](https://bitbucket.orgn.io/od/origin-ui/commits/5a39d9dd68eb4fe19b7b80c071f020ab73b5df61))
+
+
+
+
+
 ## [0.20.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.20.0...@origin-digital/ods-types@0.20.1) (2020-05-21)
 
 

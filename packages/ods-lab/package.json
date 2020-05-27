@@ -3,7 +3,7 @@
   "description": "Incubator for experimental ODS components",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
-  "version": "0.18.6",
+  "version": "0.19.0",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "files": [
@@ -21,8 +21,8 @@
     "@material-ui/core": "^4.9.0",
     "@material-ui/lab": "^4.0.0-alpha.43",
     "@material-ui/styles": "^4.9.0",
-    "@origin-digital/ods-core": "^0.28.2",
-    "@origin-digital/ods-helpers": "^0.6.15"
+    "@origin-digital/ods-core": "^0.29.0",
+    "@origin-digital/ods-helpers": "^0.7.0"
   },
   "peerDependencies": {
     "react": "^16.9.0",

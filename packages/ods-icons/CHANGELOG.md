@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.8.3...@origin-digital/ods-icons@0.9.0) (2020-05-27)
+
+
+### Features
+
+* **OriginThemeProvider:** allow configurable link type ([5a39d9d](https://bitbucket.orgn.io/od/origin-ui/commits/5a39d9dd68eb4fe19b7b80c071f020ab73b5df61))
+
+
+
+
+
 ## [0.8.3](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.8.2...@origin-digital/ods-icons@0.8.3) (2020-05-21)
 
 **Note:** Version bump only for package @origin-digital/ods-icons
