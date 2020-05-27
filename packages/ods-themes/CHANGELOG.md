@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-themes@0.15.0...@origin-digital/ods-themes@0.15.1) (2020-05-27)
+
+
+### Bug Fixes
+
+* **checkbox:** top-align text if it wraps to multiple lines ([e648251](https://bitbucket.orgn.io/od/origin-ui/commits/e648251bb29e9fb4f338fbc6c30fa7685336c7fc))
+
+
+
+
+
 # [0.15.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-themes@0.14.3...@origin-digital/ods-themes@0.15.0) (2020-05-27)
 
 

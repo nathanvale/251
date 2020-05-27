@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.16.5](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.16.4...playroom@0.16.5) (2020-05-27)
+
+
+### Bug Fixes
+
+* **checkbox:** top-align text if it wraps to multiple lines ([e648251](https://bitbucket.orgn.io/od/origin-ui/commits/e648251bb29e9fb4f338fbc6c30fa7685336c7fc))
+
+
+
+
+
 ## [0.16.4](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.16.3...playroom@0.16.4) (2020-05-27)
 
 **Note:** Version bump only for package playroom
