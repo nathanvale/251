@@ -108,13 +108,6 @@ exports[`it renders a CardStackSection 1`] = `
   overflow: hidden;
 }
 
-.c7 {
-  width: 100%;
-  min-width: 40px;
-  height: 120px;
-  border: 2px solid rgba(51,51,51,0.3);
-}
-
 .c4:empty {
   display: none;
 }
@@ -143,6 +136,13 @@ exports[`it renders a CardStackSection 1`] = `
   position: relative;
   height: 0.1px;
   margin-top: 8px;
+}
+
+.c7 {
+  width: 100%;
+  min-width: 40px;
+  height: 120px;
+  border: 2px solid rgba(51,51,51,0.3);
 }
 
 @media screen and (min-width:576px) {

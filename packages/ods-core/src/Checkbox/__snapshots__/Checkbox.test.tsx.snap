@@ -16,13 +16,13 @@ exports[`it renders a Checkbox in error state correctly 1`] = `
     class="c0"
   >
     <label
-      class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-171"
+      class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-173"
       data-id="checkbox"
       id="my-checkbox-label"
     >
       <span
         aria-disabled="false"
-        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-187 MuiCheckbox-root AbstractSwitchBase-error-root-179 AbstractSwitchBase-error-root-180 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root AbstractSwitchBase-error-root-182 AbstractSwitchBase-error-root-183 MuiCheckbox-colorSecondary AbstractSwitch-switchComp-174 MuiIconButton-colorSecondary"
         data-id="checkbox-CheckboxBase"
       >
         <span
@@ -30,7 +30,7 @@ exports[`it renders a Checkbox in error state correctly 1`] = `
         >
           <input
             aria-describedby="my-checkbox-helperText"
-            class="PrivateSwitchBase-input-190"
+            class="PrivateSwitchBase-input-193"
             data-indeterminate="false"
             id="my-checkbox"
             type="checkbox"
@@ -78,13 +78,13 @@ exports[`it renders a disabled Checkbox 1`] = `
     class="c0"
   >
     <label
-      class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-252 Mui-disabled"
+      class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-255 Mui-disabled"
       data-id="checkbox"
       id="my-checkbox-label"
     >
       <span
         aria-disabled="true"
-        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-268 MuiCheckbox-root AbstractSwitchBase-root-260 AbstractSwitchBase-root-261 MuiCheckbox-colorSecondary PrivateSwitchBase-disabled-270 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
+        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-272 MuiCheckbox-root AbstractSwitchBase-root-264 AbstractSwitchBase-root-265 MuiCheckbox-colorSecondary AbstractSwitch-switchComp-256 PrivateSwitchBase-disabled-274 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
         data-id="checkbox-CheckboxBase"
         tabindex="-1"
       >
@@ -93,7 +93,7 @@ exports[`it renders a disabled Checkbox 1`] = `
         >
           <input
             aria-describedby="my-checkbox-helperText"
-            class="PrivateSwitchBase-input-271"
+            class="PrivateSwitchBase-input-275"
             data-indeterminate="false"
             disabled=""
             id="my-checkbox"
@@ -145,7 +145,7 @@ exports[`it renders an unchecked Checkbox with label and helperText 1`] = `
     >
       <span
         aria-disabled="false"
-        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-17 MuiCheckbox-root AbstractSwitchBase-root-9 AbstractSwitchBase-root-10 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-18 MuiCheckbox-root AbstractSwitchBase-root-10 AbstractSwitchBase-root-11 MuiCheckbox-colorSecondary AbstractSwitch-switchComp-2 MuiIconButton-colorSecondary"
         data-id="checkbox-CheckboxBase"
       >
         <span
@@ -153,7 +153,7 @@ exports[`it renders an unchecked Checkbox with label and helperText 1`] = `
         >
           <input
             aria-describedby="my-checkbox-helperText"
-            class="PrivateSwitchBase-input-20"
+            class="PrivateSwitchBase-input-21"
             data-indeterminate="false"
             id="my-checkbox"
             type="checkbox"
@@ -182,7 +182,7 @@ exports[`it renders an unchecked Checkbox with label and helperText 1`] = `
       </span>
     </label>
     <p
-      class="MuiFormHelperText-root AbstractSwitch-formHelperText-2"
+      class="MuiFormHelperText-root AbstractSwitch-formHelperText-3"
       data-id="checkbox-helperText"
       id="my-checkbox-helperText"
     >
