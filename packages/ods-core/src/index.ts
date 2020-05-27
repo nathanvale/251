@@ -110,8 +110,11 @@ export type TextLinkRendererProps = import("./TextLinkRenderer/TextLinkRenderer"
 export { TrackingDisable } from "./TrackingDisable/TrackingDisable";
 export type TrackingDisableProps = import("./TrackingDisable/TrackingDisable").TrackingDisableProps;
 
+export { TrackedLink } from "./TrackedLink/TrackedLink";
+export type TrackedLinkProps = import("./TrackedLink/TrackedLink").TrackedLinkProps;
+
 export { TrackingProvider } from "./TrackingProvider/TrackingProvider";
 export type TrackingProviderProps = import("./TrackingProvider/TrackingProvider").TrackingProviderProps;
 
-// Themes
-export { OriginThemeProvider } from "@origin-digital/ods-themes";
+export { OriginThemeProvider } from "./OriginThemeProvider/OriginThemeProvider";
+export type OriginThemeProviderProps = import("./OriginThemeProvider/OriginThemeProvider").OriginThemeProviderProps;

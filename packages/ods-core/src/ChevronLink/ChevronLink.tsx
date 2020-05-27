@@ -9,15 +9,16 @@ import {
   ChevronLinkRenderer,
   ChevronLinkRendererProps,
 } from "../ChevronLinkRenderer/ChevronLinkRenderer";
-import { useTracking } from "../_private/hooks/tracking";
+import { TrackedLink } from "..";
 
 export interface ChevronLinkProps
   extends Omit<ChevronLinkRendererProps, "children" | "variant">,
     OptionalTrackableProps {
   variant?: ChevronVaraints;
   href: LinkComponentProps["href"];
+  target?: AnchorHTMLAttributes<HTMLAnchorElement>["target"];
   children?: React.ReactNode;
-  domProps?: Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href" | "children">;
+  domProps?: AnchorHTMLAttributes<HTMLAnchorElement>;
 }
 const defaultDataId = "chevron-link";
 const defaultVariant = "primary";
@@ -27,27 +28,23 @@ export const ChevronLink = ({
   variant = defaultVariant,
   children,
   domProps,
+  target,
   ...rest
 }: ChevronLinkProps) => {
-  const { onClickCapture, ref } = useTracking({
-    children,
-    "data-id": dataId,
-    type: ChevronLink.displayName,
-  });
   return (
     <ChevronLinkRenderer variant={variant}>
       {({ chevronLinkStyles, IconChevron }) => (
-        <a
-          {...domProps}
+        <TrackedLink
+          domProps={{ ...domProps, className: chevronLinkStyles }}
+          trackingType={ChevronLink.displayName}
+          trackingLabel={children}
           data-id={dataId}
-          ref={ref}
-          onClickCapture={onClickCapture}
+          target={target}
           {...rest}
-          className={chevronLinkStyles}
         >
           <IconChevron />
           <span>{children}</span>
-        </a>
+        </TrackedLink>
       )}
     </ChevronLinkRenderer>
   );

@@ -1,5 +1,5 @@
 import { Breakpoint, ResponsiveProp } from "@origin-digital/ods-types";
-import { normaliseObjectResponsiveProp } from "./normaliseResponsiveProp";
+import { normaliseObjectResponsiveProp } from "./normaliseObjectResponsiveProp";
 
 const breakpoints: (keyof Breakpoint)[] = ["xs", "sm", "md", "lg", "xl"];
 

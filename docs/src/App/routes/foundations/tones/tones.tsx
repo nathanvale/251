@@ -123,32 +123,34 @@ const AnchorLink = ({
   const theme = useTheme();
   const isLgUp = useMediaQuery(theme.breakpoints.up("lg"));
   return (
-    <TextLinkRenderer>
-      {({ textLinkStyles }) => (
-        <Link
-          smooth
-          to={to}
-          scroll={(el) =>
-            el.scrollIntoView({ behavior: "smooth", block: "center" })
-          }
-          className={textLinkStyles}
-        >
-          <Stack space={["none", "xxsmall"]}>
-            <Rectangle
-              backgroundColor={backgroundColor}
-              width={{
-                sm: "50px",
-                md: "50px",
-                lg: "80px",
-                xl: "80px",
-              }}
-            />
+    <Text>
+      <TextLinkRenderer>
+        {({ textLinkStyles }) => (
+          <Link
+            smooth
+            to={to}
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: "smooth", block: "center" })
+            }
+            className={textLinkStyles}
+          >
+            <Stack space={["none", "xxsmall"]}>
+              <Rectangle
+                backgroundColor={backgroundColor}
+                width={{
+                  sm: "50px",
+                  md: "50px",
+                  lg: "80px",
+                  xl: "80px",
+                }}
+              />
 
-            {isLgUp ? <Box textAlign="center">{tone}</Box> : null}
-          </Stack>
-        </Link>
-      )}
-    </TextLinkRenderer>
+              {isLgUp ? <Box textAlign="center">{tone}</Box> : null}
+            </Stack>
+          </Link>
+        )}
+      </TextLinkRenderer>
+    </Text>
   );
 };
 

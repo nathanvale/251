@@ -4,5 +4,6 @@
     "outDir": "./dist/typings",
     "rootDir": "./src"
   },
+  "exclude": ["src/**/*.test.ts?"],
   "include": ["src", "src/**/*.json", "../../globals.d.ts", "../../@types"]
 }

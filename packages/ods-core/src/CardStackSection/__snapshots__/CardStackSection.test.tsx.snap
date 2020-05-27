@@ -217,54 +217,6 @@ exports[`it renders a CardStackSection 1`] = `
   }
 }
 
-@media screen and (min-width:576px) {
-  .c4:not(:empty) ~ div:not(:empty):before {
-    margin-top: 8px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c4:not(:empty) ~ div:not(:empty):before {
-    margin-top: 8px;
-  }
-}
-
-@media screen and (min-width:992px) {
-  .c4:not(:empty) ~ div:not(:empty):before {
-    margin-top: 32px;
-  }
-}
-
-@media screen and (min-width:1200px) {
-  .c4:not(:empty) ~ div:not(:empty):before {
-    margin-top: 32px;
-  }
-}
-
-@media screen and (min-width:576px) {
-  .c4:nth-child(n + 2):before {
-    margin-top: 8px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c4:nth-child(n + 2):before {
-    margin-top: 8px;
-  }
-}
-
-@media screen and (min-width:992px) {
-  .c4:nth-child(n + 2):before {
-    margin-top: 32px;
-  }
-}
-
-@media screen and (min-width:1200px) {
-  .c4:nth-child(n + 2):before {
-    margin-top: 32px;
-  }
-}
-
 @media (min-width:576px) {
   .c1 {
     max-width: 508px;
@@ -286,6 +238,54 @@ exports[`it renders a CardStackSection 1`] = `
 @media (min-width:1200px) {
   .c1 {
     max-width: 538px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c4:not(:empty) ~ div:not(:empty):before {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4:not(:empty) ~ div:not(:empty):before {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c4:not(:empty) ~ div:not(:empty):before {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c4:not(:empty) ~ div:not(:empty):before {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c4:nth-child(n + 2):before {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4:nth-child(n + 2):before {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c4:nth-child(n + 2):before {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c4:nth-child(n + 2):before {
+    margin-top: 32px;
   }
 }
 

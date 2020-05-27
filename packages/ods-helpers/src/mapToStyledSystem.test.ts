@@ -1,7 +1,7 @@
 import { ResponsiveProp } from "@origin-digital/ods-types";
-import { normaliseResponsiveProp } from "./normaliseResponsiveProp";
+import { mapToStyledSystem } from "./mapToStyledSystem";
 
-describe("normaliseResponsiveProp", () => {
+describe("mapToStyledSystem", () => {
   const testData: [ResponsiveProp<any>, any][] = [
     [undefined, undefined],
     ["small", "small"],
@@ -22,6 +22,6 @@ describe("normaliseResponsiveProp", () => {
   ];
 
   test.each(testData)("%p returns %p", (props, expected) => {
-    expect(normaliseResponsiveProp(props)).toEqual(expected);
+    expect(mapToStyledSystem(props)).toEqual(expected);
   });
 });

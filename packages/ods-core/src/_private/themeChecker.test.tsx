@@ -1,8 +1,8 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { OriginThemeProvider } from "@origin-digital/ods-themes";
 import styled from "styled-components";
 import { themeChecker, errorMessage } from "./themeChecker";
+import { OriginThemeProvider } from "..";
 
 test("It throws an error when a component is NOT wrapped in an <OriginThemeProvider/>", () => {
   const Test = styled.div`

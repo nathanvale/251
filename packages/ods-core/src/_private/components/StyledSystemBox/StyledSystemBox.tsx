@@ -36,8 +36,7 @@ import {
   BackgroundColorProps,
   style,
 } from "styled-system";
-
-import { themeChecker } from "@origin-digital/ods-helpers";
+import { themeChecker } from "../../themeChecker";
 
 export interface StyledSystemProps
   extends DisplayProps,

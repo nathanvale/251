@@ -52,7 +52,7 @@ const Header = ({
 const SpecialSection = styled(Section as any)`
   @media (min-width: 1200px) {
     opacity: 1;
-    max-width: 960px;
+    max-width: 1020px;
   }
 `;
 

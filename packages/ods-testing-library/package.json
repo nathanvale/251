@@ -22,7 +22,7 @@
     "@testing-library/jest-dom": "^5.1.1"
   },
   "peerDependencies": {
-    "@origin-digital/ods-themes": "*",
+    "@origin-digital/ods-core": "*",
     "@testing-library/react": "9.x",
     "jest-styled-components": "6.x",
     "react": "^16.9.0"

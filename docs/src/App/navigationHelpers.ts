@@ -35,14 +35,12 @@ const componentPaths = [...getDocPaths(odsCore, "ods-core")];
 const allComponents = Object.keys(odsCore);
 
 const categorisedComponents = groupBy(
-  componentPaths
-    .filter(({ name }) => !/^(OriginThemeProvider)/.test(name))
-    .map(({ name }) => {
-      const docs: ComponentDocs = getComponentDocs({
-        componentName: name,
-      });
-      return { name, ...docs };
-    }),
+  componentPaths.map(({ name }) => {
+    const docs: ComponentDocs = getComponentDocs({
+      componentName: name,
+    });
+    return { name, ...docs };
+  }),
   (component) => component.category
 );
 

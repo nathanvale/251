@@ -4,6 +4,7 @@
     "outDir": "./dist/typings",
     "rootDir": "./src"
   },
+  "exclude": ["src/**/*.test.ts?"],
   "include": [
     "src",
     "src/**/*.json",
@@ -11,5 +12,5 @@
     "../../@types",
     "jest-setup.ts"
   ],
-  "references": [{ "path": "../ods-themes/tsconfig.json" }]
+  "references": [{ "path": "../ods-core/tsconfig.json" }]
 }

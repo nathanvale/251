@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render } from "@origin-digital/ods-testing-library";
 import styled from "styled-components";
 import { media } from "./media";
 

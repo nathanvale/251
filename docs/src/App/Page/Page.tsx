@@ -109,23 +109,25 @@ export const Page = ({
   return (
     <MaxWidthBox>
       <Stack space={["medium", "large"]}>
-        <Stack space="medium">
-          <Heading variant="h3">{title}</Heading>
-          {description ? <Text variant="body">{description}</Text> : null}
-          {!hideAnchorLinks ? (
-            <Stack space="xxsmall">
-              {sections.map((section, index) => {
-                const { title, id } = section;
-                const to = id ? `#${id}` : `#${slugify(title)}`;
-                return (
-                  <AnchorLink key={index} to={to}>
-                    {title}
-                  </AnchorLink>
-                );
-              })}
-            </Stack>
-          ) : null}
-        </Stack>
+        <Heading variant="h3">{title}</Heading>
+        {typeof description === "string" ? (
+          <Text variant="body">{description}</Text>
+        ) : description ? (
+          description
+        ) : null}
+        {!hideAnchorLinks ? (
+          <Stack space="xxsmall">
+            {sections.map((section, index) => {
+              const { title, id } = section;
+              const to = id ? `#${id}` : `#${slugify(title)}`;
+              return (
+                <AnchorLink key={index} to={to}>
+                  {title}
+                </AnchorLink>
+              );
+            })}
+          </Stack>
+        ) : null}
         <Stack space={["medium", "large"]}>
           {sections.map((section, index) => {
             const { title, description, children } = section;

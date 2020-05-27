@@ -16,7 +16,7 @@ import {
 } from "@origin-digital/ods-types";
 import * as CSS from "csstype";
 import { Omit } from "utility-types";
-import { normaliseResponsiveProp } from "@origin-digital/ods-helpers";
+import { mapToStyledSystem } from "@origin-digital/ods-helpers";
 import {
   StyledSystemProps,
   BoxShadowVariant,
@@ -216,34 +216,24 @@ export const Box = ({
   }
 
   const styledSystemProps = {
-    alignItems: normaliseResponsiveProp<AlignItemsVariants>(alignItems),
-    alignSelf: normaliseResponsiveProp<AlignItemsVariants>(alignSelf),
+    alignItems: mapToStyledSystem<AlignItemsVariants>(alignItems),
+    alignSelf: mapToStyledSystem<AlignItemsVariants>(alignSelf),
     backgroundColor,
-    display: normaliseResponsiveProp<DisplayVariants>(display),
-    flexDirection: normaliseResponsiveProp<FlexDirectionVariants>(
-      flexDirection
-    ),
-    justifyContent: normaliseResponsiveProp<JustifyContentVariants>(
-      justifyContent
-    ),
-    padding: normaliseResponsiveProp<CSS.PaddingProperty<TLength>>(padding),
-    paddingLeft: normaliseResponsiveProp<CSS.PaddingLeftProperty<TLength>>(pL),
-    paddingRight: normaliseResponsiveProp<CSS.PaddingRightProperty<TLength>>(
-      pR
-    ),
-    paddingTop: normaliseResponsiveProp<CSS.PaddingTopProperty<TLength>>(pT),
-    paddingBottom: normaliseResponsiveProp<CSS.PaddingBottomProperty<TLength>>(
-      pB
-    ),
-    position: normaliseResponsiveProp<CSS.PositionProperty>(position),
-    margin: normaliseResponsiveProp<CSS.MarginProperty<TLength>>(margin),
-    marginLeft: normaliseResponsiveProp<CSS.MarginLeftProperty<TLength>>(mL),
-    marginRight: normaliseResponsiveProp<CSS.MarginRightProperty<TLength>>(mR),
-    marginTop: normaliseResponsiveProp<CSS.MarginTopProperty<TLength>>(mT),
-    marginBottom: normaliseResponsiveProp<CSS.MarginBottomProperty<TLength>>(
-      mB
-    ),
-    textAlign: normaliseResponsiveProp<CSS.TextAlignProperty>(textAlign),
+    display: mapToStyledSystem<DisplayVariants>(display),
+    flexDirection: mapToStyledSystem<FlexDirectionVariants>(flexDirection),
+    justifyContent: mapToStyledSystem<JustifyContentVariants>(justifyContent),
+    padding: mapToStyledSystem<CSS.PaddingProperty<TLength>>(padding),
+    paddingLeft: mapToStyledSystem<CSS.PaddingLeftProperty<TLength>>(pL),
+    paddingRight: mapToStyledSystem<CSS.PaddingRightProperty<TLength>>(pR),
+    paddingTop: mapToStyledSystem<CSS.PaddingTopProperty<TLength>>(pT),
+    paddingBottom: mapToStyledSystem<CSS.PaddingBottomProperty<TLength>>(pB),
+    position: mapToStyledSystem<CSS.PositionProperty>(position),
+    margin: mapToStyledSystem<CSS.MarginProperty<TLength>>(margin),
+    marginLeft: mapToStyledSystem<CSS.MarginLeftProperty<TLength>>(mL),
+    marginRight: mapToStyledSystem<CSS.MarginRightProperty<TLength>>(mR),
+    marginTop: mapToStyledSystem<CSS.MarginTopProperty<TLength>>(mT),
+    marginBottom: mapToStyledSystem<CSS.MarginBottomProperty<TLength>>(mB),
+    textAlign: mapToStyledSystem<CSS.TextAlignProperty>(textAlign),
   };
   const element = createElement(Container, {
     ...styledSystemProps,

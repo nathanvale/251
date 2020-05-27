@@ -9,7 +9,7 @@ import {
   MinWidthProps,
 } from "styled-system";
 import { ResponsiveProp } from "@origin-digital/ods-types";
-import { normaliseResponsiveProp } from "@origin-digital/ods-helpers";
+import { mapToStyledSystem } from "@origin-digital/ods-helpers";
 import { Box, BoxProps } from "../Box/Box";
 
 type PlaceholderShapeVariant = "rectangle" | "round";
@@ -62,9 +62,9 @@ export const Placeholder = ({
       display="flex"
       alignItems="center"
       justifyContent="center"
-      width={normaliseResponsiveProp<string | number>(width)}
-      minWidth={normaliseResponsiveProp<string | number>(minWidth)}
-      height={normaliseResponsiveProp<string | number>(height)}
+      width={mapToStyledSystem<string | number>(width)}
+      minWidth={mapToStyledSystem<string | number>(minWidth)}
+      height={mapToStyledSystem<string | number>(height)}
       shape={shape}
       backgroundColor="grey200"
     >
