@@ -6,6 +6,7 @@ import Code from "../../Code/Code";
 import {
   setupTracking,
   setupReportingClient,
+  setupManualReportingClient,
 } from "../../../../../packages/ods-core/src/TrackingProvider/TrackingProvider.docs";
 import {
   example,
@@ -38,6 +39,11 @@ const TrackingGuide = () => {
       title: setupReportingClient.label,
       description: setupReportingClient.description,
       children: <Code>{setupReportingClient.codeString || ""}</Code>,
+    },
+    {
+      title: setupManualReportingClient.label,
+      description: setupManualReportingClient.description,
+      children: <Code>{setupManualReportingClient.codeString || ""}</Code>,
     },
   ];
   return (
