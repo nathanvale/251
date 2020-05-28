@@ -9,6 +9,7 @@ import {
   Card,
   Text,
   TextLink,
+  Stack,
 } from "..";
 
 export const setupTracking: ExampleDocs = {
@@ -40,7 +41,39 @@ export const setupTracking: ExampleDocs = {
 };
 
 export const setupReportingClient: ExampleDocs = {
-  label: "Hooking in the @origin-digital/reporting-client",
+  label: "Simple example using @origin-digital/reporting-client",
+  playroom: false,
+  description: (
+    <Stack space={["medium", "large"]}>
+      <Text>
+        If you only need interaction-click events you can use a function
+        `trackingProviderCaptureClick` exposed by the reporting-client package.
+      </Text>
+      <Text>
+        Note: If the component has tracking enabled, the data-id will be used as
+        part of the identifier. Interaction events have an id and can have an
+        optional parentContainer supplied. The parentContainer will be sliced
+        out of the data-id in the following format{" "}
+        <strong>parentContainer:id</strong>. If anything other than one colon is
+        present in the data-id the entire string will be considered the id.
+      </Text>
+    </Stack>
+  ),
+  codeString: `import {
+    trackingProviderCaptureClick
+} from "@origin-digital/reporting-client";
+
+const App = ()=><TrackingProvider
+  onTrackingCapture={trackingProviderCaptureClick}
+>
+  <Button data-id="trackingDemo:exampleButton">
+    I am being tracked by the @origin-digital/reporting-client!
+  </Button>
+</TrackingProvider>`,
+};
+
+export const setupManualReportingClient: ExampleDocs = {
+  label: "Custom example using @origin-digital/reporting-client",
   playroom: false,
   codeString: `import {
   interaction,
@@ -76,7 +109,11 @@ export const docs: ComponentDocs<TrackingProviderProps> = {
   migrationGuide: false,
   examples: {
     default: {},
-    additional: [setupTracking, setupReportingClient],
+    additional: [
+      setupTracking,
+      setupReportingClient,
+      setupManualReportingClient,
+    ],
   },
   snippets: [],
 };
