@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.29.3](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.29.2...@origin-digital/ods-core@0.29.3) (2020-05-29)
+
+
+### Bug Fixes
+
+* add displayName to TrackingDisable ([5735bef](https://bitbucket.orgn.io/od/origin-ui/commits/5735bef35b0a6fb902173599cffb46e99315ed94))
+
+
+
+
+
 ## [0.29.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.29.1...@origin-digital/ods-core@0.29.2) (2020-05-28)
 
 **Note:** Version bump only for package @origin-digital/ods-core

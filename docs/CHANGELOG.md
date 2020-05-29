@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.3](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.22.2...docs@0.22.3) (2020-05-29)
+
+**Note:** Version bump only for package docs
+
+
+
+
+
 ## [0.22.2](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.22.1...docs@0.22.2) (2020-05-28)
 
 **Note:** Version bump only for package docs
