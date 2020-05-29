@@ -10,3 +10,5 @@ export const TrackingDisable = ({ children }: TrackingDisableProps) => (
   // @ts-ignore
   <TrackingProvider onTrackingCapture={undefined} children={children} />
 );
+
+TrackingDisable.displayName = "TrackingDisable";
