@@ -10,6 +10,7 @@ import {
 
 export interface FormControlProps extends BaseFormStateProps {
   component?: FormGroupElements;
+  fullWidth?: boolean;
   muiProps?: MuiFormControlProps;
 }
 

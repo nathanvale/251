@@ -25,12 +25,16 @@ export const docs: ComponentDocs<FormControlProps> = {
       "this component should only have 1 input child",
     ].join(" "),
     component: ["The html element type to be used under the hood."].join(" "),
-    error: [
-      "If true will set the state of its input children to error as well.",
-      "use this to set the state of a group of checkboxes or Radios.",
-    ].join(" "),
     disabled: [
       "If true will set the state of its input children to disabled as well.",
+      "use this to set the state of a group of checkboxes or Radios.",
+    ].join(" "),
+    fullWidth: [
+      "If true the FormControl will take up the full width of its container. This value is also passed down to",
+      "the children of FormControl via FormStateContext.",
+    ].join(" "),
+    error: [
+      "If true will set the state of its input children to error as well.",
       "use this to set the state of a group of checkboxes or Radios.",
     ].join(" "),
   },

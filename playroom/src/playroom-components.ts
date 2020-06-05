@@ -22,6 +22,7 @@ export {
   FormLabel,
   Hidden,
   HeadingChevronLink,
+  InputAdornment,
   OriginThemeProvider,
   Placeholder,
   Radio,
@@ -32,10 +33,15 @@ export {
   Stack,
   Strong,
   Text,
+  TextFieldBase,
   TextLink,
   TextLinkRenderer,
   TrackingDisable,
   TrackingProvider,
 } from "@origin-digital/ods-core";
 
-export { IconCheck } from "@origin-digital/ods-icons";
+export {
+  IconCheck,
+  IconCheckCircle,
+  IconError,
+} from "@origin-digital/ods-icons";

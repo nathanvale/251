@@ -74,6 +74,9 @@ export type HeadingChevronLinkProps = import("./HeadingChevronLink/HeadingChevro
 export { Hidden } from "./Hidden/Hidden";
 export type HiddenProps = import("./Hidden/Hidden").HiddenProps;
 
+export { InputAdornment } from "./InputAdornment/InputAdornment";
+export type InputAdornmentProps = import("./InputAdornment/InputAdornment").InputAdornmentProps;
+
 export { TextLink } from "./TextLink/TextLink";
 export type TextLinkProps = import("./TextLink/TextLink").TextLinkProps;
 
@@ -103,6 +106,9 @@ export type StrongProps = import("./Strong/Strong").StrongProps;
 
 export { Text } from "./Text/Text";
 export type TextProps = import("./Text/Text").TextProps;
+
+export { TextFieldBase } from "./TextFieldBase/TextFieldBase";
+export type TextFieldBaseProps = import("./TextFieldBase/TextFieldBase").TextFieldBaseProps;
 
 export { TextLinkRenderer } from "./TextLinkRenderer/TextLinkRenderer";
 export type TextLinkRendererProps = import("./TextLinkRenderer/TextLinkRenderer").TextLinkRendererProps;

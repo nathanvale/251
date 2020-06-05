@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextFieldBase variant filled should render a filled textFieldBase 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textfield-base-root-1 MuiFormControl-fullWidth"
+    data-id="text-field"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled"
+      data-id="text-field-label"
+      data-shrink="false"
+      for="text-field"
+      id="text-field-label"
+    >
+      The title
+    </label>
+    <div
+      class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl"
+    >
+      <input
+        aria-describedby="text-field-helper-text"
+        aria-invalid="false"
+        autocomplete="false"
+        class="MuiInputBase-input MuiFilledInput-input"
+        data-id="text-field-input"
+        id="text-field"
+        type="text"
+        value=""
+      />
+    </div>
+    <p
+      class="MuiFormHelperText-root MuiFormHelperText-contained"
+      data-id="text-field-helper-text"
+      id="text-field-helper-text"
+    >
+      This is the info
+    </p>
+  </div>
+</div>
+`;
+
+exports[`TextFieldBase variant filled should render a filled textFieldBase with compact size 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textfield-base-root-69 MuiFormControl-fullWidth"
+    data-id="text-field"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-filled"
+      data-id="text-field-label"
+      data-shrink="false"
+      for="text-field"
+      id="text-field-label"
+    >
+      The title
+    </label>
+    <div
+      class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-marginDense MuiFilledInput-marginDense"
+    >
+      <input
+        aria-describedby="text-field-helper-text"
+        aria-invalid="false"
+        autocomplete="false"
+        class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputMarginDense MuiFilledInput-inputMarginDense"
+        data-id="text-field-input"
+        id="text-field"
+        type="text"
+        value=""
+      />
+    </div>
+    <p
+      class="MuiFormHelperText-root MuiFormHelperText-contained MuiFormHelperText-marginDense"
+      data-id="text-field-helper-text"
+      id="text-field-helper-text"
+    >
+      This is the info
+    </p>
+  </div>
+</div>
+`;
+
+exports[`TextFieldBase variant outlined should render a outlined textFieldBase 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textfield-base-root-273 MuiFormControl-fullWidth"
+    data-id="text-field"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+      data-id="text-field-label"
+      data-shrink="false"
+      for="text-field"
+      id="text-field-label"
+    >
+      The title
+    </label>
+    <div
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+    >
+      <input
+        aria-describedby="text-field-helper-text"
+        aria-invalid="false"
+        autocomplete="false"
+        class="MuiInputBase-input MuiOutlinedInput-input"
+        data-id="text-field-input"
+        id="text-field"
+        type="text"
+        value=""
+      />
+      <fieldset
+        aria-hidden="true"
+        class="PrivateNotchedOutline-root-332 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="PrivateNotchedOutline-legendLabelled-334"
+        >
+          <span>
+            The title
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+    <p
+      class="MuiFormHelperText-root MuiFormHelperText-contained"
+      data-id="text-field-helper-text"
+      id="text-field-helper-text"
+    >
+      This is the info
+    </p>
+  </div>
+</div>
+`;
+
+exports[`TextFieldBase variant outlined should render a outlined textFieldBase with compact size 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textfield-base-root-344 MuiFormControl-fullWidth"
+    data-id="text-field"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined"
+      data-id="text-field-label"
+      data-shrink="false"
+      for="text-field"
+      id="text-field-label"
+    >
+      The title
+    </label>
+    <div
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"
+    >
+      <input
+        aria-describedby="text-field-helper-text"
+        aria-invalid="false"
+        autocomplete="false"
+        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+        data-id="text-field-input"
+        id="text-field"
+        type="text"
+        value=""
+      />
+      <fieldset
+        aria-hidden="true"
+        class="PrivateNotchedOutline-root-403 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="PrivateNotchedOutline-legendLabelled-405"
+        >
+          <span>
+            The title
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+    <p
+      class="MuiFormHelperText-root MuiFormHelperText-contained MuiFormHelperText-marginDense"
+      data-id="text-field-helper-text"
+      id="text-field-helper-text"
+    >
+      This is the info
+    </p>
+  </div>
+</div>
+`;
+
+exports[`it renders a filled textFieldBase by default 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textfield-base-root-557 MuiFormControl-fullWidth"
+    data-id="text-field"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled"
+      data-id="text-field-label"
+      data-shrink="false"
+      for="text-field"
+      id="text-field-label"
+    >
+      The title
+    </label>
+    <div
+      class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl"
+    >
+      <input
+        aria-describedby="text-field-helper-text"
+        aria-invalid="false"
+        autocomplete="false"
+        class="MuiInputBase-input MuiFilledInput-input"
+        data-id="text-field-input"
+        id="text-field"
+        type="text"
+        value=""
+      />
+    </div>
+    <p
+      class="MuiFormHelperText-root MuiFormHelperText-contained"
+      data-id="text-field-helper-text"
+      id="text-field-helper-text"
+    >
+      This is the info
+    </p>
+  </div>
+</div>
+`;
