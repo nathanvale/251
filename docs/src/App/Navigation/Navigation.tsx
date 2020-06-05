@@ -1,5 +1,4 @@
-import React, { useState, useRef, ReactNode, forwardRef } from "react";
-import { useScrollPosition } from "@n8tb1t/use-scroll-position";
+import React, { useState, ReactNode, forwardRef } from "react";
 import { Box, BoxProps, Hidden, Section } from "@origin-digital/ods-core";
 import styled, { css } from "styled-components";
 import MenuButton from "react-hamburger-menu";
@@ -12,7 +11,6 @@ import {
   headerHeight,
   menuWidth,
 } from "./navigationSizes";
-import { useIsolatedScroll } from "./useIsolatedScroll";
 
 export const pageOverlay = 300;
 const Header = ({
@@ -127,14 +125,14 @@ const SubNavigationContainer = styled(FixedContentBlock)<
   ${(p) => hideOnMobileWhenClosed({ isMenuOpen: p.isMenuOpen })}
 `;
 
-const StickyHeader = styled(FixedContentBlock)<{ showStickyHeader: boolean }>`
+const StickyHeader = styled(FixedContentBlock)`
   outline: none;
   top: 0;
   left: 0;
   right: 0;
   box-shadow: 0 2px 4px 0 rgba(28, 28, 28, 0.1),
     0 2px 2px -2px rgba(28, 28, 28, 0.1), 0 4px 4px -4px rgba(28, 28, 28, 0.2);
-  ${(p) => (!p.showStickyHeader ? `opacity: 0;` : `opacity: 1;`)}
+  opacity: 0;
 `;
 
 const PageContent = styled(Box)<{ isMenuOpen: boolean }>`
@@ -149,23 +147,8 @@ interface NavigationProps {
 
 export const Navigation = ({ children }: NavigationProps) => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [showStickyHeader, setShowStickyHeader] = useState(false);
-
-  useScrollPosition(
-    ({ prevPos, currPos }) => {
-      const direction = currPos.y > prevPos.y ? "down" : "up";
-      const showStickyHeader = currPos.y > 300 && direction === "up";
-      setShowStickyHeader(showStickyHeader);
-    },
-    [setShowStickyHeader],
-    undefined,
-    true
-  );
 
   useScrollLock(isMenuOpen);
-
-  const menuRef = useRef<HTMLElement | null>(null);
-  useIsolatedScroll(menuRef.current);
 
   return (
     <SpecialSection
@@ -184,7 +167,6 @@ export const Navigation = ({ children }: NavigationProps) => {
 
         <SubNavigationContainer
           data-id="subnavigation-container"
-          innerRef={menuRef}
           overflow="scroll"
           paddingY="small"
           paddingX={gutterSize}
@@ -238,10 +220,9 @@ export const Navigation = ({ children }: NavigationProps) => {
             lg: "none",
             xl: "none",
           }}
-          pointerEvents={showStickyHeader ? undefined : "none"}
+          pointerEvents="none"
           tabIndex={-1}
           aria-hidden={true}
-          showStickyHeader={showStickyHeader}
         >
           <Header
             menuOpen={isMenuOpen}

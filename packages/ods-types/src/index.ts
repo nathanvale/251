@@ -10,7 +10,7 @@ export interface ChevronContainerProps {
   children: React.ReactNode;
 }
 export interface IconProps extends React.SVGProps<SVGSVGElement> {
-  color?: ColorVariants;
+  color?: string; //ColorVariants;
   width?: number | string;
   height?: number | string;
 }
@@ -258,11 +258,10 @@ export interface ComponentBaseProps extends OptionalTrackableProps {
   id?: string;
 }
 
-export type InputValueType = string | number | string[];
+export type InputValueType = string | number;
 
 export interface BaseFormStateProps extends ComponentBaseProps {
   error?: boolean;
-  required?: boolean;
   focused?: boolean;
 }
 
@@ -275,7 +274,7 @@ export interface BaseInputProps extends BaseFormStateProps {
   name?: string;
   onChange?: (
     event: React.ChangeEvent<HTMLInputElement>,
-    value: string
+    value?: string
   ) => void;
   value?: InputValueType;
 }
@@ -318,3 +317,5 @@ export type ButtonSize = "small" | "medium";
 export type ButtonColor = "primary" | "secondary";
 export type ButtonElements = "button" | "a" | "input";
 export type InputType = "button" | "submit" | "reset";
+
+export type TextFieldVariant = "filled" | "outlined";
