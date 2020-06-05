@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.23.0](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.22.3...docs@0.23.0) (2020-06-05)
+
+
+### Features
+
+* **textfieldbase:** create a base for several field components ([25a4b90](https://bitbucket.orgn.io/od/origin-ui/commits/25a4b901c75689a80eaf29e116e55e6c5b0c6991))
+
+
+
+
+
 ## [0.22.3](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.22.2...docs@0.22.3) (2020-05-29)
 
 **Note:** Version bump only for package docs

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.9.0...@origin-digital/ods-icons@0.10.0) (2020-06-05)
+
+
+### Features
+
+* **textfieldbase:** create a base for several field components ([25a4b90](https://bitbucket.orgn.io/od/origin-ui/commits/25a4b901c75689a80eaf29e116e55e6c5b0c6991))
+
+
+
+
+
 # [0.9.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.8.3...@origin-digital/ods-icons@0.9.0) (2020-05-27)
 
 
