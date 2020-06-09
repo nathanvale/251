@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.24.1](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.24.0...docs@0.24.1) (2020-06-09)
+
+
+### Bug Fixes
+
+* **button:** make label styles most specific ([7eacf79](https://bitbucket.orgn.io/od/origin-ui/commits/7eacf79928bfab42bbe224f082115312e5e179bb))
+
+
+
+
+
 # [0.24.0](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.23.0...docs@0.24.0) (2020-06-09)
 
 

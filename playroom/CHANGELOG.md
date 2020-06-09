@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.1](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.18.0...playroom@0.18.1) (2020-06-09)
+
+
+### Bug Fixes
+
+* **button:** make label styles most specific ([7eacf79](https://bitbucket.orgn.io/od/origin-ui/commits/7eacf79928bfab42bbe224f082115312e5e179bb))
+
+
+
+
+
 # [0.18.0](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.17.0...playroom@0.18.0) (2020-06-09)
 
 
