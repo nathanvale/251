@@ -23,6 +23,12 @@
     -->
     <title>Origin UI Design System</title>
 
+    <!--
+      Added lines 64-66 to match global resets of TAL, though in general it is
+      a bad reset, it allows us to test that our components have well-isolated
+      styling.
+    -->
+
     <style>
       html {
         background-color: #f1f1f1;
@@ -58,6 +64,10 @@
         src: url(./fonts/gordita/gorditabold-webfont.woff2) format("woff");
         font-weight: 700;
         font-style: normal;
+      }
+
+      body, h1, h2, h3, span {
+        font-weight: normal;
       }
     </style>
     <base href="%PUBLIC_URL%/" />
