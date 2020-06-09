@@ -7,11 +7,11 @@ import clsx from "clsx";
 import { IconChevronRight } from "@origin-digital/ods-icons";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import { useTheme } from "@material-ui/core/styles";
-import { TextContext } from "../Text/TextContext";
 import {
   useLinkResetStyles,
   getTypographyForVariant,
-} from "../_private/hooks/typography";
+} from "@origin-digital/ods-typography";
+import { TextContext } from "../Text/TextContext";
 import { HeadingContext } from "../Heading/HeadingContext";
 import { Box } from "../Box/Box";
 

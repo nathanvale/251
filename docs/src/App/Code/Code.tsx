@@ -85,7 +85,12 @@ export default ({ playroom = true, children }: CodeProps) => {
           </Text>
         </Box>
       </Stack>
-      <Box display="flex" justifyContent="flex-end" padding="small">
+      <Box
+        display="flex"
+        justifyContent="flex-end"
+        paddingTop="small"
+        paddingX="small"
+      >
         <Text variant="body-small">
           <TextLinkRenderer>
             {({ textLinkStyles }) => (

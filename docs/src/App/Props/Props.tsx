@@ -4,6 +4,7 @@ import React, { FC } from "react";
 import partition from "lodash/partition";
 import mapValues from "lodash/mapValues";
 import isEmpty from "lodash/isEmpty";
+import sortBy from "lodash/sortBy";
 import * as Core from "@origin-digital/ods-core";
 import styled from "styled-components";
 import { maxWidth, MaxWidthProps } from "styled-system";
@@ -106,10 +107,13 @@ export function Props<T = {}>({
   }
   const { props } = docs[componentName];
 
-  const [requiredProps, optionalProps] = partition(
+  let [requiredProps, optionalProps] = partition(
     props,
     (prop) => prop.required
   );
+
+  requiredProps = sortBy(requiredProps, (obj) => obj.propName);
+  optionalProps = sortBy(optionalProps, (obj) => obj.propName);
 
   propDescriptions = updateDescForMuiProps(optionalProps, propDescriptions);
 
@@ -167,6 +171,9 @@ export function Props<T = {}>({
                       specialOptionalProps={specialOptionalProps}
                     />
                   </>
+                )}
+                {variant === "table" && requiredProps.length > 0 && (
+                  <Text variant="caption">* Required Property</Text>
                 )}
               </Stack>
             )}

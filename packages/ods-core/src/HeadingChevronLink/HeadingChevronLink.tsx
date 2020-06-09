@@ -1,19 +1,11 @@
-import React, { AnchorHTMLAttributes } from "react";
-import {
-  OptionalTrackableProps,
-  LinkComponentProps,
-} from "@origin-digital/ods-types";
+import React from "react";
+import { LinkBaseProps } from "@origin-digital/ods-types";
 import { Heading } from "../Heading/Heading";
 import { ChevronLinkRenderer } from "../ChevronLinkRenderer/ChevronLinkRenderer";
 import { Box } from "../Box/Box";
 import { TrackedLink } from "..";
 
-export interface HeadingChevronLinkProps extends OptionalTrackableProps {
-  href: LinkComponentProps["href"];
-  target?: AnchorHTMLAttributes<HTMLAnchorElement>["target"];
-  children?: React.ReactNode;
-  domProps?: AnchorHTMLAttributes<HTMLAnchorElement>;
-}
+export interface HeadingChevronLinkProps extends LinkBaseProps {}
 const defaultDataId = "heading-chevron-link";
 export const HeadingChevronLink = ({
   "data-id": dataId = defaultDataId,

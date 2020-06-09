@@ -1,20 +1,13 @@
-import React, { AnchorHTMLAttributes } from "react";
-import {
-  LinkComponentProps,
-  OptionalTrackableProps,
-} from "@origin-digital/ods-types";
+import React from "react";
+import { LinkBaseProps } from "@origin-digital/ods-types";
 import { useLinkComponent } from "../OriginThemeProvider/OriginThemeProvider";
 import { useTracking } from "../_private/hooks/tracking";
 
 const defaultDataId = "tracked-link";
 
-export interface TrackedLinkProps extends OptionalTrackableProps {
+export interface TrackedLinkProps extends LinkBaseProps {
   trackingLabel: React.ReactNode;
   trackingType: string;
-  href: LinkComponentProps["href"];
-  target?: AnchorHTMLAttributes<HTMLAnchorElement>["target"];
-  children?: React.ReactNode;
-  domProps?: AnchorHTMLAttributes<HTMLAnchorElement>;
 }
 
 export const TrackedLink = ({
@@ -23,7 +16,7 @@ export const TrackedLink = ({
   trackingType,
   children,
   domProps,
-  ...props
+  ...rest
 }: TrackedLinkProps) => {
   const { onClickCapture, ref } = useTracking({
     children: trackingLabel,
@@ -38,7 +31,7 @@ export const TrackedLink = ({
       ref={ref}
       data-id={dataId}
       onClickCapture={onClickCapture}
-      {...props}
+      {...rest}
     >
       {children}
     </LinkComponent>

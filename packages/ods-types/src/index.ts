@@ -250,6 +250,14 @@ export interface LinkComponentProps
   ref?: React.RefObject<any>;
 }
 
+export interface LinkBaseProps extends OptionalTrackableProps {
+  href: LinkComponentProps["href"];
+  target?: AnchorHTMLAttributes<HTMLAnchorElement>["target"];
+  onClick?: AnchorHTMLAttributes<HTMLAnchorElement>["onClick"];
+  children?: React.ReactNode;
+  domProps?: AnchorHTMLAttributes<HTMLAnchorElement>;
+}
+
 export interface ComponentBaseProps extends OptionalTrackableProps {
   children?: React.ReactNode;
   className?: string;

@@ -112,7 +112,7 @@ export const PropTableView = ({
   specialRequiredProps = [],
   specialOptionalProps = [],
 }: PropListViewProps) => (
-  <Stack space="xxsmall" dividers>
+  <Stack space="xsmall" dividers>
     {requiredProps.map(({ propName, type }) => {
       return (
         <Props

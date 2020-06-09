@@ -1,9 +1,9 @@
 {
-  "name": "@origin-digital/ods-core",
-  "description": "Origin digital design system",
+  "name": "@origin-digital/ods-typography",
+  "description": "Typography hooks for ODS components",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
-  "version": "0.30.0",
+  "version": "0.0.0",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "files": [
@@ -19,23 +19,10 @@
   "dependencies": {
     "@babel/runtime-corejs3": "^7.8.3",
     "@material-ui/core": "^4.9.3",
-    "@material-ui/icons": "^4.9.1",
-    "@material-ui/system": "^4.9.10",
-    "@origin-digital/ods-devtools": "^0.5.0",
-    "@origin-digital/ods-helpers": "^0.7.2",
-    "@origin-digital/ods-icons": "^0.10.0",
-    "@origin-digital/ods-themes": "^0.15.2",
-    "@origin-digital/ods-types": "^0.22.0",
-    "@origin-digital/ods-typography": "*",
-    "clsx": "^1.1.0",
-    "csstype": "^2.6.4",
-    "polished": "^3.4.2",
-    "styled-system": "4.2.3",
-    "utility-types": "^3.7.0"
+    "@origin-digital/ods-types": "*"
   },
   "peerDependencies": {
-    "react": "^16.9.0",
-    "styled-components": "3.4.5"
+    "react": "^16.9.0"
   },
   "publishConfig": {
     "registry": "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-internal/"

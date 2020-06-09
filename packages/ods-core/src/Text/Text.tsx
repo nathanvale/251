@@ -7,13 +7,16 @@ import {
   TypographyWeightVariants,
 } from "@origin-digital/ods-types";
 import {
-  useTruncatedContent,
-  useCheckTypographyBackground,
   useBasekickStyles,
   useToneStyles,
   useWeightStyles,
   useStrongStyles,
-} from "../_private/hooks/typography";
+} from "@origin-digital/ods-typography";
+import {
+  useCheckTypographyBackground,
+  useTruncatedContent,
+} from "../_private/hooks";
+
 import { TextContext } from "./TextContext";
 
 export interface UseTextProps {
@@ -76,7 +79,11 @@ export const Text = (props: TextProps) => {
 
   const className = useTextStyles({ weight, tone, variant });
 
-  const content = useTruncatedContent({ children, truncate, display: "span" });
+  const content = useTruncatedContent({
+    children,
+    truncate,
+    display: "inline",
+  });
 
   return (
     <TextContext.Provider value={textContextValue}>

@@ -130,7 +130,6 @@ const Home = () => {
   ];
   return (
     <Page
-      isHomePage
       title="Origin Design System"
       description={
         <TextStack>

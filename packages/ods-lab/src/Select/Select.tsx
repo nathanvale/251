@@ -1,6 +1,7 @@
 import * as React from "react";
 import MuiSelect, { SelectProps as ISelect } from "@material-ui/core/Select";
-import { MenuItem, FormControl, InputLabel, FormHelperText } from "..";
+import { FormControl, FormHelperText } from "@origin-digital/ods-core";
+import { MenuItem, InputLabel } from "..";
 
 interface ISelectProps extends ISelect {
   label: string;
@@ -30,7 +31,7 @@ export const Select = (props: SelectProps) => {
     ...other
   } = props;
   return (
-    <FormControl fullWidth={fullWidth} required={required}>
+    <FormControl muiProps={{ fullWidth }}>
       <InputLabel id={label} error={error}>
         {label}
       </InputLabel>
@@ -55,7 +56,11 @@ export const Select = (props: SelectProps) => {
           </MenuItem>
         ))}
       </MuiSelect>
-      {helpText && <FormHelperText error={error}>{helpText}</FormHelperText>}
+      {helpText && (
+        <FormHelperText id="select-helper-text" error={error}>
+          {helpText}
+        </FormHelperText>
+      )}
     </FormControl>
   );
 };
