@@ -107,6 +107,8 @@ const getCommonStyleRules = (theme: Theme) => ({
     fullWidth?: ResponsiveProp<boolean>;
   }) => {
     const fullWidthStyles = getFullWidthStyles(theme, fullWidth);
+
+    //Handle padding for different button sizes and whether there is an icon or not.
     let [pt, pr, pb, pl] = [12, 24, 12, 24];
     if (size === "small" && hasIcon) {
       [pt, pr, pb, pl] = [12, 12, 12, 8];
@@ -116,9 +118,19 @@ const getCommonStyleRules = (theme: Theme) => ({
       [pt, pr, pb, pl] = [12, 20, 12, 16];
     }
 
+    // Outline has a border, so we need to subtract 1 pixel off each padding to have overall width of the button the same
+    // as contained and text variants.
     if (variant === "outlined") {
       [pt, pr, pb, pl] = [pt - 1, pr - 1, pb - 1, pl - 1];
     }
+
+    // Make sure we provide a specific CSS selector for the button label so that global resets do not override it.
+    // Refer to https://origindd.atlassian.net/browse/ODS-221 for details.
+    const buttonTypography = {
+      "& > span.MuiButton-label": {
+        fontWeight: theme.typography.button.fontWeight,
+      },
+    };
 
     if (noTextPadding && variant === "text") {
       return {
@@ -126,12 +138,14 @@ const getCommonStyleRules = (theme: Theme) => ({
         marginLeft: `-${pl}px`,
         marginTop: `-${pb}px`,
         ...fullWidthStyles,
+        ...buttonTypography,
       };
     }
 
     return {
       padding: `${pt}px ${pr}px ${pb}px ${pl}px`,
       ...fullWidthStyles,
+      ...buttonTypography,
     };
   },
   sizeSmall: {

@@ -7,6 +7,9 @@ import gorditaRegular from "./fonts/gordita/gorditaregular-webfont.woff2";
 import gorditaMedium from "./fonts/gordita/gorditamedium-webfont.woff2";
 import gorditaBold from "./fonts/gordita/gorditabold-webfont.woff2";
 
+// Added font-weight reset to match TAL resets. Though this is a bad reset, it allows us to make sure our components
+// are conflict-proof against any containing environment (lines 54-56).
+
 // eslint-disable-next-line babel/no-unused-expressions
 injectGlobal`
       html {
@@ -46,6 +49,10 @@ injectGlobal`
           format('woff');
         font-weight: 700;
         font-style: normal;
+      }
+
+      body, h1, h2, h3, span {
+        font-weight: normal;
       }
 `;
 
