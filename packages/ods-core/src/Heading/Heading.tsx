@@ -9,13 +9,16 @@ import {
 } from "@origin-digital/ods-types";
 import clsx from "clsx";
 import {
-  useTruncatedContent,
-  useCheckTypographyBackground,
   useBasekickStyles,
   useToneStyles,
   useStrongStyles,
   useWeightStyles,
-} from "../_private/hooks/typography";
+} from "@origin-digital/ods-typography";
+import {
+  useTruncatedContent,
+  useCheckTypographyBackground,
+} from "../_private/hooks";
+
 import { Text } from "../Text/Text";
 import { HeadingContext } from "./HeadingContext";
 

@@ -40,6 +40,8 @@ export {
   TrackingProvider,
 } from "@origin-digital/ods-core";
 
+export { Breadcrumbs, Breadcrumb } from "@origin-digital/ods-lab";
+
 export {
   IconCheck,
   IconCheckCircle,

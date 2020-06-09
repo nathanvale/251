@@ -981,6 +981,29 @@ exports[`Box 1`] = `
 }
 `;
 
+exports[`Breadcrumb 1`] = `
+{
+  active?: boolean
+  children?: ReactNode
+  data-id?: string
+  domProps?: AnchorHTMLAttributes<HTMLAnchorElement> | undefined
+  href: string
+  onClick?: (event: MouseEvent<HTMLAnchorElement, MouseEvent>) => void
+  target?: string
+}
+`;
+
+exports[`Breadcrumbs 1`] = `
+{
+  aria-label?: string
+  children: 
+    | ReactElement<BreadcrumbProps, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>
+    | ReactElement<BreadcrumbProps, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>[]
+  data-id?: string
+  muiProps?: OverrideProps<BreadcrumbsTypeMap<{}, "nav">, "nav"> | undefined
+}
+`;
+
 exports[`Button 1`] = `
 {
   buttonRef?: 
@@ -1154,7 +1177,7 @@ exports[`ChevronButton 1`] = `
 {
   children?: ReactNode
   data-id?: string
-  domProps?: Pick<AllHTMLAttributes<HTMLButtonElement>, "width" | "height" | "suppressContentEditableWarning" | "suppressHydrationWarning" | ... 351 more ... | "onTransitionEndCapture"> | undefined
+  domProps?: Pick<AllHTMLAttributes<HTMLButtonElement>, "aria-label" | "cite" | "data" | "form" | "label" | "span" | "style" | "summary" | "title" | ... 346 more ... | "wrap"> | undefined
   onClick?: (event: MouseEvent<HTMLButtonElement, MouseEvent>) => void
   type?: 
     | "button"
@@ -1172,6 +1195,7 @@ exports[`ChevronLink 1`] = `
   data-id?: string
   domProps?: AnchorHTMLAttributes<HTMLAnchorElement> | undefined
   href: string
+  onClick?: (event: MouseEvent<HTMLAnchorElement, MouseEvent>) => void
   target?: string
   variant?: 
     | "primary"
@@ -1391,6 +1415,7 @@ exports[`HeadingChevronLink 1`] = `
   data-id?: string
   domProps?: AnchorHTMLAttributes<HTMLAnchorElement> | undefined
   href: string
+  onClick?: (event: MouseEvent<HTMLAnchorElement, MouseEvent>) => void
   target?: string
 }
 `;
@@ -1591,7 +1616,7 @@ exports[`OriginThemeProvider 1`] = `
     spacing: {
     }
     transitions: {
-      create: (props: string | string[], options?: Partial<{ duration: string | number; easing: string; delay: string | number; }> | undefined) => string
+      create: (props: string | string[], options?: Partial<{ duration: ReactText; easing: string; delay: ReactText; }> | undefined) => string
       duration: {
         complex: number
         enteringScreen: number
@@ -2206,6 +2231,7 @@ exports[`TextLink 1`] = `
   data-id?: string
   domProps?: AnchorHTMLAttributes<HTMLAnchorElement> | undefined
   href: string
+  onClick?: (event: MouseEvent<HTMLAnchorElement, MouseEvent>) => void
   target?: string
 }
 `;
@@ -2222,6 +2248,7 @@ exports[`TrackedLink 1`] = `
   data-id?: string
   domProps?: AnchorHTMLAttributes<HTMLAnchorElement> | undefined
   href: string
+  onClick?: (event: MouseEvent<HTMLAnchorElement, MouseEvent>) => void
   target?: string
   trackingLabel: ReactNode
   trackingType: string

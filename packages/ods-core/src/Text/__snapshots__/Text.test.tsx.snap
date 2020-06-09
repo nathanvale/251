@@ -171,6 +171,18 @@ exports[`It can render body text truncated 1`] = `
   vertical-align: baseline;
 }
 
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline;
+  overflow: hidden;
+}
+
 .c1 {
   margin: 0;
   padding: 0;
@@ -191,7 +203,9 @@ exports[`It can render body text truncated 1`] = `
     data-id="text"
   >
     <div
-      class="MuiBox-root MuiBox-root-72 typography-truncate-70"
+      class="typography-truncate-70 c2"
+      display="inline"
+      overflow="hidden"
     >
       Truncated text
     </div>

@@ -8,12 +8,12 @@ import {
   HeadingProps,
   TextLinkRenderer,
 } from "@origin-digital/ods-core";
+import WarningSharpIcon from "@material-ui/icons/WarningSharp";
 
 import styled from "styled-components";
 import { HashLink as Link } from "react-router-hash-link";
 import { slugify } from "@origin-digital/ods-helpers";
 import { TextStack } from "../TextStack/TextStack";
-import { MaxWidthBox } from "../MaxWidthBox/MaxWidthBox";
 import { propsTitle } from "../ComponentDoc/ComponentDoc";
 
 export interface PageSection {
@@ -21,12 +21,12 @@ export interface PageSection {
   description?: React.ReactNode;
   id?: string;
   children?: React.ReactNode;
+  isLab?: boolean;
 }
 export interface PageProps {
   title: string;
   description?: React.ReactNode;
   sections?: PageSection[];
-  isHomePage?: boolean;
   hideAnchorLinks?: boolean;
 }
 
@@ -51,7 +51,9 @@ const AnchorLink = ({ children, to }: any) => {
   );
 };
 
-const LinkableHeadingContainer = styled(Box)``;
+const LinkableHeadingContainer = styled(Box)`
+  cursor: pointer;
+`;
 const HashAnchor = styled(Box)`
   margintop: -40px;
 `;
@@ -64,7 +66,7 @@ const HashLink = styled(Box)`
 
 interface LinkableHeadingProps {
   variant?: HeadingProps["variant"];
-  children: string;
+  children: React.ReactNode;
   slug: string;
 }
 
@@ -74,26 +76,29 @@ const LinkableHeading = ({
   slug,
 }: LinkableHeadingProps) => {
   return (
-    <LinkableHeadingContainer>
+    <LinkableHeadingContainer display="flex">
       <HashAnchor position="absolute" />
       <Heading variant={variant}>
-        {children}{" "}
-        <HashLink component="span" transition="fast">
-          <TextLinkRenderer>
-            {({ textLinkStyles }) => (
-              <Link
-                smooth
-                to={`#${slug}`}
-                scroll={(el) =>
-                  el.scrollIntoView({ behavior: "smooth", block: "center" })
-                }
-                className={textLinkStyles}
-              >
-                #
-              </Link>
-            )}
-          </TextLinkRenderer>
-        </HashLink>
+        <Box display="flex">
+          {children}
+          <Box paddingRight="xxsmall" />
+          <HashLink component="span" transition="fast">
+            <TextLinkRenderer>
+              {({ textLinkStyles }) => (
+                <Link
+                  smooth
+                  to={`#${slug}`}
+                  scroll={(el) =>
+                    el.scrollIntoView({ behavior: "smooth", block: "center" })
+                  }
+                  className={textLinkStyles}
+                >
+                  #
+                </Link>
+              )}
+            </TextLinkRenderer>
+          </HashLink>
+        </Box>
       </Heading>
     </LinkableHeadingContainer>
   );
@@ -103,54 +108,52 @@ export const Page = ({
   description,
   title,
   sections = [],
-  isHomePage,
   hideAnchorLinks,
 }: PageProps) => {
   return (
-    <MaxWidthBox>
-      <Stack space={["medium", "large"]}>
-        <Heading variant="h3">{title}</Heading>
-        {typeof description === "string" ? (
-          <Text variant="body">{description}</Text>
-        ) : description ? (
-          description
-        ) : null}
-        {!hideAnchorLinks ? (
-          <Stack space="xxsmall">
-            {sections.map((section, index) => {
-              const { title, id } = section;
-              const to = id ? `#${id}` : `#${slugify(title)}`;
-              return (
-                <AnchorLink key={index} to={to}>
-                  {title}
-                </AnchorLink>
-              );
-            })}
-          </Stack>
-        ) : null}
-        <Stack space={["medium", "large"]}>
+    <TextStack space={["medium", "large"]}>
+      <Heading variant="h3">{title}</Heading>
+      {typeof description === "string" ? (
+        <Text variant="body">{description}</Text>
+      ) : description ? (
+        description
+      ) : null}
+      {!hideAnchorLinks ? (
+        <Stack space="xxsmall">
           {sections.map((section, index) => {
-            const { title, description, children } = section;
-            const slug = slugify(title);
+            const { title, id } = section;
+            const to = id ? `#${id}` : `#${slugify(title)}`;
             return (
-              <div id={slug} key={index}>
-                <TextStack>
-                  {title && title !== propsTitle ? (
-                    <LinkableHeading
-                      slug={slug}
-                      variant={isHomePage ? "h4" : "h4"}
-                    >
-                      {title}
-                    </LinkableHeading>
-                  ) : null}
-                  {description ? <Text>{description}</Text> : null}
-                  {children}
-                </TextStack>
-              </div>
+              <AnchorLink key={index} to={to}>
+                {title}
+              </AnchorLink>
             );
           })}
         </Stack>
-      </Stack>
-    </MaxWidthBox>
+      ) : null}
+
+      {sections.map((section, index) => {
+        const { title, description, children, isLab } = section;
+        const slug = slugify(title);
+        return (
+          <div id={slug} key={index}>
+            <TextStack>
+              {title && title !== propsTitle ? (
+                <LinkableHeading slug={slug}>
+                  {isLab ? (
+                    <WarningSharpIcon style={{ color: "#ffb432" }} />
+                  ) : null}
+                  <Box paddingRight="xxsmall" />
+                  {title}
+                </LinkableHeading>
+              ) : null}
+
+              {description ? <Text>{description}</Text> : null}
+              {children}
+            </TextStack>
+          </div>
+        );
+      })}
+    </TextStack>
   );
 };

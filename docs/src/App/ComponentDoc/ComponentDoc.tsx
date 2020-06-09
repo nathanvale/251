@@ -18,6 +18,7 @@ import { useConfig } from "../ConfigContext";
 import { Props } from "../Props/Props";
 import { Page, PageSection } from "../Page/Page";
 import { firstLetterUpper } from "../utils";
+import { getComponentPackage } from "../navigationHelpers";
 
 export const propsTitle = "Component props";
 
@@ -38,6 +39,7 @@ export const ComponentDoc = ({
   const componentFolder = `lib/components/${
     subfolder ? `${subfolder}/` : ""
   }${componentName}`;
+  const packageName = getComponentPackage(componentName);
   const examples = docs.examples || [];
 
   const sourceUrl = `${sourceUrlPrefix}/${componentFolder}`;
@@ -135,6 +137,24 @@ export const ComponentDoc = ({
       }),
     });
   }
+
+  sections.unshift({
+    title: "Usage",
+    isLab: packageName === "ods-lab",
+    description:
+      packageName === "ods-lab" ? (
+        <Text>
+          {componentName} is currently an experimental component in the{" "}
+          <code>@origin-digital/ods-lab</code> package. Please be aware
+          experimental lab components have an API that is subject to change.
+        </Text>
+      ) : (
+        ""
+      ),
+    children: (
+      <Code>{`import {${componentName}} from "@origin-digital/${packageName}"`}</Code>
+    ),
+  });
 
   return (
     <Page

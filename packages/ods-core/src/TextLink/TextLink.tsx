@@ -1,9 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import React, { AnchorHTMLAttributes } from "react";
-import {
-  OptionalTrackableProps,
-  LinkComponentProps,
-} from "@origin-digital/ods-types";
+import React from "react";
+import { LinkBaseProps } from "@origin-digital/ods-types";
 import {
   TextLinkRenderer,
   TextLinkRendererProps,
@@ -12,12 +9,7 @@ import { TrackedLink } from "..";
 
 export interface TextLinkProps
   extends Omit<TextLinkRendererProps, "children">,
-    OptionalTrackableProps {
-  href: LinkComponentProps["href"];
-  target?: AnchorHTMLAttributes<HTMLAnchorElement>["target"];
-  children?: React.ReactNode;
-  domProps?: AnchorHTMLAttributes<HTMLAnchorElement>;
-}
+    LinkBaseProps {}
 
 const defaultDataId = "text-link";
 

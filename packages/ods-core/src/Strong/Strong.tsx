@@ -1,5 +1,5 @@
 import React, { ReactNode, useContext } from "react";
-import { useWeightStyles } from "../_private/hooks/typography";
+import { useWeightStyles } from "@origin-digital/ods-typography";
 import { TextContext } from "../Text/TextContext";
 
 export interface StrongProps {

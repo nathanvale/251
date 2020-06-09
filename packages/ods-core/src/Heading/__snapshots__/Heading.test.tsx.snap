@@ -121,6 +121,18 @@ exports[`It can render h4 1`] = `
 `;
 
 exports[`It can render heaading truncated 1`] = `
+.c1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  overflow: hidden;
+}
+
 .c0 {
   margin: 0;
   padding: 0;
@@ -141,7 +153,9 @@ exports[`It can render heaading truncated 1`] = `
     data-id="heading"
   >
     <div
-      class="MuiBox-root MuiBox-root-38 typography-truncate-37"
+      class="typography-truncate-37 c1"
+      display="block"
+      overflow="hidden"
     >
       Truncated text
     </div>

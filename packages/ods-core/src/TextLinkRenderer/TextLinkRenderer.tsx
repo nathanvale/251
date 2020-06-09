@@ -1,11 +1,47 @@
 import React, { ReactElement, useContext } from "react";
 import { TextLinkRenderProps } from "@origin-digital/ods-types";
+import { useLinkResetStyles } from "@origin-digital/ods-typography";
+import makeStyles from "@material-ui/core/styles/makeStyles";
+import clsx from "clsx";
 import { TextContext } from "../Text/TextContext";
-import { useTextLinkStyles } from "../_private/hooks/typography";
 import { HeadingContext } from "../Heading/HeadingContext";
+import { UseTextProps } from "../Text/Text";
 
 export interface TextLinkRendererProps {
   children: (renderProps: TextLinkRenderProps) => ReactElement;
+}
+
+function useTextLinkStyles() {
+  const inText = useContext(TextContext);
+  const inHeading = useContext(HeadingContext);
+  let tone: UseTextProps["tone"] | "grey600";
+  if (inText) {
+    tone = inText.tone;
+  }
+  if (inHeading) {
+    tone = "grey600";
+  }
+  const linkResetStyles = useLinkResetStyles();
+  const textLinkStyles = makeStyles(
+    ({ colors }) => {
+      const hoverColor =
+        tone === "neutral" || tone === "grey600"
+          ? colors.primary
+          : colors[`${tone}Dark`];
+      return {
+        link: {
+          fontSize: "100%",
+          font: "inherit",
+          "&:hover": {
+            textDecoration: "none",
+            color: hoverColor,
+          },
+        },
+      };
+    },
+    { classNamePrefix: `typography-${tone}-tone` }
+  )().link;
+  return clsx(linkResetStyles, textLinkStyles);
 }
 
 export const TextLinkRenderer = (props: TextLinkRendererProps) => {

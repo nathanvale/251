@@ -57,7 +57,7 @@ const SubNavigationGroup = ({ title, items }: SubNavigationGroup) => {
             {items.map(({ name, path, onClick }) => {
               return (
                 <NavLink
-                  current={location.pathname === path}
+                  current={`#${location.pathname}` === path}
                   key={name}
                   href={path}
                   onClick={onClick}
@@ -121,22 +121,27 @@ export const SubNavigation = ({ onSelect }: SubNavigationProps) => {
         })}
       />
 
-      {["Layout", "Content", "Interaction", "Logic", "Atomic"].map(
-        (category) => {
-          return (
-            <SubNavigationGroup
-              key={category}
-              title={category}
-              items={categorisedComponents[category].map(({ name }) => ({
-                name,
-                path: `#/components/${name}`,
-                external: false,
-                onClick: onSelect,
-              }))}
-            />
-          );
-        }
-      )}
+      {[
+        "Layout",
+        "Content",
+        "Interaction",
+        "Logic",
+        "Experimental",
+        "Atomic",
+      ].map((category) => {
+        return (
+          <SubNavigationGroup
+            key={category}
+            title={category}
+            items={categorisedComponents[category].map(({ name }) => ({
+              name,
+              path: `#/components/${name}`,
+              external: false,
+              onClick: onSelect,
+            }))}
+          />
+        );
+      })}
 
       <SubNavigationGroup
         title="All Components"

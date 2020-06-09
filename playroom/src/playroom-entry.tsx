@@ -44,7 +44,7 @@ injectGlobal`
         font-family: 'gordita';
         src: url(${gorditaBold})
           format('woff');
-        font-weight: 900;
+        font-weight: 700;
         font-style: normal;
       }
 `;

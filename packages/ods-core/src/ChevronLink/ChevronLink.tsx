@@ -17,6 +17,7 @@ export interface ChevronLinkProps
   variant?: ChevronVaraints;
   href: LinkComponentProps["href"];
   target?: AnchorHTMLAttributes<HTMLAnchorElement>["target"];
+  onClick?: AnchorHTMLAttributes<HTMLAnchorElement>["onClick"];
   children?: React.ReactNode;
   domProps?: AnchorHTMLAttributes<HTMLAnchorElement>;
 }

@@ -1,9 +1,9 @@
 import * as React from "react";
+import { FormLabel } from "@origin-digital/ods-core";
 import {
   ToggleButton,
   ToggleButtonGroup,
   ToggleButtonGroupProps,
-  FormLabel,
   Grid,
 } from "..";
 
