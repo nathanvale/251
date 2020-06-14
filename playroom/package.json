@@ -24,7 +24,7 @@
     "@origin-digital/style-guide": "*",
     "@origin-digital/tile-selector": "*",
     "hoist-non-react-statics": "^3.3.2",
-    "playroom": "^0.18.1",
+    "playroom": "^0.21.1",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
