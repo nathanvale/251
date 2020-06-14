@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.2](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.18.1...playroom@0.18.2) (2020-06-14)
+
+
+### Bug Fixes
+
+* **playroom:** fix broken playroom on master ([3ef29f3](https://bitbucket.orgn.io/od/origin-ui/commits/3ef29f33b2921ca638b8bd63cd6b1ec133de44ee))
+
+
+
+
+
 ## [0.18.1](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.18.0...playroom@0.18.1) (2020-06-09)
 
 

@@ -4,7 +4,7 @@
   "description": "Living design system containing the building blocks and design principles for Origin Digital web applications.",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
-  "version": "0.18.1",
+  "version": "0.18.2",
   "scripts": {
     "build": "playroom build",
     "start": "playroom start"
