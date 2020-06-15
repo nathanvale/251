@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.19.0](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.18.2...playroom@0.19.0) (2020-06-15)
+
+
+### Features
+
+* **textfield:** new textField component ([dab7617](https://bitbucket.orgn.io/od/origin-ui/commits/dab7617c062b86ba59ebcb5530066a30892a728a))
+
+
+
+
+
 ## [0.18.2](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.18.1...playroom@0.18.2) (2020-06-14)
 
 

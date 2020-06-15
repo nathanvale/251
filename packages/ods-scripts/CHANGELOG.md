@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.32.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.31.1...@origin-digital/ods-scripts@0.32.0) (2020-06-15)
+
+
+### Features
+
+* **textfield:** new textField component ([dab7617](https://bitbucket.orgn.io/od/origin-ui/commits/dab7617c062b86ba59ebcb5530066a30892a728a))
+
+
+
+
+
 ## [0.31.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.31.0...@origin-digital/ods-scripts@0.31.1) (2020-06-09)
 
 **Note:** Version bump only for package @origin-digital/ods-scripts
