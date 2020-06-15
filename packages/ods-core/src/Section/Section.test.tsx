@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "@origin-digital/ods-testing-library";
 import { Placeholder } from "../Placeholder/Placeholder";
-import { Section, getResponsiveSpace } from "./Section";
+import { Section, getResponsiveSpace, getResponsiveFluidity } from "./Section";
 
 test("hideGutter is responsive with a Boolean", () => {
   const result = getResponsiveSpace(false);
@@ -37,6 +37,70 @@ test("hideGutter is responsive with an object", () => {
     md: "medium",
     lg: "none",
     xl: "medium",
+  });
+});
+
+test("hideGutter is responsive with an simple object", () => {
+  const result = getResponsiveSpace({
+    xs: false,
+    lg: true,
+  });
+  expect(result).toEqual({
+    xs: "medium",
+    sm: undefined,
+    md: undefined,
+    lg: "none",
+    xl: undefined,
+  });
+});
+
+test("fluidity is responsive with an object", () => {
+  const result = getResponsiveFluidity({
+    xs: false,
+    sm: true,
+    md: false,
+    lg: true,
+    xl: false,
+  });
+  expect(result).toEqual({
+    xs: false,
+    sm: true,
+    md: false,
+    lg: true,
+    xl: false,
+  });
+});
+
+test("fluidity is responsive with a boolean (true)", () => {
+  const result = getResponsiveFluidity(true);
+  expect(result).toEqual({
+    xs: true,
+    sm: true,
+    md: true,
+    lg: true,
+    xl: true,
+  });
+});
+
+test("fluidity is responsive with a boolean (false)", () => {
+  const result = getResponsiveFluidity(false);
+  expect(result).toEqual({
+    xs: false,
+    sm: false,
+    md: false,
+    lg: false,
+    xl: false,
+  });
+});
+
+test("fluidity is false by default", () => {
+  const result = getResponsiveFluidity(undefined);
+  expect(result).toEqual({
+    xs: false,
+    sm: false,
+    md: false,
+    lg: false,
+    xl: false,
   });
 });
 
@@ -76,16 +140,32 @@ test("It sets the transparent background if no background is provided", () => {
   expect(style.backgroundColor).toEqual("rgb(255, 255, 255)");
 });
 
-test("should have no max-width if fluidity is set to full-width", () => {
+test("should have no max-width if fluidity is set to true", () => {
   const { container } = render(
-    <Section fluidity="full-width">
+    <Section fluidity={true}>
       <Placeholder />
       <Placeholder />
       <Placeholder />
     </Section>
   );
-  const style = window.getComputedStyle(container.firstChild as Element);
+  const style = window.getComputedStyle(
+    container.firstChild!.firstChild as Element
+  );
   expect(style.maxWidth).toEqual("");
+});
+
+test("should have max-width of 1140px if fluidity is set to false", () => {
+  const { container } = render(
+    <Section fluidity={false}>
+      <Placeholder />
+      <Placeholder />
+      <Placeholder />
+    </Section>
+  );
+  const style = window.getComputedStyle(
+    container.firstChild!.firstChild as Element
+  );
+  expect(style.maxWidth).toEqual("1140px");
 });
 
 test("should hide gutters if hideGutter is true", () => {

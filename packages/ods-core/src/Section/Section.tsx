@@ -1,4 +1,8 @@
-import styled, { css } from "styled-components";
+import styled, {
+  css,
+  StyledProps,
+  InterpolationValue,
+} from "styled-components";
 import React from "react";
 import {
   PaddingYVariants,
@@ -7,6 +11,7 @@ import {
   BackgroundVariant,
   FluidityVariant,
   ResponsiveSpace,
+  BreakpointVariants,
 } from "@origin-digital/ods-types";
 import { Box } from "../Box/Box";
 
@@ -39,51 +44,41 @@ const cardPaddingYForVariant: Record<
 };
 
 type StyledBoxProps = Omit<SectionProps, "paddingY">;
+const getStylesForbreakpoint = (
+  p: StyledProps<StyledBoxProps>,
+  breakpoint: BreakpointVariants
+): InterpolationValue[] => {
+  const fluidity = p.fluidity as Record<BreakpointVariants, boolean>;
+  return fluidity[breakpoint]
+    ? css`
+        @media (min-width: ${p.theme.breakpoints[breakpoint]}) {
+          max-width: 100%;
+        }
+      `
+    : css`
+        @media (min-width: ${p.theme.breakpoints[breakpoint]}) {
+          max-width: ${p.theme.section.maxWidth[breakpoint]}px;
+        }
+      `;
+};
 
 const StyledBox = styled(Box)<StyledBoxProps>`
+${(p) =>
+  !Object.values(p.fluidity as Record<BreakpointVariants, boolean>).some(
+    (e) => e
+  )
+    ? css`
+        max-width: ${p.theme.section.maxWidth.xl}px;
+      `
+    : ""}
 
-  ${(p) =>
-    p.fluidity !== "full-width"
-      ? `max-width: ${p.theme.section.maxWidth.xl}px;`
-      : ""}
+    ${(p) => getStylesForbreakpoint(p, "sm")}
 
-  ${(p) =>
-    p.fluidity === "off" &&
-    css`
-      @media (min-width: ${p.theme.breakpoints.sm}) {
-        max-width: ${p.theme.section.maxWidth.sm}px;
-      }
-    `}
-
-  ${(p) =>
-    p.fluidity === "off" &&
-    css`
-      @media (min-width: ${p.theme.breakpoints.md}) {
-        max-width: ${p.theme.section.maxWidth.md}px;
-      }
-    `}
-
-  ${(p) =>
-    p.fluidity === "off" &&
-    css`
-      @media (min-width: ${p.theme.breakpoints.lg}) {
-        max-width: ${p.theme.section.maxWidth.lg}px;
-      }
-    `}
-
-  ${(p) =>
-    p.fluidity === "full-width"
-      ? css`
-          @media (min-width: ${p.theme.breakpoints.xl}) {
-            max-width: 100%;
-          }
-        `
-      : css`
-          @media (min-width: ${p.theme.breakpoints.xl}) {
-            max-width: ${p.theme.section.maxWidth.xl}px;
-          }
-        `}
-
+    ${(p) => getStylesForbreakpoint(p, "md")}
+  
+    ${(p) => getStylesForbreakpoint(p, "lg")}
+  
+    ${(p) => getStylesForbreakpoint(p, "xl")}
 `;
 
 export function getResponsiveSpace(
@@ -100,14 +95,75 @@ export function getResponsiveSpace(
     }
   } else if (hideGutter instanceof Object) {
     return {
-      xs: hideGutter.xs ? "none" : "medium",
-      sm: hideGutter.sm ? "none" : "medium",
-      md: hideGutter.md ? "none" : "medium",
-      lg: hideGutter.lg ? "none" : "medium",
-      xl: hideGutter.xl ? "none" : "medium",
+      xs:
+        typeof hideGutter.xs === "boolean"
+          ? hideGutter.xs
+            ? "none"
+            : "medium"
+          : undefined,
+      sm:
+        typeof hideGutter.sm === "boolean"
+          ? hideGutter.sm
+            ? "none"
+            : "medium"
+          : undefined,
+      md:
+        typeof hideGutter.md === "boolean"
+          ? hideGutter.md
+            ? "none"
+            : "medium"
+          : undefined,
+      lg:
+        typeof hideGutter.lg === "boolean"
+          ? hideGutter.lg
+            ? "none"
+            : "medium"
+          : undefined,
+      xl:
+        typeof hideGutter.xl === "boolean"
+          ? hideGutter.xl
+            ? "none"
+            : "medium"
+          : undefined,
     };
   }
   return "none";
+}
+
+export function getResponsiveFluidity(
+  fluidity?: FluidityVariant
+): ResponsiveProp<boolean> {
+  const responsiveFluidity: ResponsiveProp<boolean> = {
+    xs: false,
+    sm: false,
+    md: false,
+    lg: false,
+    xl: false,
+  };
+  if (typeof fluidity === "boolean") {
+    Object.keys(responsiveFluidity).forEach(
+      (bp) => (responsiveFluidity[bp as BreakpointVariants] = fluidity)
+    );
+  } else if (fluidity instanceof Array) {
+    const { length } = fluidity;
+    if (length === 2) {
+      const mobile = fluidity[0];
+      const desktop = fluidity[1];
+      responsiveFluidity.xs = mobile;
+      responsiveFluidity.sm = mobile;
+      responsiveFluidity.md = mobile;
+      responsiveFluidity.lg = desktop;
+      responsiveFluidity.xl = desktop;
+    }
+  } else if (fluidity instanceof Object) {
+    Object.keys(fluidity).forEach(
+      (bp) =>
+        (responsiveFluidity[bp as BreakpointVariants] = fluidity[
+          bp as BreakpointVariants
+        ]!)
+    );
+  }
+  return responsiveFluidity;
 }
 
 export const Section = ({
@@ -117,6 +173,7 @@ export const Section = ({
   "data-id": dataId,
   paddingY = defaultPaddingY,
   backgroundColor,
+  fluidity,
   ...rest
 }: SectionProps) => {
   return (
@@ -130,6 +187,7 @@ export const Section = ({
     >
       <StyledBox
         {...rest}
+        fluidity={getResponsiveFluidity(fluidity)}
         height={stretchY ? "full" : undefined}
         paddingX={getResponsiveSpace(hideGutter)}
         width="full"

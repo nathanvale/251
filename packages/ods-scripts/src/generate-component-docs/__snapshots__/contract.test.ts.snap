@@ -1930,10 +1930,8 @@ exports[`Section 1`] = `
     | "white"
   children: ReactNode
   data-id?: string
-  fluidity?: 
-    | "full-width"
-    | "max-width-at-xl"
-    | "off"
+  fluidity?: ResponsiveProp<boolean
+  >
   hideGutter?: ResponsiveProp<boolean
   >
   paddingY?: 

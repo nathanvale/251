@@ -54,10 +54,9 @@ export type TypographyVariants =
 export type TextAlignVariants = "left" | "right" | "center";
 
 export type AlignXType = "left" | "center" | "right";
-
 export type TLength = string | 0 | number;
 
-export type FluidityVariant = "off" | "max-width-at-xl" | "full-width";
+export type FluidityVariant = ResponsiveProp<boolean>;
 export type BackgroundVariant = "transparent" | "grey50" | "white";
 
 export type CardStackSectionVariant = "widget" | "default" | "card-centered";
