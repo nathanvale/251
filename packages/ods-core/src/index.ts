@@ -98,6 +98,9 @@ export type RadioGroupBaseProps = import("./RadioGroupBase/RadioGroupBase").Radi
 export { Section } from "./Section/Section";
 export type SectionProps = import("./Section/Section").SectionProps;
 
+export { Spinner } from "./Spinner/Spinner";
+export type SpinnerProps = import("./Spinner/Spinner").SpinnerProps;
+
 export { Stack } from "./Stack/Stack";
 export type StackProps = import("./Stack/Stack").StackProps;
 
@@ -106,6 +109,9 @@ export type StrongProps = import("./Strong/Strong").StrongProps;
 
 export { Text } from "./Text/Text";
 export type TextProps = import("./Text/Text").TextProps;
+
+export { TextField } from "./TextField/TextField";
+export type TextFieldProps = import("./TextField/TextField").TextFieldProps;
 
 export { TextFieldBase } from "./TextFieldBase/TextFieldBase";
 export type TextFieldBaseProps = import("./TextFieldBase/TextFieldBase").TextFieldBaseProps;

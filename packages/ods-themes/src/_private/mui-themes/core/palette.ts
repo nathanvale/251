@@ -46,12 +46,18 @@ export const palette: Theme["palette"] = createPalette({
   },
   primary: getPaletteColor(colors.red),
   secondary: getPaletteColor(colors.lightOrange),
-  success: getPaletteColor(colors.green),
+  success: {
+    ...getPaletteColor(colors.green),
+    light: colors.lightGreen,
+  },
   info: getPaletteColor(colors.blue),
   warning: getPaletteColor(colors.lightOrange),
   error: getPaletteColor(colors.red),
   caution: getPaletteColor(colors.lightOrange),
-  positive: getPaletteColor(colors.green),
+  positive: {
+    ...getPaletteColor(colors.green),
+    light: colors.lightGreen,
+  },
   action: {
     hoverOpacity: 0.16,
     disabled: colors.grey[200],
