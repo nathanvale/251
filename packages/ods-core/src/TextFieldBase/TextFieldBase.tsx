@@ -10,10 +10,8 @@ import {
 } from "@origin-digital/ods-types";
 import { makeStyles } from "@material-ui/core/styles";
 
-export interface TextFieldBaseProps extends Omit<BaseInputProps, "focused"> {
+export interface BaseFieldProps extends Omit<BaseInputProps, "focused"> {
   defaultValue?: string | number;
-  domProps?: React.HTMLAttributes<HTMLInputElement>;
-  endAdornment?: React.ReactNode;
   helperText?: string | React.ReactNode;
   label?: string;
   onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
@@ -22,11 +20,17 @@ export interface TextFieldBaseProps extends Omit<BaseInputProps, "focused"> {
   onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
   placeholder?: string;
   size?: TextFieldSize;
-  startAdornment?: React.ReactNode;
   reserveHelperTextSpace?: boolean;
   type?: string;
   variant?: TextFieldVariant;
   muiProps?: MuiTextFieldProps;
+}
+
+export interface TextFieldBaseProps extends BaseFieldProps {
+  domProps?: React.HTMLAttributes<HTMLInputElement | HTMLTextAreaElement>;
+  endAdornment?: React.ReactNode;
+  multiline?: boolean;
+  startAdornment?: React.ReactNode;
 }
 
 const useStyles = makeStyles(

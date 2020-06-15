@@ -2200,6 +2200,55 @@ exports[`Text 1`] = `
 }
 `;
 
+exports[`TextAreaField 1`] = `
+{
+  aria-describedby?: string
+  aria-label?: string
+  aria-labelledby?: string
+  children?: ReactNode
+  className?: string
+  classes?: Record<string, string>
+  data-id?: string
+  defaultValue?: 
+    | number
+    | string
+  disabled?: boolean
+  domProps?: HTMLAttributes<HTMLTextAreaElement> | undefined
+  error?: boolean
+  helperText?: ReactNode
+  id: string
+  inputRef?: 
+    | (instance: any) => void
+    | RefObject<any>
+  label?: string
+  muiProps?: StandardTextFieldProps | FilledTextFieldProps | OutlinedTextFieldProps | undefined
+  name?: string
+  onBlur?: (event: FocusEvent<HTMLInputElement>) => void
+  onChange?: (event: ChangeEvent<HTMLInputElement>, value?: string | undefined) => void
+  onFocus?: (event: FocusEvent<HTMLInputElement>) => void
+  onKeyDown?: (event: KeyboardEvent<HTMLInputElement>) => void
+  onKeyUp?: (event: KeyboardEvent<HTMLInputElement>) => void
+  placeholder?: string
+  reserveHelperTextSpace?: boolean
+  rows?: 
+    | number
+    | string
+  rowsMax?: 
+    | number
+    | string
+  size?: 
+    | "medium"
+    | "small"
+  type?: string
+  value?: 
+    | number
+    | string
+  variant?: 
+    | "filled"
+    | "outlined"
+}
+`;
+
 exports[`TextField 1`] = `
 {
   aria-describedby?: string
@@ -2258,7 +2307,7 @@ exports[`TextFieldBase 1`] = `
     | number
     | string
   disabled?: boolean
-  domProps?: HTMLAttributes<HTMLInputElement> | undefined
+  domProps?: HTMLAttributes<HTMLInputElement | HTMLTextAreaElement> | undefined
   endAdornment?: ReactNode
   error?: boolean
   helperText?: ReactNode
@@ -2268,6 +2317,7 @@ exports[`TextFieldBase 1`] = `
     | RefObject<any>
   label?: string
   muiProps?: StandardTextFieldProps | FilledTextFieldProps | OutlinedTextFieldProps | undefined
+  multiline?: boolean
   name?: string
   onBlur?: (event: FocusEvent<HTMLInputElement>) => void
   onChange?: (event: ChangeEvent<HTMLInputElement>, value?: string | undefined) => void

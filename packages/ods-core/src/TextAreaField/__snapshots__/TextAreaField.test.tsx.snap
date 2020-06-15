@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders multiple rows 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textfield-base-root-61 MuiFormControl-fullWidth"
+    data-id="my-taf"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled"
+      data-id="my-taf-label"
+      data-shrink="false"
+      for="my-taf"
+      id="my-taf-label"
+    >
+      TextArea
+    </label>
+    <div
+      class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-multiline MuiFilledInput-multiline"
+    >
+      <textarea
+        aria-invalid="false"
+        autocomplete="false"
+        class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputMultiline MuiFilledInput-inputMultiline"
+        data-id="my-taf-input"
+        id="my-taf"
+        rows="3"
+        style="height: 0px; overflow: hidden;"
+      />
+      <textarea
+        aria-hidden="true"
+        class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputMultiline MuiFilledInput-inputMultiline"
+        readonly=""
+        style="visibility: hidden; position: absolute; overflow: hidden; height: 0px; top: 0px; left: 0px; transform: translateZ(0); width: 100%;"
+        tabindex="-1"
+      />
+    </div>
+  </div>
+</div>
+`;

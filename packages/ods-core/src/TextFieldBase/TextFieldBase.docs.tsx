@@ -9,26 +9,16 @@ import { Column } from "../Column/Column";
 import { Box } from "../Box/Box";
 import { TextFieldBase, TextFieldBaseProps } from "./TextFieldBase";
 
-export const textFieldBasePropDescriptions: (
-  compname: string
+export const baseFieldPropDesc: (
+  compName: string
 ) => Partial<Record<keyof TextFieldBaseProps, string>> = (compName) => ({
-  id:
-    "The unique id of the input element inside the component. It is required for accessibility.",
   defaultValue:
     "The initial value of the input element. Use this if the form is uncontrolled",
-  domProps:
-    "The standard HTMLInput props. This will be directly passed down to the input element",
-  endAdornment: [
-    `Can be used to render an inline element at the end of the ${compName}.`,
-    `This is mostly used to show an icon at the right hand side of the ${compName},`,
-    `such as error, success or spinner icon. The best practice is to use "InputAdornment" as its immediate`,
-    `child and set its position prop to "end".`,
-  ].join(" "),
-  startAdornment: [
-    `Can be used to render an inline element at the beginning of the ${compName}.`,
-    `This is mostly used to show an icon or a sign at the left hand side of the ${compName},`,
-    `The best practice is to use "InputAdornment" as its immediate`,
-    `child and set its position prop to "start".`,
+  disabled: `Use this to disable/enable the component`,
+  error: `If set to true the ${compName} component will be rendered in error state.`,
+  "data-id": [
+    `The id used for e2e testing and analytics. If not provided will be default to`,
+    `value of the "id" prop`,
   ].join(" "),
   helperText: [
     `Provide further details or error messages via this prop. To have more custom description you can pass any`,
@@ -36,36 +26,22 @@ export const textFieldBasePropDescriptions: (
     `that includes visualisation and logic for character count. Or in case of requiring markdown support, pass`,
     `some JSX which renders markdown content.`,
   ].join(" "),
-  label: `The label shown at the top of the ${compName}`,
-  placeholder: `The text shown on the ${compName} when it is empty and focused.`,
-  size: `Defines how much vertical space the ${compName} component will take.`,
-  type: `Standard "type" attribute of HTML Input elements.`,
-  variant: [
-    `By default it is filled which will force a grey background. In this variant the component has no`,
-    `left, top or right borders. Another variant is "outlined" which puts an outline border around the component`,
-  ].join(" "),
-  disabled: `Use this to disable/enable the component`,
-  name: `The name property of the underlying input element, mostly used by form solutions`,
-  value: [
-    `Provide this value if you want ${compName} to be controlled. It will define the value shown on the input element.`,
-  ].join(" "),
+  id:
+    "The unique id of the input element inside the component. It is required for accessibility.",
   inputRef: [
     `The ref object that will be passed down to the input element. Use it for imperative`,
     `operations such as focus().`,
   ].join(" "),
-  error: `If set to true the ${compName} component will be rendered in error state.`,
-  "data-id": [
-    `The id used for e2e testing and analytics. If not provided will be default to`,
-    `value of the "id" prop`,
+  label: `The label shown at the top of the ${compName}`,
+  name: `The name property of the underlying input element, mostly used by form solutions`,
+  onBlur: [
+    `Is called whenever the ${compName} loses focus, either via keyboard or the user clicks outside`,
+    `the component.`,
   ].join(" "),
   onChange: [
     `Is called every time the user changes the value inside the input element.`,
     `To read the new value, use either "event.target.value" or "value" (the 2nd argument)`,
     `which are passed to the provided callback function.`,
-  ].join(" "),
-  onBlur: [
-    `Is called whenever the ${compName} loses focus, either via keyboard or the user clicks outside`,
-    `the component.`,
   ].join(" "),
   onFocus: [`Is called whenever the ${compName} receives focus.`].join(" "),
   onKeyDown: [
@@ -74,8 +50,41 @@ export const textFieldBasePropDescriptions: (
   onKeyUp: [
     `Is called whenever the user releases a key on input element.`,
   ].join(" "),
+  placeholder: `The text shown on the ${compName} when it is empty and focused.`,
   reserveHelperTextSpace: [
     `If set to true, helperText will keep its space (height) even if it is empty`,
+  ].join(" "),
+  size: `Defines how much vertical space the ${compName} component will take.`,
+  type: `Standard "type" attribute of HTML Input elements.`,
+  value: [
+    `Provide this value if you want ${compName} to be controlled. It will define the value shown on the input element.`,
+  ].join(" "),
+  variant: [
+    `By default it is filled which will force a grey background. In this variant the component has no`,
+    `left, top or right borders. Another variant is "outlined" which puts an outline border around the component`,
+  ].join(" "),
+});
+
+export const textFieldBasePropDescriptions: (
+  compName: string
+) => Partial<Record<keyof TextFieldBaseProps, string>> = (compName) => ({
+  ...baseFieldPropDesc(compName),
+  domProps:
+    "The standard HTMLInput props. This will be directly passed down to the input element",
+  endAdornment: [
+    `Can be used to render an inline element at the end of the ${compName}.`,
+    `This is mostly used to show an icon at the right hand side of the ${compName},`,
+    `such as error, success or spinner icon. The best practice is to use "InputAdornment" as its immediate`,
+    `child and set its position prop to "end".`,
+  ].join(" "),
+  multiline: "If true renders a textarea under the hood.",
+  rows: `Number of rows to display. Default is 1.`,
+  rowsMax: `Maximum number of rows to display. If the rows exceed this value, a vertical scrollbar appears.`,
+  startAdornment: [
+    `Can be used to render an inline element at the beginning of the ${compName}.`,
+    `This is mostly used to show an icon or a sign at the left hand side of the ${compName},`,
+    `The best practice is to use "InputAdornment" as its immediate`,
+    `child and set its position prop to "start".`,
   ].join(" "),
 });
 
@@ -169,7 +178,7 @@ return (<Stack space="medium">
     value={value}
     onChange={e => setValue(e.target.value)}
   />
-  {value && <Text>Entered name: {value}</Text>}
+  {value && <Text tone="positive">Entered name: {value}</Text>}
 </Stack>)`,
       },
       {

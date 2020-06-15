@@ -34,6 +34,7 @@ export {
   Stack,
   Strong,
   Text,
+  TextAreaField,
   TextField,
   TextFieldBase,
   TextLink,

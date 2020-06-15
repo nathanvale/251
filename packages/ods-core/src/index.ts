@@ -110,6 +110,9 @@ export type StrongProps = import("./Strong/Strong").StrongProps;
 export { Text } from "./Text/Text";
 export type TextProps = import("./Text/Text").TextProps;
 
+export { TextAreaField } from "./TextAreaField/TextAreaField";
+export type TextAreaFieldProps = import("./TextAreaField/TextAreaField").TextAreaFieldProps;
+
 export { TextField } from "./TextField/TextField";
 export type TextFieldProps = import("./TextField/TextField").TextFieldProps;
 
