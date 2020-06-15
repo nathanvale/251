@@ -15,7 +15,7 @@ export interface IconProps extends React.SVGProps<SVGSVGElement> {
   height?: number | string;
 }
 
-export type BackgroundColorVariants = ColorVariants;
+export type BackgroundColorVariants = ColorPaletteVariants;
 
 export type HeadingComponentVariants = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
@@ -29,10 +29,10 @@ export interface ChevronLinkRenderProps {
 }
 
 export type TextToneVariants =
-  | keyof Pick<Colors, "critical" | "positive">
+  | keyof Pick<Tones, "critical" | "positive">
   | "neutral"
-  | "neutral.light"
-  | "neutral.dark";
+  | "neutralLight"
+  | "neutralDark";
 export type TypographyWeightVariants = "regular" | "medium" | "bold";
 export type TextVariants =
   | "subtitle"
@@ -57,7 +57,10 @@ export type AlignXType = "left" | "center" | "right";
 export type TLength = string | 0 | number;
 
 export type FluidityVariant = ResponsiveProp<boolean>;
-export type BackgroundVariant = "transparent" | "grey50" | "white";
+export type CardBackgroundVariant = keyof Pick<
+  ColorPalette,
+  "grey50" | "white" | "transparent"
+>;
 
 export type CardStackSectionVariant = "widget" | "default" | "card-centered";
 export type CardStackSize = "small" | "medium" | "large";
@@ -181,15 +184,93 @@ export interface Colors {
   transparent: string;
 }
 
-export type ColorVariants = keyof Colors;
-
-export interface Shadow {
-  small: string;
-  medium: string;
-  large: string;
+export interface ColorPalette {
+  //Mui Colors
+  disabled: string;
+  error: string;
+  errorDark: string;
+  errorLight: string;
+  grey100: string;
+  grey200: string;
+  grey300: string;
+  grey400: string;
+  grey50: string;
+  grey500: string;
+  grey600: string;
+  primary: string;
+  primaryDark: string;
+  primaryLight: string;
+  primaryB: string;
+  primaryBDark: string;
+  primaryBLight: string;
+  secondaryB: string;
+  secondaryBDark: string;
+  secondaryBLight: string;
+  secondary: string;
+  secondaryDark: string;
+  secondaryLight: string;
+  success: string;
+  successDark: string;
+  successLight: string;
+  transparent: string;
+  warning: string;
+  warningDark: string;
+  warningLight: string;
+  white: string;
+  // tones
+  critical: string;
+  criticalLight: string;
+  criticalDark: string;
+  caution: string;
+  cautionLight: string;
+  cautionDark: string;
+  positive: string;
+  positiveLight: string;
+  positiveDark: string;
+  info: string;
+  infoLight: string;
+  infoDark: string;
+  neutral: string;
+  neutralLight: string;
+  neutralDark: string;
+  promote: string;
+  promoteLight: string;
+  promoteDark: string;
+  promoteB: string;
+  promoteBLight: string;
+  promoteBDark: string;
 }
 
-export type ShadowVariants = keyof Shadow;
+export type Tones = Pick<
+  ColorPalette,
+  | "critical"
+  | "criticalLight"
+  | "criticalDark"
+  | "caution"
+  | "cautionLight"
+  | "cautionDark"
+  | "positive"
+  | "positiveLight"
+  | "positiveDark"
+  | "info"
+  | "infoLight"
+  | "infoDark"
+  | "neutral"
+  | "neutralLight"
+  | "neutralDark"
+  | "promote"
+  | "promoteLight"
+  | "promoteDark"
+  | "promoteB"
+  | "promoteBLight"
+  | "promoteBDark"
+>;
+
+export type ToneVariants = keyof Tones;
+
+export type ColorPaletteVariants = keyof ColorPalette;
+
+export type ColorVariants = keyof Colors;
 
 export interface Transform {
   touchable: string;
@@ -199,7 +280,6 @@ export type TransformVariants = keyof Transform;
 
 export interface Transition {
   fast: string;
-  touchable: string;
 }
 
 export type TransitionVariants = keyof Transition;
@@ -224,15 +304,12 @@ export interface Typography {
 }
 
 export interface Theme {
-  typography: Typography;
-  colors?: Colors;
   space: Space;
-  shadows: Shadow;
-  breakpoints: Breakpoints;
-  transforms: Transform;
-  transitions: Transition;
   gridGutterWidth: 16 | 32;
   section: { maxWidth: Breakpoint<number> };
+  breakpoints?: Breakpoints;
+  transitions: Transition;
+  colors?: Record<ColorPaletteVariants, string>;
 }
 
 // Section for Mui components

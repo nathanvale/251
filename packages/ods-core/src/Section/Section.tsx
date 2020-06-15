@@ -8,7 +8,7 @@ import {
   PaddingYVariants,
   SpaceVariants,
   ResponsiveProp,
-  BackgroundVariant,
+  CardBackgroundVariant,
   FluidityVariant,
   ResponsiveSpace,
   BreakpointVariants,
@@ -17,7 +17,7 @@ import { Box } from "../Box/Box";
 
 export interface SectionProps {
   children: React.ReactNode;
-  backgroundColor?: BackgroundVariant;
+  backgroundColor?: CardBackgroundVariant;
   "data-id"?: string;
   fluidity?: FluidityVariant;
   hideGutter?: ResponsiveProp<boolean>;
@@ -172,7 +172,7 @@ export const Section = ({
   children,
   "data-id": dataId,
   paddingY = defaultPaddingY,
-  backgroundColor,
+  backgroundColor = defaultBackgroundColor,
   fluidity,
   ...rest
 }: SectionProps) => {

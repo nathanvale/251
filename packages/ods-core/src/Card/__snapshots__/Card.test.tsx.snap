@@ -9,7 +9,7 @@ exports[`it renders a card 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  background-color: #FFFFFF;
+  background-color: white;
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 16px;
@@ -129,7 +129,7 @@ exports[`it renders a card with large padding 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  background-color: #FFFFFF;
+  background-color: white;
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 16px;
@@ -201,7 +201,7 @@ exports[`it renders a card with medium padding 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  background-color: #FFFFFF;
+  background-color: white;
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 16px;

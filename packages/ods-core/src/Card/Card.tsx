@@ -2,8 +2,8 @@ import React, { ReactNode } from "react";
 import {
   BreakpointVariants,
   SpaceVariants,
-  Colors,
   CardPaddingVariants,
+  CardBackgroundVariant,
 } from "@origin-digital/ods-types";
 import { Box } from "../Box/Box";
 
@@ -11,7 +11,7 @@ export interface CardProps {
   padding?: CardPaddingVariants;
   "data-id"?: string;
   children?: ReactNode;
-  backgroundColor?: keyof Pick<Colors, "transparent" | "grey50" | "white">;
+  backgroundColor?: CardBackgroundVariant;
 }
 
 type PaddingValues = Partial<Record<BreakpointVariants, SpaceVariants>>;
@@ -57,11 +57,13 @@ const cardPaddingForVariant: Record<
   },
 };
 
+const defaultBackgroundColor = "white";
+
 export const Card = ({
   "data-id": dataId,
   padding = "small",
   children,
-  backgroundColor = "white",
+  backgroundColor = defaultBackgroundColor,
 }: CardProps) => (
   <Box
     width="full"
@@ -78,5 +80,5 @@ Card.displayName = "Card";
 Card.defaultProps = {
   "data-id": "card",
   padding: "small",
-  backgroundColor: "white",
+  backgroundColor: defaultBackgroundColor,
 };

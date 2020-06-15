@@ -8,7 +8,6 @@ export function useCheckTypographyBackground() {
   const backgroundColor = useBackgroundColor();
   const hasValidBackground =
     backgroundColor === "white" ||
-    backgroundColor === "backgroundDefault" ||
     backgroundColor === "transparent" ||
     backgroundColor === "grey50" ||
     !backgroundColor;

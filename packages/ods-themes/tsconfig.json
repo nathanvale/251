@@ -9,6 +9,9 @@
   "references": [
     {
       "path": "../ods-types/tsconfig.json"
+    },
+    {
+      "path": "../ods-typography/tsconfig.json"
     }
   ]
 }

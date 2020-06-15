@@ -185,14 +185,16 @@ exports[`Box 1`] = `
   autoPlay?: boolean
   autoSave?: string
   backgroundColor?: 
-    | "backgroundDefault"
-    | "backgroundPaper"
     | "caution"
     | "cautionDark"
     | "cautionLight"
     | "critical"
     | "criticalDark"
     | "criticalLight"
+    | "disabled"
+    | "error"
+    | "errorDark"
+    | "errorLight"
     | "grey100"
     | "grey200"
     | "grey300"
@@ -203,6 +205,9 @@ exports[`Box 1`] = `
     | "info"
     | "infoDark"
     | "infoLight"
+    | "neutral"
+    | "neutralDark"
+    | "neutralLight"
     | "positive"
     | "positiveDark"
     | "positiveLight"
@@ -224,7 +229,13 @@ exports[`Box 1`] = `
     | "secondaryBLight"
     | "secondaryDark"
     | "secondaryLight"
+    | "success"
+    | "successDark"
+    | "successLight"
     | "transparent"
+    | "warning"
+    | "warningDark"
+    | "warningLight"
     | "white"
   boxShadow?: 
     | "borderCritical"
@@ -958,9 +969,7 @@ exports[`Box 1`] = `
   >
   title?: string
   transform?: "touchable"
-  transition?: 
-    | "fast"
-    | "touchable"
+  transition?: "fast"
   translate?: 
     | "no"
     | "yes"
@@ -1473,7 +1482,6 @@ exports[`OriginThemeProvider 1`] = `
       values: BreakpointValues
       width: (key: "xs" | "sm" | "md" | "lg" | "xl") => number
     }
-    colors: any
     direction: 
       | "ltr"
       | "rtl"
@@ -1496,23 +1504,11 @@ exports[`OriginThemeProvider 1`] = `
         default: string
         paper: string
       }
-      caution: {
-        contrastText: string
-        dark: string
-        light: string
-        main: string
-      }
       common: {
         black: string
         white: string
       }
       contrastThreshold: number
-      critical: {
-        contrastText: string
-        dark: string
-        light: string
-        main: string
-      }
       divider: string
       error: {
         contrastText: string
@@ -1520,6 +1516,7 @@ exports[`OriginThemeProvider 1`] = `
         light: string
         main: string
       }
+      getColorVariantCSSColor: (variant: "disabled" | "error" | "errorDark" | "errorLight" | "grey100" | "grey200" | "grey300" | "grey400" | "grey50" | "grey500" | "grey600" | "primary" | "primaryDark" | "primaryLight" | ... 37 more ... | "promoteBDark") => string
       getContrastText: (background: string) => string
       grey: {
         100: string
@@ -1543,12 +1540,6 @@ exports[`OriginThemeProvider 1`] = `
         light: string
         main: string
       }
-      positive: {
-        contrastText: string
-        dark: string
-        light: string
-        main: string
-      }
       primary: {
         contrastText: string
         dark: string
@@ -1556,12 +1547,6 @@ exports[`OriginThemeProvider 1`] = `
         main: string
       }
       primaryB: {
-        contrastText: string
-        dark: string
-        light: string
-        main: string
-      }
-      promote: {
         contrastText: string
         dark: string
         light: string
@@ -1705,77 +1690,6 @@ exports[`OriginThemeProvider 1`] = `
       snackbar: number
       speedDial: number
       tooltip: number
-    }
-  }
-  theme?: {
-    breakpoints: Breakpoints
-    colors?: {
-      backgroundDefault: string
-      backgroundPaper: string
-      caution: string
-      cautionDark: string
-      cautionLight: string
-      critical: string
-      criticalDark: string
-      criticalLight: string
-      grey100: string
-      grey200: string
-      grey300: string
-      grey400: string
-      grey50: string
-      grey500: string
-      grey600: string
-      info: string
-      infoDark: string
-      infoLight: string
-      positive: string
-      positiveDark: string
-      positiveLight: string
-      primary: string
-      primaryB: string
-      primaryBDark: string
-      primaryBLight: string
-      primaryDark: string
-      primaryLight: string
-      promote: string
-      promoteB: string
-      promoteBDark: string
-      promoteBLight: string
-      promoteDark: string
-      promoteLight: string
-      secondary: string
-      secondaryB: string
-      secondaryBDark: string
-      secondaryBLight: string
-      secondaryDark: string
-      secondaryLight: string
-      transparent: string
-      white: string
-    }
-    gridGutterWidth: 
-      | 16
-      | 32
-    section: { maxWidth: Breakpoint<number>; }
-    shadows: {
-      large: string
-      medium: string
-      small: string
-    }
-    space: Space
-    transforms: {
-      touchable: string
-    }
-    transitions: {
-      fast: string
-      touchable: string
-    }
-    typography: {
-      capHeightScale: number
-      descenderHeightScale: number
-      fontFamily: string
-      gridRow: number
-      text: Record<FontSizeVariants, FontSizeMetrics>
-      weight: FontWeightValue
     }
   }
 }
@@ -2181,8 +2095,8 @@ exports[`Text 1`] = `
   tone?: 
     | "critical"
     | "neutral"
-    | "neutral.dark"
-    | "neutral.light"
+    | "neutralDark"
+    | "neutralLight"
     | "positive"
   truncate?: boolean
   variant?: 

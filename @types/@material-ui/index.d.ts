@@ -4,6 +4,7 @@ import {
   PaletteColorOptions,
   SimplePaletteColorOptions,
 } from "@material-ui/core/styles/createPalette";
+import { ColorPaletteVariants, ToneVariants } from "@origin-digital/ods-types";
 
 declare module "@material-ui/core/styles/createTypography" {
   export interface BasekickStyles {
@@ -40,32 +41,17 @@ declare module "@material-ui/core/styles/createTypography" {
 }
 declare module "@material-ui/core/styles/createPalette" {
   interface Palette {
-    critical: PaletteColor;
-    positive: PaletteColor;
-    caution: PaletteColor;
     primaryB: PaletteColor;
-    promote: PaletteColor;
     promoteB: PaletteColor;
     secondaryB: PaletteColor;
+    getColorVariantCSSColor: (variant: ColorPaletteVariants) => string;
   }
 
   interface PaletteOptions {
-    critical?: SimplePaletteColorOptions;
-    positive?: SimplePaletteColorOptions;
-    caution?: SimplePaletteColorOptions;
     primaryB?: SimplePaletteColorOptions;
-    promote?: SimplePaletteColorOptions;
     promoteB?: SimplePaletteColorOptions;
     secondaryB?: SimplePaletteColorOptions;
   }
 }
 
-declare module "@material-ui/core/styles/createMuiTheme" {
-  interface Theme {
-    colors: Colors;
-  }
-
-  interface ThemeOptions {
-    colors?: Colors;
-  }
-}
+declare module "@material-ui/core/styles/createMuiTheme" {}

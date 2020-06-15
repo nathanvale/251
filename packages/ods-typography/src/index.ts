@@ -1,3 +1,4 @@
+export { getFontSizeStyles } from "./getFontSizeStyles";
 export { getTypographyForVariant } from "./getTypographyForVariant";
 export { useBasekickStyles } from "./useBasekickStyles";
 export { useLinkResetStyles } from "./useLinkResetStyles";

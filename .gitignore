@@ -11,3 +11,4 @@ componentDocs.json
 lerna-debug.log
 docs/public/e2e-manifest.json
 yarn-error.log
+tests/lib/**

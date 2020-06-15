@@ -1,2 +1,3 @@
-export { flattenPalette } from "./_private/helpers/flattenPalette";
-export * from "./themes";
+export * from "./layout-themes";
+export * from "./mui-themes";
+export * from "./helpers";

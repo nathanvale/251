@@ -108,9 +108,6 @@ export const StyledSystemBox = styled.div<StyledSystemProps>`
         ${position}
         ${textAlign}
         ${overflow}
-        :active {
-           transform: ${({ theme, transform }) => theme.transforms[transform!]};
-         }
         ${(p) =>
           p.width === "full" &&
           css`

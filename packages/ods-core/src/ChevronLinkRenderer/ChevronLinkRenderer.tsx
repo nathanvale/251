@@ -44,9 +44,11 @@ function IconChevron() {
 function useChevronLinkStyles({ variant }: UseChevronLinkProps) {
   const linkResetStyles = useLinkResetStyles();
   const chevronLinkStyles = makeStyles(
-    ({ colors, typography }) => {
+    ({ palette, typography }) => {
       const color =
-        variant === "secondary" ? colors["secondaryB"] : colors[variant];
+        variant === "secondary"
+          ? palette.secondaryB.main
+          : palette.getColorVariantCSSColor(variant);
       return {
         "chevron-link": {
           display: "flex",

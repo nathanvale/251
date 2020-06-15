@@ -125,7 +125,7 @@ test("It sets the white background correctly", () => {
     </Section>
   );
   const style = window.getComputedStyle(container.firstChild as Element);
-  expect(style.backgroundColor).toEqual("rgb(255, 255, 255)");
+  expect(style.backgroundColor).toEqual("white");
 });
 
 test("It sets the transparent background if no background is provided", () => {
@@ -137,7 +137,7 @@ test("It sets the transparent background if no background is provided", () => {
     </Section>
   );
   const style = window.getComputedStyle(container.firstChild as Element);
-  expect(style.backgroundColor).toEqual("rgb(255, 255, 255)");
+  expect(style.backgroundColor).toEqual("white");
 });
 
 test("should have no max-width if fluidity is set to true", () => {
