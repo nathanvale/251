@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-helpers@0.8.1...@origin-digital/ods-helpers@0.9.0) (2020-06-15)
+
+
+### Features
+
+* make ods color palette in line with MUI palatte ([9021ea7](https://bitbucket.orgn.io/od/origin-ui/commits/9021ea78f6db01e14d8367772599b05be67e776c))
+
+
+
+
+
 ## [0.8.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-helpers@0.8.0...@origin-digital/ods-helpers@0.8.1) (2020-06-15)
 
 **Note:** Version bump only for package @origin-digital/ods-helpers
