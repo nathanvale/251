@@ -70,6 +70,11 @@ module.exports = {
     resolve: {
       extensions: [".js", ".ts", ".tsx"],
       alias: getResolveAliases(packagesMetadata),
+      modules: [
+        path.resolve(__dirname, "node_modules"),
+        path.resolve(__dirname, "../node_modules"),
+        "node_modules",
+      ],
     },
     plugins: [
       new webpack.DefinePlugin({

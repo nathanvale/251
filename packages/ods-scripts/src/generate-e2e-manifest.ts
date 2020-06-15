@@ -12,7 +12,7 @@ function getE2ETests(componentName: string) {
       .tests;
   } catch (error) {
     // eslint-disable-next-line no-console
-    console.log(`WARNING: ${error.message}`);
+    console.log(`WARNING MISSING E2E TEST: ${error.message}`);
     tests = [];
   }
   return tests;
