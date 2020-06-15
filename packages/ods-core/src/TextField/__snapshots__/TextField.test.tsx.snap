@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextField with error endIcon should render error after the text 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textfield-base-root-155 MuiFormControl-fullWidth"
+    data-id="text-field"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled"
+      data-id="text-field-label"
+      data-shrink="false"
+      for="text-field"
+      id="text-field-label"
+    >
+      TextField with error icon
+    </label>
+    <div
+      class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
+    >
+      <input
+        aria-invalid="false"
+        autocomplete="false"
+        class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
+        data-id="text-field-input"
+        id="text-field"
+        type="text"
+        value=""
+      />
+      <span
+        class="MuiInputAdornment-root makeStyles-fade-in-animation-215 MuiInputAdornment-filled MuiInputAdornment-positionEnd"
+        data-id="input-adornment"
+      >
+        <svg
+          class=""
+          color="#ec0000"
+          fill="currentColor"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TextField with success endIcon should render success after the text 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textfield-base-root-1 MuiFormControl-fullWidth"
+    data-id="text-field"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled"
+      data-id="text-field-label"
+      data-shrink="false"
+      for="text-field"
+      id="text-field-label"
+    >
+      TextField with success icon
+    </label>
+    <div
+      class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
+    >
+      <input
+        aria-invalid="false"
+        autocomplete="false"
+        class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
+        data-id="text-field-input"
+        id="text-field"
+        type="text"
+        value=""
+      />
+      <span
+        class="MuiInputAdornment-root makeStyles-bounce-in-animation-63 MuiInputAdornment-filled MuiInputAdornment-positionEnd"
+        data-id="input-adornment"
+      >
+        <svg
+          class=""
+          color="#a5bb48"
+          fill="currentColor"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TextField with validating endIcon should render validating after the text 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textfield-base-root-72 MuiFormControl-fullWidth"
+    data-id="text-field"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled"
+      data-id="text-field-label"
+      data-shrink="false"
+      for="text-field"
+      id="text-field-label"
+    >
+      TextField with validating icon
+    </label>
+    <div
+      class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
+    >
+      <input
+        aria-invalid="false"
+        autocomplete="false"
+        class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
+        data-id="text-field-input"
+        id="text-field"
+        type="text"
+        value=""
+      />
+      <span
+        class="MuiInputAdornment-root MuiInputAdornment-filled MuiInputAdornment-positionEnd"
+        data-id="input-adornment"
+      >
+        <div
+          class="MuiCircularProgress-root MuiCircularProgress-colorSecondary MuiCircularProgress-indeterminate"
+          role="progressbar"
+          style="width: 20px; height: 20px;"
+        >
+          <svg
+            class="MuiCircularProgress-svg"
+            viewBox="22 22 44 44"
+          >
+            <circle
+              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render the custom after the text 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textfield-base-root-226 MuiFormControl-fullWidth"
+    data-id="text-field"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled"
+      data-id="text-field-label"
+      data-shrink="false"
+      for="text-field"
+      id="text-field-label"
+    >
+      Custom endIcon
+    </label>
+    <div
+      class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
+    >
+      <input
+        aria-invalid="false"
+        autocomplete="false"
+        class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
+        data-id="text-field-input"
+        id="text-field"
+        type="text"
+        value=""
+      />
+      <span
+        class="MuiInputAdornment-root MuiInputAdornment-filled MuiInputAdornment-positionEnd"
+        data-id="input-adornment"
+      >
+        <svg
+          class=""
+          fill="currentColor"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render the custom before the text 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textfield-base-root-297 MuiFormControl-fullWidth"
+    data-id="text-field"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
+      data-id="text-field-label"
+      data-shrink="true"
+      for="text-field"
+      id="text-field-label"
+    >
+      Custom startIcon
+    </label>
+    <div
+      class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedStart MuiFilledInput-adornedStart"
+    >
+      <span
+        class="MuiInputAdornment-root MuiInputAdornment-filled MuiInputAdornment-positionStart"
+        data-id="input-adornment"
+      >
+        <svg
+          class=""
+          fill="currentColor"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+      </span>
+      <input
+        aria-invalid="false"
+        autocomplete="false"
+        class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputAdornedStart MuiFilledInput-inputAdornedStart"
+        data-id="text-field-input"
+        id="text-field"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;

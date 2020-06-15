@@ -223,3 +223,45 @@ exports[`it renders a filled textFieldBase by default 1`] = `
   </div>
 </div>
 `;
+
+exports[`it reserves helperText space when \`reserverHelperTextSapce\` flag is set 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textfield-base-root-625 MuiFormControl-fullWidth"
+    data-id="text-field"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled"
+      data-id="text-field-label"
+      data-shrink="false"
+      for="text-field"
+      id="text-field-label"
+    >
+      The title
+    </label>
+    <div
+      class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl"
+    >
+      <input
+        aria-describedby="text-field-helper-text"
+        aria-invalid="false"
+        autocomplete="false"
+        class="MuiInputBase-input MuiFilledInput-input"
+        data-id="text-field-input"
+        id="text-field"
+        type="text"
+        value=""
+      />
+    </div>
+    <p
+      class="MuiFormHelperText-root MuiFormHelperText-contained"
+      data-id="text-field-helper-text"
+      id="text-field-helper-text"
+    >
+      <div>
+         
+      </div>
+    </p>
+  </div>
+</div>
+`;

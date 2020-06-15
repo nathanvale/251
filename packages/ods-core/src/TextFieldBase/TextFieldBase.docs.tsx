@@ -74,6 +74,9 @@ export const textFieldBasePropDescriptions: (
   onKeyUp: [
     `Is called whenever the user releases a key on input element.`,
   ].join(" "),
+  reserveHelperTextSpace: [
+    `If set to true, helperText will keep its space (height) even if it is empty`,
+  ].join(" "),
 });
 
 export const docs: ComponentDocs<TextFieldBaseProps> = {

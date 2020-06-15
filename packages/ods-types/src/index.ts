@@ -327,3 +327,10 @@ export type ButtonElements = "button" | "a" | "input";
 export type InputType = "button" | "submit" | "reset";
 
 export type TextFieldVariant = "filled" | "outlined";
+
+export type TextFieldSize = "small" | "medium";
+
+export interface AnimationHookProps {
+  duration?: number;
+  easing?: string;
+}

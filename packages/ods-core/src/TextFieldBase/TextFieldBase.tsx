@@ -3,7 +3,11 @@ import {
   TextFieldProps as MuiTextFieldProps,
   TextField as MuiTextField,
 } from "@material-ui/core";
-import { BaseInputProps, TextFieldVariant } from "@origin-digital/ods-types";
+import {
+  BaseInputProps,
+  TextFieldVariant,
+  TextFieldSize,
+} from "@origin-digital/ods-types";
 import { makeStyles } from "@material-ui/core/styles";
 
 export interface TextFieldBaseProps extends Omit<BaseInputProps, "focused"> {
@@ -17,8 +21,9 @@ export interface TextFieldBaseProps extends Omit<BaseInputProps, "focused"> {
   onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
   placeholder?: string;
-  size?: "medium" | "small";
+  size?: TextFieldSize;
   startAdornment?: React.ReactNode;
+  reserveHelperTextSpace?: boolean;
   type?: string;
   variant?: TextFieldVariant;
   muiProps?: MuiTextFieldProps;
@@ -96,20 +101,21 @@ export const TextFieldBase = ({
   "data-id": dataId,
   domProps,
   endAdornment,
+  helperText,
   id,
   muiProps,
+  reserveHelperTextSpace,
   startAdornment,
   variant = "filled",
   ...rest
 }: TextFieldBaseProps) => {
   const classes = useStyles();
 
-  const calcDataId = dataId || `${id}`;
+  const calcDataId = dataId || id;
   return (
     <MuiTextField
       {...muiProps}
       {...rest}
-      fullWidth={true}
       InputProps={{
         ...muiProps?.InputProps,
         startAdornment,
@@ -132,11 +138,13 @@ export const TextFieldBase = ({
           "data-id": `${calcDataId}-helper-text`,
         } as any
       }
-      id={id}
-      data-id={calcDataId}
-      variant={variant}
       classes={classes}
+      data-id={calcDataId}
+      fullWidth={true}
+      helperText={helperText || (reserveHelperTextSpace && <div>&nbsp;</div>)}
+      id={id}
       required={false}
+      variant={variant}
     />
   );
 };

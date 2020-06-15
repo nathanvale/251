@@ -7,14 +7,15 @@
 
 // PLEASE EXPORT JUST ONE HELPER FUNCTION PER FILE
 
+export { alignToFlexAlign } from "./alignToFlexAlign";
 export { cssLengthToString } from "./cssLengthToString";
+export { getRespValForBreakpoint } from "./getRespValForBreakpoint";
 export { isNumber } from "./isNumber";
+export { mapResponsiveProp } from "./mapResponsiveProp";
 export { mapSpaceAliasToIndex } from "./mapSpaceAliasToIndex";
-export { media } from "./media";
 export { mapToStyledSystem } from "./mapToStyledSystem";
+export { media } from "./media";
+export { removeProps } from "./removeProps";
 export { resolveResponsiveRangeProps } from "./responsiveRangeProps";
 export type ResponsiveRangeProps = import("./responsiveRangeProps").ResponsiveRangeProps;
-export { getRespValForBreakpoint } from "./getRespValForBreakpoint";
 export { slugify } from "./slugify";
-export { mapResponsiveProp } from "./mapResponsiveProp";
-export { alignToFlexAlign } from "./alignToFlexAlign";

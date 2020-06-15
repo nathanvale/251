@@ -106,6 +106,14 @@ test("it renders a filled textFieldBase by default", () => {
   expect(container).toMatchSnapshot();
 });
 
+test("it reserves helperText space when `reserverHelperTextSapce` flag is set", () => {
+  const { container } = render(
+    <TextFieldBase id="text-field" label="The title" reserveHelperTextSpace />
+  );
+
+  expect(container).toMatchSnapshot();
+});
+
 test("it passes down id and data-id", () => {
   const { getByTestId } = render(
     <TextFieldBase data-id="text-field-base" id="my-text-field" />

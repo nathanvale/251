@@ -44,7 +44,7 @@ const CommonColumns = ({
   <>
     <Column width="content">
       <Box style={{ width: "150px" }}>
-        <Text truncate>
+        <Text>
           {propName}
           {required && "*"}
         </Text>
