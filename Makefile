@@ -29,3 +29,7 @@ docs:
 	PUBLIC_URL=./ yarn docs:build
 	cp -r config docs/build    # holds cache settings for publish
 	(cd docs/build; tar czf ../../origin-ui-docs.tar.gz .; cd ../..)
+
+.PHONY: test/visuals
+test/visuals:
+	cd tests; yarn test:func:applitools -c 4

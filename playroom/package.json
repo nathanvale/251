@@ -5,6 +5,12 @@
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
   "version": "0.19.1",
+  "workspaces": {
+    "nohoist": [
+      "playroom",
+      "core-js"
+    ]
+  },
   "scripts": {
     "build": "playroom build",
     "start": "playroom start"
@@ -29,6 +35,7 @@
   },
   "devDependencies": {
     "@types/hoist-non-react-statics": "^3.3.1",
+    "core-js": "2",
     "file-loader": "^6.0.0",
     "url-loader": "^4.1.0"
   }

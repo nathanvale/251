@@ -9,13 +9,14 @@
   "workspaces": [
     "packages/*",
     "docs",
-    "playroom"
+    "playroom",
+    "tests"
   ],
   "main": "index.js",
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build --ignore docs --ignore playroom --parallel && yarn tsc",
-    "clean": "rm -rf coverage packages/*/dist",
+    "clean": "rm -rf coverage packages/*/dist **/*/node_modules docs/build",
     "cz": "git-cz",
     "docs:build": "yarn generate-component-docs && yarn generate-e2e-manifest && cd docs && yarn build && cd ../playroom && yarn build && mv dist ../docs/build/playroom",
     "docs:build:serve:static": "yarn docs:build && yarn serve:static",
@@ -76,7 +77,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "origin-scripts commitlint -e $HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn clean && origin-scripts pre-commit",
+      "pre-commit": "rm -rf packages/*/dist && origin-scripts pre-commit",
       "post-rewrite": "origin-scripts pre-commit"
     }
   },

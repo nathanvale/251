@@ -15,8 +15,10 @@ pipeline {
         aws_account_id='dev'
         env_id='dev'
         app_id='designsystem'
+        APPLITOOLS_API_KEY = credentials('APPLITOOLS_APIKEY')
+        APPLITOOLS_BRANCH = "${env.BRANCH_NAME}"
     }
-    agent { label 'node-base' }
+    agent { label 'react-bs' }
     stages {
 
         stage("Install") {
@@ -100,6 +102,23 @@ pipeline {
                 }
             }
         }
+         stage("Visual Tests") {
+            steps {
+                withCredentials([usernamePassword(
+                    credentialsId: 'browser_stack_credentials',
+                    usernameVariable: 'BROWSERSTACK_USERNAME',
+                    passwordVariable: 'BROWSERSTACK_ACCESS_KEY')]) {
+                    script {
+                        environment {
+                            BROWSERSTACK_USERNAME = ${BROWSERSTACK_USERNAME}
+                            BROWSERSTACK_ACCESSKEY = ${BROWSERSTACK_ACCESSKEY}
+                       }
+                        sh "make test/visuals"
+                    }
+                }
+            }
+        }
+
         stage("Docs Publish and Deploy") {
             steps {
                 script {

@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "tests",
+  "description": "Visual tests using applitools",
+  "license": "UNLICENSED",
+  "author": "Charan Damisetti <Charan.Damisetti@originenergy.com.au>",
+  "version": "0.0.0",
+  "scripts": {
+    "serve:static": "cd ../ && yarn serve:static",
+    "test:func": "ts-node ./scripts/test-func.ts",
+    "test:func:applitools": "yarn test:func --applitools",
+    "testcafe:chrome": "testcafe chrome ./src/specs"
+  },
+  "devDependencies": {
+    "@applitools/eyes-testcafe": "1.7.3",
+    "@babel/node": "^7.10.1",
+    "@babel/register": "^7.10.1",
+    "minimist": "^1.2.5",
+    "testcafe": "^1.8.4",
+    "testcafe-browser-provider-browserstack": "^1.11.0",
+    "testcafe-browser-provider-lambdatest": "^2.0.1"
+  }
+}
