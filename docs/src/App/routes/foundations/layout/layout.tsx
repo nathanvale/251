@@ -15,13 +15,13 @@ import {
   Placeholder,
 } from "@origin-digital/ods-core";
 import { SpaceVariants } from "@origin-digital/ods-types";
-import { odsMasterTheme } from "@origin-digital/ods-themes";
+import { coreLayoutTheme } from "@origin-digital/ods-themes";
 import { TextStack } from "../../../TextStack/TextStack";
 import { DocsPage } from "../../../../types";
 import { PageSection, Page } from "../../../Page/Page";
 import Code from "../../../Code/Code";
 
-const spaceScale = [...Object.keys(odsMasterTheme.space)] as SpaceVariants[];
+const spaceScale = [...Object.keys(coreLayoutTheme.space)] as SpaceVariants[];
 const lipsum1 =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim dapibus elit, vel egestas felis pharetra non. Cras malesuada, massa nec ultricies efficitur, lectus ante consequat magna, a porttitor massa ex ut quam.";
 
@@ -49,7 +49,7 @@ const Layout = () => {
                       <Text>{space}</Text>
                       <Box paddingX="xxsmall" />
                       <Text variant="body-small">
-                        ({odsMasterTheme.space[index]}px)
+                        ({coreLayoutTheme.space[index]}px)
                       </Text>
                     </Box>
                   </Column>

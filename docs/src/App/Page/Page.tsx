@@ -141,9 +141,11 @@ export const Page = ({
               {title && title !== propsTitle ? (
                 <LinkableHeading slug={slug}>
                   {isLab ? (
-                    <WarningSharpIcon style={{ color: "#ffb432" }} />
+                    <>
+                      <WarningSharpIcon style={{ color: "#ffb432" }} />
+                      <Box paddingRight="xxsmall" />
+                    </>
                   ) : null}
-                  <Box paddingRight="xxsmall" />
                   {title}
                 </LinkableHeading>
               ) : null}

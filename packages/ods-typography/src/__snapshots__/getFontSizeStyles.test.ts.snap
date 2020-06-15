@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getFontSizeStyles it returns styles for xxxsmall 1`] = `
+Object {
+  "&::before": undefined,
+  "-ms-transform": undefined,
+  "-webkit-transform": undefined,
+  "fontSize": 12,
+  "lineHeight": "20px",
+  "margin": 0,
+  "padding-top": undefined,
+  "transform": undefined,
+  "verticalAlign": undefined,
+}
+`;

@@ -36,11 +36,11 @@ function useLinkResetStyles() {
 function useTextLinkStyles(current?: boolean) {
   const linkResetStyles = useLinkResetStyles();
   const navLinkStyles = makeStyles(
-    ({ colors }) => {
-      const hoverColor = colors.primary;
+    ({ palette }) => {
+      const hoverColor = palette.primary.main;
       return {
         "nav-link": {
-          color: current ? colors.primary : "inherit",
+          color: current ? palette.primary.main : "inherit",
           fontSize: "100%",
           font: "inherit",
           "&:hover": {

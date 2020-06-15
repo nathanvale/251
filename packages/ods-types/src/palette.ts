@@ -4,7 +4,6 @@ import {
 } from "@material-ui/core/styles/createPalette";
 import { Color } from "@material-ui/core";
 
-export type ToneVariants = keyof Palette;
 export interface Palette {
   caution: PaletteColor;
   critical: PaletteColor;

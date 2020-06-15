@@ -2,7 +2,7 @@ import React from "react";
 import { render, fireEvent } from "@origin-digital/ods-testing-library";
 
 import { TrackingEvent, TrackingEventHandler } from "@origin-digital/ods-types";
-import { useTracking } from "../_private/hooks/tracking";
+import { useTracking } from "../_private/hooks/useTracking";
 import { TrackingProvider } from "./TrackingProvider";
 import { Strong } from "..";
 

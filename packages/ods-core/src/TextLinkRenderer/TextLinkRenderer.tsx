@@ -14,20 +14,21 @@ export interface TextLinkRendererProps {
 function useTextLinkStyles() {
   const inText = useContext(TextContext);
   const inHeading = useContext(HeadingContext);
-  let tone: UseTextProps["tone"] | "grey600";
+  let tone: UseTextProps["tone"];
+
   if (inText) {
-    tone = inText.tone;
+    tone = inText.tone || "neutral";
   }
   if (inHeading) {
-    tone = "grey600";
+    tone = "neutralDark";
   }
   const linkResetStyles = useLinkResetStyles();
   const textLinkStyles = makeStyles(
-    ({ colors }) => {
+    ({ palette }) => {
       const hoverColor =
-        tone === "neutral" || tone === "grey600"
-          ? colors.primary
-          : colors[`${tone}Dark`];
+        tone === "neutral" || tone === "neutralDark"
+          ? palette.getColorVariantCSSColor("primary")
+          : palette.getColorVariantCSSColor(tone || "neutral");
       return {
         link: {
           fontSize: "100%",

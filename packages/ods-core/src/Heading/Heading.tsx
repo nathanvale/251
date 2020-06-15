@@ -54,7 +54,7 @@ function useHeadingStyles(props: UseHeadingStylesProps) {
   const { variant, weight } = props;
   useCheckTypographyBackground();
   const basekickStyles = useBasekickStyles({ variant });
-  const toneStyles = useToneStyles({ tone: "grey600" });
+  const toneStyles = useToneStyles({ tone: "neutralDark" });
   const strongStyles = useStrongStyles("bold");
   const weightMap: Record<
     HeadingVariants,

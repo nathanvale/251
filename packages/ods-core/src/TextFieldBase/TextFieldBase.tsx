@@ -36,14 +36,14 @@ export interface TextFieldBaseProps extends BaseFieldProps {
 const useStyles = makeStyles(
   (theme) => ({
     root: {
-      borderBottomColor: theme.palette.promote.main,
+      borderBottomColor: theme.palette.info.main,
       // When in error, the label should be in disabled colour not palette.error.
       "& .MuiFormLabel-root.Mui-error.Mui-disabled": {
         color: theme.palette.grey[300],
       },
       // When not in error, the label colour should always be our blue (promote)
       "& .MuiFormLabel-root.Mui-focused:not(.Mui-error)": {
-        color: theme.palette.promote.main,
+        color: theme.palette.info.main,
       },
       "& .MuiFormLabel-root.Mui-focused.Mui-error": {
         color: theme.palette.error.main,
@@ -64,7 +64,7 @@ const useStyles = makeStyles(
       },
       // When not in error, the colour for border should always be our blue (promote)
       "& .MuiFilledInput-underline:not(.Mui-error):after": {
-        borderBottomColor: theme.palette.promote.main,
+        borderBottomColor: theme.palette.info.main,
       },
       // When disabled should show solid borderBottom instead of dotted
       "& .MuiFilledInput-underline.Mui-disabled:before": {
@@ -81,7 +81,7 @@ const useStyles = makeStyles(
 
       // Outlined, when not in error, the outline colour should always be our blue (promote)
       "& .Mui-focused:not(.Mui-error) .MuiOutlinedInput-notchedOutline": {
-        borderColor: theme.palette.promote.main,
+        borderColor: theme.palette.info.main,
       },
       // Outlined, when in error, the outline colour should always be our blue (promote)
       "& .Mui-focused.Mui-error .MuiOutlinedInput-notchedOutline": {

@@ -16,7 +16,7 @@ import {
   InputType,
   ResponsiveProp,
 } from "@origin-digital/ods-types";
-import { useTracking } from "../_private/hooks/tracking";
+import { useTracking } from "../_private/hooks/useTracking";
 import { useButtonStyles, useInverseStyles } from "./button-styles";
 
 interface ButtonActionProps {

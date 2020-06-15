@@ -13,7 +13,7 @@ exports[`It can render h1 1`] = `
 }
 
 <h1
-  class="typography-h1-variant-basekick-1 typography-grey600-color-2 typography-strong-support-3 typography-regular-weight-4 -h1 c0"
+  class="typography-h1-variant-basekick-1 typography-neutralDark-color-2 typography-strong-support-3 typography-regular-weight-4 -h1 c0"
   data-id="heading"
 >
   Heading H1
@@ -33,7 +33,7 @@ exports[`It can render h1 medium weight 1`] = `
 }
 
 <h1
-  class="typography-h1-variant-basekick-21 typography-grey600-color-22 typography-strong-support-23 typography-medium-weight-24 -h1 c0"
+  class="typography-h1-variant-basekick-21 typography-neutralDark-color-22 typography-strong-support-23 typography-medium-weight-24 -h1 c0"
   data-id="heading"
 >
   Heading H1
@@ -53,7 +53,7 @@ exports[`It can render h2 1`] = `
 }
 
 <h1
-  class="typography-h1-variant-basekick-6 typography-grey600-color-7 typography-strong-support-8 typography-regular-weight-9 -h1 c0"
+  class="typography-h1-variant-basekick-6 typography-neutralDark-color-7 typography-strong-support-8 typography-regular-weight-9 -h1 c0"
   data-id="heading"
 >
   Heading H1
@@ -73,7 +73,7 @@ exports[`It can render h2 medium weight 1`] = `
 }
 
 <h2
-  class="typography-h2-variant-basekick-26 typography-grey600-color-27 typography-strong-support-28 typography-medium-weight-29 -h2 c0"
+  class="typography-h2-variant-basekick-26 typography-neutralDark-color-27 typography-strong-support-28 typography-medium-weight-29 -h2 c0"
   data-id="heading"
 >
   Heading H1
@@ -93,7 +93,7 @@ exports[`It can render h3 1`] = `
 }
 
 <h1
-  class="typography-h1-variant-basekick-11 typography-grey600-color-12 typography-strong-support-13 typography-regular-weight-14 -h1 c0"
+  class="typography-h1-variant-basekick-11 typography-neutralDark-color-12 typography-strong-support-13 typography-regular-weight-14 -h1 c0"
   data-id="heading"
 >
   Heading H1
@@ -113,7 +113,7 @@ exports[`It can render h4 1`] = `
 }
 
 <h1
-  class="typography-h1-variant-basekick-16 typography-grey600-color-17 typography-strong-support-18 typography-regular-weight-19 -h1 c0"
+  class="typography-h1-variant-basekick-16 typography-neutralDark-color-17 typography-strong-support-18 typography-regular-weight-19 -h1 c0"
   data-id="heading"
 >
   Heading H1
@@ -149,7 +149,7 @@ exports[`It can render heaading truncated 1`] = `
   style="width: 90px;"
 >
   <h2
-    class="typography-h2-variant-basekick-33 typography-grey600-color-34 typography-strong-support-35 typography-regular-weight-36 -h2 c0"
+    class="typography-h2-variant-basekick-33 typography-neutralDark-color-34 typography-strong-support-35 typography-regular-weight-36 -h2 c0"
     data-id="heading"
   >
     <div

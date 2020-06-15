@@ -9,7 +9,7 @@ export const docs: ComponentDocs<CardStackSectionProps> = {
   componentName: "CardStackSection",
   migrationGuide: false,
   description:
-    "CardStackSection is a versatile vertical card stacking component that managers responsive max-widths, distributed space and paddingY. This component should be at your root and not be nested.",
+    "CardStackSection is a versatile vertical card stacking component that manages responsive max-widths, distributed space and paddingY. This component should be at your root and not be nested.",
   propDescriptions: {
     variant:
       "Default for majority of cases, widget for dashboards, card-centered for standalone cards in beskpoke flows e.g. onboarding.",
