@@ -1,13 +1,12 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { removeProps } from "@origin-digital/ods-helpers";
 import { IconCheck } from "@origin-digital/ods-icons";
 import { Stack } from "../Stack/Stack";
 import { Text } from "../Text/Text";
 import { Columns } from "../Columns/Columns";
 import { Column } from "../Column/Column";
 import { Box } from "../Box/Box";
-import { textFieldBasePropDescriptions } from "../TextFieldBase/TextFieldBase.docs";
+import { baseFieldPropDesc } from "../TextFieldBase/TextFieldBase.docs";
 import { TextField, TextFieldProps } from "./TextField";
 
 export const docs: ComponentDocs<TextFieldProps> = {
@@ -18,10 +17,7 @@ export const docs: ComponentDocs<TextFieldProps> = {
     "such as TextField, SelectField, TextAreaField, etc.",
   ].join(" "),
   propDescriptions: {
-    ...removeProps(textFieldBasePropDescriptions("TextField"), [
-      "startAdornment",
-      "endAdornment",
-    ]),
+    ...baseFieldPropDesc("TextField"),
     endIcon: [
       `Provide an icon to be shown at the right end of the TextField. If the value is string and one of`,
       `"success" | "error" | "validating", it will show the corresponding icon.`,
@@ -33,6 +29,8 @@ export const docs: ComponentDocs<TextFieldProps> = {
     startIcon: [
       `Renders the received react element (mainly an icon) before (on the left of) the text in TextField`,
     ].join(" "),
+    domProps:
+      "The standard HTMLInput props. This will be directly passed down to the input element",
   },
   migrationGuide: false,
   examples: {
@@ -176,7 +174,7 @@ return (<Stack space="medium">
     value={value}
     onChange={e => setValue(e.target.value)}
   />
-  {value && <Text>Entered name: {value}</Text>}
+  {value && <Text tone="positive">Entered name: {value}</Text>}
 </Stack>)`,
       },
       {

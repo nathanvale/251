@@ -1,14 +1,7 @@
 import React from "react";
-import {
-  TextFieldProps as MuiTextFieldProps,
-  Theme,
-  useTheme,
-} from "@material-ui/core";
+import { Theme, useTheme } from "@material-ui/core";
 import { IconCheckCircle, IconError } from "@origin-digital/ods-icons";
-import {
-  TextFieldBase,
-  TextFieldBaseProps,
-} from "../TextFieldBase/TextFieldBase";
+import { BaseFieldProps, TextFieldBase } from "../TextFieldBase/TextFieldBase";
 import { InputAdornment } from "../InputAdornment/InputAdornment";
 import { Spinner } from "../Spinner/Spinner";
 import {
@@ -18,12 +11,10 @@ import {
 
 export type EndIconType = "success" | "error" | "validating" | React.ReactNode;
 
-export interface TextFieldProps
-  extends Omit<TextFieldBaseProps, "startAdornment" | "endAdornment"> {
+export interface TextFieldProps extends BaseFieldProps {
   domProps?: React.HTMLAttributes<HTMLInputElement>;
   endIcon?: EndIconType;
   startIcon?: React.ReactNode;
-  muiProps?: MuiTextFieldProps;
 }
 
 export interface EndAdornmentProps {
