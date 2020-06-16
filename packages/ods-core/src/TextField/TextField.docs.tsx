@@ -74,7 +74,6 @@ export const docs: ComponentDocs<TextFieldProps> = {
             id="text-field1"
             label="Type here"
             helperText="This will be the error"
-            placeholder="No values here"
             endIcon="success"
           />
         ),
@@ -87,7 +86,6 @@ export const docs: ComponentDocs<TextFieldProps> = {
             id="text-field1"
             label="Type here"
             helperText="This will be the error"
-            placeholder="No values here"
             error
           />
         ),
@@ -100,7 +98,6 @@ export const docs: ComponentDocs<TextFieldProps> = {
             id="text-field1"
             label="Type here"
             helperText="This will be the error"
-            placeholder="No values here"
             endIcon="validating"
           />
         ),
@@ -114,7 +111,6 @@ export const docs: ComponentDocs<TextFieldProps> = {
             id="text-field15"
             label="Type here"
             helperText="This will be the error"
-            placeholder="No values here"
             endIcon={<IconCheck color="#a5bb48" />}
           />
         ),
@@ -128,7 +124,6 @@ export const docs: ComponentDocs<TextFieldProps> = {
             id="text-field16"
             label="Type here"
             helperText="This will be the error"
-            placeholder="No values here"
             startIcon={<IconCheck color="#a5bb48" />}
           />
         ),
@@ -225,15 +220,16 @@ return (<Stack space="medium">
         ),
       },
       {
-        label: "Outlined variant",
-        description: ["TextField also has an Outlined variant."].join(" "),
+        label: "Placeholder",
+        description: [
+          "TextField components can show a placeholder for text.",
+          "If the field has a label, the placeholder only shows up when the field is focused on.",
+        ].join(" "),
         Code: () => (
           <TextField
             id="text-field11"
             label="Type here"
-            variant="outlined"
-            helperText="helper text for outlined input"
-            placeholder="Placeholder"
+            placeholder="Placeholder is shown here"
           />
         ),
       },
@@ -243,12 +239,7 @@ return (<Stack space="medium">
     {
       label: "Basic",
       Code: () => (
-        <TextField
-          id="text-field"
-          label="label"
-          placeholder="placeholder"
-          helperText="details"
-        />
+        <TextField id="text-field" label="label" helperText="details" />
       ),
     },
     {
@@ -257,7 +248,6 @@ return (<Stack space="medium">
         <TextField
           id="text-field"
           label="label"
-          placeholder="placeholder"
           helperText="details"
           error={true}
         />
@@ -269,7 +259,6 @@ return (<Stack space="medium">
         <TextField
           id="text-field"
           label="label"
-          placeholder="placeholder"
           helperText="details"
           endIcon="success"
         />
@@ -281,7 +270,6 @@ return (<Stack space="medium">
         <TextField
           id="text-field"
           label="label"
-          placeholder="placeholder"
           helperText="details"
           endIcon="validating"
         />
@@ -293,7 +281,6 @@ return (<Stack space="medium">
         <TextField
           id="text-field"
           label="label"
-          placeholder="placeholder"
           helperText="details"
           endIcon={<IconCheck color="#a5bb48" />}
         />
@@ -305,7 +292,6 @@ return (<Stack space="medium">
         <TextField
           id="text-field"
           label="label"
-          placeholder="placeholder"
           helperText="details"
           startIcon={<IconCheck color="#a5bb48" />}
         />
@@ -327,12 +313,26 @@ return (<Stack space="medium">
         <TextField
           id="text-field"
           label="label"
-          placeholder="placeholder"
           helperText="details"
           onChange={(e) => {
             /* eslint-disable-next-line no-console */
             console.log("Change received: ", e.target.value);
           }}
+        />
+      ),
+    },
+    {
+      label: "Character count - customise helperText",
+      Code: () => (
+        <TextField
+          id="text-field"
+          label="Character count"
+          helperText={
+            <Columns>
+              <Column>BSB is 7 chars max</Column>
+              <Column width="content">3/7</Column>
+            </Columns>
+          }
         />
       ),
     },

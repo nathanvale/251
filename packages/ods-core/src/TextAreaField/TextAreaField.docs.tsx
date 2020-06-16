@@ -67,20 +67,6 @@ return (<Stack space="medium">
   {value && <Text tone="positive">Entered name: {value}</Text>}
 </Stack>)`,
       },
-      {
-        label: "Outlined variant",
-        description: ["TextField also has an Outlined variant."].join(" "),
-        Code: () => (
-          <TextAreaField
-            id="text-field11"
-            label="Type here"
-            variant="outlined"
-            helperText="helper text for outlined input"
-            placeholder="Placeholder"
-            rows="5"
-          />
-        ),
-      },
     ],
   },
   snippets: [

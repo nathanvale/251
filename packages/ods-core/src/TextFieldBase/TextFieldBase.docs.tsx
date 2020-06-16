@@ -110,7 +110,6 @@ export const docs: ComponentDocs<TextFieldBaseProps> = {
             id="text-field1"
             label="Type here"
             helperText="This will be the error"
-            placeholder="No values here"
             endAdornment={
               <InputAdornment position="end">
                 <IconCheckCircle color="#a5bb48" />
@@ -129,7 +128,6 @@ export const docs: ComponentDocs<TextFieldBaseProps> = {
             label="Type here"
             helperText="This will be the error"
             error={true}
-            placeholder="This is a placeholder"
             endAdornment={
               <InputAdornment position="end">
                 <IconError color="#ec0000" />
@@ -255,15 +253,16 @@ return (<Stack space="medium">
         ),
       },
       {
-        label: "Outlined variant",
-        description: ["TextFieldBase also has an Outlined variant."].join(" "),
+        label: "Placeholder",
+        description: [
+          "TextFieldBase components can show a placeholder for text.",
+          "If the field has a label, the placeholder only shows up when the field is focused on.",
+        ].join(" "),
         Code: () => (
           <TextFieldBase
             id="text-field11"
             label="Type here"
-            variant="outlined"
-            helperText="helper text for outlined input"
-            placeholder="Placeholder"
+            placeholder="Placeholder is shown here"
           />
         ),
       },
@@ -273,12 +272,7 @@ return (<Stack space="medium">
     {
       label: "Basic",
       Code: () => (
-        <TextFieldBase
-          id="text-field"
-          label="label"
-          placeholder="placeholder"
-          helperText="details"
-        />
+        <TextFieldBase id="text-field" label="label" helperText="details" />
       ),
     },
     {
@@ -297,7 +291,6 @@ return (<Stack space="medium">
         <TextFieldBase
           id="text-field"
           label="label"
-          placeholder="placeholder"
           helperText="details"
           onChange={(e) => {
             /* eslint-disable-next-line no-console */

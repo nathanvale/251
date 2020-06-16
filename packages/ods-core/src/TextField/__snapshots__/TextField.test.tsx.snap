@@ -3,7 +3,7 @@
 exports[`TextField with error endIcon should render error after the text 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfield-base-root-155 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfield-base-root-157 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label
@@ -28,7 +28,7 @@ exports[`TextField with error endIcon should render error after the text 1`] = `
         value=""
       />
       <span
-        class="MuiInputAdornment-root makeStyles-fade-in-animation-215 MuiInputAdornment-filled MuiInputAdornment-positionEnd"
+        class="MuiInputAdornment-root makeStyles-fade-in-animation-218 MuiInputAdornment-filled MuiInputAdornment-positionEnd"
         data-id="input-adornment"
       >
         <svg
@@ -81,7 +81,7 @@ exports[`TextField with success endIcon should render success after the text 1`]
         value=""
       />
       <span
-        class="MuiInputAdornment-root makeStyles-bounce-in-animation-63 MuiInputAdornment-filled MuiInputAdornment-positionEnd"
+        class="MuiInputAdornment-root makeStyles-bounce-in-animation-64 MuiInputAdornment-filled MuiInputAdornment-positionEnd"
         data-id="input-adornment"
       >
         <svg
@@ -105,7 +105,7 @@ exports[`TextField with success endIcon should render success after the text 1`]
 exports[`TextField with validating endIcon should render validating after the text 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfield-base-root-72 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfield-base-root-73 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label
@@ -161,7 +161,7 @@ exports[`TextField with validating endIcon should render validating after the te
 exports[`should render the custom after the text 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfield-base-root-226 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfield-base-root-229 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label
@@ -209,7 +209,7 @@ exports[`should render the custom after the text 1`] = `
 exports[`should render the custom before the text 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfield-base-root-297 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfield-base-root-301 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label

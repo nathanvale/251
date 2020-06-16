@@ -9,6 +9,7 @@ import {
   TextFieldSize,
 } from "@origin-digital/ods-types";
 import { makeStyles } from "@material-ui/core/styles";
+import { useGreyHelperText } from "@origin-digital/ods-typography";
 
 export interface BaseFieldProps extends Omit<BaseInputProps, "focused"> {
   defaultValue?: string | number;
@@ -49,6 +50,14 @@ const useStyles = makeStyles(
         color: theme.palette.error.main,
       },
 
+      /** Fonts must be set for inputBase. Our fontSize for inputs is bigger than our normal text.
+       * That is why we set them to subtitle2 instead of body1.
+       * TODO: We need to move to MUI approach for consistency and our inputs have the same fontSize as Text.
+       **/
+      "& .MuiInputBase-root": {
+        ...theme.typography.subtitle2,
+      },
+
       /** FilledInput **/
       // We have slightly lighter backgrounds than MUI
       "& .MuiFilledInput-root": {
@@ -60,7 +69,7 @@ const useStyles = makeStyles(
         backgroundColor: "rgba(80, 80, 80, 0.12)",
       },
       "& .MuiFilledInput-root.Mui-focused": {
-        backgroundColor: "rgba(80, 80, 80, 0.20)",
+        backgroundColor: "rgba(80, 80, 80, 0.12)",
       },
       // When not in error, the colour for border should always be our blue (promote)
       "& .MuiFilledInput-underline:not(.Mui-error):after": {
@@ -114,6 +123,7 @@ export const TextFieldBase = ({
   ...rest
 }: TextFieldBaseProps) => {
   const classes = useStyles();
+  const helperTextClassName = useGreyHelperText();
 
   const calcDataId = dataId || id;
   return (
@@ -139,6 +149,7 @@ export const TextFieldBase = ({
       FormHelperTextProps={
         {
           ...muiProps?.FormHelperTextProps,
+          className: helperTextClassName,
           "data-id": `${calcDataId}-helper-text`,
         } as any
       }
