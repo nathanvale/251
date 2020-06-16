@@ -3,7 +3,6 @@ import {
   FormControlState,
   makeStyles,
   useFormControl,
-  Theme,
 } from "@material-ui/core";
 import { FormControlLabel } from "../../../FormControlLabel/FormControlLabel";
 import { FormHelperText } from "../../../FormHelperText/FormHelperText";
@@ -62,14 +61,13 @@ const useLabelStyles = makeStyles(
 );
 
 const useHelperTextStyles = makeStyles(
-  (theme: Theme) => ({
+  {
     formHelperText: {
       paddingLeft: "30px",
       marginTop: "-5px",
       paddingBottom: "5px",
-      color: theme.palette.grey[400],
     },
-  }),
+  },
   { classNamePrefix: `AbstractSwitch` }
 );
 

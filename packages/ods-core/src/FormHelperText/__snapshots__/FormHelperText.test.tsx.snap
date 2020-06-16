@@ -3,7 +3,7 @@
 exports[`it renders the text as a paragraph 1`] = `
 <div>
   <p
-    class="MuiFormHelperText-root"
+    class="MuiFormHelperText-root form-helper-text-grey400-colour-1"
     data-id="helperTextDataId"
     id="helperText"
   >
