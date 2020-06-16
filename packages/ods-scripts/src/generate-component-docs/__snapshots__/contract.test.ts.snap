@@ -1311,6 +1311,29 @@ exports[`ControlGroup 1`] = `
 }
 `;
 
+exports[`Dialog 1`] = `
+{
+  children?: ReactNode
+  className?: string
+  classes?: Record<string, string>
+  data-id?: string
+  disabled?: boolean
+  hideClose?: boolean
+  id: string
+  maxWidth?: 
+    | "lg"
+    | "md"
+    | "sm"
+    | false
+  muiProps?: MuiProps | undefined
+  noFullScreenOnMobile?: boolean
+  onClose?: () => void
+  opaqueBackground?: boolean
+  open?: boolean
+  title: ReactNode
+}
+`;
+
 exports[`Divider 1`] = `
 {
   data-id?: string
@@ -1449,6 +1472,20 @@ exports[`Hidden 1`] = `
     | "xl"
   children: ReactNode
   inline?: boolean
+}
+`;
+
+exports[`IconButton 1`] = `
+{
+  aria-label?: string
+  children?: ReactNode
+  className?: string
+  classes?: Record<string, string>
+  data-id?: string
+  disabled?: boolean
+  id?: string
+  muiProps?: OverrideProps<IconButtonTypeMap<{}, "button">, "button"> | undefined
+  onClick?: () => void
 }
 `;
 
