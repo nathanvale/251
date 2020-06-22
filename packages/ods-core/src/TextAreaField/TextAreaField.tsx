@@ -13,6 +13,7 @@ export const TextAreaField = ({ ...rest }: TextAreaFieldProps) => {
 
 TextAreaField.displayName = "TextAreaField";
 TextAreaField.defaultProps = {
-  variant: "filled",
+  rows: 4,
   size: "medium",
+  variant: "filled",
 };

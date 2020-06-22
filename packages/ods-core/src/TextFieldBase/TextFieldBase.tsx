@@ -11,10 +11,12 @@ import {
 import { makeStyles } from "@material-ui/core/styles";
 import { useGreyHelperText } from "@origin-digital/ods-typography";
 
-export interface BaseFieldProps extends Omit<BaseInputProps, "focused"> {
+export interface BaseFieldProps
+  extends Omit<BaseInputProps, "focused" | "children"> {
   defaultValue?: string | number;
   helperText?: string | React.ReactNode;
   label?: string;
+  maxLength?: string | number;
   onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
   onFocus?: (event: React.FocusEvent<HTMLInputElement>) => void;
   onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
@@ -28,9 +30,12 @@ export interface BaseFieldProps extends Omit<BaseInputProps, "focused"> {
 }
 
 export interface TextFieldBaseProps extends BaseFieldProps {
+  children?: React.ReactNode;
   domProps?: React.HTMLAttributes<HTMLInputElement | HTMLTextAreaElement>;
   endAdornment?: React.ReactNode;
   multiline?: boolean;
+  select?: boolean;
+  SelectProps?: MuiTextFieldProps["SelectProps"];
   startAdornment?: React.ReactNode;
 }
 
@@ -50,12 +55,37 @@ const useStyles = makeStyles(
         color: theme.palette.error.main,
       },
 
-      /** Fonts must be set for inputBase. Our fontSize for inputs is bigger than our normal text.
+      /** Fonts must be set to 16px for inputBase. Our fontSize for inputs is bigger than our normal text.
        * That is why we set them to subtitle2 instead of body1.
        * TODO: We need to move to MUI approach for consistency and our inputs have the same fontSize as Text.
        **/
-      "& .MuiInputBase-root": {
-        ...theme.typography.subtitle2,
+      "& .MuiInputBase-root, & .MuiFormLabel-root": {
+        fontSize: theme.typography.subtitle2.fontSize,
+      },
+      /**
+       * To keep the overall height of the component fixed as 56px while increasing the lineHeight of input/select
+       * we reduced its paddingTop by 1px (from 27px to 26px) and bumped up the lineHeight to 20px from 19px.
+       */
+      "& .MuiInputBase-input:not(.MuiInputBase-inputMultiline)": {
+        height: "auto",
+        lineHeight: "24px",
+        paddingTop: "24px",
+        paddingBottom: "8px",
+        "&.MuiInputBase-inputMarginDense": {
+          paddingTop: "20px",
+          paddingBottom: "4px",
+        },
+      },
+      "& .MuiInputBase-multiline": {
+        //TextFeild paddings are applied on the parent element
+        height: "auto",
+        lineHeight: "24px",
+        paddingTop: "24px",
+        paddingBottom: "8px",
+        "&.MuiInputBase-marginDense": {
+          paddingTop: "20px",
+          paddingBottom: "4px",
+        },
       },
 
       /** FilledInput **/
@@ -71,13 +101,19 @@ const useStyles = makeStyles(
       "& .MuiFilledInput-root.Mui-focused": {
         backgroundColor: "rgba(80, 80, 80, 0.12)",
       },
+      "& .MuiSelect-root:focus": {
+        backgroundColor: "rgba(80, 80, 80, 0)",
+      },
       // When not in error, the colour for border should always be our blue (promote)
       "& .MuiFilledInput-underline:not(.Mui-error):after": {
         borderBottomColor: theme.palette.info.main,
       },
+      "& .MuiInputBase-root.Mui-disabled": {
+        backgroundColor: theme.palette.grey[50],
+      },
       // When disabled should show solid borderBottom instead of dotted
       "& .MuiFilledInput-underline.Mui-disabled:before": {
-        borderBottomColor: theme.palette.grey[300],
+        borderBottomColor: theme.palette.grey[200],
         borderBottomStyle: "solid",
         borderBottomWidth: "1px",
       },
@@ -108,7 +144,7 @@ const useStyles = makeStyles(
       },
     },
   }),
-  { classNamePrefix: "textfield-base" }
+  { classNamePrefix: "textfieldbase" }
 );
 export const TextFieldBase = ({
   "data-id": dataId,
@@ -116,8 +152,11 @@ export const TextFieldBase = ({
   endAdornment,
   helperText,
   id,
+  maxLength,
   muiProps,
   reserveHelperTextSpace,
+  select,
+  SelectProps,
   startAdornment,
   variant = "filled",
   ...rest
@@ -138,6 +177,7 @@ export const TextFieldBase = ({
       inputProps={{
         ...muiProps?.inputProps,
         ...domProps,
+        maxLength,
         "data-id": `${calcDataId}-input`,
       }}
       InputLabelProps={
@@ -153,12 +193,22 @@ export const TextFieldBase = ({
           "data-id": `${calcDataId}-helper-text`,
         } as any
       }
+      SelectProps={{
+        ...muiProps?.SelectProps,
+        ...SelectProps,
+        ...(select
+          ? {
+              native: true,
+            }
+          : {}),
+      }}
       classes={classes}
       data-id={calcDataId}
       fullWidth={true}
       helperText={helperText || (reserveHelperTextSpace && <div>&nbsp;</div>)}
       id={id}
       required={false}
+      select={select}
       variant={variant}
     />
   );

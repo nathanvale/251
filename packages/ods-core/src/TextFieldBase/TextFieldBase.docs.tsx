@@ -13,7 +13,7 @@ export const baseFieldPropDesc: (
   compName: string
 ) => Partial<Record<keyof TextFieldBaseProps, string>> = (compName) => ({
   defaultValue:
-    "The initial value of the input element. Use this if the form is uncontrolled",
+    "The initial value of the input/select element. Use this if the form is uncontrolled",
   disabled: `Use this to disable/enable the component`,
   error: `If set to true the ${compName} component will be rendered in error state.`,
   "data-id": [
@@ -33,6 +33,7 @@ export const baseFieldPropDesc: (
     `operations such as focus().`,
   ].join(" "),
   label: `The label shown at the top of the ${compName}`,
+  maxLength: `Standard html prop limiting the number of characters one can enter in the input.`,
   name: `The name property of the underlying input element, mostly used by form solutions`,
   onBlur: [
     `Is called whenever the ${compName} loses focus, either via keyboard or the user clicks outside`,

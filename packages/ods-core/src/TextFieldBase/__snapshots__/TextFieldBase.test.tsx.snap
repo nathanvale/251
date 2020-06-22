@@ -3,7 +3,7 @@
 exports[`TextFieldBase variant filled should render a filled textFieldBase 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfield-base-root-1 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-1 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label
@@ -43,7 +43,7 @@ exports[`TextFieldBase variant filled should render a filled textFieldBase 1`] =
 exports[`TextFieldBase variant filled should render a filled textFieldBase with compact size 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfield-base-root-70 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-70 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label
@@ -83,7 +83,7 @@ exports[`TextFieldBase variant filled should render a filled textFieldBase with 
 exports[`TextFieldBase variant outlined should render a outlined textFieldBase 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfield-base-root-277 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-277 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label
@@ -135,7 +135,7 @@ exports[`TextFieldBase variant outlined should render a outlined textFieldBase 1
 exports[`TextFieldBase variant outlined should render a outlined textFieldBase with compact size 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfield-base-root-349 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-349 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label
@@ -187,7 +187,7 @@ exports[`TextFieldBase variant outlined should render a outlined textFieldBase w
 exports[`it renders a filled textFieldBase by default 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfield-base-root-565 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-565 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label
@@ -227,7 +227,7 @@ exports[`it renders a filled textFieldBase by default 1`] = `
 exports[`it reserves helperText space when \`reserverHelperTextSapce\` flag is set 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfield-base-root-634 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-634 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label

@@ -1,0 +1,277 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a SelectField 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-1 MuiFormControl-fullWidth"
+    data-id="my-select-field"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
+      data-id="my-select-field-label"
+      data-shrink="true"
+      for="my-select-field"
+      id="my-select-field-label"
+    >
+      The title
+    </label>
+    <div
+      class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl"
+    >
+      <select
+        aria-describedby="my-select-field-helper-text"
+        aria-invalid="false"
+        autocomplete="false"
+        class="MuiSelect-root MuiSelect-select MuiSelect-filled MuiInputBase-input MuiFilledInput-input"
+        data-id="my-select-field-input"
+        id="my-select-field"
+      >
+        <option
+          value="syd"
+        >
+          Sydney
+        </option>
+        <option
+          value="mlb"
+        >
+          Melbourne
+        </option>
+        <option
+          value="prt"
+        >
+          Perth
+        </option>
+      </select>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconFilled"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+        />
+      </svg>
+    </div>
+    <p
+      class="MuiFormHelperText-root MuiFormHelperText-contained form-helper-text-grey400-colour-2 MuiFormHelperText-filled"
+      data-id="my-select-field-helper-text"
+      id="my-select-field-helper-text"
+    >
+      This is the info
+    </p>
+  </div>
+</div>
+`;
+
+exports[`should render a SelectField options if both options and children props are provided 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-265 MuiFormControl-fullWidth"
+    data-id="my-select-field"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
+      data-id="my-select-field-label"
+      data-shrink="true"
+      for="my-select-field"
+      id="my-select-field-label"
+    >
+      The title
+    </label>
+    <div
+      class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl"
+    >
+      <select
+        aria-describedby="my-select-field-helper-text"
+        aria-invalid="false"
+        autocomplete="false"
+        class="MuiSelect-root MuiSelect-select MuiSelect-filled MuiInputBase-input MuiFilledInput-input"
+        data-id="my-select-field-input"
+        id="my-select-field"
+      >
+        <option
+          value="cbr"
+        >
+          Canberra
+        </option>
+        <option
+          value="prt"
+        >
+          Perth
+        </option>
+      </select>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconFilled"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+        />
+      </svg>
+    </div>
+    <p
+      class="MuiFormHelperText-root MuiFormHelperText-contained form-helper-text-grey400-colour-266 MuiFormHelperText-filled"
+      data-id="my-select-field-helper-text"
+      id="my-select-field-helper-text"
+    >
+      This is the info
+    </p>
+  </div>
+</div>
+`;
+
+exports[`should render a SelectField with customised options 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-177 MuiFormControl-fullWidth"
+    data-id="my-select-field"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled"
+      data-id="my-select-field-label"
+      data-shrink="false"
+      for="my-select-field"
+      id="my-select-field-label"
+    >
+      The title
+    </label>
+    <div
+      class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl"
+    >
+      <select
+        aria-describedby="my-select-field-helper-text"
+        aria-invalid="false"
+        autocomplete="false"
+        class="MuiSelect-root MuiSelect-select MuiSelect-filled MuiInputBase-input MuiFilledInput-input"
+        data-id="my-select-field-input"
+        id="my-select-field"
+      >
+        <option
+          aria-label="Empty"
+          value=""
+        />
+        <optgroup
+          label="NSW"
+        >
+          <option
+            value="sydney"
+          >
+            Sydney
+          </option>
+          <option
+            value="newcastle"
+          >
+            New Castle
+          </option>
+        </optgroup>
+        <optgroup
+          label="VIC"
+        >
+          <option
+            value="melbourne"
+          >
+            Melbourne
+          </option>
+          <option
+            value="bendigo"
+          >
+            Bendigo
+          </option>
+        </optgroup>
+      </select>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconFilled"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+        />
+      </svg>
+    </div>
+    <p
+      class="MuiFormHelperText-root MuiFormHelperText-contained form-helper-text-grey400-colour-178"
+      data-id="my-select-field-helper-text"
+      id="my-select-field-helper-text"
+    >
+      This is the info
+    </p>
+  </div>
+</div>
+`;
+
+exports[`should render a SelectField with empty option 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-89 MuiFormControl-fullWidth"
+    data-id="my-select-field"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled"
+      data-id="my-select-field-label"
+      data-shrink="false"
+      for="my-select-field"
+      id="my-select-field-label"
+    >
+      The title
+    </label>
+    <div
+      class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl"
+    >
+      <select
+        aria-describedby="my-select-field-helper-text"
+        aria-invalid="false"
+        autocomplete="false"
+        class="MuiSelect-root MuiSelect-select MuiSelect-filled MuiInputBase-input MuiFilledInput-input"
+        data-id="my-select-field-input"
+        id="my-select-field"
+      >
+        <option
+          aria-label="Empty"
+          value=""
+        />
+        <option
+          value="syd"
+        >
+          Sydney
+        </option>
+        <option
+          value="mlb"
+        >
+          Melbourne
+        </option>
+        <option
+          value="prt"
+        >
+          Perth
+        </option>
+      </select>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconFilled"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+        />
+      </svg>
+    </div>
+    <p
+      class="MuiFormHelperText-root MuiFormHelperText-contained form-helper-text-grey400-colour-90"
+      data-id="my-select-field-helper-text"
+      id="my-select-field-helper-text"
+    >
+      This is the info
+    </p>
+  </div>
+</div>
+`;
