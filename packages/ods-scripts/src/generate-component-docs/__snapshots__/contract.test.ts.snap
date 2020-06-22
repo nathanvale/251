@@ -1856,6 +1856,56 @@ exports[`Section 1`] = `
 }
 `;
 
+exports[`SelectField 1`] = `
+{
+  aria-describedby?: string
+  aria-label?: string
+  aria-labelledby?: string
+  children?: 
+    | ReactElement<"optgroup" | "option", string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>
+    | ReactElement<"optgroup" | "option", string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>[]
+  className?: string
+  classes?: Record<string, string>
+  data-id?: string
+  defaultValue?: 
+    | number
+    | string
+  disabled?: boolean
+  displayEmpty?: boolean
+  domProps?: HTMLAttributes<HTMLInputElement> | undefined
+  emptyAriaLabel?: string
+  error?: boolean
+  helperText?: ReactNode
+  id: string
+  inputRef?: 
+    | (instance: any) => void
+    | RefObject<any>
+  label?: string
+  maxLength?: 
+    | number
+    | string
+  muiProps?: any
+  name?: string
+  onBlur?: (event: FocusEvent<HTMLInputElement>) => void
+  onChange?: (event: ChangeEvent<HTMLInputElement>, value?: string | undefined) => void
+  onFocus?: (event: FocusEvent<HTMLInputElement>) => void
+  onKeyDown?: (event: KeyboardEvent<HTMLInputElement>) => void
+  onKeyUp?: (event: KeyboardEvent<HTMLInputElement>) => void
+  options?: OptionType[]
+  reserveHelperTextSpace?: boolean
+  size?: 
+    | "medium"
+    | "small"
+  type?: string
+  value?: 
+    | number
+    | string
+  variant?: 
+    | "filled"
+    | "outlined"
+}
+`;
+
 exports[`Spinner 1`] = `
 {
   children?: ReactNode
@@ -2117,7 +2167,6 @@ exports[`TextAreaField 1`] = `
   aria-describedby?: string
   aria-label?: string
   aria-labelledby?: string
-  children?: ReactNode
   className?: string
   classes?: Record<string, string>
   data-id?: string
@@ -2133,6 +2182,9 @@ exports[`TextAreaField 1`] = `
     | (instance: any) => void
     | RefObject<any>
   label?: string
+  maxLength?: 
+    | number
+    | string
   muiProps?: StandardTextFieldProps | FilledTextFieldProps | OutlinedTextFieldProps | undefined
   name?: string
   onBlur?: (event: FocusEvent<HTMLInputElement>) => void
@@ -2166,7 +2218,6 @@ exports[`TextField 1`] = `
   aria-describedby?: string
   aria-label?: string
   aria-labelledby?: string
-  children?: ReactNode
   className?: string
   classes?: Record<string, string>
   data-id?: string
@@ -2183,6 +2234,9 @@ exports[`TextField 1`] = `
     | (instance: any) => void
     | RefObject<any>
   label?: string
+  maxLength?: 
+    | number
+    | string
   muiProps?: StandardTextFieldProps | FilledTextFieldProps | OutlinedTextFieldProps | undefined
   name?: string
   onBlur?: (event: FocusEvent<HTMLInputElement>) => void
@@ -2208,6 +2262,7 @@ exports[`TextField 1`] = `
 
 exports[`TextFieldBase 1`] = `
 {
+  SelectProps?: Partial<SelectProps>
   aria-describedby?: string
   aria-label?: string
   aria-labelledby?: string
@@ -2228,6 +2283,9 @@ exports[`TextFieldBase 1`] = `
     | (instance: any) => void
     | RefObject<any>
   label?: string
+  maxLength?: 
+    | number
+    | string
   muiProps?: StandardTextFieldProps | FilledTextFieldProps | OutlinedTextFieldProps | undefined
   multiline?: boolean
   name?: string
@@ -2238,6 +2296,7 @@ exports[`TextFieldBase 1`] = `
   onKeyUp?: (event: KeyboardEvent<HTMLInputElement>) => void
   placeholder?: string
   reserveHelperTextSpace?: boolean
+  select?: boolean
   size?: 
     | "medium"
     | "small"

@@ -69,26 +69,36 @@ pipeline {
             }
             steps {
                 script {
-                    def shouldPublish = true
+                    def userInput = true
+                    def didTimeout = false
                     try {
                         timeout(time: 20, unit: 'SECONDS') {
-                            shouldPublish = input(
-                                    id: 'Publish Canary',
-                                    message: 'Publish a canary?',
-                                    ok: "Publish")
+                            userInput = input(
+                                    id: 'Proceed1', message: 'Publish Canary?', parameters: [
+                                    [$class: 'BooleanParameterDefinition', defaultValue: true, description: '', name: 'Publish']
+                            ])
                         }
                     } catch (err) { // timeout reached or input false
                         def user = err.getCauses()[0].getUser()
                         if ('SYSTEM' == user.toString()) { // SYSTEM means timeout.
-                            shouldPublish = false
+                            didTimeout = true
                             println("timed out,skip publishing canary.")
+                        } else {
+                            userInput = false
+                            echo "Canary Publish skipped by: [${user}]"
                         }
                     }
-                    println("shouldPublish: ${shouldPublish}")
-                    if (shouldPublish) {
+                    println("userInput: ${userInput}, didTimeout: ${didTimeout}")
+
+                    if (didTimeout) {
+                        // do something on timeout
+                        echo "Canary Publish request timed out, skipping canary publishing"
+                    } else if (userInput == true) {
                         echo "Publish Canary Release ${BUILD_NUMBER}"
                         def gitShortHash = sh([script: "git rev-parse HEAD | cut -c -7", returnStdout: true]).trim()
                         sh "make pr-publish branch=${localBranchName} preid=${gitShortHash}"
+                    } else {
+                        echo "Canary did not publish"
                     }
                 }
             }

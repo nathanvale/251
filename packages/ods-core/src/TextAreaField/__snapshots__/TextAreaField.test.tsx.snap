@@ -3,7 +3,7 @@
 exports[`renders multiple rows 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfield-base-root-62 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-62 MuiFormControl-fullWidth"
     data-id="my-taf"
   >
     <label

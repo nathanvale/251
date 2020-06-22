@@ -12,10 +12,7 @@ import { TextField, TextFieldProps } from "./TextField";
 export const docs: ComponentDocs<TextFieldProps> = {
   category: "Interaction",
   componentName: "TextField",
-  description: [
-    "This is the underlying component of a number higher level Field components,",
-    "such as TextField, SelectField, TextAreaField, etc.",
-  ].join(" "),
+  description: ["The main component to receive user inputs."].join(" "),
   propDescriptions: {
     ...baseFieldPropDesc("TextField"),
     endIcon: [
@@ -49,14 +46,11 @@ export const docs: ComponentDocs<TextFieldProps> = {
           <Stack>
             <TextField
               id="text-field12"
-              label="This keeps space for helperText even though it is empty"
+              label="Keeps space"
               endIcon="success"
               reserveHelperTextSpace
             />
-            <TextField
-              id="text-field13"
-              label="This does not take up space for helperText"
-            />
+            <TextField id="text-field13" label="" />
             <TextField
               id="text-field14"
               label="Type here"
@@ -232,6 +226,66 @@ return (<Stack space="medium">
             placeholder="Placeholder is shown here"
           />
         ),
+      },
+      {
+        label: "Character count - visuals for Playroom",
+        description: [
+          "helperText does not have to be only text. It could be a full react node",
+          "which allows it to be easily customised. For example, in below we provide",
+          "a character count at the bottom right of the TextField by passing a",
+          "structured ReactNode (using our Layout components).",
+        ].join(" "),
+        Code: () => (
+          <TextField
+            id="text-field12"
+            label="Character count"
+            helperText={
+              <Columns>
+                <Column>BSB is 7 chars max</Column>
+                <Column width="content">3/7</Column>
+              </Columns>
+            }
+          />
+        ),
+      },
+      {
+        label: "Character count - working example",
+        description: [
+          "This is a working example of how one can easily provide character count for the TextField.",
+        ].join(" "),
+        playroom: false,
+        Code: () => {
+          const [value, setValue] = React.useState<string>();
+          return (
+            <TextField
+              id="text-field12"
+              label="Character count"
+              maxLength={7}
+              value={value}
+              onChange={(e) => setValue(e.target.value)}
+              helperText={
+                <Columns>
+                  <Column>BSB is 7 chars max</Column>
+                  <Column width="content">{value?.length ?? 0}/7</Column>
+                </Columns>
+              }
+            />
+          );
+        },
+        codeString: `const [value, setValue] = React.useState<string>();
+return (<TextField
+    id="text-field12"
+    label="Character count"
+    maxLength={7}
+    value={value}
+    onChange={e => setValue(e.target.value)}
+    helperText={
+      <Columns>
+        <Column>BSB is 7 chars max</Column>
+        <Column width="content">{value?.length ?? 0}/7</Column>
+      </Columns>
+    }
+  />);`,
       },
     ],
   },

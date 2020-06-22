@@ -98,6 +98,9 @@ export type RadioGroupBaseProps = import("./RadioGroupBase/RadioGroupBase").Radi
 export { Section } from "./Section/Section";
 export type SectionProps = import("./Section/Section").SectionProps;
 
+export { SelectField } from "./SelectField/SelectField";
+export type SelectFieldProps = import("./SelectField/SelectField").SelectFieldProps;
+
 export { Spinner } from "./Spinner/Spinner";
 export type SpinnerProps = import("./Spinner/Spinner").SpinnerProps;
 

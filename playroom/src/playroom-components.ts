@@ -30,6 +30,7 @@ export {
   RadioGroup,
   RadioGroupBase,
   Section,
+  SelectField,
   Spinner,
   Stack,
   Strong,
