@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.35.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.34.1...@origin-digital/ods-scripts@0.35.0) (2020-06-22)
+
+
+### Features
+
+* **selectfield:** add a new one ([1c39fe9](https://bitbucket.orgn.io/od/origin-ui/commits/1c39fe99285204c10d1b692568cdf9a39cc13971))
+
+
+
+
+
 ## [0.34.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.34.0...@origin-digital/ods-scripts@0.34.1) (2020-06-16)
 
 **Note:** Version bump only for package @origin-digital/ods-scripts
