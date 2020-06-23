@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.27.0](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.26.2...docs@0.27.0) (2020-06-23)
+
+
+### Features
+
+* implement icons ([89f8fab](https://bitbucket.orgn.io/od/origin-ui/commits/89f8fabe0e8ee79a0efd58d835281285845feca5))
+
+
+
+
+
 ## [0.26.2](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.26.1...docs@0.26.2) (2020-06-22)
 
 **Note:** Version bump only for package docs

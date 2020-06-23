@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.21.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.20.8...@origin-digital/ods-lab@0.21.0) (2020-06-23)
+
+
+### Features
+
+* implement icons ([89f8fab](https://bitbucket.orgn.io/od/origin-ui/commits/89f8fabe0e8ee79a0efd58d835281285845feca5))
+
+
+
+
+
 ## [0.20.8](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.20.7...@origin-digital/ods-lab@0.20.8) (2020-06-22)
 
 **Note:** Version bump only for package @origin-digital/ods-lab
