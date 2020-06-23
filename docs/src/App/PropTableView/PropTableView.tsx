@@ -1,7 +1,7 @@
 import React from "react";
-import { NormalisedPropType } from "@origin-digital/ods-scripts";
+import { NormalisedPropType, ComponentDocs } from "@origin-digital/ods-types";
 import { Column, Columns, Stack, Text, Box } from "@origin-digital/ods-core";
-import { ComponentDocs } from "@origin-digital/ods-types";
+
 import { PropType } from "../PropType/PropType";
 
 export interface PropListViewProps {

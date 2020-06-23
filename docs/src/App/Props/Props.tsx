@@ -5,13 +5,15 @@ import partition from "lodash/partition";
 import mapValues from "lodash/mapValues";
 import isEmpty from "lodash/isEmpty";
 import sortBy from "lodash/sortBy";
-import * as Core from "@origin-digital/ods-core";
+import * as odsCore from "@origin-digital/ods-core";
+import * as odsLab from "@origin-digital/ods-lab";
+import * as odsIcons from "@origin-digital/ods-icons";
 import styled from "styled-components";
 import { maxWidth, MaxWidthProps } from "styled-system";
 import {
   NormalisedInterface,
   NormalisedPropType,
-} from "@origin-digital/ods-scripts";
+} from "@origin-digital/ods-types";
 import { Stack, Box, Column, Columns, Text } from "@origin-digital/ods-core";
 import { ComponentDocs } from "@origin-digital/ods-types";
 import componentDocs from "../../componentDocs.json";
@@ -102,9 +104,13 @@ export function Props<T = {}>({
   specialRequiredProps,
   specialOptionalProps,
 }: PropsProps<T>) {
+  if (componentName.startsWith("Icon")) {
+    componentName = "SvgIcon";
+  }
   if (!isValidComponentName(componentName)) {
     return null;
   }
+
   const { props } = docs[componentName];
 
   let [requiredProps, optionalProps] = partition(
@@ -117,7 +123,7 @@ export function Props<T = {}>({
 
   propDescriptions = updateDescForMuiProps(optionalProps, propDescriptions);
 
-  const components = { ...Core };
+  const components = { ...odsLab, ...odsIcons, ...odsCore };
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const component = (components as Record<string, FC<any>>)[componentName];
 

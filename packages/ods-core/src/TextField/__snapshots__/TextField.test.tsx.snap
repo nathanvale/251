@@ -3,7 +3,7 @@
 exports[`TextField with error endIcon should render error after the text 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfieldbase-root-157 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-167 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label
@@ -28,21 +28,17 @@ exports[`TextField with error endIcon should render error after the text 1`] = `
         value=""
       />
       <span
-        class="MuiInputAdornment-root makeStyles-fade-in-animation-218 MuiInputAdornment-filled MuiInputAdornment-positionEnd"
+        class="MuiInputAdornment-root makeStyles-fade-in-animation-228 MuiInputAdornment-filled MuiInputAdornment-positionEnd"
         data-id="input-adornment"
       >
         <svg
-          class=""
-          color="#ec0000"
-          fill="currentColor"
-          height="24"
+          aria-hidden="true"
+          class="MuiSvgIcon-root svg-icon-critical-small-svg-icon-239"
+          data-id="IconError"
+          focusable="false"
+          role="presentation"
           viewBox="0 0 24 24"
-          width="24"
         >
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
           <path
             d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
           />
@@ -85,12 +81,12 @@ exports[`TextField with success endIcon should render success after the text 1`]
         data-id="input-adornment"
       >
         <svg
-          class=""
-          color="#a5bb48"
-          fill="currentColor"
-          height="24"
+          aria-hidden="true"
+          class="MuiSvgIcon-root svg-icon-positiveLight-small-svg-icon-73"
+          data-id="IconCheckCircle"
+          focusable="false"
+          role="presentation"
           viewBox="0 0 24 24"
-          width="24"
         >
           <path
             d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
@@ -105,7 +101,7 @@ exports[`TextField with success endIcon should render success after the text 1`]
 exports[`TextField with validating endIcon should render validating after the text 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfieldbase-root-73 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-83 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label
@@ -161,7 +157,7 @@ exports[`TextField with validating endIcon should render validating after the te
 exports[`should render the custom after the text 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfieldbase-root-229 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-249 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label
@@ -190,11 +186,12 @@ exports[`should render the custom after the text 1`] = `
         data-id="input-adornment"
       >
         <svg
-          class=""
-          fill="currentColor"
-          height="24"
+          aria-hidden="true"
+          class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-321"
+          data-id="IconCheck"
+          focusable="false"
+          role="presentation"
           viewBox="0 0 24 24"
-          width="24"
         >
           <path
             d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
@@ -209,7 +206,7 @@ exports[`should render the custom after the text 1`] = `
 exports[`should render the custom before the text 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfieldbase-root-301 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-331 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label
@@ -229,11 +226,12 @@ exports[`should render the custom before the text 1`] = `
         data-id="input-adornment"
       >
         <svg
-          class=""
-          fill="currentColor"
-          height="24"
+          aria-hidden="true"
+          class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-399"
+          data-id="IconCheck"
+          focusable="false"
+          role="presentation"
           viewBox="0 0 24 24"
-          width="24"
         >
           <path
             d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"

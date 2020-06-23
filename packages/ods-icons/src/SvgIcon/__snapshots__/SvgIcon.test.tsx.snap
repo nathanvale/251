@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders a large svg 1`] = `
+<svg
+  aria-hidden="true"
+  class="MuiSvgIcon-root svg-icon-secondary-large-svg-icon-11"
+  focusable="false"
+  role="presentation"
+  viewBox="0 0 24 24"
+>
+  <path
+    d="M35.399 3c-5.045 0-9.387 4.104-11.398 8.391-2.013-4.286-6.355-8.391-11.401-8.391-6.955 0-12.6 5.646-12.6 12.601 0 14.149 14.273 17.859 24.001 31.848 9.195-13.902 23.999-18.15 23.999-31.848 0-6.956-5.645-12.601-12.601-12.601z"
+  />
+</svg>
+`;
+
+exports[`it renders a svg 1`] = `
+<svg
+  aria-hidden="true"
+  class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-1"
+  focusable="false"
+  role="presentation"
+  viewBox="0 0 24 24"
+>
+  <path
+    d="M35.399 3c-5.045 0-9.387 4.104-11.398 8.391-2.013-4.286-6.355-8.391-11.401-8.391-6.955 0-12.6 5.646-12.6 12.601 0 14.149 14.273 17.859 24.001 31.848 9.195-13.902 23.999-18.15 23.999-31.848 0-6.956-5.645-12.601-12.601-12.601z"
+  />
+</svg>
+`;
+
+exports[`it renders a svg with tone 1`] = `
+<svg
+  aria-hidden="true"
+  class="MuiSvgIcon-root svg-icon-critical-small-svg-icon-21"
+  focusable="false"
+  role="presentation"
+  viewBox="0 0 24 24"
+>
+  <path
+    d="M35.399 3c-5.045 0-9.387 4.104-11.398 8.391-2.013-4.286-6.355-8.391-11.401-8.391-6.955 0-12.6 5.646-12.6 12.601 0 14.149 14.273 17.859 24.001 31.848 9.195-13.902 23.999-18.15 23.999-31.848 0-6.956-5.645-12.601-12.601-12.601z"
+  />
+</svg>
+`;

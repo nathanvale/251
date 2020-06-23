@@ -1,4 +1,3 @@
-export * from "./legacy-icons";
 export * from "./legacy-components";
 export * from "./_private/components";
 export {
@@ -44,10 +43,5 @@ export {
   TrackingProvider,
 } from "@origin-digital/ods-core";
 
+export * from "@origin-digital/ods-icons";
 export { Breadcrumbs, Breadcrumb } from "@origin-digital/ods-lab";
-
-export {
-  IconCheck,
-  IconCheckCircle,
-  IconError,
-} from "@origin-digital/ods-icons";

@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@craco/craco": "5.6.2",
-    "@material-ui/icons": "^4.9.1",
     "@origin-digital/ods-core": "^0.35.0",
     "@origin-digital/ods-devtools": "^0.5.0",
     "@origin-digital/ods-helpers": "^0.9.0",
@@ -26,6 +25,7 @@
     "@types/react-router-hash-link": "^1.2.1",
     "copy-to-clipboard": "^3.2.0",
     "dedent": "0.7.0",
+    "didyoumean2": "^3.1.2",
     "http-server": "^0.12.3",
     "lz-string": "^1.4.4",
     "polished": "3.4.2",

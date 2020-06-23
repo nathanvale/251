@@ -10,7 +10,6 @@ import {
   Divider,
   ChevronLink,
   Section,
-  TextLink,
   CardStackSection,
   Placeholder,
 } from "@origin-digital/ods-core";
@@ -73,15 +72,13 @@ const Layout = () => {
       children: (
         <TextStack>
           <Text>
-            {<TextLink href="/components/Box">Box</TextLink>} is the most
-            low-level layout component provided by ODS. Its job is to render an
-            individual element on the screen.
+            Box is the most low-level layout component provided by ODS. Its job
+            is to render an individual element on the screen.
           </Text>
           <Text>
-            In terms of page layout,{" "}
-            {<TextLink href="/components/Box">Box</TextLink>} most notably
-            provides a set of padding options which can be used to create
-            container elements with internal spacing.
+            In terms of page layout, Box most notably provides a set of padding
+            options which can be used to create container elements with internal
+            spacing.
           </Text>
           <Box paddingLeft="xsmall">
             <Stack space="xxsmall">
@@ -139,11 +136,8 @@ const Layout = () => {
       children: (
         <TextStack>
           <Text>
-            Rather than nesting content in arbitrary{" "}
-            {<TextLink href="/components/Box">Box</TextLink>} elements, you may
-            prefer to use standard{" "}
-            {<TextLink href="/components/Card">Card</TextLink>} elements
-            instead.
+            Rather than nesting content in arbitrary Box elements, you may
+            prefer to use standard Card elements instead.
           </Text>
           <Code>
             <Card>
@@ -159,15 +153,12 @@ const Layout = () => {
         <TextStack>
           <Text>
             The most common white space on screen is between elements stacked
-            vertically. For this use case, ODS provides a{" "}
-            {<TextLink href="/components/Stack">Stack</TextLink>} component that
+            vertically. For this use case, ODS provides a Stack component that
             accepts a space prop.
           </Text>
           <Text>
-            For example, if you wanted to render a stack of{" "}
-            {<TextLink href="/components/Heading">Heading</TextLink>} and{" "}
-            {<TextLink href="/components/Text">Text</TextLink>} elements with
-            large spacing between them:
+            For example, if you wanted to render a stack of Heading and Text
+            elements with large spacing between them:
           </Text>
           <Code>
             <Card>
@@ -179,8 +170,8 @@ const Layout = () => {
             </Card>
           </Code>
           <Text>
-            Just like {<TextLink href="/components/Box">Box</TextLink>}, you can
-            also specify different spacing values for different screen sizes:
+            Just like Box, you can also specify different spacing values for
+            different screen sizes:
           </Text>
           <Code>
             <Card>
@@ -206,9 +197,7 @@ const Layout = () => {
           </Code>
           <Text>
             If youd prefer to take control over the placement of dividers, you
-            can use the{" "}
-            {<TextLink href="/components/Divider">Divider</TextLink>} component
-            directly:
+            can use the Divider component directly:
           </Text>
           <Code>
             <Card>
@@ -221,10 +210,9 @@ const Layout = () => {
             </Card>
           </Code>
           <Text>
-            Multiple {<TextLink href="/components/Stack">Stack</TextLink>}{" "}
-            components can be nested to create more complex white space rules.
-            For example, if you wanted to create multiple grouped blocks of text
-            like you might see on a job summary card:
+            Multiple Stack components can be nested to create more complex white
+            space rules. For example, if you wanted to create multiple grouped
+            blocks of text like you might see on a job summary card:
           </Text>
           <Code>
             <Card>
@@ -244,9 +232,8 @@ const Layout = () => {
             </Card>
           </Code>
           <Text>
-            {<TextLink href="/components/Stack">Stack</TextLink>} also supports
-            horizontal alignment. For example, if you wanted to centre align all
-            content within a card:
+            Stack also supports horizontal alignment. For example, if you wanted
+            to centre align all content within a card:
           </Text>
           <Code>
             <Card>
@@ -267,8 +254,7 @@ const Layout = () => {
         <TextStack>
           <Text>
             If you need to lay out content horizontally, ODS provides the{" "}
-            {<TextLink href="/components/Columns">Columns</TextLink>} and{" "}
-            {<TextLink href="/components/Column">Column</TextLink>} components:
+            Columns and Column components:
           </Text>
           <Code>
             <Columns space="small">
@@ -334,10 +320,8 @@ const Layout = () => {
             content within it.
           </Text>
           <Text>
-            For example, if you wanted a card with a left-aligned{" "}
-            {<TextLink href="/components/Heading">Heading</TextLink>} and a
-            right-aligned{" "}
-            {<TextLink href="/components/ChevronLink">ChevronLink</TextLink>}:
+            For example, if you wanted a card with a left-aligned Heading and a
+            right-aligned ChevronLink:
           </Text>
           <Code>
             <Card>
@@ -398,8 +382,7 @@ const Layout = () => {
           <Text>
             By default, all layout components will render full width. However,
             most applications will want to limit the width of content on the
-            screen. In order to address this, ODS provides the{" "}
-            {<TextLink href="/components/Section">Section</TextLink>} component
+            screen. In order to address this, ODS provides the Section component
             that sets a maximum width and centres content horizontally. This
             component should be at your root and not be nested.
           </Text>
@@ -429,14 +412,9 @@ const Layout = () => {
       children: (
         <TextStack>
           <Text>
-            {
-              <TextLink href="/components/CardStackSection">
-                CardStackSection
-              </TextLink>
-            }{" "}
-            is a versatile vertical card stacking component that managers
-            responsive max-widths, distributed space and paddingY. This
-            component should be at your root and not be nested.
+            CardStackSection is a versatile vertical card stacking component
+            that managers responsive max-widths, distributed space and paddingY.
+            This component should be at your root and not be nested.
           </Text>
           <Code>
             <CardStackSection>
@@ -465,17 +443,11 @@ const Layout = () => {
             white space completely predictable.
           </Text>
           <Text>
-            With exception of{" "}
-            {<TextLink href="/components/Section">Section</TextLink>} and{" "}
-            {
-              <TextLink href="/components/CardStackSection">
-                CardStackSection
-              </TextLink>
-            }
-            , all of the components referenced below can be infinitely nested
-            within each other to create a wide variety of standard layouts.
-            Getting a firm grasp of these components is an essential part of
-            working effectively with ODS.
+            With exception of Section and CardStackSection, all of the
+            components referenced below can be infinitely nested within each
+            other to create a wide variety of standard layouts. Getting a firm
+            grasp of these components is an essential part of working
+            effectively with ODS.
           </Text>
         </TextStack>
       }

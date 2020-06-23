@@ -1,5 +1,5 @@
 import React, { ReactChild } from "react";
-import { FileCopy, PlayCircleOutline } from "@material-ui/icons";
+import { IconFileCopy, IconPlayCircleOutline } from "@origin-digital/ods-icons";
 import copy from "copy-to-clipboard";
 import lzString from "lz-string";
 import memoize from "lodash/memoize";
@@ -96,7 +96,7 @@ export default ({ playroom = true, children }: CodeProps) => {
             {({ textLinkStyles }) => (
               <button onClick={() => copy(snippet)} className={textLinkStyles}>
                 <Box display="flex" alignItems="center">
-                  <FileCopy />
+                  <IconFileCopy tone="neutral" />
                   <Box style={{ width: "4px" }} />
                   <span>Copy</span>
                 </Box>
@@ -118,7 +118,7 @@ export default ({ playroom = true, children }: CodeProps) => {
                 })}
               >
                 <Box display="flex" alignItems="center">
-                  <PlayCircleOutline />
+                  <IconPlayCircleOutline tone="neutral" />
                   <Box style={{ width: "4px" }} />
                   <span>Open in Playroom</span>
                 </Box>

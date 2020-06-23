@@ -61,7 +61,7 @@ exports[`it renders a contained secondary 1`] = `
 exports[`it renders a primary inverse button 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root Button-inverse-root-696 Button-inverse-root-705 MuiButton-contained Button-inverse-contained-699 MuiButton-containedPrimary Button-inverse-containedPrimary-700"
+    class="MuiButtonBase-root MuiButton-root Button-inverse-root-697 Button-inverse-root-706 MuiButton-contained Button-inverse-contained-700 MuiButton-containedPrimary Button-inverse-containedPrimary-701"
     data-id="button"
     tabindex="0"
     type="button"
@@ -94,7 +94,8 @@ exports[`it renders an icon 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root"
+          class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-665"
+          data-id="IconPhone"
           focusable="false"
           role="presentation"
           viewBox="0 0 24 24"

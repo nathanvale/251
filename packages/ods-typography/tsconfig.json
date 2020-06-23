@@ -4,7 +4,7 @@
     "outDir": "./dist/typings",
     "rootDir": "./src"
   },
-  "exclude": ["src/**/*.test.ts?"],
+  "exclude": ["src/**/*.test.ts?", "src/**/*.docs.ts?"],
   "include": ["src", "src/**/*.json", "../../globals.d.ts", "../../@types"],
   "references": [{ "path": "../ods-types/tsconfig.json" }]
 }

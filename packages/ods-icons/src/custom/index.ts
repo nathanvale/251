@@ -1,0 +1,10 @@
+export { default as IconBpay } from "./BPay";
+export { default as IconGas } from "./Gas";
+export { default as IconHotWater } from "./HotWater";
+export { default as IconLightbulbOutline } from "./LightbulbOutline";
+export { default as IconLPG } from "./LPG";
+export { default as MobileUser } from "./MobileUser";
+export { default as IconRewardsMedal } from "./RewardsMedal";
+export { default as IconTrade } from "./Trade";
+export { default as IconUsage } from "./Usage";
+export { default as IconVisa } from "./Visa";

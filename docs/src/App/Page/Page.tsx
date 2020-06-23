@@ -8,7 +8,7 @@ import {
   HeadingProps,
   TextLinkRenderer,
 } from "@origin-digital/ods-core";
-import WarningSharpIcon from "@material-ui/icons/WarningSharp";
+import { IconWarning } from "@origin-digital/ods-icons";
 
 import styled from "styled-components";
 import { HashLink as Link } from "react-router-hash-link";
@@ -142,7 +142,7 @@ export const Page = ({
                 <LinkableHeading slug={slug}>
                   {isLab ? (
                     <>
-                      <WarningSharpIcon style={{ color: "#ffb432" }} />
+                      <IconWarning />
                       <Box paddingRight="xxsmall" />
                     </>
                   ) : null}

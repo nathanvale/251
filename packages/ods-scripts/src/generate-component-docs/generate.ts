@@ -5,7 +5,10 @@ import fs from "fs";
 import path from "path";
 import ts from "typescript";
 import isEqual from "lodash/isEqual";
-import { NormalisedInterface, NormalisedPropType } from "..";
+import {
+  NormalisedInterface,
+  NormalisedPropType,
+} from "@origin-digital/ods-types";
 
 const aliasWhitelist = ["ResponsiveProp"];
 const noNormalisePropNames = ["muiProps", "domProps"];

@@ -113,7 +113,7 @@ export const docs: ComponentDocs<TextFieldBaseProps> = {
             helperText="This will be the error"
             endAdornment={
               <InputAdornment position="end">
-                <IconCheckCircle color="#a5bb48" />
+                <IconCheckCircle tone="positiveLight" />
               </InputAdornment>
             }
           />
@@ -131,7 +131,7 @@ export const docs: ComponentDocs<TextFieldBaseProps> = {
             error={true}
             endAdornment={
               <InputAdornment position="end">
-                <IconError color="#ec0000" />
+                <IconError tone="critical" />
               </InputAdornment>
             }
           />
@@ -247,7 +247,7 @@ return (<Stack space="medium">
             placeholder="Placeholder is aligned with Icon"
             startAdornment={
               <InputAdornment position="start">
-                <IconCheckCircle color="#505050" />
+                <IconCheckCircle tone="secondaryB" />
               </InputAdornment>
             }
           />

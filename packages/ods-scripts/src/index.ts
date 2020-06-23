@@ -1,2 +1,1 @@
-export * from "./types";
-export { getCodeAsString } from "./getCodeAsString";
+export { getCodeAsString } from "./get-code-as-string";
