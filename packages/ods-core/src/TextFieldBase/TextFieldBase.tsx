@@ -69,22 +69,42 @@ const useStyles = makeStyles(
       "& .MuiInputBase-input:not(.MuiInputBase-inputMultiline)": {
         height: "auto",
         lineHeight: "24px",
-        paddingTop: "24px",
-        paddingBottom: "8px",
-        "&.MuiInputBase-inputMarginDense": {
+        "&.MuiFilledInput-input": {
+          paddingTop: "24px",
+          paddingBottom: "8px",
+        },
+        "&.MuiOutlinedInput-input": {
+          paddingTop: "16px",
+          paddingBottom: "16px",
+        },
+        "&.MuiFilledInput-inputMarginDense": {
           paddingTop: "20px",
           paddingBottom: "4px",
+        },
+        "&.MuiOutlinedInput-inputMarginDense": {
+          paddingTop: "12px",
+          paddingBottom: "12px",
         },
       },
       "& .MuiInputBase-multiline": {
         //TextFeild paddings are applied on the parent element
         height: "auto",
         lineHeight: "24px",
-        paddingTop: "24px",
-        paddingBottom: "8px",
-        "&.MuiInputBase-marginDense": {
+        "&.MuiFilledInput-root": {
+          paddingTop: "24px",
+          paddingBottom: "8px",
+        },
+        "&.MuiOutlinedInput-root": {
+          paddingTop: "16px",
+          paddingBottom: "16px",
+        },
+        "&.MuiFilledInput-marginDense": {
           paddingTop: "20px",
           paddingBottom: "4px",
+        },
+        "&.MuiOutlinedInput-marginDense": {
+          paddingTop: "12px",
+          paddingBottom: "12px",
         },
       },
 
