@@ -1186,7 +1186,7 @@ exports[`ChevronButton 1`] = `
 {
   children?: ReactNode
   data-id?: string
-  domProps?: Pick<AllHTMLAttributes<HTMLButtonElement>, "aria-label" | "cite" | "data" | "form" | "label" | "span" | "style" | "summary" | "title" | ... 346 more ... | "wrap"> | undefined
+  domProps?: Pick<AllHTMLAttributes<HTMLButtonElement>, "size" | "disabled" | "aria-label" | "cite" | "data" | "form" | "label" | "span" | "style" | ... 346 more ... | "wrap"> | undefined
   onClick?: (event: MouseEvent<HTMLButtonElement, MouseEvent>) => void
   type?: 
     | "button"
@@ -1516,7 +1516,7 @@ exports[`OriginThemeProvider 1`] = `
         light: string
         main: string
       }
-      getColorVariantCSSColor: (variant: "disabled" | "error" | "errorDark" | "errorLight" | "grey100" | "grey200" | "grey300" | "grey400" | "grey50" | "grey500" | "grey600" | "primary" | "primaryDark" | "primaryLight" | ... 37 more ... | "promoteBDark") => string
+      getColorVariantCSSColor: (variant: "secondary" | "secondaryB" | "primary" | "primaryB" | "critical" | "caution" | "positive" | "positiveLight" | "info" | "neutral" | "disabled" | "promote" | "promoteB" | "error" | ... 37 more ... | "promoteBDark") => string
       getContrastText: (background: string) => string
       grey: {
         100: string
@@ -1953,6 +1953,39 @@ exports[`Strong 1`] = `
 {
   children: ReactNode
   data-id?: string
+}
+`;
+
+exports[`SvgIcon 1`] = `
+{
+  children?: ReactNode
+  data-id?: string
+  muiProps?: SvgIconProps | undefined
+  ref?: 
+    | (instance: any) => void
+    | RefObject<any>
+  size?: 
+    | "inherit"
+    | "large"
+    | "medium"
+    | "small"
+  titleAccess?: string
+  tone?: 
+    | "caution"
+    | "critical"
+    | "disabled"
+    | "info"
+    | "inherit"
+    | "neutral"
+    | "positive"
+    | "positiveLight"
+    | "primary"
+    | "primaryB"
+    | "promote"
+    | "promoteB"
+    | "secondary"
+    | "secondaryB"
+  viewBox?: string
 }
 `;
 

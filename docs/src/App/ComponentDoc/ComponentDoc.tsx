@@ -36,10 +36,10 @@ export const ComponentDoc = ({
   const { sourceUrlPrefix } = useConfig();
   const theme = useTheme();
   const isLgUp = useMediaQuery(theme.breakpoints.up("lg"));
-  const componentFolder = `lib/components/${
+  const packageName = getComponentPackage(componentName);
+  const componentFolder = `packages/${packageName}/src/${
     subfolder ? `${subfolder}/` : ""
   }${componentName}`;
-  const packageName = getComponentPackage(componentName);
   const examples = docs.examples || [];
 
   const sourceUrl = `${sourceUrlPrefix}/${componentFolder}`;
@@ -113,15 +113,18 @@ export const ComponentDoc = ({
         />
       ),
     },
-    {
+  ].filter(Boolean);
+
+  if (!componentName.startsWith("Icon")) {
+    sections.push({
       title: "Source Code on BitBucket",
       children: (
         <Text>
           <TextLink href={sourceUrl}>View Source</TextLink>
         </Text>
       ),
-    },
-  ].filter(Boolean);
+    });
+  }
 
   if (Object.entries(filteredExamples.default).length !== 0) {
     sections.unshift({

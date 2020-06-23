@@ -3,7 +3,7 @@ import createBreakpoints, {
 } from "@material-ui/core/styles/createBreakpoints";
 
 export const breakpointValues: BreakpointValues = {
-  xs: 575,
+  xs: 0,
   sm: 576,
   md: 768,
   lg: 992,

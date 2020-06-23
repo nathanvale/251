@@ -59,14 +59,14 @@ const EndAdornment = ({
   if (endIcon === "error" || (error && !endIcon)) {
     return (
       <TransitionContainer className={fadeInClassName}>
-        <IconError color={theme.palette.error.main} />
+        <IconError tone="critical" />
       </TransitionContainer>
     );
   }
   if (endIcon === "success") {
     return (
       <TransitionContainer className={bounceInClassName}>
-        <IconCheckCircle color={theme.palette.success.light} />
+        <IconCheckCircle tone="positiveLight" />
       </TransitionContainer>
     );
   }

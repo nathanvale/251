@@ -1,5 +1,5 @@
 import React from "react";
-import { Phone } from "@material-ui/icons";
+import { IconPhone } from "@origin-digital/ods-icons";
 import {
   render,
   queryByAttribute,
@@ -89,7 +89,7 @@ test("it renders a small button", () => {
 });
 
 test("it renders an icon", () => {
-  const { container } = render(<Button icon={<Phone />}>Primary</Button>);
+  const { container } = render(<Button icon={<IconPhone />}>Primary</Button>);
 
   expect(container).toMatchSnapshot();
 });

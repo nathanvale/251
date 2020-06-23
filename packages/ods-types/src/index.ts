@@ -5,6 +5,26 @@ export * from "./docs";
 export * from "./palette";
 export * from "./tracking";
 
+export type SvgIconSizeVariants = "small" | "medium" | "large" | "inherit";
+export type SvgIconToneVariants =
+  | keyof Pick<
+      ColorPalette,
+      | "secondary"
+      | "secondaryB"
+      | "primary"
+      | "primaryB"
+      | "critical"
+      | "caution"
+      | "positive"
+      | "positiveLight"
+      | "info"
+      | "neutral"
+      | "disabled"
+      | "promote"
+      | "promoteB"
+    >
+  | "inherit";
+
 export type ChevronVaraints = keyof Pick<Colors, "primary" | "secondary">;
 export interface ChevronContainerProps {
   children: React.ReactNode;

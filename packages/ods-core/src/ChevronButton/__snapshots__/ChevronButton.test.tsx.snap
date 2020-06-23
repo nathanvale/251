@@ -31,11 +31,12 @@ exports[`It can render 1`] = `
     style="margin-left: -8px; margin-top: 0px; margin-bottom: 0px; height: 24px;"
   >
     <svg
-      class=""
-      fill="currentColor"
-      height="24"
+      aria-hidden="true"
+      class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-3"
+      data-id="IconChevronRight"
+      focusable="false"
+      role="presentation"
       viewBox="0 0 24 24"
-      width="24"
     >
       <path
         d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
@@ -43,7 +44,7 @@ exports[`It can render 1`] = `
     </svg>
   </div>
   <span
-    class="typography-body-variant-basekick-3 typography-neutral-color-4 typography-regular-weight-5 typography-strong-support-6 -span c1"
+    class="typography-body-variant-basekick-13 typography-neutral-color-14 typography-regular-weight-15 typography-strong-support-16 -span c1"
     data-id="text"
   >
     Chevron link
@@ -74,7 +75,7 @@ exports[`It can render another tone 1`] = `
 }
 
 <button
-  class="typography-linkReset-8 typography-chevron-link-9"
+  class="typography-linkReset-18 typography-chevron-link-19"
   data-id="chevron-button"
 >
   <div
@@ -82,11 +83,12 @@ exports[`It can render another tone 1`] = `
     style="margin-left: -8px; margin-top: 0px; margin-bottom: 0px; height: 24px;"
   >
     <svg
-      class=""
-      fill="currentColor"
-      height="24"
+      aria-hidden="true"
+      class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-20"
+      data-id="IconChevronRight"
+      focusable="false"
+      role="presentation"
       viewBox="0 0 24 24"
-      width="24"
     >
       <path
         d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
@@ -94,7 +96,7 @@ exports[`It can render another tone 1`] = `
     </svg>
   </div>
   <span
-    class="typography-body-variant-basekick-10 typography-neutral-color-11 typography-regular-weight-12 typography-strong-support-13 -span c1"
+    class="typography-body-variant-basekick-30 typography-neutral-color-31 typography-regular-weight-32 typography-strong-support-33 -span c1"
     data-id="text"
   >
     Chevron button

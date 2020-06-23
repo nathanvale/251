@@ -93,8 +93,6 @@ export { Slide } from "./Slide/Slide";
 export type SlideProps = import("./Slide/Slide").SlideProps;
 export { Snackbar } from "./Snackbar/Snackbar";
 export type SnackbarProps = import("./Snackbar/Snackbar").SnackbarProps;
-export { SvgIcon } from "./SvgIcon/SvgIcon";
-export type SvgIconProps = import("./SvgIcon/SvgIcon").SvgIconProps;
 export { Tab } from "./Tab/Tab";
 export type TabProps = import("./Tab/Tab").TabProps;
 export { Tabs } from "./Tab/Tabs";

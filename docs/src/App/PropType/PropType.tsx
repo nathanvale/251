@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { NormalisedPropType } from "@origin-digital/ods-scripts";
+import { NormalisedPropType } from "@origin-digital/ods-types";
 import { Box } from "@origin-digital/ods-core";
 
 export interface PropTypeProps {

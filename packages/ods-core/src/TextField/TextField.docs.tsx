@@ -105,7 +105,7 @@ export const docs: ComponentDocs<TextFieldProps> = {
             id="text-field15"
             label="Type here"
             helperText="This will be the error"
-            endIcon={<IconCheck color="#a5bb48" />}
+            endIcon={<IconCheck tone="critical" />}
           />
         ),
       },
@@ -118,7 +118,7 @@ export const docs: ComponentDocs<TextFieldProps> = {
             id="text-field16"
             label="Type here"
             helperText="This will be the error"
-            startIcon={<IconCheck color="#a5bb48" />}
+            startIcon={<IconCheck tone="critical" />}
           />
         ),
       },
@@ -336,7 +336,7 @@ return (<TextField
           id="text-field"
           label="label"
           helperText="details"
-          endIcon={<IconCheck color="#a5bb48" />}
+          endIcon={<IconCheck tone="critical" />}
         />
       ),
     },
@@ -347,7 +347,7 @@ return (<TextField
           id="text-field"
           label="label"
           helperText="details"
-          startIcon={<IconCheck color="#a5bb48" />}
+          startIcon={<IconCheck tone="critical" />}
         />
       ),
     },

@@ -1,5 +1,5 @@
 import sortBy from "lodash/sortBy";
-import { NormalisedPropType } from "../index";
+import { NormalisedPropType } from "@origin-digital/ods-types";
 
 export const typeSerializer = {
   print: (

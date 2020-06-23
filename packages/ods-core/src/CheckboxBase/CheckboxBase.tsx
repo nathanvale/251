@@ -1,6 +1,9 @@
 import React from "react";
-import CheckBoxOutlineBlankSharpIcon from "@material-ui/icons/CheckBoxOutlineBlankSharp";
-import CheckBoxSharpIcon from "@material-ui/icons/CheckBoxSharp";
+import {
+  IconCheckBoxOutlineBlankSharp,
+  IconCheckBoxSharp,
+} from "@origin-digital/ods-icons";
+
 import {
   CheckboxProps as MuiCheckboxProps,
   Checkbox as MuiCheckbox,
@@ -17,8 +20,8 @@ export const CheckboxBase = (props: CheckboxBaseProps) => {
     <AbstractSwitchBase<MuiCheckboxProps>
       {...props}
       Component={MuiCheckbox}
-      checkedIcon={<CheckBoxSharpIcon />}
-      icon={<CheckBoxOutlineBlankSharpIcon />}
+      checkedIcon={<IconCheckBoxSharp />}
+      icon={<IconCheckBoxOutlineBlankSharp />}
     />
   );
 };

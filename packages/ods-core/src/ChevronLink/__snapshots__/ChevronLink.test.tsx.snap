@@ -22,11 +22,12 @@ exports[`It can render 1`] = `
     style="margin-left: -8px; margin-top: 0px; margin-bottom: 0px; height: 24px;"
   >
     <svg
-      class=""
-      fill="currentColor"
-      height="24"
+      aria-hidden="true"
+      class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-3"
+      data-id="IconChevronRight"
+      focusable="false"
+      role="presentation"
       viewBox="0 0 24 24"
-      width="24"
     >
       <path
         d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
@@ -51,7 +52,7 @@ exports[`It can render another tone 1`] = `
 }
 
 <a
-  class="typography-linkReset-3 typography-chevron-link-4"
+  class="typography-linkReset-13 typography-chevron-link-14"
   data-id="chevron-link"
   href=""
   padding="none"
@@ -61,11 +62,12 @@ exports[`It can render another tone 1`] = `
     style="margin-left: -8px; margin-top: 0px; margin-bottom: 0px; height: 24px;"
   >
     <svg
-      class=""
-      fill="currentColor"
-      height="24"
+      aria-hidden="true"
+      class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-15"
+      data-id="IconChevronRight"
+      focusable="false"
+      role="presentation"
       viewBox="0 0 24 24"
-      width="24"
     >
       <path
         d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"

@@ -13,12 +13,15 @@
   "scripts": {
     "build": "yarn build:cjs && yarn build:es",
     "build:cjs": "BUILD_FORMAT=cjs origin-scripts build --monorepo --delete-dir-on-start --out-dir dist/cjs",
-    "build:es": "BUILD_WEBPACK=true origin-scripts build --monorepo --out-dir dist/es"
+    "build:es": "BUILD_WEBPACK=true origin-scripts build --monorepo --out-dir dist/es",
+    "create:mui-icons": "cd ../ods-scripts && yarn create:mui-icons"
   },
   "sideEffects": false,
   "typings": "dist/typings/index.d.ts",
   "dependencies": {
     "@babel/runtime-corejs3": "^7.8.3",
+    "@material-ui/icons": "^4.9.1",
+    "@origin-digital/ods-themes": "*",
     "@origin-digital/ods-types": "^0.25.0"
   },
   "peerDependencies": {
