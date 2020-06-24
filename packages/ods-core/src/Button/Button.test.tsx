@@ -6,7 +6,8 @@ import {
   fireEvent,
 } from "@origin-digital/ods-testing-library";
 import { TrackingEventHandler } from "@origin-digital/ods-types";
-import { Button, TrackingProvider } from "..";
+import { TrackingProvider } from "../TrackingProvider/TrackingProvider";
+import { Button } from "./Button";
 
 test("it renders a contained primary by default", () => {
   const { container } = render(
@@ -102,13 +103,71 @@ test("it renders a primary inverse button", () => {
 
 test("it renders a tag when href is provided", () => {
   const { container } = render(
-    <Button data-id="my-button" href="https://www.originenergy.com.au">
+    <Button data-id="btn1" href="https://www.originenergy.com.au">
       Origin
     </Button>
   );
 
-  const buttonEl = queryByAttribute("data-id", container, "my-button");
+  const buttonEl = queryByAttribute("data-id", container, "btn1");
   expect(buttonEl?.tagName).toEqual("A");
+});
+
+describe("when spinner is on", () => {
+  test("it renders a 24px spinner for 'medium' size", () => {
+    const { container } = render(
+      <Button id="btn1" spinner>
+        Primary
+      </Button>
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  test("it renders a 20px spinner for 'small' size", () => {
+    const { container } = render(
+      <Button id="btn1" size="small" spinner>
+        Small
+      </Button>
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  test("it renders a spinner for 'outlined' variant", () => {
+    const { container } = render(
+      <Button id="btn1" variant="outlined" spinner>
+        Small
+      </Button>
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  test("it does not render a spinner when disabled is true", () => {
+    const { container, queryAllByTestId } = render(
+      <Button id="btn1" variant="outlined" spinner disabled>
+        Small
+      </Button>
+    );
+
+    const spinnerEls = queryAllByTestId("button-spinner");
+    expect(spinnerEls).toHaveLength(0);
+    expect(container).toMatchSnapshot();
+  });
+
+  test("it disables the button and renders a spinner SVG", () => {
+    const { container, queryAllByTestId } = render(
+      <Button id="btn1" spinner>
+        Small
+      </Button>
+    );
+
+    const buttonEl = container.getElementsByTagName("button").item(0);
+    expect(buttonEl).toHaveAttribute("disabled");
+
+    const spinnerEls = queryAllByTestId("button-spinner");
+    expect(spinnerEls).toHaveLength(1);
+  });
 });
 
 test("it calls onClick when clicked", () => {

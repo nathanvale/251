@@ -6,6 +6,7 @@ import {
   lighten,
 } from "@material-ui/core/styles/colorManipulator";
 import {
+  ButtonColor,
   ButtonSize,
   ButtonVariant,
   ResponsiveProp,
@@ -285,4 +286,37 @@ export const useInverseStyles = makeStyles(
     };
   },
   { classNamePrefix: "Button-inverse" }
+);
+
+export const useSpinnerStyles = makeStyles(
+  (theme: Theme) => ({
+    spinner: ({
+      color = "primary",
+      size = "medium",
+      variant = "contained",
+    }: {
+      color: ButtonColor;
+      size: ButtonSize;
+      variant: ButtonVariant;
+    }) => {
+      let spinnerColor =
+        color === "primary"
+          ? theme.palette.primary.main
+          : theme.palette.grey[500];
+
+      if (variant === "contained") {
+        spinnerColor = getHoverBG(spinnerColor);
+      }
+
+      return {
+        color: spinnerColor,
+        position: "absolute",
+        top: "50%",
+        left: "50%",
+        marginTop: size === "small" ? -10 : -12,
+        marginLeft: size === "small" ? -10 : -12,
+      };
+    },
+  }),
+  { classNamePrefix: "button" }
 );
