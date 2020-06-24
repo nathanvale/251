@@ -16,8 +16,13 @@ import {
   InputType,
   ResponsiveProp,
 } from "@origin-digital/ods-types";
+import { Box, Spinner } from "@origin-digital/ods-core";
 import { useTracking } from "../_private/hooks/useTracking";
-import { useButtonStyles, useInverseStyles } from "./button-styles";
+import {
+  useButtonStyles,
+  useInverseStyles,
+  useSpinnerStyles,
+} from "./button-styles";
 
 interface ButtonActionProps {
   onFocus?: FocusEventHandler<HTMLButtonElement>;
@@ -43,6 +48,7 @@ export interface ButtonProps
   href?: string;
   target?: "_self" | "_blank" | string;
   inverse?: boolean;
+  spinner?: boolean;
   type?: InputType;
   buttonRef?: React.Ref<unknown>;
   muiProps?: MuiButtonProps;
@@ -55,16 +61,18 @@ export const Button = (props: ButtonProps) => {
     children,
     color = "primary",
     component = "button",
+    "data-id": dataId = defaultDataId,
+    disabled,
     fullWidth,
     href,
     icon,
     inverse,
-    noTextPadding,
     muiProps,
-    type,
+    noTextPadding,
+    spinner,
     size = "medium",
+    type,
     variant = "contained",
-    "data-id": dataId = defaultDataId,
     ...others
   } = props;
 
@@ -83,6 +91,8 @@ export const Button = (props: ButtonProps) => {
     fullWidth,
   });
 
+  const spinnerClasses = useSpinnerStyles({ color, size, variant });
+
   const newComp = href ? "a" : component;
 
   const { onClickCapture, ref } = useTracking({
@@ -96,6 +106,7 @@ export const Button = (props: ButtonProps) => {
       {...muiProps}
       {...others}
       data-id={dataId}
+      disabled={spinner || disabled}
       ref={ref}
       classes={inverse ? inverseClasses : btnClasses}
       color={color}
@@ -107,7 +118,20 @@ export const Button = (props: ButtonProps) => {
       variant={variant}
       onClickCapture={onClickCapture}
     >
-      {children}
+      {spinner && !disabled ? (
+        <>
+          <Box component="span" style={{ opacity: 0 }}>
+            {children}
+          </Box>
+          <Spinner
+            className={spinnerClasses.spinner}
+            size={size === "medium" ? "small" : "xsmall"}
+            data-id="button-spinner"
+          />
+        </>
+      ) : (
+        children
+      )}
     </MuiButton>
   );
 };

@@ -74,7 +74,7 @@ const EndAdornment = ({
   if (endIcon === "validating") {
     return (
       <InputAdornment position="end">
-        <Spinner />
+        <Spinner size="xsmall" />
       </InputAdornment>
     );
   }

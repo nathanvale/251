@@ -1048,6 +1048,7 @@ exports[`Button 1`] = `
   size?: 
     | "medium"
     | "small"
+  spinner?: boolean
   target?: string
   type?: 
     | "button"
@@ -1922,6 +1923,7 @@ exports[`Spinner 1`] = `
     | "large"
     | "medium"
     | "small"
+    | "xsmall"
 }
 `;
 

@@ -42,6 +42,11 @@ export const docs: ComponentDocs<ButtonProps> = {
       `This allows the button to look in harmony with text above or below it.`,
     ].join(" "),
     size: "The size of the button. This property is NOT responsive",
+    spinner: [
+      "When true, will disable the Button and show a spinner on top of it.",
+      "If the button is already disabled (`disabled={true}`), it won't show the",
+      "spinner even if `spinner={true}`",
+    ].join(" "),
     variant:
       "The button could visually have 3 variations as defined by this value",
   },
@@ -313,6 +318,11 @@ export const docs: ComponentDocs<ButtonProps> = {
         // eslint-disable-next-line no-alert
         Code: () => <Button onClick={(e) => alert(e.target)}>Click !</Button>,
       },
+      {
+        label: "Button with spinner",
+        description: "Turn spinner on",
+        Code: () => <Button spinner>Submit</Button>,
+      },
     ],
   },
   snippets: [
@@ -387,6 +397,10 @@ export const docs: ComponentDocs<ButtonProps> = {
           </Column>
         </Columns>
       ),
+    },
+    {
+      label: "Button with spinner",
+      Code: () => <Button spinner>Submit</Button>,
     },
   ],
 };
