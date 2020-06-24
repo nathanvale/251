@@ -103,7 +103,6 @@ export default ({ playroom = true, children }: CodeProps) => {
               </button>
             )}
           </TextLinkRenderer>
-          .
         </Text>
 
         {/^import/m.test(snippet) || !playroom ? null : (
