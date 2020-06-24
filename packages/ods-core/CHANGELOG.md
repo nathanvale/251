@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.36.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.36.0...@origin-digital/ods-core@0.36.1) (2020-06-24)
+
+
+### Bug Fixes
+
+* **textfield:** outlined paddings fixed ([201b6c0](https://bitbucket.orgn.io/od/origin-ui/commits/201b6c0b57204f106be91cdfaebe78f65372deac))
+
+
+
+
+
 # [0.36.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.35.0...@origin-digital/ods-core@0.36.0) (2020-06-23)
 
 

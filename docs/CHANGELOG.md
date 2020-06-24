@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.27.1](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.27.0...docs@0.27.1) (2020-06-24)
+
+
+### Bug Fixes
+
+* **textfield:** outlined paddings fixed ([201b6c0](https://bitbucket.orgn.io/od/origin-ui/commits/201b6c0b57204f106be91cdfaebe78f65372deac))
+
+
+
+
+
 # [0.27.0](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.26.2...docs@0.27.0) (2020-06-23)
 
 
