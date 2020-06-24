@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.37.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.36.1...@origin-digital/ods-core@0.37.0) (2020-06-24)
+
+
+### Features
+
+* **button:** add spinner support ([ab71fe6](https://bitbucket.orgn.io/od/origin-ui/commits/ab71fe65daa532ad102a2511d03599cf0b3925e2))
+
+
+
+
+
 ## [0.36.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.36.0...@origin-digital/ods-core@0.36.1) (2020-06-24)
 
 
