@@ -1,5 +1,5 @@
 import { useRef, useContext } from "react";
-import { TrackingContext } from "../../TrackingProvider/TrackingProvider";
+import { TrackingContext } from "./TrackingProvider";
 
 interface UseTrackingProps {
   children: React.ReactNode;

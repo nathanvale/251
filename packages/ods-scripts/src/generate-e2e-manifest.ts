@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { E2ETests } from "@origin-digital/ods-types";
-import * as odsCore from "@origin-digital/ods-core";
+import { Components as odsCore } from "@origin-digital/ods-core";
 import { slugify } from "@origin-digital/ods-helpers";
 import { FC } from "react";
 

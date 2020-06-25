@@ -9,7 +9,7 @@ import {
   ChevronLinkRendererProps,
 } from "../ChevronLinkRenderer/ChevronLinkRenderer";
 import { Text } from "../Text/Text";
-import { useTracking } from "../_private/hooks/useTracking";
+import { useTracking } from "../TrackingProvider/useTracking";
 
 export interface ChevronButtonProps
   extends Omit<ChevronLinkRendererProps, "children" | "variant">,

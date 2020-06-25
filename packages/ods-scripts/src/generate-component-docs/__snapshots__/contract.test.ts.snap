@@ -1273,6 +1273,11 @@ exports[`Columns 1`] = `
 }
 `;
 
+exports[`Components 1`] = `
+{
+}
+`;
+
 exports[`ControlGroup 1`] = `
 {
   children?: ReactNode
@@ -2386,5 +2391,14 @@ exports[`TrackingProvider 1`] = `
 {
   children: ReactNode
   onTrackingCapture: TrackingEventHandler
+}
+`;
+
+exports[`useTracking 1`] = `
+{
+  children: ReactNode
+  data-id: string
+  postClickState?: string
+  type: string
 }
 `;

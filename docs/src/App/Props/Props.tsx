@@ -5,7 +5,7 @@ import partition from "lodash/partition";
 import mapValues from "lodash/mapValues";
 import isEmpty from "lodash/isEmpty";
 import sortBy from "lodash/sortBy";
-import * as odsCore from "@origin-digital/ods-core";
+import { Components as odsCore } from "@origin-digital/ods-core";
 import * as odsLab from "@origin-digital/ods-lab";
 import * as odsIcons from "@origin-digital/ods-icons";
 import styled from "styled-components";

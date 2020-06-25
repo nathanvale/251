@@ -1,7 +1,7 @@
 import React from "react";
 import { LinkBaseProps } from "@origin-digital/ods-types";
 import { useLinkComponent } from "../OriginThemeProvider/OriginThemeProvider";
-import { useTracking } from "../_private/hooks/useTracking";
+import { useTracking } from "../TrackingProvider/useTracking";
 
 const defaultDataId = "tracked-link";
 
