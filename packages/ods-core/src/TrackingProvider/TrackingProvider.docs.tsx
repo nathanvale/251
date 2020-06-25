@@ -7,9 +7,11 @@ import {
   TrackingProviderProps,
   Button,
   Card,
+  Checkbox,
   Text,
   TextLink,
   Stack,
+  useTracking,
 } from "..";
 
 export const setupTracking: ExampleDocs = {
@@ -97,6 +99,103 @@ const App = ()=><TrackingProvider
 </TrackingProvider>`,
 };
 
+export const useTrackingExample: ExampleDocs = {
+  label: "How to use useTracking to customise tracking",
+  playroom: false,
+  Code: () => {
+    const Chk = ({ id, label, onChange }: any) => {
+      const { onClickCapture, ref } = useTracking({
+        children: "Tracked when ticked but not when un-ticked",
+        "data-id": "chk-agree",
+        type: "Checkbox",
+      });
+      return (
+        <Checkbox
+          id={id}
+          label={label}
+          onChange={(e) => {
+            if (e.target.checked) {
+              onClickCapture?.();
+            }
+            onChange?.(e);
+          }}
+          muiProps={{
+            componentProps: {
+              ref,
+            },
+          }}
+        />
+      );
+    };
+
+    return (
+      <TrackingProvider
+        onTrackingCapture={(props: any) => {
+          alert(
+            "data-id: "
+              .concat(props["data-id"], ", type: ")
+              .concat(props.type, ", label: ")
+              .concat(props.label, ", postClickState: ")
+              .concat(props.postClickState)
+          );
+        }}
+      >
+        <Chk id="chk-agree" label="I agree to cancel my switch" />
+      </TrackingProvider>
+    );
+  },
+  codeString: `import * as React from 'react';
+import {
+  OriginThemeProvider,
+  Checkbox,
+  TrackingProvider,
+  useTracking
+} from "@origin-digital/ods-core";
+
+const Chk = ({id, label, onChange}: any) => {
+  const { onClickCapture, ref } = useTracking({
+    children: "I agree to cancel my switch",
+    "data-id": "chk-agree",
+    type: "Checkbox",
+  });
+
+ return <Checkbox
+    id={id}
+    label={label}
+    onChange={(e) => {
+      if (e.target.checked) {
+        onClickCapture?.();
+      }
+      onChange?.(e);
+    }}
+    muiProps={{
+      componentProps: {
+        ref: ref
+      }
+    }}
+  />
+};
+
+const App = () => {
+  return (
+      <TrackingProvider onTrackingCapture={(props:  any) => {
+        alert(
+          "data-id: "
+            .concat(props["data-id"], ", type: ")
+            .concat(props.type, ", label: ")
+            .concat(props.label, ", postClickState: ")
+            .concat(props.postClickState)
+          );
+      }}>
+        <Chk
+            id="chk-agree"
+            label="I agree to cancel my switch"
+          />
+      </TrackingProvider>
+  );
+}`,
+};
+
 export const docs: ComponentDocs<TrackingProviderProps> = {
   category: "Logic",
   componentName: "TrackingProvider",
@@ -113,6 +212,7 @@ export const docs: ComponentDocs<TrackingProviderProps> = {
       setupTracking,
       setupReportingClient,
       setupManualReportingClient,
+      useTrackingExample,
     ],
   },
   snippets: [],

@@ -2,9 +2,9 @@ import React from "react";
 import { render, fireEvent } from "@origin-digital/ods-testing-library";
 
 import { TrackingEvent, TrackingEventHandler } from "@origin-digital/ods-types";
-import { useTracking } from "../_private/hooks/useTracking";
+import { Strong } from "../Strong/Strong";
+import { useTracking } from "./useTracking";
 import { TrackingProvider } from "./TrackingProvider";
-import { Strong } from "..";
 
 it("should call tracking handler on a trackable component when passed into the Provider", () => {
   const trackingEvent: TrackingEvent = {

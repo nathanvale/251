@@ -7,6 +7,7 @@ import {
   setupTracking,
   setupReportingClient,
   setupManualReportingClient,
+  useTrackingExample,
 } from "../../../../../packages/ods-core/src/TrackingProvider/TrackingProvider.docs";
 import {
   example,
@@ -44,6 +45,13 @@ const TrackingGuide = () => {
       title: setupManualReportingClient.label,
       description: setupManualReportingClient.description,
       children: <Code>{setupManualReportingClient.codeString || ""}</Code>,
+    },
+    {
+      title: useTrackingExample.label,
+      description: useTrackingExample.description,
+      children: (
+        <Code>{useTrackingExample.Code ? useTrackingExample.Code() : ""}</Code>
+      ),
     },
   ];
   return (

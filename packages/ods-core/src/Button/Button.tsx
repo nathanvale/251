@@ -17,7 +17,7 @@ import {
   ResponsiveProp,
 } from "@origin-digital/ods-types";
 import { Box, Spinner } from "@origin-digital/ods-core";
-import { useTracking } from "../_private/hooks/useTracking";
+import { useTracking } from "../TrackingProvider/useTracking";
 import {
   useButtonStyles,
   useInverseStyles,

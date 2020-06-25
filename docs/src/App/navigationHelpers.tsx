@@ -3,7 +3,7 @@ import groupBy from "lodash/groupBy";
 import filter from "lodash/filter";
 import sortBy from "lodash/sortBy";
 import includes from "lodash/includes";
-import * as odsCore from "@origin-digital/ods-core";
+import { Components as odsCore } from "@origin-digital/ods-core";
 import * as odsLab from "@origin-digital/ods-lab";
 import * as odsIcons from "@origin-digital/ods-icons";
 
