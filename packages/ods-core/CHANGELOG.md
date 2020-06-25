@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.38.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.37.0...@origin-digital/ods-core@0.38.0) (2020-06-25)
+
+
+### Features
+
+* **usetracking:** expose for everyone to use ([2006eb1](https://bitbucket.orgn.io/od/origin-ui/commits/2006eb13206d941d17269300d9024762b80b6d41))
+
+
+
+
+
 # [0.37.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.36.1...@origin-digital/ods-core@0.37.0) (2020-06-24)
 
 

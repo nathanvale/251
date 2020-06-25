@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.28.0](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.27.2...docs@0.28.0) (2020-06-25)
+
+
+### Features
+
+* **usetracking:** expose for everyone to use ([2006eb1](https://bitbucket.orgn.io/od/origin-ui/commits/2006eb13206d941d17269300d9024762b80b6d41))
+
+
+
+
+
 ## [0.27.2](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.27.1...docs@0.27.2) (2020-06-24)
 
 **Note:** Version bump only for package docs
