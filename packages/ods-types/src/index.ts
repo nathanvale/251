@@ -430,3 +430,5 @@ export interface AnimationHookProps {
   duration?: number;
   easing?: string;
 }
+
+export type DialogMaxWidthVariants = "sm" | "md" | "lg" | false;

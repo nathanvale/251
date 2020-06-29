@@ -14,6 +14,7 @@ export {
   Column,
   Columns,
   Divider,
+  Dialog,
   Emphasis,
   FormControl,
   FormControlLabel,

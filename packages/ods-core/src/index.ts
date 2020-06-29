@@ -22,6 +22,7 @@ import { Column } from "./Column/Column";
 import { Columns } from "./Columns/Columns";
 import { ControlGroup } from "./ControlGroup/ControlGroup";
 import { Divider } from "./Divider/Divider";
+import { Dialog } from "./Dialog/Dialog";
 import { Emphasis } from "./Emphasis/Emphasis";
 import { FormControl } from "./FormControl/FormControl";
 import { FormControlLabel } from "./FormControlLabel/FormControlLabel";
@@ -30,6 +31,7 @@ import { FormLabel } from "./FormLabel/FormLabel";
 import { Heading } from "./Heading/Heading";
 import { HeadingChevronLink } from "./HeadingChevronLink/HeadingChevronLink";
 import { Hidden } from "./Hidden/Hidden";
+import { IconButton } from "./IconButton/IconButton";
 import { InputAdornment } from "./InputAdornment/InputAdornment";
 import { OriginThemeProvider } from "./OriginThemeProvider/OriginThemeProvider";
 import { Placeholder } from "./Placeholder/Placeholder";
@@ -65,6 +67,7 @@ export type ChevronLinkRendererProps = import("./ChevronLinkRenderer/ChevronLink
 export type ColumnProps = import("./Column/Column").ColumnProps;
 export type ColumnsProps = import("./Columns/Columns").ColumnsProps;
 export type ControlGroupProps = import("./ControlGroup/ControlGroup").ControlGroupProps;
+export type DialogProps = import("./Dialog/Dialog").DialogProps;
 export type DividerProps = import("./Divider/Divider").DividerProps;
 export type EmphasisProps = import("./Emphasis/Emphasis").EmphasisProps;
 export type FormControlProps = import("./FormControl/FormControl").FormControlProps;
@@ -74,6 +77,7 @@ export type FormLabelProps = import("./FormLabel/FormLabel").FormLabelProps;
 export type HeadingProps = import("./Heading/Heading").HeadingProps;
 export type HeadingChevronLinkProps = import("./HeadingChevronLink/HeadingChevronLink").HeadingChevronLinkProps;
 export type HiddenProps = import("./Hidden/Hidden").HiddenProps;
+export type IconButtonProps = import("./IconButton/IconButton").IconButtonProps;
 export type InputAdornmentProps = import("./InputAdornment/InputAdornment").InputAdornmentProps;
 export type OriginThemeProviderProps = import("./OriginThemeProvider/OriginThemeProvider").OriginThemeProviderProps;
 export type PlaceholderProps = import("./Placeholder/Placeholder").PlaceholderProps;
@@ -111,6 +115,7 @@ export {
   Columns,
   ControlGroup,
   Divider,
+  Dialog,
   Emphasis,
   FormControl,
   FormControlLabel,
@@ -120,6 +125,7 @@ export {
   HeadingChevronLink,
   Hidden,
   InputAdornment,
+  IconButton,
   OriginThemeProvider,
   Placeholder,
   Radio,
@@ -157,6 +163,7 @@ export const Components = {
   Columns,
   ControlGroup,
   Divider,
+  Dialog,
   Emphasis,
   FormControl,
   FormControlLabel,
