@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.27.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.26.0...@origin-digital/ods-types@0.27.0) (2020-06-29)
+
+
+### Features
+
+* **dialog:** new component ([37cde85](https://bitbucket.orgn.io/od/origin-ui/commits/37cde859bcc93f6ab694e7383f52a2055126ac34))
+
+
+
+
+
 # [0.26.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.25.0...@origin-digital/ods-types@0.26.0) (2020-06-23)
 
 
