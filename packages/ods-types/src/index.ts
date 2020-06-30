@@ -432,3 +432,7 @@ export interface AnimationHookProps {
 }
 
 export type DialogMaxWidthVariants = "sm" | "md" | "lg" | false;
+
+export type RequiredWithoutChildren<
+  T extends { children?: React.ReactNode }
+> = Required<Omit<T, "children">>;

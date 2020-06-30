@@ -8,18 +8,20 @@ import {
   SpaceVariants,
   ResponsiveProp,
 } from "@origin-digital/ods-types";
-import { Box, Stack, CardProps, BoxProps } from "@origin-digital/ods-core";
 import {
   marginTop,
   marginBottom,
   MarginBottomProps,
   MarginTopProps,
 } from "styled-system";
+import { Box, Stack, CardProps, DividerCardProps, BoxProps } from "..";
 
 export interface CardStackSectionProps {
   "data-id"?: string;
   cardWidth?: CardStackSize;
-  children: ReactElement<CardProps>[] | ReactElement<CardProps>;
+  children:
+    | ReactElement<CardProps | DividerCardProps>[]
+    | ReactElement<CardProps | DividerCardProps>;
   paddingY?: PaddingYVariants;
   variant?: CardStackSectionVariant;
 }

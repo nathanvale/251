@@ -21,8 +21,9 @@ import { ChevronLinkRenderer } from "./ChevronLinkRenderer/ChevronLinkRenderer";
 import { Column } from "./Column/Column";
 import { Columns } from "./Columns/Columns";
 import { ControlGroup } from "./ControlGroup/ControlGroup";
-import { Divider } from "./Divider/Divider";
 import { Dialog } from "./Dialog/Dialog";
+import { Divider } from "./Divider/Divider";
+import { DividerCard } from "./DividerCard/DividerCard";
 import { Emphasis } from "./Emphasis/Emphasis";
 import { FormControl } from "./FormControl/FormControl";
 import { FormControlLabel } from "./FormControlLabel/FormControlLabel";
@@ -69,6 +70,7 @@ export type ColumnsProps = import("./Columns/Columns").ColumnsProps;
 export type ControlGroupProps = import("./ControlGroup/ControlGroup").ControlGroupProps;
 export type DialogProps = import("./Dialog/Dialog").DialogProps;
 export type DividerProps = import("./Divider/Divider").DividerProps;
+export type DividerCardProps = import("./DividerCard/DividerCard").DividerCardProps;
 export type EmphasisProps = import("./Emphasis/Emphasis").EmphasisProps;
 export type FormControlProps = import("./FormControl/FormControl").FormControlProps;
 export type FormControlLabelProps = import("./FormControlLabel/FormControlLabel").FormControlLabelProps;
@@ -114,8 +116,9 @@ export {
   Column,
   Columns,
   ControlGroup,
-  Divider,
   Dialog,
+  Divider,
+  DividerCard,
   Emphasis,
   FormControl,
   FormControlLabel,
@@ -162,8 +165,9 @@ export const Components = {
   Column,
   Columns,
   ControlGroup,
-  Divider,
   Dialog,
+  Divider,
+  DividerCard,
   Emphasis,
   FormControl,
   FormControlLabel,
