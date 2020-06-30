@@ -150,7 +150,11 @@ export const Page = ({
                 </LinkableHeading>
               ) : null}
 
-              {description ? <Text>{description}</Text> : null}
+              {typeof description === "string" ? (
+                <Text>{description}</Text>
+              ) : description ? (
+                description
+              ) : null}
               {children}
             </TextStack>
           </div>

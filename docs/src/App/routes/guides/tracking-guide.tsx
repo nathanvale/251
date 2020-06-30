@@ -47,11 +47,27 @@ const TrackingGuide = () => {
       children: <Code>{setupManualReportingClient.codeString || ""}</Code>,
     },
     {
+      title: "Tracking components",
+      description: [
+        "The list of components that raise a tracking event when the TrackingProvider is available are as follows:",
+      ].join(" "),
+      children: (
+        <Text>
+          <ul>
+            <li>Button</li>
+            <li>ChevronButton</li>
+            <li>ChevronLink</li>
+            <li>HeadingChevronLink</li>
+            <li>TextLink</li>
+            <li>TrackedLink</li>
+          </ul>
+        </Text>
+      ),
+    },
+    {
       title: useTrackingExample.label,
       description: useTrackingExample.description,
-      children: (
-        <Code>{useTrackingExample.Code ? useTrackingExample.Code() : ""}</Code>
-      ),
+      children: <Code>{useTrackingExample.codeString || ""}</Code>,
     },
   ];
   return (

@@ -7,11 +7,10 @@ import {
   TrackingProviderProps,
   Button,
   Card,
-  Checkbox,
   Text,
   TextLink,
   Stack,
-  useTracking,
+  Strong,
 } from "..";
 
 export const setupTracking: ExampleDocs = {
@@ -100,50 +99,51 @@ const App = ()=><TrackingProvider
 };
 
 export const useTrackingExample: ExampleDocs = {
-  label: "How to use useTracking to customise tracking",
+  label: "How to add tracking to any component",
   playroom: false,
-  Code: () => {
-    const Chk = ({ id, label, onChange }: any) => {
-      const { onClickCapture, ref } = useTracking({
-        children: "Tracked when ticked but not when un-ticked",
-        "data-id": "chk-agree",
-        type: "Checkbox",
-      });
-      return (
-        <Checkbox
-          id={id}
-          label={label}
-          onChange={(e) => {
-            if (e.target.checked) {
-              onClickCapture?.();
-            }
-            onChange?.(e);
-          }}
-          muiProps={{
-            componentProps: {
-              ref,
-            },
-          }}
-        />
-      );
-    };
-
-    return (
-      <TrackingProvider
-        onTrackingCapture={(props: any) => {
-          alert(
-            "data-id: "
-              .concat(props["data-id"], ", type: ")
-              .concat(props.type, ", label: ")
-              .concat(props.label, ", postClickState: ")
-              .concat(props.postClickState)
-          );
-        }}
-      >
-        <Chk id="chk-agree" label="I agree to cancel my switch" />
-      </TrackingProvider>
-    );
-  },
+  description: (
+    <>
+      <Text>
+        To add custom tracking to any component, you can use the{" "}
+        <Strong>useTracking</Strong> hook provided by
+        <Strong>@origin-digital/ods-core</Strong>.
+      </Text>
+      <Text>
+        This component receives an object with below props:
+        <ul>
+          <li>children</li>
+          <li>data-id</li>
+          <li>type</li>
+          <li>postClickState</li>
+        </ul>
+      </Text>
+      <Text>
+        It then returns an object with these props:
+        <ul>
+          <li>
+            <Text>
+              <Strong>onClickCapture</Strong>: A callback function which
+              whenever is called, will trigger the tracking event.
+            </Text>
+          </li>
+          <li>
+            <Text>
+              <Strong>ref</Strong>: A forward ref to pass to the component which
+              will trigger the tracking event.
+            </Text>
+          </li>
+        </ul>
+      </Text>
+      <Text>
+        The only thing to do is to call <code>onClickCapture</code> wherever the
+        tracking event should be raised.
+      </Text>
+      <Text>
+        Below you see an example where a <code>Checkbox</code> is raising
+        tracking events only when it is checked, but not when it is unchecked.
+      </Text>
+    </>
+  ),
   codeString: `import * as React from 'react';
 import {
   OriginThemeProvider,
