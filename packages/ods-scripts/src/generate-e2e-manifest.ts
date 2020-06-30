@@ -19,7 +19,7 @@ function getE2ETests(componentName: string) {
 }
 const components = Object.keys(odsCore);
 const appliTests = components
-  .map((componentName) => {
+  .map(componentName => {
     const tests = getE2ETests(componentName);
     const component = (odsCore as Record<string, FC<any>>)[componentName];
     const dataId =
@@ -38,13 +38,14 @@ const appliTests = components
     }
     return {
       componentName,
+      dataId,
       paths: tests.map(({ label, responsive }) => ({
         label: `/e2e/${componentName}/${slugify(label)}`,
-        responsive: Boolean(responsive),
-      })),
+        responsive: Boolean(responsive)
+      }))
     };
   })
-  .filter((components) => components.paths.length > 0);
+  .filter(components => components.paths.length > 0);
 
 fs.writeFileSync(
   path.join(__dirname, "../../../docs/public/e2e-manifest.json"),

@@ -10,15 +10,14 @@ const manifestData = new ManifestHelper();
 fixture("ApplitoolsSpec");
 
 manifestData.manifest.forEach((component) => {
-  const { componentName, paths } = component;
-  const componentId = componentName.toLowerCase();
+  const { dataId, paths } = component;
   paths.forEach((path) => {
     const label = path.label;
     test(`${label} is rendered`, async (t) => {
       const eyes = new Eyes();
       await t.navigateTo(`${basePage.url + label}`);
       await openEyes(eyes, t);
-      await checkElement(eyes, `[data-id='${componentId}']`, t);
+      await checkElement(eyes, `[data-id='${dataId}']`, t);
       await eyes.close();
       await eyes.waitForResults();
     });

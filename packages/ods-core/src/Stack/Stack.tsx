@@ -6,6 +6,7 @@ import {
   ResponsiveSpace,
   ResponsiveProp,
   SpaceVariants,
+  RequiredWithoutChildren,
 } from "@origin-digital/ods-types";
 import {
   mapToStyledSystem,
@@ -22,7 +23,14 @@ export interface StackProps {
   "data-id"?: string;
 }
 
-interface StackChildProps {
+export const stackDefaultProps: RequiredWithoutChildren<StackProps> = {
+  "data-id": "stack",
+  dividers: false,
+  alignX: "left",
+  space: "none",
+};
+
+export interface StackChildProps {
   divider?: boolean;
   space?: ResponsiveValue<SpaceVariants>;
 }
@@ -64,7 +72,7 @@ const divider = css<StackChildProps>`
  *    applied on the pseudo-element. If height is set to 0, margin-bottom is
  *    not correctly applied.
  */
-const StackChild = styled<StackChildProps & BoxProps>(Box)`
+export const StackChild = styled<StackChildProps & BoxProps>(Box)`
   &:empty {
     display: none;
   }
@@ -91,14 +99,12 @@ const StackChild = styled<StackChildProps & BoxProps>(Box)`
   }
 `;
 
-const defaultAlignX = "left";
-
 export const Stack = ({
   children,
   dividers,
-  space,
+  space = stackDefaultProps.space,
   "data-id": dataId,
-  alignX = defaultAlignX,
+  alignX = stackDefaultProps.alignX,
 }: StackProps) => {
   const stackItems = Children.toArray(children);
 
@@ -122,11 +128,5 @@ export const Stack = ({
   );
 };
 
-Stack.defaultProps = {
-  "data-id": "stack",
-  dividers: false,
-  alignX: defaultAlignX,
-  space: "none",
-};
-
+Stack.defaultProps = stackDefaultProps;
 Stack.displayName = "Stack";

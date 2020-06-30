@@ -1083,8 +1083,8 @@ exports[`CardStackSection 1`] = `
     | "medium"
     | "small"
   children: 
-    | ReactElement<CardProps, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>
-    | ReactElement<CardProps, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>[]
+    | ReactElement<CardProps | DividerCardProps, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>
+    | ReactElement<CardProps | DividerCardProps, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>[]
   data-id?: string
   paddingY?: 
     | "medium"
@@ -1337,6 +1337,32 @@ exports[`Dialog 1`] = `
 exports[`Divider 1`] = `
 {
   data-id?: string
+}
+`;
+
+exports[`DividerCard 1`] = `
+{
+  backgroundColor?: 
+    | "grey50"
+    | "transparent"
+    | "white"
+  children?: ReactNode
+  data-id?: string
+  padding?: 
+    | "large"
+    | "medium"
+    | "small"
+  space?: ResponsiveProp<
+    | "large"
+    | "medium"
+    | "none"
+    | "small"
+    | "xlarge"
+    | "xsmall"
+    | "xxlarge"
+    | "xxsmall"
+    | "xxxlarge"
+  >
 }
 `;
 

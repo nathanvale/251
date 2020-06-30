@@ -4,6 +4,7 @@ import {
   SpaceVariants,
   CardPaddingVariants,
   CardBackgroundVariant,
+  RequiredWithoutChildren,
 } from "@origin-digital/ods-types";
 import { Box } from "../Box/Box";
 
@@ -14,9 +15,15 @@ export interface CardProps {
   backgroundColor?: CardBackgroundVariant;
 }
 
+export const defaultCardProps: RequiredWithoutChildren<CardProps> = {
+  "data-id": "card",
+  padding: "small",
+  backgroundColor: "white",
+};
+
 type PaddingValues = Partial<Record<BreakpointVariants, SpaceVariants>>;
 
-const cardPaddingForVariant: Record<
+export const cardPaddingForVariant: Record<
   CardPaddingVariants,
   {
     paddingX: PaddingValues;
@@ -57,13 +64,11 @@ const cardPaddingForVariant: Record<
   },
 };
 
-const defaultBackgroundColor = "white";
-
 export const Card = ({
   "data-id": dataId,
-  padding = "small",
+  padding = defaultCardProps.padding,
   children,
-  backgroundColor = defaultBackgroundColor,
+  backgroundColor = defaultCardProps.backgroundColor,
 }: CardProps) => (
   <Box
     width="full"
@@ -75,10 +80,5 @@ export const Card = ({
   </Box>
 );
 
+Card.defaultProps = defaultCardProps;
 Card.displayName = "Card";
-
-Card.defaultProps = {
-  "data-id": "card",
-  padding: "small",
-  backgroundColor: defaultBackgroundColor,
-};
