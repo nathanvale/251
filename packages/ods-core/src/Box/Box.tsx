@@ -2,25 +2,26 @@
 import { AllHTMLAttributes, createElement, ElementType } from "react";
 import styled, { StyledComponentClass } from "styled-components";
 import {
-  TransitionVariants,
-  TransformVariants,
+  AlignItemsVariants,
+  BackgroundColorVariants,
+  DisplayVariants,
+  FlexDirectionVariants,
+  FlexWrapVariants,
+  JustifyContentVariants,
   ResponsiveProp,
   ResponsiveSpace,
-  AlignItemsVariants,
-  FlexDirectionVariants,
-  JustifyContentVariants,
-  DisplayVariants,
-  TLength,
   TextAlignVariants,
-  BackgroundColorVariants,
+  TLength,
+  TransformVariants,
+  TransitionVariants,
 } from "@origin-digital/ods-types";
 import * as CSS from "csstype";
 import { Omit } from "utility-types";
 import { mapToStyledSystem } from "@origin-digital/ods-helpers";
 import {
-  StyledSystemProps,
   BoxShadowVariant,
   StyledSystemBox,
+  StyledSystemProps,
 } from "../_private/components/StyledSystemBox/StyledSystemBox";
 import { renderBackgroundProvider } from "./BackgroundContext";
 
@@ -38,6 +39,7 @@ export interface BoxProps
   component?: ElementType;
   display?: ResponsiveProp<DisplayVariants>;
   flexDirection?: ResponsiveProp<FlexDirectionVariants>;
+  flexWrap?: ResponsiveProp<FlexWrapVariants>;
   justifyContent?: ResponsiveProp<JustifyContentVariants>;
   padding?: ResponsiveSpace;
   paddingX?: ResponsiveSpace;
@@ -141,6 +143,7 @@ export const Box = ({
   component,
   display,
   flexDirection,
+  flexWrap,
   justifyContent,
   margin,
   marginBottom,
@@ -221,6 +224,7 @@ export const Box = ({
     backgroundColor,
     display: mapToStyledSystem<DisplayVariants>(display),
     flexDirection: mapToStyledSystem<FlexDirectionVariants>(flexDirection),
+    flexWrap: mapToStyledSystem<FlexWrapVariants>(flexWrap),
     justifyContent: mapToStyledSystem<JustifyContentVariants>(justifyContent),
     padding: mapToStyledSystem<CSS.PaddingProperty<TLength>>(padding),
     paddingLeft: mapToStyledSystem<CSS.PaddingLeftProperty<TLength>>(pL),
