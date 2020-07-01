@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.29.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.28.0...@origin-digital/ods-types@0.29.0) (2020-07-01)
+
+
+### Features
+
+* **box:** Add flex-wrap prop ([9faada7](https://bitbucket.orgn.io/od/origin-ui/commits/9faada72f13695f819554662a7179ab9e9ebab0a))
+
+
+
+
+
 # [0.28.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.27.0...@origin-digital/ods-types@0.28.0) (2020-06-30)
 
 
