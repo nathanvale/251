@@ -11,6 +11,8 @@ const DividerCard = (props: DividerCardProps) => (
   </Box>
 );
 
+DividerCard.displayName = ODSDivider.displayName;
+
 export const docs: ComponentDocs<DividerCardProps> = {
   category: "Layout",
   componentName: "DividerCard",
