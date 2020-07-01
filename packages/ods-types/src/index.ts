@@ -107,6 +107,8 @@ export type FlexDirectionVariants =
   | "column"
   | "column-reverse";
 
+export type FlexWrapVariants = "nowrap" | "wrap" | "wrap-reverse";
+
 export type JustifyContentVariants =
   | "center"
   | "flex-start"

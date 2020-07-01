@@ -496,6 +496,11 @@ exports[`Box 1`] = `
     | "row"
     | "row-reverse"
   >
+  flexWrap?: ResponsiveProp<
+    | "nowrap"
+    | "wrap"
+    | "wrap-reverse"
+  >
   form?: string
   formAction?: string
   formEncType?: string

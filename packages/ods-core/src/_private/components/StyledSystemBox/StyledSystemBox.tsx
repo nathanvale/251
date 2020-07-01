@@ -15,6 +15,8 @@ import {
   DisplayProps,
   flexDirection,
   FlexDirectionProps,
+  flexWrap,
+  FlexWrapProps,
   justifyContent,
   JustifyContentProps,
   margin,
@@ -44,6 +46,7 @@ export interface StyledSystemProps
     PaddingProps,
     MarginProps,
     FlexDirectionProps,
+    FlexWrapProps,
     JustifyContentProps,
     BackgroundColorProps,
     OverflowProps {
@@ -92,6 +95,7 @@ export const StyledSystemBox = styled.div<StyledSystemProps>`
         ${pointerEvents}
         ${display}
         ${flexDirection}
+        ${flexWrap}
         ${margin}
         ${marginTop}
         ${marginBottom}
