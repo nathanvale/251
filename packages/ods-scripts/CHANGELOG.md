@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.41.0...@origin-digital/ods-scripts@0.41.1) (2020-07-03)
+
+
+### Bug Fixes
+
+* **data-id:** default it to id ([ea5cf55](https://bitbucket.orgn.io/od/origin-ui/commits/ea5cf55ef5a342e2e1310a412d68340ef9284afd))
+
+
+
+
+
 # [0.41.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.40.2...@origin-digital/ods-scripts@0.41.0) (2020-07-01)
 
 
