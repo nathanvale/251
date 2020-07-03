@@ -27,11 +27,11 @@ export const TrackedLink = ({
 
   return (
     <LinkComponent
-      {...domProps}
       ref={ref}
       data-id={dataId}
       onClickCapture={onClickCapture}
       {...rest}
+      {...domProps}
     >
       {children}
     </LinkComponent>

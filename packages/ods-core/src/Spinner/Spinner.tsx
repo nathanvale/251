@@ -27,5 +27,6 @@ export const Spinner = ({
 Spinner.displayName = "Spinner";
 Spinner.defaultProps = {
   color: "secondary",
+  "data-id": "spinner",
   size: "small",
 };

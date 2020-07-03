@@ -2,19 +2,18 @@ import * as React from "react";
 import MuiFormControlLabel, {
   FormControlLabelProps as MuiFormControlLabelProps,
 } from "@material-ui/core/FormControlLabel";
-import { ComponentBaseProps } from "@origin-digital/ods-types";
+import { BaseFormStateProps } from "@origin-digital/ods-types";
 
-export interface FormControlLabelProps extends ComponentBaseProps {
+export interface FormControlLabelProps extends BaseFormStateProps {
   control: React.ReactElement;
   label: React.ReactNode;
-  error?: boolean;
   muiProps?: MuiFormControlLabelProps;
 }
 
 export const FormControlLabel = ({
-  muiProps = {} as any,
+  muiProps = {} as MuiFormControlLabelProps,
   ...others
-}: FormControlLabelProps) => <MuiFormControlLabel {...muiProps} {...others} />;
+}: FormControlLabelProps) => <MuiFormControlLabel {...others} {...muiProps} />;
 
 FormControlLabel.displayName = "FormControlLabel";
 FormControlLabel.defaultProps = {

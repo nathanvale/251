@@ -15,9 +15,9 @@ export interface FormControlProps extends BaseFormStateProps {
 }
 
 export const FormControl = ({
-  muiProps = {} as any,
+  muiProps = {} as MuiFormControlProps,
   ...others
-}: FormControlProps) => <MuiFormControl {...muiProps} {...others} />;
+}: FormControlProps) => <MuiFormControl {...others} {...muiProps} />;
 
 FormControl.displayName = "FormControl";
 FormControl.defaultProps = {

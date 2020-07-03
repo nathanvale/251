@@ -17,19 +17,19 @@ exports[`it renders a Radio in error state correctly 1`] = `
   >
     <label
       class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-169"
-      data-id="radio"
+      data-id="my-radio-label"
       id="my-radio-label"
     >
       <span
         aria-disabled="false"
         class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-185 MuiRadio-root AbstractSwitchBase-error-root-178 AbstractSwitchBase-error-root-179 MuiRadio-colorSecondary AbstractSwitch-switchComp-170 MuiIconButton-colorSecondary"
-        data-id="radio-RadioBase"
+        data-id="my-radio-radio-base"
       >
         <span
           class="MuiIconButton-label"
         >
           <input
-            aria-describedby="my-radio-helperText"
+            aria-describedby="my-radio-helper-text"
             class="PrivateSwitchBase-input-188"
             id="my-radio"
             type="radio"
@@ -93,20 +93,20 @@ exports[`it renders a disabled Radio 1`] = `
   >
     <label
       class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-253 Mui-disabled"
-      data-id="radio"
+      data-id="my-radio-label"
       id="my-radio-label"
     >
       <span
         aria-disabled="true"
         class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-269 MuiRadio-root AbstractSwitchBase-root-262 AbstractSwitchBase-root-263 MuiRadio-colorSecondary AbstractSwitch-switchComp-254 PrivateSwitchBase-disabled-271 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
-        data-id="radio-RadioBase"
+        data-id="my-radio-radio-base"
         tabindex="-1"
       >
         <span
           class="MuiIconButton-label"
         >
           <input
-            aria-describedby="my-radio-helperText"
+            aria-describedby="my-radio-helper-text"
             class="PrivateSwitchBase-input-272"
             disabled=""
             id="my-radio"
@@ -168,19 +168,19 @@ exports[`it renders an unchecked Radio with label 1`] = `
   >
     <label
       class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-1"
-      data-id="radio"
+      data-id="my-radio-label"
       id="my-radio-label"
     >
       <span
         aria-disabled="false"
         class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-17 MuiRadio-root AbstractSwitchBase-root-10 AbstractSwitchBase-root-11 MuiRadio-colorSecondary AbstractSwitch-switchComp-2 MuiIconButton-colorSecondary"
-        data-id="radio-RadioBase"
+        data-id="my-radio-radio-base"
       >
         <span
           class="MuiIconButton-label"
         >
           <input
-            aria-describedby="my-radio-helperText"
+            aria-describedby="my-radio-helper-text"
             class="PrivateSwitchBase-input-20"
             id="my-radio"
             type="radio"

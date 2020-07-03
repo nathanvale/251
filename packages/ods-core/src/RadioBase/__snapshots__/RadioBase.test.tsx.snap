@@ -5,7 +5,7 @@ exports[`it renders a RadioBase in error 1`] = `
   <span
     aria-disabled="false"
     class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-98 MuiRadio-root AbstractSwitchBase-error-root-91 AbstractSwitchBase-error-root-92 MuiRadio-colorSecondary MuiIconButton-colorSecondary"
-    data-id="radio-base"
+    data-id="radioInput"
   >
     <span
       class="MuiIconButton-label"
@@ -55,7 +55,7 @@ exports[`it renders a checked RadioBase 1`] = `
   <span
     aria-disabled="false"
     class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-53 MuiRadio-root AbstractSwitchBase-root-46 AbstractSwitchBase-root-47 MuiRadio-colorSecondary PrivateSwitchBase-checked-54 Mui-checked MuiIconButton-colorSecondary"
-    data-id="radio-base"
+    data-id="radioInput"
   >
     <span
       class="MuiIconButton-label"
@@ -106,7 +106,7 @@ exports[`it renders a disabled RadioBase 1`] = `
   <span
     aria-disabled="true"
     class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-143 MuiRadio-root AbstractSwitchBase-root-136 AbstractSwitchBase-root-137 MuiRadio-colorSecondary PrivateSwitchBase-disabled-145 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
-    data-id="radio-base"
+    data-id="radioInput"
     tabindex="-1"
   >
     <span
@@ -155,7 +155,7 @@ exports[`it renders an unchecked RadioBase 1`] = `
   <span
     aria-disabled="false"
     class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-8 MuiRadio-root AbstractSwitchBase-root-1 AbstractSwitchBase-root-2 MuiRadio-colorSecondary MuiIconButton-colorSecondary"
-    data-id="radio-base"
+    data-id="radioInput"
   >
     <span
       class="MuiIconButton-label"

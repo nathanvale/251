@@ -5,7 +5,7 @@ exports[`it renders a CheckboxBase in error 1`] = `
   <span
     aria-disabled="false"
     class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-97 MuiCheckbox-root AbstractSwitchBase-error-root-89 AbstractSwitchBase-error-root-90 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
-    data-id="checkbox-base"
+    data-id="checkboxInput"
   >
     <span
       class="MuiIconButton-label"
@@ -42,7 +42,7 @@ exports[`it renders a checked CheckboxBase 1`] = `
   <span
     aria-disabled="false"
     class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-53 MuiCheckbox-root AbstractSwitchBase-root-45 AbstractSwitchBase-root-46 MuiCheckbox-colorSecondary PrivateSwitchBase-checked-54 Mui-checked MuiIconButton-colorSecondary"
-    data-id="checkbox-base"
+    data-id="checkboxInput"
   >
     <span
       class="MuiIconButton-label"
@@ -80,7 +80,7 @@ exports[`it renders a disabled CheckboxBase 1`] = `
   <span
     aria-disabled="true"
     class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-141 MuiCheckbox-root AbstractSwitchBase-root-133 AbstractSwitchBase-root-134 MuiCheckbox-colorSecondary PrivateSwitchBase-disabled-143 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
-    data-id="checkbox-base"
+    data-id="checkboxInput"
     tabindex="-1"
   >
     <span
@@ -116,7 +116,7 @@ exports[`it renders an unchecked CheckboxBase 1`] = `
   <span
     aria-disabled="false"
     class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-9 MuiCheckbox-root AbstractSwitchBase-root-1 AbstractSwitchBase-root-2 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
-    data-id="checkbox-base"
+    data-id="checkboxInput"
   >
     <span
       class="MuiIconButton-label"

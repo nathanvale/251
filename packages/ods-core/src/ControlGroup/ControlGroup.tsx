@@ -21,13 +21,14 @@ export type ControlGroupMuiProps = {
 };
 export interface ControlGroupProps extends BaseFormStateProps {
   groupComponent?: FormGroupElements;
+  id: string;
   labelComponent?: LabelElements;
   label?: string;
   helperText?: string;
   muiProps?: ControlGroupMuiProps;
 }
 
-const getHelperId = (id: string = "") => `${id}-helperText`;
+const getHelperId = (id: string = "") => `${id}-helper-text`;
 const getLabelId = (id: string = "") => `${id}-label`;
 
 const useFLClasses = makeStyles({
@@ -39,6 +40,7 @@ const useFLClasses = makeStyles({
 
 export const ControlGroup: React.FunctionComponent<ControlGroupProps> = ({
   children,
+  "data-id": dataId,
   disabled,
   error,
   groupComponent,
@@ -47,19 +49,24 @@ export const ControlGroup: React.FunctionComponent<ControlGroupProps> = ({
   label,
   labelComponent,
   muiProps,
+  ...others
 }: ControlGroupProps) => {
   const flClasses = useFLClasses();
+  const baseDataId = dataId || id;
   return (
     <FormControl
       component={groupComponent}
       disabled={disabled}
       error={error}
       id={id}
+      data-id={baseDataId}
+      {...others}
       muiProps={muiProps?.formControlProps}
     >
       {label ? (
         <FormLabel
           classes={flClasses}
+          data-id={`${baseDataId}-label`}
           error={false}
           id={getLabelId(id)}
           component={labelComponent}
@@ -71,6 +78,7 @@ export const ControlGroup: React.FunctionComponent<ControlGroupProps> = ({
       {children}
       {helperText ? (
         <FormHelperText
+          data-id={`${baseDataId}-helper-text`}
           error={error}
           id={getHelperId(id)}
           muiProps={muiProps?.formHelperTextProps}
@@ -86,5 +94,4 @@ ControlGroup.displayName = "ControlGroup";
 ControlGroup.defaultProps = {
   groupComponent: "fieldset",
   labelComponent: "legend",
-  "data-id": "control-group",
 };

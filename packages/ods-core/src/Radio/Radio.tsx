@@ -14,11 +14,11 @@ export interface RadioProps extends BaseSwitchProps {
 export const Radio = (props: RadioProps) => {
   return (
     <AbstractSwitch<MuiRadioProps, RadioMuiPropsType>
-      {...props}
       Component={RadioBase}
+      {...props}
     />
   );
 };
 
 Radio.displayName = "Radio";
-Radio.defaultProps = { "data-id": "radio" };
+Radio.defaultProps = {};

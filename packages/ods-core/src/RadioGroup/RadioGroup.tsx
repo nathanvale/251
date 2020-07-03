@@ -33,10 +33,14 @@ export interface RadioGroupProps
 }
 
 const getControlGroupId = (name: string, id?: string) =>
-  id ?? `${name}-controlGroup`;
+  id ?? `${name}-control-group`;
+
+const getControlGroupDataId = (name: string, id?: string, dataId?: string) =>
+  dataId ?? id ?? `${name}-control-group`;
 
 export const RadioGroup = ({
   children,
+  "data-id": dataId,
   disabled,
   error,
   groupComponent,
@@ -48,23 +52,27 @@ export const RadioGroup = ({
   name,
   ...others
 }: RadioGroupProps) => {
+  const cgDataId = getControlGroupDataId(name, id, dataId);
   return (
     <ControlGroup
       disabled={disabled}
       error={error}
       groupComponent={groupComponent}
       id={getControlGroupId(name, id)}
+      data-id={cgDataId}
       label={label}
       labelComponent={labelComponent}
       helperText={helperText}
       muiProps={muiProps?.controlGroupMuiProps}
     >
       <RadioGroupBase
-        muiProps={muiProps?.radioGroupProps}
-        {...others}
+        data-id={dataId}
+        id={id}
         name={name}
         aria-describedby={`${getControlGroupId(name, id)}-helperText`}
         aria-labelledby={`${getControlGroupId(name, id)}-label`}
+        {...others}
+        muiProps={muiProps?.radioGroupProps}
       >
         {children}
       </RadioGroupBase>
@@ -74,7 +82,6 @@ export const RadioGroup = ({
 
 RadioGroup.displayName = "RadioGroup";
 RadioGroup.defaultProps = {
-  "data-id": "radio-group",
   groupComponent: "fieldset",
   labelComponent: "legend",
 };

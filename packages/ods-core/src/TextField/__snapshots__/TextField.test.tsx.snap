@@ -131,6 +131,7 @@ exports[`TextField with validating endIcon should render validating after the te
       >
         <div
           class="MuiCircularProgress-root MuiCircularProgress-colorSecondary MuiCircularProgress-indeterminate"
+          data-id="spinner"
           role="progressbar"
           style="width: 20px; height: 20px;"
         >

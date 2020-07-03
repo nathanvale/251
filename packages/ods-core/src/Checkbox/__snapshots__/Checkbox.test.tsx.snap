@@ -17,19 +17,19 @@ exports[`it renders a Checkbox in error state correctly 1`] = `
   >
     <label
       class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-176"
-      data-id="checkbox"
+      data-id="my-checkbox-label"
       id="my-checkbox-label"
     >
       <span
         aria-disabled="false"
         class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-193 MuiCheckbox-root AbstractSwitchBase-error-root-185 AbstractSwitchBase-error-root-186 MuiCheckbox-colorSecondary AbstractSwitch-switchComp-177 MuiIconButton-colorSecondary"
-        data-id="checkbox-CheckboxBase"
+        data-id="my-checkbox-checkbox-base"
       >
         <span
           class="MuiIconButton-label"
         >
           <input
-            aria-describedby="my-checkbox-helperText"
+            aria-describedby="my-checkbox-helper-text"
             class="PrivateSwitchBase-input-196"
             data-indeterminate="false"
             id="my-checkbox"
@@ -80,20 +80,20 @@ exports[`it renders a disabled Checkbox 1`] = `
   >
     <label
       class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-259 Mui-disabled"
-      data-id="checkbox"
+      data-id="my-checkbox-label"
       id="my-checkbox-label"
     >
       <span
         aria-disabled="true"
         class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-276 MuiCheckbox-root AbstractSwitchBase-root-268 AbstractSwitchBase-root-269 MuiCheckbox-colorSecondary AbstractSwitch-switchComp-260 PrivateSwitchBase-disabled-278 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
-        data-id="checkbox-CheckboxBase"
+        data-id="my-checkbox-checkbox-base"
         tabindex="-1"
       >
         <span
           class="MuiIconButton-label"
         >
           <input
-            aria-describedby="my-checkbox-helperText"
+            aria-describedby="my-checkbox-helper-text"
             class="PrivateSwitchBase-input-279"
             data-indeterminate="false"
             disabled=""
@@ -142,19 +142,19 @@ exports[`it renders an unchecked Checkbox with label and helperText 1`] = `
   >
     <label
       class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-1"
-      data-id="checkbox"
+      data-id="my-checkbox-label"
       id="my-checkbox-label"
     >
       <span
         aria-disabled="false"
         class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-18 MuiCheckbox-root AbstractSwitchBase-root-10 AbstractSwitchBase-root-11 MuiCheckbox-colorSecondary AbstractSwitch-switchComp-2 MuiIconButton-colorSecondary"
-        data-id="checkbox-CheckboxBase"
+        data-id="my-checkbox-checkbox-base"
       >
         <span
           class="MuiIconButton-label"
         >
           <input
-            aria-describedby="my-checkbox-helperText"
+            aria-describedby="my-checkbox-helper-text"
             class="PrivateSwitchBase-input-21"
             data-indeterminate="false"
             id="my-checkbox"
@@ -186,8 +186,8 @@ exports[`it renders an unchecked Checkbox with label and helperText 1`] = `
     </label>
     <p
       class="MuiFormHelperText-root AbstractSwitch-formHelperText-3 form-helper-text-grey400-colour-74"
-      data-id="checkbox-helperText"
-      id="my-checkbox-helperText"
+      data-id="my-checkbox-helper-text"
+      id="my-checkbox-helper-text"
     >
       This is more info
     </p>

@@ -19,3 +19,4 @@ export { removeProps } from "./removeProps";
 export { resolveResponsiveRangeProps } from "./responsiveRangeProps";
 export type ResponsiveRangeProps = import("./responsiveRangeProps").ResponsiveRangeProps;
 export { slugify } from "./slugify";
+export { kebabCase } from "./kebabCase";

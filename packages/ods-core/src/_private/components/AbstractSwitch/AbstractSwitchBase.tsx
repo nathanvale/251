@@ -31,20 +31,26 @@ export function AbstractSwitchBase<T extends SwitchBaseMuiProps>(
   const {
     "aria-describedby": describedBy,
     Component,
+    "data-id": dataId,
+    id,
     muiProps,
     ...others
   } = props;
   const switchBaseClasses = useSwitchBaseStyles(props);
 
+  const calcDataId = dataId || id;
+
   return (
     <Component
-      {...muiProps}
-      {...others}
       inputProps={{
-        ...(muiProps && muiProps.inputProps),
         "aria-describedby": describedBy,
+        ...(muiProps && muiProps.inputProps),
       }}
       classes={switchBaseClasses}
+      data-id={calcDataId}
+      id={id}
+      {...others}
+      {...muiProps}
     />
   );
 }

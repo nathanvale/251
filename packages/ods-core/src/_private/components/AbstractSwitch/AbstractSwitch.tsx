@@ -4,14 +4,15 @@ import {
   makeStyles,
   useFormControl,
 } from "@material-ui/core";
+import { kebabCase } from "@origin-digital/ods-helpers";
 import { FormControlLabel } from "../../../FormControlLabel/FormControlLabel";
 import { FormHelperText } from "../../../FormHelperText/FormHelperText";
 import { Box } from "../../../Box/Box";
 import { AbstractSwitchProps, SwitchMuiProps } from "./abstract-types";
 
 const getId = (baseId: string, compName: string = "") =>
-  `${baseId}-${compName}`;
-const getHelperId = (baseId: string) => `${baseId}-helperText`;
+  `${baseId}-${kebabCase(compName ?? "")}`;
+const getHelperId = (baseId: string) => `${baseId}-helper-text`;
 
 /**
  * This allows our Switch components to be sensitive to a FormControl context surrounding them.
@@ -98,38 +99,38 @@ export function AbstractSwitch<
   }) as FormControlState;
 
   const disabledVal = disabled || !!fcs.disabled;
-
+  const baseDataId = dataId || id;
   return (
     <Box>
       <FormControlLabel
         className={lblClasses.formControlLabel}
-        data-id={dataId || id}
+        data-id={`${baseDataId}-label`}
         disabled={disabledVal}
         id={`${id}-label`}
         label={label}
-        muiProps={muiProps && muiProps.formControlLabelProps}
         control={
           <Component
-            {...others}
             aria-describedby={getHelperId(id)}
             checked={checked}
-            data-id={getId(dataId || id, Component.displayName)}
+            data-id={getId(baseDataId, Component.displayName)}
             disabled={disabledVal}
             error={error || !!fcs.error}
             id={id}
-            muiProps={muiProps && muiProps.componentProps}
             className={lblClasses.switchComp}
+            {...others}
+            muiProps={muiProps?.componentProps}
           />
         }
+        muiProps={muiProps?.formControlLabelProps}
       />
       {helperText ? (
         <FormHelperText
           className={hlpClasses.formHelperText}
           id={getHelperId(id)}
-          data-id={getHelperId(dataId || id)}
+          data-id={getHelperId(baseDataId)}
           disabled={disabledVal}
           error={false}
-          muiProps={muiProps && muiProps.formHelperTextProps}
+          muiProps={muiProps?.formHelperTextProps}
         >
           {helperText}
         </FormHelperText>
