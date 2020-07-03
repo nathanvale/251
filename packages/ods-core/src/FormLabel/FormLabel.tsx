@@ -45,12 +45,12 @@ export const FormLabel = ({
   const lblClasses = useLabelStyles();
   return (
     <MuiFormLabel
-      {...muiProps}
-      {...others}
       className={clsx(lblClasses.root, className)}
       classes={classes}
       disabled={disabled}
       focused={focused}
+      {...others}
+      {...muiProps}
     />
   );
 };
@@ -58,5 +58,4 @@ export const FormLabel = ({
 FormLabel.displayName = "FormLabel";
 FormLabel.defaultProps = {
   component: "label",
-  "data-id": "formLabel",
 };

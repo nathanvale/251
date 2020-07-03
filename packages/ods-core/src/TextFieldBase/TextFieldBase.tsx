@@ -187,40 +187,38 @@ export const TextFieldBase = ({
   const calcDataId = dataId || id;
   return (
     <MuiTextField
-      {...muiProps}
-      {...rest}
       InputProps={{
-        ...muiProps?.InputProps,
         startAdornment,
         endAdornment,
+        ...muiProps?.InputProps,
       }}
       inputProps={{
-        ...muiProps?.inputProps,
-        ...domProps,
         maxLength,
         "data-id": `${calcDataId}-input`,
+        ...muiProps?.inputProps,
+        ...domProps,
       }}
       InputLabelProps={
         {
-          ...muiProps?.InputLabelProps,
           "data-id": `${calcDataId}-label`,
+          ...muiProps?.InputLabelProps,
         } as any
       }
       FormHelperTextProps={
         {
-          ...muiProps?.FormHelperTextProps,
           className: helperTextClassName,
           "data-id": `${calcDataId}-helper-text`,
+          ...muiProps?.FormHelperTextProps,
         } as any
       }
       SelectProps={{
-        ...muiProps?.SelectProps,
-        ...SelectProps,
         ...(select
           ? {
               native: true,
             }
           : {}),
+        ...SelectProps,
+        ...muiProps?.SelectProps,
       }}
       classes={classes}
       data-id={calcDataId}
@@ -230,6 +228,8 @@ export const TextFieldBase = ({
       required={false}
       select={select}
       variant={variant}
+      {...rest}
+      {...muiProps}
     />
   );
 };

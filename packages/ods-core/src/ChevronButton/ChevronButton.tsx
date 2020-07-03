@@ -41,12 +41,12 @@ export const ChevronButton = ({
     <ChevronLinkRenderer variant={variant}>
       {({ chevronLinkStyles, IconChevron }) => (
         <button
-          {...domProps}
           data-id={dataId}
           ref={ref}
           onClickCapture={onClickCapture}
           className={chevronLinkStyles}
           {...rest}
+          {...domProps}
         >
           <IconChevron />
           <Text>{children}</Text>

@@ -11,10 +11,8 @@ export interface RadioBaseProps extends BaseSwitchBaseProps {
 }
 
 export const RadioBase = (props: RadioBaseProps) => {
-  return <AbstractSwitchBase<MuiRadioProps> {...props} Component={MuiRadio} />;
+  return <AbstractSwitchBase<MuiRadioProps> Component={MuiRadio} {...props} />;
 };
 
 RadioBase.displayName = "RadioBase";
-RadioBase.defaultProps = {
-  "data-id": "radio-base",
-};
+RadioBase.defaultProps = {};

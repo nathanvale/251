@@ -103,8 +103,6 @@ export const Button = (props: ButtonProps) => {
 
   return (
     <MuiButton
-      {...muiProps}
-      {...others}
       data-id={dataId}
       disabled={spinner || disabled}
       ref={ref}
@@ -117,6 +115,8 @@ export const Button = (props: ButtonProps) => {
       startIcon={icon}
       variant={variant}
       onClickCapture={onClickCapture}
+      {...others}
+      {...muiProps}
     >
       {spinner && !disabled ? (
         <>

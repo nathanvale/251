@@ -11,7 +11,7 @@ const StyledBox = styled(Box)`
   box-shadow: inset 0 0 0 1px ${(p) => p.theme.colors.grey200};
 `;
 
-export const Divider = ({ "data-id": dataId = "divider" }: DividerProps) => (
+export const Divider = ({ "data-id": dataId }: DividerProps) => (
   <Box position="relative" data-id={dataId} alignSelf="stretch">
     <StyledBox position="absolute" boxShadow="borderStandard" width="full" />
   </Box>

@@ -14,15 +14,19 @@ export interface FormHelperTextProps extends BaseFormStateProps {
 export const FormHelperText = ({
   children,
   className,
+  "data-id": dataId,
+  id,
   muiProps,
   ...others
 }: FormHelperTextProps) => {
   const grey400ClassName = useGreyHelperText();
   return (
     <MuiFormHelperText
-      {...muiProps}
-      {...others}
       className={clsx(className, grey400ClassName)}
+      data-id={dataId || id}
+      id={id}
+      {...others}
+      {...muiProps}
     >
       {children}
     </MuiFormHelperText>
@@ -30,6 +34,4 @@ export const FormHelperText = ({
 };
 
 FormHelperText.displayName = "FormHelperText";
-FormHelperText.defaultProps = {
-  "data-id": "form-helper-text",
-};
+FormHelperText.defaultProps = {};

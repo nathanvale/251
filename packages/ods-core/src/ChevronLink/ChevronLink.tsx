@@ -36,12 +36,15 @@ export const ChevronLink = ({
     <ChevronLinkRenderer variant={variant}>
       {({ chevronLinkStyles, IconChevron }) => (
         <TrackedLink
-          domProps={{ ...domProps, className: chevronLinkStyles }}
           trackingType={ChevronLink.displayName}
           trackingLabel={children}
           data-id={dataId}
           target={target}
           {...rest}
+          domProps={{
+            ...domProps,
+            className: chevronLinkStyles,
+          }}
         >
           <IconChevron />
           <span>{children}</span>

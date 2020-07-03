@@ -34,13 +34,13 @@ export const SelectField = ({
 }: SelectFieldProps) => {
   return (
     <TextFieldBase
-      {...rest}
       select={true}
       SelectProps={{
         IconComponent: IconExpandMore,
       }}
       disabled={disabled}
       error={error}
+      {...rest}
     >
       {displayEmpty && <option aria-label={emptyAriaLabel} value="" />}
       {options

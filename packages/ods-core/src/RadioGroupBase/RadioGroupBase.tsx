@@ -15,19 +15,25 @@ export interface RadioGroupBaseProps
 
 export const RadioGroupBase = ({
   children,
+  "data-id": dataId,
   id,
   muiProps,
   name,
   ...others
 }: RadioGroupBaseProps) => {
+  const calcId = id ?? name;
   return (
-    <MuiRadioGroup {...muiProps} {...others} name={name} id={id ?? name}>
+    <MuiRadioGroup
+      data-id={dataId || calcId}
+      id={calcId}
+      name={name}
+      {...others}
+      {...muiProps}
+    >
       {children}
     </MuiRadioGroup>
   );
 };
 
 RadioGroupBase.displayName = "RadioGroupBase";
-RadioGroupBase.defaultProps = {
-  "data-id": "radio-group-base",
-};
+RadioGroupBase.defaultProps = {};

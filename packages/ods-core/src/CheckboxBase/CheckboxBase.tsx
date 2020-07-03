@@ -18,15 +18,13 @@ export interface CheckboxBaseProps extends BaseSwitchBaseProps {
 export const CheckboxBase = (props: CheckboxBaseProps) => {
   return (
     <AbstractSwitchBase<MuiCheckboxProps>
-      {...props}
       Component={MuiCheckbox}
       checkedIcon={<IconCheckBoxSharp />}
       icon={<IconCheckBoxOutlineBlankSharp />}
+      {...props}
     />
   );
 };
 
 CheckboxBase.displayName = "CheckboxBase";
-CheckboxBase.defaultProps = {
-  "data-id": "checkbox-base",
-};
+CheckboxBase.defaultProps = {};
