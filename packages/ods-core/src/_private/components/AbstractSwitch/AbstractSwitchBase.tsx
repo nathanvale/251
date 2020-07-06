@@ -8,7 +8,6 @@ const useSwitchBaseStyles = (props: BaseSwitchBaseProps) => {
   const styleCreator = makeStyles(
     (theme: Theme) => ({
       root: ({ error }: BaseSwitchBaseProps) => ({
-        padding: "8px",
         border: "none",
         boxShadow: "none",
         alignItems: "flex-start",

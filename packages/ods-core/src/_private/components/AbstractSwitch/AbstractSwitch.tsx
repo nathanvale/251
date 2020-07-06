@@ -52,10 +52,11 @@ const useLabelStyles = makeStyles(
   {
     formControlLabel: {
       alignItems: "flex-start",
-      marginLeft: "-10px",
+      marginLeft: "-11px",
+      paddingTop: "9px",
     },
     switchComp: {
-      marginTop: "-8px",
+      marginTop: "-9px",
     },
   },
   { classNamePrefix: `AbstractSwitch` }
@@ -101,7 +102,7 @@ export function AbstractSwitch<
   const disabledVal = disabled || !!fcs.disabled;
   const baseDataId = dataId || id;
   return (
-    <Box>
+    <Box data-id={baseDataId}>
       <FormControlLabel
         className={lblClasses.formControlLabel}
         data-id={`${baseDataId}-label`}

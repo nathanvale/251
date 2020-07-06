@@ -19,7 +19,7 @@ exports[`it renders a CheckboxBase in error 1`] = `
       />
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-113"
+        class="MuiSvgIcon-root svg-icon-inherit-small-svg-icon-113"
         data-id="IconCheckBoxOutlineBlankSharp"
         focusable="false"
         role="presentation"
@@ -57,7 +57,7 @@ exports[`it renders a checked CheckboxBase 1`] = `
       />
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-69"
+        class="MuiSvgIcon-root svg-icon-inherit-small-svg-icon-69"
         data-id="IconCheckBoxSharp"
         focusable="false"
         role="presentation"
@@ -96,7 +96,7 @@ exports[`it renders a disabled CheckboxBase 1`] = `
       />
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-157"
+        class="MuiSvgIcon-root svg-icon-inherit-small-svg-icon-157"
         data-id="IconCheckBoxOutlineBlankSharp"
         focusable="false"
         role="presentation"
@@ -130,7 +130,7 @@ exports[`it renders an unchecked CheckboxBase 1`] = `
       />
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-25"
+        class="MuiSvgIcon-root svg-icon-inherit-small-svg-icon-25"
         data-id="IconCheckBoxOutlineBlankSharp"
         focusable="false"
         role="presentation"

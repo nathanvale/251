@@ -9,19 +9,22 @@ export type SvgIconSizeVariants = "small" | "medium" | "large" | "inherit";
 export type SvgIconToneVariants =
   | keyof Pick<
       ColorPalette,
-      | "secondary"
-      | "secondaryB"
-      | "primary"
-      | "primaryB"
-      | "critical"
       | "caution"
-      | "positive"
-      | "positiveLight"
+      | "critical"
+      | "disabled"
       | "info"
       | "neutral"
-      | "disabled"
+      | "neutralDark"
+      | "neutralLight"
+      | "positive"
+      | "positiveLight"
+      | "primary"
+      | "primaryB"
       | "promote"
       | "promoteB"
+      | "secondary"
+      | "secondaryB"
+      | "white"
     >
   | "inherit";
 
@@ -340,6 +343,14 @@ export interface OptionalTrackableProps {
   "data-id"?: string;
 }
 
+export interface ComponentBaseProps extends OptionalTrackableProps {
+  children?: React.ReactNode;
+  className?: string;
+  classes?: Record<string, string>;
+  disabled?: boolean;
+  id?: string;
+}
+
 export type LinkComponentType = ComponentType<LinkComponentProps>;
 export interface LinkComponentProps
   extends AnchorHTMLAttributes<HTMLAnchorElement>,
@@ -354,14 +365,6 @@ export interface LinkBaseProps extends OptionalTrackableProps {
   onClick?: AnchorHTMLAttributes<HTMLAnchorElement>["onClick"];
   children?: React.ReactNode;
   domProps?: AnchorHTMLAttributes<HTMLAnchorElement>;
-}
-
-export interface ComponentBaseProps extends OptionalTrackableProps {
-  children?: React.ReactNode;
-  className?: string;
-  classes?: Record<string, string>;
-  disabled?: boolean;
-  id?: string;
 }
 
 export type InputValueType = string | number;

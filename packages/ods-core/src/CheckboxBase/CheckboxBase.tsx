@@ -19,8 +19,8 @@ export const CheckboxBase = (props: CheckboxBaseProps) => {
   return (
     <AbstractSwitchBase<MuiCheckboxProps>
       Component={MuiCheckbox}
-      checkedIcon={<IconCheckBoxSharp />}
-      icon={<IconCheckBoxOutlineBlankSharp />}
+      checkedIcon={<IconCheckBoxSharp tone="inherit" />}
+      icon={<IconCheckBoxOutlineBlankSharp tone="inherit" />}
       {...props}
     />
   );
