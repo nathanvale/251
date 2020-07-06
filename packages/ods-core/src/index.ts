@@ -34,6 +34,7 @@ import { HeadingChevronLink } from "./HeadingChevronLink/HeadingChevronLink";
 import { Hidden } from "./Hidden/Hidden";
 import { IconButton } from "./IconButton/IconButton";
 import { InputAdornment } from "./InputAdornment/InputAdornment";
+import { MarkdownLite } from "./MarkdownLite/MarkdownLite";
 import { OriginThemeProvider } from "./OriginThemeProvider/OriginThemeProvider";
 import { Placeholder } from "./Placeholder/Placeholder";
 import { Radio } from "./Radio/Radio";
@@ -81,6 +82,7 @@ export type HeadingChevronLinkProps = import("./HeadingChevronLink/HeadingChevro
 export type HiddenProps = import("./Hidden/Hidden").HiddenProps;
 export type IconButtonProps = import("./IconButton/IconButton").IconButtonProps;
 export type InputAdornmentProps = import("./InputAdornment/InputAdornment").InputAdornmentProps;
+export type MarkdownLiteProps = import("./MarkdownLite/MarkdownLite").MarkdownLiteProps;
 export type OriginThemeProviderProps = import("./OriginThemeProvider/OriginThemeProvider").OriginThemeProviderProps;
 export type PlaceholderProps = import("./Placeholder/Placeholder").PlaceholderProps;
 export type RadioProps = import("./Radio/Radio").RadioProps;
@@ -129,6 +131,7 @@ export {
   Hidden,
   InputAdornment,
   IconButton,
+  MarkdownLite,
   OriginThemeProvider,
   Placeholder,
   Radio,
@@ -177,6 +180,7 @@ export const Components = {
   HeadingChevronLink,
   Hidden,
   InputAdornment,
+  MarkdownLite,
   OriginThemeProvider,
   Placeholder,
   Radio,

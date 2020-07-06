@@ -1541,6 +1541,12 @@ exports[`InputAdornment 1`] = `
 }
 `;
 
+exports[`MarkdownLite 1`] = `
+{
+  children: string
+}
+`;
+
 exports[`OriginThemeProvider 1`] = `
 {
   children: ReactNode

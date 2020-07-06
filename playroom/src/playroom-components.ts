@@ -24,6 +24,7 @@ export {
   Hidden,
   HeadingChevronLink,
   InputAdornment,
+  MarkdownLite,
   OriginThemeProvider,
   Placeholder,
   Radio,
