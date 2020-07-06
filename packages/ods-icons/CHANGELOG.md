@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.5](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.11.4...@origin-digital/ods-icons@0.11.5) (2020-07-06)
+
+
+### Bug Fixes
+
+* **checkbox:** centre it vertically ([c09e0a3](https://bitbucket.orgn.io/od/origin-ui/commits/c09e0a37e954b9252d6e0a6fb1a34470af44393f))
+
+
+
+
+
 ## [0.11.4](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.11.3...@origin-digital/ods-icons@0.11.4) (2020-07-03)
 
 

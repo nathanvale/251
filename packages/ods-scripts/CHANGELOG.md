@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.3](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.41.2...@origin-digital/ods-scripts@0.41.3) (2020-07-06)
+
+
+### Bug Fixes
+
+* **checkbox:** centre it vertically ([c09e0a3](https://bitbucket.orgn.io/od/origin-ui/commits/c09e0a37e954b9252d6e0a6fb1a34470af44393f))
+
+
+
+
+
 ## [0.41.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.41.1...@origin-digital/ods-scripts@0.41.2) (2020-07-06)
 
 **Note:** Version bump only for package @origin-digital/ods-scripts
