@@ -82,7 +82,6 @@ export const Text = (props: TextProps) => {
   const content = useTruncatedContent({
     children,
     truncate,
-    display: "inline",
   });
 
   return (
