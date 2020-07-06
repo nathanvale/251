@@ -14,6 +14,7 @@ exports[`it renders a Checkbox in error state correctly 1`] = `
 <div>
   <div
     class="c0"
+    data-id="my-checkbox"
   >
     <label
       class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-176"
@@ -38,7 +39,7 @@ exports[`it renders a Checkbox in error state correctly 1`] = `
           />
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-209"
+            class="MuiSvgIcon-root svg-icon-inherit-small-svg-icon-209"
             data-id="IconCheckBoxOutlineBlankSharp"
             focusable="false"
             role="presentation"
@@ -77,6 +78,7 @@ exports[`it renders a disabled Checkbox 1`] = `
 <div>
   <div
     class="c0"
+    data-id="my-checkbox"
   >
     <label
       class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-259 Mui-disabled"
@@ -103,7 +105,7 @@ exports[`it renders a disabled Checkbox 1`] = `
           />
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-292"
+            class="MuiSvgIcon-root svg-icon-inherit-small-svg-icon-292"
             data-id="IconCheckBoxOutlineBlankSharp"
             focusable="false"
             role="presentation"
@@ -139,6 +141,7 @@ exports[`it renders an unchecked Checkbox with label and helperText 1`] = `
 <div>
   <div
     class="c0"
+    data-id="my-checkbox"
   >
     <label
       class="MuiFormControlLabel-root AbstractSwitch-formControlLabel-1"
@@ -163,7 +166,7 @@ exports[`it renders an unchecked Checkbox with label and helperText 1`] = `
           />
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-34"
+            class="MuiSvgIcon-root svg-icon-inherit-small-svg-icon-34"
             data-id="IconCheckBoxOutlineBlankSharp"
             focusable="false"
             role="presentation"

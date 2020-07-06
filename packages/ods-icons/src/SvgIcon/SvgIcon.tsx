@@ -4,13 +4,13 @@ import {
   SvgIconProps as MuiSvgIconProps,
 } from "@material-ui/core";
 import {
-  OptionalTrackableProps,
-  SvgIconToneVariants,
+  ComponentBaseProps,
   SvgIconSizeVariants,
+  SvgIconToneVariants,
 } from "@origin-digital/ods-types";
 import { useSvgIconStyles } from "../_private/useSvgIconStyles";
 
-export interface SvgIconProps extends OptionalTrackableProps {
+export interface SvgIconProps extends ComponentBaseProps {
   children?: React.ReactNode;
   tone?: SvgIconToneVariants;
   size?: SvgIconSizeVariants;
