@@ -366,6 +366,10 @@ export interface ComponentBaseProps extends OptionalTrackableProps {
   id?: string;
 }
 
+export interface MuiProps<T> {
+  muiProps?: T;
+}
+
 export type LinkComponentType = ComponentType<LinkComponentProps>;
 export interface LinkComponentProps
   extends AnchorHTMLAttributes<HTMLAnchorElement>,

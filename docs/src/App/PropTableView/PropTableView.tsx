@@ -1,8 +1,8 @@
 import React from "react";
 import { NormalisedPropType, ComponentDocs } from "@origin-digital/ods-types";
 import { Column, Columns, Stack, Text, Box } from "@origin-digital/ods-core";
-
 import { PropType } from "../PropType/PropType";
+import { Pre } from "../Pre/Pre";
 
 export interface PropListViewProps {
   requiredProps: Array<{ propName: string; type: NormalisedPropType }>;
@@ -44,17 +44,17 @@ const CommonColumns = ({
   <>
     <Column width="content">
       <Box style={{ width: "150px" }}>
-        <Text>
+        <Pre>
           {propName}
           {required && "*"}
-        </Text>
+        </Pre>
       </Box>
     </Column>
     <Column>
       <Stack space="xsmall">
-        <Text>
+        <Pre>
           <TypeRenderer propName={propName} type={type} />
-        </Text>
+        </Pre>
         {description && <Text variant="body-small">{description}</Text>}
       </Stack>
     </Column>
@@ -88,7 +88,7 @@ const Props = ({
         description={description}
       />
       <Column width="content">
-        <Text>{defaultProps[propName!]}</Text>
+        <Pre>{defaultProps[propName!]}</Pre>
       </Column>
     </Columns>
   ) : (

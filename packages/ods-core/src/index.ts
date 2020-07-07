@@ -47,6 +47,11 @@ import { SelectField } from "./SelectField/SelectField";
 import { Spinner } from "./Spinner/Spinner";
 import { Stack } from "./Stack/Stack";
 import { Strong } from "./Strong/Strong";
+import { Table } from "./Table/Table";
+import { TableBody } from "./TableBody/TableBody";
+import { TableCell } from "./TableCell/TableCell";
+import { TableHead } from "./TableHead/TableHead";
+import { TableRow } from "./TableRow/TableRow";
 import { Text } from "./Text/Text";
 import { TextLink } from "./TextLink/TextLink";
 import { TextAreaField } from "./TextAreaField/TextAreaField";
@@ -96,6 +101,11 @@ export type SelectFieldProps = import("./SelectField/SelectField").SelectFieldPr
 export type SpinnerProps = import("./Spinner/Spinner").SpinnerProps;
 export type StackProps = import("./Stack/Stack").StackProps;
 export type StrongProps = import("./Strong/Strong").StrongProps;
+export type TableProps = import("./Table/Table").TableProps;
+export type TableBodyProps = import("./TableBody/TableBody").TableBodyProps;
+export type TableCellProps = import("./TableCell/TableCell").TableCellProps;
+export type TableHeadProps = import("./TableHead/TableHead").TableHeadProps;
+export type TableRowProps = import("./TableRow/TableRow").TableRowProps;
 export type TextProps = import("./Text/Text").TextProps;
 export type TextAreaFieldProps = import("./TextAreaField/TextAreaField").TextAreaFieldProps;
 export type TextFieldProps = import("./TextField/TextField").TextFieldProps;
@@ -146,6 +156,11 @@ export {
   Spinner,
   Stack,
   Strong,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableRow,
   Text,
   TextLink,
   TextAreaField,
@@ -196,6 +211,11 @@ export const Components = {
   Spinner,
   Stack,
   Strong,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableRow,
   Text,
   TextAreaField,
   TextField,

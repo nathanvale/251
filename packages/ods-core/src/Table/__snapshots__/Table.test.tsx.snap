@@ -1,0 +1,638 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It adds borders 1`] = `
+<div>
+  <div
+    class="MuiTableContainer-root"
+  >
+    <table
+      class="MuiTable-root Table-withBorder-154"
+      data-id="table"
+    >
+      <thead
+        class="MuiTableHead-root TableHead-whiteBackground-161"
+        data-id="table-head"
+      >
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-164 TableCell-withPadding-168 TableCell-withVerticalAlign-163 TableCell-withVerticalAlign-167 TableCell-withBorder-166 MuiTableCell-alignLeft"
+          data-id="table-cell"
+          scope="col"
+        >
+          Name
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-164 TableCell-withPadding-182 TableCell-withVerticalAlign-163 TableCell-withVerticalAlign-181 TableCell-withBorder-166 MuiTableCell-alignLeft"
+          data-id="table-cell"
+          scope="col"
+        >
+          Age
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-164 TableCell-withPadding-184 TableCell-withVerticalAlign-163 TableCell-withVerticalAlign-183 TableCell-withBorder-166 MuiTableCell-alignLeft"
+          data-id="table-cell"
+          scope="col"
+        >
+          Role
+        </th>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+        data-id="table-body"
+      >
+        <tr
+          class="MuiTableRow-root"
+          data-id="table-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-164 TableCell-withPadding-194 TableCell-withVerticalAlign-163 TableCell-withVerticalAlign-193 TableCell-withBorder-166 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Jane
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-164 TableCell-withPadding-196 TableCell-withVerticalAlign-163 TableCell-withVerticalAlign-195 TableCell-withBorder-166 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            32
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-164 TableCell-withPadding-198 TableCell-withVerticalAlign-163 TableCell-withVerticalAlign-197 TableCell-withBorder-166 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Software Engineer
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-id="table-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-164 TableCell-withPadding-200 TableCell-withVerticalAlign-163 TableCell-withVerticalAlign-199 TableCell-withBorder-166 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            John
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-164 TableCell-withPadding-202 TableCell-withVerticalAlign-163 TableCell-withVerticalAlign-201 TableCell-withBorder-166 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            43
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-164 TableCell-withPadding-204 TableCell-withVerticalAlign-163 TableCell-withVerticalAlign-203 TableCell-withBorder-166 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Business Analyst
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`It adds hover 1`] = `
+<div>
+  <div
+    class="MuiTableContainer-root"
+  >
+    <table
+      class="MuiTable-root"
+      data-id="table"
+    >
+      <thead
+        class="MuiTableHead-root TableHead-whiteBackground-263"
+        data-id="table-head"
+      >
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-266 TableCell-withPadding-270 TableCell-withVerticalAlign-265 TableCell-withVerticalAlign-269 MuiTableCell-alignLeft"
+          data-id="table-cell"
+          scope="col"
+        >
+          Name
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-266 TableCell-withPadding-284 TableCell-withVerticalAlign-265 TableCell-withVerticalAlign-283 MuiTableCell-alignLeft"
+          data-id="table-cell"
+          scope="col"
+        >
+          Age
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-266 TableCell-withPadding-286 TableCell-withVerticalAlign-265 TableCell-withVerticalAlign-285 MuiTableCell-alignLeft"
+          data-id="table-cell"
+          scope="col"
+        >
+          Role
+        </th>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+        data-id="table-body"
+      >
+        <tr
+          class="MuiTableRow-root TableRow-withHover-289"
+          data-id="table-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-266 TableCell-withPadding-296 TableCell-withVerticalAlign-265 TableCell-withVerticalAlign-295 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Jane
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-266 TableCell-withPadding-298 TableCell-withVerticalAlign-265 TableCell-withVerticalAlign-297 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            32
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-266 TableCell-withPadding-300 TableCell-withVerticalAlign-265 TableCell-withVerticalAlign-299 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Software Engineer
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root TableRow-withHover-289"
+          data-id="table-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-266 TableCell-withPadding-302 TableCell-withVerticalAlign-265 TableCell-withVerticalAlign-301 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            John
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-266 TableCell-withPadding-304 TableCell-withVerticalAlign-265 TableCell-withVerticalAlign-303 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            43
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-266 TableCell-withPadding-306 TableCell-withVerticalAlign-265 TableCell-withVerticalAlign-305 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Business Analyst
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`It adds sticky header 1`] = `
+<div>
+  <div
+    class="MuiTableContainer-root TableContainer-withStickyHeader-309"
+  >
+    <table
+      class="MuiTable-root MuiTable-stickyHeader"
+      data-id="table"
+    >
+      <thead
+        class="MuiTableHead-root TableHead-whiteBackground-314"
+        data-id="table-head"
+      >
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-317 TableCell-withPadding-321 TableCell-withVerticalAlign-316 TableCell-withVerticalAlign-320 TableCell-withoutFirstLastPadding-318 MuiTableCell-alignLeft MuiTableCell-stickyHeader"
+          data-id="table-cell"
+          scope="col"
+        >
+          Name
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-317 TableCell-withPadding-335 TableCell-withVerticalAlign-316 TableCell-withVerticalAlign-334 TableCell-withoutFirstLastPadding-318 MuiTableCell-alignLeft MuiTableCell-stickyHeader"
+          data-id="table-cell"
+          scope="col"
+        >
+          Age
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-317 TableCell-withPadding-337 TableCell-withVerticalAlign-316 TableCell-withVerticalAlign-336 TableCell-withoutFirstLastPadding-318 MuiTableCell-alignLeft MuiTableCell-stickyHeader"
+          data-id="table-cell"
+          scope="col"
+        >
+          Role
+        </th>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+        data-id="table-body"
+      >
+        <tr
+          class="MuiTableRow-root"
+          data-id="table-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-317 TableCell-withPadding-347 TableCell-withVerticalAlign-316 TableCell-withVerticalAlign-346 TableCell-withoutFirstLastPadding-318 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Jane
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-317 TableCell-withPadding-349 TableCell-withVerticalAlign-316 TableCell-withVerticalAlign-348 TableCell-withoutFirstLastPadding-318 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            32
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-317 TableCell-withPadding-351 TableCell-withVerticalAlign-316 TableCell-withVerticalAlign-350 TableCell-withoutFirstLastPadding-318 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Software Engineer
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-id="table-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-317 TableCell-withPadding-353 TableCell-withVerticalAlign-316 TableCell-withVerticalAlign-352 TableCell-withoutFirstLastPadding-318 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            John
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-317 TableCell-withPadding-355 TableCell-withVerticalAlign-316 TableCell-withVerticalAlign-354 TableCell-withoutFirstLastPadding-318 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            43
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-317 TableCell-withPadding-357 TableCell-withVerticalAlign-316 TableCell-withVerticalAlign-356 TableCell-withoutFirstLastPadding-318 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Business Analyst
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`It adds stripes 1`] = `
+<div>
+  <div
+    class="MuiTableContainer-root"
+  >
+    <table
+      class="MuiTable-root"
+      data-id="table"
+    >
+      <thead
+        class="MuiTableHead-root TableHead-whiteBackground-212"
+        data-id="table-head"
+      >
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-215 TableCell-withPadding-219 TableCell-withVerticalAlign-214 TableCell-withVerticalAlign-218 MuiTableCell-alignLeft"
+          data-id="table-cell"
+          scope="col"
+        >
+          Name
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-215 TableCell-withPadding-233 TableCell-withVerticalAlign-214 TableCell-withVerticalAlign-232 MuiTableCell-alignLeft"
+          data-id="table-cell"
+          scope="col"
+        >
+          Age
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-215 TableCell-withPadding-235 TableCell-withVerticalAlign-214 TableCell-withVerticalAlign-234 MuiTableCell-alignLeft"
+          data-id="table-cell"
+          scope="col"
+        >
+          Role
+        </th>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+        data-id="table-body"
+      >
+        <tr
+          class="MuiTableRow-root TableRow-withStripes-237"
+          data-id="table-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-215 TableCell-withPadding-245 TableCell-withVerticalAlign-214 TableCell-withVerticalAlign-244 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Jane
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-215 TableCell-withPadding-247 TableCell-withVerticalAlign-214 TableCell-withVerticalAlign-246 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            32
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-215 TableCell-withPadding-249 TableCell-withVerticalAlign-214 TableCell-withVerticalAlign-248 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Software Engineer
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root TableRow-withStripes-237"
+          data-id="table-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-215 TableCell-withPadding-251 TableCell-withVerticalAlign-214 TableCell-withVerticalAlign-250 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            John
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-215 TableCell-withPadding-253 TableCell-withVerticalAlign-214 TableCell-withVerticalAlign-252 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            43
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-215 TableCell-withPadding-255 TableCell-withVerticalAlign-214 TableCell-withVerticalAlign-254 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Business Analyst
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`It renders 1`] = `
+<div>
+  <div
+    class="MuiTableContainer-root"
+  >
+    <table
+      class="MuiTable-root"
+      data-id="table"
+    >
+      <thead
+        class="MuiTableHead-root TableHead-whiteBackground-8"
+        data-id="table-head"
+      >
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-11 TableCell-withPadding-15 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-14 TableCell-withoutFirstLastPadding-12 MuiTableCell-alignLeft"
+          data-id="table-cell"
+          scope="col"
+        >
+          Name
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-11 TableCell-withPadding-29 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-28 TableCell-withoutFirstLastPadding-12 MuiTableCell-alignLeft"
+          data-id="table-cell"
+          scope="col"
+        >
+          Age
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-11 TableCell-withPadding-31 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-30 TableCell-withoutFirstLastPadding-12 MuiTableCell-alignLeft"
+          data-id="table-cell"
+          scope="col"
+        >
+          Role
+        </th>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+        data-id="table-body"
+      >
+        <tr
+          class="MuiTableRow-root"
+          data-id="table-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-41 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-40 TableCell-withoutFirstLastPadding-12 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Jane
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-43 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-42 TableCell-withoutFirstLastPadding-12 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            32
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-45 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-44 TableCell-withoutFirstLastPadding-12 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Software Engineer
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-id="table-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-47 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-46 TableCell-withoutFirstLastPadding-12 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            John
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-49 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-48 TableCell-withoutFirstLastPadding-12 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            43
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-51 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-50 TableCell-withoutFirstLastPadding-12 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Business Analyst
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`It uses medium padding 1`] = `
+<div>
+  <div
+    class="MuiTableContainer-root"
+  >
+    <table
+      class="MuiTable-root"
+      data-id="table"
+    >
+      <thead
+        class="MuiTableHead-root TableHead-whiteBackground-110"
+        data-id="table-head"
+      >
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-113 TableCell-withPadding-117 TableCell-withVerticalAlign-112 TableCell-withVerticalAlign-116 TableCell-withoutFirstLastPadding-114 MuiTableCell-alignLeft"
+          data-id="table-cell"
+          scope="col"
+        >
+          Name
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-113 TableCell-withPadding-131 TableCell-withVerticalAlign-112 TableCell-withVerticalAlign-130 TableCell-withoutFirstLastPadding-114 MuiTableCell-alignLeft"
+          data-id="table-cell"
+          scope="col"
+        >
+          Age
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-113 TableCell-withPadding-133 TableCell-withVerticalAlign-112 TableCell-withVerticalAlign-132 TableCell-withoutFirstLastPadding-114 MuiTableCell-alignLeft"
+          data-id="table-cell"
+          scope="col"
+        >
+          Role
+        </th>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+        data-id="table-body"
+      >
+        <tr
+          class="MuiTableRow-root"
+          data-id="table-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-113 TableCell-withPadding-143 TableCell-withVerticalAlign-112 TableCell-withVerticalAlign-142 TableCell-withoutFirstLastPadding-114 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Jane
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-113 TableCell-withPadding-145 TableCell-withVerticalAlign-112 TableCell-withVerticalAlign-144 TableCell-withoutFirstLastPadding-114 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            32
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-113 TableCell-withPadding-147 TableCell-withVerticalAlign-112 TableCell-withVerticalAlign-146 TableCell-withoutFirstLastPadding-114 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Software Engineer
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-id="table-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-113 TableCell-withPadding-149 TableCell-withVerticalAlign-112 TableCell-withVerticalAlign-148 TableCell-withoutFirstLastPadding-114 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            John
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-113 TableCell-withPadding-151 TableCell-withVerticalAlign-112 TableCell-withVerticalAlign-150 TableCell-withoutFirstLastPadding-114 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            43
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-113 TableCell-withPadding-153 TableCell-withVerticalAlign-112 TableCell-withVerticalAlign-152 TableCell-withoutFirstLastPadding-114 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Business Analyst
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`It uses small padding 1`] = `
+<div>
+  <div
+    class="MuiTableContainer-root"
+  >
+    <table
+      class="MuiTable-root"
+      data-id="table"
+    >
+      <thead
+        class="MuiTableHead-root TableHead-whiteBackground-59"
+        data-id="table-head"
+      >
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-62 TableCell-withPadding-66 TableCell-withVerticalAlign-61 TableCell-withVerticalAlign-65 TableCell-withoutFirstLastPadding-63 MuiTableCell-alignLeft"
+          data-id="table-cell"
+          scope="col"
+        >
+          Name
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-62 TableCell-withPadding-80 TableCell-withVerticalAlign-61 TableCell-withVerticalAlign-79 TableCell-withoutFirstLastPadding-63 MuiTableCell-alignLeft"
+          data-id="table-cell"
+          scope="col"
+        >
+          Age
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-62 TableCell-withPadding-82 TableCell-withVerticalAlign-61 TableCell-withVerticalAlign-81 TableCell-withoutFirstLastPadding-63 MuiTableCell-alignLeft"
+          data-id="table-cell"
+          scope="col"
+        >
+          Role
+        </th>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+        data-id="table-body"
+      >
+        <tr
+          class="MuiTableRow-root"
+          data-id="table-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-62 TableCell-withPadding-92 TableCell-withVerticalAlign-61 TableCell-withVerticalAlign-91 TableCell-withoutFirstLastPadding-63 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Jane
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-62 TableCell-withPadding-94 TableCell-withVerticalAlign-61 TableCell-withVerticalAlign-93 TableCell-withoutFirstLastPadding-63 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            32
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-62 TableCell-withPadding-96 TableCell-withVerticalAlign-61 TableCell-withVerticalAlign-95 TableCell-withoutFirstLastPadding-63 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Software Engineer
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-id="table-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-62 TableCell-withPadding-98 TableCell-withVerticalAlign-61 TableCell-withVerticalAlign-97 TableCell-withoutFirstLastPadding-63 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            John
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-62 TableCell-withPadding-100 TableCell-withVerticalAlign-61 TableCell-withVerticalAlign-99 TableCell-withoutFirstLastPadding-63 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            43
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-62 TableCell-withPadding-102 TableCell-withVerticalAlign-61 TableCell-withVerticalAlign-101 TableCell-withoutFirstLastPadding-63 MuiTableCell-alignLeft"
+            data-id="table-cell"
+          >
+            Business Analyst
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
