@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.42.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.41.3...@origin-digital/ods-scripts@0.42.0) (2020-07-07)
+
+
+### Features
+
+* **markdownlite:** Add MarkdownLite component ([659e23a](https://bitbucket.orgn.io/od/origin-ui/commits/659e23a802e33a5b9e0ecab74ad0ce3cf2c7127f))
+
+
+
+
+
 ## [0.41.3](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.41.2...@origin-digital/ods-scripts@0.41.3) (2020-07-06)
 
 
