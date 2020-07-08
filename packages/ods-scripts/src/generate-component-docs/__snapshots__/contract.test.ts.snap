@@ -2143,6 +2143,39 @@ exports[`SvgIcon 1`] = `
 }
 `;
 
+exports[`Tab 1`] = `
+{
+  children?: ReactNode
+  className?: string
+  classes?: Record<string, string>
+  data-id?: string
+  disabled?: boolean
+  icon?: ReactNode
+  id?: string
+  label: ReactNode
+  muiProps?: OverrideProps<TabTypeMap<{}, "div">, "div"> | undefined
+  value?: 
+    | number
+    | string
+}
+`;
+
+exports[`TabPanel 1`] = `
+{
+  children?: ReactNode
+  className?: string
+  classes?: Record<string, string>
+  data-id?: string
+  disabled?: boolean
+  hidden?: boolean
+  id?: string
+  tabId?: string
+  value?: 
+    | number
+    | string
+}
+`;
+
 exports[`Table 1`] = `
 {
   alignX?: 
@@ -2212,6 +2245,34 @@ exports[`TableRow 1`] = `
   className?: string
   data-id?: string
   muiProps?: T | undefined
+}
+`;
+
+exports[`Tabs 1`] = `
+{
+  aria-label?: string
+  children?: ReactNode
+  className?: string
+  classes?: Record<string, string>
+  data-id?: string
+  defaultValue?: 
+    | number
+    | string
+  disabled?: boolean
+  id?: string
+  muiProps?: OverrideProps<TabsTypeMap<{}, ExtendButtonBase<ButtonBaseTypeMap<{}, "button">>>, ExtendButtonBase<ButtonBaseTypeMap<{}, "button">>> | undefined
+  onChange?: (event: ChangeEvent<{}>, newValue: ReactText) => void
+  scrollButtons?: 
+    | "auto"
+    | "off"
+    | "on"
+  value?: 
+    | number
+    | string
+  variant?: 
+    | "fullWidth"
+    | "scrollable"
+    | "standard"
 }
 `;
 

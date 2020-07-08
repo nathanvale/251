@@ -38,6 +38,8 @@ export {
   Spinner,
   Stack,
   Strong,
+  Tab,
+  Tabs,
   Table,
   TableBody,
   TableCell,

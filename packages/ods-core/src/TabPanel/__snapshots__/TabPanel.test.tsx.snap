@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+<div>
+  <div
+    aria-labelledby="tab-0"
+    class="c0"
+    id="tabpanel-0"
+    role="tabpanel"
+  >
+    testing
+  </div>
+</div>
+`;
+
+exports[`should be hidden when not the active tab 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+<div>
+  <div
+    aria-labelledby="tab-0"
+    class="c0"
+    hidden=""
+    id="tabpanel-0"
+    role="tabpanel"
+  >
+    testing
+  </div>
+</div>
+`;

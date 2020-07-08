@@ -48,6 +48,9 @@ import { SelectField } from "./SelectField/SelectField";
 import { Spinner } from "./Spinner/Spinner";
 import { Stack } from "./Stack/Stack";
 import { Strong } from "./Strong/Strong";
+import { Tab } from "./Tab/Tab";
+import { TabPanel } from "./TabPanel/TabPanel";
+import { Tabs } from "./Tabs/Tabs";
 import { Table } from "./Table/Table";
 import { TableBody } from "./TableBody/TableBody";
 import { TableCell } from "./TableCell/TableCell";
@@ -103,6 +106,9 @@ export type SelectFieldProps = import("./SelectField/SelectField").SelectFieldPr
 export type SpinnerProps = import("./Spinner/Spinner").SpinnerProps;
 export type StackProps = import("./Stack/Stack").StackProps;
 export type StrongProps = import("./Strong/Strong").StrongProps;
+export type TabProps = import("./Tab/Tab").TabProps;
+export type TabPanelProps = import("./TabPanel/TabPanel").TabPanelProps;
+export type TabsProps = import("./Tabs/Tabs").TabsProps;
 export type TableProps = import("./Table/Table").TableProps;
 export type TableBodyProps = import("./TableBody/TableBody").TableBodyProps;
 export type TableCellProps = import("./TableCell/TableCell").TableCellProps;
@@ -159,6 +165,9 @@ export {
   Spinner,
   Stack,
   Strong,
+  Tab,
+  TabPanel,
+  Tabs,
   Table,
   TableBody,
   TableCell,
@@ -215,6 +224,9 @@ export const Components = {
   Spinner,
   Stack,
   Strong,
+  Tab,
+  TabPanel,
+  Tabs,
   Table,
   TableBody,
   TableCell,
