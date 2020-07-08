@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It renders 1`] = `
+<div
+  class="MuiTableContainer-root"
+>
+  <table
+    class="MuiTable-root"
+    data-id="data-table"
+  >
+    <thead
+      class="MuiTableHead-root TableHead-whiteBackground-8"
+      data-id="table-head"
+    >
+      <th
+        class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-11 TableCell-withPadding-15 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-14 TableCell-withoutFirstLastPadding-12"
+        data-id="table-cell"
+        scope="col"
+      >
+        1
+      </th>
+      <th
+        class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-11 TableCell-withPadding-29 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-28 TableCell-withoutFirstLastPadding-12"
+        data-id="table-cell"
+        scope="col"
+      >
+        2
+      </th>
+      <th
+        class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-11 TableCell-withPadding-31 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-30 TableCell-withoutFirstLastPadding-12"
+        data-id="table-cell"
+        scope="col"
+      >
+        3
+      </th>
+    </thead>
+    <tbody
+      class="MuiTableBody-root"
+      data-id="table-body"
+    >
+      <tr
+        class="MuiTableRow-root"
+        data-id="table-row"
+      >
+        <td
+          class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-41 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-40 TableCell-withoutFirstLastPadding-12"
+          data-id="table-cell"
+        >
+          One
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-43 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-42 TableCell-withoutFirstLastPadding-12"
+          data-id="table-cell"
+        >
+          Two
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-45 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-44 TableCell-withoutFirstLastPadding-12"
+          data-id="table-cell"
+        >
+          Three
+        </td>
+      </tr>
+      <tr
+        class="MuiTableRow-root"
+        data-id="table-row"
+      >
+        <td
+          class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-47 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-46 TableCell-withoutFirstLastPadding-12"
+          data-id="table-cell"
+        >
+          Uno
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-49 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-48 TableCell-withoutFirstLastPadding-12"
+          data-id="table-cell"
+        >
+          Dos
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-51 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-50 TableCell-withoutFirstLastPadding-12"
+          data-id="table-cell"
+        >
+          Tres
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

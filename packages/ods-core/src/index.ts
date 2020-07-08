@@ -21,6 +21,7 @@ import { ChevronLinkRenderer } from "./ChevronLinkRenderer/ChevronLinkRenderer";
 import { Column } from "./Column/Column";
 import { Columns } from "./Columns/Columns";
 import { ControlGroup } from "./ControlGroup/ControlGroup";
+import { DataTable } from "./DataTable/DataTable";
 import { Dialog } from "./Dialog/Dialog";
 import { Divider } from "./Divider/Divider";
 import { DividerCard } from "./DividerCard/DividerCard";
@@ -75,6 +76,7 @@ export type ChevronLinkRendererProps = import("./ChevronLinkRenderer/ChevronLink
 export type ColumnProps = import("./Column/Column").ColumnProps;
 export type ColumnsProps = import("./Columns/Columns").ColumnsProps;
 export type ControlGroupProps = import("./ControlGroup/ControlGroup").ControlGroupProps;
+export type DataTableProps = import("./DataTable/DataTable").DataTableProps;
 export type DialogProps = import("./Dialog/Dialog").DialogProps;
 export type DividerProps = import("./Divider/Divider").DividerProps;
 export type DividerCardProps = import("./DividerCard/DividerCard").DividerCardProps;
@@ -130,6 +132,7 @@ export {
   Column,
   Columns,
   ControlGroup,
+  DataTable,
   Dialog,
   Divider,
   DividerCard,
@@ -186,6 +189,7 @@ export const Components = {
   Column,
   Columns,
   ControlGroup,
+  DataTable,
   Dialog,
   Divider,
   DividerCard,

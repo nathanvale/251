@@ -56,12 +56,13 @@ type TableContextValue = Pick<
 
 type TableContainerStylesProps = Pick<TableProps, "maxHeight">;
 
+export const defaultProps: Partial<TableProps> = {
+  "data-id": "table",
+  size: "medium",
+};
+
 export const TableContext = createContext<TableContextValue>({
-  alignX: "left",
-  bordered: undefined,
-  hover: undefined,
-  size: "small",
-  striped: undefined,
+  size: defaultProps.size,
 });
 
 export const Table = ({
@@ -109,10 +110,6 @@ export const Table = ({
   );
 };
 
-Table.defaultProps = {
-  "data-id": "table",
-  alignX: "left",
-  size: "medium",
-};
+Table.defaultProps = defaultProps;
 
 Table.displayName = "Table";

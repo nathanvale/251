@@ -3,22 +3,24 @@ import { ComponentDocs } from "@origin-digital/ods-types";
 import { generateTable } from "./Table.helper";
 import { TableProps } from "..";
 
+export const propDescriptions = {
+  alignX: "This is a prop which aligns the cell content horizontally.",
+  bordered: "If true this will add a border around each cell and the table.",
+  hover: "If true this will add a hover effect on table rows.",
+  maxHeight:
+    "The max height for the table, will result in a scrolled table if the contents are taller.",
+  striped: "If true this will add a background color on every other row.",
+  size: "The T-shirt sized padding of table cells.",
+  stickyHeader:
+    "If true this will cause the table head to be sticky if scrolled out of view.",
+};
+
 export const docs: ComponentDocs<TableProps> = {
   category: "Content",
   componentName: "Table",
   description:
     'Table is a low-level content component. Its main concerns are wrapping TableHead and TableBody. Open the examples in Playroom to see the behaviour of this component. Please note that due to restrictions in MUI "stickyHeader" can not be used for tables that overflow horizontally in mobile viewports.',
-  propDescriptions: {
-    alignX: "This is a prop which aligns the cell content horizontally.",
-    bordered: "If true this will add a border around each cell and the table.",
-    hover: "If true this will add a hover effect on table rows.",
-    maxHeight:
-      "The max height for the table, will result in a scrolled table if the contents are taller.",
-    striped: "If true this will add a background color on every other row.",
-    size: "The T-shirt sized padding of table cells.",
-    stickyHeader:
-      "If true this will cause the table head to be sticky if scrolled out of view.",
-  },
+  propDescriptions,
   migrationGuide: false,
   examples: {
     default: {

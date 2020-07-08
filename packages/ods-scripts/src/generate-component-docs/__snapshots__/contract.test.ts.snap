@@ -1320,6 +1320,30 @@ exports[`ControlGroup 1`] = `
 }
 `;
 
+exports[`DataTable 1`] = `
+{
+  alignX?: 
+    | "center"
+    | "left"
+    | "right"
+  aria-label?: string
+  bordered?: boolean
+  data?: ReactNode[][]
+  data-id?: string
+  headings?: ReactNode[]
+  hover?: boolean
+  maxHeight?: 
+    | number
+    | string
+  muiProps?: any
+  size?: 
+    | "medium"
+    | "small"
+  stickyHeader?: boolean
+  striped?: boolean
+}
+`;
+
 exports[`Dialog 1`] = `
 {
   children?: ReactNode
