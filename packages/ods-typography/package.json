@@ -3,7 +3,7 @@
   "description": "Typography hooks for ODS components",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "files": [
@@ -19,7 +19,7 @@
   "dependencies": {
     "@babel/runtime-corejs3": "^7.8.3",
     "@material-ui/core": "^4.9.3",
-    "@origin-digital/ods-types": "^0.29.1"
+    "@origin-digital/ods-types": "^0.30.0"
   },
   "peerDependencies": {
     "react": "^16.9.0"

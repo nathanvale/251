@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.26.0](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.25.0...playroom@0.26.0) (2020-07-09)
+
+
+### Features
+
+* implement inline ([e998278](https://bitbucket.orgn.io/od/origin-ui/commits/e99827823aaf41ff948613a21baa629bda4d2986))
+
+
+
+
+
 # [0.25.0](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.24.6...playroom@0.25.0) (2020-07-07)
 
 

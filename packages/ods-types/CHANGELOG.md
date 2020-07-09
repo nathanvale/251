@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.30.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.29.1...@origin-digital/ods-types@0.30.0) (2020-07-09)
+
+
+### Features
+
+* implement inline ([e998278](https://bitbucket.orgn.io/od/origin-ui/commits/e99827823aaf41ff948613a21baa629bda4d2986))
+
+
+
+
+
 ## [0.29.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.29.0...@origin-digital/ods-types@0.29.1) (2020-07-06)
 
 
