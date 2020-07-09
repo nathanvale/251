@@ -19591,6 +19591,13 @@ react-is@^16.12.0, react-is@^16.3.1, react-is@^16.6.0, react-is@^16.6.3, react-i
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/react-is/-/react-is-16.13.0.tgz#0f37c3613c34fe6b37cd7f763a0d6293ab15c527"
   integrity sha1-DzfDYTw0/ms3zX92Og1ik6sVxSc=
 
+react-keyed-flatten-children@^1.2.0:
+  version "1.2.0"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/react-keyed-flatten-children/-/react-keyed-flatten-children-1.2.0.tgz#44c741f9f5acca1a7294c3f7a11f1d31c417c1e1"
+  integrity sha1-RMdB+fWsyhpylMP3oR8dMcQXweE=
+  dependencies:
+    react-is "^16.8.6"
+
 react-lifecycles-compat@^3.0.2, react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"

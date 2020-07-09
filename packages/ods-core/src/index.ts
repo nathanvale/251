@@ -32,6 +32,7 @@ import { FormLabel } from "./FormLabel/FormLabel";
 import { Heading } from "./Heading/Heading";
 import { HeadingChevronLink } from "./HeadingChevronLink/HeadingChevronLink";
 import { Hidden } from "./Hidden/Hidden";
+import { Inline } from "./Inline/Inline";
 import { IconButton } from "./IconButton/IconButton";
 import { InputAdornment } from "./InputAdornment/InputAdornment";
 import { MarkdownLite } from "./MarkdownLite/MarkdownLite";
@@ -80,6 +81,7 @@ export type FormLabelProps = import("./FormLabel/FormLabel").FormLabelProps;
 export type HeadingProps = import("./Heading/Heading").HeadingProps;
 export type HeadingChevronLinkProps = import("./HeadingChevronLink/HeadingChevronLink").HeadingChevronLinkProps;
 export type HiddenProps = import("./Hidden/Hidden").HiddenProps;
+export type InlineProps = import("./Inline/Inline").InlineProps;
 export type IconButtonProps = import("./IconButton/IconButton").IconButtonProps;
 export type InputAdornmentProps = import("./InputAdornment/InputAdornment").InputAdornmentProps;
 export type MarkdownLiteProps = import("./MarkdownLite/MarkdownLite").MarkdownLiteProps;
@@ -129,6 +131,7 @@ export {
   Heading,
   HeadingChevronLink,
   Hidden,
+  Inline,
   InputAdornment,
   IconButton,
   MarkdownLite,
@@ -180,6 +183,7 @@ export const Components = {
   HeadingChevronLink,
   Hidden,
   InputAdornment,
+  Inline,
   MarkdownLite,
   OriginThemeProvider,
   Placeholder,

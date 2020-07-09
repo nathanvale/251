@@ -23,6 +23,7 @@ export {
   FormLabel,
   Hidden,
   HeadingChevronLink,
+  Inline,
   InputAdornment,
   MarkdownLite,
   OriginThemeProvider,

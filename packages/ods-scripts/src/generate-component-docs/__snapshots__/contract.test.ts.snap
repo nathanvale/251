@@ -1521,6 +1521,39 @@ exports[`IconButton 1`] = `
 }
 `;
 
+exports[`Inline 1`] = `
+{
+  alignX?: ResponsiveProp<
+    | "center"
+    | "left"
+    | "right"
+  >
+  alignY?: ResponsiveProp<
+    | "bottom"
+    | "center"
+    | "top"
+  >
+  children: ReactNode
+  collapseBelow?: 
+    | "lg"
+    | "md"
+    | "sm"
+    | "xl"
+  data-id?: string
+  space?: ResponsiveProp<
+    | "large"
+    | "medium"
+    | "none"
+    | "small"
+    | "xlarge"
+    | "xsmall"
+    | "xxlarge"
+    | "xxsmall"
+    | "xxxlarge"
+  >
+}
+`;
+
 exports[`InputAdornment 1`] = `
 {
   children?: ReactNode

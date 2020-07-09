@@ -77,6 +77,8 @@ export type TypographyVariants =
 export type TextAlignVariants = "left" | "right" | "center";
 
 export type AlignXType = "left" | "center" | "right";
+export type AlignYType = "top" | "center" | "bottom";
+
 export type TLength = string | 0 | number;
 
 export type FluidityVariant = ResponsiveProp<boolean>;
@@ -122,7 +124,6 @@ export type ResponsiveProp<T> =
   | T
   | [T, T]
   | Partial<Record<BreakpointVariants, T>>;
-
 export interface Breakpoint<T = string> {
   xs: T;
   sm: T;
@@ -143,9 +144,23 @@ interface SpaceTShirts {
   xxxlarge?: number;
 }
 
+export interface ResponsiveRangeProps {
+  above?: Exclude<BreakpointVariants, "xl">;
+  below?: Exclude<BreakpointVariants, "xs">;
+}
+
 export type SpaceVariants = keyof SpaceTShirts;
 
 export type ResponsiveSpace = ResponsiveProp<SpaceVariants>;
+
+export type AlignX = "left" | "center" | "right";
+export type AlignY = "top" | "center" | "bottom";
+
+export interface CollapsibleAlignmentProps {
+  collapseBelow?: ResponsiveRangeProps["below"];
+  alignX?: ResponsiveProp<AlignX>;
+  alignY?: ResponsiveProp<AlignY>;
+}
 
 export type Breakpoints = [string, string, string, string] &
   Partial<Breakpoint>;
