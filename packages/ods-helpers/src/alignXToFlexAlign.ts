@@ -1,7 +1,7 @@
 import { ResponsiveProp, AlignXType } from "@origin-digital/ods-types";
 import { mapResponsiveProp } from "./mapResponsiveProp";
 
-export const alignToFlexAlign = (
+export const alignXToFlexAlign = (
   align: ResponsiveProp<AlignXType> | undefined
 ) =>
   mapResponsiveProp(align, {

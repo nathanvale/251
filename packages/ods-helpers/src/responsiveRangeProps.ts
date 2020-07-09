@@ -1,11 +1,9 @@
-import { BreakpointVariants } from "@origin-digital/ods-types";
+import {
+  BreakpointVariants,
+  ResponsiveRangeProps,
+} from "@origin-digital/ods-types";
 
 const breakpoints: BreakpointVariants[] = ["xs", "sm", "md", "lg", "xl"];
-
-export interface ResponsiveRangeProps {
-  above?: Exclude<BreakpointVariants, "xl">;
-  below?: Exclude<BreakpointVariants, "xs">;
-}
 
 export const resolveResponsiveRangeProps = (
   props: ResponsiveRangeProps

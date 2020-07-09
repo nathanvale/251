@@ -11,7 +11,7 @@ import {
 import {
   mapToStyledSystem,
   cssLengthToString,
-  alignToFlexAlign,
+  alignXToFlexAlign,
 } from "@origin-digital/ods-helpers";
 import { Box, BoxProps } from "../Box/Box";
 
@@ -115,7 +115,7 @@ export const Stack = ({
         <StackChild
           display={alignX === "left" ? "block" : "flex"}
           flexDirection={alignX === "left" ? undefined : "column"}
-          alignItems={alignX === "left" ? undefined : alignToFlexAlign(alignX)}
+          alignItems={alignX === "left" ? undefined : alignXToFlexAlign(alignX)}
           key={index}
           divider={dividers}
           data-id="stack-child"

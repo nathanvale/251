@@ -7,7 +7,8 @@
 
 // PLEASE EXPORT JUST ONE HELPER FUNCTION PER FILE
 
-export { alignToFlexAlign } from "./alignToFlexAlign";
+export { alignXToFlexAlign } from "./alignXToFlexAlign";
+export { alignYToFlexAlign } from "./alignYToFlexAlign";
 export { cssLengthToString } from "./cssLengthToString";
 export { getRespValForBreakpoint } from "./getRespValForBreakpoint";
 export { isNumber } from "./isNumber";
@@ -17,6 +18,6 @@ export { mapToStyledSystem } from "./mapToStyledSystem";
 export { media } from "./media";
 export { removeProps } from "./removeProps";
 export { resolveResponsiveRangeProps } from "./responsiveRangeProps";
-export type ResponsiveRangeProps = import("./responsiveRangeProps").ResponsiveRangeProps;
 export { slugify } from "./slugify";
+export { normaliseResponsiveProp } from "./normaliseResponsiveProp";
 export { kebabCase } from "./kebabCase";

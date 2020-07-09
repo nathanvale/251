@@ -29,6 +29,7 @@
     "clsx": "^1.1.0",
     "csstype": "^2.6.4",
     "polished": "^3.4.2",
+    "react-keyed-flatten-children": "^1.2.0",
     "styled-system": "4.2.3",
     "utility-types": "^3.7.0"
   },
