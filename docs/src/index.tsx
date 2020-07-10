@@ -1,3 +1,6 @@
+import "core-js/es";
+import "react-app-polyfill/ie9";
+import "react-app-polyfill/ie11";
 import React from "react";
 import * as ReactDOM from "react-dom";
 import { HashRouter as Router } from "react-router-dom";

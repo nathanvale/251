@@ -9,6 +9,7 @@ exports[`It can render 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  max-width: 100%;
   text-align: left;
 }
 

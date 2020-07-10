@@ -8966,7 +8966,7 @@ core-js@^1.0.0:
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
   integrity sha1-ZSKUwUZR2yj6k70tX/KYOk8IxjY=
 
-core-js@^3.2.1, core-js@^3.4.1:
+core-js@^3.2.1, core-js@^3.4.1, core-js@^3.6.5:
   version "3.6.5"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/core-js/-/core-js-3.6.5.tgz#7395dc273af37fb2e50e9bd3d9fe841285231d1a"
   integrity sha1-c5XcJzrzf7LlDpvT2f6EEoUjHRo=

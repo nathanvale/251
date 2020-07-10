@@ -1,4 +1,5 @@
 const path = require("path");
+
 const getPackagesMetaData = require("../packages/ods-scripts/src/packages-metadata")
   .getPackagesMetaData;
 const getResolveAliases = require("../packages/ods-scripts/src/packages-metadata")
@@ -24,6 +25,7 @@ module.exports = {
             // Allow babel-loader to include src code for packages
             ...packagesMetadata.map((package) => `${package.location}/src`),
           ];
+
           return webpackConfig;
         },
       },
