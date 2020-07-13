@@ -2115,6 +2115,72 @@ exports[`SvgIcon 1`] = `
 }
 `;
 
+exports[`Table 1`] = `
+{
+  alignX?: 
+    | "center"
+    | "left"
+    | "right"
+  aria-label?: string
+  bordered?: boolean
+  children?: ReactNode
+  data-id?: string
+  hover?: boolean
+  maxHeight?: 
+    | number
+    | string
+  muiProps?: T | undefined
+  size?: 
+    | "medium"
+    | "small"
+  stickyHeader?: boolean
+  striped?: boolean
+}
+`;
+
+exports[`TableBody 1`] = `
+{
+  children?: ReactNode
+  data-id?: string
+  muiProps?: T | undefined
+}
+`;
+
+exports[`TableCell 1`] = `
+{
+  alignX?: 
+    | "center"
+    | "left"
+    | "right"
+  alignY?: 
+    | "bottom"
+    | "center"
+    | "top"
+  children?: ReactNode
+  colSpan?: number
+  data-id?: string
+  muiProps?: T | undefined
+  rowSpan?: number
+  scope?: string
+}
+`;
+
+exports[`TableHead 1`] = `
+{
+  children?: ReactNode
+  data-id?: string
+  muiProps?: T | undefined
+}
+`;
+
+exports[`TableRow 1`] = `
+{
+  children?: ReactNode
+  data-id?: string
+  muiProps?: T | undefined
+}
+`;
+
 exports[`Text 1`] = `
 {
   align?: ResponsiveProp<
