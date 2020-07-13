@@ -635,10 +635,6 @@ exports[`Box 1`] = `
     | number
     | string
   maxLength?: number
-  maxWidth?: ResponsiveProp<
-    | number
-    | string
-  >
   media?: string
   mediaGroup?: string
   method?: string
