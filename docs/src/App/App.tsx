@@ -1,9 +1,9 @@
 import React, { StrictMode } from "react";
-import { OriginThemeProvider } from "@origin-digital/ods-core";
 import { Route, Switch, Redirect } from "react-router";
 import { Link as ReactRouterLink } from "react-router-dom";
-import { LinkComponentProps } from "@origin-digital/ods-types";
 import map from "lodash/map";
+import { OriginThemeProvider } from "@origin-digital/ods-core";
+import { LinkComponentProps } from "@origin-digital/ods-types";
 import { Navigation } from "./Navigation/Navigation";
 import home from "./routes/home";
 import guides from "./routes/guides";

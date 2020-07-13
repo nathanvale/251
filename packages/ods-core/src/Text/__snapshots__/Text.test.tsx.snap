@@ -9,6 +9,7 @@ exports[`It can render body small text 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  max-width: 100%;
   text-align: left;
 }
 
@@ -29,6 +30,7 @@ exports[`It can render body text "critical" tone 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  max-width: 100%;
   text-align: left;
 }
 
@@ -49,6 +51,7 @@ exports[`It can render body text "neutral" tone 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  max-width: 100%;
   text-align: left;
 }
 
@@ -69,6 +72,7 @@ exports[`It can render body text "neutral.dark" tone 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  max-width: 100%;
   text-align: left;
 }
 
@@ -89,6 +93,7 @@ exports[`It can render body text "neutral.light" tone 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  max-width: 100%;
   text-align: left;
 }
 
@@ -109,6 +114,7 @@ exports[`It can render body text "positive" tone 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  max-width: 100%;
   text-align: left;
 }
 
@@ -129,6 +135,7 @@ exports[`It can render body text critical tone 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  max-width: 100%;
   text-align: left;
 }
 
@@ -149,6 +156,7 @@ exports[`It can render body text medium weight 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  max-width: 100%;
   text-align: left;
 }
 
@@ -191,6 +199,7 @@ exports[`It can render body text truncated 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  max-width: 100%;
   text-align: left;
 }
 
@@ -222,6 +231,7 @@ exports[`It can render subtitle caption text 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  max-width: 100%;
   text-align: left;
 }
 
@@ -242,6 +252,7 @@ exports[`It can render subtitle overline text 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  max-width: 100%;
   text-align: left;
 }
 
@@ -262,6 +273,7 @@ exports[`It can render subtitle small text 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  max-width: 100%;
   text-align: left;
 }
 
@@ -282,6 +294,7 @@ exports[`It can render subtitle text 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  max-width: 100%;
   text-align: left;
 }
 
@@ -302,6 +315,7 @@ exports[`It should render a p tag by default 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  max-width: 100%;
   text-align: left;
 }
 

@@ -91,6 +91,7 @@ export const Text = (props: TextProps) => {
         className={className}
         component={component}
         textAlign={align}
+        maxWidth="100%"
       >
         {content}
       </Box>

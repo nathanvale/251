@@ -9,6 +9,7 @@ exports[`should render a link with bold and italic text within the link 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  max-width: 100%;
   text-align: left;
 }
 
