@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.43.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.43.0...@origin-digital/ods-scripts@0.43.1) (2020-07-13)
+
+
+### Bug Fixes
+
+* **text:** prevent overflow on IE11 ([8dede41](https://bitbucket.orgn.io/od/origin-ui/commits/8dede417e6a86fe2ddc24c622574bf288162b504))
+
+
+
+
+
 # [0.43.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.42.0...@origin-digital/ods-scripts@0.43.0) (2020-07-09)
 
 

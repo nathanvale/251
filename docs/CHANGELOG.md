@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.28.11](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.28.10...docs@0.28.11) (2020-07-13)
+
+
+### Bug Fixes
+
+* **text:** prevent overflow on IE11 ([8dede41](https://bitbucket.orgn.io/od/origin-ui/commits/8dede417e6a86fe2ddc24c622574bf288162b504))
+
+
+
+
+
 ## [0.28.10](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.28.9...docs@0.28.10) (2020-07-09)
 
 **Note:** Version bump only for package docs
