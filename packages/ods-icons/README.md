@@ -8,7 +8,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-ODS features a library of ready to use energy industry related icons. If you need a custom SVG icon, not available in this icon library, then you can easily create your own by using the <SvgIcon/> component.
+ODS features a library of ready to use energy industry related icons. If you need a custom SVG icon, not available in this icon library, then you can easily create your own by using the `<SvgIcon/>` component.
 
 ## Installation
 

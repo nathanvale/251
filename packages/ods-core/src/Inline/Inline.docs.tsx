@@ -156,5 +156,56 @@ export const docs: ComponentDocs<InlineProps> = {
       },
     ],
   },
-  snippets: [],
+  snippets: [
+    {
+      label: "Small space",
+      Code: () => (
+        <Inline space="small">
+          <Placeholder width={48} height={48} />
+          <Placeholder width={48} height={48} />
+          <Placeholder width={48} height={48} />
+        </Inline>
+      ),
+    },
+    {
+      label: "Medium space",
+      Code: () => (
+        <Inline space="medium">
+          <Placeholder width={48} height={48} />
+          <Placeholder width={48} height={48} />
+          <Placeholder width={48} height={48} />
+        </Inline>
+      ),
+    },
+    {
+      label: "Responsive space",
+      Code: () => (
+        <Inline space={["small", "large"]}>
+          <Placeholder width={48} height={48} />
+          <Placeholder width={48} height={48} />
+          <Placeholder width={48} height={48} />
+        </Inline>
+      ),
+    },
+    {
+      label: "Responsive horizontal alignment",
+      Code: () => (
+        <Inline space="small" alignX={["center", "left"]}>
+          <Placeholder width={48} height={48} />
+          <Placeholder width={48} height={48} />
+          <Placeholder width={48} height={48} />
+        </Inline>
+      ),
+    },
+    {
+      label: "Vertically centered",
+      Code: () => (
+        <Inline space="small" alignY="center">
+          <Placeholder width={48} height={40} />
+          <Placeholder width={48} height={100} />
+          <Placeholder width={48} height={60} />
+        </Inline>
+      ),
+    },
+  ],
 };
