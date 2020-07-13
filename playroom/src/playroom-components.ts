@@ -13,6 +13,7 @@ export {
   ChevronLinkRenderer,
   Column,
   Columns,
+  DataTable,
   Dialog,
   Divider,
   DividerCard,
