@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.28.0](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.27.0...playroom@0.28.0) (2020-07-13)
+
+
+### Features
+
+* **dataTable:** implement in ods ([8a50143](https://bitbucket.orgn.io/od/origin-ui/commits/8a5014356cc82fda97a7cba848d01a7a538571d0))
+
+
+
+
+
 # [0.27.0](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.26.2...playroom@0.27.0) (2020-07-13)
 
 
