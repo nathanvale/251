@@ -4,7 +4,7 @@
   "description": "Living design system containing the building blocks and design principles for Origin Digital web applications.",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
-  "version": "0.26.1",
+  "version": "0.26.2",
   "workspaces": {
     "nohoist": [
       "playroom",
@@ -21,10 +21,10 @@
     "@origin-digital/formatters": "*",
     "@origin-digital/icon": "*",
     "@origin-digital/messages": "*",
-    "@origin-digital/ods-core": "^0.43.1",
-    "@origin-digital/ods-icons": "^0.11.6",
+    "@origin-digital/ods-core": "^0.43.2",
+    "@origin-digital/ods-icons": "^0.11.7",
     "@origin-digital/ods-lab": "^0.22.5",
-    "@origin-digital/ods-scripts": "^0.43.1",
+    "@origin-digital/ods-scripts": "^0.43.2",
     "@origin-digital/ods-themes": "^0.18.5",
     "@origin-digital/ods-types": "^0.30.0",
     "@origin-digital/style-guide": "*",
