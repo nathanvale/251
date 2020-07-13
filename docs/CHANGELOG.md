@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.29.0](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.28.12...docs@0.29.0) (2020-07-13)
+
+
+### Features
+
+* **table:** implement in ods ([a681bd6](https://bitbucket.orgn.io/od/origin-ui/commits/a681bd6f22fe2cd5dffdbf3ef167a883f4ccd453))
+
+
+
+
+
 ## [0.28.12](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.28.11...docs@0.28.12) (2020-07-13)
 
 **Note:** Version bump only for package docs

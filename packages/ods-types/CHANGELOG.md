@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.31.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.30.0...@origin-digital/ods-types@0.31.0) (2020-07-13)
+
+
+### Features
+
+* **table:** implement in ods ([a681bd6](https://bitbucket.orgn.io/od/origin-ui/commits/a681bd6f22fe2cd5dffdbf3ef167a883f4ccd453))
+
+
+
+
+
 # [0.30.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.29.1...@origin-digital/ods-types@0.30.0) (2020-07-09)
 
 
