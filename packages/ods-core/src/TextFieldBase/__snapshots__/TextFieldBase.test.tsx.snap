@@ -253,7 +253,7 @@ exports[`it reserves helperText space when \`reserverHelperTextSapce\` flag is s
         value=""
       />
     </div>
-    <p
+    <div
       class="MuiFormHelperText-root MuiFormHelperText-contained form-helper-text-grey400-colour-635"
       data-id="text-field-helper-text"
       id="text-field-helper-text"
@@ -261,7 +261,7 @@ exports[`it reserves helperText space when \`reserverHelperTextSapce\` flag is s
       <div>
          
       </div>
-    </p>
+    </div>
   </div>
 </div>
 `;

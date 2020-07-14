@@ -169,3 +169,29 @@ test("Sets data-id to id if not provided", () => {
     queryAllByAttribute("data-id", container, "my-text-field-helper-text")
   ).toHaveLength(1);
 });
+
+test("Sets the helper text component to a p is a string is passed", () => {
+  const { container } = render(
+    <TextFieldBase
+      id="my-text-field"
+      label="some label"
+      helperText="Helper text which is a string"
+    />
+  );
+
+  const helperText = container.querySelector(".MuiFormHelperText-root");
+  expect(helperText!.tagName).toBe("P");
+});
+
+test("Sets the helper text component to a div is a string is not passed", () => {
+  const { container } = render(
+    <TextFieldBase
+      id="my-text-field"
+      label="some label"
+      helperText={<div>Helper text which is not a string</div>}
+    />
+  );
+
+  const helperText = container.querySelector(".MuiFormHelperText-root");
+  expect(helperText!.tagName).toBe("DIV");
+});

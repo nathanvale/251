@@ -208,6 +208,7 @@ export const TextFieldBase = ({
         {
           className: helperTextClassName,
           "data-id": `${calcDataId}-helper-text`,
+          component: typeof helperText !== "string" ? "div" : undefined,
           ...muiProps?.FormHelperTextProps,
         } as any
       }
