@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.45.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.45.0...@origin-digital/ods-core@0.45.1) (2020-07-14)
+
+
+### Bug Fixes
+
+* **textfieldbase:** set helpertext component to div if not a string ([7964648](https://bitbucket.orgn.io/od/origin-ui/commits/79646485272100f46de0376d6c7cd55718a2af7d))
+
+
+
+
+
 # [0.45.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.44.0...@origin-digital/ods-core@0.45.0) (2020-07-13)
 
 
