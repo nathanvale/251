@@ -7,6 +7,7 @@ import {
   OptionalTrackableProps,
   MuiProps,
   AlignXType,
+  BaseTextVariants,
 } from "@origin-digital/ods-types";
 
 const useTableStyles = makeStyles(
@@ -43,15 +44,17 @@ export interface TableProps
   "aria-label"?: string;
   alignX?: AlignXType;
   bordered?: boolean;
+  className?: string;
   hover?: boolean;
+  maxHeight?: number | string;
   size?: "small" | "medium";
   striped?: boolean;
-  maxHeight?: number | string;
+  textVariant?: BaseTextVariants;
 }
 
 type TableContextValue = Pick<
   TableProps,
-  "alignX" | "bordered" | "hover" | "size" | "striped"
+  "alignX" | "bordered" | "hover" | "size" | "striped" | "textVariant"
 >;
 
 type TableContainerStylesProps = Pick<TableProps, "maxHeight">;
@@ -59,29 +62,32 @@ type TableContainerStylesProps = Pick<TableProps, "maxHeight">;
 export const defaultProps: Partial<TableProps> = {
   "data-id": "table",
   size: "medium",
+  textVariant: "body",
 };
 
 export const TableContext = createContext<TableContextValue>({
   size: defaultProps.size,
+  textVariant: defaultProps.textVariant,
 });
 
 export const Table = ({
   alignX,
   children,
+  className,
   bordered,
   hover,
   maxHeight,
   size,
   stickyHeader,
   striped,
-
+  textVariant,
   muiProps,
   ...props
 }: TableProps) => {
   // Prevent re-renders when context values haven't changed
   const tableContextValue = useMemo(
-    () => ({ alignX, bordered, hover, size, striped }),
-    [alignX, bordered, hover, size, striped]
+    () => ({ alignX, bordered, hover, size, striped, textVariant }),
+    [alignX, bordered, hover, size, striped, textVariant]
   );
 
   const { withBorder } = useTableStyles();
@@ -98,7 +104,7 @@ export const Table = ({
         })}
       >
         <MuiTable
-          className={clsx({ [withBorder]: bordered })}
+          className={clsx(className, { [withBorder]: bordered })}
           stickyHeader={stickyHeader}
           {...props}
           {...(muiProps || {})}

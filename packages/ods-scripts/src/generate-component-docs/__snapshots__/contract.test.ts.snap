@@ -1328,6 +1328,7 @@ exports[`DataTable 1`] = `
     | "right"
   aria-label?: string
   bordered?: boolean
+  className?: string
   data?: ReactNode[][]
   data-id?: string
   headings?: ReactNode[]
@@ -1341,6 +1342,9 @@ exports[`DataTable 1`] = `
     | "small"
   stickyHeader?: boolean
   striped?: boolean
+  textVariant?: 
+    | "body"
+    | "body-small"
 }
 `;
 
@@ -2148,6 +2152,7 @@ exports[`Table 1`] = `
   aria-label?: string
   bordered?: boolean
   children?: ReactNode
+  className?: string
   data-id?: string
   hover?: boolean
   maxHeight?: 
@@ -2159,6 +2164,9 @@ exports[`Table 1`] = `
     | "small"
   stickyHeader?: boolean
   striped?: boolean
+  textVariant?: 
+    | "body"
+    | "body-small"
 }
 `;
 
@@ -2181,6 +2189,7 @@ exports[`TableCell 1`] = `
     | "center"
     | "top"
   children?: ReactNode
+  className?: string
   colSpan?: number
   data-id?: string
   muiProps?: T | undefined
@@ -2200,6 +2209,7 @@ exports[`TableHead 1`] = `
 exports[`TableRow 1`] = `
 {
   children?: ReactNode
+  className?: string
   data-id?: string
   muiProps?: T | undefined
 }

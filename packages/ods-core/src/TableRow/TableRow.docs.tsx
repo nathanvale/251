@@ -8,7 +8,9 @@ export const docs: ComponentDocs<TableRowProps> = {
   componentName: "TableRow",
   description:
     "TableRow is a low-level content component. Its main concerns are wrapping a single or multiple TableCells. Open the examples in Playroom to see the behaviour of this component.",
-  propDescriptions: {},
+  propDescriptions: {
+    className: "Additional class for the table row.",
+  },
   migrationGuide: false,
   examples: {
     default: {

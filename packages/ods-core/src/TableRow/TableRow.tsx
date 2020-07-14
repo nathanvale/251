@@ -29,15 +29,25 @@ const useTableRowStyles = makeStyles(
 export interface TableRowProps
   extends OptionalTrackableProps,
     MuiProps<MuiTableRowProps>,
-    Pick<MuiTableRowProps, "children"> {}
+    Pick<MuiTableRowProps, "children"> {
+  className?: string;
+}
 
-export const TableRow = ({ children, muiProps, ...props }: TableRowProps) => {
+export const TableRow = ({
+  children,
+  className,
+  muiProps,
+  ...props
+}: TableRowProps) => {
   const { withStripes, withHover } = useTableRowStyles();
   const { striped, hover } = useContext(TableContext);
 
   return (
     <MuiTableRow
-      className={clsx(hover && !striped && withHover, striped && withStripes)}
+      className={clsx(className, {
+        [withHover]: hover && !striped,
+        [withStripes]: striped,
+      })}
       {...props}
       {...(muiProps || {})}
     >

@@ -14,7 +14,7 @@ import { TableProps, TableContext } from "../Table/Table";
 
 interface TableCellStylesProps
   extends Pick<TableCellProps, "alignY">,
-    Pick<TableProps, "size"> {}
+    Pick<TableProps, "size" | "textVariant"> {}
 
 const useTableCellStyles = makeStyles(
   (theme) => ({
@@ -32,6 +32,16 @@ const useTableCellStyles = makeStyles(
         paddingRight: 0,
       },
     },
+    withFontSize: ({ textVariant }: TableCellStylesProps) => {
+      return {
+        fontSize: `${
+          theme.typography[textVariant === "body" ? "body1" : "body2"].fontSize
+        }px`,
+        lineHeight:
+          theme.typography[textVariant === "body" ? "body1" : "body2"]
+            .lineHeight,
+      };
+    },
     withBorder: {
       borderLeft: `1px solid ${theme.palette.grey[200]}`,
       borderRight: `1px solid ${theme.palette.grey[200]}`,
@@ -46,26 +56,31 @@ export interface TableCellProps
     Pick<MuiTableCellProps, "children" | "colSpan" | "rowSpan" | "scope"> {
   alignX?: AlignXType;
   alignY?: AlignYType;
+  className?: string;
 }
 
 export const TableCell = ({
   children,
+  className,
   alignY,
   muiProps,
   ...props
 }: TableCellProps) => {
-  const { alignX, bordered, hover, size, striped } = useContext(TableContext);
+  const { alignX, bordered, hover, size, striped, textVariant } = useContext(
+    TableContext
+  );
   const {
     withoutFirstLastPadding,
     withPadding,
     withBorder,
+    withFontSize,
     withVerticalAlign,
-  } = useTableCellStyles({ alignY, size });
+  } = useTableCellStyles({ alignY, textVariant, size });
 
   return (
     <MuiTableCell
       align={props.alignX || alignX}
-      className={clsx(withPadding, withVerticalAlign, {
+      className={clsx(className, withPadding, withVerticalAlign, withFontSize, {
         [withBorder]: bordered,
         [withoutFirstLastPadding]: !bordered && !striped && !hover,
       })}
@@ -79,6 +94,7 @@ export const TableCell = ({
 
 TableCell.defaultProps = {
   "data-id": "table-cell",
+  alignY: "top",
 };
 
 TableCell.displayName = "TableCell";

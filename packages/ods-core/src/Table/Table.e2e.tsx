@@ -14,6 +14,11 @@ export const tests: E2ETests = [
     responsive: true,
   },
   {
+    label: "Small text size",
+    Code: () => generateTable({ textVariant: "body-small" }),
+    responsive: true,
+  },
+  {
     label: "Striped rows",
     Code: () => generateTable({ striped: true }),
     responsive: true,

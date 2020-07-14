@@ -6,6 +6,7 @@ import { TableProps } from "..";
 export const propDescriptions = {
   alignX: "This is a prop which aligns the cell content horizontally.",
   bordered: "If true this will add a border around each cell and the table.",
+  className: "Additional class for the table.",
   hover: "If true this will add a hover effect on table rows.",
   maxHeight:
     "The max height for the table, will result in a scrolled table if the contents are taller.",
@@ -13,6 +14,7 @@ export const propDescriptions = {
   size: "The T-shirt sized padding of table cells.",
   stickyHeader:
     "If true this will cause the table head to be sticky if scrolled out of view.",
+  textVariant: "The text size of table cells.",
 };
 
 export const docs: ComponentDocs<TableProps> = {
@@ -31,6 +33,11 @@ export const docs: ComponentDocs<TableProps> = {
         label: "Dense table",
         description: `In order to set the space in cells pass in "size" with a tshirt size (small or medium).`,
         Code: () => generateTable({ size: "small" }),
+      },
+      {
+        label: "Small font size",
+        description: `In order to set the font size in cells pass in "textVariant" with a size (body or body-small).`,
+        Code: () => generateTable({ textVariant: "body-small" }),
       },
       {
         label: "Striped rows",
