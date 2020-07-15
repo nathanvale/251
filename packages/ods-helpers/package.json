@@ -3,7 +3,7 @@
   "description": "Utilities for building components",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
-  "version": "0.11.1",
+  "version": "0.11.2",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "files": [
@@ -18,7 +18,7 @@
   "typings": "dist/typings/index.d.ts",
   "dependencies": {
     "@babel/runtime-corejs3": "^7.8.3",
-    "@origin-digital/ods-types": "^0.31.0",
+    "@origin-digital/ods-types": "^0.32.0",
     "lodash.kebabcase": "^4.1.1"
   },
   "peerDependencies": {

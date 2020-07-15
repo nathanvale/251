@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.46.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.45.1...@origin-digital/ods-core@0.46.0) (2020-07-15)
+
+
+### Features
+
+* **table:** allow className and textVariant ([fb3de9f](https://bitbucket.orgn.io/od/origin-ui/commits/fb3de9fd37b90c06cdce338c4d35a70cab1bf158))
+
+
+
+
+
 ## [0.45.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.45.0...@origin-digital/ods-core@0.45.1) (2020-07-14)
 
 
