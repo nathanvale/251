@@ -57,11 +57,11 @@ export type TextToneVariants =
   | "neutralLight"
   | "neutralDark";
 export type TypographyWeightVariants = "regular" | "medium" | "bold";
+export type BaseTextVariants = "body" | "body-small";
 export type TextVariants =
+  | BaseTextVariants
   | "subtitle"
   | "subtitle-small"
-  | "body"
-  | "body-small"
   | "caption"
   | "overline-text";
 

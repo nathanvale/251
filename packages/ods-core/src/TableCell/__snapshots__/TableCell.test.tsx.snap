@@ -6,7 +6,7 @@ exports[`It adds borders 1`] = `
     class="MuiTableContainer-root"
   >
     <table
-      class="MuiTable-root Table-withBorder-100"
+      class="MuiTable-root Table-withBorder-106"
       data-id="table"
     >
       <tbody
@@ -18,7 +18,37 @@ exports[`It adds borders 1`] = `
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-116 TableCell-withPadding-120 TableCell-withVerticalAlign-115 TableCell-withVerticalAlign-119 TableCell-withBorder-118"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-122 TableCell-withPadding-127 TableCell-withVerticalAlign-121 TableCell-withVerticalAlign-126 TableCell-withFontSize-124 TableCell-withFontSize-128 TableCell-withBorder-125"
+            data-id="table-cell"
+          >
+            Hello world
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`It adds class name 1`] = `
+<div>
+  <div
+    class="MuiTableContainer-root"
+  >
+    <table
+      class="MuiTable-root"
+      data-id="table"
+    >
+      <tbody
+        class="MuiTableBody-root"
+        data-id="table-body"
+      >
+        <tr
+          class="MuiTableRow-root"
+          data-id="table-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body myCustomClass TableCell-withPadding-262 TableCell-withPadding-267 TableCell-withVerticalAlign-261 TableCell-withVerticalAlign-266 TableCell-withFontSize-264 TableCell-withFontSize-268 TableCell-withoutFirstLastPadding-263"
             data-id="table-cell"
           >
             Hello world
@@ -49,7 +79,7 @@ exports[`It adds horizontal align 1`] = `
         >
           <td
             alignx="right"
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-50 TableCell-withPadding-54 TableCell-withVerticalAlign-49 TableCell-withVerticalAlign-53 TableCell-withoutFirstLastPadding-51 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-52 TableCell-withPadding-57 TableCell-withVerticalAlign-51 TableCell-withVerticalAlign-56 TableCell-withFontSize-54 TableCell-withFontSize-58 TableCell-withoutFirstLastPadding-53 MuiTableCell-alignRight"
             data-id="table-cell"
           >
             Hello world
@@ -79,7 +109,7 @@ exports[`It adds vertical align 1`] = `
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-83 TableCell-withPadding-87 TableCell-withVerticalAlign-82 TableCell-withVerticalAlign-86 TableCell-withoutFirstLastPadding-84"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-87 TableCell-withPadding-92 TableCell-withVerticalAlign-86 TableCell-withVerticalAlign-91 TableCell-withFontSize-89 TableCell-withFontSize-93 TableCell-withoutFirstLastPadding-88"
             data-id="table-cell"
           >
             Hello world
@@ -105,11 +135,11 @@ exports[`It does not remove first and last padding 1`] = `
         data-id="table-body"
       >
         <tr
-          class="MuiTableRow-root TableRow-withStripes-207"
+          class="MuiTableRow-root TableRow-withStripes-219"
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-215 TableCell-withPadding-219 TableCell-withVerticalAlign-214 TableCell-withVerticalAlign-218"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-227 TableCell-withPadding-232 TableCell-withVerticalAlign-226 TableCell-withVerticalAlign-231 TableCell-withFontSize-229 TableCell-withFontSize-233"
             data-id="table-cell"
           >
             Hello world
@@ -139,7 +169,7 @@ exports[`It renders 1`] = `
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-17 TableCell-withPadding-21 TableCell-withVerticalAlign-16 TableCell-withVerticalAlign-20 TableCell-withoutFirstLastPadding-18"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-17 TableCell-withPadding-22 TableCell-withVerticalAlign-16 TableCell-withVerticalAlign-21 TableCell-withFontSize-19 TableCell-withFontSize-23 TableCell-withoutFirstLastPadding-18"
             data-id="table-cell"
           >
             Hello world
@@ -169,7 +199,7 @@ exports[`It uses medium padding 1`] = `
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-182 TableCell-withPadding-186 TableCell-withVerticalAlign-181 TableCell-withVerticalAlign-185 TableCell-withoutFirstLastPadding-183"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-192 TableCell-withPadding-197 TableCell-withVerticalAlign-191 TableCell-withVerticalAlign-196 TableCell-withFontSize-194 TableCell-withFontSize-198 TableCell-withoutFirstLastPadding-193"
             data-id="table-cell"
           >
             Hello world
@@ -199,7 +229,7 @@ exports[`It uses small padding 1`] = `
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-149 TableCell-withPadding-153 TableCell-withVerticalAlign-148 TableCell-withVerticalAlign-152 TableCell-withoutFirstLastPadding-150"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-157 TableCell-withPadding-162 TableCell-withVerticalAlign-156 TableCell-withVerticalAlign-161 TableCell-withFontSize-159 TableCell-withFontSize-163 TableCell-withoutFirstLastPadding-158"
             data-id="table-cell"
           >
             Hello world

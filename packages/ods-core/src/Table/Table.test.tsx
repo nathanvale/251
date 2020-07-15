@@ -39,3 +39,12 @@ test("It adds sticky header", () => {
   const { container } = renderTable({ stickyHeader: true });
   expect(container).toMatchSnapshot();
 });
+
+test("It adds class name", () => {
+  const className = "myCustomClass";
+  const { container, getAllByTestId } = renderTable({
+    className,
+  });
+  expect(getAllByTestId("table").pop()?.classList).toContain(className);
+  expect(container).toMatchSnapshot();
+});

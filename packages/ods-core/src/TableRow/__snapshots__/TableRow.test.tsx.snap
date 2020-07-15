@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It adds class name 1`] = `
+<div>
+  <div
+    class="MuiTableContainer-root"
+  >
+    <table
+      class="MuiTable-root"
+      data-id="table"
+    >
+      <tbody
+        class="MuiTableBody-root"
+        data-id="table-body"
+      >
+        <tr
+          class="MuiTableRow-root myCustomClass"
+          data-id="table-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-52 TableCell-withPadding-57 TableCell-withVerticalAlign-51 TableCell-withVerticalAlign-56 TableCell-withFontSize-54 TableCell-withFontSize-58 TableCell-withoutFirstLastPadding-53"
+            data-id="table-cell"
+          >
+            Hello world
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`It renders 1`] = `
+<div>
+  <div
+    class="MuiTableContainer-root"
+  >
+    <table
+      class="MuiTable-root"
+      data-id="table"
+    >
+      <tbody
+        class="MuiTableBody-root"
+        data-id="table-body"
+      >
+        <tr
+          class="MuiTableRow-root"
+          data-id="table-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-17 TableCell-withPadding-22 TableCell-withVerticalAlign-16 TableCell-withVerticalAlign-21 TableCell-withFontSize-19 TableCell-withFontSize-23 TableCell-withoutFirstLastPadding-18"
+            data-id="table-cell"
+          >
+            Hello world
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

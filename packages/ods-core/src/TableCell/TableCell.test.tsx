@@ -57,3 +57,12 @@ test("It does not remove first and last padding", () => {
   const { container } = renderTableCell({}, { striped: true });
   expect(container).toMatchSnapshot();
 });
+
+test("It adds class name", () => {
+  const className = "myCustomClass";
+  const { container, getAllByTestId } = renderTableCell({
+    className,
+  });
+  expect(getAllByTestId("table-cell").pop()?.classList).toContain(className);
+  expect(container).toMatchSnapshot();
+});

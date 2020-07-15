@@ -13,21 +13,21 @@ exports[`It renders 1`] = `
       data-id="table-head"
     >
       <th
-        class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-11 TableCell-withPadding-15 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-14 TableCell-withoutFirstLastPadding-12"
+        class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-11 TableCell-withPadding-16 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-15 TableCell-withFontSize-13 TableCell-withFontSize-17 TableCell-withoutFirstLastPadding-12"
         data-id="table-cell"
         scope="col"
       >
         1
       </th>
       <th
-        class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-11 TableCell-withPadding-29 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-28 TableCell-withoutFirstLastPadding-12"
+        class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-11 TableCell-withPadding-31 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-30 TableCell-withFontSize-13 TableCell-withFontSize-32 TableCell-withoutFirstLastPadding-12"
         data-id="table-cell"
         scope="col"
       >
         2
       </th>
       <th
-        class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-11 TableCell-withPadding-31 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-30 TableCell-withoutFirstLastPadding-12"
+        class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-11 TableCell-withPadding-34 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-33 TableCell-withFontSize-13 TableCell-withFontSize-35 TableCell-withoutFirstLastPadding-12"
         data-id="table-cell"
         scope="col"
       >
@@ -43,19 +43,19 @@ exports[`It renders 1`] = `
         data-id="table-row"
       >
         <td
-          class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-41 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-40 TableCell-withoutFirstLastPadding-12"
+          class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-45 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-44 TableCell-withFontSize-13 TableCell-withFontSize-46 TableCell-withoutFirstLastPadding-12"
           data-id="table-cell"
         >
           One
         </td>
         <td
-          class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-43 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-42 TableCell-withoutFirstLastPadding-12"
+          class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-48 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-47 TableCell-withFontSize-13 TableCell-withFontSize-49 TableCell-withoutFirstLastPadding-12"
           data-id="table-cell"
         >
           Two
         </td>
         <td
-          class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-45 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-44 TableCell-withoutFirstLastPadding-12"
+          class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-51 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-50 TableCell-withFontSize-13 TableCell-withFontSize-52 TableCell-withoutFirstLastPadding-12"
           data-id="table-cell"
         >
           Three
@@ -66,19 +66,19 @@ exports[`It renders 1`] = `
         data-id="table-row"
       >
         <td
-          class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-47 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-46 TableCell-withoutFirstLastPadding-12"
+          class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-54 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-53 TableCell-withFontSize-13 TableCell-withFontSize-55 TableCell-withoutFirstLastPadding-12"
           data-id="table-cell"
         >
           Uno
         </td>
         <td
-          class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-49 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-48 TableCell-withoutFirstLastPadding-12"
+          class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-57 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-56 TableCell-withFontSize-13 TableCell-withFontSize-58 TableCell-withoutFirstLastPadding-12"
           data-id="table-cell"
         >
           Dos
         </td>
         <td
-          class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-51 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-50 TableCell-withoutFirstLastPadding-12"
+          class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-60 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-59 TableCell-withFontSize-13 TableCell-withFontSize-61 TableCell-withoutFirstLastPadding-12"
           data-id="table-cell"
         >
           Tres

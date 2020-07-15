@@ -19,6 +19,7 @@ export const docs: ComponentDocs<TableCellProps> = {
   propDescriptions: {
     alignX: "This is a prop which aligns the cell content horizontally.",
     alignY: "This is a prop which aligns the cell content vertically.",
+    className: "Additional class for the table cell.",
   },
   migrationGuide: false,
   examples: {

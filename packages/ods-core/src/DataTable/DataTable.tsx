@@ -17,9 +17,9 @@ export const DataTable = ({
   muiProps,
   ...props
 }: DataTableProps) =>
-  headings.length || data.length ? (
+  !!headings.length || !!data.length ? (
     <Table {...props} {...(muiProps || {})}>
-      {headings.length && (
+      {!!headings.length && (
         <TableHead>
           {headings.map((heading, headingIdx) => (
             <TableCell key={headingIdx}>{heading}</TableCell>
