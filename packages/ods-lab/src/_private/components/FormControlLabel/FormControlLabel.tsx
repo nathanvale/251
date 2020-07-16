@@ -8,5 +8,5 @@ interface IFormControlLabel extends FormControlLabelProps {
 }
 
 export const FormControlLabel = (props: IFormControlLabel) => (
-  <MuiFormControlLabel {...props}>{props.children}</MuiFormControlLabel>
+  <MuiFormControlLabel {...props} />
 );

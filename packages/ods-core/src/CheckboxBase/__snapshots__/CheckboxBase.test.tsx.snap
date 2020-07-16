@@ -4,14 +4,14 @@ exports[`it renders a CheckboxBase in error 1`] = `
 <div>
   <span
     aria-disabled="false"
-    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-97 MuiCheckbox-root AbstractSwitchBase-error-root-89 AbstractSwitchBase-error-root-90 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-17 MuiCheckbox-root AbstractSwitchBase-error-root-15 AbstractSwitchBase-error-root-16 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
     data-id="checkboxInput"
   >
     <span
       class="MuiIconButton-label"
     >
       <input
-        class="PrivateSwitchBase-input-100"
+        class="PrivateSwitchBase-input-20"
         data-indeterminate="false"
         id="checkboxInput"
         type="checkbox"
@@ -19,10 +19,9 @@ exports[`it renders a CheckboxBase in error 1`] = `
       />
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-inherit-small-svg-icon-113"
+        class="MuiSvgIcon-root svg-icon-inherit-small-svg-icon-21"
         data-id="IconCheckBoxOutlineBlankSharp"
         focusable="false"
-        role="presentation"
         viewBox="0 0 24 24"
       >
         <path
@@ -41,7 +40,7 @@ exports[`it renders a checked CheckboxBase 1`] = `
 <div>
   <span
     aria-disabled="false"
-    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-53 MuiCheckbox-root AbstractSwitchBase-root-45 AbstractSwitchBase-root-46 MuiCheckbox-colorSecondary PrivateSwitchBase-checked-54 Mui-checked MuiIconButton-colorSecondary"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-10 MuiCheckbox-root AbstractSwitchBase-root-8 AbstractSwitchBase-root-9 MuiCheckbox-colorSecondary PrivateSwitchBase-checked-11 Mui-checked MuiIconButton-colorSecondary"
     data-id="checkboxInput"
   >
     <span
@@ -49,7 +48,7 @@ exports[`it renders a checked CheckboxBase 1`] = `
     >
       <input
         checked=""
-        class="PrivateSwitchBase-input-56"
+        class="PrivateSwitchBase-input-13"
         data-indeterminate="false"
         id="checkboxInput"
         type="checkbox"
@@ -57,10 +56,9 @@ exports[`it renders a checked CheckboxBase 1`] = `
       />
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-inherit-small-svg-icon-69"
+        class="MuiSvgIcon-root svg-icon-inherit-small-svg-icon-14"
         data-id="IconCheckBoxSharp"
         focusable="false"
-        role="presentation"
         viewBox="0 0 24 24"
       >
         <path
@@ -79,7 +77,7 @@ exports[`it renders a disabled CheckboxBase 1`] = `
 <div>
   <span
     aria-disabled="true"
-    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-141 MuiCheckbox-root AbstractSwitchBase-root-133 AbstractSwitchBase-root-134 MuiCheckbox-colorSecondary PrivateSwitchBase-disabled-143 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-24 MuiCheckbox-root AbstractSwitchBase-root-22 AbstractSwitchBase-root-23 MuiCheckbox-colorSecondary PrivateSwitchBase-disabled-26 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
     data-id="checkboxInput"
     tabindex="-1"
   >
@@ -87,7 +85,7 @@ exports[`it renders a disabled CheckboxBase 1`] = `
       class="MuiIconButton-label"
     >
       <input
-        class="PrivateSwitchBase-input-144"
+        class="PrivateSwitchBase-input-27"
         data-indeterminate="false"
         disabled=""
         id="checkboxInput"
@@ -96,10 +94,9 @@ exports[`it renders a disabled CheckboxBase 1`] = `
       />
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-inherit-small-svg-icon-157"
+        class="MuiSvgIcon-root svg-icon-inherit-small-svg-icon-28"
         data-id="IconCheckBoxOutlineBlankSharp"
         focusable="false"
-        role="presentation"
         viewBox="0 0 24 24"
       >
         <path
@@ -115,14 +112,14 @@ exports[`it renders an unchecked CheckboxBase 1`] = `
 <div>
   <span
     aria-disabled="false"
-    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-9 MuiCheckbox-root AbstractSwitchBase-root-1 AbstractSwitchBase-root-2 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-3 MuiCheckbox-root AbstractSwitchBase-root-1 AbstractSwitchBase-root-2 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
     data-id="checkboxInput"
   >
     <span
       class="MuiIconButton-label"
     >
       <input
-        class="PrivateSwitchBase-input-12"
+        class="PrivateSwitchBase-input-6"
         data-indeterminate="false"
         id="checkboxInput"
         type="checkbox"
@@ -130,10 +127,9 @@ exports[`it renders an unchecked CheckboxBase 1`] = `
       />
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-inherit-small-svg-icon-25"
+        class="MuiSvgIcon-root svg-icon-inherit-small-svg-icon-7"
         data-id="IconCheckBoxOutlineBlankSharp"
         focusable="false"
-        role="presentation"
         viewBox="0 0 24 24"
       >
         <path

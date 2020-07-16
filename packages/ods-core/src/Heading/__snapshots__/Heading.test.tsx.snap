@@ -145,15 +145,15 @@ exports[`It can render heaading truncated 1`] = `
 }
 
 <div
-  class="MuiBox-root MuiBox-root-32"
+  class="MuiBox-root MuiBox-root-31"
   style="width: 90px;"
 >
   <h2
-    class="typography-h2-variant-basekick-33 typography-neutralDark-color-34 typography-strong-support-35 typography-regular-weight-36 -h2 c0"
+    class="typography-h2-variant-basekick-32 typography-neutralDark-color-33 typography-strong-support-34 typography-regular-weight-35 -h2 c0"
     data-id="heading"
   >
     <div
-      class="typography-truncate-37 c1"
+      class="typography-truncate-36 c1"
       display="block"
       overflow="hidden"
     >

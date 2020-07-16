@@ -18,7 +18,7 @@ exports[`It adds class name 1`] = `
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-52 TableCell-withPadding-57 TableCell-withVerticalAlign-51 TableCell-withVerticalAlign-56 TableCell-withFontSize-54 TableCell-withFontSize-58 TableCell-withoutFirstLastPadding-53"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-22 TableCell-withPadding-27 TableCell-withVerticalAlign-21 TableCell-withVerticalAlign-26 TableCell-withFontSize-24 TableCell-withFontSize-28 TableCell-withoutFirstLastPadding-23"
             data-id="table-cell"
           >
             Hello world
@@ -48,7 +48,7 @@ exports[`It renders 1`] = `
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-17 TableCell-withPadding-22 TableCell-withVerticalAlign-16 TableCell-withVerticalAlign-21 TableCell-withFontSize-19 TableCell-withFontSize-23 TableCell-withoutFirstLastPadding-18"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-8 TableCell-withPadding-13 TableCell-withVerticalAlign-7 TableCell-withVerticalAlign-12 TableCell-withFontSize-10 TableCell-withFontSize-14 TableCell-withoutFirstLastPadding-9"
             data-id="table-cell"
           >
             Hello world

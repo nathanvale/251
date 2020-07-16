@@ -6,29 +6,29 @@ exports[`It adds borders 1`] = `
     class="MuiTableContainer-root"
   >
     <table
-      class="MuiTable-root Table-withBorder-184"
+      class="MuiTable-root Table-withBorder-118"
       data-id="table"
     >
       <thead
-        class="MuiTableHead-root TableHead-whiteBackground-191"
+        class="MuiTableHead-root TableHead-whiteBackground-122"
         data-id="table-head"
       >
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-194 TableCell-withPadding-199 TableCell-withVerticalAlign-193 TableCell-withVerticalAlign-198 TableCell-withFontSize-196 TableCell-withFontSize-200 TableCell-withBorder-197"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-124 TableCell-withPadding-129 TableCell-withVerticalAlign-123 TableCell-withVerticalAlign-128 TableCell-withFontSize-126 TableCell-withFontSize-130 TableCell-withBorder-127"
           data-id="table-cell"
           scope="col"
         >
           Name
         </th>
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-194 TableCell-withPadding-214 TableCell-withVerticalAlign-193 TableCell-withVerticalAlign-213 TableCell-withFontSize-196 TableCell-withFontSize-215 TableCell-withBorder-197"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-124 TableCell-withPadding-132 TableCell-withVerticalAlign-123 TableCell-withVerticalAlign-131 TableCell-withFontSize-126 TableCell-withFontSize-133 TableCell-withBorder-127"
           data-id="table-cell"
           scope="col"
         >
           Age
         </th>
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-194 TableCell-withPadding-217 TableCell-withVerticalAlign-193 TableCell-withVerticalAlign-216 TableCell-withFontSize-196 TableCell-withFontSize-218 TableCell-withBorder-197"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-124 TableCell-withPadding-135 TableCell-withVerticalAlign-123 TableCell-withVerticalAlign-134 TableCell-withFontSize-126 TableCell-withFontSize-136 TableCell-withBorder-127"
           data-id="table-cell"
           scope="col"
         >
@@ -44,19 +44,19 @@ exports[`It adds borders 1`] = `
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-194 TableCell-withPadding-228 TableCell-withVerticalAlign-193 TableCell-withVerticalAlign-227 TableCell-withFontSize-196 TableCell-withFontSize-229 TableCell-withBorder-197"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-124 TableCell-withPadding-140 TableCell-withVerticalAlign-123 TableCell-withVerticalAlign-139 TableCell-withFontSize-126 TableCell-withFontSize-141 TableCell-withBorder-127"
             data-id="table-cell"
           >
             Jane
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-194 TableCell-withPadding-231 TableCell-withVerticalAlign-193 TableCell-withVerticalAlign-230 TableCell-withFontSize-196 TableCell-withFontSize-232 TableCell-withBorder-197"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-124 TableCell-withPadding-143 TableCell-withVerticalAlign-123 TableCell-withVerticalAlign-142 TableCell-withFontSize-126 TableCell-withFontSize-144 TableCell-withBorder-127"
             data-id="table-cell"
           >
             32
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-194 TableCell-withPadding-234 TableCell-withVerticalAlign-193 TableCell-withVerticalAlign-233 TableCell-withFontSize-196 TableCell-withFontSize-235 TableCell-withBorder-197"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-124 TableCell-withPadding-146 TableCell-withVerticalAlign-123 TableCell-withVerticalAlign-145 TableCell-withFontSize-126 TableCell-withFontSize-147 TableCell-withBorder-127"
             data-id="table-cell"
           >
             Software Engineer
@@ -67,19 +67,19 @@ exports[`It adds borders 1`] = `
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-194 TableCell-withPadding-237 TableCell-withVerticalAlign-193 TableCell-withVerticalAlign-236 TableCell-withFontSize-196 TableCell-withFontSize-238 TableCell-withBorder-197"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-124 TableCell-withPadding-149 TableCell-withVerticalAlign-123 TableCell-withVerticalAlign-148 TableCell-withFontSize-126 TableCell-withFontSize-150 TableCell-withBorder-127"
             data-id="table-cell"
           >
             John
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-194 TableCell-withPadding-240 TableCell-withVerticalAlign-193 TableCell-withVerticalAlign-239 TableCell-withFontSize-196 TableCell-withFontSize-241 TableCell-withBorder-197"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-124 TableCell-withPadding-152 TableCell-withVerticalAlign-123 TableCell-withVerticalAlign-151 TableCell-withFontSize-126 TableCell-withFontSize-153 TableCell-withBorder-127"
             data-id="table-cell"
           >
             43
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-194 TableCell-withPadding-243 TableCell-withVerticalAlign-193 TableCell-withVerticalAlign-242 TableCell-withFontSize-196 TableCell-withFontSize-244 TableCell-withBorder-197"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-124 TableCell-withPadding-155 TableCell-withVerticalAlign-123 TableCell-withVerticalAlign-154 TableCell-withFontSize-126 TableCell-withFontSize-156 TableCell-withBorder-127"
             data-id="table-cell"
           >
             Business Analyst
@@ -101,25 +101,25 @@ exports[`It adds class name 1`] = `
       data-id="table"
     >
       <thead
-        class="MuiTableHead-root TableHead-whiteBackground-435"
+        class="MuiTableHead-root TableHead-whiteBackground-278"
         data-id="table-head"
       >
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-438 TableCell-withPadding-443 TableCell-withVerticalAlign-437 TableCell-withVerticalAlign-442 TableCell-withFontSize-440 TableCell-withFontSize-444 TableCell-withoutFirstLastPadding-439"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-280 TableCell-withPadding-285 TableCell-withVerticalAlign-279 TableCell-withVerticalAlign-284 TableCell-withFontSize-282 TableCell-withFontSize-286 TableCell-withoutFirstLastPadding-281"
           data-id="table-cell"
           scope="col"
         >
           Name
         </th>
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-438 TableCell-withPadding-458 TableCell-withVerticalAlign-437 TableCell-withVerticalAlign-457 TableCell-withFontSize-440 TableCell-withFontSize-459 TableCell-withoutFirstLastPadding-439"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-280 TableCell-withPadding-288 TableCell-withVerticalAlign-279 TableCell-withVerticalAlign-287 TableCell-withFontSize-282 TableCell-withFontSize-289 TableCell-withoutFirstLastPadding-281"
           data-id="table-cell"
           scope="col"
         >
           Age
         </th>
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-438 TableCell-withPadding-461 TableCell-withVerticalAlign-437 TableCell-withVerticalAlign-460 TableCell-withFontSize-440 TableCell-withFontSize-462 TableCell-withoutFirstLastPadding-439"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-280 TableCell-withPadding-291 TableCell-withVerticalAlign-279 TableCell-withVerticalAlign-290 TableCell-withFontSize-282 TableCell-withFontSize-292 TableCell-withoutFirstLastPadding-281"
           data-id="table-cell"
           scope="col"
         >
@@ -135,19 +135,19 @@ exports[`It adds class name 1`] = `
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-438 TableCell-withPadding-472 TableCell-withVerticalAlign-437 TableCell-withVerticalAlign-471 TableCell-withFontSize-440 TableCell-withFontSize-473 TableCell-withoutFirstLastPadding-439"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-280 TableCell-withPadding-296 TableCell-withVerticalAlign-279 TableCell-withVerticalAlign-295 TableCell-withFontSize-282 TableCell-withFontSize-297 TableCell-withoutFirstLastPadding-281"
             data-id="table-cell"
           >
             Jane
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-438 TableCell-withPadding-475 TableCell-withVerticalAlign-437 TableCell-withVerticalAlign-474 TableCell-withFontSize-440 TableCell-withFontSize-476 TableCell-withoutFirstLastPadding-439"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-280 TableCell-withPadding-299 TableCell-withVerticalAlign-279 TableCell-withVerticalAlign-298 TableCell-withFontSize-282 TableCell-withFontSize-300 TableCell-withoutFirstLastPadding-281"
             data-id="table-cell"
           >
             32
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-438 TableCell-withPadding-478 TableCell-withVerticalAlign-437 TableCell-withVerticalAlign-477 TableCell-withFontSize-440 TableCell-withFontSize-479 TableCell-withoutFirstLastPadding-439"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-280 TableCell-withPadding-302 TableCell-withVerticalAlign-279 TableCell-withVerticalAlign-301 TableCell-withFontSize-282 TableCell-withFontSize-303 TableCell-withoutFirstLastPadding-281"
             data-id="table-cell"
           >
             Software Engineer
@@ -158,19 +158,19 @@ exports[`It adds class name 1`] = `
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-438 TableCell-withPadding-481 TableCell-withVerticalAlign-437 TableCell-withVerticalAlign-480 TableCell-withFontSize-440 TableCell-withFontSize-482 TableCell-withoutFirstLastPadding-439"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-280 TableCell-withPadding-305 TableCell-withVerticalAlign-279 TableCell-withVerticalAlign-304 TableCell-withFontSize-282 TableCell-withFontSize-306 TableCell-withoutFirstLastPadding-281"
             data-id="table-cell"
           >
             John
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-438 TableCell-withPadding-484 TableCell-withVerticalAlign-437 TableCell-withVerticalAlign-483 TableCell-withFontSize-440 TableCell-withFontSize-485 TableCell-withoutFirstLastPadding-439"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-280 TableCell-withPadding-308 TableCell-withVerticalAlign-279 TableCell-withVerticalAlign-307 TableCell-withFontSize-282 TableCell-withFontSize-309 TableCell-withoutFirstLastPadding-281"
             data-id="table-cell"
           >
             43
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-438 TableCell-withPadding-487 TableCell-withVerticalAlign-437 TableCell-withVerticalAlign-486 TableCell-withFontSize-440 TableCell-withFontSize-488 TableCell-withoutFirstLastPadding-439"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-280 TableCell-withPadding-311 TableCell-withVerticalAlign-279 TableCell-withVerticalAlign-310 TableCell-withFontSize-282 TableCell-withFontSize-312 TableCell-withoutFirstLastPadding-281"
             data-id="table-cell"
           >
             Business Analyst
@@ -192,25 +192,25 @@ exports[`It adds hover 1`] = `
       data-id="table"
     >
       <thead
-        class="MuiTableHead-root TableHead-whiteBackground-313"
+        class="MuiTableHead-root TableHead-whiteBackground-200"
         data-id="table-head"
       >
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-316 TableCell-withPadding-321 TableCell-withVerticalAlign-315 TableCell-withVerticalAlign-320 TableCell-withFontSize-318 TableCell-withFontSize-322"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-202 TableCell-withPadding-207 TableCell-withVerticalAlign-201 TableCell-withVerticalAlign-206 TableCell-withFontSize-204 TableCell-withFontSize-208"
           data-id="table-cell"
           scope="col"
         >
           Name
         </th>
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-316 TableCell-withPadding-336 TableCell-withVerticalAlign-315 TableCell-withVerticalAlign-335 TableCell-withFontSize-318 TableCell-withFontSize-337"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-202 TableCell-withPadding-210 TableCell-withVerticalAlign-201 TableCell-withVerticalAlign-209 TableCell-withFontSize-204 TableCell-withFontSize-211"
           data-id="table-cell"
           scope="col"
         >
           Age
         </th>
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-316 TableCell-withPadding-339 TableCell-withVerticalAlign-315 TableCell-withVerticalAlign-338 TableCell-withFontSize-318 TableCell-withFontSize-340"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-202 TableCell-withPadding-213 TableCell-withVerticalAlign-201 TableCell-withVerticalAlign-212 TableCell-withFontSize-204 TableCell-withFontSize-214"
           data-id="table-cell"
           scope="col"
         >
@@ -222,46 +222,46 @@ exports[`It adds hover 1`] = `
         data-id="table-body"
       >
         <tr
-          class="MuiTableRow-root TableRow-withHover-343"
+          class="MuiTableRow-root TableRow-withHover-216"
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-316 TableCell-withPadding-350 TableCell-withVerticalAlign-315 TableCell-withVerticalAlign-349 TableCell-withFontSize-318 TableCell-withFontSize-351"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-202 TableCell-withPadding-218 TableCell-withVerticalAlign-201 TableCell-withVerticalAlign-217 TableCell-withFontSize-204 TableCell-withFontSize-219"
             data-id="table-cell"
           >
             Jane
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-316 TableCell-withPadding-353 TableCell-withVerticalAlign-315 TableCell-withVerticalAlign-352 TableCell-withFontSize-318 TableCell-withFontSize-354"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-202 TableCell-withPadding-221 TableCell-withVerticalAlign-201 TableCell-withVerticalAlign-220 TableCell-withFontSize-204 TableCell-withFontSize-222"
             data-id="table-cell"
           >
             32
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-316 TableCell-withPadding-356 TableCell-withVerticalAlign-315 TableCell-withVerticalAlign-355 TableCell-withFontSize-318 TableCell-withFontSize-357"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-202 TableCell-withPadding-224 TableCell-withVerticalAlign-201 TableCell-withVerticalAlign-223 TableCell-withFontSize-204 TableCell-withFontSize-225"
             data-id="table-cell"
           >
             Software Engineer
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root TableRow-withHover-343"
+          class="MuiTableRow-root TableRow-withHover-216"
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-316 TableCell-withPadding-359 TableCell-withVerticalAlign-315 TableCell-withVerticalAlign-358 TableCell-withFontSize-318 TableCell-withFontSize-360"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-202 TableCell-withPadding-227 TableCell-withVerticalAlign-201 TableCell-withVerticalAlign-226 TableCell-withFontSize-204 TableCell-withFontSize-228"
             data-id="table-cell"
           >
             John
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-316 TableCell-withPadding-362 TableCell-withVerticalAlign-315 TableCell-withVerticalAlign-361 TableCell-withFontSize-318 TableCell-withFontSize-363"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-202 TableCell-withPadding-230 TableCell-withVerticalAlign-201 TableCell-withVerticalAlign-229 TableCell-withFontSize-204 TableCell-withFontSize-231"
             data-id="table-cell"
           >
             43
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-316 TableCell-withPadding-365 TableCell-withVerticalAlign-315 TableCell-withVerticalAlign-364 TableCell-withFontSize-318 TableCell-withFontSize-366"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-202 TableCell-withPadding-233 TableCell-withVerticalAlign-201 TableCell-withVerticalAlign-232 TableCell-withFontSize-204 TableCell-withFontSize-234"
             data-id="table-cell"
           >
             Business Analyst
@@ -276,32 +276,32 @@ exports[`It adds hover 1`] = `
 exports[`It adds sticky header 1`] = `
 <div>
   <div
-    class="MuiTableContainer-root TableContainer-withStickyHeader-369"
+    class="MuiTableContainer-root TableContainer-withStickyHeader-237"
   >
     <table
       class="MuiTable-root MuiTable-stickyHeader"
       data-id="table"
     >
       <thead
-        class="MuiTableHead-root TableHead-whiteBackground-374"
+        class="MuiTableHead-root TableHead-whiteBackground-239"
         data-id="table-head"
       >
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-377 TableCell-withPadding-382 TableCell-withVerticalAlign-376 TableCell-withVerticalAlign-381 TableCell-withFontSize-379 TableCell-withFontSize-383 TableCell-withoutFirstLastPadding-378 MuiTableCell-stickyHeader"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-241 TableCell-withPadding-246 TableCell-withVerticalAlign-240 TableCell-withVerticalAlign-245 TableCell-withFontSize-243 TableCell-withFontSize-247 TableCell-withoutFirstLastPadding-242 MuiTableCell-stickyHeader"
           data-id="table-cell"
           scope="col"
         >
           Name
         </th>
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-377 TableCell-withPadding-397 TableCell-withVerticalAlign-376 TableCell-withVerticalAlign-396 TableCell-withFontSize-379 TableCell-withFontSize-398 TableCell-withoutFirstLastPadding-378 MuiTableCell-stickyHeader"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-241 TableCell-withPadding-249 TableCell-withVerticalAlign-240 TableCell-withVerticalAlign-248 TableCell-withFontSize-243 TableCell-withFontSize-250 TableCell-withoutFirstLastPadding-242 MuiTableCell-stickyHeader"
           data-id="table-cell"
           scope="col"
         >
           Age
         </th>
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-377 TableCell-withPadding-400 TableCell-withVerticalAlign-376 TableCell-withVerticalAlign-399 TableCell-withFontSize-379 TableCell-withFontSize-401 TableCell-withoutFirstLastPadding-378 MuiTableCell-stickyHeader"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-241 TableCell-withPadding-252 TableCell-withVerticalAlign-240 TableCell-withVerticalAlign-251 TableCell-withFontSize-243 TableCell-withFontSize-253 TableCell-withoutFirstLastPadding-242 MuiTableCell-stickyHeader"
           data-id="table-cell"
           scope="col"
         >
@@ -317,19 +317,19 @@ exports[`It adds sticky header 1`] = `
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-377 TableCell-withPadding-411 TableCell-withVerticalAlign-376 TableCell-withVerticalAlign-410 TableCell-withFontSize-379 TableCell-withFontSize-412 TableCell-withoutFirstLastPadding-378"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-241 TableCell-withPadding-257 TableCell-withVerticalAlign-240 TableCell-withVerticalAlign-256 TableCell-withFontSize-243 TableCell-withFontSize-258 TableCell-withoutFirstLastPadding-242"
             data-id="table-cell"
           >
             Jane
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-377 TableCell-withPadding-414 TableCell-withVerticalAlign-376 TableCell-withVerticalAlign-413 TableCell-withFontSize-379 TableCell-withFontSize-415 TableCell-withoutFirstLastPadding-378"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-241 TableCell-withPadding-260 TableCell-withVerticalAlign-240 TableCell-withVerticalAlign-259 TableCell-withFontSize-243 TableCell-withFontSize-261 TableCell-withoutFirstLastPadding-242"
             data-id="table-cell"
           >
             32
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-377 TableCell-withPadding-417 TableCell-withVerticalAlign-376 TableCell-withVerticalAlign-416 TableCell-withFontSize-379 TableCell-withFontSize-418 TableCell-withoutFirstLastPadding-378"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-241 TableCell-withPadding-263 TableCell-withVerticalAlign-240 TableCell-withVerticalAlign-262 TableCell-withFontSize-243 TableCell-withFontSize-264 TableCell-withoutFirstLastPadding-242"
             data-id="table-cell"
           >
             Software Engineer
@@ -340,19 +340,19 @@ exports[`It adds sticky header 1`] = `
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-377 TableCell-withPadding-420 TableCell-withVerticalAlign-376 TableCell-withVerticalAlign-419 TableCell-withFontSize-379 TableCell-withFontSize-421 TableCell-withoutFirstLastPadding-378"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-241 TableCell-withPadding-266 TableCell-withVerticalAlign-240 TableCell-withVerticalAlign-265 TableCell-withFontSize-243 TableCell-withFontSize-267 TableCell-withoutFirstLastPadding-242"
             data-id="table-cell"
           >
             John
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-377 TableCell-withPadding-423 TableCell-withVerticalAlign-376 TableCell-withVerticalAlign-422 TableCell-withFontSize-379 TableCell-withFontSize-424 TableCell-withoutFirstLastPadding-378"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-241 TableCell-withPadding-269 TableCell-withVerticalAlign-240 TableCell-withVerticalAlign-268 TableCell-withFontSize-243 TableCell-withFontSize-270 TableCell-withoutFirstLastPadding-242"
             data-id="table-cell"
           >
             43
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-377 TableCell-withPadding-426 TableCell-withVerticalAlign-376 TableCell-withVerticalAlign-425 TableCell-withFontSize-379 TableCell-withFontSize-427 TableCell-withoutFirstLastPadding-378"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-241 TableCell-withPadding-272 TableCell-withVerticalAlign-240 TableCell-withVerticalAlign-271 TableCell-withFontSize-243 TableCell-withFontSize-273 TableCell-withoutFirstLastPadding-242"
             data-id="table-cell"
           >
             Business Analyst
@@ -374,25 +374,25 @@ exports[`It adds stripes 1`] = `
       data-id="table"
     >
       <thead
-        class="MuiTableHead-root TableHead-whiteBackground-252"
+        class="MuiTableHead-root TableHead-whiteBackground-161"
         data-id="table-head"
       >
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-255 TableCell-withPadding-260 TableCell-withVerticalAlign-254 TableCell-withVerticalAlign-259 TableCell-withFontSize-257 TableCell-withFontSize-261"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-163 TableCell-withPadding-168 TableCell-withVerticalAlign-162 TableCell-withVerticalAlign-167 TableCell-withFontSize-165 TableCell-withFontSize-169"
           data-id="table-cell"
           scope="col"
         >
           Name
         </th>
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-255 TableCell-withPadding-275 TableCell-withVerticalAlign-254 TableCell-withVerticalAlign-274 TableCell-withFontSize-257 TableCell-withFontSize-276"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-163 TableCell-withPadding-171 TableCell-withVerticalAlign-162 TableCell-withVerticalAlign-170 TableCell-withFontSize-165 TableCell-withFontSize-172"
           data-id="table-cell"
           scope="col"
         >
           Age
         </th>
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-255 TableCell-withPadding-278 TableCell-withVerticalAlign-254 TableCell-withVerticalAlign-277 TableCell-withFontSize-257 TableCell-withFontSize-279"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-163 TableCell-withPadding-174 TableCell-withVerticalAlign-162 TableCell-withVerticalAlign-173 TableCell-withFontSize-165 TableCell-withFontSize-175"
           data-id="table-cell"
           scope="col"
         >
@@ -404,46 +404,46 @@ exports[`It adds stripes 1`] = `
         data-id="table-body"
       >
         <tr
-          class="MuiTableRow-root TableRow-withStripes-281"
+          class="MuiTableRow-root TableRow-withStripes-176"
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-255 TableCell-withPadding-289 TableCell-withVerticalAlign-254 TableCell-withVerticalAlign-288 TableCell-withFontSize-257 TableCell-withFontSize-290"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-163 TableCell-withPadding-179 TableCell-withVerticalAlign-162 TableCell-withVerticalAlign-178 TableCell-withFontSize-165 TableCell-withFontSize-180"
             data-id="table-cell"
           >
             Jane
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-255 TableCell-withPadding-292 TableCell-withVerticalAlign-254 TableCell-withVerticalAlign-291 TableCell-withFontSize-257 TableCell-withFontSize-293"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-163 TableCell-withPadding-182 TableCell-withVerticalAlign-162 TableCell-withVerticalAlign-181 TableCell-withFontSize-165 TableCell-withFontSize-183"
             data-id="table-cell"
           >
             32
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-255 TableCell-withPadding-295 TableCell-withVerticalAlign-254 TableCell-withVerticalAlign-294 TableCell-withFontSize-257 TableCell-withFontSize-296"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-163 TableCell-withPadding-185 TableCell-withVerticalAlign-162 TableCell-withVerticalAlign-184 TableCell-withFontSize-165 TableCell-withFontSize-186"
             data-id="table-cell"
           >
             Software Engineer
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root TableRow-withStripes-281"
+          class="MuiTableRow-root TableRow-withStripes-176"
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-255 TableCell-withPadding-298 TableCell-withVerticalAlign-254 TableCell-withVerticalAlign-297 TableCell-withFontSize-257 TableCell-withFontSize-299"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-163 TableCell-withPadding-188 TableCell-withVerticalAlign-162 TableCell-withVerticalAlign-187 TableCell-withFontSize-165 TableCell-withFontSize-189"
             data-id="table-cell"
           >
             John
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-255 TableCell-withPadding-301 TableCell-withVerticalAlign-254 TableCell-withVerticalAlign-300 TableCell-withFontSize-257 TableCell-withFontSize-302"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-163 TableCell-withPadding-191 TableCell-withVerticalAlign-162 TableCell-withVerticalAlign-190 TableCell-withFontSize-165 TableCell-withFontSize-192"
             data-id="table-cell"
           >
             43
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-255 TableCell-withPadding-304 TableCell-withVerticalAlign-254 TableCell-withVerticalAlign-303 TableCell-withFontSize-257 TableCell-withFontSize-305"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-163 TableCell-withPadding-194 TableCell-withVerticalAlign-162 TableCell-withVerticalAlign-193 TableCell-withFontSize-165 TableCell-withFontSize-195"
             data-id="table-cell"
           >
             Business Analyst
@@ -465,25 +465,25 @@ exports[`It renders 1`] = `
       data-id="table"
     >
       <thead
-        class="MuiTableHead-root TableHead-whiteBackground-8"
+        class="MuiTableHead-root TableHead-whiteBackground-5"
         data-id="table-head"
       >
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-11 TableCell-withPadding-16 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-15 TableCell-withFontSize-13 TableCell-withFontSize-17 TableCell-withoutFirstLastPadding-12"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-7 TableCell-withPadding-12 TableCell-withVerticalAlign-6 TableCell-withVerticalAlign-11 TableCell-withFontSize-9 TableCell-withFontSize-13 TableCell-withoutFirstLastPadding-8"
           data-id="table-cell"
           scope="col"
         >
           Name
         </th>
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-11 TableCell-withPadding-31 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-30 TableCell-withFontSize-13 TableCell-withFontSize-32 TableCell-withoutFirstLastPadding-12"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-7 TableCell-withPadding-15 TableCell-withVerticalAlign-6 TableCell-withVerticalAlign-14 TableCell-withFontSize-9 TableCell-withFontSize-16 TableCell-withoutFirstLastPadding-8"
           data-id="table-cell"
           scope="col"
         >
           Age
         </th>
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-11 TableCell-withPadding-34 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-33 TableCell-withFontSize-13 TableCell-withFontSize-35 TableCell-withoutFirstLastPadding-12"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-7 TableCell-withPadding-18 TableCell-withVerticalAlign-6 TableCell-withVerticalAlign-17 TableCell-withFontSize-9 TableCell-withFontSize-19 TableCell-withoutFirstLastPadding-8"
           data-id="table-cell"
           scope="col"
         >
@@ -499,19 +499,19 @@ exports[`It renders 1`] = `
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-45 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-44 TableCell-withFontSize-13 TableCell-withFontSize-46 TableCell-withoutFirstLastPadding-12"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-7 TableCell-withPadding-23 TableCell-withVerticalAlign-6 TableCell-withVerticalAlign-22 TableCell-withFontSize-9 TableCell-withFontSize-24 TableCell-withoutFirstLastPadding-8"
             data-id="table-cell"
           >
             Jane
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-48 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-47 TableCell-withFontSize-13 TableCell-withFontSize-49 TableCell-withoutFirstLastPadding-12"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-7 TableCell-withPadding-26 TableCell-withVerticalAlign-6 TableCell-withVerticalAlign-25 TableCell-withFontSize-9 TableCell-withFontSize-27 TableCell-withoutFirstLastPadding-8"
             data-id="table-cell"
           >
             32
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-51 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-50 TableCell-withFontSize-13 TableCell-withFontSize-52 TableCell-withoutFirstLastPadding-12"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-7 TableCell-withPadding-29 TableCell-withVerticalAlign-6 TableCell-withVerticalAlign-28 TableCell-withFontSize-9 TableCell-withFontSize-30 TableCell-withoutFirstLastPadding-8"
             data-id="table-cell"
           >
             Software Engineer
@@ -522,19 +522,19 @@ exports[`It renders 1`] = `
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-54 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-53 TableCell-withFontSize-13 TableCell-withFontSize-55 TableCell-withoutFirstLastPadding-12"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-7 TableCell-withPadding-32 TableCell-withVerticalAlign-6 TableCell-withVerticalAlign-31 TableCell-withFontSize-9 TableCell-withFontSize-33 TableCell-withoutFirstLastPadding-8"
             data-id="table-cell"
           >
             John
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-57 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-56 TableCell-withFontSize-13 TableCell-withFontSize-58 TableCell-withoutFirstLastPadding-12"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-7 TableCell-withPadding-35 TableCell-withVerticalAlign-6 TableCell-withVerticalAlign-34 TableCell-withFontSize-9 TableCell-withFontSize-36 TableCell-withoutFirstLastPadding-8"
             data-id="table-cell"
           >
             43
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-11 TableCell-withPadding-60 TableCell-withVerticalAlign-10 TableCell-withVerticalAlign-59 TableCell-withFontSize-13 TableCell-withFontSize-61 TableCell-withoutFirstLastPadding-12"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-7 TableCell-withPadding-38 TableCell-withVerticalAlign-6 TableCell-withVerticalAlign-37 TableCell-withFontSize-9 TableCell-withFontSize-39 TableCell-withoutFirstLastPadding-8"
             data-id="table-cell"
           >
             Business Analyst
@@ -556,25 +556,25 @@ exports[`It uses medium padding 1`] = `
       data-id="table"
     >
       <thead
-        class="MuiTableHead-root TableHead-whiteBackground-130"
+        class="MuiTableHead-root TableHead-whiteBackground-83"
         data-id="table-head"
       >
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-133 TableCell-withPadding-138 TableCell-withVerticalAlign-132 TableCell-withVerticalAlign-137 TableCell-withFontSize-135 TableCell-withFontSize-139 TableCell-withoutFirstLastPadding-134"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-85 TableCell-withPadding-90 TableCell-withVerticalAlign-84 TableCell-withVerticalAlign-89 TableCell-withFontSize-87 TableCell-withFontSize-91 TableCell-withoutFirstLastPadding-86"
           data-id="table-cell"
           scope="col"
         >
           Name
         </th>
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-133 TableCell-withPadding-153 TableCell-withVerticalAlign-132 TableCell-withVerticalAlign-152 TableCell-withFontSize-135 TableCell-withFontSize-154 TableCell-withoutFirstLastPadding-134"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-85 TableCell-withPadding-93 TableCell-withVerticalAlign-84 TableCell-withVerticalAlign-92 TableCell-withFontSize-87 TableCell-withFontSize-94 TableCell-withoutFirstLastPadding-86"
           data-id="table-cell"
           scope="col"
         >
           Age
         </th>
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-133 TableCell-withPadding-156 TableCell-withVerticalAlign-132 TableCell-withVerticalAlign-155 TableCell-withFontSize-135 TableCell-withFontSize-157 TableCell-withoutFirstLastPadding-134"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-85 TableCell-withPadding-96 TableCell-withVerticalAlign-84 TableCell-withVerticalAlign-95 TableCell-withFontSize-87 TableCell-withFontSize-97 TableCell-withoutFirstLastPadding-86"
           data-id="table-cell"
           scope="col"
         >
@@ -590,19 +590,19 @@ exports[`It uses medium padding 1`] = `
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-133 TableCell-withPadding-167 TableCell-withVerticalAlign-132 TableCell-withVerticalAlign-166 TableCell-withFontSize-135 TableCell-withFontSize-168 TableCell-withoutFirstLastPadding-134"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-85 TableCell-withPadding-101 TableCell-withVerticalAlign-84 TableCell-withVerticalAlign-100 TableCell-withFontSize-87 TableCell-withFontSize-102 TableCell-withoutFirstLastPadding-86"
             data-id="table-cell"
           >
             Jane
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-133 TableCell-withPadding-170 TableCell-withVerticalAlign-132 TableCell-withVerticalAlign-169 TableCell-withFontSize-135 TableCell-withFontSize-171 TableCell-withoutFirstLastPadding-134"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-85 TableCell-withPadding-104 TableCell-withVerticalAlign-84 TableCell-withVerticalAlign-103 TableCell-withFontSize-87 TableCell-withFontSize-105 TableCell-withoutFirstLastPadding-86"
             data-id="table-cell"
           >
             32
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-133 TableCell-withPadding-173 TableCell-withVerticalAlign-132 TableCell-withVerticalAlign-172 TableCell-withFontSize-135 TableCell-withFontSize-174 TableCell-withoutFirstLastPadding-134"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-85 TableCell-withPadding-107 TableCell-withVerticalAlign-84 TableCell-withVerticalAlign-106 TableCell-withFontSize-87 TableCell-withFontSize-108 TableCell-withoutFirstLastPadding-86"
             data-id="table-cell"
           >
             Software Engineer
@@ -613,19 +613,19 @@ exports[`It uses medium padding 1`] = `
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-133 TableCell-withPadding-176 TableCell-withVerticalAlign-132 TableCell-withVerticalAlign-175 TableCell-withFontSize-135 TableCell-withFontSize-177 TableCell-withoutFirstLastPadding-134"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-85 TableCell-withPadding-110 TableCell-withVerticalAlign-84 TableCell-withVerticalAlign-109 TableCell-withFontSize-87 TableCell-withFontSize-111 TableCell-withoutFirstLastPadding-86"
             data-id="table-cell"
           >
             John
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-133 TableCell-withPadding-179 TableCell-withVerticalAlign-132 TableCell-withVerticalAlign-178 TableCell-withFontSize-135 TableCell-withFontSize-180 TableCell-withoutFirstLastPadding-134"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-85 TableCell-withPadding-113 TableCell-withVerticalAlign-84 TableCell-withVerticalAlign-112 TableCell-withFontSize-87 TableCell-withFontSize-114 TableCell-withoutFirstLastPadding-86"
             data-id="table-cell"
           >
             43
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-133 TableCell-withPadding-182 TableCell-withVerticalAlign-132 TableCell-withVerticalAlign-181 TableCell-withFontSize-135 TableCell-withFontSize-183 TableCell-withoutFirstLastPadding-134"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-85 TableCell-withPadding-116 TableCell-withVerticalAlign-84 TableCell-withVerticalAlign-115 TableCell-withFontSize-87 TableCell-withFontSize-117 TableCell-withoutFirstLastPadding-86"
             data-id="table-cell"
           >
             Business Analyst
@@ -647,25 +647,25 @@ exports[`It uses small padding 1`] = `
       data-id="table"
     >
       <thead
-        class="MuiTableHead-root TableHead-whiteBackground-69"
+        class="MuiTableHead-root TableHead-whiteBackground-44"
         data-id="table-head"
       >
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-72 TableCell-withPadding-77 TableCell-withVerticalAlign-71 TableCell-withVerticalAlign-76 TableCell-withFontSize-74 TableCell-withFontSize-78 TableCell-withoutFirstLastPadding-73"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-46 TableCell-withPadding-51 TableCell-withVerticalAlign-45 TableCell-withVerticalAlign-50 TableCell-withFontSize-48 TableCell-withFontSize-52 TableCell-withoutFirstLastPadding-47"
           data-id="table-cell"
           scope="col"
         >
           Name
         </th>
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-72 TableCell-withPadding-92 TableCell-withVerticalAlign-71 TableCell-withVerticalAlign-91 TableCell-withFontSize-74 TableCell-withFontSize-93 TableCell-withoutFirstLastPadding-73"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-46 TableCell-withPadding-54 TableCell-withVerticalAlign-45 TableCell-withVerticalAlign-53 TableCell-withFontSize-48 TableCell-withFontSize-55 TableCell-withoutFirstLastPadding-47"
           data-id="table-cell"
           scope="col"
         >
           Age
         </th>
         <th
-          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-72 TableCell-withPadding-95 TableCell-withVerticalAlign-71 TableCell-withVerticalAlign-94 TableCell-withFontSize-74 TableCell-withFontSize-96 TableCell-withoutFirstLastPadding-73"
+          class="MuiTableCell-root MuiTableCell-head TableCell-withPadding-46 TableCell-withPadding-57 TableCell-withVerticalAlign-45 TableCell-withVerticalAlign-56 TableCell-withFontSize-48 TableCell-withFontSize-58 TableCell-withoutFirstLastPadding-47"
           data-id="table-cell"
           scope="col"
         >
@@ -681,19 +681,19 @@ exports[`It uses small padding 1`] = `
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-72 TableCell-withPadding-106 TableCell-withVerticalAlign-71 TableCell-withVerticalAlign-105 TableCell-withFontSize-74 TableCell-withFontSize-107 TableCell-withoutFirstLastPadding-73"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-46 TableCell-withPadding-62 TableCell-withVerticalAlign-45 TableCell-withVerticalAlign-61 TableCell-withFontSize-48 TableCell-withFontSize-63 TableCell-withoutFirstLastPadding-47"
             data-id="table-cell"
           >
             Jane
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-72 TableCell-withPadding-109 TableCell-withVerticalAlign-71 TableCell-withVerticalAlign-108 TableCell-withFontSize-74 TableCell-withFontSize-110 TableCell-withoutFirstLastPadding-73"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-46 TableCell-withPadding-65 TableCell-withVerticalAlign-45 TableCell-withVerticalAlign-64 TableCell-withFontSize-48 TableCell-withFontSize-66 TableCell-withoutFirstLastPadding-47"
             data-id="table-cell"
           >
             32
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-72 TableCell-withPadding-112 TableCell-withVerticalAlign-71 TableCell-withVerticalAlign-111 TableCell-withFontSize-74 TableCell-withFontSize-113 TableCell-withoutFirstLastPadding-73"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-46 TableCell-withPadding-68 TableCell-withVerticalAlign-45 TableCell-withVerticalAlign-67 TableCell-withFontSize-48 TableCell-withFontSize-69 TableCell-withoutFirstLastPadding-47"
             data-id="table-cell"
           >
             Software Engineer
@@ -704,19 +704,19 @@ exports[`It uses small padding 1`] = `
           data-id="table-row"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-72 TableCell-withPadding-115 TableCell-withVerticalAlign-71 TableCell-withVerticalAlign-114 TableCell-withFontSize-74 TableCell-withFontSize-116 TableCell-withoutFirstLastPadding-73"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-46 TableCell-withPadding-71 TableCell-withVerticalAlign-45 TableCell-withVerticalAlign-70 TableCell-withFontSize-48 TableCell-withFontSize-72 TableCell-withoutFirstLastPadding-47"
             data-id="table-cell"
           >
             John
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-72 TableCell-withPadding-118 TableCell-withVerticalAlign-71 TableCell-withVerticalAlign-117 TableCell-withFontSize-74 TableCell-withFontSize-119 TableCell-withoutFirstLastPadding-73"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-46 TableCell-withPadding-74 TableCell-withVerticalAlign-45 TableCell-withVerticalAlign-73 TableCell-withFontSize-48 TableCell-withFontSize-75 TableCell-withoutFirstLastPadding-47"
             data-id="table-cell"
           >
             43
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-72 TableCell-withPadding-121 TableCell-withVerticalAlign-71 TableCell-withVerticalAlign-120 TableCell-withFontSize-74 TableCell-withFontSize-122 TableCell-withoutFirstLastPadding-73"
+            class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-46 TableCell-withPadding-77 TableCell-withVerticalAlign-45 TableCell-withVerticalAlign-76 TableCell-withFontSize-48 TableCell-withFontSize-78 TableCell-withoutFirstLastPadding-47"
             data-id="table-cell"
           >
             Business Analyst
