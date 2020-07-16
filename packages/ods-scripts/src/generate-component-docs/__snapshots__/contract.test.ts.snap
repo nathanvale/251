@@ -1192,7 +1192,7 @@ exports[`ChevronButton 1`] = `
 {
   children?: ReactNode
   data-id?: string
-  domProps?: Pick<AllHTMLAttributes<HTMLButtonElement>, "size" | "className" | "disabled" | "id" | "aria-label" | "cite" | "data" | "form" | "label" | ... 346 more ... | "wrap"> | undefined
+  domProps?: Pick<AllHTMLAttributes<HTMLButtonElement>, "size" | "className" | "disabled" | "id" | "cite" | "data" | "form" | "label" | "span" | "style" | ... 345 more ... | "wrap"> | undefined
   onClick?: (event: MouseEvent<HTMLButtonElement, MouseEvent>) => void
   type?: 
     | "button"
@@ -1453,7 +1453,7 @@ exports[`FormHelperText 1`] = `
   error?: boolean
   focused?: boolean
   id: string
-  muiProps?: FormHelperTextProps | undefined
+  muiProps?: OverrideProps<FormHelperTextTypeMap<{}, "p">, "p"> | undefined
 }
 `;
 
@@ -1595,7 +1595,7 @@ exports[`InputAdornment 1`] = `
   error?: boolean
   focused?: boolean
   id?: string
-  muiProps?: InputAdornmentProps | undefined
+  muiProps?: OverrideProps<InputAdornmentTypeMap<{}, "div">, "div"> | undefined
   position: 
     | "end"
     | "start"
@@ -1634,12 +1634,17 @@ exports[`OriginThemeProvider 1`] = `
     overrides?: Overrides
     palette: {
       action: {
+        activatedOpacity: number
         active: string
         disabled: string
         disabledBackground: string
+        disabledOpacity: number
+        focus: string
+        focusOpacity: number
         hover: string
         hoverOpacity: number
         selected: string
+        selectedOpacity: number
       }
       augmentColor: { (color: Partial<Color>, mainShade?: string | number | undefined, lightShade?: string | number | undefined, darkShade?: string | number | undefined): PaletteColor; (color: PaletteColorOptions): PaletteColor; }
       background: {
@@ -1724,7 +1729,9 @@ exports[`OriginThemeProvider 1`] = `
         primary: string
         secondary: string
       }
-      tonalOffset: number
+      tonalOffset: 
+        | number
+        | { light: number; dark: number; }
       type: 
         | "dark"
         | "light"
@@ -1824,6 +1831,7 @@ exports[`OriginThemeProvider 1`] = `
       subtitle1: CSSProperties
       subtitle2: CSSProperties
     }
+    unstable_strictMode?: boolean
     zIndex: {
       appBar: number
       drawer: number
@@ -2107,7 +2115,7 @@ exports[`SvgIcon 1`] = `
   data-id?: string
   disabled?: boolean
   id?: string
-  muiProps?: SvgIconProps | undefined
+  muiProps?: OverrideProps<SvgIconTypeMap<{}, "svg">, "svg"> | undefined
   ref?: 
     | (instance: any) => void
     | RefObject<any>

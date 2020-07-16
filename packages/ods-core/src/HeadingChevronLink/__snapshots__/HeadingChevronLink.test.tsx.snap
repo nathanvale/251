@@ -57,7 +57,6 @@ exports[`It can render 1`] = `
       class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-8"
       data-id="IconChevronRight"
       focusable="false"
-      role="presentation"
       viewBox="0 0 24 24"
     >
       <path

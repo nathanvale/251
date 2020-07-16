@@ -26,7 +26,6 @@ exports[`It can render 1`] = `
       class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-3"
       data-id="IconChevronRight"
       focusable="false"
-      role="presentation"
       viewBox="0 0 24 24"
     >
       <path
@@ -52,7 +51,7 @@ exports[`It can render another tone 1`] = `
 }
 
 <a
-  class="typography-linkReset-13 typography-chevron-link-14"
+  class="typography-linkReset-4 typography-chevron-link-5"
   data-id="chevron-link"
   href=""
   padding="none"
@@ -63,10 +62,9 @@ exports[`It can render another tone 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-15"
+      class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-6"
       data-id="IconChevronRight"
       focusable="false"
-      role="presentation"
       viewBox="0 0 24 24"
     >
       <path

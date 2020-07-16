@@ -3,7 +3,7 @@
 exports[`TextField with error endIcon should render error after the text 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfieldbase-root-167 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-14 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label
@@ -28,15 +28,14 @@ exports[`TextField with error endIcon should render error after the text 1`] = `
         value=""
       />
       <span
-        class="MuiInputAdornment-root makeStyles-fade-in-animation-228 MuiInputAdornment-filled MuiInputAdornment-positionEnd"
+        class="MuiInputAdornment-root makeStyles-fade-in-animation-16 MuiInputAdornment-filled MuiInputAdornment-positionEnd"
         data-id="input-adornment"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root svg-icon-critical-small-svg-icon-239"
+          class="MuiSvgIcon-root svg-icon-critical-small-svg-icon-20"
           data-id="IconError"
           focusable="false"
-          role="presentation"
           viewBox="0 0 24 24"
         >
           <path
@@ -77,15 +76,14 @@ exports[`TextField with success endIcon should render success after the text 1`]
         value=""
       />
       <span
-        class="MuiInputAdornment-root makeStyles-bounce-in-animation-64 MuiInputAdornment-filled MuiInputAdornment-positionEnd"
+        class="MuiInputAdornment-root makeStyles-bounce-in-animation-5 MuiInputAdornment-filled MuiInputAdornment-positionEnd"
         data-id="input-adornment"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root svg-icon-positiveLight-small-svg-icon-73"
+          class="MuiSvgIcon-root svg-icon-positiveLight-small-svg-icon-7"
           data-id="IconCheckCircle"
           focusable="false"
-          role="presentation"
           viewBox="0 0 24 24"
         >
           <path
@@ -101,7 +99,7 @@ exports[`TextField with success endIcon should render success after the text 1`]
 exports[`TextField with validating endIcon should render validating after the text 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfieldbase-root-83 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-8 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label
@@ -158,7 +156,7 @@ exports[`TextField with validating endIcon should render validating after the te
 exports[`should render the custom after the text 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfieldbase-root-249 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-21 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label
@@ -188,10 +186,9 @@ exports[`should render the custom after the text 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-321"
+          class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-27"
           data-id="IconCheck"
           focusable="false"
-          role="presentation"
           viewBox="0 0 24 24"
         >
           <path
@@ -207,7 +204,7 @@ exports[`should render the custom after the text 1`] = `
 exports[`should render the custom before the text 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfieldbase-root-331 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-28 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label
@@ -228,10 +225,9 @@ exports[`should render the custom before the text 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-399"
+          class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-30"
           data-id="IconCheck"
           focusable="false"
-          role="presentation"
           viewBox="0 0 24 24"
         >
           <path

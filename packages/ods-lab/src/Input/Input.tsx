@@ -5,6 +5,4 @@ export interface InputProps extends IInput {
   "data-id"?: string;
 }
 
-export const Input = (props: IInput) => (
-  <MuiInput {...props}>{props.children}</MuiInput>
-);
+export const Input = (props: IInput) => <MuiInput {...props} />;

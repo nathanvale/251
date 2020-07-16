@@ -4,26 +4,25 @@ exports[`it renders a RadioBase in error 1`] = `
 <div>
   <span
     aria-disabled="false"
-    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-98 MuiRadio-root AbstractSwitchBase-error-root-91 AbstractSwitchBase-error-root-92 MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-21 MuiRadio-root AbstractSwitchBase-error-root-19 AbstractSwitchBase-error-root-20 MuiRadio-colorSecondary MuiIconButton-colorSecondary"
     data-id="radioInput"
   >
     <span
       class="MuiIconButton-label"
     >
       <input
-        class="PrivateSwitchBase-input-101"
+        class="PrivateSwitchBase-input-24"
         id="radioInput"
         type="radio"
         value=""
       />
       <div
-        class="PrivateRadioButtonIcon-root-114"
+        class="PrivateRadioButtonIcon-root-25"
       >
         <svg
           aria-hidden="true"
           class="MuiSvgIcon-root"
           focusable="false"
-          role="presentation"
           viewBox="0 0 24 24"
         >
           <path
@@ -32,9 +31,8 @@ exports[`it renders a RadioBase in error 1`] = `
         </svg>
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-115"
+          class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-26"
           focusable="false"
-          role="presentation"
           viewBox="0 0 24 24"
         >
           <path
@@ -54,7 +52,7 @@ exports[`it renders a checked RadioBase 1`] = `
 <div>
   <span
     aria-disabled="false"
-    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-53 MuiRadio-root AbstractSwitchBase-root-46 AbstractSwitchBase-root-47 MuiRadio-colorSecondary PrivateSwitchBase-checked-54 Mui-checked MuiIconButton-colorSecondary"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-12 MuiRadio-root AbstractSwitchBase-root-10 AbstractSwitchBase-root-11 MuiRadio-colorSecondary PrivateSwitchBase-checked-13 Mui-checked MuiIconButton-colorSecondary"
     data-id="radioInput"
   >
     <span
@@ -62,19 +60,18 @@ exports[`it renders a checked RadioBase 1`] = `
     >
       <input
         checked=""
-        class="PrivateSwitchBase-input-56"
+        class="PrivateSwitchBase-input-15"
         id="radioInput"
         type="radio"
         value=""
       />
       <div
-        class="PrivateRadioButtonIcon-root-69 PrivateRadioButtonIcon-checked-71"
+        class="PrivateRadioButtonIcon-root-16 PrivateRadioButtonIcon-checked-18"
       >
         <svg
           aria-hidden="true"
           class="MuiSvgIcon-root"
           focusable="false"
-          role="presentation"
           viewBox="0 0 24 24"
         >
           <path
@@ -83,9 +80,8 @@ exports[`it renders a checked RadioBase 1`] = `
         </svg>
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-70"
+          class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-17"
           focusable="false"
-          role="presentation"
           viewBox="0 0 24 24"
         >
           <path
@@ -105,7 +101,7 @@ exports[`it renders a disabled RadioBase 1`] = `
 <div>
   <span
     aria-disabled="true"
-    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-143 MuiRadio-root AbstractSwitchBase-root-136 AbstractSwitchBase-root-137 MuiRadio-colorSecondary PrivateSwitchBase-disabled-145 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-30 MuiRadio-root AbstractSwitchBase-root-28 AbstractSwitchBase-root-29 MuiRadio-colorSecondary PrivateSwitchBase-disabled-32 Mui-disabled MuiIconButton-colorSecondary Mui-disabled Mui-disabled"
     data-id="radioInput"
     tabindex="-1"
   >
@@ -113,20 +109,19 @@ exports[`it renders a disabled RadioBase 1`] = `
       class="MuiIconButton-label"
     >
       <input
-        class="PrivateSwitchBase-input-146"
+        class="PrivateSwitchBase-input-33"
         disabled=""
         id="radioInput"
         type="radio"
         value=""
       />
       <div
-        class="PrivateRadioButtonIcon-root-159"
+        class="PrivateRadioButtonIcon-root-34"
       >
         <svg
           aria-hidden="true"
           class="MuiSvgIcon-root"
           focusable="false"
-          role="presentation"
           viewBox="0 0 24 24"
         >
           <path
@@ -135,9 +130,8 @@ exports[`it renders a disabled RadioBase 1`] = `
         </svg>
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-160"
+          class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-35"
           focusable="false"
-          role="presentation"
           viewBox="0 0 24 24"
         >
           <path
@@ -154,26 +148,25 @@ exports[`it renders an unchecked RadioBase 1`] = `
 <div>
   <span
     aria-disabled="false"
-    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-8 MuiRadio-root AbstractSwitchBase-root-1 AbstractSwitchBase-root-2 MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-3 MuiRadio-root AbstractSwitchBase-root-1 AbstractSwitchBase-root-2 MuiRadio-colorSecondary MuiIconButton-colorSecondary"
     data-id="radioInput"
   >
     <span
       class="MuiIconButton-label"
     >
       <input
-        class="PrivateSwitchBase-input-11"
+        class="PrivateSwitchBase-input-6"
         id="radioInput"
         type="radio"
         value=""
       />
       <div
-        class="PrivateRadioButtonIcon-root-24"
+        class="PrivateRadioButtonIcon-root-7"
       >
         <svg
           aria-hidden="true"
           class="MuiSvgIcon-root"
           focusable="false"
-          role="presentation"
           viewBox="0 0 24 24"
         >
           <path
@@ -182,9 +175,8 @@ exports[`it renders an unchecked RadioBase 1`] = `
         </svg>
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-25"
+          class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-8"
           focusable="false"
-          role="presentation"
           viewBox="0 0 24 24"
         >
           <path

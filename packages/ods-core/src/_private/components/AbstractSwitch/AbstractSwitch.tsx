@@ -23,8 +23,8 @@ const getHelperId = (baseId: string) => `${baseId}-helper-text`;
  */
 function formControlState({
   props,
-  states,
   muiFormControl,
+  states,
 }: {
   props: any;
   muiFormControl: FormControlState;
@@ -95,7 +95,7 @@ export function AbstractSwitch<
   const muiFormControl = useFormControl();
   const fcs = formControlState({
     props,
-    muiFormControl,
+    muiFormControl: muiFormControl!,
     states: ["disabled", "error"], // TODO: see if we need to support the whole list of FormControlState keys.
   }) as FormControlState;
 

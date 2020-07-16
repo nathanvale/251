@@ -3,7 +3,7 @@
 exports[`it renders a contained disabled 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root Button-root-133 Button-root-144 MuiButton-contained Button-contained-136 MuiButton-containedPrimary Button-containedPrimary-137 Mui-disabled Button-disabled-143 Mui-disabled"
+    class="MuiButtonBase-root MuiButton-root Button-root-49 Button-root-60 MuiButton-contained Button-contained-52 MuiButton-containedPrimary Button-containedPrimary-53 Mui-disabled Button-disabled-59 Mui-disabled"
     data-id="button"
     disabled=""
     tabindex="-1"
@@ -41,7 +41,7 @@ exports[`it renders a contained primary by default 1`] = `
 exports[`it renders a contained secondary 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root Button-root-67 Button-root-78 MuiButton-contained Button-contained-70 MuiButton-containedSecondary Button-containedSecondary-72"
+    class="MuiButtonBase-root MuiButton-root Button-root-25 Button-root-36 MuiButton-contained Button-contained-28 MuiButton-containedSecondary Button-containedSecondary-30"
     data-id="button"
     tabindex="0"
     type="button"
@@ -61,7 +61,7 @@ exports[`it renders a contained secondary 1`] = `
 exports[`it renders a primary inverse button 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root Button-inverse-root-719 Button-inverse-root-728 MuiButton-contained Button-inverse-contained-722 MuiButton-containedPrimary Button-inverse-containedPrimary-723"
+    class="MuiButtonBase-root MuiButton-root Button-inverse-root-278 Button-inverse-root-287 MuiButton-contained Button-inverse-contained-281 MuiButton-containedPrimary Button-inverse-containedPrimary-282"
     data-id="button"
     tabindex="0"
     type="button"
@@ -81,7 +81,7 @@ exports[`it renders a primary inverse button 1`] = `
 exports[`it renders an icon 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root Button-root-631 Button-root-642 MuiButton-contained Button-contained-634 MuiButton-containedPrimary Button-containedPrimary-635"
+    class="MuiButtonBase-root MuiButton-root Button-root-241 Button-root-252 MuiButton-contained Button-contained-244 MuiButton-containedPrimary Button-containedPrimary-245"
     data-id="button"
     tabindex="0"
     type="button"
@@ -94,10 +94,9 @@ exports[`it renders an icon 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-687"
+          class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-265"
           data-id="IconPhone"
           focusable="false"
-          role="presentation"
           viewBox="0 0 24 24"
         >
           <path
@@ -117,7 +116,7 @@ exports[`it renders an icon 1`] = `
 exports[`it renders an outlined disabled 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root Button-root-321 Button-root-332 MuiButton-outlined Button-outlined-327 MuiButton-outlinedPrimary Button-outlinedPrimary-328 Mui-disabled Button-disabled-331 Mui-disabled"
+    class="MuiButtonBase-root MuiButton-root Button-root-121 Button-root-132 MuiButton-outlined Button-outlined-127 MuiButton-outlinedPrimary Button-outlinedPrimary-128 Mui-disabled Button-disabled-131 Mui-disabled"
     data-id="button"
     disabled=""
     tabindex="-1"
@@ -135,7 +134,7 @@ exports[`it renders an outlined disabled 1`] = `
 exports[`it renders an outlined primary 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root Button-root-189 Button-root-200 MuiButton-outlined Button-outlined-195 MuiButton-outlinedPrimary Button-outlinedPrimary-196"
+    class="MuiButtonBase-root MuiButton-root Button-root-73 Button-root-84 MuiButton-outlined Button-outlined-79 MuiButton-outlinedPrimary Button-outlinedPrimary-80"
     data-id="button"
     tabindex="0"
     type="button"
@@ -155,7 +154,7 @@ exports[`it renders an outlined primary 1`] = `
 exports[`it renders an outlined secondary 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root Button-root-255 Button-root-266 MuiButton-outlined Button-outlined-261 MuiButton-outlinedSecondary Button-outlinedSecondary-263"
+    class="MuiButtonBase-root MuiButton-root Button-root-97 Button-root-108 MuiButton-outlined Button-outlined-103 MuiButton-outlinedSecondary Button-outlinedSecondary-105"
     data-id="button"
     tabindex="0"
     type="button"
@@ -175,7 +174,7 @@ exports[`it renders an outlined secondary 1`] = `
 exports[`it renders an text disabled 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root Button-root-509 Button-root-520 MuiButton-text MuiButton-textPrimary Mui-disabled Button-disabled-519 Mui-disabled"
+    class="MuiButtonBase-root MuiButton-root Button-root-193 Button-root-204 MuiButton-text MuiButton-textPrimary Mui-disabled Button-disabled-203 Mui-disabled"
     data-id="button"
     disabled=""
     tabindex="-1"
@@ -193,7 +192,7 @@ exports[`it renders an text disabled 1`] = `
 exports[`it renders an text primary 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root Button-root-377 Button-root-388 MuiButton-text MuiButton-textPrimary"
+    class="MuiButtonBase-root MuiButton-root Button-root-145 Button-root-156 MuiButton-text MuiButton-textPrimary"
     data-id="button"
     tabindex="0"
     type="button"
@@ -213,7 +212,7 @@ exports[`it renders an text primary 1`] = `
 exports[`it renders an text secondary 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root Button-root-443 Button-root-454 MuiButton-text MuiButton-textSecondary Button-textSecondary-452"
+    class="MuiButtonBase-root MuiButton-root Button-root-169 Button-root-180 MuiButton-text MuiButton-textSecondary Button-textSecondary-178"
     data-id="button"
     tabindex="0"
     type="button"
@@ -233,7 +232,7 @@ exports[`it renders an text secondary 1`] = `
 exports[`when spinner is on it does not render a spinner when disabled is true 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root Button-root-1043 Button-root-1054 MuiButton-outlined Button-outlined-1049 MuiButton-outlinedPrimary Button-outlinedPrimary-1050 Mui-disabled Button-disabled-1053 Mui-disabled"
+    class="MuiButtonBase-root MuiButton-root Button-root-386 Button-root-397 MuiButton-outlined Button-outlined-392 MuiButton-outlinedPrimary Button-outlinedPrimary-393 Mui-disabled Button-disabled-396 Mui-disabled"
     data-id="button"
     disabled=""
     id="btn1"
@@ -262,7 +261,7 @@ exports[`when spinner is on it renders a 20px spinner for 'small' size 1`] = `
 
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root Button-root-907 Button-root-918 MuiButton-contained Button-contained-910 MuiButton-containedPrimary Button-containedPrimary-911 MuiButton-containedSizeSmall MuiButton-sizeSmall Button-sizeSmall-908 Mui-disabled Button-disabled-917 Mui-disabled"
+    class="MuiButtonBase-root MuiButton-root Button-root-338 Button-root-349 MuiButton-contained Button-contained-341 MuiButton-containedPrimary Button-containedPrimary-342 MuiButton-containedSizeSmall MuiButton-sizeSmall Button-sizeSmall-339 Mui-disabled Button-disabled-348 Mui-disabled"
     data-id="button"
     disabled=""
     id="btn1"
@@ -279,7 +278,7 @@ exports[`when spinner is on it renders a 20px spinner for 'small' size 1`] = `
         Small
       </span>
       <div
-        class="MuiCircularProgress-root button-spinner-929 button-spinner-930 MuiCircularProgress-colorSecondary MuiCircularProgress-indeterminate"
+        class="MuiCircularProgress-root button-spinner-360 button-spinner-361 MuiCircularProgress-colorSecondary MuiCircularProgress-indeterminate"
         data-id="button-spinner"
         role="progressbar"
         style="width: 20px; height: 20px;"
@@ -316,7 +315,7 @@ exports[`when spinner is on it renders a 24px spinner for 'medium' size 1`] = `
 
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root Button-root-839 Button-root-850 MuiButton-contained Button-contained-842 MuiButton-containedPrimary Button-containedPrimary-843 Mui-disabled Button-disabled-849 Mui-disabled"
+    class="MuiButtonBase-root MuiButton-root Button-root-314 Button-root-325 MuiButton-contained Button-contained-317 MuiButton-containedPrimary Button-containedPrimary-318 Mui-disabled Button-disabled-324 Mui-disabled"
     data-id="button"
     disabled=""
     id="btn1"
@@ -333,7 +332,7 @@ exports[`when spinner is on it renders a 24px spinner for 'medium' size 1`] = `
         Primary
       </span>
       <div
-        class="MuiCircularProgress-root button-spinner-861 button-spinner-862 MuiCircularProgress-colorSecondary MuiCircularProgress-indeterminate"
+        class="MuiCircularProgress-root button-spinner-336 button-spinner-337 MuiCircularProgress-colorSecondary MuiCircularProgress-indeterminate"
         data-id="button-spinner"
         role="progressbar"
         style="width: 24px; height: 24px;"
@@ -370,7 +369,7 @@ exports[`when spinner is on it renders a spinner for 'outlined' variant 1`] = `
 
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root Button-root-975 Button-root-986 MuiButton-outlined Button-outlined-981 MuiButton-outlinedPrimary Button-outlinedPrimary-982 Mui-disabled Button-disabled-985 Mui-disabled"
+    class="MuiButtonBase-root MuiButton-root Button-root-362 Button-root-373 MuiButton-outlined Button-outlined-368 MuiButton-outlinedPrimary Button-outlinedPrimary-369 Mui-disabled Button-disabled-372 Mui-disabled"
     data-id="button"
     disabled=""
     id="btn1"
@@ -387,7 +386,7 @@ exports[`when spinner is on it renders a spinner for 'outlined' variant 1`] = `
         Small
       </span>
       <div
-        class="MuiCircularProgress-root button-spinner-997 button-spinner-998 MuiCircularProgress-colorSecondary MuiCircularProgress-indeterminate"
+        class="MuiCircularProgress-root button-spinner-384 button-spinner-385 MuiCircularProgress-colorSecondary MuiCircularProgress-indeterminate"
         data-id="button-spinner"
         role="progressbar"
         style="width: 24px; height: 24px;"
