@@ -43,7 +43,7 @@
   "devDependencies": {
     "@origin-digital/ods-testing-library": "*",
     "@origin-digital/ods-types": "*",
-    "@origin-digital/origin-scripts": "^1.13.0",
+    "@origin-digital/origin-scripts": "^1.13.3",
     "@testing-library/react": "^9.4.0",
     "@types/jest": "^24.0.23",
     "@types/lodash": "^4.14.132",

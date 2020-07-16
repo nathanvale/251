@@ -4201,10 +4201,10 @@
     "@origin-digital/layout" "^5.2.0"
     "@origin-digital/style-guide" "^21.4.0"
 
-"@origin-digital/origin-scripts@^1.13.0":
-  version "1.13.0"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/origin-scripts/-/@origin-digital/origin-scripts-1.13.0.tgz#0ab6cf977d155e5f9055e4716d5249b18eb3459f"
-  integrity sha1-CrbPl30VXl+QVeRxbVJJsY6zRZ8=
+"@origin-digital/origin-scripts@^1.13.3":
+  version "1.13.3"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/origin-scripts/-/@origin-digital/origin-scripts-1.13.3.tgz#7ea323673c98e27e800f864396f48407ae31fba1"
+  integrity sha1-fqMjZzyY4n6AD4ZDlvSEB64x+6E=
   dependencies:
     "@babel/cli" "^7.8.4"
     "@babel/core" "^7.8.6"
