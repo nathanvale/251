@@ -1,0 +1,337 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It renders 1`] = `
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c0 {
+  max-width: 100%;
+}
+
+<div>
+  <div
+    class="MuiPaper-root MuiAccordion-root Accordion-accordion-1 Accordion-accordion-4 MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
+    data-id="accordion"
+  >
+    <div
+      aria-controls="my-accordion-content"
+      aria-disabled="false"
+      aria-expanded="false"
+      class="MuiButtonBase-root MuiAccordionSummary-root Accordion-accordionSummary-2 Accordion-accordionSummary-5"
+      data-id="accordion-header"
+      id="my-accordion-header"
+      role="button"
+      tabindex="0"
+    >
+      <div
+        class="MuiAccordionSummary-content"
+      >
+        <h4
+          class="typography-body-variant-basekick-7 typography-neutral-color-8 typography-medium-weight-9 typography-strong-support-10 c0 -h4 c1"
+          data-id="text"
+        >
+          My accordion title
+        </h4>
+      </div>
+      <div
+        aria-disabled="false"
+        aria-hidden="true"
+        class="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
+      >
+        <span
+          class="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root svg-icon-critical-small-svg-icon-12"
+            data-id="IconAdd"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+            />
+          </svg>
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </div>
+    </div>
+    <div
+      class="MuiCollapse-container MuiCollapse-hidden"
+      style="min-height: 0px;"
+    >
+      <div
+        class="MuiCollapse-wrapper"
+      >
+        <div
+          class="MuiCollapse-wrapperInner"
+        >
+          <div
+            aria-labelledby="my-accordion-header"
+            id="my-accordion-content"
+            role="region"
+          >
+            <div
+              class="MuiAccordionDetails-root Accordion-accordionDetails-3 Accordion-accordionDetails-6"
+              data-id="accordion-content"
+              id="my-accordion-content"
+            >
+              <span
+                class="typography-body-variant-basekick-13 typography-neutral-color-14 typography-regular-weight-15 typography-strong-support-16 c0 -span c2"
+                data-id="text"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis posuere sodales. Aliquam sit amet mauris ut metus fringilla ullamcorper. Suspendisse maximus mi at fringilla convallis. Sed pretium vitae libero sed vestibulum. Quisque suscipit vitae ipsum vel sollicitudin. In mollis quam neque.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It uses medium padding 1`] = `
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c0 {
+  max-width: 100%;
+}
+
+<div>
+  <div
+    class="MuiPaper-root MuiAccordion-root Accordion-accordion-35 Accordion-accordion-38 MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
+    data-id="accordion"
+  >
+    <div
+      aria-controls="my-accordion-content"
+      aria-disabled="false"
+      aria-expanded="false"
+      class="MuiButtonBase-root MuiAccordionSummary-root Accordion-accordionSummary-36 Accordion-accordionSummary-39"
+      data-id="accordion-header"
+      id="my-accordion-header"
+      role="button"
+      tabindex="0"
+    >
+      <div
+        class="MuiAccordionSummary-content"
+      >
+        <h4
+          class="typography-body-variant-basekick-41 typography-neutral-color-42 typography-medium-weight-43 typography-strong-support-44 c0 -h4 c1"
+          data-id="text"
+        >
+          My accordion title
+        </h4>
+      </div>
+      <div
+        aria-disabled="false"
+        aria-hidden="true"
+        class="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
+      >
+        <span
+          class="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root svg-icon-critical-small-svg-icon-46"
+            data-id="IconAdd"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+            />
+          </svg>
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </div>
+    </div>
+    <div
+      class="MuiCollapse-container MuiCollapse-hidden"
+      style="min-height: 0px;"
+    >
+      <div
+        class="MuiCollapse-wrapper"
+      >
+        <div
+          class="MuiCollapse-wrapperInner"
+        >
+          <div
+            aria-labelledby="my-accordion-header"
+            id="my-accordion-content"
+            role="region"
+          >
+            <div
+              class="MuiAccordionDetails-root Accordion-accordionDetails-37 Accordion-accordionDetails-40"
+              data-id="accordion-content"
+              id="my-accordion-content"
+            >
+              <span
+                class="typography-body-variant-basekick-47 typography-neutral-color-48 typography-regular-weight-49 typography-strong-support-50 c0 -span c2"
+                data-id="text"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis posuere sodales. Aliquam sit amet mauris ut metus fringilla ullamcorper. Suspendisse maximus mi at fringilla convallis. Sed pretium vitae libero sed vestibulum. Quisque suscipit vitae ipsum vel sollicitudin. In mollis quam neque.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It uses small padding 1`] = `
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c0 {
+  max-width: 100%;
+}
+
+<div>
+  <div
+    class="MuiPaper-root MuiAccordion-root Accordion-accordion-18 Accordion-accordion-21 MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
+    data-id="accordion"
+  >
+    <div
+      aria-controls="my-accordion-content"
+      aria-disabled="false"
+      aria-expanded="false"
+      class="MuiButtonBase-root MuiAccordionSummary-root Accordion-accordionSummary-19 Accordion-accordionSummary-22"
+      data-id="accordion-header"
+      id="my-accordion-header"
+      role="button"
+      tabindex="0"
+    >
+      <div
+        class="MuiAccordionSummary-content"
+      >
+        <h4
+          class="typography-body-variant-basekick-24 typography-neutral-color-25 typography-medium-weight-26 typography-strong-support-27 c0 -h4 c1"
+          data-id="text"
+        >
+          My accordion title
+        </h4>
+      </div>
+      <div
+        aria-disabled="false"
+        aria-hidden="true"
+        class="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
+      >
+        <span
+          class="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root svg-icon-critical-small-svg-icon-29"
+            data-id="IconAdd"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+            />
+          </svg>
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </div>
+    </div>
+    <div
+      class="MuiCollapse-container MuiCollapse-hidden"
+      style="min-height: 0px;"
+    >
+      <div
+        class="MuiCollapse-wrapper"
+      >
+        <div
+          class="MuiCollapse-wrapperInner"
+        >
+          <div
+            aria-labelledby="my-accordion-header"
+            id="my-accordion-content"
+            role="region"
+          >
+            <div
+              class="MuiAccordionDetails-root Accordion-accordionDetails-20 Accordion-accordionDetails-23"
+              data-id="accordion-content"
+              id="my-accordion-content"
+            >
+              <span
+                class="typography-body-variant-basekick-30 typography-neutral-color-31 typography-regular-weight-32 typography-strong-support-33 c0 -span c2"
+                data-id="text"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis posuere sodales. Aliquam sit amet mauris ut metus fringilla ullamcorper. Suspendisse maximus mi at fringilla convallis. Sed pretium vitae libero sed vestibulum. Quisque suscipit vitae ipsum vel sollicitudin. In mollis quam neque.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
