@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render a link with bold and italic text within the link 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -9,13 +9,16 @@ exports[`should render a link with bold and italic text within the link 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  max-width: 100%;
   text-align: left;
+}
+
+.c0 {
+  max-width: 100%;
 }
 
 <div>
   <span
-    class="typography-body-variant-basekick-64 typography-neutral-color-65 typography-regular-weight-66 typography-strong-support-67 -span c0"
+    class="typography-body-variant-basekick-64 typography-neutral-color-65 typography-regular-weight-66 typography-strong-support-67 c0 -span c1"
     data-id="text"
   >
     A link 

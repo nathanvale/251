@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`It can render 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -9,12 +9,15 @@ exports[`It can render 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  max-width: 100%;
   text-align: left;
 }
 
+.c0 {
+  max-width: 100%;
+}
+
 <span
-  class="typography-body-variant-basekick-1 typography-neutral-color-2 typography-regular-weight-3 typography-strong-support-4 -span c0"
+  class="typography-body-variant-basekick-1 typography-neutral-color-2 typography-regular-weight-3 typography-strong-support-4 c0 -span c1"
   data-id="text"
 >
   <a

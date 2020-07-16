@@ -1,5 +1,6 @@
 import React, { ReactNode, useMemo } from "react";
 import clsx from "clsx";
+import styled from "styled-components";
 import { BoxProps, Box } from "@origin-digital/ods-core";
 import {
   TextVariants,
@@ -55,6 +56,10 @@ function useTextStyles(props: UseTextStylesProps) {
   return clsx(basekickStyles, toneStyles, weightStyles, strongStyles);
 }
 
+const Container = styled<BoxProps>(Box)`
+  max-width: 100%;
+`;
+
 export const Text = (props: TextProps) => {
   const {
     children,
@@ -86,15 +91,14 @@ export const Text = (props: TextProps) => {
 
   return (
     <TextContext.Provider value={textContextValue}>
-      <Box
+      <Container
         data-id={dataId}
         className={className}
         component={component}
         textAlign={align}
-        maxWidth="100%"
       >
         {content}
-      </Box>
+      </Container>
     </TextContext.Provider>
   );
 };

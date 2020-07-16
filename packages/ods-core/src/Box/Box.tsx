@@ -56,7 +56,6 @@ export interface BoxProps
   marginBottom?: ResponsiveSpace;
   marginLeft?: ResponsiveSpace;
   marginRight?: ResponsiveSpace;
-  maxWidth?: ResponsiveProp<string | number>;
   textAlign?: ResponsiveProp<TextAlignVariants>;
   boxShadow?: BoxShadowVariant;
   height?: "full";
@@ -153,7 +152,6 @@ export const Box = ({
   marginTop,
   marginX,
   marginY,
-  maxWidth,
   padding,
   paddingBottom,
   paddingLeft,
@@ -239,7 +237,6 @@ export const Box = ({
     marginRight: mapToStyledSystem<CSS.MarginRightProperty<TLength>>(mR),
     marginTop: mapToStyledSystem<CSS.MarginTopProperty<TLength>>(mT),
     marginBottom: mapToStyledSystem<CSS.MarginBottomProperty<TLength>>(mB),
-    maxWidth: mapToStyledSystem<CSS.MaxWidthProperty<TLength>>(maxWidth),
     textAlign: mapToStyledSystem<CSS.TextAlignProperty>(textAlign),
   };
   const element = createElement(Container, {

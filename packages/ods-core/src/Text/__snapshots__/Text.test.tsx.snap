@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`It can render body small text 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -9,12 +9,15 @@ exports[`It can render body small text 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  max-width: 100%;
   text-align: left;
 }
 
+.c0 {
+  max-width: 100%;
+}
+
 <span
-  class="typography-body-small-variant-basekick-6 typography-neutral-color-7 typography-regular-weight-8 typography-strong-support-9 -span c0"
+  class="typography-body-small-variant-basekick-6 typography-neutral-color-7 typography-regular-weight-8 typography-strong-support-9 c0 -span c1"
   data-id="text"
 >
   Body Text
@@ -22,7 +25,7 @@ exports[`It can render body small text 1`] = `
 `;
 
 exports[`It can render body text "critical" tone 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -30,12 +33,15 @@ exports[`It can render body text "critical" tone 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  max-width: 100%;
   text-align: left;
 }
 
+.c0 {
+  max-width: 100%;
+}
+
 <span
-  class="typography-body-variant-basekick-36 typography-critical-color-37 typography-medium-weight-38 typography-strong-support-39 -span c0"
+  class="typography-body-variant-basekick-36 typography-critical-color-37 typography-medium-weight-38 typography-strong-support-39 c0 -span c1"
   data-id="text"
 >
   Body Text
@@ -43,7 +49,7 @@ exports[`It can render body text "critical" tone 1`] = `
 `;
 
 exports[`It can render body text "neutral" tone 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -51,12 +57,15 @@ exports[`It can render body text "neutral" tone 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  max-width: 100%;
   text-align: left;
 }
 
+.c0 {
+  max-width: 100%;
+}
+
 <span
-  class="typography-body-variant-basekick-56 typography-neutral-color-57 typography-medium-weight-58 typography-strong-support-59 -span c0"
+  class="typography-body-variant-basekick-56 typography-neutral-color-57 typography-medium-weight-58 typography-strong-support-59 c0 -span c1"
   data-id="text"
 >
   Body Text
@@ -64,7 +73,7 @@ exports[`It can render body text "neutral" tone 1`] = `
 `;
 
 exports[`It can render body text "neutral.dark" tone 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -72,12 +81,15 @@ exports[`It can render body text "neutral.dark" tone 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  max-width: 100%;
   text-align: left;
 }
 
+.c0 {
+  max-width: 100%;
+}
+
 <span
-  class="typography-body-variant-basekick-46 typography-neutral.dark-color-47 typography-medium-weight-48 typography-strong-support-49 -span c0"
+  class="typography-body-variant-basekick-46 typography-neutral.dark-color-47 typography-medium-weight-48 typography-strong-support-49 c0 -span c1"
   data-id="text"
 >
   Body Text
@@ -85,7 +97,7 @@ exports[`It can render body text "neutral.dark" tone 1`] = `
 `;
 
 exports[`It can render body text "neutral.light" tone 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -93,12 +105,15 @@ exports[`It can render body text "neutral.light" tone 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  max-width: 100%;
   text-align: left;
 }
 
+.c0 {
+  max-width: 100%;
+}
+
 <span
-  class="typography-body-variant-basekick-51 typography-neutral.light-color-52 typography-medium-weight-53 typography-strong-support-54 -span c0"
+  class="typography-body-variant-basekick-51 typography-neutral.light-color-52 typography-medium-weight-53 typography-strong-support-54 c0 -span c1"
   data-id="text"
 >
   Body Text
@@ -106,7 +121,7 @@ exports[`It can render body text "neutral.light" tone 1`] = `
 `;
 
 exports[`It can render body text "positive" tone 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -114,12 +129,15 @@ exports[`It can render body text "positive" tone 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  max-width: 100%;
   text-align: left;
 }
 
+.c0 {
+  max-width: 100%;
+}
+
 <span
-  class="typography-body-variant-basekick-41 typography-positive-color-42 typography-medium-weight-43 typography-strong-support-44 -span c0"
+  class="typography-body-variant-basekick-41 typography-positive-color-42 typography-medium-weight-43 typography-strong-support-44 c0 -span c1"
   data-id="text"
 >
   Body Text
@@ -127,7 +145,7 @@ exports[`It can render body text "positive" tone 1`] = `
 `;
 
 exports[`It can render body text critical tone 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -135,12 +153,15 @@ exports[`It can render body text critical tone 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  max-width: 100%;
   text-align: left;
 }
 
+.c0 {
+  max-width: 100%;
+}
+
 <span
-  class="typography-body-variant-basekick-61 typography-critical-color-62 typography-medium-weight-63 typography-strong-support-64 -span c0"
+  class="typography-body-variant-basekick-61 typography-critical-color-62 typography-medium-weight-63 typography-strong-support-64 c0 -span c1"
   data-id="text"
 >
   Body Text
@@ -148,7 +169,7 @@ exports[`It can render body text critical tone 1`] = `
 `;
 
 exports[`It can render body text medium weight 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -156,12 +177,15 @@ exports[`It can render body text medium weight 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  max-width: 100%;
   text-align: left;
 }
 
+.c0 {
+  max-width: 100%;
+}
+
 <span
-  class="typography-body-variant-basekick-31 typography-neutral-color-32 typography-medium-weight-33 typography-strong-support-34 -span c0"
+  class="typography-body-variant-basekick-31 typography-neutral-color-32 typography-medium-weight-33 typography-strong-support-34 c0 -span c1"
   data-id="text"
 >
   Body Text
@@ -179,7 +203,7 @@ exports[`It can render body text truncated 1`] = `
   vertical-align: baseline;
 }
 
-.c2 {
+.c3 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -191,7 +215,7 @@ exports[`It can render body text truncated 1`] = `
   overflow: hidden;
 }
 
-.c1 {
+.c2 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -199,8 +223,11 @@ exports[`It can render body text truncated 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  max-width: 100%;
   text-align: left;
+}
+
+.c1 {
+  max-width: 100%;
 }
 
 <div
@@ -208,11 +235,11 @@ exports[`It can render body text truncated 1`] = `
   style="width: 90px;"
 >
   <span
-    class="typography-body-variant-basekick-66 typography-neutral-color-67 typography-regular-weight-68 typography-strong-support-69 -span c1"
+    class="typography-body-variant-basekick-66 typography-neutral-color-67 typography-regular-weight-68 typography-strong-support-69 c1 -span c2"
     data-id="text"
   >
     <div
-      class="typography-truncate-70 c2"
+      class="typography-truncate-70 c3"
       display="block"
       overflow="hidden"
     >
@@ -223,7 +250,7 @@ exports[`It can render body text truncated 1`] = `
 `;
 
 exports[`It can render subtitle caption text 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -231,12 +258,15 @@ exports[`It can render subtitle caption text 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  max-width: 100%;
   text-align: left;
 }
 
+.c0 {
+  max-width: 100%;
+}
+
 <span
-  class="typography-caption-variant-basekick-21 typography-neutral-color-22 typography-regular-weight-23 typography-strong-support-24 -span c0"
+  class="typography-caption-variant-basekick-21 typography-neutral-color-22 typography-regular-weight-23 typography-strong-support-24 c0 -span c1"
   data-id="text"
 >
   Body Text
@@ -244,7 +274,7 @@ exports[`It can render subtitle caption text 1`] = `
 `;
 
 exports[`It can render subtitle overline text 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -252,12 +282,15 @@ exports[`It can render subtitle overline text 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  max-width: 100%;
   text-align: left;
 }
 
+.c0 {
+  max-width: 100%;
+}
+
 <span
-  class="typography-overline-text-variant-basekick-26 typography-neutral-color-27 typography-regular-weight-28 typography-strong-support-29 -span c0"
+  class="typography-overline-text-variant-basekick-26 typography-neutral-color-27 typography-regular-weight-28 typography-strong-support-29 c0 -span c1"
   data-id="text"
 >
   Body Text
@@ -265,7 +298,7 @@ exports[`It can render subtitle overline text 1`] = `
 `;
 
 exports[`It can render subtitle small text 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -273,12 +306,15 @@ exports[`It can render subtitle small text 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  max-width: 100%;
   text-align: left;
 }
 
+.c0 {
+  max-width: 100%;
+}
+
 <span
-  class="typography-subtitle-small-variant-basekick-16 typography-neutral-color-17 typography-regular-weight-18 typography-strong-support-19 -span c0"
+  class="typography-subtitle-small-variant-basekick-16 typography-neutral-color-17 typography-regular-weight-18 typography-strong-support-19 c0 -span c1"
   data-id="text"
 >
   Body Text
@@ -286,7 +322,7 @@ exports[`It can render subtitle small text 1`] = `
 `;
 
 exports[`It can render subtitle text 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -294,12 +330,15 @@ exports[`It can render subtitle text 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  max-width: 100%;
   text-align: left;
 }
 
+.c0 {
+  max-width: 100%;
+}
+
 <span
-  class="typography-subtitle-variant-basekick-11 typography-neutral-color-12 typography-regular-weight-13 typography-strong-support-14 -span c0"
+  class="typography-subtitle-variant-basekick-11 typography-neutral-color-12 typography-regular-weight-13 typography-strong-support-14 c0 -span c1"
   data-id="text"
 >
   Body Text
@@ -307,7 +346,7 @@ exports[`It can render subtitle text 1`] = `
 `;
 
 exports[`It should render a p tag by default 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -315,12 +354,15 @@ exports[`It should render a p tag by default 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  max-width: 100%;
   text-align: left;
 }
 
+.c0 {
+  max-width: 100%;
+}
+
 <span
-  class="typography-body-variant-basekick-1 typography-neutral-color-2 typography-regular-weight-3 typography-strong-support-4 -span c0"
+  class="typography-body-variant-basekick-1 typography-neutral-color-2 typography-regular-weight-3 typography-strong-support-4 c0 -span c1"
   data-id="text"
 >
   Body Text

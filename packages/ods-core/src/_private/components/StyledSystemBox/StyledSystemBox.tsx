@@ -25,7 +25,6 @@ import {
   MarginProps,
   marginRight,
   marginTop,
-  maxWidth,
   padding,
   paddingBottom,
   paddingLeft,
@@ -102,7 +101,6 @@ export const StyledSystemBox = styled.div<StyledSystemProps>`
         ${marginBottom}
         ${marginLeft}
         ${marginRight}
-        ${maxWidth}
         ${padding}
         ${paddingTop}
         ${paddingBottom}
