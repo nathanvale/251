@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.32.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.32.0...@origin-digital/ods-types@0.32.1) (2020-07-16)
+
+**Note:** Version bump only for package @origin-digital/ods-types
+
+
+
+
+
 # [0.32.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.31.0...@origin-digital/ods-types@0.32.0) (2020-07-15)
 
 
