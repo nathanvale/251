@@ -13,7 +13,7 @@ import { useConfig } from "../ConfigContext";
 import {
   NavLinkRenderer,
   NavLinkRendererProps,
-} from "../NavLinkRenderer.tsx/NavLinkRenderer";
+} from "../NavLinkRenderer/NavLinkRenderer";
 
 interface SubNavigationItem {
   name: string;
