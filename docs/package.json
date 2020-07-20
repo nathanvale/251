@@ -19,7 +19,7 @@
     "@origin-digital/ods-scripts": "^0.46.3",
     "@origin-digital/ods-types": "^0.32.1",
     "@origin-digital/reporting-client": "^3.5.0",
-    "@origin-digital/style-guide": "^21.1.2",
+    "@origin-digital/style-guide": "^22.3.3",
     "copy-to-clipboard": "^3.2.0",
     "core-js": "^3.6.5",
     "dedent": "0.7.0",
