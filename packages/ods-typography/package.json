@@ -3,7 +3,7 @@
   "description": "Typography hooks for ODS components",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "files": [

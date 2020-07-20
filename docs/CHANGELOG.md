@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.29.7](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.29.6...docs@0.29.7) (2020-07-20)
+
+
+### Bug Fixes
+
+* **link:** Add outline back to links ([12b78b5](https://bitbucket.orgn.io/od/origin-ui/commits/12b78b5972ef49cb3d7aa1befc4afb2cc192e95c))
+
+
+
+
+
 ## [0.29.6](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.29.5...docs@0.29.6) (2020-07-16)
 
 **Note:** Version bump only for package docs
