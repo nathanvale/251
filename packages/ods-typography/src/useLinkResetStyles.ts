@@ -17,7 +17,6 @@ export function useLinkResetStyles() {
           verticalAlign: "baseline",
           textDecoration: "underline",
           background: "none",
-          outline: "none",
         },
       };
     },

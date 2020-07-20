@@ -25,7 +25,6 @@ function useLinkResetStyles() {
           verticalAlign: "baseline",
           textDecoration: "none",
           background: "none",
-          outline: "none",
         },
       };
     },
