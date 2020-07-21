@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.46.4](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.46.3...@origin-digital/ods-core@0.46.4) (2020-07-21)
+
+
+### Bug Fixes
+
+* **polished:** set explicit version ([f9071a8](https://bitbucket.orgn.io/od/origin-ui/commits/f9071a839ee62e5e9adbfd4b598836895491c61b))
+
+
+
+
+
 ## [0.46.3](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.46.2...@origin-digital/ods-core@0.46.3) (2020-07-20)
 
 **Note:** Version bump only for package @origin-digital/ods-core
