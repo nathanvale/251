@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.46.5](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.46.4...@origin-digital/ods-core@0.46.5) (2020-07-21)
+
+
+### Bug Fixes
+
+* **button:** Remove right and bottom padding on text variant ([ca88125](https://bitbucket.orgn.io/od/origin-ui/commits/ca88125497c2f0bdff952abc1740d89ebb6b341d))
+
+
+
+
+
 ## [0.46.4](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.46.3...@origin-digital/ods-core@0.46.4) (2020-07-21)
 
 
