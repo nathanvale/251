@@ -18041,20 +18041,6 @@ polished@2.0.3:
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/polished/-/polished-2.0.3.tgz#54bb5f474bebe149e760d4015ed04207817fd38e"
   integrity sha1-VLtfR0vr4UnnYNQBXtBCB4F/044=
 
-polished@3.4.2:
-  version "3.4.2"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/polished/-/polished-3.4.2.tgz#b4780dad81d64df55615fbfc77acb52fd17d88cd"
-  integrity sha1-tHgNrYHWTfVWFfv8d6y1L9F9iM0=
-  dependencies:
-    "@babel/runtime" "^7.6.3"
-
-polished@^3.4.2:
-  version "3.4.4"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/polished/-/polished-3.4.4.tgz#ac8cd6e704887398f3b802718f9d389b9ea4307b"
-  integrity sha1-rIzW5wSIc5jzuAJxj504m56kMHs=
-  dependencies:
-    "@babel/runtime" "^7.6.3"
-
 popper.js@1.16.1-lts:
   version "1.16.1-lts"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/popper.js/-/popper.js-1.16.1-lts.tgz#cf6847b807da3799d80ee3d6d2f90df8a3f50b05"
