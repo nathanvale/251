@@ -137,7 +137,9 @@ const getCommonStyleRules = (theme: Theme) => ({
       return {
         padding: `${pt}px ${pr}px ${pb}px ${pl}px`,
         marginLeft: `-${pl}px`,
+        marginRight: `-${pr}px`,
         marginTop: `-${pb}px`,
+        marginBottom: `-${pb}px`,
         ...fullWidthStyles,
         ...buttonTypography,
       };
