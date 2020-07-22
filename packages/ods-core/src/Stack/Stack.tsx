@@ -15,25 +15,30 @@ import {
 } from "@origin-digital/ods-helpers";
 import { Box, BoxProps } from "../Box/Box";
 
+const validStackComponents = ["div", "ol", "ul"] as const;
+
 export interface StackProps {
   children: ReactNode;
+  component?: typeof validStackComponents[number];
   space?: ResponsiveSpace;
   alignX?: ResponsiveProp<AlignXType>;
   dividers?: boolean;
   "data-id"?: string;
+  className?: string;
 }
-
-export const stackDefaultProps: RequiredWithoutChildren<StackProps> = {
-  "data-id": "stack",
-  dividers: false,
-  alignX: "left",
-  space: "none",
-};
-
 export interface StackChildProps {
   divider?: boolean;
   space?: ResponsiveValue<SpaceVariants>;
 }
+
+export const stackDefaultProps: RequiredWithoutChildren<StackProps> = {
+  component: "div",
+  "data-id": "stack",
+  dividers: false,
+  alignX: "left",
+  space: "none",
+  className: "",
+};
 
 const spacingTop = style({
   prop: "space",
@@ -101,19 +106,33 @@ export const StackChild = styled<StackChildProps & BoxProps>(Box)`
 
 export const Stack = ({
   children,
+  component = stackDefaultProps.component,
   dividers,
   space = stackDefaultProps.space,
   "data-id": dataId,
   alignX = stackDefaultProps.alignX,
+  className,
 }: StackProps) => {
   const stackItems = Children.toArray(children);
 
+  const isList = component === "ol" || component === "ul";
+  const stackItemComponent = isList ? "li" : "div";
+
   return (
-    <Box data-id={dataId} display="block" width="full">
+    <Box
+      className={className}
+      component={component}
+      data-id={dataId}
+      display="block"
+      width="full"
+    >
       {stackItems.flatMap((child, index) => (
         // we set flex rules on each StackChild so that the divider can be full width
         <StackChild
-          display={alignX === "left" ? "block" : "flex"}
+          component={stackItemComponent}
+          display={
+            alignX === "left" ? (isList ? "list-item" : "block") : "flex"
+          }
           flexDirection={alignX === "left" ? undefined : "column"}
           alignItems={alignX === "left" ? undefined : alignXToFlexAlign(alignX)}
           key={index}

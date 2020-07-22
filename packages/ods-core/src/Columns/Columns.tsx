@@ -57,6 +57,7 @@ export const Columns = ({
 
   const spaceIndex = mapSpaceAliasToIndex({ space, isNegative: true });
   const alignItems = mapVAlignToAlignItems(alignY);
+
   return (
     <BoxDebug
       data-id={dataId}

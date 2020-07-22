@@ -71,9 +71,7 @@ test("It can right-align components", () => {
       <Placeholder width="120px" />
     </Stack>
   );
-  const columnsEl = queryAllByAttribute("data-id", container, "stack-child")[0];
-  const style = window.getComputedStyle(columnsEl as Element);
-  expect(style.alignItems).toEqual("flex-end");
+  expect(container).toMatchSnapshot();
 });
 
 test("It can center-align components", () => {

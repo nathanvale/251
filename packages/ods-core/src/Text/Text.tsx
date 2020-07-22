@@ -46,7 +46,7 @@ interface UseTextStylesProps {
 const defaultWeight = "regular";
 const defaultVariant = "body";
 
-function useTextStyles(props: UseTextStylesProps) {
+export function useTextStyles(props: UseTextStylesProps) {
   const { tone = "neutral", weight, variant } = props;
   useCheckTypographyBackground();
   const basekickStyles = useBasekickStyles({ variant });

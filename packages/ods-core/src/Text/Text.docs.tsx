@@ -8,10 +8,12 @@ export const docs: ComponentDocs<TextProps> = {
   componentName: "Text",
   description: "",
   propDescriptions: {
+    variant: "The font style of the text.",
     tone:
-      "Tones represent colours. The usage of colour in our design system is designed to have a strong correlation with the tone of voice being used",
+      "Tones represent colours. The usage of colour in our design system is designed to have a strong correlation with the tone of voice being used.",
     truncate:
-      "This will add an ellipsis to the end of the text if the text drops onto more than one line",
+      "This will add an ellipsis to the end of the text if the text drops onto more than one line.",
+    weight: "The font weight of the text.",
   },
   migrationGuide: false,
   examples: {
