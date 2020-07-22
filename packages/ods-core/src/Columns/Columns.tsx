@@ -61,7 +61,6 @@ export const Columns = ({
     <BoxDebug
       data-id={dataId}
       display="flex"
-      width="full"
       flexDirection={
         collapseBelow &&
         getRespValForBreakpoint({
