@@ -29,6 +29,20 @@ export interface ColumnProps {
   "data-id"?: string;
 }
 
+const widthValueMap = {
+  "1/2": 1 / 2,
+  "1/3": 1 / 3,
+  "2/3": 2 / 3,
+  "1/4": 1 / 4,
+  "3/4": 3 / 4,
+  "1/6": 1 / 6,
+  "5/6": 5 / 6,
+  "1/12": 1 / 12,
+  "5/12": 5 / 12,
+  "7/12": 7 / 12,
+  "11/12": 11 / 12,
+};
+
 const OuterStyledBox = styled(Box)<{
   columnWidth: ColumnProps["width"];
   collapseBelow?: BreakpointVariants;
@@ -38,7 +52,7 @@ const OuterStyledBox = styled(Box)<{
   ${(p) =>
     p.columnWidth && p.columnWidth !== "content" && p.columnWidth !== "flex"
       ? css`
-          flex: 0 0 ${eval(p.columnWidth) * 100}%;
+          flex: 0 0 ${widthValueMap[p.columnWidth] * 100}%;
         `
       : undefined}
   ${(p) =>
