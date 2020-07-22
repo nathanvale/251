@@ -121,6 +121,18 @@ export const StyledH6Reset = styled(StyledSystemBox.withComponent("h6"))<
   BoxProps
 >``;
 
+export const StyledLIReset = styled(StyledSystemBox.withComponent("li"))<
+  BoxProps
+>``;
+
+export const StyledOLReset = styled(StyledSystemBox.withComponent("ol"))<
+  BoxProps
+>``;
+
+export const StyledULReset = styled(StyledSystemBox.withComponent("ul"))<
+  BoxProps
+>``;
+
 export const StyledButtonReset = styled(
   StyledSystemBox.withComponent("button")
 )<BoxProps>`
@@ -214,6 +226,12 @@ export const Box = ({
     Container = StyledH5Reset;
   } else if (component === "h6") {
     Container = StyledH6Reset;
+  } else if (component === "li") {
+    Container = StyledLIReset;
+  } else if (component === "ol") {
+    Container = StyledOLReset;
+  } else if (component === "ul") {
+    Container = StyledULReset;
   } else {
     Container = StyledSystemBox;
   }

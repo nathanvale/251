@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders a List 1`] = `
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: list-item;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2:empty {
+  display: none;
+}
+
+.c2:empty + div:before {
+  display: none;
+}
+
+.c2:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 12px;
+}
+
+.c2:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 12px;
+}
+
+.c0.c0.c0 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  list-style: none;
+  counter-reset: listCounter;
+}
+
+.c0.c0.c0 ul {
+  margin-block-start: 12px;
+}
+
+.c0.c0.c0 ol {
+  margin-block-start: 12px;
+}
+
+.c0.c0.c0 li .c4 {
+  min-width: 32px;
+  height: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  counter-increment: listCounter;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c0.c0.c0 li .c4 .c5 {
+  border-radius: none;
+  background: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  width: 18px;
+  height: 24px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c0.c0.c0 li .c4 .c5 .c6 {
+  color: inherit;
+}
+
+.c0.c0.c0 li .c4 .c6::before {
+  content: counter( listCounter,disc ) "";
+}
+
+@media screen and (min-width:576px) {
+  .c2:not(:empty) ~ div:not(:empty):before {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2:not(:empty) ~ div:not(:empty):before {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c2:not(:empty) ~ div:not(:empty):before {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c2:not(:empty) ~ div:not(:empty):before {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c2:nth-child(n + 2):before {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2:nth-child(n + 2):before {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c2:nth-child(n + 2):before {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c2:nth-child(n + 2):before {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c0.c0.c0 ul {
+    margin-block-start: 16px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c0.c0.c0 ol {
+    margin-block-start: 16px;
+  }
+}
+
+<ul
+  class="typography-body-variant-basekick-1 typography-neutral-color-2 typography-regular-weight-3 typography-strong-support-4 c0 -ul c1"
+  data-id="list"
+  display="block"
+  width="full"
+>
+  <li
+    class="c2 -li c3"
+    data-id="stack-child"
+    display="list-item"
+  >
+    <ul
+      class="typography-body-variant-basekick-5 typography-neutral-color-6 typography-regular-weight-7 typography-strong-support-8 c0 -ul c1"
+      data-id="list"
+      display="block"
+      width="full"
+    >
+      <li
+        class="c2 -li c3"
+        data-id="stack-child"
+        display="list-item"
+      >
+        This is a secondary ListItem.
+      </li>
+    </ul>
+  </li>
+  <li
+    class="c2 -li c3"
+    data-id="stack-child"
+    display="list-item"
+  >
+    <ul
+      class="typography-body-variant-basekick-9 typography-neutral-color-10 typography-regular-weight-11 typography-strong-support-12 c0 -ul c1"
+      data-id="list"
+      display="block"
+      width="full"
+    >
+      <li
+        class="c2 -li c3"
+        data-id="stack-child"
+        display="list-item"
+      >
+        This is a secondary ListItem.
+      </li>
+    </ul>
+  </li>
+  <li
+    class="c2 -li c3"
+    data-id="stack-child"
+    display="list-item"
+  >
+    <ul
+      class="typography-body-variant-basekick-13 typography-neutral-color-14 typography-regular-weight-15 typography-strong-support-16 c0 -ul c1"
+      data-id="list"
+      display="block"
+      width="full"
+    >
+      <li
+        class="c2 -li c3"
+        data-id="stack-child"
+        display="list-item"
+      >
+        This is a secondary ListItem.
+      </li>
+    </ul>
+  </li>
+</ul>
+`;

@@ -481,6 +481,7 @@ exports[`Box 1`] = `
     | "inline"
     | "inline-block"
     | "inline-flex"
+    | "list-item"
     | "none"
   >
   download?: any
@@ -1602,6 +1603,56 @@ exports[`InputAdornment 1`] = `
 }
 `;
 
+exports[`List 1`] = `
+{
+  children: ReactNode
+  data-id?: string
+  space?: ResponsiveProp<
+    | "large"
+    | "medium"
+    | "none"
+    | "small"
+    | "xlarge"
+    | "xsmall"
+    | "xxlarge"
+    | "xxsmall"
+    | "xxxlarge"
+  >
+  tone?: 
+    | "critical"
+    | "neutral"
+    | "neutralDark"
+    | "neutralLight"
+    | "positive"
+  type?: 
+    | "circle"
+    | "decimal"
+    | "decimal-stylised"
+    | "disc"
+    | "lower-alpha"
+    | "lower-roman"
+    | "upper-alpha"
+    | "upper-roman"
+  variant?: 
+    | "body"
+    | "body-small"
+    | "subtitle"
+    | "subtitle-small"
+  weight?: 
+    | "medium"
+    | "regular"
+}
+`;
+
+exports[`ListItem 1`] = `
+{
+  children: ReactNode
+  data-id?: string
+  helperText?: ReactNode
+  icon?: ReactNode
+}
+`;
+
 exports[`MarkdownLite 1`] = `
 {
   children: string
@@ -2084,6 +2135,11 @@ exports[`Stack 1`] = `
     | "right"
   >
   children: ReactNode
+  className?: string
+  component?: 
+    | "div"
+    | "ol"
+    | "ul"
   data-id?: string
   dividers?: boolean
   space?: ResponsiveProp<

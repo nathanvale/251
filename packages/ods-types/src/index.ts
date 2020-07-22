@@ -104,7 +104,8 @@ export type DisplayVariants =
   | "inline"
   | "flex"
   | "inline-block"
-  | "inline-flex";
+  | "inline-flex"
+  | "list-item";
 
 export type FlexDirectionVariants =
   | "row"

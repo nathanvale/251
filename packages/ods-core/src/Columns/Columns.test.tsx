@@ -34,7 +34,7 @@ test("it spaces column comps with small space", () => {
 
 test("it top-aligns children by default", () => {
   const { container } = render(
-    <Columns>
+    <Columns data-id="my-cols">
       <Column>
         <Placeholder height="100px" />
       </Column>
@@ -47,9 +47,7 @@ test("it top-aligns children by default", () => {
     </Columns>
   );
 
-  const columnsEl = queryAllByAttribute("data-id", container, "columns")[0];
-  const style = window.getComputedStyle(columnsEl as Element);
-  expect(style.alignItems).toEqual("flex-start");
+  expect(container).toMatchSnapshot();
 });
 
 test("it vertically aligns children middle if alignY is center", () => {
@@ -67,9 +65,7 @@ test("it vertically aligns children middle if alignY is center", () => {
     </Columns>
   );
 
-  const columnsEl = queryAllByAttribute("data-id", container, "columns")[0];
-  const style = window.getComputedStyle(columnsEl as Element);
-  expect(style.alignItems).toEqual("center");
+  expect(container).toMatchSnapshot();
 });
 
 test("it vertically aligns children bottom if alignY is bottom", () => {
@@ -87,9 +83,7 @@ test("it vertically aligns children bottom if alignY is bottom", () => {
     </Columns>
   );
 
-  const columnsEl = queryAllByAttribute("data-id", container, "columns")[0];
-  const style = window.getComputedStyle(columnsEl as Element);
-  expect(style.alignItems).toEqual("flex-end");
+  expect(container).toMatchSnapshot();
 });
 
 //TODO: FInd a way to unit test collapseBelow. Needs to set window width.
