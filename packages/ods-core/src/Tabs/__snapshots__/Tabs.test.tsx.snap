@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+<div>
+  <div
+    aria-label="tabs"
+    class="MuiTabs-root tabs-root-33"
+    id="cities"
+  >
+    <div
+      class="MuiTabs-scroller MuiTabs-fixed"
+      style="overflow: hidden;"
+    >
+      <div
+        class="MuiTabs-flexContainer"
+        role="tablist"
+      >
+        <button
+          aria-controls="tabpanel-mlb"
+          aria-selected="true"
+          class="MuiButtonBase-root MuiTab-root tab-root-46 MuiTab-textColorInherit Mui-selected tab-selected-47"
+          data-id="tab"
+          id="mlb"
+          role="tab"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiTab-wrapper"
+          >
+            <div
+              class="c0"
+              display="flex"
+            >
+              Melbourne
+            </div>
+          </span>
+        </button>
+        <button
+          aria-controls="tabpanel-syd"
+          aria-selected="false"
+          class="MuiButtonBase-root MuiTab-root tab-root-46 MuiTab-textColorInherit"
+          data-id="tab"
+          id="syd"
+          role="tab"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiTab-wrapper"
+          >
+            <div
+              class="c0"
+              display="flex"
+            >
+              Sydney
+            </div>
+          </span>
+        </button>
+        <button
+          aria-controls="tabpanel-prt"
+          aria-selected="false"
+          class="MuiButtonBase-root MuiTab-root tab-root-46 MuiTab-textColorInherit"
+          data-id="tab"
+          id="prt"
+          role="tab"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiTab-wrapper"
+          >
+            <div
+              class="c0"
+              display="flex"
+            >
+              Perth
+            </div>
+          </span>
+        </button>
+      </div>
+      <span
+        class="PrivateTabIndicator-root-61 PrivateTabIndicator-colorSecondary-63 MuiTabs-indicator tabs-indicator-34"
+        style="left: 0px; width: 0px;"
+      />
+    </div>
+  </div>
+  <div
+    aria-labelledby="mlb"
+    class="c1"
+    id="tabpanel-mlb"
+    role="tabpanel"
+  >
+    Melbourne
+  </div>
+  <div
+    aria-labelledby="syd"
+    class="c1"
+    hidden=""
+    id="tabpanel-syd"
+    role="tabpanel"
+  >
+    Sydney
+  </div>
+  <div
+    aria-labelledby="prt"
+    class="c1"
+    hidden=""
+    id="tabpanel-prt"
+    role="tabpanel"
+  >
+    Perth
+  </div>
+</div>
+`;

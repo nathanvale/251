@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<div>
+  <button
+    aria-controls="tabpanel-mlb"
+    class="MuiButtonBase-root MuiTab-root tab-root-1 MuiTab-textColorInherit"
+    data-id="tab"
+    id="mlb"
+    role="tab"
+    tabindex="0"
+    type="button"
+  >
+    <span
+      class="MuiTab-wrapper"
+    >
+      <div
+        class="c0"
+        display="flex"
+      >
+        Melbourne
+      </div>
+    </span>
+  </button>
+</div>
+`;
