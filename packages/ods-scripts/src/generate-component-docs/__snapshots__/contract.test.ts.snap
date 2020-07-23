@@ -1,5 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Accordion 1`] = `
+{
+  children: ReactNode
+  className?: string
+  data-id?: string
+  defaultExpanded?: boolean
+  expanded?: boolean
+  id: string
+  muiProps?: T | undefined
+  onChange?: () => void
+  size?: 
+    | "medium"
+    | "small"
+  summary: ReactNode
+}
+`;
+
+exports[`AccordionGroup 1`] = `
+{
+  children: ReactNode
+  className?: string
+  data-id?: string
+  id?: string
+}
+`;
+
 exports[`Box 1`] = `
 {
   about?: string

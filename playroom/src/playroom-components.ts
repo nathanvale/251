@@ -1,6 +1,8 @@
 export * from "./legacy-components";
 export * from "./_private/components";
 export {
+  Accordion,
+  AccordionGroup,
   Box,
   Button,
   Card,

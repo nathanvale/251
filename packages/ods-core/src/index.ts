@@ -8,6 +8,8 @@
 // PLEASE EXPORT CORE UI COMPONENTS ONLY
 
 // Core
+import { Accordion } from "./Accordion/Accordion";
+import { AccordionGroup } from "./AccordionGroup/AccordionGroup";
 import { Box } from "./Box/Box";
 import { Button } from "./Button/Button";
 import { Card } from "./Card/Card";
@@ -65,6 +67,8 @@ import { TrackedLink } from "./TrackedLink/TrackedLink";
 import { TrackingDisable } from "./TrackingDisable/TrackingDisable";
 import { TrackingProvider } from "./TrackingProvider/TrackingProvider";
 
+export type AccordionProps = import("./Accordion/Accordion").AccordionProps;
+export type AccordionGroupProps = import("./AccordionGroup/AccordionGroup").AccordionGroupProps;
 export type BoxProps = import("./Box/Box").BoxProps;
 export type ButtonProps = import("./Button/Button").ButtonProps;
 export type CardProps = import("./Card/Card").CardProps;
@@ -123,6 +127,8 @@ export type TrackingDisableProps = import("./TrackingDisable/TrackingDisable").T
 export type TrackingProviderProps = import("./TrackingProvider/TrackingProvider").TrackingProviderProps;
 
 export {
+  Accordion,
+  AccordionGroup,
   Box,
   Button,
   Card,
@@ -182,6 +188,8 @@ export {
 };
 
 export const Components = {
+  Accordion,
+  AccordionGroup,
   Box,
   Button,
   Card,
