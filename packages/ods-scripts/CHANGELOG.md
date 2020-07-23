@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.48.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.47.1...@origin-digital/ods-scripts@0.48.0) (2020-07-23)
+
+
+### Features
+
+* **accordion:** implement accordion ([e26742b](https://bitbucket.orgn.io/od/origin-ui/commits/e26742b21bb7d9d3e67cda6491dc4716cf33830e))
+
+
+
+
+
 ## [0.47.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.47.0...@origin-digital/ods-scripts@0.47.1) (2020-07-23)
 
 **Note:** Version bump only for package @origin-digital/ods-scripts

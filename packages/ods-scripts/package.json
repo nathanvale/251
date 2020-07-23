@@ -2,13 +2,13 @@
   "private": true,
   "name": "@origin-digital/ods-scripts",
   "description": "Build scripts for the monorepo",
-  "version": "0.47.1",
+  "version": "0.48.0",
   "scripts": {
     "create:mui-icons": "ts-node ./src/create-mui-icons.ts"
   },
   "devDependencies": {
     "@material-ui/icons": "^4.9.1",
-    "@origin-digital/ods-core": "^0.47.1",
+    "@origin-digital/ods-core": "^0.48.0",
     "@origin-digital/ods-helpers": "^0.11.4",
     "@origin-digital/ods-lab": "^0.24.0",
     "@origin-digital/ods-types": "^0.33.0",
