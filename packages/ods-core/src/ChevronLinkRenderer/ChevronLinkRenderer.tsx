@@ -62,6 +62,7 @@ function useChevronLinkStyles({ variant }: UseChevronLinkProps) {
             margin: undefined,
           },
           "& * svg": {
+            color,
             "-webkit-transition": "transform 0.25s ease-out",
             transition: "transform 0.25s ease-out",
           },
