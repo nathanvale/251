@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.47.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.47.0...@origin-digital/ods-core@0.47.1) (2020-07-23)
+
+
+### Bug Fixes
+
+* incorrect chevron link icon ([4332dc1](https://bitbucket.orgn.io/od/origin-ui/commits/4332dc12f0ea8a7ea1ae64b206d75189a51d647a))
+
+
+
+
+
 # [0.47.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.46.6...@origin-digital/ods-core@0.47.0) (2020-07-22)
 
 
