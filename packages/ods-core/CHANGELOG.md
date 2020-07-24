@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.49.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.48.0...@origin-digital/ods-core@0.49.0) (2020-07-24)
+
+
+### Bug Fixes
+
+* **tabs:** fix failing snapshots ([804df73](https://bitbucket.orgn.io/od/origin-ui/commits/804df73b83c239a9a0319e2f0feef1b9679e0fd1))
+
+
+### Features
+
+* **tabs:** new component ([1707524](https://bitbucket.orgn.io/od/origin-ui/commits/1707524d3d11f550f62cd52fc90cac6f9c0e5841))
+
+
+
+
+
 # [0.48.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.47.1...@origin-digital/ods-core@0.48.0) (2020-07-23)
 
 

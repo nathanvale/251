@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.25.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.24.0...@origin-digital/ods-lab@0.25.0) (2020-07-24)
+
+
+### Features
+
+* **tabs:** new component ([1707524](https://bitbucket.orgn.io/od/origin-ui/commits/1707524d3d11f550f62cd52fc90cac6f9c0e5841))
+
+
+
+
+
 # [0.24.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.23.3...@origin-digital/ods-lab@0.24.0) (2020-07-22)
 
 
