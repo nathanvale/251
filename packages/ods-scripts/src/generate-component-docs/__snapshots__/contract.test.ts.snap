@@ -26,6 +26,57 @@ exports[`AccordionGroup 1`] = `
 }
 `;
 
+exports[`Alert 1`] = `
+{
+  children: ReactNode
+  className?: string
+  classes?: Record<string, string>
+  data-id?: string
+  icon?: ReactNode
+  id?: string
+  muiProps?: T | undefined
+  onCloseClick?: () => void
+  title?: ReactNode
+  tone?: 
+    | "caution"
+    | "critical"
+    | "info"
+    | "neutral"
+    | "positive"
+    | "promote"
+  variant?: 
+    | "filled"
+    | "standard"
+}
+`;
+
+exports[`AlertBanner 1`] = `
+{
+  children: ReactNode
+  className?: string
+  classes?: Record<string, string>
+  data-id?: string
+  icon?: ReactNode
+  id?: string
+  muiProps?: T | undefined
+  offset?: 
+    | number
+    | string
+  onCloseClick?: () => void
+  title?: ReactNode
+  tone?: 
+    | "caution"
+    | "critical"
+    | "info"
+    | "neutral"
+    | "positive"
+    | "promote"
+  variant?: 
+    | "filled"
+    | "standard"
+}
+`;
+
 exports[`Box 1`] = `
 {
   about?: string

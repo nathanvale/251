@@ -110,11 +110,13 @@ export const BREAK_POINTS: BreakPointProperties = {
 interface IZIndex {
   readonly MOBILE_MENU_CONTAINER: number;
   readonly HEADER: number;
+  readonly ALERT_BANNER: number;
 }
 
 export const Z_INDEX: IZIndex = {
   MOBILE_MENU_CONTAINER: 1100,
   HEADER: 1000,
+  ALERT_BANNER: 900,
 };
 
 interface IAnimation {

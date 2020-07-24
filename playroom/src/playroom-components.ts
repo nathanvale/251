@@ -3,6 +3,8 @@ export * from "./_private/components";
 export {
   Accordion,
   AccordionGroup,
+  Alert,
+  AlertBanner,
   Box,
   Button,
   Card,

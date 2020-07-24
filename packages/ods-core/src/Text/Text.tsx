@@ -1,11 +1,11 @@
 import React, { ReactNode } from "react";
 import styled from "styled-components";
-import { BoxProps, Box } from "@origin-digital/ods-core";
 import {
   TextVariants,
   TextToneVariants,
   TypographyWeightVariants,
 } from "@origin-digital/ods-types";
+import { BoxProps, Box } from "../Box/Box";
 import { useTruncatedContent } from "../_private/hooks";
 
 import { TextContextProvider, UseTextProps } from "./TextContextProvider";

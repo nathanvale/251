@@ -1,0 +1,2016 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It renders 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c4 {
+  max-width: 100%;
+}
+
+<div>
+  <div
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-1 Alert-info-4 MuiPaper-elevation0"
+    data-id="alert"
+    role="alert"
+  >
+    <div
+      class="MuiAlert-icon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-14"
+        data-id="IconInfo"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+        />
+      </svg>
+    </div>
+    <div
+      class="MuiAlert-message"
+    >
+      <div
+        class="c0"
+        data-id="stack"
+        display="block"
+        width="full"
+      >
+        <div
+          class="c1 c2"
+          data-id="stack-child"
+          display="block"
+        >
+          <div
+            class="c3"
+            data-id="alert-content"
+          >
+            <span
+              class="typography-body-variant-basekick-15 typography-neutral-color-16 typography-regular-weight-17 typography-strong-support-18 c4 -span c5"
+              data-id="text"
+            >
+              Lorem ipsum 
+              <strong
+                class="typography-medium-weight-20"
+                data-id="strong"
+              >
+                dolor
+              </strong>
+               sit amet,
+               
+              <em
+                data-id="emphasis"
+              >
+                consectetur
+              </em>
+               adipiscing elit. Suspendisse facilisis
+               
+              <a
+                class="typography-linkReset-21 typography-neutral-tone-link-22"
+                data-id="text-link"
+                href="#"
+              >
+                posuere
+              </a>
+               sodales.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It uses variant (filled) and tone (caution) 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c4 {
+  max-width: 100%;
+}
+
+<div>
+  <div
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-177 Alert-caution-185 MuiPaper-elevation0"
+    data-id="alert"
+    role="alert"
+  >
+    <div
+      class="MuiAlert-icon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-190"
+        data-id="IconWarning"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
+        />
+      </svg>
+    </div>
+    <div
+      class="MuiAlert-message"
+    >
+      <div
+        class="c0"
+        data-id="stack"
+        display="block"
+        width="full"
+      >
+        <div
+          class="c1 c2"
+          data-id="stack-child"
+          display="block"
+        >
+          <div
+            class="c3"
+            data-id="alert-content"
+          >
+            <span
+              class="typography-body-variant-basekick-191 typography-neutral-color-192 typography-regular-weight-193 typography-strong-support-194 c4 -span c5"
+              data-id="text"
+            >
+              Lorem ipsum 
+              <strong
+                class="typography-medium-weight-196"
+                data-id="strong"
+              >
+                dolor
+              </strong>
+               sit amet,
+               
+              <em
+                data-id="emphasis"
+              >
+                consectetur
+              </em>
+               adipiscing elit. Suspendisse facilisis
+               
+              <a
+                class="typography-linkReset-197 typography-neutral-tone-link-198"
+                data-id="text-link"
+                href="#"
+              >
+                posuere
+              </a>
+               sodales.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It uses variant (filled) and tone (critical) 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c4 {
+  max-width: 100%;
+}
+
+<div>
+  <div
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-155 Alert-critical-162 MuiPaper-elevation0"
+    data-id="alert"
+    role="alert"
+  >
+    <div
+      class="MuiAlert-icon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-168"
+        data-id="IconError"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+        />
+      </svg>
+    </div>
+    <div
+      class="MuiAlert-message"
+    >
+      <div
+        class="c0"
+        data-id="stack"
+        display="block"
+        width="full"
+      >
+        <div
+          class="c1 c2"
+          data-id="stack-child"
+          display="block"
+        >
+          <div
+            class="c3"
+            data-id="alert-content"
+          >
+            <span
+              class="typography-body-variant-basekick-169 typography-neutral-color-170 typography-regular-weight-171 typography-strong-support-172 c4 -span c5"
+              data-id="text"
+            >
+              Lorem ipsum 
+              <strong
+                class="typography-medium-weight-174"
+                data-id="strong"
+              >
+                dolor
+              </strong>
+               sit amet,
+               
+              <em
+                data-id="emphasis"
+              >
+                consectetur
+              </em>
+               adipiscing elit. Suspendisse facilisis
+               
+              <a
+                class="typography-linkReset-175 typography-neutral-tone-link-176"
+                data-id="text-link"
+                href="#"
+              >
+                posuere
+              </a>
+               sodales.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It uses variant (filled) and tone (info) 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c4 {
+  max-width: 100%;
+}
+
+<div>
+  <div
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-199 Alert-info-208 MuiPaper-elevation0"
+    data-id="alert"
+    role="alert"
+  >
+    <div
+      class="MuiAlert-icon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-212"
+        data-id="IconInfo"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+        />
+      </svg>
+    </div>
+    <div
+      class="MuiAlert-message"
+    >
+      <div
+        class="c0"
+        data-id="stack"
+        display="block"
+        width="full"
+      >
+        <div
+          class="c1 c2"
+          data-id="stack-child"
+          display="block"
+        >
+          <div
+            class="c3"
+            data-id="alert-content"
+          >
+            <span
+              class="typography-body-variant-basekick-213 typography-neutral-color-214 typography-regular-weight-215 typography-strong-support-216 c4 -span c5"
+              data-id="text"
+            >
+              Lorem ipsum 
+              <strong
+                class="typography-medium-weight-218"
+                data-id="strong"
+              >
+                dolor
+              </strong>
+               sit amet,
+               
+              <em
+                data-id="emphasis"
+              >
+                consectetur
+              </em>
+               adipiscing elit. Suspendisse facilisis
+               
+              <a
+                class="typography-linkReset-219 typography-neutral-tone-link-220"
+                data-id="text-link"
+                href="#"
+              >
+                posuere
+              </a>
+               sodales.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It uses variant (filled) and tone (neutral) 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c4 {
+  max-width: 100%;
+}
+
+<div>
+  <div
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-221 Alert-neutral-231 MuiPaper-elevation0"
+    data-id="alert"
+    role="alert"
+  >
+    <div
+      class="MuiAlert-icon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-234"
+        data-id="IconInfo"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+        />
+      </svg>
+    </div>
+    <div
+      class="MuiAlert-message"
+    >
+      <div
+        class="c0"
+        data-id="stack"
+        display="block"
+        width="full"
+      >
+        <div
+          class="c1 c2"
+          data-id="stack-child"
+          display="block"
+        >
+          <div
+            class="c3"
+            data-id="alert-content"
+          >
+            <span
+              class="typography-body-variant-basekick-235 typography-neutral-color-236 typography-regular-weight-237 typography-strong-support-238 c4 -span c5"
+              data-id="text"
+            >
+              Lorem ipsum 
+              <strong
+                class="typography-medium-weight-240"
+                data-id="strong"
+              >
+                dolor
+              </strong>
+               sit amet,
+               
+              <em
+                data-id="emphasis"
+              >
+                consectetur
+              </em>
+               adipiscing elit. Suspendisse facilisis
+               
+              <a
+                class="typography-linkReset-241 typography-neutral-tone-link-242"
+                data-id="text-link"
+                href="#"
+              >
+                posuere
+              </a>
+               sodales.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It uses variant (filled) and tone (positive) 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c4 {
+  max-width: 100%;
+}
+
+<div>
+  <div
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-243 Alert-positive-254 MuiPaper-elevation0"
+    data-id="alert"
+    role="alert"
+  >
+    <div
+      class="MuiAlert-icon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-256"
+        data-id="IconCheckCircle"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+        />
+      </svg>
+    </div>
+    <div
+      class="MuiAlert-message"
+    >
+      <div
+        class="c0"
+        data-id="stack"
+        display="block"
+        width="full"
+      >
+        <div
+          class="c1 c2"
+          data-id="stack-child"
+          display="block"
+        >
+          <div
+            class="c3"
+            data-id="alert-content"
+          >
+            <span
+              class="typography-body-variant-basekick-257 typography-neutral-color-258 typography-regular-weight-259 typography-strong-support-260 c4 -span c5"
+              data-id="text"
+            >
+              Lorem ipsum 
+              <strong
+                class="typography-medium-weight-262"
+                data-id="strong"
+              >
+                dolor
+              </strong>
+               sit amet,
+               
+              <em
+                data-id="emphasis"
+              >
+                consectetur
+              </em>
+               adipiscing elit. Suspendisse facilisis
+               
+              <a
+                class="typography-linkReset-263 typography-neutral-tone-link-264"
+                data-id="text-link"
+                href="#"
+              >
+                posuere
+              </a>
+               sodales.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It uses variant (filled) and tone (promote) 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c4 {
+  max-width: 100%;
+}
+
+<div>
+  <div
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-265 Alert-promote-277 MuiPaper-elevation0"
+    data-id="alert"
+    role="alert"
+  >
+    <div
+      class="MuiAlert-icon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-278"
+        data-id="IconLocalOffer"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"
+        />
+      </svg>
+    </div>
+    <div
+      class="MuiAlert-message"
+    >
+      <div
+        class="c0"
+        data-id="stack"
+        display="block"
+        width="full"
+      >
+        <div
+          class="c1 c2"
+          data-id="stack-child"
+          display="block"
+        >
+          <div
+            class="c3"
+            data-id="alert-content"
+          >
+            <span
+              class="typography-body-variant-basekick-279 typography-neutral-color-280 typography-regular-weight-281 typography-strong-support-282 c4 -span c5"
+              data-id="text"
+            >
+              Lorem ipsum 
+              <strong
+                class="typography-medium-weight-284"
+                data-id="strong"
+              >
+                dolor
+              </strong>
+               sit amet,
+               
+              <em
+                data-id="emphasis"
+              >
+                consectetur
+              </em>
+               adipiscing elit. Suspendisse facilisis
+               
+              <a
+                class="typography-linkReset-285 typography-neutral-tone-link-286"
+                data-id="text-link"
+                href="#"
+              >
+                posuere
+              </a>
+               sodales.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It uses variant (standard) and tone (caution) 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c4 {
+  max-width: 100%;
+}
+
+<div>
+  <div
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-45 Alert-caution-47 MuiPaper-elevation0"
+    data-id="alert"
+    role="alert"
+  >
+    <div
+      class="MuiAlert-icon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-58"
+        data-id="IconWarning"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
+        />
+      </svg>
+    </div>
+    <div
+      class="MuiAlert-message"
+    >
+      <div
+        class="c0"
+        data-id="stack"
+        display="block"
+        width="full"
+      >
+        <div
+          class="c1 c2"
+          data-id="stack-child"
+          display="block"
+        >
+          <div
+            class="c3"
+            data-id="alert-content"
+          >
+            <span
+              class="typography-body-variant-basekick-59 typography-neutral-color-60 typography-regular-weight-61 typography-strong-support-62 c4 -span c5"
+              data-id="text"
+            >
+              Lorem ipsum 
+              <strong
+                class="typography-medium-weight-64"
+                data-id="strong"
+              >
+                dolor
+              </strong>
+               sit amet,
+               
+              <em
+                data-id="emphasis"
+              >
+                consectetur
+              </em>
+               adipiscing elit. Suspendisse facilisis
+               
+              <a
+                class="typography-linkReset-65 typography-neutral-tone-link-66"
+                data-id="text-link"
+                href="#"
+              >
+                posuere
+              </a>
+               sodales.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It uses variant (standard) and tone (critical) 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c4 {
+  max-width: 100%;
+}
+
+<div>
+  <div
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-23 Alert-critical-24 MuiPaper-elevation0"
+    data-id="alert"
+    role="alert"
+  >
+    <div
+      class="MuiAlert-icon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-36"
+        data-id="IconError"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+        />
+      </svg>
+    </div>
+    <div
+      class="MuiAlert-message"
+    >
+      <div
+        class="c0"
+        data-id="stack"
+        display="block"
+        width="full"
+      >
+        <div
+          class="c1 c2"
+          data-id="stack-child"
+          display="block"
+        >
+          <div
+            class="c3"
+            data-id="alert-content"
+          >
+            <span
+              class="typography-body-variant-basekick-37 typography-neutral-color-38 typography-regular-weight-39 typography-strong-support-40 c4 -span c5"
+              data-id="text"
+            >
+              Lorem ipsum 
+              <strong
+                class="typography-medium-weight-42"
+                data-id="strong"
+              >
+                dolor
+              </strong>
+               sit amet,
+               
+              <em
+                data-id="emphasis"
+              >
+                consectetur
+              </em>
+               adipiscing elit. Suspendisse facilisis
+               
+              <a
+                class="typography-linkReset-43 typography-neutral-tone-link-44"
+                data-id="text-link"
+                href="#"
+              >
+                posuere
+              </a>
+               sodales.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It uses variant (standard) and tone (info) 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c4 {
+  max-width: 100%;
+}
+
+<div>
+  <div
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-67 Alert-info-70 MuiPaper-elevation0"
+    data-id="alert"
+    role="alert"
+  >
+    <div
+      class="MuiAlert-icon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-80"
+        data-id="IconInfo"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+        />
+      </svg>
+    </div>
+    <div
+      class="MuiAlert-message"
+    >
+      <div
+        class="c0"
+        data-id="stack"
+        display="block"
+        width="full"
+      >
+        <div
+          class="c1 c2"
+          data-id="stack-child"
+          display="block"
+        >
+          <div
+            class="c3"
+            data-id="alert-content"
+          >
+            <span
+              class="typography-body-variant-basekick-81 typography-neutral-color-82 typography-regular-weight-83 typography-strong-support-84 c4 -span c5"
+              data-id="text"
+            >
+              Lorem ipsum 
+              <strong
+                class="typography-medium-weight-86"
+                data-id="strong"
+              >
+                dolor
+              </strong>
+               sit amet,
+               
+              <em
+                data-id="emphasis"
+              >
+                consectetur
+              </em>
+               adipiscing elit. Suspendisse facilisis
+               
+              <a
+                class="typography-linkReset-87 typography-neutral-tone-link-88"
+                data-id="text-link"
+                href="#"
+              >
+                posuere
+              </a>
+               sodales.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It uses variant (standard) and tone (neutral) 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c4 {
+  max-width: 100%;
+}
+
+<div>
+  <div
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-89 Alert-neutral-93 MuiPaper-elevation0"
+    data-id="alert"
+    role="alert"
+  >
+    <div
+      class="MuiAlert-icon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-102"
+        data-id="IconInfo"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+        />
+      </svg>
+    </div>
+    <div
+      class="MuiAlert-message"
+    >
+      <div
+        class="c0"
+        data-id="stack"
+        display="block"
+        width="full"
+      >
+        <div
+          class="c1 c2"
+          data-id="stack-child"
+          display="block"
+        >
+          <div
+            class="c3"
+            data-id="alert-content"
+          >
+            <span
+              class="typography-body-variant-basekick-103 typography-neutral-color-104 typography-regular-weight-105 typography-strong-support-106 c4 -span c5"
+              data-id="text"
+            >
+              Lorem ipsum 
+              <strong
+                class="typography-medium-weight-108"
+                data-id="strong"
+              >
+                dolor
+              </strong>
+               sit amet,
+               
+              <em
+                data-id="emphasis"
+              >
+                consectetur
+              </em>
+               adipiscing elit. Suspendisse facilisis
+               
+              <a
+                class="typography-linkReset-109 typography-neutral-tone-link-110"
+                data-id="text-link"
+                href="#"
+              >
+                posuere
+              </a>
+               sodales.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It uses variant (standard) and tone (positive) 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c4 {
+  max-width: 100%;
+}
+
+<div>
+  <div
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-111 Alert-positive-116 MuiPaper-elevation0"
+    data-id="alert"
+    role="alert"
+  >
+    <div
+      class="MuiAlert-icon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-124"
+        data-id="IconCheckCircle"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+        />
+      </svg>
+    </div>
+    <div
+      class="MuiAlert-message"
+    >
+      <div
+        class="c0"
+        data-id="stack"
+        display="block"
+        width="full"
+      >
+        <div
+          class="c1 c2"
+          data-id="stack-child"
+          display="block"
+        >
+          <div
+            class="c3"
+            data-id="alert-content"
+          >
+            <span
+              class="typography-body-variant-basekick-125 typography-neutral-color-126 typography-regular-weight-127 typography-strong-support-128 c4 -span c5"
+              data-id="text"
+            >
+              Lorem ipsum 
+              <strong
+                class="typography-medium-weight-130"
+                data-id="strong"
+              >
+                dolor
+              </strong>
+               sit amet,
+               
+              <em
+                data-id="emphasis"
+              >
+                consectetur
+              </em>
+               adipiscing elit. Suspendisse facilisis
+               
+              <a
+                class="typography-linkReset-131 typography-neutral-tone-link-132"
+                data-id="text-link"
+                href="#"
+              >
+                posuere
+              </a>
+               sodales.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It uses variant (standard) and tone (promote) 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c4 {
+  max-width: 100%;
+}
+
+<div>
+  <div
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-133 Alert-promote-139 MuiPaper-elevation0"
+    data-id="alert"
+    role="alert"
+  >
+    <div
+      class="MuiAlert-icon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-146"
+        data-id="IconLocalOffer"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"
+        />
+      </svg>
+    </div>
+    <div
+      class="MuiAlert-message"
+    >
+      <div
+        class="c0"
+        data-id="stack"
+        display="block"
+        width="full"
+      >
+        <div
+          class="c1 c2"
+          data-id="stack-child"
+          display="block"
+        >
+          <div
+            class="c3"
+            data-id="alert-content"
+          >
+            <span
+              class="typography-body-variant-basekick-147 typography-neutral-color-148 typography-regular-weight-149 typography-strong-support-150 c4 -span c5"
+              data-id="text"
+            >
+              Lorem ipsum 
+              <strong
+                class="typography-medium-weight-152"
+                data-id="strong"
+              >
+                dolor
+              </strong>
+               sit amet,
+               
+              <em
+                data-id="emphasis"
+              >
+                consectetur
+              </em>
+               adipiscing elit. Suspendisse facilisis
+               
+              <a
+                class="typography-linkReset-153 typography-neutral-tone-link-154"
+                data-id="text-link"
+                href="#"
+              >
+                posuere
+              </a>
+               sodales.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
