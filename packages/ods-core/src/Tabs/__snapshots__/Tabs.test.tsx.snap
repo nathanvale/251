@@ -36,8 +36,7 @@ exports[`it renders 1`] = `
 
 <div>
   <div
-    aria-label="tabs"
-    class="MuiTabs-root tabs-root-33"
+    class="MuiTabs-root tabs-root-9"
     id="cities"
   >
     <div
@@ -45,13 +44,14 @@ exports[`it renders 1`] = `
       style="overflow: hidden;"
     >
       <div
+        aria-label="tabs"
         class="MuiTabs-flexContainer"
         role="tablist"
       >
         <button
           aria-controls="tabpanel-mlb"
           aria-selected="true"
-          class="MuiButtonBase-root MuiTab-root tab-root-46 MuiTab-textColorInherit Mui-selected tab-selected-47"
+          class="MuiButtonBase-root MuiTab-root tab-root-11 MuiTab-textColorInherit Mui-selected tab-selected-12"
           data-id="tab"
           id="mlb"
           role="tab"
@@ -72,11 +72,11 @@ exports[`it renders 1`] = `
         <button
           aria-controls="tabpanel-syd"
           aria-selected="false"
-          class="MuiButtonBase-root MuiTab-root tab-root-46 MuiTab-textColorInherit"
+          class="MuiButtonBase-root MuiTab-root tab-root-11 MuiTab-textColorInherit"
           data-id="tab"
           id="syd"
           role="tab"
-          tabindex="0"
+          tabindex="-1"
           type="button"
         >
           <span
@@ -93,11 +93,11 @@ exports[`it renders 1`] = `
         <button
           aria-controls="tabpanel-prt"
           aria-selected="false"
-          class="MuiButtonBase-root MuiTab-root tab-root-46 MuiTab-textColorInherit"
+          class="MuiButtonBase-root MuiTab-root tab-root-11 MuiTab-textColorInherit"
           data-id="tab"
           id="prt"
           role="tab"
-          tabindex="0"
+          tabindex="-1"
           type="button"
         >
           <span
@@ -113,7 +113,7 @@ exports[`it renders 1`] = `
         </button>
       </div>
       <span
-        class="PrivateTabIndicator-root-61 PrivateTabIndicator-colorSecondary-63 MuiTabs-indicator tabs-indicator-34"
+        class="PrivateTabIndicator-root-13 PrivateTabIndicator-colorSecondary-15 MuiTabs-indicator tabs-indicator-10"
         style="left: 0px; width: 0px;"
       />
     </div>
