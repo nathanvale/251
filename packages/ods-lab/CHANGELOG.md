@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.26.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.25.0...@origin-digital/ods-lab@0.26.0) (2020-07-28)
+
+
+### Features
+
+* **textcontextprovider:** new component ([ba6268a](https://bitbucket.orgn.io/od/origin-ui/commits/ba6268a0c353f6d61cd9424474f1994d3ada2af7))
+
+
+
+
+
 # [0.25.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.24.0...@origin-digital/ods-lab@0.25.0) (2020-07-24)
 
 
