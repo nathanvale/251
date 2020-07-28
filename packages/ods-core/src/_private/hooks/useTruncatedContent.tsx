@@ -3,9 +3,9 @@ import { Box, BoxProps } from "@origin-digital/ods-core";
 import { useTruncateStyles } from "@origin-digital/ods-typography";
 
 interface UseTruncatedContentProps {
-  truncate: boolean;
   children: React.ReactNode;
   display?: BoxProps["display"];
+  truncate?: boolean;
 }
 
 /**

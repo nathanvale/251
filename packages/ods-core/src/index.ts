@@ -61,6 +61,8 @@ import { TableCell } from "./TableCell/TableCell";
 import { TableHead } from "./TableHead/TableHead";
 import { TableRow } from "./TableRow/TableRow";
 import { Text } from "./Text/Text";
+import { TextContextProvider } from "./Text/TextContextProvider";
+import { useTextStyles } from "./Text/useTextStyles";
 import { TextLink } from "./TextLink/TextLink";
 import { TextAreaField } from "./TextAreaField/TextAreaField";
 import { TextField } from "./TextField/TextField";
@@ -123,6 +125,7 @@ export type TableCellProps = import("./TableCell/TableCell").TableCellProps;
 export type TableHeadProps = import("./TableHead/TableHead").TableHeadProps;
 export type TableRowProps = import("./TableRow/TableRow").TableRowProps;
 export type TextProps = import("./Text/Text").TextProps;
+export type TextContextProviderProps = import("./Text/TextContextProvider").TextContextProviderProps;
 export type TextAreaFieldProps = import("./TextAreaField/TextAreaField").TextAreaFieldProps;
 export type TextFieldProps = import("./TextField/TextField").TextFieldProps;
 export type TextFieldBaseProps = import("./TextFieldBase/TextFieldBase").TextFieldBaseProps;
@@ -186,6 +189,7 @@ export {
   TableHead,
   TableRow,
   Text,
+  TextContextProvider,
   TextLink,
   TextAreaField,
   TextField,
@@ -194,6 +198,7 @@ export {
   TrackedLink,
   TrackingDisable,
   TrackingProvider,
+  useTextStyles,
 };
 
 export const Components = {
@@ -249,6 +254,7 @@ export const Components = {
   TableHead,
   TableRow,
   Text,
+  TextContextProvider,
   TextAreaField,
   TextField,
   TextFieldBase,

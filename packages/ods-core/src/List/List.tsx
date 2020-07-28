@@ -1,15 +1,13 @@
 import styled, { css } from "styled-components";
-import React, { useMemo } from "react";
-import {
-  RequiredWithoutChildren,
-  OptionalTrackableProps,
-} from "@origin-digital/ods-types/";
+import React from "react";
+import { OptionalTrackableProps } from "@origin-digital/ods-types/";
 import { style, get } from "styled-system";
 import { cssLengthToString } from "@origin-digital/ods-helpers";
-import { TextProps, useTextStyles } from "../Text/Text";
+import { TextProps } from "../Text/Text";
 import { Stack, StackProps } from "../Stack/Stack";
 import { CounterContainer, CounterLabel, Counter } from "../ListItem/ListItem";
-import { TextContext } from "../Text/TextContext";
+import { TextContextProvider, UseTextProps } from "../Text/TextContextProvider";
+import { useTextStylesFromContext } from "../Text/useTextStyles";
 
 type ULType = "disc" | "circle";
 type OLType =
@@ -20,12 +18,15 @@ type OLType =
   | "upper-roman"
   | "decimal-stylised";
 
-const listDefaultProps: RequiredWithoutChildren<ListProps> = {
+const textContextDefaultProps = {
   variant: "body",
-  space: ["small", "medium"],
   tone: "neutral",
-  type: "disc",
   weight: "regular",
+} as const;
+
+const listInnerDefaultProps: Pick<ListProps, "space" | "type" | "data-id"> = {
+  space: ["small", "medium"],
+  type: "disc",
   "data-id": "list",
 };
 
@@ -108,7 +109,7 @@ const StylisedList = styled(Stack)<{
       counter-increment: listCounter;
       align-items: flex-end;
       ${Counter} {
-      border-radius: none;
+      border-radius: 0;
       background: none;
       display: flex;
       align-items: flex-start;
@@ -148,41 +149,44 @@ const StylisedList = styled(Stack)<{
   }
 `;
 
-export const List = ({
+type ListInnerProps = Omit<ListProps, keyof UseTextProps>;
+
+const ListInner = ({
   children,
-  variant = listDefaultProps.variant,
-  space = listDefaultProps.space,
-  tone = listDefaultProps.tone,
-  type = listDefaultProps.type,
-  weight = listDefaultProps.weight,
+  space = listInnerDefaultProps.space,
+  type = listInnerDefaultProps.type,
   "data-id": dataId,
-}: ListProps) => {
-  // Prevent re-renders when context values haven't changed
-  const textContextValue = useMemo(
-    () => ({
-      tone,
-      weight,
-      variant,
-    }),
-    [tone, weight, variant]
-  );
-  const className = useTextStyles({ weight, tone, variant });
+}: ListInnerProps) => {
+  const { className, variant } = useTextStylesFromContext();
+
   const component = type === "circle" || type === "disc" ? "ul" : "ol";
+
   return (
-    <TextContext.Provider value={textContextValue}>
-      <StylisedList
-        className={className}
-        component={component}
-        data-id={dataId}
-        space={space}
-        variant={variant}
-        type={type}
-      >
-        {children}
-      </StylisedList>
-    </TextContext.Provider>
+    <StylisedList
+      className={className}
+      component={component}
+      data-id={dataId}
+      space={space}
+      variant={variant as ListProps["variant"]}
+      type={type}
+    >
+      {children}
+    </StylisedList>
   );
 };
 
-List.defaultProps = listDefaultProps;
+export const List = ({ variant, tone, weight, ...others }: ListProps) => {
+  return (
+    <TextContextProvider
+      tone={tone}
+      variant={variant}
+      weight={weight}
+      defaults={textContextDefaultProps}
+    >
+      <ListInner {...others} />
+    </TextContextProvider>
+  );
+};
+
+List.defaultProps = listInnerDefaultProps;
 List.displayName = "List";
