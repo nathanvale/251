@@ -11,7 +11,7 @@ import {
   useLinkResetStyles,
   getTypographyForVariant,
 } from "@origin-digital/ods-typography";
-import { TextContext } from "../Text/TextContext";
+import { TextContext } from "../Text/TextContextProvider";
 import { HeadingContext } from "../Heading/HeadingContext";
 import { Box } from "../Box/Box";
 

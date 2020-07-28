@@ -87,7 +87,7 @@ exports[`it renders a List 1`] = `
 }
 
 .c0.c0.c0 li .c4 .c5 {
-  border-radius: none;
+  border-radius: 0;
   background: none;
   display: -webkit-box;
   display: -webkit-flex;

@@ -2619,6 +2619,46 @@ exports[`TextAreaField 1`] = `
 }
 `;
 
+exports[`TextContextProvider 1`] = `
+{
+  children?: ReactNode
+  defaults?: {
+    tone?: 
+      | "critical"
+      | "neutral"
+      | "neutralDark"
+      | "neutralLight"
+      | "positive"
+    variant: 
+      | "body"
+      | "body-small"
+      | "caption"
+      | "overline-text"
+      | "subtitle"
+      | "subtitle-small"
+    weight: 
+      | "medium"
+      | "regular"
+  }
+  tone?: 
+    | "critical"
+    | "neutral"
+    | "neutralDark"
+    | "neutralLight"
+    | "positive"
+  variant?: 
+    | "body"
+    | "body-small"
+    | "caption"
+    | "overline-text"
+    | "subtitle"
+    | "subtitle-small"
+  weight?: 
+    | "medium"
+    | "regular"
+}
+`;
+
 exports[`TextField 1`] = `
 {
   aria-describedby?: string
@@ -2757,6 +2797,27 @@ exports[`TrackingProvider 1`] = `
 {
   children: ReactNode
   onTrackingCapture: TrackingEventHandler
+}
+`;
+
+exports[`useTextStyles 1`] = `
+{
+  tone?: 
+    | "critical"
+    | "neutral"
+    | "neutralDark"
+    | "neutralLight"
+    | "positive"
+  variant: 
+    | "body"
+    | "body-small"
+    | "caption"
+    | "overline-text"
+    | "subtitle"
+    | "subtitle-small"
+  weight: 
+    | "medium"
+    | "regular"
 }
 `;
 

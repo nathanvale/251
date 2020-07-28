@@ -3,9 +3,8 @@ import { TextLinkRenderProps } from "@origin-digital/ods-types";
 import { useLinkResetStyles } from "@origin-digital/ods-typography";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import clsx from "clsx";
-import { TextContext } from "../Text/TextContext";
+import { TextContext, UseTextProps } from "../Text/TextContextProvider";
 import { HeadingContext } from "../Heading/HeadingContext";
-import { UseTextProps } from "../Text/Text";
 
 export interface TextLinkRendererProps {
   children: (renderProps: TextLinkRenderProps) => ReactElement;

@@ -1,5 +1,4 @@
-import React, { ReactNode, useMemo } from "react";
-import clsx from "clsx";
+import React, { ReactNode } from "react";
 import styled from "styled-components";
 import { BoxProps, Box } from "@origin-digital/ods-core";
 import {
@@ -7,24 +6,11 @@ import {
   TextToneVariants,
   TypographyWeightVariants,
 } from "@origin-digital/ods-types";
-import {
-  useBasekickStyles,
-  useToneStyles,
-  useWeightStyles,
-  useStrongStyles,
-} from "@origin-digital/ods-typography";
-import {
-  useCheckTypographyBackground,
-  useTruncatedContent,
-} from "../_private/hooks";
+import { useTruncatedContent } from "../_private/hooks";
 
-import { TextContext } from "./TextContext";
+import { TextContextProvider, UseTextProps } from "./TextContextProvider";
 
-export interface UseTextProps {
-  mediumWeight?: boolean;
-  variant?: TextVariants;
-  tone?: TextToneVariants;
-}
+import { useTextStylesFromContext } from "./useTextStyles";
 
 export interface TextProps {
   children?: ReactNode;
@@ -37,52 +23,29 @@ export interface TextProps {
   component?: BoxProps["component"];
 }
 
-interface UseTextStylesProps {
-  weight: Exclude<TypographyWeightVariants, "bold">;
-  tone?: TextToneVariants;
-  variant: TextVariants;
-}
-
-const defaultWeight = "regular";
-const defaultVariant = "body";
-
-export function useTextStyles(props: UseTextStylesProps) {
-  const { tone = "neutral", weight, variant } = props;
-  useCheckTypographyBackground();
-  const basekickStyles = useBasekickStyles({ variant });
-  const toneStyles = useToneStyles({ tone });
-  const weightStyles = useWeightStyles(weight);
-  const strongStyles = useStrongStyles("medium");
-  return clsx(basekickStyles, toneStyles, weightStyles, strongStyles);
-}
+const defaultProps = {
+  "data-id": "text",
+  component: "span",
+  align: "left",
+  truncate: false,
+} as Partial<TextProps>;
 
 const Container = styled<BoxProps>(Box)`
   max-width: 100%;
 `;
 
-export const Text = (props: TextProps) => {
+type TextInnerProps = Omit<TextProps, keyof UseTextProps>;
+
+export const TextInner = (props: TextInnerProps) => {
   const {
-    children,
-    component = "span",
-    variant = defaultVariant,
-    truncate = false,
     align,
-    weight = defaultWeight,
-    tone,
+    children,
+    component = defaultProps.component,
     "data-id": dataId,
+    truncate = defaultProps.truncate,
   } = props;
 
-  // Prevent re-renders when context values haven't changed
-  const textContextValue = useMemo(
-    () => ({
-      tone,
-      weight,
-      variant,
-    }),
-    [tone, weight, variant]
-  );
-
-  const className = useTextStyles({ weight, tone, variant });
+  const { className } = useTextStylesFromContext();
 
   const content = useTruncatedContent({
     children,
@@ -90,27 +53,25 @@ export const Text = (props: TextProps) => {
   });
 
   return (
-    <TextContext.Provider value={textContextValue}>
-      <Container
-        data-id={dataId}
-        className={className}
-        component={component}
-        textAlign={align}
-      >
-        {content}
-      </Container>
-    </TextContext.Provider>
+    <Container
+      data-id={dataId}
+      className={className}
+      component={component}
+      textAlign={align}
+    >
+      {content}
+    </Container>
   );
 };
 
-Text.defaultProps = {
-  "data-id": "text",
-  component: "span",
-  variant: defaultVariant,
-  tone: "neutral",
-  weight: defaultWeight,
-  align: "left",
-  truncate: false,
+export const Text = ({ tone, variant, weight, ...others }: TextProps) => {
+  return (
+    <TextContextProvider tone={tone} variant={variant} weight={weight}>
+      <TextInner {...others} />
+    </TextContextProvider>
+  );
 };
+
+Text.defaultProps = defaultProps;
 
 Text.displayName = "Text";

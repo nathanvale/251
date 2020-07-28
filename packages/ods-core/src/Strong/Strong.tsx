@@ -1,6 +1,6 @@
 import React, { ReactNode, useContext } from "react";
 import { useWeightStyles } from "@origin-digital/ods-typography";
-import { TextContext } from "../Text/TextContext";
+import { TextContext } from "../Text/TextContextProvider";
 
 export interface StrongProps {
   children: ReactNode;
