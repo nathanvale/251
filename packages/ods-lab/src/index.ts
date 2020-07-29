@@ -7,10 +7,6 @@
 
 // PLEASE EXPORT LAB UI COMPONENTS ONLY
 
-export { Alert } from "./Alert/Alert";
-export type AlertProps = import("./Alert/Alert").AlertProps;
-export { AlertTitle } from "./Alert/AlertTitle";
-export type AlertTitleProps = import("./Alert/AlertTitle").AlertTitleProps;
 export { AppBar } from "./AppBar/AppBar";
 export type AppBarProps = import("./AppBar/AppBar").AppBarProps;
 export { Breadcrumb } from "./Breadcrumb/Breadcrumb";

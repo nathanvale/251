@@ -31,6 +31,7 @@ export { default as IconInfo } from "./Info";
 export { default as IconLaunch } from "./Launch";
 export { default as IconLocalFlorist } from "./LocalFlorist";
 export { default as IconLocalPrintshop } from "./LocalPrintshop";
+export { default as IconLocalOffer } from "./LocalOffer";
 export { default as IconLock } from "./Lock";
 export { default as IconLockOpen } from "./LockOpen";
 export { default as IconMenu } from "./Menu";

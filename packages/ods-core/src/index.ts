@@ -10,6 +10,8 @@
 // Core
 import { Accordion } from "./Accordion/Accordion";
 import { AccordionGroup } from "./AccordionGroup/AccordionGroup";
+import { Alert } from "./Alert/Alert";
+import { AlertBanner } from "./AlertBanner/AlertBanner";
 import { Box } from "./Box/Box";
 import { Button } from "./Button/Button";
 import { Card } from "./Card/Card";
@@ -74,6 +76,8 @@ import { TrackingProvider } from "./TrackingProvider/TrackingProvider";
 
 export type AccordionProps = import("./Accordion/Accordion").AccordionProps;
 export type AccordionGroupProps = import("./AccordionGroup/AccordionGroup").AccordionGroupProps;
+export type AlertProps = import("./Alert/Alert").AlertProps;
+export type AlertBannerProps = import("./AlertBanner/AlertBanner").AlertBannerProps;
 export type BoxProps = import("./Box/Box").BoxProps;
 export type ButtonProps = import("./Button/Button").ButtonProps;
 export type CardProps = import("./Card/Card").CardProps;
@@ -138,6 +142,8 @@ export type TrackingProviderProps = import("./TrackingProvider/TrackingProvider"
 export {
   Accordion,
   AccordionGroup,
+  Alert,
+  AlertBanner,
   Box,
   Button,
   Card,
@@ -204,6 +210,8 @@ export {
 export const Components = {
   Accordion,
   AccordionGroup,
+  Alert,
+  AlertBanner,
   Box,
   Button,
   Card,
