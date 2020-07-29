@@ -1,6 +1,7 @@
 /* eslint-disable react/display-name */
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
+import { widthValueMap } from "./Column";
 import { Columns, Column, ColumnProps, Placeholder, Stack } from "..";
 
 export const docs: ComponentDocs<ColumnProps> = {
@@ -17,10 +18,13 @@ export const docs: ComponentDocs<ColumnProps> = {
       Code: () => (
         <Columns space="small">
           <Column>
-            <Placeholder />
+            <Placeholder height={60} />
           </Column>
           <Column>
-            <Placeholder />
+            <Placeholder height={60} />
+          </Column>
+          <Column>
+            <Placeholder height={60} />
           </Column>
         </Columns>
       ),
@@ -30,23 +34,20 @@ export const docs: ComponentDocs<ColumnProps> = {
         label: "Defining Column Widths",
         description: `Bootstrap style 12 column layout can be achieved by passing in column widths.`,
         Code: () => (
-          <Columns space="small">
-            <Column width="1/12">
-              <Placeholder />
-            </Column>
-            <Column width="1/6">
-              <Placeholder />
-            </Column>
-            <Column width="1/6">
-              <Placeholder />
-            </Column>
-            <Column width="1/12">
-              <Placeholder />
-            </Column>
-            <Column width="1/2">
-              <Placeholder />
-            </Column>
-          </Columns>
+          <Stack space="medium">
+            {Object.keys(widthValueMap)
+              .filter((key) => key !== "flex")
+              .map((width) => (
+                <Columns space="small" key={width}>
+                  <Column width={width as any}>
+                    <Placeholder height={60} label={width} />
+                  </Column>
+                  <Column>
+                    <Placeholder height={60} />
+                  </Column>
+                </Columns>
+              ))}
+          </Stack>
         ),
       },
       {
@@ -57,9 +58,6 @@ export const docs: ComponentDocs<ColumnProps> = {
               <Placeholder />
             </Column>
             <Column width="1/3">
-              <Placeholder />
-            </Column>
-            <Column width="1/4">
               <Placeholder />
             </Column>
             <Column width="content">

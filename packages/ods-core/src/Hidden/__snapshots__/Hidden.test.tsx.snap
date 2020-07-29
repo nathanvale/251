@@ -54,7 +54,7 @@ exports[`it hides components above the sm breakpoint 1`] = `
 
 .c1 {
   width: 100%;
-  min-width: 40px;
+  min-width: 10px;
   height: 120px;
   border: 2px solid rgba(51,51,51,0.3);
 }
@@ -160,7 +160,7 @@ exports[`it hides components below the md breakpoint 1`] = `
 
 .c1 {
   width: 100%;
-  min-width: 40px;
+  min-width: 10px;
   height: 120px;
   border: 2px solid rgba(51,51,51,0.3);
 }
@@ -360,7 +360,7 @@ exports[`it renders a Hidden 1`] = `
 
 .c1 {
   width: 100%;
-  min-width: 40px;
+  min-width: 10px;
   height: 120px;
   border: 2px solid rgba(51,51,51,0.3);
 }

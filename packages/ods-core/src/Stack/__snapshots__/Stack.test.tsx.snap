@@ -87,7 +87,7 @@ exports[`It adds dividers 1`] = `
 
 .c3 {
   width: 100%;
-  min-width: 40px;
+  min-width: 10px;
   height: 120px;
   border: 2px solid rgba(51,51,51,0.3);
 }
@@ -287,7 +287,7 @@ exports[`It can distribute space 1`] = `
 
 .c3 {
   width: 100%;
-  min-width: 40px;
+  min-width: 10px;
   height: 120px;
   border: 2px solid rgba(51,51,51,0.3);
 }
@@ -487,7 +487,7 @@ exports[`It can distribute space with null children 1`] = `
 
 .c3 {
   width: 100%;
-  min-width: 40px;
+  min-width: 10px;
   height: 120px;
   border: 2px solid rgba(51,51,51,0.3);
 }
@@ -717,7 +717,7 @@ exports[`It can right-align components 1`] = `
 
 .c3 {
   width: 120px;
-  min-width: 40px;
+  min-width: 10px;
   height: 120px;
   border: 2px solid rgba(51,51,51,0.3);
 }
@@ -884,7 +884,7 @@ exports[`It can stack 1`] = `
 
 .c3 {
   width: 100%;
-  min-width: 40px;
+  min-width: 10px;
   height: 120px;
   border: 2px solid rgba(51,51,51,0.3);
 }

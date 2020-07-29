@@ -70,7 +70,7 @@ const OuterContainer = styled(Box)<OuterContainerProps>`
   ${base}
   ${negativeMarginTop}
 `;
-const InnerContainer = styled(Box)<InnerContainerProps>`
+export const InnerContainer = styled(Box)<InnerContainerProps>`
   ${negativeMarginLeft}
 `;
 const ChildContainer = styled(Box)`

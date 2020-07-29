@@ -42,6 +42,11 @@ export function resolveCollapsibleAlignmentProps({
   ] = normaliseResponsiveProp(alignXToFlexAlign(alignX) || "flex-start");
 
   return {
+    collapseXs,
+    collapseSm,
+    collapseMd,
+    collapseLg,
+    collapseXl,
     collapsibleAlignmentProps: {
       display: {
         xs: collapseXs ? "block" : "flex",
