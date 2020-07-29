@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.52.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.51.0...@origin-digital/ods-core@0.52.0) (2020-07-29)
+
+
+### Features
+
+* refactor columns ([432a4ba](https://bitbucket.orgn.io/od/origin-ui/commits/432a4bae05050a2424243183e8d9ffea940bd2b3))
+
+
+
+
+
 # [0.51.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.50.0...@origin-digital/ods-core@0.51.0) (2020-07-29)
 
 
