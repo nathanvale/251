@@ -1328,21 +1328,26 @@ exports[`Column 1`] = `
 
 exports[`Columns 1`] = `
 {
-  alignY?: 
+  alignX?: ResponsiveProp<
+    | "center"
+    | "left"
+    | "right"
+  >
+  alignY?: ResponsiveProp<
     | "bottom"
     | "center"
     | "top"
+  >
   children: 
+    | (ReactElement<ColumnProps, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)> | null)[]
     | ReactElement<ColumnProps, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>
-    | ReactElement<ColumnProps, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>[]
   collapseBelow?: 
     | "lg"
     | "md"
     | "sm"
     | "xl"
-    | "xs"
   data-id?: string
-  space?: ResponsiveProp<
+  space: ResponsiveProp<
     | "large"
     | "medium"
     | "none"

@@ -8,11 +8,44 @@ export const docs: ComponentDocs<ColumnsProps> = {
   componentName: "Columns",
   description:
     "Columns is a low-level atomic layout component. Its main concerns are laying out columns in a 12 grid layout and responsively stacking them at a set breakpoint. Open the examples in Playroom to see the responsive behaviour of this component.",
-  propDescriptions: {},
+  propDescriptions: {
+    alignX: "This is a responsive prop which aligns the children horizontally.",
+    alignY: "This is a responsive prop which aligns the children vertically.",
+    collapseBelow:
+      "Switch from horizontal layout to vertical below the selected breakpoint.",
+    space:
+      "The responsive prop T-shirt sized space between all items, spanning multiple lines if needed.",
+  },
   migrationGuide: false,
   examples: {
     default: {},
     additional: [
+      {
+        label: "No space",
+        Code: () => (
+          <Columns space="none">
+            <Column>
+              <Placeholder height={60} />
+            </Column>
+            <Column>
+              <Placeholder height={60} />
+            </Column>
+          </Columns>
+        ),
+      },
+      {
+        label: "Custom space, small",
+        Code: () => (
+          <Columns space="small">
+            <Column>
+              <Placeholder height={60} />
+            </Column>
+            <Column>
+              <Placeholder height={60} />
+            </Column>
+          </Columns>
+        ),
+      },
       {
         label: "Responsively Collapsing Columns to a Stack",
         description:
@@ -82,16 +115,59 @@ export const docs: ComponentDocs<ColumnsProps> = {
         ),
       },
       {
-        label: "Vertical Alignment",
+        label: "Vertical alignment to center",
+        description:
+          "Use alignY to align the child Column components top, center (defalut) or bottom",
+        Code: () => (
+          <Columns space="small" alignY="center">
+            <Column>
+              <Placeholder height={60} />
+            </Column>
+            <Column>
+              <Placeholder height={100} />
+            </Column>
+          </Columns>
+        ),
+      },
+      {
+        label: "Vertical alignment to bottom",
         description:
           "Use alignY to align the child Column components top, center (defalut) or bottom",
         Code: () => (
           <Columns space="small" alignY="bottom">
             <Column>
-              <Placeholder height="400px" />
+              <Placeholder height={60} />
             </Column>
             <Column>
-              <Placeholder />
+              <Placeholder height={100} />
+            </Column>
+          </Columns>
+        ),
+      },
+      {
+        label:
+          "Responsive alignment ( top on mobile, center on desktop upwards)'",
+        Code: () => (
+          <Columns space="small" alignY={["top", "center"]}>
+            <Column>
+              <Placeholder height={60} />
+            </Column>
+            <Column>
+              <Placeholder height={100} />
+            </Column>
+          </Columns>
+        ),
+      },
+      {
+        label: "Horizontal alignment",
+        Code: () => (
+          <Columns alignX={["center", "right"]} space="small">
+            <Column width="content">
+              <Placeholder label="Content" />
+            </Column>
+            <Column width="1/2">&nbsp;</Column>
+            <Column width="content">
+              <Placeholder label="Content" />
             </Column>
           </Columns>
         ),

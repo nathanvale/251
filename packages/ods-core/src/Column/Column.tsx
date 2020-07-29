@@ -1,16 +1,10 @@
-/* eslint-disable no-eval */
 import React, { ReactNode, useContext } from "react";
 import styled, { css } from "styled-components";
-import {
-  mapSpaceAliasToIndex,
-  getRespValForBreakpoint,
-} from "@origin-digital/ods-helpers";
-import { BreakpointVariants } from "@origin-digital/ods-types";
-import { ColumnsContext } from "../Columns/Columns";
+import { OptionalTrackableProps } from "@origin-digital/ods-types";
 import { Box } from "../Box/Box";
-import { BoxDebug } from "../_private/components/BoxDebug/BoxDebug";
+import { ColumnsContext } from "../Columns/Columns";
 
-export interface ColumnProps {
+export interface ColumnProps extends OptionalTrackableProps {
   children?: ReactNode;
   width?:
     | "content"
@@ -26,10 +20,9 @@ export interface ColumnProps {
     | "7/12"
     | "11/12"
     | "flex";
-  "data-id"?: string;
 }
 
-const widthValueMap = {
+export const widthValueMap = {
   "1/2": 1 / 2,
   "1/3": 1 / 3,
   "2/3": 2 / 3,
@@ -41,72 +34,72 @@ const widthValueMap = {
   "5/12": 5 / 12,
   "7/12": 7 / 12,
   "11/12": 11 / 12,
+  flex: 1,
 };
 
 const OuterStyledBox = styled(Box)<{
   columnWidth: ColumnProps["width"];
-  collapseBelow?: BreakpointVariants;
 }>`
   min-width: 0;
   ${(p) => (p.columnWidth === "content" ? "flex-shrink: 0;" : undefined)}
   ${(p) =>
-    p.columnWidth && p.columnWidth !== "content" && p.columnWidth !== "flex"
+    p.columnWidth && p.columnWidth !== "content"
       ? css`
           flex: 0 0 ${widthValueMap[p.columnWidth] * 100}%;
         `
-      : undefined}
-  ${(p) =>
-    p.collapseBelow &&
-    `
-      @media (max-width: ${p.theme.breakpoints[p.collapseBelow]}) {
-        width: 100%;
-      }
-    `}
+      : null}
 `;
 
 const InnerStyledBox = styled(Box)`
-  div:first-child > & {
+  ${OuterStyledBox}:first-child > & {
     padding-top: 0;
   }
 `;
 
-export const Column = ({
-  children,
-  width = "flex",
-  "data-id": dataId,
-}: ColumnProps) => {
-  const { collapseBelow, space } = useContext(ColumnsContext);
-  const spaceIndex = space && mapSpaceAliasToIndex({ space });
+export const Column = ({ children, width, "data-id": dataId }: ColumnProps) => {
+  const {
+    collapseXs,
+    collapseSm,
+    collapseMd,
+    collapseLg,
+    collapseXl,
+    xsSpace,
+    smSpace,
+    mdSpace,
+    lgSpace,
+    xlSpace,
+    collapsibleAlignmentChildProps,
+  } = useContext(ColumnsContext);
 
   return (
     <OuterStyledBox
       data-id={dataId}
-      collapseBelow={collapseBelow}
-      columnWidth={width}
       width={width !== "content" ? "full" : undefined}
+      columnWidth={width}
     >
       <InnerStyledBox
-        height="full"
-        paddingLeft={
-          collapseBelow
-            ? getRespValForBreakpoint({
-                breakpoint: collapseBelow,
-                valOnBelow: "none",
-                valOnAbove: spaceIndex,
-              })
-            : spaceIndex
-        }
+        paddingLeft={{
+          xs: collapseXs ? "none" : xsSpace,
+          sm: collapseSm ? "none" : smSpace,
+          md: collapseMd ? "none" : mdSpace,
+          lg: collapseLg ? "none" : lgSpace,
+          xl: collapseXl ? "none" : xlSpace,
+        }}
         paddingTop={
-          collapseBelow
-            ? getRespValForBreakpoint({
-                breakpoint: collapseBelow,
-                valOnBelow: spaceIndex,
-                valOnAbove: "none",
-              })
-            : "none"
+          collapseXs || collapseSm || collapseMd || collapseLg || collapseXl
+            ? {
+                xs: collapseXs ? xsSpace : "none",
+                sm: collapseSm ? smSpace : "none",
+                md: collapseMd ? mdSpace : "none",
+                lg: collapseLg ? lgSpace : "none",
+                xl: collapseXl ? xlSpace : "none",
+              }
+            : undefined
         }
+        height="full"
+        {...collapsibleAlignmentChildProps}
       >
-        <BoxDebug>{children}</BoxDebug>
+        {children}
       </InnerStyledBox>
     </OuterStyledBox>
   );
@@ -114,7 +107,6 @@ export const Column = ({
 
 Column.defaultProps = {
   "data-id": "column",
-  width: "flex",
 };
 
 Column.displayName = "Column";

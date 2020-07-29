@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`it correctly allocates required width for "content" 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -13,14 +13,20 @@ exports[`it correctly allocates required width for "content" 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -12px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
-.c9 {
+.c11 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -31,7 +37,7 @@ exports[`it correctly allocates required width for "content" 1`] = `
   width: 100%;
 }
 
-.c4 {
+.c6 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -39,22 +45,16 @@ exports[`it correctly allocates required width for "content" 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  padding-top: 0;
+  display: block;
   padding-left: 12px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   height: 100%;
 }
 
-.c2 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-.c6 {
+.c8 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -79,7 +79,17 @@ exports[`it correctly allocates required width for "content" 1`] = `
   overflow: hidden;
 }
 
-.c7 {
+.c4 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c9 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -94,148 +104,355 @@ exports[`it correctly allocates required width for "content" 1`] = `
   text-align: center;
 }
 
-.c8 {
+.c0 {
+  margin-left: -12px;
+}
+
+.c10 {
   min-width: 0;
 }
 
-.c1 {
+.c3 {
   min-width: 0;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
-div:first-child > .c3 {
+.c2:first-child > .c5 {
   padding-top: 0;
 }
 
-.c5 {
+.c7 {
   width: 100%;
-  min-width: 40px;
+  min-width: 10px;
   height: 120px;
   border: 2px solid rgba(51,51,51,0.3);
 }
 
+@media screen and (min-width:576px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c6 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c6 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c6 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c6 {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c6 {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c6 {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c6 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c6 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c6 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    margin-left: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    margin-left: -12px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c0 {
+    margin-left: -12px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c0 {
+    margin-left: -12px;
+  }
+}
+
 <div
-  class="c0"
+  class="c0 c1"
   data-id="columns"
-  display="flex"
+  display="flex,flex,flex,flex,flex"
 >
   <div
-    class="c1 c2"
+    class="c2 c3 c4"
     data-id="column"
   >
     <div
-      class="c3 c4"
+      class="c5 c6"
+      display="block,block,block,block,block"
       height="full"
     >
       <div
-        class="c2"
+        class="c7 c8"
+        data-id="placeholder"
+        display="flex"
+        height="120"
+        overflow="hidden"
+        shape="rectangle"
+        width="100%"
       >
         <div
-          class="c5 c6"
-          data-id="placeholder"
-          display="flex"
-          height="120"
-          overflow="hidden"
-          shape="rectangle"
-          width="100%"
+          class="c9"
+          style="margin-top: 2px;"
         >
-          <div
-            class="c7"
-            style="margin-top: 2px;"
-          >
-            This is content width
-          </div>
+          This is content width
         </div>
       </div>
     </div>
   </div>
   <div
-    class="c8 c9"
+    class="c2 c10 c11"
     data-id="column"
     width="full"
   >
     <div
-      class="c3 c4"
+      class="c5 c6"
+      display="block,block,block,block,block"
       height="full"
     >
       <div
-        class="c2"
+        class="c7 c8"
+        data-id="placeholder"
+        display="flex"
+        height="120"
+        overflow="hidden"
+        shape="rectangle"
+        width="100%"
       >
-        <div
-          class="c5 c6"
-          data-id="placeholder"
-          display="flex"
-          height="120"
-          overflow="hidden"
-          shape="rectangle"
-          width="100%"
+        <svg
+          style="width: 100%; height: 100%; position: absolute;"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            style="width: 100%; height: 100%; position: absolute;"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-              x1="0"
-              x2="100%"
-              y1="0"
-              y2="100%"
-            />
-            <line
-              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-              x1="100%"
-              x2="0"
-              y1="0"
-              y2="100%"
-            />
-          </svg>
-        </div>
+          <line
+            style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+            x1="0"
+            x2="100%"
+            y1="0"
+            y2="100%"
+          />
+          <line
+            style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+            x1="100%"
+            x2="0"
+            y1="0"
+            y2="100%"
+          />
+        </svg>
       </div>
     </div>
   </div>
   <div
-    class="c8 c9"
+    class="c2 c10 c11"
     data-id="column"
     width="full"
   >
     <div
-      class="c3 c4"
+      class="c5 c6"
+      display="block,block,block,block,block"
       height="full"
     >
       <div
-        class="c2"
+        class="c7 c8"
+        data-id="placeholder"
+        display="flex"
+        height="120"
+        overflow="hidden"
+        shape="rectangle"
+        width="100%"
       >
-        <div
-          class="c5 c6"
-          data-id="placeholder"
-          display="flex"
-          height="120"
-          overflow="hidden"
-          shape="rectangle"
-          width="100%"
+        <svg
+          style="width: 100%; height: 100%; position: absolute;"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            style="width: 100%; height: 100%; position: absolute;"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-              x1="0"
-              x2="100%"
-              y1="0"
-              y2="100%"
-            />
-            <line
-              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-              x1="100%"
-              x2="0"
-              y1="0"
-              y2="100%"
-            />
-          </svg>
-        </div>
+          <line
+            style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+            x1="0"
+            x2="100%"
+            y1="0"
+            y2="100%"
+          />
+          <line
+            style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+            x1="100%"
+            x2="0"
+            y1="0"
+            y2="100%"
+          />
+        </svg>
       </div>
     </div>
   </div>
@@ -243,7 +460,7 @@ div:first-child > .c3 {
 `;
 
 exports[`it correctly sets width for proportions 1/3 and 2/3 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -255,22 +472,17 @@ exports[`it correctly sets width for proportions 1/3 and 2/3 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -12px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-}
-
-.c2 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  width: 100%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
@@ -281,12 +493,10 @@ exports[`it correctly sets width for proportions 1/3 and 2/3 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  padding-top: 0;
-  padding-left: 12px;
-  height: 100%;
+  width: 100%;
 }
 
-.c5 {
+.c6 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -294,9 +504,16 @@ exports[`it correctly sets width for proportions 1/3 and 2/3 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  display: block;
+  padding-left: 12px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  height: 100%;
 }
 
-.c7 {
+.c8 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -321,7 +538,7 @@ exports[`it correctly sets width for proportions 1/3 and 2/3 1`] = `
   overflow: hidden;
 }
 
-.c8 {
+.c9 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -336,94 +553,304 @@ exports[`it correctly sets width for proportions 1/3 and 2/3 1`] = `
   text-align: center;
 }
 
-.c1 {
+.c0 {
+  margin-left: -12px;
+}
+
+.c3 {
   min-width: 0;
   -webkit-flex: 0 0 33.33333333333333%;
   -ms-flex: 0 0 33.33333333333333%;
   flex: 0 0 33.33333333333333%;
 }
 
-.c9 {
+.c10 {
   min-width: 0;
   -webkit-flex: 0 0 66.66666666666666%;
   -ms-flex: 0 0 66.66666666666666%;
   flex: 0 0 66.66666666666666%;
 }
 
-div:first-child > .c3 {
+.c2:first-child > .c5 {
   padding-top: 0;
 }
 
-.c6 {
+.c7 {
   width: 100%;
-  min-width: 40px;
+  min-width: 10px;
   height: 120px;
   border: 2px solid rgba(51,51,51,0.3);
 }
 
+@media screen and (min-width:576px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c6 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c6 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c6 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c6 {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c6 {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c6 {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c6 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c6 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c6 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    margin-left: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    margin-left: -12px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c0 {
+    margin-left: -12px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c0 {
+    margin-left: -12px;
+  }
+}
+
 <div
-  class="c0"
+  class="c0 c1"
   data-id="columns"
-  display="flex"
+  display="flex,flex,flex,flex,flex"
 >
   <div
-    class="c1 c2"
+    class="c2 c3 c4"
     data-id="column"
     width="full"
   >
     <div
-      class="c3 c4"
+      class="c5 c6"
+      display="block,block,block,block,block"
       height="full"
     >
       <div
-        class="c5"
+        class="c7 c8"
+        data-id="placeholder"
+        display="flex"
+        height="120"
+        overflow="hidden"
+        shape="rectangle"
+        width="100%"
       >
         <div
-          class="c6 c7"
-          data-id="placeholder"
-          display="flex"
-          height="120"
-          overflow="hidden"
-          shape="rectangle"
-          width="100%"
+          class="c9"
+          style="margin-top: 2px;"
         >
-          <div
-            class="c8"
-            style="margin-top: 2px;"
-          >
-            This is 1/3
-          </div>
+          This is 1/3
         </div>
       </div>
     </div>
   </div>
   <div
-    class="c9 c2"
+    class="c2 c10 c4"
     data-id="column"
     width="full"
   >
     <div
-      class="c3 c4"
+      class="c5 c6"
+      display="block,block,block,block,block"
       height="full"
     >
       <div
-        class="c5"
+        class="c7 c8"
+        data-id="placeholder"
+        display="flex"
+        height="120"
+        overflow="hidden"
+        shape="rectangle"
+        width="100%"
       >
         <div
-          class="c6 c7"
-          data-id="placeholder"
-          display="flex"
-          height="120"
-          overflow="hidden"
-          shape="rectangle"
-          width="100%"
+          class="c9"
+          style="margin-top: 2px;"
         >
-          <div
-            class="c8"
-            style="margin-top: 2px;"
-          >
-            This is 2/3
-          </div>
+          This is 2/3
         </div>
       </div>
     </div>
@@ -432,7 +859,7 @@ div:first-child > .c3 {
 `;
 
 exports[`it correctly sets width for proportions 1/12, 7/12, 1/3 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -444,22 +871,17 @@ exports[`it correctly sets width for proportions 1/12, 7/12, 1/3 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -12px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-}
-
-.c2 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  width: 100%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
@@ -470,12 +892,10 @@ exports[`it correctly sets width for proportions 1/12, 7/12, 1/3 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  padding-top: 0;
-  padding-left: 12px;
-  height: 100%;
+  width: 100%;
 }
 
-.c5 {
+.c6 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -483,9 +903,16 @@ exports[`it correctly sets width for proportions 1/12, 7/12, 1/3 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  display: block;
+  padding-left: 12px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  height: 100%;
 }
 
-.c7 {
+.c8 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -510,7 +937,7 @@ exports[`it correctly sets width for proportions 1/12, 7/12, 1/3 1`] = `
   overflow: hidden;
 }
 
-.c8 {
+.c9 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -525,132 +952,339 @@ exports[`it correctly sets width for proportions 1/12, 7/12, 1/3 1`] = `
   text-align: center;
 }
 
-.c10 {
+.c0 {
+  margin-left: -12px;
+}
+
+.c11 {
   min-width: 0;
   -webkit-flex: 0 0 33.33333333333333%;
   -ms-flex: 0 0 33.33333333333333%;
   flex: 0 0 33.33333333333333%;
 }
 
-.c1 {
+.c3 {
   min-width: 0;
   -webkit-flex: 0 0 8.333333333333332%;
   -ms-flex: 0 0 8.333333333333332%;
   flex: 0 0 8.333333333333332%;
 }
 
-.c9 {
+.c10 {
   min-width: 0;
   -webkit-flex: 0 0 41.66666666666667%;
   -ms-flex: 0 0 41.66666666666667%;
   flex: 0 0 41.66666666666667%;
 }
 
-div:first-child > .c3 {
+.c2:first-child > .c5 {
   padding-top: 0;
 }
 
-.c6 {
+.c7 {
   width: 100%;
-  min-width: 40px;
+  min-width: 10px;
   height: 120px;
   border: 2px solid rgba(51,51,51,0.3);
 }
 
+@media screen and (min-width:576px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c6 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c6 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c6 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c6 {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c6 {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c6 {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c6 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c6 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c6 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    margin-left: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    margin-left: -12px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c0 {
+    margin-left: -12px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c0 {
+    margin-left: -12px;
+  }
+}
+
 <div
-  class="c0"
+  class="c0 c1"
   data-id="columns"
-  display="flex"
+  display="flex,flex,flex,flex,flex"
 >
   <div
-    class="c1 c2"
+    class="c2 c3 c4"
     data-id="column"
     width="full"
   >
     <div
-      class="c3 c4"
+      class="c5 c6"
+      display="block,block,block,block,block"
       height="full"
     >
       <div
-        class="c5"
+        class="c7 c8"
+        data-id="placeholder"
+        display="flex"
+        height="120"
+        overflow="hidden"
+        shape="rectangle"
+        width="100%"
       >
         <div
-          class="c6 c7"
-          data-id="placeholder"
-          display="flex"
-          height="120"
-          overflow="hidden"
-          shape="rectangle"
-          width="100%"
+          class="c9"
+          style="margin-top: 2px;"
         >
-          <div
-            class="c8"
-            style="margin-top: 2px;"
-          >
-            This is 1/12
-          </div>
+          This is 1/12
         </div>
       </div>
     </div>
   </div>
   <div
-    class="c9 c2"
+    class="c2 c10 c4"
     data-id="column"
     width="full"
   >
     <div
-      class="c3 c4"
+      class="c5 c6"
+      display="block,block,block,block,block"
       height="full"
     >
       <div
-        class="c5"
+        class="c7 c8"
+        data-id="placeholder"
+        display="flex"
+        height="120"
+        overflow="hidden"
+        shape="rectangle"
+        width="100%"
       >
         <div
-          class="c6 c7"
-          data-id="placeholder"
-          display="flex"
-          height="120"
-          overflow="hidden"
-          shape="rectangle"
-          width="100%"
+          class="c9"
+          style="margin-top: 2px;"
         >
-          <div
-            class="c8"
-            style="margin-top: 2px;"
-          >
-            This is 5/12
-          </div>
+          This is 5/12
         </div>
       </div>
     </div>
   </div>
   <div
-    class="c10 c2"
+    class="c2 c11 c4"
     data-id="column"
     width="full"
   >
     <div
-      class="c3 c4"
+      class="c5 c6"
+      display="block,block,block,block,block"
       height="full"
     >
       <div
-        class="c5"
+        class="c7 c8"
+        data-id="placeholder"
+        display="flex"
+        height="120"
+        overflow="hidden"
+        shape="rectangle"
+        width="100%"
       >
         <div
-          class="c6 c7"
-          data-id="placeholder"
-          display="flex"
-          height="120"
-          overflow="hidden"
-          shape="rectangle"
-          width="100%"
+          class="c9"
+          style="margin-top: 2px;"
         >
-          <div
-            class="c8"
-            style="margin-top: 2px;"
-          >
-            This is 1/3
-          </div>
+          This is 1/3
         </div>
       </div>
     </div>
@@ -659,7 +1293,7 @@ div:first-child > .c3 {
 `;
 
 exports[`it sets width to flex by default 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -671,22 +1305,17 @@ exports[`it sets width to flex by default 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -12px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-}
-
-.c2 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  width: 100%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
@@ -697,12 +1326,10 @@ exports[`it sets width to flex by default 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  padding-top: 0;
-  padding-left: 12px;
-  height: 100%;
+  width: 100%;
 }
 
-.c5 {
+.c6 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -710,9 +1337,16 @@ exports[`it sets width to flex by default 1`] = `
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  display: block;
+  padding-left: 12px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  height: 100%;
 }
 
-.c7 {
+.c8 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -737,155 +1371,362 @@ exports[`it sets width to flex by default 1`] = `
   overflow: hidden;
 }
 
-.c1 {
+.c0 {
+  margin-left: -12px;
+}
+
+.c3 {
   min-width: 0;
 }
 
-div:first-child > .c3 {
+.c2:first-child > .c5 {
   padding-top: 0;
 }
 
-.c6 {
+.c7 {
   width: 100%;
-  min-width: 40px;
+  min-width: 10px;
   height: 120px;
   border: 2px solid rgba(51,51,51,0.3);
 }
 
+@media screen and (min-width:576px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c6 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c6 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c6 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c6 {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c6 {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c6 {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c6 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c6 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c6 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    margin-left: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    margin-left: -12px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c0 {
+    margin-left: -12px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c0 {
+    margin-left: -12px;
+  }
+}
+
 <div
-  class="c0"
+  class="c0 c1"
   data-id="columns"
-  display="flex"
+  display="flex,flex,flex,flex,flex"
 >
   <div
-    class="c1 c2"
+    class="c2 c3 c4"
     data-id="column"
     width="full"
   >
     <div
-      class="c3 c4"
+      class="c5 c6"
+      display="block,block,block,block,block"
       height="full"
     >
       <div
-        class="c5"
+        class="c7 c8"
+        data-id="placeholder"
+        display="flex"
+        height="120"
+        overflow="hidden"
+        shape="rectangle"
+        width="100%"
       >
-        <div
-          class="c6 c7"
-          data-id="placeholder"
-          display="flex"
-          height="120"
-          overflow="hidden"
-          shape="rectangle"
-          width="100%"
+        <svg
+          style="width: 100%; height: 100%; position: absolute;"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            style="width: 100%; height: 100%; position: absolute;"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-              x1="0"
-              x2="100%"
-              y1="0"
-              y2="100%"
-            />
-            <line
-              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-              x1="100%"
-              x2="0"
-              y1="0"
-              y2="100%"
-            />
-          </svg>
-        </div>
+          <line
+            style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+            x1="0"
+            x2="100%"
+            y1="0"
+            y2="100%"
+          />
+          <line
+            style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+            x1="100%"
+            x2="0"
+            y1="0"
+            y2="100%"
+          />
+        </svg>
       </div>
     </div>
   </div>
   <div
-    class="c1 c2"
+    class="c2 c3 c4"
     data-id="column"
     width="full"
   >
     <div
-      class="c3 c4"
+      class="c5 c6"
+      display="block,block,block,block,block"
       height="full"
     >
       <div
-        class="c5"
+        class="c7 c8"
+        data-id="placeholder"
+        display="flex"
+        height="120"
+        overflow="hidden"
+        shape="rectangle"
+        width="100%"
       >
-        <div
-          class="c6 c7"
-          data-id="placeholder"
-          display="flex"
-          height="120"
-          overflow="hidden"
-          shape="rectangle"
-          width="100%"
+        <svg
+          style="width: 100%; height: 100%; position: absolute;"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            style="width: 100%; height: 100%; position: absolute;"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-              x1="0"
-              x2="100%"
-              y1="0"
-              y2="100%"
-            />
-            <line
-              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-              x1="100%"
-              x2="0"
-              y1="0"
-              y2="100%"
-            />
-          </svg>
-        </div>
+          <line
+            style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+            x1="0"
+            x2="100%"
+            y1="0"
+            y2="100%"
+          />
+          <line
+            style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+            x1="100%"
+            x2="0"
+            y1="0"
+            y2="100%"
+          />
+        </svg>
       </div>
     </div>
   </div>
   <div
-    class="c1 c2"
+    class="c2 c3 c4"
     data-id="column"
     width="full"
   >
     <div
-      class="c3 c4"
+      class="c5 c6"
+      display="block,block,block,block,block"
       height="full"
     >
       <div
-        class="c5"
+        class="c7 c8"
+        data-id="placeholder"
+        display="flex"
+        height="120"
+        overflow="hidden"
+        shape="rectangle"
+        width="100%"
       >
-        <div
-          class="c6 c7"
-          data-id="placeholder"
-          display="flex"
-          height="120"
-          overflow="hidden"
-          shape="rectangle"
-          width="100%"
+        <svg
+          style="width: 100%; height: 100%; position: absolute;"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            style="width: 100%; height: 100%; position: absolute;"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-              x1="0"
-              x2="100%"
-              y1="0"
-              y2="100%"
-            />
-            <line
-              style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
-              x1="100%"
-              x2="0"
-              y1="0"
-              y2="100%"
-            />
-          </svg>
-        </div>
+          <line
+            style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+            x1="0"
+            x2="100%"
+            y1="0"
+            y2="100%"
+          />
+          <line
+            style="stroke-width: 2px; stroke: rgba(51,51,51,.1);"
+            x1="100%"
+            x2="0"
+            y1="0"
+            y2="100%"
+          />
+        </svg>
       </div>
     </div>
   </div>

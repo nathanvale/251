@@ -43,7 +43,7 @@ const Container = styled<Omit<BoxProps, "width" | "height">>(Box)<
 
 const defaultHeight = 120;
 const defaultWidth = "100%";
-const defaultMinWidth = "40px";
+const defaultMinWidth = "10px";
 const defaultShape = "rectangle";
 
 export const Placeholder = ({

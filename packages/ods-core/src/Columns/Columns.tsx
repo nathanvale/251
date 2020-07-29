@@ -1,98 +1,126 @@
-import React, { ReactElement, createContext, useMemo } from "react";
+import React, { ReactElement, createContext } from "react";
 import {
-  BreakpointVariants,
-  AlignItemsVariants,
   ResponsiveSpace,
+  CollapsibleAlignmentProps,
+  OptionalTrackableProps,
+  SpaceVariants,
 } from "@origin-digital/ods-types";
 import {
-  getRespValForBreakpoint,
-  mapSpaceAliasToIndex,
+  normaliseResponsiveProp,
+  mapToStyledSystem,
 } from "@origin-digital/ods-helpers";
 import { ColumnProps } from "../Column/Column";
-import { BoxDebug } from "../_private/components/BoxDebug/BoxDebug";
+
+import { resolveCollapsibleAlignmentProps } from "../_private/resolveCollapsibleAlignmentProps";
+import { InnerContainer } from "../Inline/Inline";
+
+type CollapsibleAlignmentChildProps = ReturnType<
+  typeof resolveCollapsibleAlignmentProps
+>["collapsibleAlignmentChildProps"];
 
 interface ColumnsContextValue {
-  collapseBelow?: ColumnsProps["collapseBelow"];
-  space?: ColumnsProps["space"];
+  collapseXs: boolean;
+  collapseSm: boolean;
+  collapseMd: boolean;
+  collapseLg: boolean;
+  collapseXl: boolean;
+  xsSpace?: SpaceVariants;
+  smSpace?: SpaceVariants;
+  mdSpace?: SpaceVariants;
+  lgSpace?: SpaceVariants;
+  xlSpace?: SpaceVariants;
+  /**
+   * The display, flexDirection and justifyContent css props per xs,sm,md,lg or
+   * xl breakpoint depending on if the Columns are collapsed or aligned or not.
+   * This logic is shared with the Inline component.
+   */
+  collapsibleAlignmentChildProps: CollapsibleAlignmentChildProps | {};
+}
+
+export const ColumnsContext = createContext<ColumnsContextValue>({
+  collapseXs: false,
+  collapseSm: false,
+  collapseMd: false,
+  collapseLg: false,
+  collapseXl: false,
+  xsSpace: "none",
+  smSpace: "none",
+  mdSpace: "none",
+  lgSpace: "none",
+  xlSpace: "none",
+  collapsibleAlignmentChildProps: {},
+});
+
+export interface ColumnsProps
+  extends CollapsibleAlignmentProps,
+    OptionalTrackableProps {
+  space: ResponsiveSpace;
+  children:
+    | Array<ReactElement<ColumnProps> | null>
+    | ReactElement<ColumnProps>
+    | null;
 }
 
 const defaultSpace = "none";
-
-export const ColumnsContext = createContext<ColumnsContextValue>({
-  collapseBelow: undefined,
-  space: defaultSpace,
-});
-
-export type AlignYType = "top" | "center" | "bottom";
-
-const mapVAlignToAlignItems = (alignY: AlignYType): AlignItemsVariants => {
-  const map = {
-    top: "flex-start",
-    center: "center",
-    bottom: "flex-end",
-  } as { [k in AlignYType]: AlignItemsVariants };
-  return map[alignY];
-};
-
-export interface ColumnsProps {
-  children: ReactElement<ColumnProps>[] | ReactElement<ColumnProps>;
-  space?: ResponsiveSpace;
-  collapseBelow?: BreakpointVariants;
-  alignY?: AlignYType;
-  "data-id"?: string;
-}
 
 export const Columns = ({
   children,
   collapseBelow,
   "data-id": dataId,
   space = defaultSpace,
+  alignX = "left",
   alignY = "top",
 }: ColumnsProps) => {
-  // Prevent re-renders when context values haven't changed
-  const columnsContextValue = useMemo(() => ({ collapseBelow, space }), [
-    collapseBelow,
-    space,
-  ]);
+  const [xsSpace, smSpace, mdSpace, lgSpace, xlSpace] = normaliseResponsiveProp(
+    space
+  );
 
-  const spaceIndex = mapSpaceAliasToIndex({ space, isNegative: true });
-  const alignItems = mapVAlignToAlignItems(alignY);
+  const {
+    collapsibleAlignmentProps,
+    collapsibleAlignmentChildProps,
+    collapseXs,
+    collapseSm,
+    collapseMd,
+    collapseLg,
+    collapseXl,
+  } = resolveCollapsibleAlignmentProps({
+    collapseBelow,
+    alignX,
+    alignY,
+  });
 
   return (
-    <BoxDebug
+    <InnerContainer
       data-id={dataId}
-      display="flex"
-      flexDirection={
-        collapseBelow &&
-        getRespValForBreakpoint({
-          breakpoint: collapseBelow,
-          valOnBelow: "column",
-          valOnAbove: "row",
-        })
+      space={
+        mapToStyledSystem({
+          xs: collapseXs ? "none" : xsSpace,
+          sm: collapseSm ? "none" : smSpace,
+          md: collapseMd ? "none" : mdSpace,
+          lg: collapseLg ? "none" : lgSpace,
+          xl: collapseXl ? "none" : xlSpace,
+        }) || "none"
       }
-      alignItems={
-        collapseBelow
-          ? getRespValForBreakpoint({
-              breakpoint: collapseBelow,
-              valOnBelow: "flex-start",
-              valOnAbove: alignItems,
-            })
-          : alignItems
-      }
-      marginLeft={
-        collapseBelow
-          ? getRespValForBreakpoint({
-              breakpoint: collapseBelow,
-              valOnBelow: "none",
-              valOnAbove: spaceIndex,
-            })
-          : spaceIndex
-      }
+      {...collapsibleAlignmentProps}
     >
-      <ColumnsContext.Provider value={columnsContextValue}>
+      <ColumnsContext.Provider
+        value={{
+          collapseXs,
+          collapseSm,
+          collapseMd,
+          collapseLg,
+          collapseXl,
+          xsSpace,
+          smSpace,
+          mdSpace,
+          lgSpace,
+          xlSpace,
+          collapsibleAlignmentChildProps,
+        }}
+      >
         {children}
       </ColumnsContext.Provider>
-    </BoxDebug>
+    </InnerContainer>
   );
 };
 
