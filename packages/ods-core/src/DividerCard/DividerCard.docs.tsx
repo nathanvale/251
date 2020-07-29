@@ -1,7 +1,8 @@
-/* eslint-disable react/display-name */
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Box, TextLink, Text } from "@origin-digital/ods-core";
+import { Box } from "../Box/Box";
+import { Text } from "../Text/Text";
+import { TextLink } from "../TextLink/TextLink";
 import { Placeholder } from "../Placeholder/Placeholder";
 import { DividerCardProps, DividerCard as ODSDivider } from "./DividerCard";
 

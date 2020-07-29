@@ -1,15 +1,11 @@
 import React from "react";
-/* eslint-disable react/display-name */
 import { ComponentDocs } from "@origin-digital/ods-types";
+import { Placeholder } from "../Placeholder/Placeholder";
+import { Table } from "../Table/Table";
 import { generateTable } from "../Table/Table.helper";
-import {
-  Placeholder,
-  TableCellProps,
-  Table,
-  TableBody,
-  TableRow,
-  TableCell,
-} from "..";
+import { TableBody } from "../TableBody/TableBody";
+import { TableRow } from "../TableRow/TableRow";
+import { TableCell, TableCellProps } from "./TableCell";
 
 export const docs: ComponentDocs<TableCellProps> = {
   category: "Content",

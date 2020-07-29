@@ -1,8 +1,11 @@
-/* eslint-disable react/display-name */
 import React from "react";
-import { Placeholder, Card } from "@origin-digital/ods-core";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { CardStackSection, CardStackSectionProps } from "..";
+import { Placeholder } from "../Placeholder/Placeholder";
+import { Card } from "../Card/Card";
+import {
+  CardStackSection,
+  CardStackSectionProps,
+} from "../CardStackSection/CardStackSection";
 
 export const docs: ComponentDocs<CardStackSectionProps> = {
   category: "Layout",

@@ -1,16 +1,13 @@
 /* eslint-disable no-alert */
-/* eslint-disable react/display-name */
 import React from "react";
 import { ComponentDocs, ExampleDocs } from "@origin-digital/ods-types";
-import {
-  TrackingDisable,
-  Button,
-  TrackingProvider,
-  Stack,
-  Text,
-  TextLink,
-  Card,
-} from "..";
+import { Button } from "../Button/Button";
+import { TrackingProvider } from "../TrackingProvider/TrackingProvider";
+import { Stack } from "../Stack/Stack";
+import { Text } from "../Text/Text";
+import { TextLink } from "../TextLink/TextLink";
+import { Card } from "../Card/Card";
+import { TrackingDisable } from "./TrackingDisable";
 
 export const disableTrackingExample: ExampleDocs = {
   label: "Disabling a trackable component",

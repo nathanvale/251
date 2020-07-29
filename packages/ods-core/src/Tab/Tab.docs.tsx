@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
 import { IconLightbulbOutline } from "@origin-digital/ods-icons";
-import { Tab } from "..";
+import { Tab } from "./Tab";
 
 export const docs: ComponentDocs = {
   category: "Content",

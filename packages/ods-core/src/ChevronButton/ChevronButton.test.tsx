@@ -1,8 +1,8 @@
 import React from "react";
 import { render, fireEvent } from "@origin-digital/ods-testing-library";
 import { TrackingEventHandler } from "@origin-digital/ods-types";
-
-import { ChevronButton, TrackingProvider } from "..";
+import { ChevronButton } from "../ChevronButton/ChevronButton";
+import { TrackingProvider } from "../TrackingProvider/TrackingProvider";
 
 test("It can render", () => {
   const { container } = render(<ChevronButton>Chevron link</ChevronButton>);

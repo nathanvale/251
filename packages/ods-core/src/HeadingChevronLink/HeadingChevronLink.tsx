@@ -3,7 +3,7 @@ import { LinkBaseProps } from "@origin-digital/ods-types";
 import { Heading } from "../Heading/Heading";
 import { ChevronLinkRenderer } from "../ChevronLinkRenderer/ChevronLinkRenderer";
 import { Box } from "../Box/Box";
-import { TrackedLink } from "..";
+import { TrackedLink } from "../TrackedLink/TrackedLink";
 
 export interface HeadingChevronLinkProps extends LinkBaseProps {}
 const defaultDataId = "heading-chevron-link";

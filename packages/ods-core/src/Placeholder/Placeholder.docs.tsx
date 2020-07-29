@@ -1,7 +1,6 @@
-/* eslint-disable react/display-name */
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Placeholder, PlaceholderProps } from "..";
+import { Placeholder, PlaceholderProps } from "./Placeholder";
 
 export const docs: ComponentDocs<PlaceholderProps> = {
   category: "Layout",

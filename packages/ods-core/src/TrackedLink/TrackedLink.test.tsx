@@ -2,7 +2,9 @@ import React from "react";
 import { render, fireEvent } from "@origin-digital/ods-testing-library";
 import { LinkComponentType } from "@origin-digital/ods-types";
 import { OriginThemeProvider } from "../OriginThemeProvider/OriginThemeProvider";
-import { TrackedLink, TrackingProvider, Box } from "..";
+import { TrackingProvider } from "../TrackingProvider/TrackingProvider";
+import { Box } from "../Box/Box";
+import { TrackedLink } from "./TrackedLink";
 
 test("It can render", () => {
   const { container } = render(

@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { BoxProps, Box } from "@origin-digital/ods-core";
+import clsx from "clsx";
 import {
   HeadingComponentVariants,
   TypographyWeightVariants,
@@ -7,7 +7,6 @@ import {
   Heading34Variants,
   HeadingVariants,
 } from "@origin-digital/ods-types";
-import clsx from "clsx";
 import {
   useBasekickStyles,
   useToneStyles,
@@ -18,7 +17,7 @@ import {
   useTruncatedContent,
   useCheckTypographyBackground,
 } from "../_private/hooks";
-
+import { BoxProps, Box } from "../Box/Box";
 import { Text } from "../Text/Text";
 import { HeadingContext } from "./HeadingContext";
 

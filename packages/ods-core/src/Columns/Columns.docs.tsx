@@ -1,7 +1,8 @@
-/* eslint-disable react/display-name */
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Placeholder, Columns, Column, ColumnsProps } from "..";
+import { Placeholder } from "../Placeholder/Placeholder";
+import { Column } from "../Column/Column";
+import { Columns, ColumnsProps } from "./Columns";
 
 export const docs: ComponentDocs<ColumnsProps> = {
   category: "Layout",

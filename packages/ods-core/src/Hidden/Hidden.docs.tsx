@@ -1,7 +1,7 @@
-/* eslint-disable react/display-name */
 import React from "react";
-import { Placeholder, Stack } from "@origin-digital/ods-core";
 import { ComponentDocs } from "@origin-digital/ods-types";
+import { Placeholder } from "../Placeholder/Placeholder";
+import { Stack } from "../Stack/Stack";
 import { Hidden, HiddenProps } from "../Hidden/Hidden";
 
 export const docs: ComponentDocs<HiddenProps> = {

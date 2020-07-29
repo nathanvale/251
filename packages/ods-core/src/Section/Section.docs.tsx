@@ -1,7 +1,9 @@
-/* eslint-disable react/display-name */
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Section, SectionProps, Placeholder, Stack, Box } from "..";
+import { Placeholder } from "../Placeholder/Placeholder";
+import { Stack } from "../Stack/Stack";
+import { Box } from "../Box/Box";
+import { Section, SectionProps } from "./Section";
 
 export const docs: ComponentDocs<SectionProps> = {
   category: "Layout",

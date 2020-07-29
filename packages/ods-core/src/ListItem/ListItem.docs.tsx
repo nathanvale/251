@@ -5,7 +5,9 @@ import {
   IconGas,
   IconHotWater,
 } from "@origin-digital/ods-icons";
-import { ListItem, List, TextLink } from "..";
+import { ListItem } from "../ListItem/ListItem";
+import { List } from "../List/List";
+import { TextLink } from "../TextLink/TextLink";
 
 export const docs: ComponentDocs = {
   category: "Content",

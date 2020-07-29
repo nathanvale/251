@@ -1,9 +1,9 @@
-/* eslint-disable react/display-name */
 import React from "react";
 import { IconCheck } from "@origin-digital/ods-icons";
 import { E2ETests } from "@origin-digital/ods-types";
+import { Stack } from "../Stack/Stack";
+import { Text } from "../Text/Text";
 import { Button } from "./Button";
-import { Stack, Text } from "..";
 
 export const tests: E2ETests = [
   {

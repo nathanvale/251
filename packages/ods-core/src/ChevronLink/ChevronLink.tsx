@@ -9,7 +9,7 @@ import {
   ChevronLinkRenderer,
   ChevronLinkRendererProps,
 } from "../ChevronLinkRenderer/ChevronLinkRenderer";
-import { TrackedLink } from "..";
+import { TrackedLink } from "../TrackedLink/TrackedLink";
 
 export interface ChevronLinkProps
   extends Omit<ChevronLinkRendererProps, "children" | "variant">,

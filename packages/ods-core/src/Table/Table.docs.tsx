@@ -1,7 +1,6 @@
-/* eslint-disable react/display-name */
 import { ComponentDocs } from "@origin-digital/ods-types";
 import { generateTable } from "./Table.helper";
-import { TableProps } from "..";
+import { TableProps } from "./Table";
 
 export const propDescriptions = {
   alignX: "This is a prop which aligns the cell content horizontally.",

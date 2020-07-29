@@ -1,6 +1,12 @@
 import React, { ReactNode, ReactElement } from "react";
 import styled, { css } from "styled-components";
 import {
+  marginTop,
+  marginBottom,
+  MarginBottomProps,
+  MarginTopProps,
+} from "styled-system";
+import {
   CardStackSectionVariant,
   CardStackSize,
   BreakpointVariants,
@@ -8,13 +14,10 @@ import {
   SpaceVariants,
   ResponsiveProp,
 } from "@origin-digital/ods-types";
-import {
-  marginTop,
-  marginBottom,
-  MarginBottomProps,
-  MarginTopProps,
-} from "styled-system";
-import { Box, Stack, CardProps, DividerCardProps, BoxProps } from "..";
+import { Box, BoxProps } from "../Box/Box";
+import { Stack } from "../Stack/Stack";
+import { CardProps } from "../Card/Card";
+import { DividerCardProps } from "../DividerCard/DividerCard";
 
 export interface CardStackSectionProps {
   "data-id"?: string;

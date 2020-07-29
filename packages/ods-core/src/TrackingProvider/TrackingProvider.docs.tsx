@@ -1,17 +1,13 @@
 /* eslint-disable no-alert */
-/* eslint-disable react/display-name */
 import React from "react";
 import { ComponentDocs, ExampleDocs } from "@origin-digital/ods-types";
-import {
-  TrackingProvider,
-  TrackingProviderProps,
-  Button,
-  Card,
-  Text,
-  TextLink,
-  Stack,
-  Strong,
-} from "..";
+import { Button } from "../Button/Button";
+import { Card } from "../Card/Card";
+import { Text } from "../Text/Text";
+import { TextLink } from "../TextLink/TextLink";
+import { Stack } from "../Stack/Stack";
+import { Strong } from "../Strong/Strong";
+import { TrackingProvider, TrackingProviderProps } from "./TrackingProvider";
 
 export const setupTracking: ExampleDocs = {
   label: "Setting up tracking in your app",

@@ -1,7 +1,10 @@
-/* eslint-disable react/display-name */
 import React from "react";
 import { E2ETests } from "@origin-digital/ods-types";
-import { Table, TableBody, TableRow, TableCell, Placeholder } from "..";
+import { Table } from "../Table/Table";
+import { TableBody } from "../TableBody/TableBody";
+import { TableRow } from "../TableRow/TableRow";
+import { Placeholder } from "../Placeholder/Placeholder";
+import { TableCell } from "./TableCell";
 
 export const tests: E2ETests = [
   {

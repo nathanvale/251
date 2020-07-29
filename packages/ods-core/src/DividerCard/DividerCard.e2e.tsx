@@ -1,4 +1,3 @@
-/* eslint-disable react/display-name */
 import React from "react";
 import { E2ETests } from "@origin-digital/ods-types";
 import { Placeholder } from "../Placeholder/Placeholder";

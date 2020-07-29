@@ -1,6 +1,5 @@
 import React from "react";
 
-/* eslint-disable react/display-name */
 import { ComponentDocs } from "@origin-digital/ods-types";
 import { Heading } from "../Heading/Heading";
 import { Text } from "../Text/Text";
@@ -62,7 +61,7 @@ export const docs: ComponentDocs<AccordionProps> = {
         },
         codeString: `
   import React from 'react';
-  import { Accordion } from '@origin-digital/ods-core';
+  import { Accordion } from "@origin-digital/ods-core";
   
   export default () => {
       const [expanded, setExpanded] = React.useState(false);

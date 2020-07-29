@@ -1,7 +1,8 @@
-/* eslint-disable react/display-name */
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Text, TextProps, Box, Stack } from "..";
+import { Box } from "../Box/Box";
+import { Stack } from "../Stack/Stack";
+import { Text, TextProps } from "./Text";
 
 export const docs: ComponentDocs<TextProps> = {
   category: "Content",

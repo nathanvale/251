@@ -11,7 +11,7 @@ export const docs: ComponentDocs = {
     default: {
       codeString: `import React from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronLinkRenderer } from '@origin-digital/ods-core';
+import { ChevronLinkRenderer } from "@origin-digital/ods-core";
 
 export default () => (
   <ChevronLinkRenderer variant="primary">
