@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.11.13...@origin-digital/ods-icons@0.12.0) (2020-07-29)
+
+
+### Features
+
+* **alert:** implement alert ([7486c7d](https://bitbucket.orgn.io/od/origin-ui/commits/7486c7d265b558bb0673c63fc5d863d330db0cbf))
+
+
+
+
+
 ## [0.11.13](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.11.12...@origin-digital/ods-icons@0.11.13) (2020-07-28)
 
 **Note:** Version bump only for package @origin-digital/ods-icons
