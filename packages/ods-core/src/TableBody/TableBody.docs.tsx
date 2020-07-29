@@ -1,7 +1,6 @@
-/* eslint-disable react/display-name */
 import { ComponentDocs } from "@origin-digital/ods-types";
 import { generateTable } from "../Table/Table.helper";
-import { TableBodyProps } from "..";
+import { TableBodyProps } from "./TableBody";
 
 export const docs: ComponentDocs<TableBodyProps> = {
   category: "Content",

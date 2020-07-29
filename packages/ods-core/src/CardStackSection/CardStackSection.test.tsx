@@ -1,7 +1,8 @@
 import React from "react";
 import { render } from "@origin-digital/ods-testing-library";
+import { Placeholder } from "../Placeholder/Placeholder";
+import { Card } from "../Card/Card";
 import { CardStackSection } from "./CardStackSection";
-import { Placeholder, Card } from "..";
 
 test("it renders a CardStackSection", () => {
   const { container } = render(

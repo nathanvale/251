@@ -20,6 +20,7 @@ module.exports = {
     "jest/require-top-level-describe": "off",
     "jest/no-empty-title": "off",
     "react/prop-types": "off",
+    "react/display-name": "off",
     "no-bitwise": "off",
     "babel/new-cap": "off",
     "babel/quotes": "off",

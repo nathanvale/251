@@ -1,7 +1,8 @@
-/* eslint-disable react/display-name */
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Text, TextLink, OriginThemeProviderProps } from "..";
+import { Text } from "../Text/Text";
+import { TextLink } from "../TextLink/TextLink";
+import { OriginThemeProviderProps } from "./OriginThemeProvider";
 
 export const docs: ComponentDocs<OriginThemeProviderProps> = {
   category: "Logic",

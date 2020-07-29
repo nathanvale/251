@@ -1,8 +1,7 @@
 import React from "react";
-/* eslint-disable react/display-name */
 import { ComponentDocs } from "@origin-digital/ods-types";
 import { propDescriptions } from "../Table/Table.docs";
-import { DataTable, DataTableProps } from "..";
+import { DataTable, DataTableProps } from "./DataTable";
 
 export const docs: ComponentDocs<DataTableProps> = {
   category: "Content",

@@ -1,7 +1,6 @@
-/* eslint-disable react/display-name */
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Divider, DividerProps } from "..";
+import { Divider, DividerProps } from "./Divider";
 
 export const docs: ComponentDocs<DividerProps> = {
   category: "Layout",

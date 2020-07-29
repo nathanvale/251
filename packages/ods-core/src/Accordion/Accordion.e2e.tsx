@@ -1,6 +1,8 @@
 import React from "react";
 import { E2ETests } from "@origin-digital/ods-types";
-import { Stack, Heading, Text } from "@origin-digital/ods-core";
+import { Stack } from "../Stack/Stack";
+import { Heading } from "../Heading/Heading";
+import { Text } from "../Text/Text";
 import {
   generateAccordion,
   generateControlledAccordion,

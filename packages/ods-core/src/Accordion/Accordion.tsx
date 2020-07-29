@@ -12,7 +12,8 @@ import MuiAccordionDetails, {
 } from "@material-ui/core/AccordionDetails";
 import { ComponentBaseProps, MuiProps } from "@origin-digital/ods-types";
 import { IconAdd, IconRemove } from "@origin-digital/ods-icons";
-import { Text, useTracking } from "@origin-digital/ods-core";
+import { Text } from "../Text/Text";
+import { useTracking } from "../TrackingProvider/useTracking";
 import { AccordionGroupContext } from "../AccordionGroup/AccordionGroup";
 
 const useAccordionStyles = makeStyles(

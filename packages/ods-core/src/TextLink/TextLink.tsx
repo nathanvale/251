@@ -5,7 +5,7 @@ import {
   TextLinkRenderer,
   TextLinkRendererProps,
 } from "../TextLinkRenderer/TextLinkRenderer";
-import { TrackedLink } from "..";
+import { TrackedLink } from "../TrackedLink/TrackedLink";
 
 export interface TextLinkProps
   extends Omit<TextLinkRendererProps, "children">,

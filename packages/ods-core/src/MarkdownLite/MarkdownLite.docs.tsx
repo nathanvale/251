@@ -1,7 +1,8 @@
-/* eslint-disable react/display-name */
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Strong, Text, TextLink } from "@origin-digital/ods-core";
+import { Strong } from "../Strong/Strong";
+import { Text } from "../Text/Text";
+import { TextLink } from "../TextLink/TextLink";
 import { MarkdownLite, MarkdownLiteProps } from "./MarkdownLite";
 
 export const docs: ComponentDocs<MarkdownLiteProps> = {

@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "@origin-digital/ods-testing-library";
 
-import { DataTable, DataTableProps } from "..";
+import { DataTable, DataTableProps } from "./DataTable";
 
 const renderDataTable = (
   dataTableProps: Partial<DataTableProps> = {},

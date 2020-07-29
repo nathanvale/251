@@ -1,7 +1,7 @@
-/* eslint-disable react/display-name */
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Text, TextProps, TextLink } from "..";
+import { Text, TextProps } from "../Text/Text";
+import { TextLink } from "./TextLink";
 
 export const docs: ComponentDocs<TextProps> = {
   category: "Interaction",

@@ -1,6 +1,7 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Emphasis, Text } from "..";
+import { Text } from "../Text/Text";
+import { Emphasis } from "./Emphasis";
 
 export const docs: ComponentDocs = {
   category: "Content",

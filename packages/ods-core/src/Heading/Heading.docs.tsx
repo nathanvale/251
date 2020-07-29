@@ -1,8 +1,8 @@
-/* eslint-disable react/display-name */
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
+import { Box } from "../Box/Box";
+import { Stack } from "../Stack/Stack";
 import { HeadingProps, Heading } from "./Heading";
-import { Box, Stack } from "..";
 
 export const headingPropDescriptions: Partial<Record<
   keyof HeadingProps,

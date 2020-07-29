@@ -45,6 +45,10 @@ exports[`It renders 1`] = `
   text-align: left;
 }
 
+.c4 {
+  max-width: 100%;
+}
+
 .c1:empty {
   display: none;
 }
@@ -73,10 +77,6 @@ exports[`It renders 1`] = `
   position: relative;
   height: 0.1px;
   margin-top: 8px;
-}
-
-.c4 {
-  max-width: 100%;
 }
 
 <div>
@@ -200,6 +200,10 @@ exports[`It uses variant (filled) and tone (caution) 1`] = `
   text-align: left;
 }
 
+.c4 {
+  max-width: 100%;
+}
+
 .c1:empty {
   display: none;
 }
@@ -228,10 +232,6 @@ exports[`It uses variant (filled) and tone (caution) 1`] = `
   position: relative;
   height: 0.1px;
   margin-top: 8px;
-}
-
-.c4 {
-  max-width: 100%;
 }
 
 <div>
@@ -355,6 +355,10 @@ exports[`It uses variant (filled) and tone (critical) 1`] = `
   text-align: left;
 }
 
+.c4 {
+  max-width: 100%;
+}
+
 .c1:empty {
   display: none;
 }
@@ -383,10 +387,6 @@ exports[`It uses variant (filled) and tone (critical) 1`] = `
   position: relative;
   height: 0.1px;
   margin-top: 8px;
-}
-
-.c4 {
-  max-width: 100%;
 }
 
 <div>
@@ -510,6 +510,10 @@ exports[`It uses variant (filled) and tone (info) 1`] = `
   text-align: left;
 }
 
+.c4 {
+  max-width: 100%;
+}
+
 .c1:empty {
   display: none;
 }
@@ -538,10 +542,6 @@ exports[`It uses variant (filled) and tone (info) 1`] = `
   position: relative;
   height: 0.1px;
   margin-top: 8px;
-}
-
-.c4 {
-  max-width: 100%;
 }
 
 <div>
@@ -665,6 +665,10 @@ exports[`It uses variant (filled) and tone (neutral) 1`] = `
   text-align: left;
 }
 
+.c4 {
+  max-width: 100%;
+}
+
 .c1:empty {
   display: none;
 }
@@ -693,10 +697,6 @@ exports[`It uses variant (filled) and tone (neutral) 1`] = `
   position: relative;
   height: 0.1px;
   margin-top: 8px;
-}
-
-.c4 {
-  max-width: 100%;
 }
 
 <div>
@@ -820,6 +820,10 @@ exports[`It uses variant (filled) and tone (positive) 1`] = `
   text-align: left;
 }
 
+.c4 {
+  max-width: 100%;
+}
+
 .c1:empty {
   display: none;
 }
@@ -848,10 +852,6 @@ exports[`It uses variant (filled) and tone (positive) 1`] = `
   position: relative;
   height: 0.1px;
   margin-top: 8px;
-}
-
-.c4 {
-  max-width: 100%;
 }
 
 <div>
@@ -975,6 +975,10 @@ exports[`It uses variant (filled) and tone (promote) 1`] = `
   text-align: left;
 }
 
+.c4 {
+  max-width: 100%;
+}
+
 .c1:empty {
   display: none;
 }
@@ -1003,10 +1007,6 @@ exports[`It uses variant (filled) and tone (promote) 1`] = `
   position: relative;
   height: 0.1px;
   margin-top: 8px;
-}
-
-.c4 {
-  max-width: 100%;
 }
 
 <div>
@@ -1130,6 +1130,10 @@ exports[`It uses variant (standard) and tone (caution) 1`] = `
   text-align: left;
 }
 
+.c4 {
+  max-width: 100%;
+}
+
 .c1:empty {
   display: none;
 }
@@ -1158,10 +1162,6 @@ exports[`It uses variant (standard) and tone (caution) 1`] = `
   position: relative;
   height: 0.1px;
   margin-top: 8px;
-}
-
-.c4 {
-  max-width: 100%;
 }
 
 <div>
@@ -1285,6 +1285,10 @@ exports[`It uses variant (standard) and tone (critical) 1`] = `
   text-align: left;
 }
 
+.c4 {
+  max-width: 100%;
+}
+
 .c1:empty {
   display: none;
 }
@@ -1313,10 +1317,6 @@ exports[`It uses variant (standard) and tone (critical) 1`] = `
   position: relative;
   height: 0.1px;
   margin-top: 8px;
-}
-
-.c4 {
-  max-width: 100%;
 }
 
 <div>
@@ -1440,6 +1440,10 @@ exports[`It uses variant (standard) and tone (info) 1`] = `
   text-align: left;
 }
 
+.c4 {
+  max-width: 100%;
+}
+
 .c1:empty {
   display: none;
 }
@@ -1468,10 +1472,6 @@ exports[`It uses variant (standard) and tone (info) 1`] = `
   position: relative;
   height: 0.1px;
   margin-top: 8px;
-}
-
-.c4 {
-  max-width: 100%;
 }
 
 <div>
@@ -1595,6 +1595,10 @@ exports[`It uses variant (standard) and tone (neutral) 1`] = `
   text-align: left;
 }
 
+.c4 {
+  max-width: 100%;
+}
+
 .c1:empty {
   display: none;
 }
@@ -1623,10 +1627,6 @@ exports[`It uses variant (standard) and tone (neutral) 1`] = `
   position: relative;
   height: 0.1px;
   margin-top: 8px;
-}
-
-.c4 {
-  max-width: 100%;
 }
 
 <div>
@@ -1750,6 +1750,10 @@ exports[`It uses variant (standard) and tone (positive) 1`] = `
   text-align: left;
 }
 
+.c4 {
+  max-width: 100%;
+}
+
 .c1:empty {
   display: none;
 }
@@ -1778,10 +1782,6 @@ exports[`It uses variant (standard) and tone (positive) 1`] = `
   position: relative;
   height: 0.1px;
   margin-top: 8px;
-}
-
-.c4 {
-  max-width: 100%;
 }
 
 <div>
@@ -1905,6 +1905,10 @@ exports[`It uses variant (standard) and tone (promote) 1`] = `
   text-align: left;
 }
 
+.c4 {
+  max-width: 100%;
+}
+
 .c1:empty {
   display: none;
 }
@@ -1933,10 +1937,6 @@ exports[`It uses variant (standard) and tone (promote) 1`] = `
   position: relative;
   height: 0.1px;
   margin-top: 8px;
-}
-
-.c4 {
-  max-width: 100%;
 }
 
 <div>

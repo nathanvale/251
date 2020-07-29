@@ -1,6 +1,5 @@
 import React from "react";
 
-/* eslint-disable react/display-name */
 import { ComponentDocs } from "@origin-digital/ods-types";
 import { AccordionGroup } from "../AccordionGroup/AccordionGroup";
 import { AccordionProps } from "../Accordion/Accordion";

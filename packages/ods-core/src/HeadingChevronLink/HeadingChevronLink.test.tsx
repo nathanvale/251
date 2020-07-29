@@ -4,7 +4,9 @@ import {
   TrackingEventHandler,
   LinkComponentType,
 } from "@origin-digital/ods-types";
-import { HeadingChevronLink, TrackingProvider, OriginThemeProvider } from "..";
+import { TrackingProvider } from "../TrackingProvider/TrackingProvider";
+import { OriginThemeProvider } from "../OriginThemeProvider/OriginThemeProvider";
+import { HeadingChevronLink } from "./HeadingChevronLink";
 
 test("It can render", () => {
   const { container } = render(

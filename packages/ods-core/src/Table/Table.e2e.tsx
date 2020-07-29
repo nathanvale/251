@@ -1,4 +1,3 @@
-/* eslint-disable react/display-name */
 import { E2ETests } from "@origin-digital/ods-types";
 import { generateTable } from "./Table.helper";
 

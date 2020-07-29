@@ -15,7 +15,8 @@ import {
 } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
 import { useTracking } from "../TrackingProvider/useTracking";
-import { IconButton, Heading } from "..";
+import { IconButton } from "../IconButton/IconButton";
+import { Heading } from "../Heading/Heading";
 
 export interface MuiProps {
   componentProps?: MuiDialogProps;

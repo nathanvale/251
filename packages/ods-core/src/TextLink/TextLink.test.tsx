@@ -5,7 +5,10 @@ import {
   LinkComponentType,
 } from "@origin-digital/ods-types";
 import { OriginThemeProvider } from "../OriginThemeProvider/OriginThemeProvider";
-import { TextLink, Text, TrackingProvider, Strong } from "..";
+import { Text } from "../Text/Text";
+import { TrackingProvider } from "../TrackingProvider/TrackingProvider";
+import { Strong } from "../Strong/Strong";
+import { TextLink } from "./TextLink";
 
 test("It can render", () => {
   const { container } = render(

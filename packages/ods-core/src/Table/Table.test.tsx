@@ -1,6 +1,6 @@
 import { render } from "@origin-digital/ods-testing-library";
 import { generateTable } from "./Table.helper";
-import { TableProps } from "..";
+import { TableProps } from "./Table";
 
 const renderTable = (tableProps: Partial<TableProps> = {}) =>
   render(generateTable(tableProps));

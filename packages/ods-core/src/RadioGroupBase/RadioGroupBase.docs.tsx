@@ -1,9 +1,8 @@
-/* eslint-disable react/display-name */
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
 import { Radio } from "../Radio/Radio";
+import { Text } from "../Text/Text";
 import { RadioGroupBase, RadioGroupBaseProps } from "./RadioGroupBase";
-import { Text } from "..";
 
 export const getRadioGroupDesc = (name: string) => (
   <Text>

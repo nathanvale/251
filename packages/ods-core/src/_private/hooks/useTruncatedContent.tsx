@@ -1,6 +1,6 @@
 import React from "react";
-import { Box, BoxProps } from "@origin-digital/ods-core";
 import { useTruncateStyles } from "@origin-digital/ods-typography";
+import { Box, BoxProps } from "../../Box/Box";
 
 interface UseTruncatedContentProps {
   children: React.ReactNode;

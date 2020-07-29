@@ -25,7 +25,7 @@ export const docs: ComponentDocs = {
         </Text>
       ),
       codeString: `import React from 'react';
-import { TextLinkRenderer, Text, Box } from '@origin-digital/ods-core';
+import { TextLinkRenderer, Text, Box } from "@origin-digital/ods-core";
 
 export default () => (
   <Text>
@@ -43,7 +43,7 @@ export default () => (
         playroom: false,
         codeString: `import React from 'react';
 import { Link } from 'react-router-dom';
-import { TextLinkRenderer, Text } from '@origin-digital/ods-core';
+import { TextLinkRenderer, Text } from "@origin-digital/ods-core";
 
 export default () => (
   <Text>

@@ -1,13 +1,9 @@
 import React from "react";
 import { render } from "@origin-digital/ods-testing-library";
-import {
-  Table,
-  TableBody,
-  TableRow,
-  TableCell,
-  TableProps,
-  TableCellProps,
-} from "..";
+import { Table, TableProps } from "../Table/Table";
+import { TableBody } from "../TableBody/TableBody";
+import { TableRow } from "../TableRow/TableRow";
+import { TableCell, TableCellProps } from "./TableCell";
 
 const renderTableCell = (
   tableCellProps: Partial<TableCellProps> = {},

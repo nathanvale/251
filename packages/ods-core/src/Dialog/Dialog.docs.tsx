@@ -1,9 +1,8 @@
-/* eslint-disable react/display-name */
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
 import { Button } from "../Button/Button";
 import { Text } from "../Text/Text";
-import { Dialog, DialogProps } from "..";
+import { Dialog, DialogProps } from "./Dialog";
 
 export const docs: ComponentDocs<DialogProps> = {
   category: "Layout",
@@ -46,7 +45,7 @@ export const docs: ComponentDocs<DialogProps> = {
         );
       },
       codeString: `import React from 'react';
-import { Button, Dialog } from '@origin-digital/ods-core';
+import { Button, Dialog } from "@origin-digital/ods-core";
 
 export default () => {
     const [showModal, setShowModal] = React.useState(false);
