@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.52.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.52.1...@origin-digital/ods-core@0.52.2) (2020-07-31)
+
+
+### Bug Fixes
+
+* **alert:** include @material-ui/lab ([ec2bd5d](https://bitbucket.orgn.io/od/origin-ui/commits/ec2bd5d6757123c634123e01a15041c7a983ac0e))
+
+
+
+
+
 ## [0.52.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.52.0...@origin-digital/ods-core@0.52.1) (2020-07-29)
 
 **Note:** Version bump only for package @origin-digital/ods-core
