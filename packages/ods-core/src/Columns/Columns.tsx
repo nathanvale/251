@@ -62,14 +62,16 @@ export interface ColumnsProps
 }
 
 const defaultSpace = "none";
+const defaultAlignX = "left";
+const defaultAlignY = "top";
 
 export const Columns = ({
   children,
   collapseBelow,
   "data-id": dataId,
   space = defaultSpace,
-  alignX = "left",
-  alignY = "top",
+  alignX = defaultAlignX,
+  alignY = defaultAlignY,
 }: ColumnsProps) => {
   const [xsSpace, smSpace, mdSpace, lgSpace, xlSpace] = normaliseResponsiveProp(
     space
@@ -126,8 +128,9 @@ export const Columns = ({
 
 Columns.defaultProps = {
   "data-id": "columns",
-  space: "none",
-  alignY: "top",
+  space: "large",
+  alignY: defaultAlignY,
+  alignX: defaultAlignX,
 };
 
 Columns.displayName = "Columns";

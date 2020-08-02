@@ -71,7 +71,7 @@ exports[`it top-aligns children by default 1`] = `
   font: inherit;
   vertical-align: baseline;
   display: block;
-  padding-left: 0;
+  padding-left: 24px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -80,7 +80,7 @@ exports[`it top-aligns children by default 1`] = `
 }
 
 .c0 {
-  margin-left: 0px;
+  margin-left: -24px;
 }
 
 .c3 {
@@ -242,25 +242,25 @@ exports[`it top-aligns children by default 1`] = `
 
 @media screen and (min-width:576px) {
   .c6 {
-    padding-left: 0;
+    padding-left: 24px;
   }
 }
 
 @media screen and (min-width:768px) {
   .c6 {
-    padding-left: 0;
+    padding-left: 24px;
   }
 }
 
 @media screen and (min-width:992px) {
   .c6 {
-    padding-left: 0;
+    padding-left: 24px;
   }
 }
 
 @media screen and (min-width:1200px) {
   .c6 {
-    padding-left: 0;
+    padding-left: 24px;
   }
 }
 
@@ -302,25 +302,25 @@ exports[`it top-aligns children by default 1`] = `
 
 @media screen and (min-width:576px) {
   .c0 {
-    margin-left: 0px;
+    margin-left: -24px;
   }
 }
 
 @media screen and (min-width:768px) {
   .c0 {
-    margin-left: 0px;
+    margin-left: -24px;
   }
 }
 
 @media screen and (min-width:992px) {
   .c0 {
-    margin-left: 0px;
+    margin-left: -24px;
   }
 }
 
 @media screen and (min-width:1200px) {
   .c0 {
-    margin-left: 0px;
+    margin-left: -24px;
   }
 }
 
@@ -503,7 +503,7 @@ exports[`it vertically aligns children bottom if alignY is bottom 1`] = `
   font: inherit;
   vertical-align: baseline;
   display: block;
-  padding-left: 0;
+  padding-left: 24px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -537,7 +537,7 @@ exports[`it vertically aligns children bottom if alignY is bottom 1`] = `
 }
 
 .c0 {
-  margin-left: 0px;
+  margin-left: -24px;
 }
 
 .c3 {
@@ -595,25 +595,25 @@ exports[`it vertically aligns children bottom if alignY is bottom 1`] = `
 
 @media screen and (min-width:576px) {
   .c6 {
-    padding-left: 0;
+    padding-left: 24px;
   }
 }
 
 @media screen and (min-width:768px) {
   .c6 {
-    padding-left: 0;
+    padding-left: 24px;
   }
 }
 
 @media screen and (min-width:992px) {
   .c6 {
-    padding-left: 0;
+    padding-left: 24px;
   }
 }
 
 @media screen and (min-width:1200px) {
   .c6 {
-    padding-left: 0;
+    padding-left: 24px;
   }
 }
 
@@ -759,25 +759,25 @@ exports[`it vertically aligns children bottom if alignY is bottom 1`] = `
 
 @media screen and (min-width:576px) {
   .c0 {
-    margin-left: 0px;
+    margin-left: -24px;
   }
 }
 
 @media screen and (min-width:768px) {
   .c0 {
-    margin-left: 0px;
+    margin-left: -24px;
   }
 }
 
 @media screen and (min-width:992px) {
   .c0 {
-    margin-left: 0px;
+    margin-left: -24px;
   }
 }
 
 @media screen and (min-width:1200px) {
   .c0 {
-    margin-left: 0px;
+    margin-left: -24px;
   }
 }
 
@@ -960,7 +960,7 @@ exports[`it vertically aligns children middle if alignY is center 1`] = `
   font: inherit;
   vertical-align: baseline;
   display: block;
-  padding-left: 0;
+  padding-left: 24px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -994,7 +994,7 @@ exports[`it vertically aligns children middle if alignY is center 1`] = `
 }
 
 .c0 {
-  margin-left: 0px;
+  margin-left: -24px;
 }
 
 .c3 {
@@ -1052,25 +1052,25 @@ exports[`it vertically aligns children middle if alignY is center 1`] = `
 
 @media screen and (min-width:576px) {
   .c6 {
-    padding-left: 0;
+    padding-left: 24px;
   }
 }
 
 @media screen and (min-width:768px) {
   .c6 {
-    padding-left: 0;
+    padding-left: 24px;
   }
 }
 
 @media screen and (min-width:992px) {
   .c6 {
-    padding-left: 0;
+    padding-left: 24px;
   }
 }
 
 @media screen and (min-width:1200px) {
   .c6 {
-    padding-left: 0;
+    padding-left: 24px;
   }
 }
 
@@ -1216,25 +1216,25 @@ exports[`it vertically aligns children middle if alignY is center 1`] = `
 
 @media screen and (min-width:576px) {
   .c0 {
-    margin-left: 0px;
+    margin-left: -24px;
   }
 }
 
 @media screen and (min-width:768px) {
   .c0 {
-    margin-left: 0px;
+    margin-left: -24px;
   }
 }
 
 @media screen and (min-width:992px) {
   .c0 {
-    margin-left: 0px;
+    margin-left: -24px;
   }
 }
 
 @media screen and (min-width:1200px) {
   .c0 {
-    margin-left: 0px;
+    margin-left: -24px;
   }
 }
 
