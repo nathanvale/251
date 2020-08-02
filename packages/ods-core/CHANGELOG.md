@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.53.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.52.2...@origin-digital/ods-core@0.53.0) (2020-08-02)
+
+
+### Features
+
+* update Columns default ([a85cdb5](https://bitbucket.orgn.io/od/origin-ui/commits/a85cdb5b0e2e29efe9754a68acc046cb2dff6595))
+
+
+
+
+
 ## [0.52.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.52.1...@origin-digital/ods-core@0.52.2) (2020-07-31)
 
 
