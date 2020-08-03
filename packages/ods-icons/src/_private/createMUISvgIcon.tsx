@@ -1,4 +1,4 @@
-import React, { RefObject } from "react";
+import React, { RefObject, useContext } from "react";
 import { SvgIconProps as MuiSvgIconProps } from "@material-ui/core";
 import {
   SvgIcon,
@@ -7,6 +7,7 @@ import {
   defaultsize,
   defaultViewBox,
 } from "../SvgIcon/SvgIcon";
+import { SvgIconContext } from "../SvgIcon/SvgIconContext";
 import { useSvgIconStyles } from "../_private/useSvgIconStyles";
 
 export function createMUISvgIcon(
@@ -17,14 +18,18 @@ export function createMUISvgIcon(
     React.forwardRef(
       (
         {
-          tone = defaultColor,
+          tone,
           size = defaultsize,
           "data-id": dataId = `Icon${displayName}`,
           ...rest
         }: SvgIconProps,
         ref
       ) => {
-        const svgIconStyles = useSvgIconStyles({ tone, size });
+        const contextTone = useContext(SvgIconContext);
+        const svgIconStyles = useSvgIconStyles({
+          tone: tone || contextTone || defaultColor,
+          size,
+        });
         return (
           <MUISvgIcon
             className={svgIconStyles}
@@ -38,7 +43,6 @@ export function createMUISvgIcon(
   );
 
   SvgIcon.defaultProps = {
-    tone: defaultColor,
     size: defaultsize,
     viewBox: defaultViewBox,
   };

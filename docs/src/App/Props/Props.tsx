@@ -7,7 +7,7 @@ import isEmpty from "lodash/isEmpty";
 import sortBy from "lodash/sortBy";
 import { Components as odsCore } from "@origin-digital/ods-core";
 import * as odsLab from "@origin-digital/ods-lab";
-import * as odsIcons from "@origin-digital/ods-icons";
+import { icons as odsIcons } from "@origin-digital/ods-icons";
 import styled from "styled-components";
 import { maxWidth, MaxWidthProps } from "styled-system";
 import {
@@ -104,7 +104,7 @@ export function Props<T = {}>({
   specialRequiredProps,
   specialOptionalProps,
 }: PropsProps<T>) {
-  if (componentName.startsWith("Icon")) {
+  if (componentName.startsWith("Icon") && componentName !== "IconButton") {
     componentName = "SvgIcon";
   }
   if (!isValidComponentName(componentName)) {

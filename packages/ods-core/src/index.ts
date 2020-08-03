@@ -237,6 +237,7 @@ export const Components = {
   Heading,
   HeadingChevronLink,
   Hidden,
+  IconButton,
   InputAdornment,
   Inline,
   List,

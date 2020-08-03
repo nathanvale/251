@@ -37,7 +37,7 @@ export const docs: ComponentDocs<ButtonProps> = {
       "This will flip the color and backgroundColor/borderColor accordingly to make sure the button is properly visible",
     ].join(" "),
     noTextPadding: [
-      `Only applicable to variant="text", cancels out the left padding by a negative left margin.`,
+      `Only applicable to variant="text", cancels out the padding by a negative margin.`,
       `This allows the button to look in harmony with text above or below it.`,
     ].join(" "),
     size: "The size of the button. This property is NOT responsive",

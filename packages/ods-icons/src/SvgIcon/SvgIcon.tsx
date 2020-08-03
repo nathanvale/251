@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   SvgIcon as MUISvgIcon,
   SvgIconProps as MuiSvgIconProps,
@@ -9,6 +9,7 @@ import {
   SvgIconToneVariants,
 } from "@origin-digital/ods-types";
 import { useSvgIconStyles } from "../_private/useSvgIconStyles";
+import { SvgIconContext } from "./SvgIconContext";
 
 export interface SvgIconProps extends ComponentBaseProps {
   children?: React.ReactNode;
@@ -27,12 +28,16 @@ export const SvgIcon = React.forwardRef<any, SvgIconProps>((props, ref) => {
   const {
     "data-id": dataId,
     children,
-    tone = defaultColor,
+    tone,
     size = defaultsize,
     muiProps,
     ...rest
   } = props;
-  const svgIconStyles = useSvgIconStyles({ tone, size });
+  const contextTone = useContext(SvgIconContext);
+  const svgIconStyles = useSvgIconStyles({
+    tone: tone || contextTone || defaultColor,
+    size,
+  });
   return (
     <MUISvgIcon
       data-id={dataId}
@@ -48,7 +53,6 @@ export const SvgIcon = React.forwardRef<any, SvgIconProps>((props, ref) => {
 
 SvgIcon.defaultProps = {
   "data-id": "svg-icon",
-  tone: defaultColor,
   size: defaultsize,
   viewBox: defaultViewBox,
 };

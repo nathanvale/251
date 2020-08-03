@@ -61,7 +61,6 @@ const componentsMap: Record<string, string> = {
   ...convertArrayToObject(odsIcons, "ods-icons"),
   ...convertArrayToObject(odsCore, "ods-core"),
 };
-
 const SVGIcon = odsIcons.SvgIcon;
 export const getComponentDocs = ({
   componentName,
@@ -131,7 +130,7 @@ const allComponents = componentPaths
   .map((docs) => docs.name);
 
 export function filterByIcon(name: string) {
-  if (name.startsWith("Icon")) {
+  if (name.startsWith("Icon") && name !== "IconButton") {
     return false;
   }
   return true;

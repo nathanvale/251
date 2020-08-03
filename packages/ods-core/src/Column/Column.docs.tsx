@@ -1,8 +1,8 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Columns } from '../Columns/Columns';
-import { Placeholder } from '../Placeholder/Placeholder';
-import { Stack } from '../Stack/Stack';
+import { Columns } from "../Columns/Columns";
+import { Placeholder } from "../Placeholder/Placeholder";
+import { Stack } from "../Stack/Stack";
 import { Column, ColumnProps, widthValueMap } from "./Column";
 
 export const docs: ComponentDocs<ColumnProps> = {
