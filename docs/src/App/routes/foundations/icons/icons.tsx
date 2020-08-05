@@ -13,7 +13,7 @@ import {
   InputAdornment,
   TextLink,
 } from "@origin-digital/ods-core";
-import * as icons from "@origin-digital/ods-icons";
+import { icons } from "@origin-digital/ods-icons";
 import { TextStack } from "../../../TextStack/TextStack";
 import { Overlay } from "../../../Overlay/Overlay";
 import { DocsPage } from "../../../../types";

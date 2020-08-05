@@ -1,6 +1,6 @@
 import React from "react";
 import makeStyles from "@material-ui/styles/makeStyles";
-import { IconButton } from "../IconButton/IconButton";
+import { IconButton } from "@origin-digital/ods-core";
 import { Grid, Icon, PaginationHolder } from "..";
 
 const useStyles = makeStyles({
@@ -59,12 +59,6 @@ export const Pagination = (props: PaginationProps) => {
               className={classes.chevron}
               disabled={startDisabled}
             >
-              <Icon
-                color={startDisabled ? "disabled" : "secondary"}
-                fontSize="small"
-              >
-                skip_previous
-              </Icon>
               <Icon
                 color={startDisabled ? "disabled" : "secondary"}
                 fontSize="small"

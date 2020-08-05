@@ -28,6 +28,7 @@ export {
   FormLabel,
   Hidden,
   HeadingChevronLink,
+  IconButton,
   List,
   ListItem,
   Inline,

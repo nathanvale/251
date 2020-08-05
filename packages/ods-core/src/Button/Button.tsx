@@ -25,7 +25,7 @@ import {
   useSpinnerStyles,
 } from "./button-styles";
 
-interface ButtonActionProps {
+export interface ButtonActionProps {
   onFocus?: FocusEventHandler<HTMLButtonElement>;
   onBlur?: FocusEventHandler<HTMLButtonElement>;
   onClick?: MouseEventHandler<HTMLButtonElement>;

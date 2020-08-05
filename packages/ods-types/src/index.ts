@@ -445,6 +445,7 @@ export type ButtonVariant = "contained" | "outlined" | "text";
 export type ButtonSize = "small" | "medium";
 export type ButtonColor = "primary" | "secondary";
 export type ButtonElements = "button" | "a" | "input";
+export type IconButtonColor = "primary" | "neutral" | "inherit";
 export type InputType = "button" | "submit" | "reset";
 
 export type TextFieldVariant = "filled" | "outlined";
