@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.28.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.27.0...@origin-digital/ods-lab@0.28.0) (2020-08-05)
+
+
+### Features
+
+* **ods-core:** Add IconButton component ([a067bbc](https://bitbucket.orgn.io/od/origin-ui/commits/a067bbcdc974015ef255c7a998ffb1f119ba76bd))
+
+
+
+
+
 # [0.27.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.26.0...@origin-digital/ods-lab@0.27.0) (2020-07-29)
 
 
