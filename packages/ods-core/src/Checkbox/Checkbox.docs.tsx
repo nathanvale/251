@@ -18,7 +18,7 @@ export const docs: ComponentDocs<CheckboxProps> = {
       {
         label: "Controlled",
         description:
-          "Checkbox becomes controlled when checked prop is provided",
+          "Checkbox becomes controlled when checked prop is provided.  The checked prop must NOT be undefined when used as a controlled component",
         Code: () => <Checkbox label="Accept Ts&Cs" id="tc-checkbox" checked />,
       },
       {
