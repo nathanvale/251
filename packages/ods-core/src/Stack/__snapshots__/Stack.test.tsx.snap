@@ -701,7 +701,7 @@ exports[`It can right-align components 1`] = `
   align-self: stretch;
   position: relative;
   height: 0.1px;
-  margin-top: 0px;
+  margin-top: 16px;
 }
 
 .c1:nth-child(n + 2):before {
@@ -712,7 +712,7 @@ exports[`It can right-align components 1`] = `
   align-self: stretch;
   position: relative;
   height: 0.1px;
-  margin-top: 0px;
+  margin-top: 16px;
 }
 
 .c3 {
@@ -720,6 +720,54 @@ exports[`It can right-align components 1`] = `
   min-width: 10px;
   height: 120px;
   border: 2px solid rgba(51,51,51,0.3);
+}
+
+@media screen and (min-width:576px) {
+  .c1:not(:empty) ~ div:not(:empty):before {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1:not(:empty) ~ div:not(:empty):before {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c1:not(:empty) ~ div:not(:empty):before {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c1:not(:empty) ~ div:not(:empty):before {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c1:nth-child(n + 2):before {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1:nth-child(n + 2):before {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c1:nth-child(n + 2):before {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c1:nth-child(n + 2):before {
+    margin-top: 24px;
+  }
 }
 
 <div>
@@ -868,7 +916,7 @@ exports[`It can stack 1`] = `
   align-self: stretch;
   position: relative;
   height: 0.1px;
-  margin-top: 0px;
+  margin-top: 16px;
 }
 
 .c1:nth-child(n + 2):before {
@@ -879,7 +927,7 @@ exports[`It can stack 1`] = `
   align-self: stretch;
   position: relative;
   height: 0.1px;
-  margin-top: 0px;
+  margin-top: 16px;
 }
 
 .c3 {
@@ -887,6 +935,54 @@ exports[`It can stack 1`] = `
   min-width: 10px;
   height: 120px;
   border: 2px solid rgba(51,51,51,0.3);
+}
+
+@media screen and (min-width:576px) {
+  .c1:not(:empty) ~ div:not(:empty):before {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1:not(:empty) ~ div:not(:empty):before {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c1:not(:empty) ~ div:not(:empty):before {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c1:not(:empty) ~ div:not(:empty):before {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .c1:nth-child(n + 2):before {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1:nth-child(n + 2):before {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c1:nth-child(n + 2):before {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c1:nth-child(n + 2):before {
+    margin-top: 24px;
+  }
 }
 
 <div
