@@ -32,4 +32,4 @@ docs:
 
 .PHONY: test/visuals
 test/visuals:
-	cd tests; yarn test:func:applitools -c 4
+	cd tests; yarn test:func:applitools -c 6

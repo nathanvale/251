@@ -17,6 +17,10 @@ function run() {
     ? process.env.BRANCH_NAME
     : "Adhoc-Build@origin-ui";
 
+  const buildNumber = process.env.BUILD_NUMBER
+    ? process.env.BUILD_NUMBER
+    : "local";
+
   const tearDown = (exitCode) => {
     if (appServer) {
       printStage("⌛️  Stop app server");
@@ -35,7 +39,7 @@ function run() {
 
     if (__BROWSERSTACK__ || __APPLITOOLS__) {
       process.env.BROWSERSTACK_PROJECT_NAME = process.env.LT_TEST_NAME = projectName;
-      process.env.BROWSERSTACK_BUILD_ID = process.env.LT_BUILD = buildId;
+      process.env.BROWSERSTACK_BUILD_ID = process.env.LT_BUILD = `${buildId}_${buildNumber}`;
     }
 
     if (__BROWSERSTACK__) {
