@@ -2,79 +2,47 @@
 # yarn lockfile v1
 
 
-"@applitools/dom-snapshot@3.4.2":
-  version "3.4.2"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@applitools/dom-snapshot/-/dom-snapshot-3.4.2.tgz#6e6d1ff50a194de8e0156509c0592cdb66291af7"
-  integrity sha1-bm0f9QoZTejgFWUJwFks22YpGvc=
+"@applitools/dom-capture@7.2.6":
+  version "7.2.6"
+  resolved "https://registry.yarnpkg.com/@applitools/dom-capture/-/dom-capture-7.2.6.tgz#351e65db255cbb7524f98820836c4aae6a44bc82"
+  integrity sha512-3at+08vNQSMJGHXPbs5xolElatSH9k0bvMt2m5GTeuQr6zU7TDGNfHzfxU+kORQiwxr1x+vP1HKEpIgDE6qoXQ==
   dependencies:
-    "@applitools/functional-commons" "^1.5.4"
+    "@applitools/functional-commons" "1.5.4"
+
+"@applitools/dom-snapshot@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@applitools/dom-snapshot/-/dom-snapshot-4.0.0.tgz#e2828c2f311a0bb6273be387601b6cb9c0c4967d"
+  integrity sha512-GgDajCLVpOyK9yY7oajNqX0/2XUT51EVtV+sCYv90t5ICBTs5CPFkmHzfnurdi4mVwU6q1RrC56f8eqqo5ft7A==
+  dependencies:
+    "@applitools/functional-commons" "1.5.4"
     css-tree "^1.0.0-alpha.39"
 
-"@applitools/dom-snapshot@3.4.5":
-  version "3.4.5"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@applitools/dom-snapshot/-/dom-snapshot-3.4.5.tgz#0669657dd5676d11fe5339db3a4f6315ba59834b"
-  integrity sha1-BmllfdVnbRH+UznbOk9jFbpZg0s=
+"@applitools/eyes-sdk-core@11.5.0":
+  version "11.5.0"
+  resolved "https://registry.yarnpkg.com/@applitools/eyes-sdk-core/-/eyes-sdk-core-11.5.0.tgz#f84fe74f16a2d702d52ba0c2fd63648ead4c4a14"
+  integrity sha512-FPDWzsY8Kt5Lz3vi8kwUh+SUuh5g4MYd+qgvAPtOsdMpT5elY8lqbg3d3UK7VZkgMwlYDi1Yl8QZuvXiM6oMKw==
   dependencies:
-    "@applitools/functional-commons" "^1.5.4"
-    css-tree "^1.0.0-alpha.39"
-
-"@applitools/eyes-common@3.22.0":
-  version "3.22.0"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@applitools/eyes-common/-/eyes-common-3.22.0.tgz#864ad6a5f4579fa3d6a8921a9d7048813cb3aafe"
-  integrity sha1-hkrWpfRXn6PWqJIanXBIgTyzqv4=
-  dependencies:
+    "@applitools/dom-capture" "7.2.6"
+    "@applitools/isomorphic-fetch" "3.0.0"
+    axios "0.19.2"
+    chalk "3.0.0"
     cosmiconfig "^6.0.0"
     dateformat "^3.0.3"
     debug "^4.1.1"
     deepmerge "^4.2.2"
     png-async "^0.9.4"
     stack-trace "^0.0.10"
-
-"@applitools/eyes-common@3.22.1":
-  version "3.22.1"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@applitools/eyes-common/-/eyes-common-3.22.1.tgz#c81c13459d5df6b16e09ab7641a0b8959a3150a2"
-  integrity sha1-yBwTRZ1d9rFuCat2QaC4lZoxUKI=
-  dependencies:
-    cosmiconfig "^6.0.0"
-    dateformat "^3.0.3"
-    debug "^4.1.1"
-    deepmerge "^4.2.2"
-    png-async "^0.9.4"
-    stack-trace "^0.0.10"
-
-"@applitools/eyes-sdk-core@9.2.0":
-  version "9.2.0"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@applitools/eyes-sdk-core/-/eyes-sdk-core-9.2.0.tgz#bb7447fd6e6a728cb71fe75858bfe0fa6a1c7554"
-  integrity sha1-u3RH/W5qcoy3H+dYWL/g+mocdVQ=
-  dependencies:
-    "@applitools/eyes-common" "3.22.0"
-    "@applitools/isomorphic-fetch" "3.0.0"
-    axios "0.19.2"
-    chalk "3.0.0"
-    es6-promise-pool "2.5.0"
     tunnel "0.0.6"
 
-"@applitools/eyes-sdk-core@9.2.1":
-  version "9.2.1"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@applitools/eyes-sdk-core/-/eyes-sdk-core-9.2.1.tgz#75daa64684e6508459cc32275dfe93fb47c7d6cb"
-  integrity sha1-ddqmRoTmUIRZzDInXf6T+0fH1ss=
+"@applitools/eyes-testcafe@1.9.2":
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/@applitools/eyes-testcafe/-/eyes-testcafe-1.9.2.tgz#7312a3abd92762c37219d90d3779c141a4f27a37"
+  integrity sha512-ItfHOOra1dIpr3w6nZeVnGuld205cxECN6KD27wHvi75+mVs82H38rbC7D0e3ON1lvwKmxI9xiBgxzQdFc1EMQ==
   dependencies:
-    "@applitools/eyes-common" "3.22.1"
-    "@applitools/isomorphic-fetch" "3.0.0"
-    axios "0.19.2"
-    chalk "3.0.0"
-    es6-promise-pool "2.5.0"
-    tunnel "0.0.6"
-
-"@applitools/eyes-testcafe@1.7.3":
-  version "1.7.3"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@applitools/eyes-testcafe/-/eyes-testcafe-1.7.3.tgz#f3e17ff836e76133bd5432a1431c340fbf826a4e"
-  integrity sha1-8+F/+DbnYTO9VDKhQxw0D7+Cak4=
-  dependencies:
-    "@applitools/dom-snapshot" "3.4.2"
-    "@applitools/eyes-sdk-core" "9.2.0"
-    "@applitools/functional-commons" "1.5.5"
-    "@applitools/visual-grid-client" "13.7.2"
+    "@applitools/dom-snapshot" "4.0.0"
+    "@applitools/eyes-sdk-core" "11.5.0"
+    "@applitools/functional-commons" "1.6.0"
+    "@applitools/visual-grid-client" "14.6.0"
     chalk "^2.4.2"
     rimraf "^2.7.1"
 
@@ -88,15 +56,10 @@
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@applitools/functional-commons/-/functional-commons-1.5.4.tgz#d32f2bbc6a2598872b3a385d054fcf8e40c30a40"
   integrity sha1-0y8rvGolmIcrOjhdBU/PjkDDCkA=
 
-"@applitools/functional-commons@1.5.5":
-  version "1.5.5"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@applitools/functional-commons/-/functional-commons-1.5.5.tgz#576aa05227ba445fcb778a2892b673d3280dd1aa"
-  integrity sha1-V2qgUie6RF/Ld4ookrZz0ygN0ao=
-
-"@applitools/functional-commons@^1.5.2", "@applitools/functional-commons@^1.5.4":
+"@applitools/functional-commons@1.6.0", "@applitools/functional-commons@^1.5.2":
   version "1.6.0"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@applitools/functional-commons/-/functional-commons-1.6.0.tgz#ea850c4f7832fcb6396b79b35faccac69f6482a9"
-  integrity sha1-6oUMT3gy/LY5a3mzX6zKxp9kgqk=
+  resolved "https://registry.yarnpkg.com/@applitools/functional-commons/-/functional-commons-1.6.0.tgz#ea850c4f7832fcb6396b79b35faccac69f6482a9"
+  integrity sha512-fwiF0CbeYHDEOTD/NKaFgaI8LvRcGYG2GaJJiRwcedKko16sQ8F3TK5wXfj2Ytjf+8gjwHwsEEX550z3yvDWxA==
 
 "@applitools/http-commons@2.3.12":
   version "2.3.12"
@@ -157,13 +120,13 @@
   dependencies:
     debug "^4.1.0"
 
-"@applitools/visual-grid-client@13.7.2":
-  version "13.7.2"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@applitools/visual-grid-client/-/visual-grid-client-13.7.2.tgz#ef29b7a698dc82c6ef1bc8555847c1d729a111fc"
-  integrity sha1-7ym3ppjcgsbvG8hVWEfB1ymhEfw=
+"@applitools/visual-grid-client@14.6.0":
+  version "14.6.0"
+  resolved "https://registry.yarnpkg.com/@applitools/visual-grid-client/-/visual-grid-client-14.6.0.tgz#a2d1c3054fa7cab593afcf6bf6d2c1f19717068d"
+  integrity sha512-Z1ZULWaNzAfggiwExk4+4pkF1LAQEqZ5frgtH19/MQMZGopFnuo1D0o/HUPovxlXcppUhReb3zrfOxu7ImILbQ==
   dependencies:
-    "@applitools/dom-snapshot" "3.4.5"
-    "@applitools/eyes-sdk-core" "9.2.1"
+    "@applitools/dom-snapshot" "4.0.0"
+    "@applitools/eyes-sdk-core" "11.5.0"
     "@applitools/feature-flags" "2.1.1"
     "@applitools/functional-commons" "1.5.4"
     "@applitools/http-commons" "2.3.12"
@@ -6171,6 +6134,15 @@ babel-helper-builder-binary-assignment-operator-visitor@^6.24.1:
     babel-runtime "^6.22.0"
     babel-types "^6.24.1"
 
+babel-helper-builder-react-jsx@^6.24.1:
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/babel-helper-builder-react-jsx/-/babel-helper-builder-react-jsx-6.26.0.tgz#39ff8313b75c8b65dceff1f31d383e0ff2a408a0"
+  integrity sha1-Of+DE7dci2Xc7/HzHTg+D/KkCKA=
+  dependencies:
+    babel-runtime "^6.26.0"
+    babel-types "^6.26.0"
+    esutils "^2.0.2"
+
 babel-helper-call-delegate@^6.24.1:
   version "6.24.1"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/babel-helper-call-delegate/-/babel-helper-call-delegate-6.24.1.tgz#ece6aacddc76e41c3461f88bfc575bd0daa2df8d"
@@ -6470,7 +6442,7 @@ babel-plugin-syntax-flow@^6.18.0:
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/babel-plugin-syntax-flow/-/babel-plugin-syntax-flow-6.18.0.tgz#4c3ab20a2af26aa20cd25995c398c4eb70310c8d"
   integrity sha1-TDqyCiryaqIM0lmVw5jE63AxDI0=
 
-babel-plugin-syntax-jsx@^6.18.0:
+babel-plugin-syntax-jsx@^6.18.0, babel-plugin-syntax-jsx@^6.3.13, babel-plugin-syntax-jsx@^6.8.0:
   version "6.18.0"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.18.0.tgz#0af32a9a6e13ca7a3fd5069e62d7b0f58d0d8946"
   integrity sha1-CvMqmm4Tyno/1QaeYtew9Y0NiUY=
@@ -6757,6 +6729,38 @@ babel-plugin-transform-object-rest-spread@^6.22.0, babel-plugin-transform-object
     babel-plugin-syntax-object-rest-spread "^6.8.0"
     babel-runtime "^6.26.0"
 
+babel-plugin-transform-react-display-name@^6.23.0:
+  version "6.25.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-react-display-name/-/babel-plugin-transform-react-display-name-6.25.0.tgz#67e2bf1f1e9c93ab08db96792e05392bf2cc28d1"
+  integrity sha1-Z+K/Hx6ck6sI25Z5LgU5K/LMKNE=
+  dependencies:
+    babel-runtime "^6.22.0"
+
+babel-plugin-transform-react-jsx-self@^6.22.0:
+  version "6.22.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-react-jsx-self/-/babel-plugin-transform-react-jsx-self-6.22.0.tgz#df6d80a9da2612a121e6ddd7558bcbecf06e636e"
+  integrity sha1-322AqdomEqEh5t3XVYvL7PBuY24=
+  dependencies:
+    babel-plugin-syntax-jsx "^6.8.0"
+    babel-runtime "^6.22.0"
+
+babel-plugin-transform-react-jsx-source@^6.22.0:
+  version "6.22.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-react-jsx-source/-/babel-plugin-transform-react-jsx-source-6.22.0.tgz#66ac12153f5cd2d17b3c19268f4bf0197f44ecd6"
+  integrity sha1-ZqwSFT9c0tF7PBkmj0vwGX9E7NY=
+  dependencies:
+    babel-plugin-syntax-jsx "^6.8.0"
+    babel-runtime "^6.22.0"
+
+babel-plugin-transform-react-jsx@^6.24.1:
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-react-jsx/-/babel-plugin-transform-react-jsx-6.24.1.tgz#840a028e7df460dfc3a2d29f0c0d91f6376e66a3"
+  integrity sha1-hAoCjn30YN/DotKfDA2R9jduZqM=
+  dependencies:
+    babel-helper-builder-react-jsx "^6.24.1"
+    babel-plugin-syntax-jsx "^6.8.0"
+    babel-runtime "^6.22.0"
+
 babel-plugin-transform-react-remove-prop-types@0.4.24:
   version "0.4.24"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/babel-plugin-transform-react-remove-prop-types/-/babel-plugin-transform-react-remove-prop-types-0.4.24.tgz#f2edaf9b4c6a5fbe5c1d678bfb531078c1555f3a"
@@ -6864,6 +6868,18 @@ babel-preset-react-app@^9.1.2:
     "@babel/runtime" "7.9.0"
     babel-plugin-macros "2.8.0"
     babel-plugin-transform-react-remove-prop-types "0.4.24"
+
+babel-preset-react@^6.24.1:
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/babel-preset-react/-/babel-preset-react-6.24.1.tgz#ba69dfaea45fc3ec639b6a4ecea6e17702c91380"
+  integrity sha1-umnfrqRfw+xjm2pOzqbhdwLJE4A=
+  dependencies:
+    babel-plugin-syntax-jsx "^6.3.13"
+    babel-plugin-transform-react-display-name "^6.23.0"
+    babel-plugin-transform-react-jsx "^6.24.1"
+    babel-plugin-transform-react-jsx-self "^6.22.0"
+    babel-plugin-transform-react-jsx-source "^6.22.0"
+    babel-preset-flow "^6.23.0"
 
 babel-preset-stage-2@^6.22.0:
   version "6.24.1"
@@ -9355,7 +9371,7 @@ dateformat@^3.0.0, dateformat@^3.0.3:
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/dateformat/-/dateformat-3.0.3.tgz#a6e37499a4d9a9cf85ef5872044d62901c9889ae"
   integrity sha1-puN0maTZqc+F71hyBE1ikByYia4=
 
-debug@*, debug@4, debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1:
+debug@*, debug@4, debug@4.1.1, debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1:
   version "4.1.1"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
   integrity sha1-O3ImAlUQnGtYnO4FDx1RYTlmR5E=
@@ -10261,11 +10277,6 @@ es6-iterator@2.0.3, es6-iterator@~2.0.3:
     es5-ext "^0.10.35"
     es6-symbol "^3.1.1"
 
-es6-promise-pool@2.5.0:
-  version "2.5.0"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/es6-promise-pool/-/es6-promise-pool-2.5.0.tgz#147c612b36b47f105027f9d2bf54a598a99d9ccb"
-  integrity sha1-FHxhKza0fxBQJ/nSv1SlmKmdnMs=
-
 es6-promise@^4.0.3:
   version "4.2.8"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/es6-promise/-/es6-promise-4.2.8.tgz#4eb21594c972bc40553d276e510539143db53e0a"
@@ -10579,10 +10590,10 @@ eslint@^6.6.0:
     text-table "^0.2.0"
     v8-compile-cache "^2.0.3"
 
-esotope-hammerhead@0.5.3:
-  version "0.5.3"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/esotope-hammerhead/-/esotope-hammerhead-0.5.3.tgz#4423efd9ea71e56dfd293d9f9c9eeddb51992842"
-  integrity sha1-RCPv2epx5W39KT2fnJ7t21GZKEI=
+esotope-hammerhead@0.5.5:
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/esotope-hammerhead/-/esotope-hammerhead-0.5.5.tgz#dccae8ffe588238c3c3db9b78df45fe95add498a"
+  integrity sha512-EuSYJDtF8gLMB24lzjHw2KotauPsVJybFrtGfQyMm48oC7sTkspA26DqcqcbnRl4GC6sPVKWEx+ex72eqopX9Q==
   dependencies:
     "@types/estree" "^0.0.39"
 
@@ -22117,10 +22128,10 @@ test-exclude@^5.2.3:
     read-pkg-up "^4.0.0"
     require-main-filename "^2.0.0"
 
-testcafe-browser-provider-browserstack@^1.11.0:
+testcafe-browser-provider-browserstack@^1.13.0:
   version "1.13.0"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/testcafe-browser-provider-browserstack/-/testcafe-browser-provider-browserstack-1.13.0.tgz#c115fd88b9e5878682b0accb6ed2a8464bd93af9"
-  integrity sha1-wRX9iLnlh4aCsKzLbtKoRkvZOvk=
+  resolved "https://registry.yarnpkg.com/testcafe-browser-provider-browserstack/-/testcafe-browser-provider-browserstack-1.13.0.tgz#c115fd88b9e5878682b0accb6ed2a8464bd93af9"
+  integrity sha512-c7DtCIHSwXGqzyWo0UEhkaBDwaCMT3hiHPcvvJLfkoWAgoCXuWUT4DZW1/0sgIes/R2XC1Z0C6ChkcQfH1XKYg==
   dependencies:
     browserstack-local "^1.3.6"
     dedent "^0.7.0"
@@ -22148,10 +22159,10 @@ testcafe-browser-provider-lambdatest@^2.0.1:
     request "^2.88.0"
     wd "^1.11.4"
 
-testcafe-browser-tools@2.0.11:
-  version "2.0.11"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/testcafe-browser-tools/-/testcafe-browser-tools-2.0.11.tgz#bdc9a1487d3bd44201f3ef3df9cb8a722acb57d1"
-  integrity sha1-vcmhSH071EIB8+89+cuKcirLV9E=
+testcafe-browser-tools@2.0.12:
+  version "2.0.12"
+  resolved "https://registry.yarnpkg.com/testcafe-browser-tools/-/testcafe-browser-tools-2.0.12.tgz#33b0173b5d7cd4c1327a94139f93630e6012ca65"
+  integrity sha512-5oNNYlcZiDspqJB6L8CfI4vxjzkvARSZv3pa+JrFAoqYmEA3VPiAvzrn+P0zi0D5jEPkKngW2KTpq6r3GfdDNw==
   dependencies:
     array-find "^1.0.0"
     dedent "^0.7.0"
@@ -22169,10 +22180,10 @@ testcafe-browser-tools@2.0.11:
     read-file-relative "^1.2.0"
     which-promise "^1.0.0"
 
-testcafe-hammerhead@16.2.9:
-  version "16.2.9"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/testcafe-hammerhead/-/testcafe-hammerhead-16.2.9.tgz#efb18f71f4d02304f8f7ae717e049e7b20579205"
-  integrity sha1-77GPcfTQIwT4965xfgSeeyBXkgU=
+testcafe-hammerhead@17.1.9:
+  version "17.1.9"
+  resolved "https://registry.yarnpkg.com/testcafe-hammerhead/-/testcafe-hammerhead-17.1.9.tgz#759b6820398dfec1dbfc5fc1d2eca1a1b5eaf2c3"
+  integrity sha512-RxlUsCkspdrWEWb9S2n9hwqX2RwRp5CFjRTN7Ijx+vnCcHKn5VPBhDlSrZHRiQT1yfa9+FudNsjmmrmlAGvCSg==
   dependencies:
     acorn-hammerhead "^0.3.0"
     asar "^2.0.1"
@@ -22180,7 +22191,8 @@ testcafe-hammerhead@16.2.9:
     brotli "^1.3.1"
     crypto-md5 "^1.0.0"
     css "2.2.3"
-    esotope-hammerhead "0.5.3"
+    debug "4.1.1"
+    esotope-hammerhead "0.5.5"
     iconv-lite "0.5.1"
     lodash "^4.17.13"
     lru-cache "2.6.3"
@@ -22198,10 +22210,10 @@ testcafe-hammerhead@16.2.9:
     tunnel-agent "0.6.0"
     webauth "^1.1.0"
 
-testcafe-legacy-api@3.1.11:
-  version "3.1.11"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/testcafe-legacy-api/-/testcafe-legacy-api-3.1.11.tgz#f6a1704c0ee57bd18b32bc8c383775f2bad74819"
-  integrity sha1-9qFwTA7le9GLMryMODd18rrXSBk=
+testcafe-legacy-api@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/testcafe-legacy-api/-/testcafe-legacy-api-4.0.0.tgz#700bacce8d16028250d41b643051645b4cfe7cd5"
+  integrity sha512-Tn+YEH8hqDPQs/1/d+A9G+FdfejougtoWX0wRxrLq5ECYy2qxwH8p9EGDUNatLm0IFIumVpcz2tSZkvRpfKLSg==
   dependencies:
     async "0.2.6"
     babel-runtime "^5.8.34"
@@ -22242,10 +22254,10 @@ testcafe-reporter-xunit@^2.1.0:
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/testcafe-reporter-xunit/-/testcafe-reporter-xunit-2.1.0.tgz#e6d66c572ce15af266706af0fd610b2a841dd443"
   integrity sha1-5tZsVyzhWvJmcGrw/WELKoQd1EM=
 
-testcafe@^1.8.4:
-  version "1.8.5"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/testcafe/-/testcafe-1.8.5.tgz#049496b20e3a70f3286afc23ddd88c50507b7bb5"
-  integrity sha1-BJSWsg46cPMoavwj3diMUFB7e7U=
+testcafe@^1.8.8:
+  version "1.8.8"
+  resolved "https://registry.yarnpkg.com/testcafe/-/testcafe-1.8.8.tgz#557e113c516a8c020c8f00dc718aaaebb50ac9b8"
+  integrity sha512-e8yLVU76fEWwh/UIkbTUSDa/e+J8BryErXqNf8itKHA/s9B6Mt9IfsVCCSYXUfx9DIruzcLNTsJ2q1xxc2KO+A==
   dependencies:
     "@types/node" "^10.12.19"
     async-exit-hook "^1.1.2"
@@ -22255,6 +22267,7 @@ testcafe@^1.8.4:
     babel-plugin-transform-runtime "^6.22.0"
     babel-preset-env "^1.1.8"
     babel-preset-flow "^6.23.0"
+    babel-preset-react "^6.24.1"
     babel-preset-stage-2 "^6.22.0"
     babel-runtime "^6.22.0"
     bin-v8-flags-filter "^1.1.2"
@@ -22308,9 +22321,9 @@ testcafe@^1.8.4:
     sanitize-filename "^1.6.0"
     source-map-support "^0.5.16"
     strip-bom "^2.0.0"
-    testcafe-browser-tools "2.0.11"
-    testcafe-hammerhead "16.2.9"
-    testcafe-legacy-api "3.1.11"
+    testcafe-browser-tools "2.0.12"
+    testcafe-hammerhead "17.1.9"
+    testcafe-legacy-api "4.0.0"
     testcafe-reporter-json "^2.1.0"
     testcafe-reporter-list "^2.1.0"
     testcafe-reporter-minimal "^2.1.0"

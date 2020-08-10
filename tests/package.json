@@ -12,12 +12,12 @@
     "testcafe:chrome": "testcafe chrome ./src/specs"
   },
   "devDependencies": {
-    "@applitools/eyes-testcafe": "1.7.3",
+    "@applitools/eyes-testcafe": "1.9.2",
     "@babel/node": "^7.10.1",
     "@babel/register": "^7.10.1",
     "minimist": "^1.2.5",
-    "testcafe": "^1.8.4",
-    "testcafe-browser-provider-browserstack": "^1.11.0",
+    "testcafe": "^1.8.8",
+    "testcafe-browser-provider-browserstack": "^1.13.0",
     "testcafe-browser-provider-lambdatest": "^2.0.1"
   }
 }
