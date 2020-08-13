@@ -53,7 +53,7 @@ export const p: Theme["palette"] = createPalette({
   warning: getPaletteColor(colors.lightOrange),
   error: getPaletteColor(colors.red),
   action: {
-    hoverOpacity: 0.16,
+    hoverOpacity: 0.08,
     disabled: colors.grey[200],
   },
   primaryB: getPaletteColor(colors.darkOrange),
