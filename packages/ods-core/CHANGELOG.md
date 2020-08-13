@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.55.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.54.1...@origin-digital/ods-core@0.55.0) (2020-08-13)
+
+
+### Features
+
+* update default space ([00de57a](https://bitbucket.orgn.io/od/origin-ui/commits/00de57a757a8ad9c5f110f20e161968fd10c625d))
+
+
+
+
+
 ## [0.54.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.54.0...@origin-digital/ods-core@0.54.1) (2020-08-06)
 
 **Note:** Version bump only for package @origin-digital/ods-core
