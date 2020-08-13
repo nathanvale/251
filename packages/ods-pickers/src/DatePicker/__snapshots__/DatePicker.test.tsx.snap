@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-2 MuiFormControl-fullWidth"
+    data-id="test"
+    format="dd/MM/yyyy"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
+      data-id="test-label"
+      data-shrink="true"
+      for="datepicker"
+      id="datepicker-label"
+    >
+      Date of birth
+    </label>
+    <div
+      class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl"
+    >
+      <input
+        aria-describedby="datepicker-helper-text"
+        aria-invalid="false"
+        autocomplete="false"
+        class="MuiInputBase-input MuiFilledInput-input"
+        data-id="test-input"
+        id="datepicker"
+        readonly=""
+        type="text"
+        value="08/06/1977"
+      />
+    </div>
+    <p
+      class="MuiFormHelperText-root MuiFormHelperText-contained form-helper-text-grey400-colour-3 MuiFormHelperText-filled"
+      data-id="test-helper-text"
+      id="datepicker-helper-text"
+    >
+      Enter your date of birth
+    </p>
+  </div>
+</div>
+`;
+
+exports[`it should render error 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-5 MuiFormControl-fullWidth"
+    data-id="date-picker"
+    format="dd/MM/yyyy"
+  >
+    <div
+      class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline Mui-error Mui-error MuiInputBase-fullWidth MuiInputBase-formControl"
+    >
+      <input
+        aria-invalid="true"
+        autocomplete="false"
+        class="MuiInputBase-input MuiFilledInput-input"
+        data-id="date-picker-input"
+        id="datepicker"
+        readonly=""
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;

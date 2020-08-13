@@ -8,6 +8,7 @@ import sortBy from "lodash/sortBy";
 import { Components as odsCore } from "@origin-digital/ods-core";
 import * as odsLab from "@origin-digital/ods-lab";
 import { icons as odsIcons } from "@origin-digital/ods-icons";
+import { Components as odsPickers } from "@origin-digital/ods-pickers";
 import styled from "styled-components";
 import { maxWidth, MaxWidthProps } from "styled-system";
 import {
@@ -123,7 +124,7 @@ export function Props<T = {}>({
 
   propDescriptions = updateDescForMuiProps(optionalProps, propDescriptions);
 
-  const components = { ...odsLab, ...odsIcons, ...odsCore };
+  const components = { ...odsLab, ...odsIcons, ...odsPickers, ...odsCore };
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const component = (components as Record<string, FC<any>>)[componentName];
 

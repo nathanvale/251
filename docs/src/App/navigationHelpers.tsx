@@ -5,6 +5,7 @@ import sortBy from "lodash/sortBy";
 import includes from "lodash/includes";
 import { Components as odsCore } from "@origin-digital/ods-core";
 import * as odsLab from "@origin-digital/ods-lab";
+import { Components as odsPickers } from "@origin-digital/ods-pickers";
 import * as odsIcons from "@origin-digital/ods-icons";
 
 import { ComponentDocs } from "@origin-digital/ods-types";
@@ -22,6 +23,12 @@ const components = Object.keys(odsCore)
     Object.keys(odsLab).map((componentName) => ({
       componentName,
       packageName: "ods-lab",
+    }))
+  )
+  .concat(
+    Object.keys(odsPickers).map((componentName) => ({
+      componentName,
+      packageName: "ods-pickers",
     }))
   )
   .concat(
@@ -60,6 +67,7 @@ const componentsMap: Record<string, string> = {
   ...convertArrayToObject(odsLab, "ods-lab"),
   ...convertArrayToObject(odsIcons, "ods-icons"),
   ...convertArrayToObject(odsCore, "ods-core"),
+  ...convertArrayToObject(odsPickers, "ods-pickers"),
 };
 const SVGIcon = odsIcons.SvgIcon;
 export const getComponentDocs = ({
