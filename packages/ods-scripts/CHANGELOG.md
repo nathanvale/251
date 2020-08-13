@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.54.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.53.2...@origin-digital/ods-scripts@0.54.0) (2020-08-13)
+
+
+### Features
+
+* **datepicker:** new component ([54c45c2](https://bitbucket.orgn.io/od/origin-ui/commits/54c45c21de9a6370476e12bfcf1a46f3b6649b74))
+
+
+
+
+
 ## [0.53.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.53.1...@origin-digital/ods-scripts@0.53.2) (2020-08-13)
 
 **Note:** Version bump only for package @origin-digital/ods-scripts
