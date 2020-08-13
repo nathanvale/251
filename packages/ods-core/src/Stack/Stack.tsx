@@ -36,7 +36,7 @@ export const stackDefaultProps: RequiredWithoutChildren<StackProps> = {
   "data-id": "stack",
   dividers: false,
   alignX: "left",
-  space: "none",
+  space: ["medium", "large"],
   className: "",
 };
 
