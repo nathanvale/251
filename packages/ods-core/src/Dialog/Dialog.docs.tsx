@@ -28,6 +28,7 @@ export const docs: ComponentDocs<DialogProps> = {
   migrationGuide: false,
   examples: {
     default: {
+      playroom: false,
       Code: () => {
         const [showModal, setShowModal] = React.useState(false);
         return (

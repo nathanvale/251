@@ -65,6 +65,9 @@
       "path": "packages/ods-typography/tsconfig.json"
     },
     {
+      "path": "packages/ods-pickers/tsconfig.json"
+    },
+    {
       "path": "docs/tsconfig.json"
     },
     {

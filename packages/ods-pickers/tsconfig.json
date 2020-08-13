@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist/typings",
+    "rootDir": "./src"
+  },
+  "exclude": ["src/**/*.test.ts?", "src/**/*.docs.ts?"],
+  "include": ["src/", "src/**/*.json", "../../globals.d.ts", "../../@types"],
+  "references": [
+    { "path": "../ods-core/tsconfig.json" },
+    { "path": "../ods-themes/tsconfig.json" },
+    { "path": "../ods-helpers/tsconfig.json" },
+    { "path": "../ods-types/tsconfig.json" },
+    { "path": "../ods-devtools/tsconfig.json" },
+    { "path": "../ods-icons/tsconfig.json" },
+    { "path": "../ods-typography/tsconfig.json" }
+  ]
+}

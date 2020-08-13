@@ -62,5 +62,11 @@ export {
   TrackingProvider,
 } from "@origin-digital/ods-core";
 
+export {
+  DatePicker,
+  KeyboardDatePicker,
+  DatePickerProvider,
+} from "@origin-digital/ods-pickers";
+
 export * from "@origin-digital/ods-icons";
 export { Breadcrumbs, Breadcrumb } from "@origin-digital/ods-lab";

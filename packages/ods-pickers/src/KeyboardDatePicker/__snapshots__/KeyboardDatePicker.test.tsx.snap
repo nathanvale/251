@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-2 MuiFormControl-fullWidth"
+    data-id="test"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
+      data-id="test-label"
+      data-shrink="true"
+      for="datepicker"
+      id="datepicker-label"
+    >
+      Date of birth
+    </label>
+    <div
+      class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
+    >
+      <input
+        aria-describedby="datepicker-helper-text"
+        aria-invalid="false"
+        autocomplete="false"
+        class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
+        data-id="test-input"
+        id="datepicker"
+        type="text"
+        value="08/06/1977"
+      />
+      <div
+        class="MuiInputAdornment-root MuiInputAdornment-filled MuiInputAdornment-positionEnd"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <p
+      class="MuiFormHelperText-root MuiFormHelperText-contained form-helper-text-grey400-colour-3 MuiFormHelperText-filled"
+      data-id="test-helper-text"
+      id="datepicker-helper-text"
+    >
+      Enter your date of birth
+    </p>
+  </div>
+</div>
+`;
+
+exports[`it should render error 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-10 MuiFormControl-fullWidth"
+    data-id="keyboard-date-picker"
+  >
+    <div
+      class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline Mui-error Mui-error MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
+    >
+      <input
+        aria-invalid="true"
+        autocomplete="false"
+        class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
+        data-id="keyboard-date-picker-input"
+        id="datepicker"
+        type="text"
+        value=""
+      />
+      <div
+        class="MuiInputAdornment-root MuiInputAdornment-filled MuiInputAdornment-positionEnd"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
