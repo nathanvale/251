@@ -40,7 +40,8 @@ export const docs: ComponentDocs<ButtonProps> = {
       `Only applicable to variant="text", cancels out the padding by a negative margin.`,
       `This allows the button to look in harmony with text above or below it.`,
     ].join(" "),
-    size: "The size of the button. This property is NOT responsive",
+    size:
+      "The size of the button. This property is NOT responsive. This size should be set to small when using the text variant.",
     spinner: [
       "When true, will disable the Button and show a spinner on top of it.",
       "If the button is already disabled (`disabled={true}`), it won't show the",
@@ -127,22 +128,24 @@ export const docs: ComponentDocs<ButtonProps> = {
           <Stack space="medium">
             <Columns space="medium">
               <Column width="content">
-                <Button variant="text">Primary</Button>
+                <Button variant="text" size="small">
+                  Primary
+                </Button>
               </Column>
               <Column>
-                <Button disabled variant="text">
+                <Button disabled variant="text" size="small">
                   Primary
                 </Button>
               </Column>
             </Columns>
             <Columns space="medium">
               <Column width="content">
-                <Button variant="text" color="secondary">
+                <Button variant="text" color="secondary" size="small">
                   Secondary
                 </Button>
               </Column>
               <Column>
-                <Button disabled variant="text" color="secondary">
+                <Button disabled variant="text" color="secondary" size="small">
                   Secondary
                 </Button>
               </Column>
@@ -162,14 +165,14 @@ export const docs: ComponentDocs<ButtonProps> = {
           "To left-align with text under or above it the padding is cancelled by negative margins",
         Code: () => (
           <Stack space="medium" alignX="left">
-            <Button noTextPadding variant="text">
+            <Button noTextPadding variant="text" size="small">
               Primary
             </Button>
             <Text>This text should left-align with the button above</Text>
           </Stack>
         ),
         codeString: `<Stack space="medium" alignX="left">
-  <Button noTextPadding variant="text">
+  <Button noTextPadding variant="text" size="small">
     Primary
   </Button>
   <Text>This text should left-align with the button above</Text>
@@ -183,6 +186,7 @@ export const docs: ComponentDocs<ButtonProps> = {
             variant="text"
             href="https://www.originenergy.com.au"
             target="_blank"
+            size="small"
           >
             Origin website
           </Button>

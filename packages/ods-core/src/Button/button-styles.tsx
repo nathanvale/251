@@ -15,7 +15,7 @@ import { Breakpoint } from "@material-ui/core/styles/createBreakpoints";
 import { mapToStyledSystem } from "@origin-digital/ods-helpers";
 
 const getHoverBG = (color: string) => {
-  return darken(color, 0.16);
+  return darken(color, 0.08);
 };
 const getHoverBGInverse = (color: string) => {
   return lighten(color, 0.84);
@@ -110,13 +110,13 @@ const getCommonStyleRules = (theme: Theme) => ({
     const fullWidthStyles = getFullWidthStyles(theme, fullWidth);
 
     //Handle padding for different button sizes and whether there is an icon or not.
-    let [pt, pr, pb, pl] = [12, 24, 12, 24];
+    let [pt, pr, pb, pl] = [12, 12, 12, 12];
     if (size === "small" && hasIcon) {
-      [pt, pr, pb, pl] = [12, 12, 12, 8];
+      [pt, pr, pb, pl] = [12, 8, 12, 8];
     } else if (size === "small" && !hasIcon) {
-      [pt, pr, pb, pl] = [12, 16, 12, 16];
+      [pt, pr, pb, pl] = [12, 8, 12, 8];
     } else if (size === "medium" && hasIcon) {
-      [pt, pr, pb, pl] = [12, 20, 12, 16];
+      [pt, pr, pb, pl] = [12, 12, 12, 12];
     }
 
     // Outline has a border, so we need to subtract 1 pixel off each padding to have overall width of the button the same
