@@ -2430,13 +2430,13 @@
   dependencies:
     find-up "^2.1.0"
 
-"@craco/craco@5.6.2":
-  version "5.6.2"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@craco/craco/-/craco-5.6.2.tgz#d98d660962e810bb1c9bb3e5318b99df6c620472"
-  integrity sha1-2Y1mCWLoELscm7PlMYuZ32xiBHI=
+"@craco/craco@5.6.4":
+  version "5.6.4"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@craco/craco/-/craco-5.6.4.tgz#de7a707c727864f39e6afc192fb6732c3ca45f90"
+  integrity sha1-3npwfHJ4ZPOeavwZL7ZzLDykX5A=
   dependencies:
     cross-spawn "^7.0.0"
-    lodash.mergewith "^4.6.2"
+    lodash "^4.17.15"
     webpack-merge "^4.2.2"
 
 "@csstools/convert-colors@^1.4.0":
@@ -4082,6 +4082,17 @@
     react-keyed-flatten-children "^1.2.0"
     styled-system "4.2.3"
     utility-types "^3.7.0"
+
+"@origin-digital/ods-themes@^0.19.1":
+  version "0.19.1"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/ods-themes/-/@origin-digital/ods-themes-0.19.1.tgz#4de9bf3a016c8fc7f48d518788e9209f519fbd11"
+  integrity sha1-Tem/OgFsj8f0jVGHiOkgn1GfvRE=
+  dependencies:
+    "@babel/runtime-corejs3" "^7.8.3"
+    "@material-ui/core" "^4.11.0"
+    "@material-ui/styles" "^4.10.0"
+    "@origin-digital/ods-types" "^0.34.0"
+    "@origin-digital/ods-typography" "^0.3.11"
 
 "@origin-digital/origin-scripts@^1.13.3":
   version "1.13.3"
@@ -15456,11 +15467,6 @@ lodash.merge@^4.6.2:
   version "4.6.2"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha1-VYqlO0O2YeGSWgr9+japoQhf5Xo=
-
-lodash.mergewith@^4.6.2:
-  version "4.6.2"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/lodash.mergewith/-/lodash.mergewith-4.6.2.tgz#617121f89ac55f59047c7aec1ccd6654c6590f55"
-  integrity sha1-YXEh+JrFX1kEfHrsHM1mVMZZD1U=
 
 lodash.omit@^4.5.0:
   version "4.5.0"
