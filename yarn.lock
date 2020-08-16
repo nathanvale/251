@@ -4083,6 +4083,17 @@
     styled-system "4.2.3"
     utility-types "^3.7.0"
 
+"@origin-digital/ods-themes@^0.19.1":
+  version "0.19.1"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/ods-themes/-/@origin-digital/ods-themes-0.19.1.tgz#4de9bf3a016c8fc7f48d518788e9209f519fbd11"
+  integrity sha1-Tem/OgFsj8f0jVGHiOkgn1GfvRE=
+  dependencies:
+    "@babel/runtime-corejs3" "^7.8.3"
+    "@material-ui/core" "^4.11.0"
+    "@material-ui/styles" "^4.10.0"
+    "@origin-digital/ods-types" "^0.34.0"
+    "@origin-digital/ods-typography" "^0.3.11"
+
 "@origin-digital/origin-scripts@^1.13.3":
   version "1.13.3"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/origin-scripts/-/@origin-digital/origin-scripts-1.13.3.tgz#7ea323673c98e27e800f864396f48407ae31fba1"
