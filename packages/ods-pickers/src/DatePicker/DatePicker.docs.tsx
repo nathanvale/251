@@ -53,19 +53,18 @@ export const docs: ComponentDocs<DatePickerProps> = {
       },
       {
         label: "Controlled",
-        codeString: `
-        const [selectedDate, handleDateChange] = React.useState(new Date());
-        return (
-          <DatePickerProvider>
-            <DatePicker
-              id="datepicker"
-              label="Date of birth"
-              value={selectedDate}
-              onChange={handleDateChange}
-            />
-          </DatePickerProvider>
-        );
-        `,
+        codeString: `const [selectedDate, handleDateChange] = React.useState(new Date());
+return (
+  <DatePickerProvider>
+    <DatePicker
+      id="datepicker"
+      label="Date of birth"
+      value={selectedDate}
+      onChange={handleDateChange}
+    />
+  </DatePickerProvider>
+);
+`,
         Code: () => {
           const [selectedDate, handleDateChange] = React.useState<
             MaterialUiPickersDate
@@ -86,34 +85,33 @@ export const docs: ComponentDocs<DatePickerProps> = {
       {
         label: "Disable dates",
         description: "In this example we disable dates in the picker",
-        codeString: `
-        import { isWeekend, isBefore, addDays } from "date-fns";
-        import { DatePickerProvider } from "../DatePickerProvider/DatePickerProvider";
-        import { DatePicker, DatePickerProps, defaultDateFormat } from "./DatePicker";
+        codeString: `import { isWeekend, isBefore, addDays } from "date-fns";
+import { DatePickerProvider } from "../DatePickerProvider/DatePickerProvider";
+import { DatePicker, DatePickerProps, defaultDateFormat } from "./DatePicker";
 
-        const isUnavailableDate = (date: MaterialUiPickersDate) => {
-          if (!date) {
-            return false;
-          }
-          return isWeekend(date) || isBefore(date, addDays(new Date(), 1));
-        };
-        const [selectedDate, setSelectedDate] = React.useState<
-          MaterialUiPickersDate
-        >();
-        const handleChange = (date: MaterialUiPickersDate) =>
-          setSelectedDate(date);
+const isUnavailableDate = (date: MaterialUiPickersDate) => {
+  if (!date) {
+    return false;
+  }
+  return isWeekend(date) || isBefore(date, addDays(new Date(), 1));
+};
+const [selectedDate, setSelectedDate] = React.useState<
+  MaterialUiPickersDate
+>();
+const handleChange = (date: MaterialUiPickersDate) =>
+  setSelectedDate(date);
 
-        return (
-          <DatePickerProvider>
-            <DatePicker
-              id="datepicker"
-              label="Connection date (DD/MM/YYYY)"
-              value={selectedDate}
-              onChange={handleChange}
-              shouldDisableDate={isUnavailableDate}
-            />
-          </DatePickerProvider>
-        );
+return (
+  <DatePickerProvider>
+    <DatePicker
+      id="datepicker"
+      label="Connection date (DD/MM/YYYY)"
+      value={selectedDate}
+      onChange={handleChange}
+      shouldDisableDate={isUnavailableDate}
+    />
+  </DatePickerProvider>
+);
       `,
         Code: () => {
           const isUnavailableDate = (date: MaterialUiPickersDate) => {

@@ -14,19 +14,37 @@ import {
   docs,
 } from "../../../../../packages/ods-core/src/TrackedLink/TrackedLink.docs";
 import { disableTrackingExample } from "../../../../../packages/ods-core/src/TrackingDisable/TrackingDisable.docs";
+import { missingSnippet } from "../../ComponentDoc/ComponentDoc";
+
+let snippets: any = {};
+try {
+  snippets = require("../../../snippets-components.json");
+} catch (error) {}
 
 const TrackingGuide = () => {
   const sections: PageSection[] = [
     {
       title: setupTracking.label,
       description: setupTracking.description,
-      children: <Code>{setupTracking.Code ? setupTracking.Code() : ""}</Code>,
+      children: (
+        <Code
+          codeString={
+            snippets?.TrackingProvider?.additional[0] || missingSnippet
+          }
+        >
+          {setupTracking.Code ? setupTracking.Code() : ""}
+        </Code>
+      ),
     },
     {
       title: disableTrackingExample.label,
       description: disableTrackingExample.description,
       children: (
-        <Code>
+        <Code
+          codeString={
+            snippets?.TrackingDisable?.additional[0] || missingSnippet
+          }
+        >
           {disableTrackingExample.Code ? disableTrackingExample.Code() : ""}
         </Code>
       ),
@@ -34,17 +52,39 @@ const TrackingGuide = () => {
     {
       title: example.label,
       description: docs.description,
-      children: <Code>{example.codeString || ""}</Code>,
+      children: (
+        <Code
+          codeString={snippets?.TrackedLink?.additional[0] || missingSnippet}
+        >
+          {example.codeString || ""}
+        </Code>
+      ),
     },
     {
       title: setupReportingClient.label,
       description: setupReportingClient.description,
-      children: <Code>{setupReportingClient.codeString || ""}</Code>,
+      children: (
+        <Code
+          codeString={
+            snippets?.TrackingProvider?.additional[1] || missingSnippet
+          }
+        >
+          {setupReportingClient.codeString || ""}
+        </Code>
+      ),
     },
     {
       title: setupManualReportingClient.label,
       description: setupManualReportingClient.description,
-      children: <Code>{setupManualReportingClient.codeString || ""}</Code>,
+      children: (
+        <Code
+          codeString={
+            snippets?.TrackingProvider?.additional[2] || missingSnippet
+          }
+        >
+          {setupManualReportingClient.codeString || ""}
+        </Code>
+      ),
     },
     {
       title: "Tracking components",
@@ -67,7 +107,15 @@ const TrackingGuide = () => {
     {
       title: useTrackingExample.label,
       description: useTrackingExample.description,
-      children: <Code>{useTrackingExample.codeString || ""}</Code>,
+      children: (
+        <Code
+          codeString={
+            snippets?.TrackingProvider?.additional[3] || missingSnippet
+          }
+        >
+          {useTrackingExample.codeString || ""}
+        </Code>
+      ),
     },
   ];
   return (

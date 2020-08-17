@@ -2,10 +2,7 @@ import React, { ReactChild } from "react";
 import { IconFileCopy, IconPlayCircleOutline } from "@origin-digital/ods-icons";
 import copy from "copy-to-clipboard";
 import lzString from "lz-string";
-import memoize from "lodash/memoize";
-import reactElementToJSXString from "react-element-to-jsx-string";
-import prettier from "prettier/standalone";
-import typescriptParser from "prettier/parser-typescript";
+
 import {
   Box,
   Stack,
@@ -29,33 +26,18 @@ const createUrl = ({ playroomUrl, code }: CreateUrlOptions) => {
   return playroomUrl + path;
 };
 
-const formatSnippet = memoize(
-  (snippet) =>
-    prettier
-      .format(snippet, {
-        parser: "typescript",
-        plugins: [typescriptParser],
-        semi: false,
-      })
-      .replace(/^;/, "") // Remove leading semicolons from JSX
-);
+const formatSnippet = (snippet: any) => snippet;
 
 interface CodeProps {
   playroom?: boolean;
   children: ReactChild;
+  codeString?: string;
 }
-export default ({ playroom = true, children }: CodeProps) => {
+export default ({ playroom = true, children, codeString }: CodeProps) => {
   const { playroomUrl } = useConfig();
 
   const snippet = formatSnippet(
-    typeof children === "string"
-      ? children
-      : reactElementToJSXString(children, {
-          useBooleanShorthandSyntax: false,
-          showDefaultProps: false,
-          showFunctions: true,
-          filterProps: ["onChange", "onBlur", "onFocus"],
-        })
+    typeof children === "string" ? children : children
   );
 
   return (
@@ -80,7 +62,7 @@ export default ({ playroom = true, children }: CodeProps) => {
         >
           <Text component="pre">
             <SyntaxHighlighter language="tsx" style={editorTheme}>
-              {snippet}
+              {codeString || snippet}
             </SyntaxHighlighter>
           </Text>
         </Box>
@@ -113,7 +95,7 @@ export default ({ playroom = true, children }: CodeProps) => {
                 target="_blank"
                 href={createUrl({
                   playroomUrl,
-                  code: snippet,
+                  code: codeString || snippet,
                 })}
               >
                 <Box display="flex" alignItems="center">

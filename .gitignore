@@ -12,3 +12,6 @@ lerna-debug.log
 docs/public/e2e-manifest.json
 yarn-error.log
 tests/lib/**
+snippets-dev-guides.json
+snippets-layout.json
+snippets-components.json
