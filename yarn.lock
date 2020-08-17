@@ -2430,13 +2430,13 @@
   dependencies:
     find-up "^2.1.0"
 
-"@craco/craco@5.6.2":
-  version "5.6.2"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@craco/craco/-/craco-5.6.2.tgz#d98d660962e810bb1c9bb3e5318b99df6c620472"
-  integrity sha1-2Y1mCWLoELscm7PlMYuZ32xiBHI=
+"@craco/craco@5.6.4":
+  version "5.6.4"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@craco/craco/-/craco-5.6.4.tgz#de7a707c727864f39e6afc192fb6732c3ca45f90"
+  integrity sha1-3npwfHJ4ZPOeavwZL7ZzLDykX5A=
   dependencies:
     cross-spawn "^7.0.0"
-    lodash.mergewith "^4.6.2"
+    lodash "^4.17.15"
     webpack-merge "^4.2.2"
 
 "@csstools/convert-colors@^1.4.0":
@@ -15467,11 +15467,6 @@ lodash.merge@^4.6.2:
   version "4.6.2"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha1-VYqlO0O2YeGSWgr9+japoQhf5Xo=
-
-lodash.mergewith@^4.6.2:
-  version "4.6.2"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/lodash.mergewith/-/lodash.mergewith-4.6.2.tgz#617121f89ac55f59047c7aec1ccd6654c6590f55"
-  integrity sha1-YXEh+JrFX1kEfHrsHM1mVMZZD1U=
 
 lodash.omit@^4.5.0:
   version "4.5.0"
