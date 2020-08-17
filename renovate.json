@@ -2,5 +2,11 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base", ":preserveSemverRanges"],
   "bbUseDefaultReviewers": true,
-  "ignoreDeps": ["react", "react-dom", "styled-components", "polished"]
+  "ignoreDeps": [
+    "react",
+    "react-dom",
+    "styled-components",
+    "polished",
+    "styled-system"
+  ]
 }
