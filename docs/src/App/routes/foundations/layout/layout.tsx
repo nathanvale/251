@@ -1,31 +1,20 @@
 import React from "react";
-import {
-  Text,
-  Stack,
-  Columns,
-  Column,
-  Box,
-  Card,
-  Heading,
-  Divider,
-  ChevronLink,
-  Section,
-  CardStackSection,
-  Placeholder,
-} from "@origin-digital/ods-core";
+import { Text, Stack, Columns, Column, Box } from "@origin-digital/ods-core";
 import { SpaceVariants } from "@origin-digital/ods-types";
 import { coreLayoutTheme } from "@origin-digital/ods-themes";
 import { TextStack } from "../../../TextStack/TextStack";
 import { DocsPage } from "../../../../types";
 import { PageSection, Page } from "../../../Page/Page";
 import Code from "../../../Code/Code";
+import { missingSnippet } from "../../../ComponentDoc/ComponentDoc";
+import { docs } from "./layout.docs";
+
+let snippets: any;
+try {
+  snippets = require("../../../../snippets-layout.json");
+} catch (error) {}
 
 const spaceScale = [...Object.keys(coreLayoutTheme.space)] as SpaceVariants[];
-const lipsum1 =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim dapibus elit, vel egestas felis pharetra non. Cras malesuada, massa nec ultricies efficitur, lectus ante consequat magna, a porttitor massa ex ut quam.";
-
-const lipsum2 =
-  "Phasellus ipsum tortor, aliquet dapibus fermentum in, mollis vel metus. Vestibulum malesuada ante eu velit malesuada, nec ultricies sapien finibus. Aenean rutrum in sem a ullamcorper. Integer ut euismod urna. Interdum et malesuada fames ac ante ipsum primis in faucibus.";
 
 const Layout = () => {
   const sections: PageSection[] = [
@@ -97,10 +86,8 @@ const Layout = () => {
             For example, if you wanted to create a container element with small
             spacing on all sides:
           </Text>
-          <Code>
-            <Box padding="small">
-              <Text>Lorem ipsum dolor sit amet.</Text>
-            </Box>
+          <Code codeString={snippets?.Box[0] || missingSnippet}>
+            {docs.Box[0].Code()}
           </Code>
           <Text>
             These also support the responsive props format which allows you to
@@ -110,10 +97,8 @@ const Layout = () => {
             For example, if you wanted small spacing on mobile but medium
             spacing from tablet upwards:
           </Text>
-          <Code>
-            <Box padding={["small", "medium"]}>
-              <Text>Lorem ipsum dolor sit amet.</Text>
-            </Box>
+          <Code codeString={snippets?.Box[1] || missingSnippet}>
+            {docs.Box[1].Code()}
           </Code>
           <Text>
             If required, youre also able to specify a different value for
@@ -123,10 +108,8 @@ const Layout = () => {
             For example, if you wanted to set the previous examples spacing to
             large on desktop:
           </Text>
-          <Code>
-            <Box padding={["small", "large"]}>
-              <Text>Lorem ipsum dolor sit amet.</Text>
-            </Box>
+          <Code codeString={snippets?.Box[2] || missingSnippet}>
+            {docs.Box[2].Code()}
           </Code>
         </TextStack>
       ),
@@ -139,10 +122,8 @@ const Layout = () => {
             Rather than nesting content in arbitrary Box elements, you may
             prefer to use standard Card elements instead.
           </Text>
-          <Code>
-            <Card>
-              <Text>Lorem ipsum dolor sit amet.</Text>
-            </Card>
+          <Code codeString={snippets?.Card[0] || missingSnippet}>
+            {docs.Card[0].Code()}
           </Code>
         </TextStack>
       ),
@@ -160,90 +141,44 @@ const Layout = () => {
             For example, if you wanted to render a stack of Heading and Text
             elements with large spacing between them:
           </Text>
-          <Code>
-            <Card>
-              <Stack space="large">
-                <Heading variant="h3">Heading</Heading>
-                <Text>{lipsum1}</Text>
-                <Text>{lipsum2}</Text>
-              </Stack>
-            </Card>
+          <Code codeString={snippets?.Stack[0] || missingSnippet}>
+            {docs.Stack[0].Code()}
           </Code>
           <Text>
             Just like Box, you can also specify different spacing values for
             different screen sizes:
           </Text>
-          <Code>
-            <Card>
-              <Stack space={["medium", "large"]}>
-                <Heading variant="h3">Heading</Heading>
-                <Text>{lipsum1}</Text>
-                <Text>{lipsum2}</Text>
-              </Stack>
-            </Card>
+          <Code codeString={snippets?.Stack[1] || missingSnippet}>
+            {docs.Stack[1].Code()}
           </Code>
           <Text>
             To visually break up content, you can insert dividers between all
             stack elements by setting the dividers prop on Stack:
           </Text>
-          <Code>
-            <Card>
-              <Stack space="small" dividers={true}>
-                <Heading variant="h3">Heading</Heading>
-                <Text>{lipsum1}</Text>
-                <Text>{lipsum2}</Text>
-              </Stack>
-            </Card>
+          <Code codeString={snippets?.Stack[2] || missingSnippet}>
+            {docs.Stack[2].Code()}
           </Code>
           <Text>
             If youd prefer to take control over the placement of dividers, you
             can use the Divider component directly:
           </Text>
-          <Code>
-            <Card>
-              <Stack space="small">
-                <Heading variant="h3">Heading</Heading>
-                <Text>{lipsum1}</Text>
-                <Divider />
-                <Text>{lipsum2}</Text>
-              </Stack>
-            </Card>
+          <Code codeString={snippets?.Stack[3] || missingSnippet}>
+            {docs.Stack[3].Code()}
           </Code>
           <Text>
             Multiple Stack components can be nested to create more complex white
             space rules. For example, if you wanted to create multiple grouped
             blocks of text like you might see on a job summary card:
           </Text>
-          <Code>
-            <Card>
-              <Stack space="small">
-                <Heading variant="h4">Heading</Heading>
-                <Stack space="small">
-                  <Text>Line 1</Text>
-                  <Text>Line 2</Text>
-                  <Text>Line 3</Text>
-                </Stack>
-                <Stack space="small">
-                  <Text>Line 1</Text>
-                  <Text>Line 2</Text>
-                  <Text>Line 3</Text>
-                </Stack>
-              </Stack>
-            </Card>
+          <Code codeString={snippets?.Stack[4] || missingSnippet}>
+            {docs.Stack[4].Code()}
           </Code>
           <Text>
             Stack also supports horizontal alignment. For example, if you wanted
             to centre align all content within a card:
           </Text>
-          <Code>
-            <Card>
-              <Stack space="medium" alignX="center">
-                <Heading align="center" variant="h4">
-                  Heading Text
-                </Heading>
-                <Text align="center">Lorem ipsum dolor sit amet.</Text>
-              </Stack>
-            </Card>
+          <Code codeString={snippets?.Stack[5] || missingSnippet}>
+            {docs.Stack[5].Code()}
           </Code>
         </TextStack>
       ),
@@ -256,19 +191,8 @@ const Layout = () => {
             If you need to lay out content horizontally, ODS provides the{" "}
             Columns and Column components:
           </Text>
-          <Code>
-            <Columns space="small">
-              <Column>
-                <Card>
-                  <Text>Column 1</Text>
-                </Card>
-              </Column>
-              <Column>
-                <Card>
-                  <Text>Column 2</Text>
-                </Card>
-              </Column>
-            </Columns>
+          <Code codeString={snippets?.Columns[0] || missingSnippet}>
+            {docs.Columns[0].Code()}
           </Code>
           <Text>
             If youd like the columns to stack vertically on smaller screens, you
@@ -278,19 +202,8 @@ const Layout = () => {
             For example, if you wanted cards to be rendered vertically on mobile
             but horizontally from tablet upwards:
           </Text>
-          <Code>
-            <Columns space="small" collapseBelow="md">
-              <Column>
-                <Card>
-                  <Text>Column 1</Text>
-                </Card>
-              </Column>
-              <Column>
-                <Card>
-                  <Text>Column 2</Text>
-                </Card>
-              </Column>
-            </Columns>
+          <Code codeString={snippets?.Columns[1] || missingSnippet}>
+            {docs.Columns[1].Code()}
           </Code>
           <Text>
             All columns are of equal width by default, but you can also
@@ -300,19 +213,8 @@ const Layout = () => {
             For example, if you wanted to render a main content area and a
             sidebar, collapsing to a single column on mobile:
           </Text>
-          <Code>
-            <Columns space="small" collapseBelow="md">
-              <Column width="1/3">
-                <Card>
-                  <Text>Sidebar</Text>
-                </Card>
-              </Column>
-              <Column>
-                <Card>
-                  <Text>Main content</Text>
-                </Card>
-              </Column>
-            </Columns>
+          <Code codeString={snippets?.Columns[2] || missingSnippet}>
+            {docs.Columns[2].Code()}
           </Code>
           <Text>
             If you want a column to be as small as possible, you can also set
@@ -323,54 +225,15 @@ const Layout = () => {
             For example, if you wanted a card with a left-aligned Heading and a
             right-aligned ChevronLink:
           </Text>
-          <Code>
-            <Card>
-              <Stack space="medium">
-                <Columns space="small">
-                  <Column>
-                    <Heading variant="h3">Card heading</Heading>
-                  </Column>
-                  <Column width="content">
-                    <ChevronLink href="">Find out more</ChevronLink>
-                  </Column>
-                </Columns>
-                <Text>Card content</Text>
-              </Stack>
-            </Card>
+          <Code codeString={snippets?.Columns[3] || missingSnippet}>
+            {docs.Columns[3].Code()}
           </Code>
           <Text>
             If you have Column elements that are of varying height, you can
             center them vertically with the alignY prop:
           </Text>
-          <Code>
-            <Columns space="small" alignY="center">
-              <Column>
-                <Card>
-                  <Stack space="medium" alignX="center">
-                    <Text>Column</Text>
-                    <Text>Column</Text>
-                  </Stack>
-                </Card>
-              </Column>
-              <Column>
-                <Card>
-                  <Stack space="medium" alignX="center">
-                    <Text>Column</Text>
-                    <Text>Column</Text>
-                    <Text>Column</Text>
-                    <Text>Column</Text>
-                  </Stack>
-                </Card>
-              </Column>
-              <Column>
-                <Card>
-                  <Stack space="medium" alignX="center">
-                    <Text>Column</Text>
-                    <Text>Column</Text>
-                  </Stack>
-                </Card>
-              </Column>
-            </Columns>
+          <Code codeString={snippets?.Columns[4] || missingSnippet}>
+            {docs.Columns[4].Code()}
           </Code>
         </TextStack>
       ),
@@ -386,23 +249,15 @@ const Layout = () => {
             that sets a maximum width and centres content horizontally. This
             component should be at your root and not be nested.
           </Text>
-          <Code>
-            <Section>
-              <Card>
-                <Text>Hello World</Text>
-              </Card>
-            </Section>
+          <Code codeString={snippets?.Section[0] || missingSnippet}>
+            {docs.Section[0].Code()}
           </Code>
           <Text>
             If youd like a wider content block, you can optionally provide the
             hideGutter prop:
           </Text>
-          <Code>
-            <Section hideGutter>
-              <Card>
-                <Text>Hello World</Text>
-              </Card>
-            </Section>
+          <Code codeString={snippets?.Section[1] || missingSnippet}>
+            {docs.Section[1].Code()}
           </Code>
         </TextStack>
       ),
@@ -416,15 +271,8 @@ const Layout = () => {
             that managers responsive max-widths, distributed space and paddingY.
             This component should be at your root and not be nested.
           </Text>
-          <Code>
-            <CardStackSection>
-              <Card>
-                <Placeholder />
-              </Card>
-              <Card>
-                <Placeholder />
-              </Card>
-            </CardStackSection>
+          <Code codeString={snippets?.CardStackSection[0] || missingSnippet}>
+            {docs.CardStackSection[0].Code()}
           </Code>
         </TextStack>
       ),

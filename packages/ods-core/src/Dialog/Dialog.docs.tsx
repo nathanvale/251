@@ -46,7 +46,7 @@ export const docs: ComponentDocs<DialogProps> = {
         );
       },
       codeString: `import React from 'react';
-import { Button, Dialog } from "@origin-digital/ods-core";
+import { Button, Dialog, Text } from "@origin-digital/ods-core";
 
 export default () => {
     const [showModal, setShowModal] = React.useState(false);
@@ -87,6 +87,27 @@ export default () => {
             </>
           );
         },
+        codeString: `import React from 'react';
+import { Button, Dialog, Text } from "@origin-digital/ods-core";
+
+export default () => {
+    const [showModal, setShowModal] = React.useState(false);
+    return (
+      <>
+        <Button onClick={() => setShowModal(true)}>Click me</Button>
+        <Dialog
+          id="dialog-hideclose"
+          open={showModal}
+          hideClose
+          title="Modal title"
+          onClose={() => setShowModal(false)}
+        >
+          <Text>Modal body</Text>
+        </Dialog>
+      </>
+    );
+  };
+`,
       },
       {
         label: "Opaque background",
@@ -108,6 +129,27 @@ export default () => {
             </>
           );
         },
+        codeString: `import React from 'react';
+import { Button, Dialog, Text } from "@origin-digital/ods-core";
+
+export default () => {
+    const [showModal, setShowModal] = React.useState(false);
+    return (
+      <>
+        <Button onClick={() => setShowModal(true)}>Click me</Button>
+        <Dialog
+          id="dialog-opaque-bg"
+          open={showModal}
+          opaqueBackground
+          title="Modal title"
+          onClose={() => setShowModal(false)}
+        >
+          <Text>Modal body</Text>
+        </Dialog>
+      </>
+    );
+  };
+`,
       },
       {
         label: "Different max widths",
@@ -129,6 +171,27 @@ export default () => {
             </>
           );
         },
+        codeString: `import React from 'react';
+import { Button, Dialog, Text } from "@origin-digital/ods-core";
+
+export default () => {
+    const [showModal, setShowModal] = React.useState(false);
+    return (
+      <>
+        <Button onClick={() => setShowModal(true)}>Click me</Button>
+        <Dialog
+          id="dialog-max-widths"
+          open={showModal}
+          maxWidth="lg"
+          title="Modal title"
+          onClose={() => setShowModal(false)}
+        >
+          <Text>Modal body</Text>
+        </Dialog>
+      </>
+    );
+  };
+`,
       },
     ],
   },

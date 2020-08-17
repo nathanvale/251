@@ -91,19 +91,22 @@ export const getComponentDocs = ({
         propDescriptions,
         componentName,
         examples: {
-          default: { Code: () => <Icon /> },
+          default: { Code: () => <Icon />, codeString: "<Icon />" },
           additional: [
             {
               label: "Medium Size Icon",
               Code: () => <Icon size="medium" />,
+              codeString: `<Icon size="medium" />`,
             },
             {
               label: "Large Size Icon",
               Code: () => <Icon size="large" />,
+              codeString: `<Icon size="large" />`,
             },
             {
               label: "Setting the icon colour",
               Code: () => <Icon tone="critical" />,
+              codeString: `<Icon tone="critical" />`,
             },
           ],
         },

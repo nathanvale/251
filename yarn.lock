@@ -4837,6 +4837,13 @@
     "@types/history" "*"
     "@types/react" "*"
 
+"@types/react-syntax-highlighter@^11.0.4":
+  version "11.0.4"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@types/react-syntax-highlighter/-/react-syntax-highlighter-11.0.4.tgz#d86d17697db62f98046874f62fdb3e53a0bbc4cd"
+  integrity sha1-2G0XaX22L5gEaHT2L9s+U6C7xM0=
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-transition-group@^4.2.0":
   version "4.2.4"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@types/react-transition-group/-/react-transition-group-4.2.4.tgz#c7416225987ccdb719262766c1483da8f826838d"
@@ -19374,7 +19381,7 @@ react-dom@16.9.0:
     prop-types "^15.6.2"
     scheduler "^0.15.0"
 
-react-element-to-jsx-string@^14.0.1:
+react-element-to-jsx-string@^14.3.1:
   version "14.3.1"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/react-element-to-jsx-string/-/react-element-to-jsx-string-14.3.1.tgz#a08fa6e46eb76061aca7eabc2e70f433583cb203"
   integrity sha1-oI+m5G63YGGsp+q8LnD0M1g8sgM=
@@ -19392,10 +19399,15 @@ react-hamburger-menu@^1.2.1:
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/react-hamburger-menu/-/react-hamburger-menu-1.2.1.tgz#bcaca08bf7d1ae96aa97553828765dce8f912eeb"
   integrity sha1-vKygi/fRrpaql1U4KHZdzo+RLus=
 
-react-is@^16.12.0, react-is@^16.3.1, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.8.6, react-is@^16.9.0:
+react-is@^16.12.0, react-is@^16.3.1, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.8.6:
   version "16.13.0"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/react-is/-/react-is-16.13.0.tgz#0f37c3613c34fe6b37cd7f763a0d6293ab15c527"
   integrity sha1-DzfDYTw0/ms3zX92Og1ik6sVxSc=
+
+react-is@^16.9.0:
+  version "16.13.1"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
+  integrity sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=
 
 react-keyed-flatten-children@^1.2.0:
   version "1.2.0"
@@ -21266,7 +21278,7 @@ source-map-support@^0.4.15:
   dependencies:
     source-map "^0.5.6"
 
-source-map-support@^0.5.16, source-map-support@^0.5.17:
+source-map-support@^0.5.16, source-map-support@^0.5.17, source-map-support@^0.5.19:
   version "0.5.19"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/source-map-support/-/source-map-support-0.5.19.tgz#a98b62f86dcaf4f67399648c085291ab9e8fed61"
   integrity sha1-qYti+G3K9PZzmWSMCFKRq56P7WE=
@@ -22773,7 +22785,7 @@ ts-pnp@^1.1.6:
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/ts-pnp/-/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
   integrity sha1-pQCtCEsHmPHDBxrzkeZZEshrypI=
 
-tsconfig-paths@^3.6.0:
+tsconfig-paths@^3.6.0, tsconfig-paths@^3.9.0:
   version "3.9.0"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/tsconfig-paths/-/tsconfig-paths-3.9.0.tgz#098547a6c4448807e8fcb8eae081064ee9a3c90b"
   integrity sha1-CYVHpsREiAfo/Ljq4IEGTumjyQs=

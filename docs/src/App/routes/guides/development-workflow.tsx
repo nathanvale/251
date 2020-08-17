@@ -1,21 +1,16 @@
 import React from "react";
-import {
-  Text,
-  Heading,
-  TextLink,
-  Strong,
-  Card,
-  Stack,
-  Columns,
-  Column,
-  Box,
-  Placeholder,
-  Button,
-} from "@origin-digital/ods-core";
+import { Text, TextLink, Strong } from "@origin-digital/ods-core";
 import Code from "../../Code/Code";
 import { DocsPage } from "../../../types";
 import { Page, PageSection } from "../../Page/Page";
 import { TextStack } from "../../TextStack/TextStack";
+import { missingSnippet } from "../../ComponentDoc/ComponentDoc";
+import { docs } from "./development-workflow.docs";
+
+let snippets: any;
+try {
+  snippets = require("../../../snippets-dev-guides.json");
+} catch (error) {}
 
 const odsSupportLink = (
   <TextLink href="https://origindigital.slack.com/archives/CQ6T5T0R0">
@@ -73,12 +68,8 @@ const DevelopmentWorkflow = () => {
             An example of composing a simple view leveraging some of these could
             be:
           </Text>
-          <Code>
-            <Card>
-              <Heading variant="h4">Title</Heading>
-              <Text>My first ODS component</Text>
-              <Button>Click me</Button>
-            </Card>
+          <Code codeString={snippets?.HighLevelComponents[0] || missingSnippet}>
+            {docs.HighLevelComponents[0].Code()}
           </Code>
           <Text>
             You’ll notice that each of these components don’t provide any
@@ -100,14 +91,8 @@ const DevelopmentWorkflow = () => {
             <code>small</code> space between items in a{" "}
             <TextLink href="/components/Stack">Stack</TextLink>:
           </Text>
-          <Code>
-            <Card>
-              <Stack space="small">
-                <Heading variant="h4">Title</Heading>
-                <Text>My first ODS component</Text>
-                <Button>Click me</Button>
-              </Stack>
-            </Card>
+          <Code codeString={snippets?.LayoutComponents[0] || missingSnippet}>
+            {docs.LayoutComponents[0].Code()}
           </Code>
           <Text>
             The <code>space</code> property is a responsive prop, which means
@@ -115,14 +100,8 @@ const DevelopmentWorkflow = () => {
             breakpoint. For example, if you wanted <code>small</code> space on
             mobile and <code>medium</code> space on desktop:
           </Text>
-          <Code>
-            <Card>
-              <Stack space={["small", "medium"]}>
-                <Heading variant="h4">Title</Heading>
-                <Text>My first ODS component</Text>
-                <Button>Click me</Button>
-              </Stack>
-            </Card>
+          <Code codeString={snippets?.LayoutComponents[1] || missingSnippet}>
+            {docs.LayoutComponents[1].Code()}
           </Code>
           <Text>
             For more granular control across all 5 breakpoints, <code>xs</code>,{" "}
@@ -131,20 +110,8 @@ const DevelopmentWorkflow = () => {
             passing in an object with breakpoints as keys and tshirt sizes as
             values.
           </Text>
-          <Code>
-            <Stack
-              space={{
-                lg: "large",
-                md: "medium",
-                sm: "small",
-                xl: "xxlarge",
-                xs: "none",
-              }}
-            >
-              <Placeholder />
-              <Placeholder />
-              <Placeholder />
-            </Stack>
+          <Code codeString={snippets?.LayoutComponents[2] || missingSnippet}>
+            {docs.LayoutComponents[2].Code()}
           </Code>
           <Text>
             For horizontal layouts,{" "}
@@ -153,25 +120,8 @@ const DevelopmentWorkflow = () => {
             wanted to render a two-column layout that collapses to a single
             column on mobile:
           </Text>
-          <Code>
-            <Columns space="small" collapseBelow="md">
-              <Column>
-                <Card>
-                  <Stack space="small">
-                    <Heading variant="h4">Column 1</Heading>
-                    <Text>My first ODS component</Text>
-                  </Stack>
-                </Card>
-              </Column>
-              <Column>
-                <Card>
-                  <Stack space="small">
-                    <Heading variant="h4">Column 2</Heading>
-                    <Text>My second ODS component</Text>
-                  </Stack>
-                </Card>
-              </Column>
-            </Columns>
+          <Code codeString={snippets?.LayoutComponents[3] || missingSnippet}>
+            {docs.LayoutComponents[3].Code()}
           </Code>
           <Text>
             This <code>space</code> property is also responsive, supporting an
@@ -179,25 +129,8 @@ const DevelopmentWorkflow = () => {
             <code>xxsmall</code> space on mobile and <code>large</code> space on
             desktop:
           </Text>
-          <Code>
-            <Columns space={["xxsmall", "large"]} collapseBelow="md">
-              <Column>
-                <Card>
-                  <Stack space="small">
-                    <Heading variant="h4">Column 1</Heading>
-                    <Text>My first ODS component</Text>
-                  </Stack>
-                </Card>
-              </Column>
-              <Column>
-                <Card>
-                  <Stack space="small">
-                    <Heading variant="h4">Column 2</Heading>
-                    <Text>My second ODS component</Text>
-                  </Stack>
-                </Card>
-              </Column>
-            </Columns>
+          <Code codeString={snippets?.LayoutComponents[4] || missingSnippet}>
+            {docs.LayoutComponents[4].Code()}
           </Code>
         </TextStack>
       ),
@@ -221,10 +154,10 @@ const DevelopmentWorkflow = () => {
             mostly mimic standard CSS properties, while their values are more
             semantic.
           </Text>
-          <Code>
-            <Box boxShadow="large" padding="large">
-              <Text>My first ODS component</Text>
-            </Box>
+          <Code
+            codeString={snippets?.NeedACustomComponent[0] || missingSnippet}
+          >
+            {docs.NeedACustomComponent[0].Code()}
           </Code>
           <Text>
             For more details, view the complete{" "}
@@ -251,29 +184,20 @@ const DevelopmentWorkflow = () => {
             For example, if we wanted to change the value for{" "}
             <code>display</code> responsively:
           </Text>
-          <Code>
-            <Box display={["flex", "block"]}>
-              <Heading variant="h4">Flex on small screen</Heading>
-              <Heading variant="h4">Block on large screen</Heading>
-            </Box>
+          <Code
+            codeString={snippets?.NeedResponsiveStyles[0] || missingSnippet}
+          >
+            {docs.NeedResponsiveStyles[0].Code()}
           </Code>
           <Text>
             For a fine tuned approach to responsive breakpoints, responsive
             props can also be provided as an object with breakpoints as keys and
             tshirt sizes as values:
           </Text>
-          <Code>
-            <Box
-              padding={{
-                xs: "xxsmall",
-                sm: "xsmall",
-                md: "small",
-                lg: "medium",
-                xl: "large",
-              }}
-            >
-              <Heading variant="h4">Responsive padding</Heading>
-            </Box>
+          <Code
+            codeString={snippets?.NeedResponsiveStyles[1] || missingSnippet}
+          >
+            {docs.NeedResponsiveStyles[1].Code()}
           </Code>
           <Text>
             For a list of low-level responsive props, check out the{" "}
@@ -301,12 +225,8 @@ const DevelopmentWorkflow = () => {
             For example, in order to render a semantic <code>pre</code> element
             without the native browser styles:
           </Text>
-          <Code>
-            <Card>
-              <Box component="pre">
-                <code>console.log("Hello World!");</code>
-              </Box>
-            </Card>
+          <Code codeString={snippets?.NeedSemanticMarkup[0] || missingSnippet}>
+            {docs.NeedSemanticMarkup[0].Code()}
           </Code>
         </TextStack>
       ),
