@@ -79,11 +79,6 @@ exports[`AlertBanner 1`] = `
 
 exports[`Box 1`] = `
 {
-  about?: string
-  accept?: string
-  acceptCharset?: string
-  accessKey?: string
-  action?: string
   alignItems?: ResponsiveProp<
     | "center"
     | "flex-end"
@@ -96,171 +91,6 @@ exports[`Box 1`] = `
     | "flex-start"
     | "stretch"
   >
-  allowFullScreen?: boolean
-  allowTransparency?: boolean
-  alt?: string
-  aria-activedescendant?: string
-  aria-atomic?: 
-    | "false"
-    | "true"
-    | false
-    | true
-  aria-autocomplete?: 
-    | "both"
-    | "inline"
-    | "list"
-    | "none"
-  aria-busy?: 
-    | "false"
-    | "true"
-    | false
-    | true
-  aria-checked?: 
-    | "false"
-    | "mixed"
-    | "true"
-    | false
-    | true
-  aria-colcount?: number
-  aria-colindex?: number
-  aria-colspan?: number
-  aria-controls?: string
-  aria-current?: 
-    | "date"
-    | "false"
-    | "location"
-    | "page"
-    | "step"
-    | "time"
-    | "true"
-    | false
-    | true
-  aria-describedby?: string
-  aria-details?: string
-  aria-disabled?: 
-    | "false"
-    | "true"
-    | false
-    | true
-  aria-dropeffect?: 
-    | "copy"
-    | "execute"
-    | "link"
-    | "move"
-    | "none"
-    | "popup"
-  aria-errormessage?: string
-  aria-expanded?: 
-    | "false"
-    | "true"
-    | false
-    | true
-  aria-flowto?: string
-  aria-grabbed?: 
-    | "false"
-    | "true"
-    | false
-    | true
-  aria-haspopup?: 
-    | "dialog"
-    | "false"
-    | "grid"
-    | "listbox"
-    | "menu"
-    | "tree"
-    | "true"
-    | false
-    | true
-  aria-hidden?: 
-    | "false"
-    | "true"
-    | false
-    | true
-  aria-invalid?: 
-    | "false"
-    | "grammar"
-    | "spelling"
-    | "true"
-    | false
-    | true
-  aria-keyshortcuts?: string
-  aria-label?: string
-  aria-labelledby?: string
-  aria-level?: number
-  aria-live?: 
-    | "assertive"
-    | "off"
-    | "polite"
-  aria-modal?: 
-    | "false"
-    | "true"
-    | false
-    | true
-  aria-multiline?: 
-    | "false"
-    | "true"
-    | false
-    | true
-  aria-multiselectable?: 
-    | "false"
-    | "true"
-    | false
-    | true
-  aria-orientation?: 
-    | "horizontal"
-    | "vertical"
-  aria-owns?: string
-  aria-placeholder?: string
-  aria-posinset?: number
-  aria-pressed?: 
-    | "false"
-    | "mixed"
-    | "true"
-    | false
-    | true
-  aria-readonly?: 
-    | "false"
-    | "true"
-    | false
-    | true
-  aria-relevant?: 
-    | "additions text"
-    | "additions"
-    | "all"
-    | "removals"
-    | "text"
-  aria-required?: 
-    | "false"
-    | "true"
-    | false
-    | true
-  aria-roledescription?: string
-  aria-rowcount?: number
-  aria-rowindex?: number
-  aria-rowspan?: number
-  aria-selected?: 
-    | "false"
-    | "true"
-    | false
-    | true
-  aria-setsize?: number
-  aria-sort?: 
-    | "ascending"
-    | "descending"
-    | "none"
-    | "other"
-  aria-valuemax?: number
-  aria-valuemin?: number
-  aria-valuenow?: number
-  aria-valuetext?: string
-  as?: string
-  async?: boolean
-  autoCapitalize?: string
-  autoComplete?: string
-  autoCorrect?: string
-  autoFocus?: boolean
-  autoPlay?: boolean
-  autoSave?: string
   backgroundColor?: 
     | "caution"
     | "cautionDark"
@@ -330,26 +160,8 @@ exports[`Box 1`] = `
     | "medium"
     | "outlineFocus"
     | "small"
-  capture?: 
-    | false
-    | string
-    | true
-  cellPadding?: 
-    | number
-    | string
-  cellSpacing?: 
-    | number
-    | string
-  challenge?: string
-  charSet?: string
-  checked?: boolean
   children?: ReactNode
-  cite?: string
-  classID?: string
   className?: string
-  colSpan?: number
-  color?: string
-  cols?: number
   component?: 
     | "a"
     | "abbr"
@@ -527,31 +339,8 @@ exports[`Box 1`] = `
     | "webview"
     | ComponentClass<any, any>
     | FunctionComponent<any>
-  content?: string
-  contentEditable?: 
-    | "false"
-    | "inherit"
-    | "true"
-    | false
-    | true
-  contextMenu?: string
-  controls?: boolean
-  coords?: string
-  crossOrigin?: string
   cursor?: string
-  dangerouslySetInnerHTML?: { __html: string; }
-  data?: string
-  datatype?: string
-  dateTime?: string
-  default?: boolean
-  defaultChecked?: boolean
-  defaultValue?: 
-    | number
-    | string
-    | string[]
-  defer?: boolean
-  dir?: string
-  disabled?: boolean
+  data-id?: string
   display?: ResponsiveProp<
     | "block"
     | "flex"
@@ -561,13 +350,7 @@ exports[`Box 1`] = `
     | "list-item"
     | "none"
   >
-  download?: any
-  draggable?: 
-    | "false"
-    | "true"
-    | false
-    | true
-  encType?: string
+  domProps?: Pick<AllHTMLAttributes<HTMLElement>, "size" | "className" | "disabled" | "id" | "cite" | "data" | "form" | "label" | "span" | "summary" | "title" | ... 341 more ... | "wmode"> | undefined
   flexDirection?: ResponsiveProp<
     | "column"
     | "column-reverse"
@@ -579,57 +362,15 @@ exports[`Box 1`] = `
     | "wrap"
     | "wrap-reverse"
   >
-  form?: string
-  formAction?: string
-  formEncType?: string
-  formMethod?: string
-  formNoValidate?: boolean
-  formTarget?: string
-  frameBorder?: 
-    | number
-    | string
-  headers?: string
   height?: "full"
-  hidden?: boolean
-  high?: number
-  href?: string
-  hrefLang?: string
-  htmlFor?: string
-  httpEquiv?: string
   id?: string
-  inlist?: any
   innerRef?: any
-  inputMode?: 
-    | "decimal"
-    | "email"
-    | "none"
-    | "numeric"
-    | "search"
-    | "tel"
-    | "text"
-    | "url"
-  integrity?: string
-  is?: string
-  itemID?: string
-  itemProp?: string
-  itemRef?: string
-  itemScope?: boolean
-  itemType?: string
   justifyContent?: ResponsiveProp<
     | "center"
     | "flex-end"
     | "flex-start"
     | "space-between"
   >
-  keyParams?: string
-  keyType?: string
-  kind?: string
-  label?: string
-  lang?: string
-  list?: string
-  loop?: boolean
-  low?: number
-  manifest?: string
   margin?: ResponsiveProp<
     | "large"
     | "medium"
@@ -652,7 +393,6 @@ exports[`Box 1`] = `
     | "xxsmall"
     | "xxxlarge"
   >
-  marginHeight?: number
   marginLeft?: ResponsiveProp<
     | "large"
     | "medium"
@@ -686,7 +426,6 @@ exports[`Box 1`] = `
     | "xxsmall"
     | "xxxlarge"
   >
-  marginWidth?: number
   marginX?: ResponsiveProp<
     | "large"
     | "medium"
@@ -709,184 +448,7 @@ exports[`Box 1`] = `
     | "xxsmall"
     | "xxxlarge"
   >
-  max?: 
-    | number
-    | string
-  maxLength?: number
-  media?: string
-  mediaGroup?: string
-  method?: string
-  min?: 
-    | number
-    | string
-  minLength?: number
-  multiple?: boolean
-  muted?: boolean
-  name?: string
-  noValidate?: boolean
-  nonce?: string
-  onAbort?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onAbortCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onAnimationEnd?: (event: AnimationEvent<HTMLElement>) => void
-  onAnimationEndCapture?: (event: AnimationEvent<HTMLElement>) => void
-  onAnimationIteration?: (event: AnimationEvent<HTMLElement>) => void
-  onAnimationIterationCapture?: (event: AnimationEvent<HTMLElement>) => void
-  onAnimationStart?: (event: AnimationEvent<HTMLElement>) => void
-  onAnimationStartCapture?: (event: AnimationEvent<HTMLElement>) => void
-  onAuxClick?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
-  onAuxClickCapture?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
-  onBeforeInput?: (event: FormEvent<HTMLElement>) => void
-  onBeforeInputCapture?: (event: FormEvent<HTMLElement>) => void
-  onBlur?: (event: FocusEvent<HTMLElement>) => void
-  onBlurCapture?: (event: FocusEvent<HTMLElement>) => void
-  onCanPlay?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onCanPlayCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onCanPlayThrough?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onCanPlayThroughCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onChange?: (event: FormEvent<HTMLElement>) => void
-  onChangeCapture?: (event: FormEvent<HTMLElement>) => void
   onClick?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
-  onClickCapture?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
-  onCompositionEnd?: (event: CompositionEvent<HTMLElement>) => void
-  onCompositionEndCapture?: (event: CompositionEvent<HTMLElement>) => void
-  onCompositionStart?: (event: CompositionEvent<HTMLElement>) => void
-  onCompositionStartCapture?: (event: CompositionEvent<HTMLElement>) => void
-  onCompositionUpdate?: (event: CompositionEvent<HTMLElement>) => void
-  onCompositionUpdateCapture?: (event: CompositionEvent<HTMLElement>) => void
-  onContextMenu?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
-  onContextMenuCapture?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
-  onCopy?: (event: ClipboardEvent<HTMLElement>) => void
-  onCopyCapture?: (event: ClipboardEvent<HTMLElement>) => void
-  onCut?: (event: ClipboardEvent<HTMLElement>) => void
-  onCutCapture?: (event: ClipboardEvent<HTMLElement>) => void
-  onDoubleClick?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
-  onDoubleClickCapture?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
-  onDrag?: (event: DragEvent<HTMLElement>) => void
-  onDragCapture?: (event: DragEvent<HTMLElement>) => void
-  onDragEnd?: (event: DragEvent<HTMLElement>) => void
-  onDragEndCapture?: (event: DragEvent<HTMLElement>) => void
-  onDragEnter?: (event: DragEvent<HTMLElement>) => void
-  onDragEnterCapture?: (event: DragEvent<HTMLElement>) => void
-  onDragExit?: (event: DragEvent<HTMLElement>) => void
-  onDragExitCapture?: (event: DragEvent<HTMLElement>) => void
-  onDragLeave?: (event: DragEvent<HTMLElement>) => void
-  onDragLeaveCapture?: (event: DragEvent<HTMLElement>) => void
-  onDragOver?: (event: DragEvent<HTMLElement>) => void
-  onDragOverCapture?: (event: DragEvent<HTMLElement>) => void
-  onDragStart?: (event: DragEvent<HTMLElement>) => void
-  onDragStartCapture?: (event: DragEvent<HTMLElement>) => void
-  onDrop?: (event: DragEvent<HTMLElement>) => void
-  onDropCapture?: (event: DragEvent<HTMLElement>) => void
-  onDurationChange?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onDurationChangeCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onEmptied?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onEmptiedCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onEncrypted?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onEncryptedCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onEnded?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onEndedCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onError?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onErrorCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onFocus?: (event: FocusEvent<HTMLElement>) => void
-  onFocusCapture?: (event: FocusEvent<HTMLElement>) => void
-  onGotPointerCapture?: (event: PointerEvent<HTMLElement>) => void
-  onGotPointerCaptureCapture?: (event: PointerEvent<HTMLElement>) => void
-  onInput?: (event: FormEvent<HTMLElement>) => void
-  onInputCapture?: (event: FormEvent<HTMLElement>) => void
-  onInvalid?: (event: FormEvent<HTMLElement>) => void
-  onInvalidCapture?: (event: FormEvent<HTMLElement>) => void
-  onKeyDown?: (event: KeyboardEvent<HTMLElement>) => void
-  onKeyDownCapture?: (event: KeyboardEvent<HTMLElement>) => void
-  onKeyPress?: (event: KeyboardEvent<HTMLElement>) => void
-  onKeyPressCapture?: (event: KeyboardEvent<HTMLElement>) => void
-  onKeyUp?: (event: KeyboardEvent<HTMLElement>) => void
-  onKeyUpCapture?: (event: KeyboardEvent<HTMLElement>) => void
-  onLoad?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onLoadCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onLoadStart?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onLoadStartCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onLoadedData?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onLoadedDataCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onLoadedMetadata?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onLoadedMetadataCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onLostPointerCapture?: (event: PointerEvent<HTMLElement>) => void
-  onLostPointerCaptureCapture?: (event: PointerEvent<HTMLElement>) => void
-  onMouseDown?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
-  onMouseDownCapture?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
-  onMouseEnter?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
-  onMouseLeave?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
-  onMouseMove?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
-  onMouseMoveCapture?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
-  onMouseOut?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
-  onMouseOutCapture?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
-  onMouseOver?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
-  onMouseOverCapture?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
-  onMouseUp?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
-  onMouseUpCapture?: (event: MouseEvent<HTMLElement, MouseEvent>) => void
-  onPaste?: (event: ClipboardEvent<HTMLElement>) => void
-  onPasteCapture?: (event: ClipboardEvent<HTMLElement>) => void
-  onPause?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onPauseCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onPlay?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onPlayCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onPlaying?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onPlayingCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onPointerCancel?: (event: PointerEvent<HTMLElement>) => void
-  onPointerCancelCapture?: (event: PointerEvent<HTMLElement>) => void
-  onPointerDown?: (event: PointerEvent<HTMLElement>) => void
-  onPointerDownCapture?: (event: PointerEvent<HTMLElement>) => void
-  onPointerEnter?: (event: PointerEvent<HTMLElement>) => void
-  onPointerEnterCapture?: (event: PointerEvent<HTMLElement>) => void
-  onPointerLeave?: (event: PointerEvent<HTMLElement>) => void
-  onPointerLeaveCapture?: (event: PointerEvent<HTMLElement>) => void
-  onPointerMove?: (event: PointerEvent<HTMLElement>) => void
-  onPointerMoveCapture?: (event: PointerEvent<HTMLElement>) => void
-  onPointerOut?: (event: PointerEvent<HTMLElement>) => void
-  onPointerOutCapture?: (event: PointerEvent<HTMLElement>) => void
-  onPointerOver?: (event: PointerEvent<HTMLElement>) => void
-  onPointerOverCapture?: (event: PointerEvent<HTMLElement>) => void
-  onPointerUp?: (event: PointerEvent<HTMLElement>) => void
-  onPointerUpCapture?: (event: PointerEvent<HTMLElement>) => void
-  onProgress?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onProgressCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onRateChange?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onRateChangeCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onReset?: (event: FormEvent<HTMLElement>) => void
-  onResetCapture?: (event: FormEvent<HTMLElement>) => void
-  onScroll?: (event: UIEvent<HTMLElement>) => void
-  onScrollCapture?: (event: UIEvent<HTMLElement>) => void
-  onSeeked?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onSeekedCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onSeeking?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onSeekingCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onSelect?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onSelectCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onStalled?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onStalledCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onSubmit?: (event: FormEvent<HTMLElement>) => void
-  onSubmitCapture?: (event: FormEvent<HTMLElement>) => void
-  onSuspend?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onSuspendCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onTimeUpdate?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onTimeUpdateCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onTouchCancel?: (event: TouchEvent<HTMLElement>) => void
-  onTouchCancelCapture?: (event: TouchEvent<HTMLElement>) => void
-  onTouchEnd?: (event: TouchEvent<HTMLElement>) => void
-  onTouchEndCapture?: (event: TouchEvent<HTMLElement>) => void
-  onTouchMove?: (event: TouchEvent<HTMLElement>) => void
-  onTouchMoveCapture?: (event: TouchEvent<HTMLElement>) => void
-  onTouchStart?: (event: TouchEvent<HTMLElement>) => void
-  onTouchStartCapture?: (event: TouchEvent<HTMLElement>) => void
-  onTransitionEnd?: (event: TransitionEvent<HTMLElement>) => void
-  onTransitionEndCapture?: (event: TransitionEvent<HTMLElement>) => void
-  onVolumeChange?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onVolumeChangeCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onWaiting?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onWaitingCapture?: (event: SyntheticEvent<HTMLElement, Event>) => void
-  onWheel?: (event: WheelEvent<HTMLElement>) => void
-  onWheelCapture?: (event: WheelEvent<HTMLElement>) => void
-  open?: boolean
-  optimum?: number
   overflow?: 
     | "auto"
     | "hidden"
@@ -969,9 +531,6 @@ exports[`Box 1`] = `
     | "xxsmall"
     | "xxxlarge"
   >
-  pattern?: string
-  placeholder?: string
-  playsInline?: boolean
   pointerEvents?: 
     | "-moz-initial"
     | "all"
@@ -1001,75 +560,17 @@ exports[`Box 1`] = `
     | "sticky"
     | "unset"
   >
-  poster?: string
-  prefix?: string
-  preload?: string
-  property?: string
-  radioGroup?: string
-  readOnly?: boolean
-  rel?: string
-  required?: boolean
-  resource?: string
-  results?: number
-  reversed?: boolean
-  role?: string
-  rowSpan?: number
-  rows?: number
-  sandbox?: string
-  scope?: string
-  scoped?: boolean
-  scrolling?: string
-  seamless?: boolean
-  security?: string
-  selected?: boolean
-  shape?: string
   showAnts?: boolean
-  size?: number
-  sizes?: string
-  slot?: string
-  span?: number
-  spellCheck?: 
-    | "false"
-    | "true"
-    | false
-    | true
-  src?: string
-  srcDoc?: string
-  srcLang?: string
-  srcSet?: string
-  start?: number
-  step?: 
-    | number
-    | string
   style?: CSSProperties
-  summary?: string
   tabIndex?: number
-  target?: string
   textAlign?: ResponsiveProp<
     | "center"
     | "left"
     | "right"
   >
-  title?: string
   transform?: "touchable"
   transition?: "fast"
-  translate?: 
-    | "no"
-    | "yes"
-  type?: string
-  typeof?: string
-  unselectable?: 
-    | "off"
-    | "on"
-  useMap?: string
-  value?: 
-    | number
-    | string
-    | string[]
-  vocab?: string
   width?: "full"
-  wmode?: string
-  wrap?: string
 }
 `;
 
@@ -1270,7 +771,7 @@ exports[`ChevronButton 1`] = `
 {
   children?: ReactNode
   data-id?: string
-  domProps?: Pick<AllHTMLAttributes<HTMLButtonElement>, "size" | "className" | "disabled" | "id" | "cite" | "data" | "form" | "label" | "span" | "style" | ... 345 more ... | "wrap"> | undefined
+  domProps?: Pick<AllHTMLAttributes<HTMLButtonElement>, "size" | "className" | "disabled" | "id" | "cite" | "data" | "form" | "label" | "span" | "style" | ... 345 more ... | "wmode"> | undefined
   onClick?: (event: MouseEvent<HTMLButtonElement, MouseEvent>) => void
   type?: 
     | "button"
