@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.32.0](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.31.3...docs@0.32.0) (2020-08-19)
+
+
+### Features
+
+* create dom props for box ([8b83bad](https://bitbucket.orgn.io/od/origin-ui/commits/8b83bad93177cbd53f95f9124c9944ea51118ff8))
+
+
+
+
+
 ## [0.31.3](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.31.2...docs@0.31.3) (2020-08-17)
 
 **Note:** Version bump only for package docs
