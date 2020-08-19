@@ -74,7 +74,7 @@ export const InnerContainer = styled(Box)<InnerContainerProps>`
   ${negativeMarginLeft}
 `;
 const ChildContainer = styled(Box)`
-  minwidth: 0;
+  min-width: 0;
 `;
 
 const defaultSpace = "none";

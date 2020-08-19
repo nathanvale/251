@@ -99,7 +99,7 @@ exports[`it renders 1`] = `
 }
 
 .c4 {
-  minwidth: 0;
+  min-width: 0;
 }
 
 .c6 {
