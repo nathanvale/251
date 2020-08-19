@@ -7,6 +7,23 @@
     "react-dom",
     "styled-components",
     "polished",
-    "styled-system"
+    "styled-system",
+    "@types/styled-components",
+    "@types/react",
+    "@types/react-dom",
+    "core-js",
+    "lerna"
+  ],
+  "packageRules": [
+    {
+      "packageName": "core-js",
+      "updateTypes": ["major"],
+      "enabled": false
+    },
+    {
+      "packageName": "csstypes",
+      "updateTypes": ["major"],
+      "enabled": false
+    }
   ]
 }
