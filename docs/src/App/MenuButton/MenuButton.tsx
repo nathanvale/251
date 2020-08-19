@@ -34,7 +34,7 @@ const Bar1 = styled(Bar)<{ open: boolean }>`
     `}
 `;
 
-const Bar2 = styled(Bar)`
+const Bar2 = styled(Bar)<{ open: boolean }>`
   top: 11px;
   ${(p) =>
     p.open &&
@@ -42,7 +42,7 @@ const Bar2 = styled(Bar)`
       opacity: 0;
     `}
 `;
-const Bar3 = styled(Bar)`
+const Bar3 = styled(Bar)<{ open: boolean }>`
   top: 22px;
   ${(p) =>
     p.open &&

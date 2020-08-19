@@ -58,6 +58,8 @@ export interface StyledSystemProps
   transition?: TransitionVariants;
   width?: "full";
   cursor?: CSS.CursorProperty;
+  children?: React.ReactNode;
+  style?: any;
 }
 
 export type BoxShadowVariant =

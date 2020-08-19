@@ -1,5 +1,10 @@
 /* eslint-disable react/prop-types */
-import { AllHTMLAttributes, createElement, ElementType } from "react";
+import {
+  AllHTMLAttributes,
+  createElement,
+  ElementType,
+  CSSProperties,
+} from "react";
 import styled, { StyledComponentClass } from "styled-components";
 import {
   AlignItemsVariants,
@@ -14,9 +19,9 @@ import {
   TLength,
   TransformVariants,
   TransitionVariants,
+  OptionalTrackableProps,
 } from "@origin-digital/ods-types";
 import * as CSS from "csstype";
-import { Omit } from "utility-types";
 import { mapToStyledSystem } from "@origin-digital/ods-helpers";
 import {
   BoxShadowVariant,
@@ -25,14 +30,7 @@ import {
 } from "../_private/components/StyledSystemBox/StyledSystemBox";
 import { renderBackgroundProvider } from "./BackgroundContext";
 
-export interface BoxProps
-  extends Omit<
-    AllHTMLAttributes<HTMLElement>,
-    | "width"
-    | "height"
-    | "suppressContentEditableWarning"
-    | "suppressHydrationWarning"
-  > {
+export interface BoxProps extends OptionalTrackableProps {
   alignItems?: ResponsiveProp<AlignItemsVariants>;
   alignSelf?: ResponsiveProp<AlignItemsVariants>;
   backgroundColor?: BackgroundColorVariants;
@@ -67,6 +65,21 @@ export interface BoxProps
   cursor?: CSS.CursorProperty;
   overflow?: "auto" | "hidden" | "visible" | "scroll";
   innerRef?: any;
+  domProps?: Omit<
+    AllHTMLAttributes<HTMLElement>,
+    | "width"
+    | "height"
+    | "suppressContentEditableWarning"
+    | "suppressHydrationWarning"
+    | "style"
+    | "children"
+  >;
+  children?: React.ReactNode;
+  style?: CSSProperties;
+  onClick?: AllHTMLAttributes<HTMLElement>["onClick"];
+  tabIndex?: number;
+  id?: string;
+  className?: string;
 }
 
 export const StyledCodeReset = styled(StyledSystemBox.withComponent("code"))<
@@ -173,6 +186,7 @@ export const Box = ({
   paddingY,
   position,
   textAlign,
+  domProps,
   ...rest
 }: BoxProps) => {
   let pL = paddingLeft;
@@ -258,8 +272,9 @@ export const Box = ({
     textAlign: mapToStyledSystem<CSS.TextAlignProperty>(textAlign),
   };
   const element = createElement(Container, {
-    ...styledSystemProps,
     ...rest,
+    ...styledSystemProps,
+    ...domProps,
   });
   return renderBackgroundProvider(element, backgroundColor);
 };
