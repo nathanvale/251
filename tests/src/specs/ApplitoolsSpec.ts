@@ -1,3 +1,4 @@
+import { Selector } from "testcafe";
 import Eyes from "@applitools/eyes-testcafe";
 import { openEyes, checkElement } from "../utils/ApplitoolsHelper";
 import { BasePage } from "../pages/BasePage";
@@ -10,16 +11,16 @@ const manifestData = new ManifestHelper();
 fixture("ApplitoolsSpec");
 
 manifestData.manifest.forEach((component) => {
-  const { dataId, paths } = component;
-  paths.forEach((path) => {
-    const label = path.label;
-    test(`${label} is rendered`, async (t) => {
-      const eyes = new Eyes();
-      await t.navigateTo(`${basePage.url + label}`);
-      await openEyes(eyes, t);
-      await checkElement(eyes, `[data-id='${dataId}']`, t);
-      await eyes.close();
-      await eyes.waitForResults();
-    });
+  const { componentName, path } = component;
+  test(`${componentName} is rendered`, async (t) => {
+    const eyes = new Eyes();
+    await t
+      .navigateTo(`${basePage.url + path}`)
+      .expect(Selector(basePage.componentId).exists)
+      .ok();
+    await openEyes(eyes, t);
+    await checkElement(eyes, t);
+    await eyes.close();
+    await eyes.waitForResults();
   });
 });

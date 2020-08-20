@@ -40,6 +40,7 @@ function run() {
     if (__BROWSERSTACK__ || __APPLITOOLS__) {
       process.env.BROWSERSTACK_PROJECT_NAME = process.env.LT_TEST_NAME = projectName;
       process.env.BROWSERSTACK_BUILD_ID = process.env.LT_BUILD = `${buildId}_${buildNumber}`;
+      process.env.BROWSERSTACK_USE_AUTOMATE = "1";
     }
 
     if (__BROWSERSTACK__) {

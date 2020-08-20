@@ -17,8 +17,9 @@ export const tests: E2ETests = [
     Code: () => (
       <DatePickerProvider>
         <DatePicker
-          id="datepicker"
+          id="datepicker-open"
           label="DatePicker"
+          value={new Date(1981, 8, 20)}
           muiProps={{ open: true }}
         />
       </DatePickerProvider>

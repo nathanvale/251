@@ -1,5 +1,4 @@
 import Eyes from "@applitools/eyes-testcafe";
-import { Selector } from "testcafe";
 
 const currentDate = new Date().toLocaleString();
 
@@ -10,15 +9,11 @@ const BrowsersList = [
   { width: 1024, height: 768, name: "safari" },
 ];
 
-export const checkElement = (
-  eyes: Eyes,
-  selector,
-  t: TestController
-): Promise<any> => {
+export const checkElement = (eyes: Eyes, t: TestController): Promise<any> => {
   return eyes.checkWindow({
     tag: t["testRun"]["test"]["name"],
-    target: "region",
-    selector: Selector(selector),
+    target: "window",
+    fully: true,
   });
 };
 

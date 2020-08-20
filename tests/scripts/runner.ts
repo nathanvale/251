@@ -22,7 +22,7 @@ const runTest = async (browsers: string | string[]) => {
       __LIVEMODE__ ? "ON" : "OFF"
     }`
   );
-  await createTestCafe("lvh.me", 1337, 1338)
+  await createTestCafe("localhost", 1337, 1338)
     .then((tc) => {
       testcafe = tc;
       const runner = __LIVEMODE__

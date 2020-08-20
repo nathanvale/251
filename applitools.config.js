@@ -15,6 +15,6 @@ module.exports = {
   batchName: `${appName}_${currentGitBranch}_${buildNumber}`,
   parentBranch: `${appName}_master`,
   showLogs: false,
-  concurrency: 25,
+  concurrency: 20,
   saveNewTests: true,
 };

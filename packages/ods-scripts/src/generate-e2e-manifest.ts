@@ -3,7 +3,6 @@ import path from "path";
 import { E2ETests } from "@origin-digital/ods-types";
 import { Components as odsCore } from "@origin-digital/ods-core";
 import { Components as odsPickers } from "@origin-digital/ods-pickers";
-import { slugify } from "@origin-digital/ods-helpers";
 import { FC } from "react";
 
 function getE2ETests(componentName: string, packageName: string) {
@@ -41,24 +40,30 @@ const mapComponentTests = (
       );
     }
   }
-  return {
-    componentName,
-    packageName,
-    dataId,
-    paths: tests.map(({ label, responsive }) => ({
-      label: `/e2e/${componentName}/${slugify(label)}`,
-      responsive: Boolean(responsive),
-    })),
-  };
+  return tests && tests.length > 0
+    ? {
+        responsive:
+          tests.filter(({ responsive }) => responsive === true).length > 0,
+        componentName,
+        packageName,
+        dataId,
+        path: `/e2e/${componentName}`,
+      }
+    : false;
 };
 
 const getAppliTests = (components: any, packageName: string) =>
-  Object.keys(components)
-    .map((compName) => mapComponentTests(compName, components, packageName))
-    .filter((components) => components.paths.length > 0);
+  Object.keys(components).map((compName) =>
+    mapComponentTests(compName, components, packageName)
+  );
 
-const coreAppliTests = getAppliTests(odsCore, "ods-core");
-const pickerAppliTests = getAppliTests(odsPickers, "ods-pickers");
+const coreAppliTests = getAppliTests(odsCore, "ods-core").filter(
+  (test) => test !== false
+);
+
+const pickerAppliTests = getAppliTests(odsPickers, "ods-pickers").filter(
+  (test) => test !== false
+);
 const appliTests = [...pickerAppliTests, ...coreAppliTests];
 
 fs.writeFileSync(
