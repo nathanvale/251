@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.59.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.58.2...@origin-digital/ods-core@0.59.0) (2020-08-20)
+
+
+### Features
+
+* update typography background context error ([1ea8459](https://bitbucket.orgn.io/od/origin-ui/commits/1ea84597a784c2d137cb88459699ab0c4ec3ce86))
+
+
+
+
+
 ## [0.58.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.58.1...@origin-digital/ods-core@0.58.2) (2020-08-20)
 
 **Note:** Version bump only for package @origin-digital/ods-core
