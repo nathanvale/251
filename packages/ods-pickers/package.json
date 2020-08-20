@@ -3,7 +3,7 @@
   "description": "Origin digital design system",
   "license": "UNLICENSED",
   "author": "Alex Mordue <alex.mordue@origin.com.au>",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "files": [

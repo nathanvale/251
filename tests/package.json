@@ -4,7 +4,7 @@
   "description": "Visual tests using applitools",
   "license": "UNLICENSED",
   "author": "Charan Damisetti <Charan.Damisetti@originenergy.com.au>",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "scripts": {
     "serve:static": "cd ../ && yarn serve:static",
     "test:func": "ts-node ./scripts/test-func.ts",
