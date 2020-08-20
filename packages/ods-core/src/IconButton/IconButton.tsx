@@ -71,10 +71,10 @@ export const IconButton = ({
 
   return (
     <MuiIconButton
-      {...props}
       className={clsx(styles.root, noIconPadding && styles.noIconPadding)}
       disabled={disabled}
       size="medium"
+      {...props}
       {...props.muiProps}
     >
       <SvgIconContext.Provider value={tone}>{children}</SvgIconContext.Provider>
