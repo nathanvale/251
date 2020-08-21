@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.59.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.59.1...@origin-digital/ods-core@0.59.2) (2020-08-21)
+
+
+### Bug Fixes
+
+* **dialog:** fix close button position ([857755d](https://bitbucket.orgn.io/od/origin-ui/commits/857755d2724d5b10b10cb7216050ab10e3498c51))
+
+
+
+
+
 ## [0.59.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.59.0...@origin-digital/ods-core@0.59.1) (2020-08-21)
 
 **Note:** Version bump only for package @origin-digital/ods-core
