@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.60.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.59.3...@origin-digital/ods-core@0.60.0) (2020-08-24)
+
+
+### Features
+
+* update button styling ([f6b1eeb](https://bitbucket.orgn.io/od/origin-ui/commits/f6b1eeb6d6fcfd2616b33dd7d677de1e6c2bb9c7))
+
+
+
+
+
 ## [0.59.3](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.59.2...@origin-digital/ods-core@0.59.3) (2020-08-24)
 
 **Note:** Version bump only for package @origin-digital/ods-core
