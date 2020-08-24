@@ -14,6 +14,10 @@ import {
 import { Breakpoint } from "@material-ui/core/styles/createBreakpoints";
 import { mapToStyledSystem } from "@origin-digital/ods-helpers";
 
+const getContainedHoverBG = (color: string) => {
+  return darken(color, 0.16);
+};
+
 const getHoverBG = (color: string) => {
   return darken(color, 0.08);
 };
@@ -97,7 +101,6 @@ const getCommonStyleRules = (theme: Theme) => ({
   root: ({
     size,
     variant,
-    hasIcon,
     noTextPadding,
     fullWidth,
   }: {
@@ -111,12 +114,18 @@ const getCommonStyleRules = (theme: Theme) => ({
 
     //Handle padding for different button sizes and whether there is an icon or not.
     let [pt, pr, pb, pl] = [12, 12, 12, 12];
-    if (size === "small" && hasIcon) {
-      [pt, pr, pb, pl] = [12, 8, 12, 8];
-    } else if (size === "small" && !hasIcon) {
-      [pt, pr, pb, pl] = [12, 8, 12, 8];
-    } else if (size === "medium" && hasIcon) {
-      [pt, pr, pb, pl] = [12, 12, 12, 12];
+    if (variant === "outlined" || variant === "contained") {
+      if (size === "small") {
+        [pt, pr, pb, pl] = [12, 16, 12, 16];
+      } else {
+        [pt, pr, pb, pl] = [12, 24, 12, 24];
+      }
+    } else if (variant === "text") {
+      if (size === "small") {
+        [pt, pr, pb, pl] = [12, 8, 12, 8];
+      } else {
+        [pt, pr, pb, pl] = [12, 12, 12, 12];
+      }
     }
 
     // Outline has a border, so we need to subtract 1 pixel off each padding to have overall width of the button the same
@@ -177,7 +186,7 @@ export const useButtonStyles = makeStyles(
       containedPrimary: {
         backgroundColor: theme.palette.primary.main,
         "&:hover": {
-          backgroundColor: getHoverBG(theme.palette.primary.main),
+          backgroundColor: getContainedHoverBG(theme.palette.primary.main),
         },
         "&$disabled": {
           backgroundColor: getDisabledBG(theme.palette.primary.main),
@@ -186,7 +195,7 @@ export const useButtonStyles = makeStyles(
       containedSecondary: {
         backgroundColor: theme.palette.grey[500],
         "&:hover": {
-          backgroundColor: getHoverBG(theme.palette.grey[500]),
+          backgroundColor: getContainedHoverBG(theme.palette.grey[500]),
         },
         "&$disabled": {
           backgroundColor: getDisabledBG(theme.palette.grey[500]),
