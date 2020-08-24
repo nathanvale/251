@@ -3,7 +3,7 @@
   "description": "Origin digital design system",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
-  "version": "0.59.2",
+  "version": "0.59.3",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "files": [
@@ -23,7 +23,7 @@
     "@material-ui/system": "^4.9.10",
     "@origin-digital/ods-devtools": "^0.6.0",
     "@origin-digital/ods-helpers": "^0.11.6",
-    "@origin-digital/ods-icons": "^0.13.2",
+    "@origin-digital/ods-icons": "^0.13.3",
     "@origin-digital/ods-pickers": "^0.2.3",
     "@origin-digital/ods-themes": "^0.20.1",
     "@origin-digital/ods-types": "^0.34.1",

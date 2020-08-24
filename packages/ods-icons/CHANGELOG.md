@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.3](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.13.2...@origin-digital/ods-icons@0.13.3) (2020-08-24)
+
+
+### Bug Fixes
+
+* **icon:** broken autocomplete in playroom ([7f56c7b](https://bitbucket.orgn.io/od/origin-ui/commits/7f56c7b4282468d10baca58df1b3a35e33f0cdf5))
+
+
+
+
+
 ## [0.13.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.13.1...@origin-digital/ods-icons@0.13.2) (2020-08-17)
 
 **Note:** Version bump only for package @origin-digital/ods-icons
