@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { IconCheck } from "@origin-digital/ods-icons";
+import { IconEmail } from "@origin-digital/ods-icons";
 import { Stack } from "../Stack/Stack";
 import { Columns } from "../Columns/Columns";
 import { Column } from "../Column/Column";
@@ -218,18 +218,18 @@ export const docs: ComponentDocs<ButtonProps> = {
         description: "Button can render an icon before the text",
         Code: () => (
           <Box>
-            <Button icon={<IconCheck />}>Medium</Button>
+            <Button icon={<IconEmail tone="white" />}>Medium</Button>
             <Box style={{ display: "inline-block", width: "20px" }} />
-            <Button size="small" icon={<IconCheck />}>
+            <Button size="small" icon={<IconEmail tone="white" />}>
               Small
             </Button>
           </Box>
         ),
         playroom: false,
         codeString: `<Box>
-  <Button icon={<IconCheck />}>Medium</Button>
+  <Button icon={<IconEmail tone="white" />}>Medium</Button>
   <Box style={{ display: "inline-block", width: "20px" }} />
-  <Button size="small" icon={<IconCheck />}>
+  <Button size="small" icon={<IconEmail tone="white" />}>
     Small
   </Button>
 </Box>`,
