@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.60.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.60.0...@origin-digital/ods-core@0.60.1) (2020-08-25)
+
+
+### Bug Fixes
+
+* **Alert:** incorrect background color ([12c0127](https://bitbucket.orgn.io/od/origin-ui/commits/12c0127f4a90de09485efb03e36dc66026ef4db9))
+
+
+
+
+
 # [0.60.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.59.3...@origin-digital/ods-core@0.60.0) (2020-08-24)
 
 
