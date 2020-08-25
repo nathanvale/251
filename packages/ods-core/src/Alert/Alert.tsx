@@ -18,11 +18,17 @@ import { Box } from "../Box/Box";
 import { Text } from "../Text/Text";
 import { TextContextProvider } from "../Text/TextContextProvider";
 
-const createStandardStyle = (color: string, backgroundColor: string) => ({
-  backgroundColor: lighten(backgroundColor, 0.92),
+const createStandardStyle = (
+  color: string,
+  backgroundColor: string,
+  lightenBgColor = true
+) => ({
+  backgroundColor: lightenBgColor
+    ? lighten(backgroundColor, 0.92)
+    : backgroundColor,
 
   "& .MuiAlert-icon svg": {
-    color: backgroundColor,
+    color: lightenBgColor ? backgroundColor : color,
   },
   "& .MuiAlert-action svg": {
     color,
@@ -84,7 +90,8 @@ const useStandardStyles = makeStyles(
     info: createStandardStyle(theme.palette.grey[500], theme.palette.info.main),
     neutral: createStandardStyle(
       theme.palette.grey[500],
-      theme.palette.grey[500]
+      theme.palette.grey[50],
+      false
     ),
     positive: createStandardStyle(
       theme.palette.grey[500],
