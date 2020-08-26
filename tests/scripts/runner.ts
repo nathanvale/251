@@ -52,6 +52,13 @@ const runTest = async (browsers: string | string[]) => {
           return fixtureName !== "ApplitoolsSpec";
         })
         .src("./src/specs")
+        .reporter([
+          "spec",
+          {
+            name: "test-summary",
+            output: "./reports/testcafe_report.html",
+          },
+        ])
         .run();
     })
     .then(async (failedCount) => {

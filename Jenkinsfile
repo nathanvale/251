@@ -160,6 +160,15 @@ pipeline {
 
     post {
         always {
+            archiveArtifacts artifacts: "tests/reports/", allowEmptyArchive: true
+            publishHTML(target: [
+                    allowMissing         : true,
+                    alwaysLinkToLastBuild: false,
+                    keepAll              : true,
+                    reportDir            : "tests/reports",
+                    reportFiles          : 'testcafe_report.html',
+                    reportName           : "Testcafe-tests"
+            ])
             script {
                 currentBuild.result = currentBuild.result ?: 'SUCCESS'
                 notifyBitbucket()
