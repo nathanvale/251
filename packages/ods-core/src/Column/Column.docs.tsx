@@ -11,7 +11,10 @@ export const docs: ComponentDocs<ColumnProps> = {
   description:
     "Column is a low-level atomic layout component. Its is used with its parent Columns to provide 12 grid layout as well as flex Placeholder style layout.",
   propDescriptions: {
-    width: "Width is used here",
+    width:
+      "Bootstrap style 12 column layout can be achieved by passing in a column width.",
+    alignX:
+      "This is a responsive prop which aligns the children horizontally. This prop overrides alignX set by the Columns container.",
   },
   migrationGuide: false,
   examples: {
@@ -79,6 +82,19 @@ export const docs: ComponentDocs<ColumnProps> = {
             </Column>
             <Column width="content">
               <Placeholder label="content" />
+            </Column>
+          </Columns>
+        ),
+      },
+      {
+        label: "Horizontal alignment",
+        Code: () => (
+          <Columns>
+            <Column>
+              <Placeholder />
+            </Column>
+            <Column alignX={["center", "right"]}>
+              <Placeholder width="50px" height="50px" />
             </Column>
           </Columns>
         ),

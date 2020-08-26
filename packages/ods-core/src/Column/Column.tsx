@@ -1,11 +1,20 @@
 import React, { ReactNode, useContext } from "react";
 import styled, { css } from "styled-components";
-import { OptionalTrackableProps } from "@origin-digital/ods-types";
+import { alignXToFlexAlign } from "@origin-digital/ods-helpers";
+import {
+  OptionalTrackableProps,
+  ResponsiveProp,
+  AlignX,
+} from "@origin-digital/ods-types";
 import { Box } from "../Box/Box";
-import { ColumnsContext } from "../Columns/Columns";
+import {
+  ColumnsContext,
+  CollapsibleAlignmentChildProps,
+} from "../Columns/Columns";
 
 export interface ColumnProps extends OptionalTrackableProps {
   children?: ReactNode;
+  alignX?: ResponsiveProp<AlignX>;
   width?:
     | "content"
     | "1/2"
@@ -51,12 +60,19 @@ const OuterStyledBox = styled(Box)<{
 `;
 
 const InnerStyledBox = styled(Box)`
+  width: inherit;
+  display: flex;
   ${OuterStyledBox}:first-child > & {
     padding-top: 0;
   }
 `;
 
-export const Column = ({ children, width, "data-id": dataId }: ColumnProps) => {
+export const Column = ({
+  children,
+  width,
+  "data-id": dataId,
+  alignX,
+}: ColumnProps) => {
   const {
     collapseXs,
     collapseSm,
@@ -70,6 +86,10 @@ export const Column = ({ children, width, "data-id": dataId }: ColumnProps) => {
     xlSpace,
     collapsibleAlignmentChildProps,
   } = useContext(ColumnsContext);
+
+  const {
+    justifyContent,
+  } = collapsibleAlignmentChildProps as CollapsibleAlignmentChildProps;
 
   return (
     <OuterStyledBox
@@ -98,6 +118,8 @@ export const Column = ({ children, width, "data-id": dataId }: ColumnProps) => {
         }
         height="full"
         {...collapsibleAlignmentChildProps}
+        // Override Columns alignX with Column alignX
+        justifyContent={alignX ? alignXToFlexAlign(alignX) : justifyContent}
       >
         {children}
       </InnerStyledBox>

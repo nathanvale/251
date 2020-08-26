@@ -808,6 +808,11 @@ exports[`ChevronLinkRenderer 1`] = `
 
 exports[`Column 1`] = `
 {
+  alignX?: ResponsiveProp<
+    | "center"
+    | "left"
+    | "right"
+  >
   children?: ReactNode
   data-id?: string
   width?: 
