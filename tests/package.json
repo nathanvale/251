@@ -18,6 +18,7 @@
     "minimist": "^1.2.5",
     "testcafe": "^1.8.8",
     "testcafe-browser-provider-browserstack": "^1.13.0",
-    "testcafe-browser-provider-lambdatest": "^2.0.1"
+    "testcafe-browser-provider-lambdatest": "^2.0.1",
+    "testcafe-reporter-test-summary": "^1.0.9"
   }
 }
