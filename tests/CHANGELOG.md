@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://bitbucket.orgn.io/od/origin-ui/compare/tests@0.1.2...tests@0.1.3) (2020-08-26)
+
+**Note:** Version bump only for package tests
+
+
+
+
+
 ## [0.1.2](https://bitbucket.orgn.io/od/origin-ui/compare/tests@0.1.1...tests@0.1.2) (2020-08-20)
 
 **Note:** Version bump only for package tests
