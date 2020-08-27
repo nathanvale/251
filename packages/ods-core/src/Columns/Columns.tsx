@@ -14,7 +14,7 @@ import { ColumnProps } from "../Column/Column";
 import { resolveCollapsibleAlignmentProps } from "../_private/resolveCollapsibleAlignmentProps";
 import { InnerContainer } from "../Inline/Inline";
 
-type CollapsibleAlignmentChildProps = ReturnType<
+export type CollapsibleAlignmentChildProps = ReturnType<
   typeof resolveCollapsibleAlignmentProps
 >["collapsibleAlignmentChildProps"];
 

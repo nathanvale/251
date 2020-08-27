@@ -87,6 +87,14 @@ exports[`it top-aligns children by default 1`] = `
   min-width: 0;
 }
 
+.c5 {
+  width: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c2:first-child > .c5 {
   padding-top: 0;
 }
@@ -544,6 +552,14 @@ exports[`it vertically aligns children bottom if alignY is bottom 1`] = `
   min-width: 0;
 }
 
+.c5 {
+  width: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c2:first-child > .c5 {
   padding-top: 0;
 }
@@ -999,6 +1015,14 @@ exports[`it vertically aligns children middle if alignY is center 1`] = `
 
 .c3 {
   min-width: 0;
+}
+
+.c5 {
+  width: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c2:first-child > .c5 {
