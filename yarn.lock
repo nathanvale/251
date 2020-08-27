@@ -4224,10 +4224,10 @@
   dependencies:
     "@babel/runtime-corejs3" "^7.5.5"
 
-"@origin-digital/reporting-client@^3.5.0":
-  version "3.5.1"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/reporting-client/-/@origin-digital/reporting-client-3.5.1.tgz#ae0022560bd278979723f83a5f0db512d0b60bda"
-  integrity sha1-rgAiVgvSeJeXI/g6Xw21EtC2C9o=
+"@origin-digital/reporting-client@^4.0.0":
+  version "4.1.1"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/reporting-client/-/@origin-digital/reporting-client-4.1.1.tgz#de1b83b628d3c960eeb74451f04039c5b48b748b"
+  integrity sha1-3huDtijTyWDut0RR8EA5xbSLdIs=
   dependencies:
     "@babel/runtime-corejs3" "^7.5.5"
 
