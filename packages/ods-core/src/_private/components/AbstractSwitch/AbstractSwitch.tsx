@@ -115,7 +115,7 @@ export function AbstractSwitch<
             checked={checked}
             data-id={getId(baseDataId, Component.displayName)}
             disabled={disabledVal}
-            error={error || !!fcs.error}
+            error={error || !!fcs.error ? true : undefined}
             id={id}
             className={lblClasses.switchComp}
             {...others}
