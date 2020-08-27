@@ -21,6 +21,11 @@
       "enabled": false
     },
     {
+      "packageName": "@date-io/date-fns",
+      "updateTypes": ["major"],
+      "enabled": false
+    },
+    {
       "packageName": "csstypes",
       "updateTypes": ["major"],
       "enabled": false
