@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.56.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.55.8...@origin-digital/ods-scripts@0.56.0) (2020-08-27)
+
+
+### Features
+
+* add alignX to column ([1c6e36d](https://bitbucket.orgn.io/od/origin-ui/commits/1c6e36de3c451d50deac106b64a3f190a0f84ef4))
+
+
+
+
+
 ## [0.55.8](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.55.7...@origin-digital/ods-scripts@0.55.8) (2020-08-25)
 
 **Note:** Version bump only for package @origin-digital/ods-scripts

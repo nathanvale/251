@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.61.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.60.1...@origin-digital/ods-core@0.61.0) (2020-08-27)
+
+
+### Features
+
+* add alignX to column ([1c6e36d](https://bitbucket.orgn.io/od/origin-ui/commits/1c6e36de3c451d50deac106b64a3f190a0f84ef4))
+
+
+
+
+
 ## [0.60.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.60.0...@origin-digital/ods-core@0.60.1) (2020-08-25)
 
 
