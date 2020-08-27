@@ -9966,14 +9966,14 @@ dezalgo@^1.0.0, dezalgo@~1.0.3:
     asap "^2.0.0"
     wrappy "1"
 
-didyoumean2@^3.1.2:
-  version "3.1.2"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/didyoumean2/-/didyoumean2-3.1.2.tgz#c6d54ded2784f9eb4979304f47b7a664bcd5adf6"
-  integrity sha1-xtVN7SeE+etJeTBPR7emZLzVrfY=
+didyoumean2@^4.0.0:
+  version "4.1.0"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/didyoumean2/-/didyoumean2-4.1.0.tgz#f813cb7c82c249443e599be077f76e88f24b85e4"
+  integrity sha1-+BPLfILCSUQ+WZvgd/duiPJLheQ=
   dependencies:
+    "@babel/runtime" "^7.10.2"
     leven "^3.1.0"
     lodash.deburr "^4.1.0"
-    ramda "^0.26.1"
 
 diff-sequences@^24.9.0:
   version "24.9.0"
@@ -19897,11 +19897,6 @@ raf@^3.4.1:
   integrity sha1-B0LpmkplUvRF1z4+4DKK8P8e3jk=
   dependencies:
     performance-now "^2.1.0"
-
-ramda@^0.26.1:
-  version "0.26.1"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/ramda/-/ramda-0.26.1.tgz#8d41351eb8111c55353617fc3bbffad8e4d35d06"
-  integrity sha1-jUE1HrgRHFU1Nhf8O7/62OTTXQY=
 
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"
