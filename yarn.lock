@@ -11307,7 +11307,7 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.4"
 
-fault@^1.0.1, fault@^1.0.2:
+fault@^1.0.0, fault@^1.0.1:
   version "1.0.4"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/fault/-/fault-1.0.4.tgz#eafcfc0a6d214fc94601e170df29954a4f842f13"
   integrity sha1-6vz8Cm0hT8lGAeFw3ymVSk+ELxM=
@@ -12662,10 +12662,10 @@ highlight-es@^1.0.0:
     is-es2016-keyword "^1.0.0"
     js-tokens "^3.0.0"
 
-highlight.js@~9.13.0:
-  version "9.13.1"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/highlight.js/-/highlight.js-9.13.1.tgz#054586d53a6863311168488a0f58d6c505ce641e"
-  integrity sha1-BUWG1TpoYzERaEiKD1jWxQXOZB4=
+highlight.js@^10.1.1, highlight.js@~10.1.0:
+  version "10.1.2"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/highlight.js/-/highlight.js-10.1.2.tgz#c20db951ba1c22c055010648dfffd7b2a968e00c"
+  integrity sha1-wg25UbocIsBVAQZI3//Xsqlo4Aw=
 
 history@^4.10.1, history@^4.9.0:
   version "4.10.1"
@@ -16132,13 +16132,13 @@ lowercase-keys@^1.0.0:
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/lowercase-keys/-/lowercase-keys-1.0.1.tgz#6f9e30b47084d971a7c820ff15a6c5167b74c26f"
   integrity sha1-b54wtHCE2XGnyCD/FabFFnt0wm8=
 
-lowlight@~1.11.0:
-  version "1.11.0"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/lowlight/-/lowlight-1.11.0.tgz#1304d83005126d4e8b1dc0f07981e9b689ec2efc"
-  integrity sha1-EwTYMAUSbU6LHcDweYHptonsLvw=
+lowlight@^1.14.0:
+  version "1.14.0"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/lowlight/-/lowlight-1.14.0.tgz#83ebc143fec0f9e6c0d3deffe01be129ce56b108"
+  integrity sha1-g+vBQ/7A+ebA097/4BvhKc5WsQg=
   dependencies:
-    fault "^1.0.2"
-    highlight.js "~9.13.0"
+    fault "^1.0.0"
+    highlight.js "~10.1.0"
 
 lru-cache@2.6.3:
   version "2.6.3"
@@ -18276,10 +18276,22 @@ parse-bmfont-xml@^1.1.4:
     xml-parse-from-string "^1.0.0"
     xml2js "^0.4.5"
 
-parse-entities@^1.1.0, parse-entities@^1.1.2:
+parse-entities@^1.1.0:
   version "1.2.2"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/parse-entities/-/parse-entities-1.2.2.tgz#c31bf0f653b6661354f8973559cb86dd1d5edf50"
   integrity sha1-wxvw9lO2ZhNU+Jc1WcuG3R1e31A=
+  dependencies:
+    character-entities "^1.0.0"
+    character-entities-legacy "^1.0.0"
+    character-reference-invalid "^1.0.0"
+    is-alphanumerical "^1.0.0"
+    is-decimal "^1.0.0"
+    is-hexadecimal "^1.0.0"
+
+parse-entities@^2.0.0:
+  version "2.0.0"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/parse-entities/-/parse-entities-2.0.0.tgz#53c6eb5b9314a1f4ec99fa0fdf7ce01ecda0cbe8"
+  integrity sha1-U8brW5MUofTsmfoP33zgHs2gy+g=
   dependencies:
     character-entities "^1.0.0"
     character-entities-legacy "^1.0.0"
@@ -19578,17 +19590,10 @@ pretty-hrtime@^1.0.0:
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz#b7e3ea42435a4c9b2759d99e0f201eb195802ee1"
   integrity sha1-t+PqQkNaTJsnWdmeDyAesZWALuE=
 
-prismjs@^1.8.4:
-  version "1.20.0"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/prismjs/-/prismjs-1.20.0.tgz#9b685fc480a3514ee7198eac6a3bf5024319ff03"
-  integrity sha1-m2hfxICjUU7nGY6sajv1AkMZ/wM=
-  optionalDependencies:
-    clipboard "^2.0.0"
-
-prismjs@~1.17.0:
-  version "1.17.1"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/prismjs/-/prismjs-1.17.1.tgz#e669fcbd4cdd873c35102881c33b14d0d68519be"
-  integrity sha1-5mn8vUzdhzw1ECiBwzsU0NaFGb4=
+prismjs@^1.21.0, prismjs@~1.21.0:
+  version "1.21.0"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/prismjs/-/prismjs-1.21.0.tgz#36c086ec36b45319ec4218ee164c110f9fc015a3"
+  integrity sha1-NsCG7Da0UxnsQhjuFkwRD5/AFaM=
   optionalDependencies:
     clipboard "^2.0.0"
 
@@ -20160,16 +20165,16 @@ react-scripts@^3.4.1:
   optionalDependencies:
     fsevents "2.1.2"
 
-react-syntax-highlighter@^11.0.2:
-  version "11.0.2"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/react-syntax-highlighter/-/react-syntax-highlighter-11.0.2.tgz#4e3f376e752b20d2f54e4c55652fd663149e4029"
-  integrity sha1-Tj83bnUrINL1TkxVZS/WYxSeQCk=
+react-syntax-highlighter@^13.0.0:
+  version "13.5.1"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/react-syntax-highlighter/-/react-syntax-highlighter-13.5.1.tgz#f21737cf6d582474a0f18b06b52613f4349c0e64"
+  integrity sha1-8hc3z21YJHSg8YsGtSYT9DScDmQ=
   dependencies:
     "@babel/runtime" "^7.3.1"
-    highlight.js "~9.13.0"
-    lowlight "~1.11.0"
-    prismjs "^1.8.4"
-    refractor "^2.4.1"
+    highlight.js "^10.1.1"
+    lowlight "^1.14.0"
+    prismjs "^1.21.0"
+    refractor "^3.1.0"
 
 react-test-renderer@^16.0.0-0:
   version "16.13.0"
@@ -20522,14 +20527,14 @@ reflect.ownkeys@^0.2.0:
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/reflect.ownkeys/-/reflect.ownkeys-0.2.0.tgz#749aceec7f3fdf8b63f927a04809e90c5c0b3460"
   integrity sha1-dJrO7H8/34tj+SegSAnpDFwLNGA=
 
-refractor@^2.4.1:
-  version "2.10.1"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/refractor/-/refractor-2.10.1.tgz#166c32f114ed16fd96190ad21d5193d3afc7d34e"
-  integrity sha1-Fmwy8RTtFv2WGQrSHVGT06/H004=
+refractor@^3.1.0:
+  version "3.1.0"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/refractor/-/refractor-3.1.0.tgz#b05a43c8a1b4fccb30001ffcbd5cd781f7f06f78"
+  integrity sha1-sFpDyKG0/MswAB/8vVzXgffwb3g=
   dependencies:
     hastscript "^5.0.0"
-    parse-entities "^1.1.2"
-    prismjs "~1.17.0"
+    parse-entities "^2.0.0"
+    prismjs "~1.21.0"
 
 regenerate-unicode-properties@^8.1.0:
   version "8.1.0"
