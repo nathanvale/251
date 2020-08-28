@@ -20077,10 +20077,10 @@ react-router-dom@^5.1.2:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
-react-router-hash-link@^1.2.2:
-  version "1.2.2"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/react-router-hash-link/-/react-router-hash-link-1.2.2.tgz#7a0ad5e925d49596d19554de8bc6c554ce4f8099"
-  integrity sha1-egrV6SXUlZbRlVTei8bFVM5PgJk=
+react-router-hash-link@^2.0.0:
+  version "2.0.0"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/react-router-hash-link/-/react-router-hash-link-2.0.0.tgz#c0baade5cb0957f4c6da4519f7992c825f1b3b35"
+  integrity sha1-wLqt5csJV/TG2kUZ95ksgl8bOzU=
   dependencies:
     prop-types "^15.6.0"
 
