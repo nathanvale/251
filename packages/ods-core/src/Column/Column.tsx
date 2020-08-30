@@ -43,7 +43,6 @@ export const widthValueMap = {
   "5/12": 5 / 12,
   "7/12": 7 / 12,
   "11/12": 11 / 12,
-  flex: 1,
 };
 
 const OuterStyledBox = styled(Box)<{
@@ -52,7 +51,7 @@ const OuterStyledBox = styled(Box)<{
   min-width: 0;
   ${(p) => (p.columnWidth === "content" ? "flex-shrink: 0;" : undefined)}
   ${(p) =>
-    p.columnWidth && p.columnWidth !== "content"
+    p.columnWidth && p.columnWidth !== "content" && p.columnWidth !== "flex"
       ? css`
           flex: 0 0 ${widthValueMap[p.columnWidth] * 100}%;
         `
@@ -129,6 +128,7 @@ export const Column = ({
 
 Column.defaultProps = {
   "data-id": "column",
+  width: "flex",
 };
 
 Column.displayName = "Column";
