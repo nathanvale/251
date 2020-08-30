@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.56.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.56.0...@origin-digital/ods-scripts@0.56.1) (2020-08-30)
+
+**Note:** Version bump only for package @origin-digital/ods-scripts
+
+
+
+
+
 # [0.56.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.55.8...@origin-digital/ods-scripts@0.56.0) (2020-08-27)
 
 

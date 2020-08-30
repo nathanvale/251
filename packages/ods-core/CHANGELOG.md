@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.61.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.61.0...@origin-digital/ods-core@0.61.1) (2020-08-30)
+
+
+### Bug Fixes
+
+* **Column:** flex column bug ([5231495](https://bitbucket.orgn.io/od/origin-ui/commits/5231495f300cbdec08ade58eccd8e87852417e86))
+* **Radio:** remove console errors ([f1fb88f](https://bitbucket.orgn.io/od/origin-ui/commits/f1fb88f5130dbc12d2849493994e64db2efa344d))
+
+
+
+
+
 # [0.61.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.60.1...@origin-digital/ods-core@0.61.0) (2020-08-27)
 
 
