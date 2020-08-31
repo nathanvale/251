@@ -23,7 +23,7 @@ export interface BaseFieldProps
   onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
   placeholder?: string;
   size?: TextFieldSize;
-  reserveHelperTextSpace?: boolean;
+  hideHelperTextSpace?: boolean;
   type?: string;
   variant?: TextFieldVariant;
   muiProps?: MuiTextFieldProps;
@@ -174,7 +174,7 @@ export const TextFieldBase = ({
   id,
   maxLength,
   muiProps,
-  reserveHelperTextSpace,
+  hideHelperTextSpace,
   select,
   SelectProps,
   startAdornment,
@@ -224,7 +224,7 @@ export const TextFieldBase = ({
       classes={classes}
       data-id={calcDataId}
       fullWidth={true}
-      helperText={helperText || (reserveHelperTextSpace && <div>&nbsp;</div>)}
+      helperText={helperText || (!hideHelperTextSpace && <div>&nbsp;</div>)}
       id={id}
       required={false}
       select={select}
