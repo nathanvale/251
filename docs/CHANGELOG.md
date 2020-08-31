@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.32.12](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.32.11...docs@0.32.12) (2020-08-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-syntax-highlighter to v13 ([ca98fbd](https://bitbucket.orgn.io/od/origin-ui/commits/ca98fbd6a486955753094de9491c04f99a5790a2))
+
+
+
+
+
 ## [0.32.11](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.32.10...docs@0.32.11) (2020-08-31)
 
 

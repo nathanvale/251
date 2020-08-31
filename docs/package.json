@@ -2,7 +2,7 @@
   "private": true,
   "name": "docs",
   "description": "",
-  "version": "0.32.11",
+  "version": "0.32.12",
   "main": "src/index.tsx",
   "scripts": {
     "build": "craco --max_old_space_size=4096 build",
