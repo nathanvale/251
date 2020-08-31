@@ -26,7 +26,17 @@
       "enabled": false
     },
     {
-      "packageName": "csstypes",
+      "packageName": "jest-styled-components",
+      "updateTypes": ["major"],
+      "enabled": false
+    },
+    {
+      "packageName": "typescript",
+      "updateTypes": ["major", "minor"],
+      "enabled": false
+    },
+    {
+      "packageName": "csstype",
       "updateTypes": ["major"],
       "enabled": false
     }
