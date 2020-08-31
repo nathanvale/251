@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.32.13](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.32.12...docs@0.32.13) (2020-08-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-router-hash-link to v2 ([6c36e55](https://bitbucket.orgn.io/od/origin-ui/commits/6c36e55fd3dfc01503115b7a316848c8aa400b5d))
+
+
+
+
+
 ## [0.32.12](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.32.11...docs@0.32.12) (2020-08-31)
 
 
