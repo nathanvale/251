@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.32.11](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.32.10...docs@0.32.11) (2020-08-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @origin-digital/reporting-client to v4 ([2728371](https://bitbucket.orgn.io/od/origin-ui/commits/27283710a06ad8158369a490149a9f16300a94f1))
+
+
+
+
+
 ## [0.32.10](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.32.9...docs@0.32.10) (2020-08-30)
 
 **Note:** Version bump only for package docs
