@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.32.14](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.32.13...docs@0.32.14) (2020-08-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency didyoumean2 to v4 ([31b4aee](https://bitbucket.orgn.io/od/origin-ui/commits/31b4aee9044f94fa8b1c74df99cefffb97cfc782))
+
+
+
+
+
 ## [0.32.13](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.32.12...docs@0.32.13) (2020-08-31)
 
 
