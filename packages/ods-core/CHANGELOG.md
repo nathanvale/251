@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.61.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.61.1...@origin-digital/ods-core@0.61.2) (2020-09-01)
+
+
+### Bug Fixes
+
+* **package.json:** remove ods-pickers dependancy ([6e6aeab](https://bitbucket.orgn.io/od/origin-ui/commits/6e6aeab1a1da7437f19a3e7ed97164a0fc4f0a0c))
+
+
+
+
+
 ## [0.61.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.61.0...@origin-digital/ods-core@0.61.1) (2020-08-30)
 
 
