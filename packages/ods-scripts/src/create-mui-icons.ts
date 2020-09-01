@@ -8,8 +8,9 @@ const srcPath = path.join(
   "../../node_modules/@material-ui/icons/esm"
 );
 
-async function readIndexJS() {
-  return await fse.readFileSync(`${buildPath}/index.ts`, "utf8");
+async function getAllMUIIcons() {
+  const allIcons = await fse.readdirSync(`${buildPath}`, "utf8");
+  return allIcons.filter((fileName) => fileName.includes("Icon"));
 }
 
 async function copyMUIIconsToODSIcons({
@@ -52,13 +53,14 @@ export default createMUISvgIcon("${file}", ${file});`;
   return files;
 }
 
-async function addIconToIndexJs(existingIndexJs: string, filenames: string[]) {
-  const str = `${existingIndexJs}${filenames
+async function addIconToIndexJs(filenames: string[]) {
+  const str = filenames
+    .sort()
     .map((filename) => {
       filename = path.parse(filename).name;
-      return `export { default as Icon${filename} } from './Icon${filename}';\n`;
+      return `export { default as ${filename} } from "./${filename}";\n`;
     })
-    .join("")}`;
+    .join("");
   await fse.writeFile(`${buildPath}/index.ts`, str);
   return str;
 }
@@ -74,10 +76,11 @@ async function run() {
       muiIcons,
     });
 
-    const existingIndexJs = await readIndexJS();
-    // console.log("indexJS", existingIndexJs);
-    console.log("Mui Icons added:", filenames);
-    addIconToIndexJs(existingIndexJs, filenames);
+    console.log("Mui icons added:", filenames);
+
+    const allMuiIcons = await getAllMUIIcons();
+    addIconToIndexJs(allMuiIcons);
+    console.log("File index.ts rewritten");
   } catch (err) {
     console.error(err);
     process.exit(1);
