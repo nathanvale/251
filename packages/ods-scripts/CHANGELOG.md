@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.57.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.56.2...@origin-digital/ods-scripts@0.57.0) (2020-09-01)
+
+
+### Features
+
+* **ods-icons:** add icons for help-support ([07a93f7](https://bitbucket.orgn.io/od/origin-ui/commits/07a93f7c86a18ce5b5918a985c1540ed9cf91343))
+
+
+
+
+
 ## [0.56.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.56.1...@origin-digital/ods-scripts@0.56.2) (2020-09-01)
 
 **Note:** Version bump only for package @origin-digital/ods-scripts
