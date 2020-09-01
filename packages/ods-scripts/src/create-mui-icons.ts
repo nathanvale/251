@@ -45,7 +45,7 @@ async function copyMUIIconsToODSIcons({
     const str = `import ${file} from "@material-ui/icons/${file}";
 import { createMUISvgIcon } from "../_private/createMUISvgIcon";
 export default createMUISvgIcon("${file}", ${file});`;
-    return fse.writeFile(path.resolve(to, `${file}.ts`), str);
+    return fse.writeFile(path.resolve(to, `Icon${file}.ts`), str);
   });
 
   await Promise.all(cmds);
@@ -56,7 +56,7 @@ async function addIconToIndexJs(existingIndexJs: string, filenames: string[]) {
   const str = `${existingIndexJs}${filenames
     .map((filename) => {
       filename = path.parse(filename).name;
-      return `export { default as Icon${filename} } from './${filename}';\n`;
+      return `export { default as Icon${filename} } from './Icon${filename}';\n`;
     })
     .join("")}`;
   await fse.writeFile(`${buildPath}/index.ts`, str);
