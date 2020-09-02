@@ -225,9 +225,9 @@ return (<Stack space="medium">
         ),
       },
       {
-        label: "Keep helperText space",
+        label: "Hiding helperText space",
         description: [
-          "You can set a flag to reserve the space that might be used by helperText.",
+          "You can set a flag to hide the space that might be used by helperText.",
           "This allows us have a better user experience by not dynamically changing",
           "the height of the SelectField which means the other components under it won't shift up and down.",
         ].join(" "),
@@ -236,7 +236,7 @@ return (<Stack space="medium">
             <SelectField
               id="select-field11"
               label="Keeps space"
-              reserveHelperTextSpace
+              hideHelperTextSpace
               options={[{ value: "syd", label: "Sydney" }]}
             />
             <SelectField

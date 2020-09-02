@@ -81,6 +81,7 @@ exports[`it should render error 1`] = `
       class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline Mui-error Mui-error MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
     >
       <input
+        aria-describedby="datepicker-helper-text"
         aria-invalid="true"
         autocomplete="false"
         class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
@@ -121,6 +122,15 @@ exports[`it should render error 1`] = `
         </button>
       </div>
     </div>
+    <p
+      class="MuiFormHelperText-root MuiFormHelperText-contained form-helper-text-grey400-colour-11 Mui-error"
+      data-id="keyboard-date-picker-helper-text"
+      id="datepicker-helper-text"
+    >
+      <div>
+         
+      </div>
+    </p>
   </div>
 </div>
 `;

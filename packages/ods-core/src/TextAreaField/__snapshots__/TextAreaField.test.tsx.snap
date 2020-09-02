@@ -19,6 +19,7 @@ exports[`renders multiple rows 1`] = `
       class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-multiline MuiFilledInput-multiline"
     >
       <textarea
+        aria-describedby="my-taf-helper-text"
         aria-invalid="false"
         autocomplete="false"
         class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputMultiline MuiFilledInput-inputMultiline"
@@ -34,6 +35,15 @@ exports[`renders multiple rows 1`] = `
         style="visibility: hidden; position: absolute; overflow: hidden; height: 0px; top: 0px; left: 0px; transform: translateZ(0); width: 100%;"
         tabindex="-1"
       />
+    </div>
+    <div
+      class="MuiFormHelperText-root MuiFormHelperText-contained form-helper-text-grey400-colour-4"
+      data-id="my-taf-helper-text"
+      id="my-taf-helper-text"
+    >
+      <div>
+         
+      </div>
     </div>
   </div>
 </div>

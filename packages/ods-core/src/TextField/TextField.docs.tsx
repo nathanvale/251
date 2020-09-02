@@ -36,9 +36,9 @@ export const docs: ComponentDocs<TextFieldProps> = {
     },
     additional: [
       {
-        label: "Keep helperText space",
+        label: "Hiding helperText space",
         description: [
-          "You can set a flag to reserve the space that might be used by helperText.",
+          "You can set a flag to hide the space that might be used by helperText.",
           "This allows us have a better user experience by not dynamically changing",
           "the height of the TextField which means the other components under it won't shift up and down.",
         ].join(" "),
@@ -48,7 +48,7 @@ export const docs: ComponentDocs<TextFieldProps> = {
               id="text-field12"
               label="Keeps space"
               endIcon="success"
-              reserveHelperTextSpace
+              hideHelperTextSpace
             />
             <TextField id="text-field13" label="" />
             <TextField

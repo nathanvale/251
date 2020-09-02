@@ -1676,6 +1676,7 @@ exports[`SelectField 1`] = `
   emptyAriaLabel?: string
   error?: boolean
   helperText?: ReactNode
+  hideHelperTextSpace?: boolean
   id: string
   inputRef?: 
     | (instance: any) => void
@@ -1692,7 +1693,6 @@ exports[`SelectField 1`] = `
   onKeyDown?: (event: KeyboardEvent<HTMLInputElement>) => void
   onKeyUp?: (event: KeyboardEvent<HTMLInputElement>) => void
   options?: OptionType[]
-  reserveHelperTextSpace?: boolean
   size?: 
     | "medium"
     | "small"
@@ -2156,6 +2156,7 @@ exports[`TextAreaField 1`] = `
   domProps?: HTMLAttributes<HTMLTextAreaElement> | undefined
   error?: boolean
   helperText?: ReactNode
+  hideHelperTextSpace?: boolean
   id: string
   inputRef?: 
     | (instance: any) => void
@@ -2172,7 +2173,6 @@ exports[`TextAreaField 1`] = `
   onKeyDown?: (event: KeyboardEvent<HTMLInputElement>) => void
   onKeyUp?: (event: KeyboardEvent<HTMLInputElement>) => void
   placeholder?: string
-  reserveHelperTextSpace?: boolean
   rows?: 
     | number
     | string
@@ -2248,6 +2248,7 @@ exports[`TextField 1`] = `
   endIcon?: ReactNode
   error?: boolean
   helperText?: ReactNode
+  hideHelperTextSpace?: boolean
   id: string
   inputRef?: 
     | (instance: any) => void
@@ -2264,7 +2265,6 @@ exports[`TextField 1`] = `
   onKeyDown?: (event: KeyboardEvent<HTMLInputElement>) => void
   onKeyUp?: (event: KeyboardEvent<HTMLInputElement>) => void
   placeholder?: string
-  reserveHelperTextSpace?: boolean
   size?: 
     | "medium"
     | "small"
@@ -2297,6 +2297,7 @@ exports[`TextFieldBase 1`] = `
   endAdornment?: ReactNode
   error?: boolean
   helperText?: ReactNode
+  hideHelperTextSpace?: boolean
   id: string
   inputRef?: 
     | (instance: any) => void
@@ -2314,7 +2315,6 @@ exports[`TextFieldBase 1`] = `
   onKeyDown?: (event: KeyboardEvent<HTMLInputElement>) => void
   onKeyUp?: (event: KeyboardEvent<HTMLInputElement>) => void
   placeholder?: string
-  reserveHelperTextSpace?: boolean
   select?: boolean
   size?: 
     | "medium"

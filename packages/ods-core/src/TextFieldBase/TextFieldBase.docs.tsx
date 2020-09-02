@@ -52,7 +52,7 @@ export const baseFieldPropDesc: (
     `Is called whenever the user releases a key on input element.`,
   ].join(" "),
   placeholder: `The text shown on the ${compName} when it is empty and focused.`,
-  reserveHelperTextSpace: [
+  hideHelperTextSpace: [
     `If set to true, helperText will keep its space (height) even if it is empty`,
   ].join(" "),
   size: `Defines how much vertical space the ${compName} component will take.`,

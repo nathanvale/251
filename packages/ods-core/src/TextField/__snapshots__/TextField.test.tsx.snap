@@ -19,6 +19,7 @@ exports[`TextField with error endIcon should render error after the text 1`] = `
       class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
     >
       <input
+        aria-describedby="text-field-helper-text"
         aria-invalid="false"
         autocomplete="false"
         class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
@@ -44,6 +45,15 @@ exports[`TextField with error endIcon should render error after the text 1`] = `
         </svg>
       </span>
     </div>
+    <div
+      class="MuiFormHelperText-root MuiFormHelperText-contained form-helper-text-grey400-colour-15"
+      data-id="text-field-helper-text"
+      id="text-field-helper-text"
+    >
+      <div>
+         
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -67,6 +77,7 @@ exports[`TextField with success endIcon should render success after the text 1`]
       class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
     >
       <input
+        aria-describedby="text-field-helper-text"
         aria-invalid="false"
         autocomplete="false"
         class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
@@ -92,6 +103,15 @@ exports[`TextField with success endIcon should render success after the text 1`]
         </svg>
       </span>
     </div>
+    <div
+      class="MuiFormHelperText-root MuiFormHelperText-contained form-helper-text-grey400-colour-2"
+      data-id="text-field-helper-text"
+      id="text-field-helper-text"
+    >
+      <div>
+         
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -115,6 +135,7 @@ exports[`TextField with validating endIcon should render validating after the te
       class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
     >
       <input
+        aria-describedby="text-field-helper-text"
         aria-invalid="false"
         autocomplete="false"
         class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
@@ -149,6 +170,15 @@ exports[`TextField with validating endIcon should render validating after the te
         </div>
       </span>
     </div>
+    <div
+      class="MuiFormHelperText-root MuiFormHelperText-contained form-helper-text-grey400-colour-9"
+      data-id="text-field-helper-text"
+      id="text-field-helper-text"
+    >
+      <div>
+         
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -172,6 +202,7 @@ exports[`should render the custom after the text 1`] = `
       class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
     >
       <input
+        aria-describedby="text-field-helper-text"
         aria-invalid="false"
         autocomplete="false"
         class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
@@ -196,6 +227,15 @@ exports[`should render the custom after the text 1`] = `
           />
         </svg>
       </span>
+    </div>
+    <div
+      class="MuiFormHelperText-root MuiFormHelperText-contained form-helper-text-grey400-colour-22"
+      data-id="text-field-helper-text"
+      id="text-field-helper-text"
+    >
+      <div>
+         
+      </div>
     </div>
   </div>
 </div>
@@ -236,6 +276,7 @@ exports[`should render the custom before the text 1`] = `
         </svg>
       </span>
       <input
+        aria-describedby="text-field-helper-text"
         aria-invalid="false"
         autocomplete="false"
         class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputAdornedStart MuiFilledInput-inputAdornedStart"
@@ -244,6 +285,15 @@ exports[`should render the custom before the text 1`] = `
         type="text"
         value=""
       />
+    </div>
+    <div
+      class="MuiFormHelperText-root MuiFormHelperText-contained form-helper-text-grey400-colour-29"
+      data-id="text-field-helper-text"
+      id="text-field-helper-text"
+    >
+      <div>
+         
+      </div>
     </div>
   </div>
 </div>
