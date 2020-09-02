@@ -80,6 +80,7 @@ exports[`it top-aligns children by default 1`] = `
 }
 
 .c0 {
+  min-width: 100%;
   margin-left: -24px;
 }
 
@@ -545,6 +546,7 @@ exports[`it vertically aligns children bottom if alignY is bottom 1`] = `
 }
 
 .c0 {
+  min-width: 100%;
   margin-left: -24px;
 }
 
@@ -1010,6 +1012,7 @@ exports[`it vertically aligns children middle if alignY is center 1`] = `
 }
 
 .c0 {
+  min-width: 100%;
   margin-left: -24px;
 }
 

@@ -71,6 +71,7 @@ const OuterContainer = styled(Box)<OuterContainerProps>`
   ${negativeMarginTop}
 `;
 export const InnerContainer = styled(Box)<InnerContainerProps>`
+  min-width: 100%;
   ${negativeMarginLeft}
 `;
 const ChildContainer = styled(Box)`

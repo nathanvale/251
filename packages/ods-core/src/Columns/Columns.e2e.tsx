@@ -215,4 +215,56 @@ export const tests: E2ETests = [
       </Columns>
     ),
   },
+  {
+    label: "Nested Columns",
+    responsive: true,
+    Code: () => (
+      <>
+        <Columns space="none">
+          <Column>
+            <Columns space="none">
+              <Column>
+                <Placeholder width="100%" height="160px" />
+              </Column>
+              <Column>
+                <Placeholder minWidth="36px" height="160px" />
+              </Column>
+            </Columns>
+          </Column>
+          <Column>
+            <Columns space="none">
+              <Column>
+                <Placeholder minWidth="36px" height="160px" />
+              </Column>
+              <Column>
+                <Placeholder minWidth="36px" height="160px" />
+              </Column>
+            </Columns>
+          </Column>
+        </Columns>
+        <Columns space="none">
+          <Column>
+            <Columns space="none">
+              <Column>
+                <Placeholder minWidth="36px" height="160px" />
+              </Column>
+              <Column>
+                <Placeholder minWidth="36px" height="160px" />
+              </Column>
+            </Columns>
+          </Column>
+          <Column>
+            <Columns space="none">
+              <Column>
+                <Placeholder minWidth="36px" height="160px" />
+              </Column>
+              <Column>
+                <Placeholder minWidth="36px" height="160px" />
+              </Column>
+            </Columns>
+          </Column>
+        </Columns>
+      </>
+    ),
+  },
 ];
