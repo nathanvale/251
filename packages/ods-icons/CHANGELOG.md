@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.14.0...@origin-digital/ods-icons@0.15.0) (2020-09-02)
+
+
+### Features
+
+* **icons:** uplift add and rename ([96bbece](https://bitbucket.orgn.io/od/origin-ui/commits/96bbece6ca7b2bdc4b283ef0da50a22918dea223))
+
+
+
+
+
 # [0.14.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.13.3...@origin-digital/ods-icons@0.14.0) (2020-09-01)
 
 
