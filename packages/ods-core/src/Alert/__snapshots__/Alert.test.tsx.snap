@@ -866,7 +866,7 @@ exports[`It uses variant (filled) and tone (positive) 1`] = `
       <svg
         aria-hidden="true"
         class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-256"
-        data-id="IconCheckCircle"
+        data-id="IconDone"
         focusable="false"
         viewBox="0 0 24 24"
       >
@@ -1796,7 +1796,7 @@ exports[`It uses variant (standard) and tone (positive) 1`] = `
       <svg
         aria-hidden="true"
         class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-124"
-        data-id="IconCheckCircle"
+        data-id="IconDone"
         focusable="false"
         viewBox="0 0 24 24"
       >

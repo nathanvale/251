@@ -63,7 +63,7 @@ exports[`It renders 1`] = `
           <svg
             aria-hidden="true"
             class="MuiSvgIcon-root svg-icon-critical-small-svg-icon-12"
-            data-id="IconAdd"
+            data-id="IconExpand"
             focusable="false"
             viewBox="0 0 24 24"
           >
@@ -175,7 +175,7 @@ exports[`It uses medium padding 1`] = `
           <svg
             aria-hidden="true"
             class="MuiSvgIcon-root svg-icon-critical-small-svg-icon-46"
-            data-id="IconAdd"
+            data-id="IconExpand"
             focusable="false"
             viewBox="0 0 24 24"
           >
@@ -287,7 +287,7 @@ exports[`It uses small padding 1`] = `
           <svg
             aria-hidden="true"
             class="MuiSvgIcon-root svg-icon-critical-small-svg-icon-29"
-            data-id="IconAdd"
+            data-id="IconExpand"
             focusable="false"
             viewBox="0 0 24 24"
           >

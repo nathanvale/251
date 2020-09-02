@@ -11,7 +11,7 @@ import MuiAccordionDetails, {
   AccordionDetailsProps as MuiAccordionDetailsProps,
 } from "@material-ui/core/AccordionDetails";
 import { ComponentBaseProps, MuiProps } from "@origin-digital/ods-types";
-import { IconAdd, IconRemove } from "@origin-digital/ods-icons";
+import { IconExpand, IconCollapse } from "@origin-digital/ods-icons";
 import { Text } from "../Text/Text";
 import { useTracking } from "../TrackingProvider/useTracking";
 import { AccordionGroupContext } from "../AccordionGroup/AccordionGroup";
@@ -171,9 +171,9 @@ export const Accordion = ({
         data-id={`${props["data-id"]}-header`}
         expandIcon={
           accordionContext.expanded ? (
-            <IconRemove tone="critical" />
+            <IconCollapse tone="critical" />
           ) : (
-            <IconAdd tone="critical" />
+            <IconExpand tone="critical" />
           )
         }
         aria-controls={`${id}-content`}

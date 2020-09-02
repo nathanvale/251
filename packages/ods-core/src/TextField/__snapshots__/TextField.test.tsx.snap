@@ -93,7 +93,7 @@ exports[`TextField with success endIcon should render success after the text 1`]
         <svg
           aria-hidden="true"
           class="MuiSvgIcon-root svg-icon-positiveLight-small-svg-icon-7"
-          data-id="IconCheckCircle"
+          data-id="IconDone"
           focusable="false"
           viewBox="0 0 24 24"
         >

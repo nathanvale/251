@@ -1,3 +1,3 @@
 import ExpandMore from "@material-ui/icons/ExpandMore";
 import { createMUISvgIcon } from "../_private/createMUISvgIcon";
-export default createMUISvgIcon("ExpandMore", ExpandMore);
+export default createMUISvgIcon("ChevronDown", ExpandMore);

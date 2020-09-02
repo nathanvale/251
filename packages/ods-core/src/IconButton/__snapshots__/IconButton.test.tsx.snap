@@ -13,7 +13,7 @@ exports[`<IconButton /> should render 1`] = `
     <svg
       aria-hidden="true"
       class="MuiSvgIcon-root svg-icon-primary-small-svg-icon-3"
-      data-id="IconAccountBalance"
+      data-id="IconBankAccount"
       focusable="false"
       viewBox="0 0 24 24"
     >

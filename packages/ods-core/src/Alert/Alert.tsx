@@ -7,7 +7,7 @@ import {
   IconError,
   IconCheckCircle,
   IconInfo,
-  IconClear,
+  IconCancel,
   IconLocalOffer,
 } from "@origin-digital/ods-icons";
 import { ComponentBaseProps, MuiProps } from "@origin-digital/ods-types";
@@ -198,7 +198,7 @@ const AlertInner = ({
             onClick={onCloseClick}
             data-id={`${dataId}-close`}
           >
-            <IconClear />
+            <IconCancel />
           </IconButton>
         ) : undefined,
       alertIcon: icon !== undefined ? icon : <AlertIcon tone={tone} />,

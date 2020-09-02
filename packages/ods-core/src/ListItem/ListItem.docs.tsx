@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
 import {
-  IconLightbulbOutline,
+  IconElectricity,
   IconGas,
   IconHotWater,
 } from "@origin-digital/ods-icons";
@@ -48,9 +48,7 @@ export const docs: ComponentDocs = {
         label: "Unordered list with icons",
         Code: () => (
           <List>
-            <ListItem icon={<IconLightbulbOutline />}>
-              This is a ListItem.
-            </ListItem>
+            <ListItem icon={<IconElectricity />}>This is a ListItem.</ListItem>
             <ListItem icon={<IconGas />}>This is a ListItem.</ListItem>
             <ListItem icon={<IconHotWater />}>This is a ListItem.</ListItem>
           </List>

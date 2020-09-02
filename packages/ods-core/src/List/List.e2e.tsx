@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  IconLightbulbOutline,
+  IconElectricity,
   IconGas,
   IconHotWater,
 } from "@origin-digital/ods-icons";
@@ -34,7 +34,7 @@ export const tests: E2ETests = [
     label: "Unordered list with icons",
     Code: () => (
       <List>
-        <ListItem icon={<IconLightbulbOutline />}>This is a ListItem.</ListItem>
+        <ListItem icon={<IconElectricity />}>This is a ListItem.</ListItem>
         <ListItem icon={<IconGas />}>This is a ListItem.</ListItem>
         <ListItem icon={<IconHotWater />}>This is a ListItem.</ListItem>
       </List>
