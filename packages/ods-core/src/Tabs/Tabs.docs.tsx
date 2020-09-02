@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { IconGas, IconLightbulbOutline } from "@origin-digital/ods-icons";
+import { IconGas, IconElectricity } from "@origin-digital/ods-icons";
 import { Tab } from "../Tab/Tab";
 import { Text } from "../Text/Text";
 import { Tabs } from "./Tabs";
@@ -78,7 +78,7 @@ export const docs: ComponentDocs = {
             <Tab
               data-id="tab1"
               label="Electricity"
-              icon={<IconLightbulbOutline tone="neutral" />}
+              icon={<IconElectricity tone="neutral" />}
             />
             <Tab
               data-id="tab2"
@@ -101,7 +101,7 @@ export const docs: ComponentDocs = {
             <Tab
               data-id="tab1"
               label="Electricity"
-              icon={<IconLightbulbOutline tone="neutral" />}
+              icon={<IconElectricity tone="neutral" />}
             />
             <Tab
               data-id="tab3"
@@ -134,7 +134,7 @@ export const docs: ComponentDocs = {
             <Tab
               data-id="tab1"
               label="Electricity"
-              icon={<IconLightbulbOutline tone="neutral" />}
+              icon={<IconElectricity tone="neutral" />}
             />
             <Tab
               data-id="tab2"
@@ -155,7 +155,7 @@ export const docs: ComponentDocs = {
           <Tab
             data-id="elec-tab"
             label="Electricity"
-            icon={<IconLightbulbOutline tone="neutral" />}
+            icon={<IconElectricity tone="neutral" />}
           />
           <Tab
             data-id="gas-tab"

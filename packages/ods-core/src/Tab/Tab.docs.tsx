@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { IconLightbulbOutline } from "@origin-digital/ods-icons";
+import { IconElectricity } from "@origin-digital/ods-icons";
 import { Tab } from "./Tab";
 
 export const docs: ComponentDocs = {
@@ -28,7 +28,7 @@ export const docs: ComponentDocs = {
           <Tab
             data-id="tab1"
             label="Electricity"
-            icon={<IconLightbulbOutline tone="neutral" />}
+            icon={<IconElectricity tone="neutral" />}
           />
         ),
       },
