@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.58.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.57.1...@origin-digital/ods-scripts@0.58.0) (2020-09-02)
+
+
+### Features
+
+* **TextField:** update reserveHelperTextSpace default ([3092cce](https://bitbucket.orgn.io/od/origin-ui/commits/3092cce6ce7d488bea15276b261fdd1153d19789))
+
+
+
+
+
 ## [0.57.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.57.0...@origin-digital/ods-scripts@0.57.1) (2020-09-02)
 
 **Note:** Version bump only for package @origin-digital/ods-scripts
