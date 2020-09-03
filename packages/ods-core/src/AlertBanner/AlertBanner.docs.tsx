@@ -1,7 +1,8 @@
 /* eslint-disable react/display-name */
+import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
 import { propDescriptions } from "../Alert/Alert.docs";
-import { AlertBannerProps } from "./AlertBanner";
+import { AlertBannerProps, AlertBanner } from "./AlertBanner";
 import { generateAlertBanner } from "./AlertBanner.helper";
 
 export const docs: ComponentDocs<AlertBannerProps> = {
@@ -24,6 +25,14 @@ export const docs: ComponentDocs<AlertBannerProps> = {
     {
       label: "Default",
       Code: () => generateAlertBanner({ tone: "critical" }),
+    },
+    {
+      label: "Close button",
+      Code: () => (
+        <AlertBanner tone="critical" onCloseClick={() => {}}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+        </AlertBanner>
+      ),
     },
   ],
 };
