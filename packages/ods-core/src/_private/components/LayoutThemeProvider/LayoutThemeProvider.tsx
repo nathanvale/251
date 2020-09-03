@@ -20,7 +20,11 @@ export const LayoutThemeProvider = ({
    * Layout components need muiTheme breakpoints in a certain format
    * https://styled-system.com/theme-specification/#breakpoints
    */
-  const { breakpoints: muiBreakpoints, palette: muiPalette } = muiTheme;
+  const {
+    breakpoints: muiBreakpoints,
+    palette: muiPalette,
+    typography,
+  } = muiTheme;
   const { xs, sm, md, lg, xl } = muiBreakpoints.values;
   const layoutBreakpoints: Breakpoints = [
     `${sm}px`,
@@ -35,6 +39,7 @@ export const LayoutThemeProvider = ({
   layoutBreakpoints.lg = layoutBreakpoints[2];
   layoutBreakpoints.xl = layoutBreakpoints[3];
   coreLayoutTheme.breakpoints = layoutBreakpoints;
+  coreLayoutTheme.typography = typography;
   /**
    * Layout components need muiTheme palette colours in a certain format
    * https://styled-system.com/guides/color-modes/#color-modes
