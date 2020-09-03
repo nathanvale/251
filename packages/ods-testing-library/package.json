@@ -23,12 +23,12 @@
   },
   "peerDependencies": {
     "@origin-digital/ods-core": "*",
-    "@testing-library/react": "10.x",
+    "@testing-library/react": "11.x",
     "jest-styled-components": "6.x",
     "react": "^16.9.0"
   },
   "devDependencies": {
-    "@testing-library/react": "10.x"
+    "@testing-library/react": "11.x"
   },
   "publishConfig": {
     "registry": "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-internal/"
