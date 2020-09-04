@@ -12,7 +12,8 @@
     ]
   },
   "scripts": {
-    "build": "playroom build",
+    "build": "playroom build && yarn insert:ga",
+    "insert:ga": "node ./script/insertGoogleAnalytics.js",
     "start": "playroom start"
   },
   "dependencies": {
