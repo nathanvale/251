@@ -44,6 +44,7 @@ export const docs: ComponentDocs<AlertProps> = {
       },
       {
         label: "Close",
+        playroom: false,
         Code: () => {
           const [closed, setClosed] = React.useState(false);
 
