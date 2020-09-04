@@ -1,5 +1,8 @@
 import React, { AnchorHTMLAttributes, ComponentType } from "react";
-import { FontSizeVariants } from "@material-ui/core/styles/createTypography";
+import {
+  FontSizeVariants,
+  Typography as MUITypography,
+} from "@material-ui/core/styles/createTypography";
 
 export * from "./docs";
 export * from "./palette";
@@ -351,6 +354,7 @@ export interface Theme {
   breakpoints?: Breakpoints;
   transitions: Transition;
   colors?: Record<ColorPaletteVariants, string>;
+  typography?: MUITypography;
 }
 
 // Section for Mui components
