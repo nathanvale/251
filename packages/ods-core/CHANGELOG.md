@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.64.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.63.0...@origin-digital/ods-core@0.64.0) (2020-09-04)
+
+
+### Features
+
+* add typography to layout theme ([b5bcc3d](https://bitbucket.orgn.io/od/origin-ui/commits/b5bcc3dfc650fead906d7bae61883e9f95bd0946))
+
+
+
+
+
 # [0.63.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.62.0...@origin-digital/ods-core@0.63.0) (2020-09-02)
 
 
