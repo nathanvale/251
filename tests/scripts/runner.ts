@@ -14,7 +14,7 @@ const __TEST__ = argv.t;
 let testcafe: TestCafe;
 let totalErrors = 0;
 
-const browserstack = ["browserstack:chrome"];
+const browserstack = ["browserstack:Firefox@80.0:OS X Catalina"];
 
 const runTest = async (browsers: string | string[]) => {
   console.log(
