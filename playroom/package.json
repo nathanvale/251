@@ -30,7 +30,7 @@
     "@origin-digital/ods-scripts": "^0.58.4",
     "@origin-digital/ods-themes": "^0.20.2",
     "@origin-digital/ods-types": "^0.35.0",
-    "@origin-digital/style-guide": "^22.3.3",
+    "@origin-digital/style-guide": "^23.0.0",
     "@origin-digital/tile-selector": "^1.2.8",
     "date-fns": "^2.15.0",
     "hoist-non-react-statics": "^3.3.2",

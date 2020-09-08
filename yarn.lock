@@ -4070,10 +4070,24 @@
   dependencies:
     "@origin-digital/helper" "^3.0.1"
 
+"@origin-digital/icon@^1.8.0":
+  version "1.8.0"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/icon/-/@origin-digital/icon-1.8.0.tgz#461c8834aedde304fb825c79fcd1ab3249c088af"
+  integrity sha1-RhyINK7d4wT7glx5/NGrMknAiK8=
+  dependencies:
+    "@origin-digital/helper" "^3.0.1"
+
 "@origin-digital/layout@^5.2.0":
   version "5.2.0"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/layout/-/@origin-digital/layout-5.2.0.tgz#5f92ad59f49659f7475e252182b5c5dc03a9e8ae"
   integrity sha1-X5KtWfSWWfdHXiUhgrXF3AOp6K4=
+  dependencies:
+    "@origin-digital/helper" "^3.0.1"
+
+"@origin-digital/layout@^6.0.0":
+  version "6.0.0"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/layout/-/@origin-digital/layout-6.0.0.tgz#5afbbeb7596dc03758d883b1d733dab40d15d206"
+  integrity sha1-Wvu+t1ltwDdY2IOx1zPatA0V0gY=
   dependencies:
     "@origin-digital/helper" "^3.0.1"
 
@@ -4255,6 +4269,24 @@
     "@origin-digital/helper" "^3.0.1"
     "@origin-digital/icon" "^1.7.0"
     "@origin-digital/layout" "^5.2.0"
+    custom-event-polyfill "^1.0.6"
+    date-fns "^2.0.0-alpha.25"
+    dom-helpers "^3.3.1"
+    keycode "^2.2.0"
+    lodash.clamp "^4.0.3"
+    polished "2.0.3"
+    prop-types "^15.6.2"
+    react-day-picker "^7.1.10"
+
+"@origin-digital/style-guide@^23.0.0":
+  version "23.0.0"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/style-guide/-/@origin-digital/style-guide-23.0.0.tgz#2e1b967d02a6210199241d40e84d50e0c6c427c6"
+  integrity sha1-LhuWfQKmIQGZJB1A6E1Q4MbEJ8Y=
+  dependencies:
+    "@babel/runtime-corejs2" "^7.0.0"
+    "@origin-digital/helper" "^3.0.1"
+    "@origin-digital/icon" "^1.8.0"
+    "@origin-digital/layout" "^6.0.0"
     custom-event-polyfill "^1.0.6"
     date-fns "^2.0.0-alpha.25"
     dom-helpers "^3.3.1"
