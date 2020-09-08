@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.35.0](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.34.19...playroom@0.35.0) (2020-09-08)
+
+
+### Features
+
+* **google analytics:** adds ga tag for analytics ([5fca5e0](https://bitbucket.orgn.io/od/origin-ui/commits/5fca5e04e6c82721b57cf090c6bccccb0c1716ce))
+
+
+
+
+
 ## [0.34.19](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.34.18...playroom@0.34.19) (2020-09-04)
 
 **Note:** Version bump only for package playroom

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.33.0](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.32.20...docs@0.33.0) (2020-09-08)
+
+
+### Features
+
+* **google analytics:** adds ga tag for analytics ([5fca5e0](https://bitbucket.orgn.io/od/origin-ui/commits/5fca5e04e6c82721b57cf090c6bccccb0c1716ce))
+
+
+
+
+
 ## [0.32.20](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.32.19...docs@0.32.20) (2020-09-04)
 
 **Note:** Version bump only for package docs
