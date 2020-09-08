@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.15.1...@origin-digital/ods-icons@0.16.0) (2020-09-08)
+
+
+### Features
+
+* **icons:** new visa and mastercard icons ([38e953f](https://bitbucket.orgn.io/od/origin-ui/commits/38e953f62953397e8238811c913d84b854cfe409))
+
+
+
+
+
 ## [0.15.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.15.0...@origin-digital/ods-icons@0.15.1) (2020-09-04)
 
 **Note:** Version bump only for package @origin-digital/ods-icons
