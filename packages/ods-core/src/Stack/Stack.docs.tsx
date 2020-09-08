@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Stack, StackProps, Placeholder } from "../";
+import { Stack, StackProps, Placeholder, Divider, Section, Heading } from "../";
 
 export const docs: ComponentDocs<StackProps> = {
   category: "Layout",
@@ -92,6 +92,27 @@ export const docs: ComponentDocs<StackProps> = {
             <Placeholder shape="round" width="120px" />
             <Placeholder shape="round" width="120px" />
             <Placeholder shape="round" width="120px" />
+          </Stack>
+        ),
+      },
+      {
+        label: "Stacked sections",
+        description: "In this example we have a stack of Sections.",
+        Code: () => (
+          <Stack space="xsmall">
+            <Divider />
+            <Section backgroundColor="grey50">
+              <Heading variant="h3">What can we help you with?</Heading>
+            </Section>
+            <Section>
+              <Heading variant="h3">Trending questions</Heading>
+            </Section>
+            <Section backgroundColor="grey50">
+              <Heading variant="h3">More from Origin</Heading>
+            </Section>
+            <Section>
+              <Heading variant="h3">Get more support</Heading>
+            </Section>
           </Stack>
         ),
       },
