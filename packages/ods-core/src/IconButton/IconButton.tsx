@@ -5,7 +5,7 @@ import {
   IconButton as MuiIconButton,
   Theme,
 } from "@material-ui/core";
-import { makeStyles, fade } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import {
   ComponentBaseProps,
   IconButtonColor,
@@ -32,7 +32,7 @@ const useIconButtonStyles = makeStyles((theme: Theme) => ({
   root: {
     verticalAlign: "initial",
     "&:hover": {
-      backgroundColor: fade(theme.palette.common.black, 0.08),
+      backgroundColor: theme.palette.grey[100],
     },
   },
   noIconPadding: {
