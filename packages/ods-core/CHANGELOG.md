@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.65.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.64.2...@origin-digital/ods-core@0.65.0) (2020-09-09)
+
+
+### Bug Fixes
+
+* **IconButton:** hover bg color ([60dbefd](https://bitbucket.orgn.io/od/origin-ui/commits/60dbefd3f004322453ad80b4f701899bd5e61bec))
+
+
+### Features
+
+* **Box:** update component prop API ([d70a5db](https://bitbucket.orgn.io/od/origin-ui/commits/d70a5db4036fa28ce9d7ed80231071168309813c))
+
+
+
+
+
 ## [0.64.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.64.1...@origin-digital/ods-core@0.64.2) (2020-09-08)
 
 **Note:** Version bump only for package @origin-digital/ods-core

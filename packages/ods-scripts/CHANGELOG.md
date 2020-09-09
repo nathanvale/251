@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.59.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.58.5...@origin-digital/ods-scripts@0.59.0) (2020-09-09)
+
+
+### Features
+
+* **Box:** update component prop API ([d70a5db](https://bitbucket.orgn.io/od/origin-ui/commits/d70a5db4036fa28ce9d7ed80231071168309813c))
+
+
+
+
+
 ## [0.58.5](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.58.4...@origin-digital/ods-scripts@0.58.5) (2020-09-09)
 
 **Note:** Version bump only for package @origin-digital/ods-scripts
