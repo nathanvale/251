@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.35.3](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.35.2...playroom@0.35.3) (2020-09-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @origin-digital/style-guide to v23 ([8d19a9e](https://bitbucket.orgn.io/od/origin-ui/commits/8d19a9ef4acb5602273550319d870a6a218aa77a))
+
+
+
+
+
 ## [0.35.2](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.35.1...playroom@0.35.2) (2020-09-09)
 
 **Note:** Version bump only for package playroom
