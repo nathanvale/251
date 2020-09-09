@@ -3,7 +3,7 @@
   "description": "ODS testing tools that enhance react-testing-library",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
-  "version": "0.10.1",
+  "version": "0.10.2",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "files": [
