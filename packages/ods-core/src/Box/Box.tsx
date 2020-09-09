@@ -1,10 +1,5 @@
 /* eslint-disable react/prop-types */
-import {
-  AllHTMLAttributes,
-  createElement,
-  ElementType,
-  CSSProperties,
-} from "react";
+import { AllHTMLAttributes, createElement, CSSProperties } from "react";
 import styled, { StyledComponentClass } from "styled-components";
 import {
   AlignItemsVariants,
@@ -34,7 +29,24 @@ export interface BoxProps extends OptionalTrackableProps {
   alignItems?: ResponsiveProp<AlignItemsVariants>;
   alignSelf?: ResponsiveProp<AlignItemsVariants>;
   backgroundColor?: BackgroundColorVariants;
-  component?: ElementType;
+  component?:
+    | "div"
+    | "code"
+    | "pre"
+    | "span"
+    | "a"
+    | "p"
+    | "h1"
+    | "h2"
+    | "h3"
+    | "h4"
+    | "h5"
+    | "h6"
+    | "ol"
+    | "ul"
+    | "li"
+    | "nav"
+    | "button";
   display?: ResponsiveProp<DisplayVariants>;
   flexDirection?: ResponsiveProp<FlexDirectionVariants>;
   flexWrap?: ResponsiveProp<FlexWrapVariants>;
@@ -146,6 +158,10 @@ export const StyledULReset = styled(StyledSystemBox.withComponent("ul"))<
   BoxProps
 >``;
 
+export const StyledNavReset = styled(StyledSystemBox.withComponent("nav"))<
+  BoxProps
+>``;
+
 export const StyledButtonReset = styled(
   StyledSystemBox.withComponent("button")
 )<BoxProps>`
@@ -165,7 +181,7 @@ export const Box = ({
   alignItems,
   alignSelf,
   backgroundColor,
-  component,
+  component = "div",
   display,
   flexDirection,
   flexWrap,
@@ -246,6 +262,8 @@ export const Box = ({
     Container = StyledOLReset;
   } else if (component === "ul") {
     Container = StyledULReset;
+  } else if (component === "nav") {
+    Container = StyledNavReset;
   } else {
     Container = StyledSystemBox;
   }
