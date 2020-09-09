@@ -1154,7 +1154,7 @@ exports[`OriginThemeProvider 1`] = `
         light: string
         main: string
       }
-      getColorVariantCSSColor: (variant: "disabled" | "caution" | "critical" | "info" | "neutral" | "neutralDark" | "neutralLight" | "positive" | "positiveLight" | "primary" | "primaryB" | "promote" | "promoteB" | "secondary" | ... 37 more ... | "promoteBDark") => string
+      getColorVariantCSSColor: (variant: "disabled" | "caution" | "critical" | "grey300" | "info" | "neutral" | "neutralDark" | "neutralLight" | "positive" | "positiveLight" | "primary" | "primaryB" | "promote" | "promoteB" | ... 37 more ... | "promoteBDark") => string
       getContrastText: (background: string) => string
       grey: {
         100: string
@@ -1625,6 +1625,7 @@ exports[`SvgIcon 1`] = `
     | "caution"
     | "critical"
     | "disabled"
+    | "grey300"
     | "info"
     | "inherit"
     | "neutral"
