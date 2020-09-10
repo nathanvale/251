@@ -6,9 +6,9 @@
   "author": "Charan Damisetti <Charan.Damisetti@originenergy.com.au>",
   "version": "0.1.4",
   "scripts": {
-    "serve:static": "cd ../ && yarn serve:static",
+    "serve:static": "cd ../ && cd docs && yarn serve:static",
     "test:func": "ts-node ./scripts/test-func.ts",
-    "test:func:applitools": "yarn test:func --applitools",
+    "test:func:docker": "yarn test:func --docker",
     "testcafe:chrome": "testcafe chrome ./src/specs"
   },
   "devDependencies": {
@@ -17,8 +17,7 @@
     "@babel/register": "^7.10.1",
     "minimist": "^1.2.5",
     "testcafe": "^1.8.8",
-    "testcafe-browser-provider-browserstack": "^1.13.0",
-    "testcafe-browser-provider-lambdatest": "^2.0.1",
-    "testcafe-reporter-test-summary": "^1.0.9"
+    "testcafe-reporter-test-summary": "^1.0.9",
+    "ts-node": "^9.0.0"
   }
 }
