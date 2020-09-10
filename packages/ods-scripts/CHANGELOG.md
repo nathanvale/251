@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.60.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.59.0...@origin-digital/ods-scripts@0.60.0) (2020-09-10)
+
+
+### Features
+
+* **svgicon:** add grey300 tone ([f5cc301](https://bitbucket.orgn.io/od/origin-ui/commits/f5cc30164592363b86ea2f2ba2fad9cbe5fac554))
+
+
+
+
+
 # [0.59.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.58.5...@origin-digital/ods-scripts@0.59.0) (2020-09-09)
 
 
