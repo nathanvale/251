@@ -15,6 +15,7 @@ export type SvgIconToneVariants =
       | "caution"
       | "critical"
       | "disabled"
+      | "grey300"
       | "info"
       | "neutral"
       | "neutralDark"
