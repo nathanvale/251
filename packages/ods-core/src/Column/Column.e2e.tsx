@@ -3,6 +3,7 @@ import { E2ETests } from "@origin-digital/ods-types";
 import { Placeholder } from "../Placeholder/Placeholder";
 import { Stack } from "../Stack/Stack";
 import { Columns } from "../Columns/Columns";
+import { Heading } from "../Heading/Heading";
 import { Column, widthValueMap } from "./Column";
 
 export const tests: E2ETests = [
@@ -67,6 +68,21 @@ export const tests: E2ETests = [
         </Column>
         <Column alignX={["center", "right"]}>
           <Placeholder width="50px" height="50px" />
+        </Column>
+      </Columns>
+    ),
+  },
+  {
+    label: "Column display block when alignX = left",
+    Code: () => (
+      <Columns>
+        <Column>
+          <Heading variant="h4">Amount paid</Heading>
+        </Column>
+        <Column>
+          <Heading data-id="amount" variant="h2" align="right">
+            $25.00
+          </Heading>
         </Column>
       </Columns>
     ),
