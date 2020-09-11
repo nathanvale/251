@@ -32,4 +32,9 @@ docs:
 
 .PHONY: test/visuals
 test/visuals:
-	cd tests; yarn test:func:applitools -c 6
+	docker-compose -p origin-ui \
+		-f docker-compose.yml \
+		build
+	docker-compose -p origin-ui \
+		-f docker-compose.yml \
+		run testcafe

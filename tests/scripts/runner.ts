@@ -5,16 +5,17 @@ import createTestCafe from "testcafe";
 const argv = minimist(process.argv.slice(2));
 
 const __APPLITOOLS__ = argv.a || argv.applitools;
-const __BROWSERSTACK__ = argv.bs || argv.browserstack;
 const __LIVEMODE__ = argv.l || argv.live;
 const __CONCURRENCY__ = argv.c;
 const __FIXTURE__ = argv.f;
 const __TEST__ = argv.t;
+const __DOCKER__ = argv.d || argv.docker;
+const __VIDEO__ = argv.v || argv.video;
 
 let testcafe: TestCafe;
 let totalErrors = 0;
 
-const browserstack = ["browserstack:Firefox@80.0:OS X Catalina"];
+const reportFolder = "./reports";
 
 const runTest = async (browsers: string | string[]) => {
   console.log(
@@ -32,6 +33,13 @@ const runTest = async (browsers: string | string[]) => {
       if (__CONCURRENCY__) {
         console.log(`Tests are running with ${__CONCURRENCY__} concurrency`);
         runner.concurrency(__CONCURRENCY__);
+      }
+
+      if (__VIDEO__) {
+        console.log("Recording videos....");
+        runner.video(`${reportFolder}/videos`, {
+          pathPattern: "${TEST_ID}.mp4",
+        });
       }
 
       return runner
@@ -56,9 +64,14 @@ const runTest = async (browsers: string | string[]) => {
           "spec",
           {
             name: "test-summary",
-            output: "./reports/testcafe_report.html",
+            output: `${reportFolder}/testcafe_report.html`,
           },
         ])
+        .screenshots({
+          path: `${reportFolder}/screenshots`,
+          fullPage: true,
+          pathPattern: "${FIXTURE}_${TEST}.png",
+        })
         .run();
     })
     .then(async (failedCount) => {
@@ -76,16 +89,9 @@ const runTest = async (browsers: string | string[]) => {
 };
 
 const runAllBrowsers = async () => {
-  if (__BROWSERSTACK__) {
-    console.log("Using browserstack");
-    for (const browser of [browserstack]) {
-      await runTest(browser);
-    }
-  } else if (__APPLITOOLS__) {
-    console.log("Snapshot testing using applitools and browserstack");
-    for (const browser of [...browserstack]) {
-      await runTest(browser);
-    }
+  if (__DOCKER__) {
+    console.log("Snapshot testing using applitools and docker");
+    await runTest(["chromium"]);
   } else {
     console.log("Using local chrome browser");
     await runTest(["chrome"]);

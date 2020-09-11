@@ -5,21 +5,12 @@ import { printStage } from "./common";
 
 const argv = minimist(process.argv.slice(2));
 
-const __APPLITOOLS__ = argv.applitools;
-const __BROWSERSTACK__ = argv.browserstack;
 const __DOCKER__ = argv.docker;
 const __LIVE_MODE__ = argv.l || argv.live;
+const __VIDEO__ = argv.v || argv.video;
 
 function run() {
   let appServer;
-  const projectName = "Origin UI";
-  const buildId = process.env.BRANCH_NAME
-    ? process.env.BRANCH_NAME
-    : "Adhoc-Build@origin-ui";
-
-  const buildNumber = process.env.BUILD_NUMBER
-    ? process.env.BUILD_NUMBER
-    : "local";
 
   const tearDown = (exitCode) => {
     if (appServer) {
@@ -37,22 +28,14 @@ function run() {
 
     const task = [];
 
-    if (__BROWSERSTACK__ || __APPLITOOLS__) {
-      process.env.BROWSERSTACK_PROJECT_NAME = process.env.LT_TEST_NAME = projectName;
-      process.env.BROWSERSTACK_BUILD_ID = process.env.LT_BUILD = `${buildId}_${buildNumber}`;
-      process.env.BROWSERSTACK_USE_AUTOMATE = "1";
-    }
-
-    if (__BROWSERSTACK__) {
-      task.push("--browserstack" as never);
-    }
+    task.push("--applitools -f ApplitoolsSpec" as never);
 
     if (__DOCKER__) {
       task.push("--docker" as never);
     }
 
-    if (__APPLITOOLS__) {
-      task.push("--applitools -f ApplitoolsSpec" as never);
+    if (__VIDEO__) {
+      task.push("--video" as never);
     }
 
     if (__LIVE_MODE__) {

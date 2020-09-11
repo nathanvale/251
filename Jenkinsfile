@@ -109,22 +109,37 @@ pipeline {
                 script {
                     sh "make docs"
                     archiveArtifacts "origin-ui-docs.tar.gz"
+                    stash includes: "origin-ui-docs.tar.gz", name: "docs"
                 }
             }
         }
          stage("Visual Tests") {
+            agent { label "ec2-docker-host-usw1" }
             steps {
-                withCredentials([usernamePassword(
-                    credentialsId: 'browser_stack_credentials',
-                    usernameVariable: 'BROWSERSTACK_USERNAME',
-                    passwordVariable: 'BROWSERSTACK_ACCESS_KEY')]) {
                     script {
-                        environment {
-                            BROWSERSTACK_USERNAME = ${BROWSERSTACK_USERNAME}
-                            BROWSERSTACK_ACCESSKEY = ${BROWSERSTACK_ACCESSKEY}
-                       }
+                        sh 'docker rm -f $(docker ps -a -q) || true'
+                        sh "docker-compose -f docker-compose.yml down --remove-orphans"
+                        // This is to make identical to local 
+                        sh "mkdir -p docs/build"
+                        unstash 'docs'
+                        sh "tar -xvzf origin-ui-docs.tar.gz -C docs/build"
                         sh "make test/visuals"
                     }
+                }
+            post {
+                always {
+                archiveArtifacts artifacts: 'tests/reports/*, tests/reports/videos/*'
+                publishHTML(target: [
+                        allowMissing         : true,
+                        alwaysLinkToLastBuild: false,
+                        keepAll              : true,
+                        reportDir            : "tests/reports",
+                        reportFiles          : 'testcafe_report.html',
+                        reportName           : "Applotools_test_report"
+                    ])
+                }
+                cleanup {
+                    cleanWs()
                 }
             }
         }
@@ -160,15 +175,6 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: "tests/reports/", allowEmptyArchive: true
-            publishHTML(target: [
-                    allowMissing         : true,
-                    alwaysLinkToLastBuild: false,
-                    keepAll              : true,
-                    reportDir            : "tests/reports",
-                    reportFiles          : 'testcafe_report.html',
-                    reportName           : "Testcafe-tests"
-            ])
             script {
                 currentBuild.result = currentBuild.result ?: 'SUCCESS'
                 notifyBitbucket()

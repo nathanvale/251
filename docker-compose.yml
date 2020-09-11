@@ -1,0 +1,23 @@
+version: "3.6"
+services:
+
+  testcafe:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "1337:1337"
+      - "1338:1338"
+    environment:
+      NODE_OPTIONS: --max-http-header-size=16384
+      APPLITOOLS_API_KEY: ${APPLITOOLS_API_KEY}
+      APPLITOOLS_BRANCH: ${APPLITOOLS_BRANCH} # used in applitools config
+      BUILD_NUMBER: ${BUILD_NUMBER} # used in applitools config
+      
+    volumes:
+      - "$PWD/tests/src:/src"
+      - "$PWD/tests/scripts:/scripts"
+      - "$PWD/tests/reports:/reports"
+      - "$PWD/docs:/docs"
+
+    command: yarn test:func:docker --video -c 4
