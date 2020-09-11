@@ -1,5 +1,6 @@
 import path from "path";
 import fse from "fs-extra";
+import { argv } from "yargs";
 
 import prettier from "prettier/standalone";
 import typescriptParser from "prettier/parser-typescript";
@@ -51,7 +52,31 @@ const formatCode = (Code: any) =>
         filterProps: ["onChange", "onBlur", "onFocus"],
       });
 
-export async function createDocSnippets() {
+function getMatchingComps(
+  componentsMap: Record<string, string>,
+  pattern?: RegExp
+) {
+  if (!pattern) {
+    return componentsMap;
+  }
+  return Object.keys(componentsMap)
+    .filter((compName) => pattern.test(compName))
+    .reduce((newCompMap: Record<string, string>, compName: string) => {
+      return {
+        ...newCompMap,
+        [compName]: componentsMap[compName],
+      };
+    }, {} as Record<string, string>);
+}
+
+function getPatternFromArgs() {
+  if (argv.pattern && typeof argv.pattern === "string") {
+    return new RegExp(argv.pattern);
+  }
+  return undefined;
+}
+
+export async function createDocSnippets(componentsMap: Record<string, string>) {
   const arr = Object.keys(componentsMap).reduce(
     (previousValue, currentCompName) => {
       const componentName = currentCompName;
@@ -64,6 +89,9 @@ export async function createDocSnippets() {
         docs = require(`../../../packages/${packageName}/src/${componentName}/${componentName}.docs.tsx`)
           .docs;
 
+        console.debug(
+          `Generating snippets for ${packageName}/${componentName}`
+        );
         const Code = docs.examples.default.Code;
         const codeString = docs.examples.default.codeString;
         if (codeString) {
@@ -99,6 +127,9 @@ export async function createDocSnippets() {
     },
     {}
   );
+
+  // TODO: if we generate scripts only for some comps filtered by pattern commandline arg, we need to only overwrite
+  // those entries in the json file instead of rewriting the whole file. Read json, if pattern, update instead of rewrite.
 
   await fse.writeFile(
     `${buildPath}/snippets-components.json`,
@@ -166,7 +197,10 @@ async function run() {
   try {
     await createLayoutGuideSnippets();
     await createDevGuideSnippets();
-    await createDocSnippets();
+
+    await createDocSnippets(
+      getMatchingComps(componentsMap, getPatternFromArgs())
+    );
   } catch (err) {}
 }
 

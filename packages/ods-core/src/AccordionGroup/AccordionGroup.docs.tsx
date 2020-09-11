@@ -22,8 +22,8 @@ export const docs: ComponentDocs<AccordionProps> = {
     default: {
       Code: () => (
         <AccordionGroup>
-          {accordions.map(([summary, id]) =>
-            generateAccordion({ summary, id })
+          {accordions.map(([summary, id], idx) =>
+            generateAccordion({ summary, id, key: idx })
           )}
         </AccordionGroup>
       ),

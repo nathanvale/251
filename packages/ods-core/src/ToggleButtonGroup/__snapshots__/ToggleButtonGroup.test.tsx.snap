@@ -1,0 +1,509 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It renders disabled buttons 1`] = `
+<div>
+  <div
+    aria-label="Australian city"
+    class="MuiToggleButtonGroup-root toggle-button-group-root-29 toggle-button-group-root-31"
+    data-id="Australian city"
+    id="Australian city"
+    role="group"
+  >
+    <button
+      aria-label="Sydney"
+      aria-pressed="false"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-33 MuiToggleButtonGroup-grouped toggle-button-group-grouped-30 toggle-button-group-grouped-32 MuiToggleButtonGroup-groupedHorizontal"
+      data-id="sydn"
+      tabindex="0"
+      type="button"
+      value="sydn"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Sydney
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      aria-label="Brisbane"
+      aria-pressed="true"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-33 MuiToggleButtonGroup-grouped toggle-button-group-grouped-30 toggle-button-group-grouped-32 MuiToggleButtonGroup-groupedHorizontal Mui-selected toggle-button-selected-34"
+      data-id="brsb"
+      tabindex="0"
+      type="button"
+      value="brsb"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Brisbane
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      aria-label="Perth"
+      aria-pressed="false"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-33 MuiToggleButtonGroup-grouped toggle-button-group-grouped-30 toggle-button-group-grouped-32 MuiToggleButtonGroup-groupedHorizontal Mui-disabled toggle-button-disabled-35 Mui-disabled"
+      data-id="prth"
+      disabled=""
+      tabindex="-1"
+      type="button"
+      value="prth"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Perth
+      </span>
+    </button>
+    <button
+      aria-label="Melbourne"
+      aria-pressed="false"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-33 MuiToggleButtonGroup-grouped toggle-button-group-grouped-30 toggle-button-group-grouped-32 MuiToggleButtonGroup-groupedHorizontal"
+      data-id="melb"
+      tabindex="0"
+      type="button"
+      value="melb"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Melbourne
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`It renders small buttons 1`] = `
+<div>
+  <div
+    aria-label="Australian city"
+    class="MuiToggleButtonGroup-root toggle-button-group-root-36 toggle-button-group-root-38"
+    data-id="Australian city"
+    id="Australian city"
+    role="group"
+  >
+    <button
+      aria-label="Sydney"
+      aria-pressed="false"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-40 MuiToggleButtonGroup-grouped toggle-button-group-grouped-37 toggle-button-group-grouped-39 MuiToggleButtonGroup-groupedHorizontal toggle-button-group-grouped-37 toggle-button-group-grouped-39 MuiToggleButton-sizeSmall"
+      data-id="Sydney"
+      tabindex="0"
+      type="button"
+      value="Sydney"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Sydney
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      aria-label="Brisbane"
+      aria-pressed="true"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-40 MuiToggleButtonGroup-grouped toggle-button-group-grouped-37 toggle-button-group-grouped-39 MuiToggleButtonGroup-groupedHorizontal toggle-button-group-grouped-37 toggle-button-group-grouped-39 Mui-selected toggle-button-selected-41 MuiToggleButton-sizeSmall"
+      data-id="Brisbane"
+      tabindex="0"
+      type="button"
+      value="Brisbane"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Brisbane
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      aria-label="Perth"
+      aria-pressed="false"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-40 MuiToggleButtonGroup-grouped toggle-button-group-grouped-37 toggle-button-group-grouped-39 MuiToggleButtonGroup-groupedHorizontal toggle-button-group-grouped-37 toggle-button-group-grouped-39 MuiToggleButton-sizeSmall"
+      data-id="Perth"
+      tabindex="0"
+      type="button"
+      value="Perth"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Perth
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      aria-label="Melbourne"
+      aria-pressed="false"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-40 MuiToggleButtonGroup-grouped toggle-button-group-grouped-37 toggle-button-group-grouped-39 MuiToggleButtonGroup-groupedHorizontal toggle-button-group-grouped-37 toggle-button-group-grouped-39 MuiToggleButton-sizeSmall"
+      data-id="Melbourne"
+      tabindex="0"
+      type="button"
+      value="Melbourne"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Melbourne
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`It renders with content width 1`] = `
+<div>
+  <div
+    aria-label="Australian city"
+    class="MuiToggleButtonGroup-root toggle-button-group-root-22 toggle-button-group-root-24"
+    data-id="Australian city"
+    id="Australian city"
+    role="group"
+  >
+    <button
+      aria-label="Sydney"
+      aria-pressed="false"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-26 MuiToggleButtonGroup-grouped toggle-button-group-grouped-23 toggle-button-group-grouped-25 MuiToggleButtonGroup-groupedHorizontal toggle-button-group-grouped-23 toggle-button-group-grouped-25"
+      data-id="Sydney"
+      tabindex="0"
+      type="button"
+      value="Sydney"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Sydney
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      aria-label="Brisbane"
+      aria-pressed="true"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-26 MuiToggleButtonGroup-grouped toggle-button-group-grouped-23 toggle-button-group-grouped-25 MuiToggleButtonGroup-groupedHorizontal toggle-button-group-grouped-23 toggle-button-group-grouped-25 Mui-selected toggle-button-selected-27"
+      data-id="Brisbane"
+      tabindex="0"
+      type="button"
+      value="Brisbane"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Brisbane
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      aria-label="Perth"
+      aria-pressed="false"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-26 MuiToggleButtonGroup-grouped toggle-button-group-grouped-23 toggle-button-group-grouped-25 MuiToggleButtonGroup-groupedHorizontal toggle-button-group-grouped-23 toggle-button-group-grouped-25"
+      data-id="Perth"
+      tabindex="0"
+      type="button"
+      value="Perth"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Perth
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      aria-label="Melbourne"
+      aria-pressed="false"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-26 MuiToggleButtonGroup-grouped toggle-button-group-grouped-23 toggle-button-group-grouped-25 MuiToggleButtonGroup-groupedHorizontal toggle-button-group-grouped-23 toggle-button-group-grouped-25"
+      data-id="Melbourne"
+      tabindex="0"
+      type="button"
+      value="Melbourne"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Melbourne
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`It renders with direct ToggleButton children 1`] = `
+<div>
+  <div
+    aria-label="Australian city"
+    class="MuiToggleButtonGroup-root toggle-button-group-root-15 toggle-button-group-root-17"
+    data-id="Australian city"
+    id="Australian city"
+    role="group"
+  >
+    <button
+      aria-label="Sydney"
+      aria-pressed="false"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-19 MuiToggleButtonGroup-grouped toggle-button-group-grouped-16 toggle-button-group-grouped-18 MuiToggleButtonGroup-groupedHorizontal"
+      data-id="sydn"
+      tabindex="0"
+      type="button"
+      value="sydn"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Sydney
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      aria-label="Brisbane"
+      aria-pressed="true"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-19 MuiToggleButtonGroup-grouped toggle-button-group-grouped-16 toggle-button-group-grouped-18 MuiToggleButtonGroup-groupedHorizontal Mui-selected toggle-button-selected-20"
+      data-id="brsb"
+      tabindex="0"
+      type="button"
+      value="brsb"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Brisbane
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      aria-label="Perth"
+      aria-pressed="false"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-19 MuiToggleButtonGroup-grouped toggle-button-group-grouped-16 toggle-button-group-grouped-18 MuiToggleButtonGroup-groupedHorizontal"
+      data-id="prth"
+      tabindex="0"
+      type="button"
+      value="prth"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Perth
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      aria-label="Melbourne"
+      aria-pressed="false"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-19 MuiToggleButtonGroup-grouped toggle-button-group-grouped-16 toggle-button-group-grouped-18 MuiToggleButtonGroup-groupedHorizontal"
+      data-id="melb"
+      tabindex="0"
+      type="button"
+      value="melb"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Melbourne
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`It renders with object[] options 1`] = `
+<div>
+  <div
+    aria-label="Australian city"
+    class="MuiToggleButtonGroup-root toggle-button-group-root-8 toggle-button-group-root-10"
+    data-id="Australian city"
+    id="Australian city"
+    role="group"
+  >
+    <button
+      aria-label="Sydney"
+      aria-pressed="false"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-12 MuiToggleButtonGroup-grouped toggle-button-group-grouped-9 toggle-button-group-grouped-11 MuiToggleButtonGroup-groupedHorizontal toggle-button-group-grouped-9 toggle-button-group-grouped-11"
+      data-id="sydn"
+      tabindex="0"
+      type="button"
+      value="sydn"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Sydney
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      aria-label="Brisbane"
+      aria-pressed="false"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-12 MuiToggleButtonGroup-grouped toggle-button-group-grouped-9 toggle-button-group-grouped-11 MuiToggleButtonGroup-groupedHorizontal toggle-button-group-grouped-9 toggle-button-group-grouped-11"
+      data-id="brsb"
+      tabindex="0"
+      type="button"
+      value="brsb"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Brisbane
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      aria-label="Perth"
+      aria-pressed="true"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-12 MuiToggleButtonGroup-grouped toggle-button-group-grouped-9 toggle-button-group-grouped-11 MuiToggleButtonGroup-groupedHorizontal toggle-button-group-grouped-9 toggle-button-group-grouped-11 Mui-selected toggle-button-selected-13"
+      data-id="prth"
+      tabindex="0"
+      type="button"
+      value="prth"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Perth
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      aria-label="Melbourne"
+      aria-pressed="false"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-12 MuiToggleButtonGroup-grouped toggle-button-group-grouped-9 toggle-button-group-grouped-11 MuiToggleButtonGroup-groupedHorizontal toggle-button-group-grouped-9 toggle-button-group-grouped-11"
+      data-id="melb"
+      tabindex="0"
+      type="button"
+      value="melb"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Melbourne
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`It renders with string[] options 1`] = `
+<div>
+  <div
+    aria-label="Australian city"
+    class="MuiToggleButtonGroup-root toggle-button-group-root-1 toggle-button-group-root-3"
+    data-id="Australian city"
+    id="Australian city"
+    role="group"
+  >
+    <button
+      aria-label="Sydney"
+      aria-pressed="false"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-5 MuiToggleButtonGroup-grouped toggle-button-group-grouped-2 toggle-button-group-grouped-4 MuiToggleButtonGroup-groupedHorizontal toggle-button-group-grouped-2 toggle-button-group-grouped-4"
+      data-id="Sydney"
+      tabindex="0"
+      type="button"
+      value="Sydney"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Sydney
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      aria-label="Brisbane"
+      aria-pressed="false"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-5 MuiToggleButtonGroup-grouped toggle-button-group-grouped-2 toggle-button-group-grouped-4 MuiToggleButtonGroup-groupedHorizontal toggle-button-group-grouped-2 toggle-button-group-grouped-4"
+      data-id="Brisbane"
+      tabindex="0"
+      type="button"
+      value="Brisbane"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Brisbane
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      aria-label="Perth"
+      aria-pressed="true"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-5 MuiToggleButtonGroup-grouped toggle-button-group-grouped-2 toggle-button-group-grouped-4 MuiToggleButtonGroup-groupedHorizontal toggle-button-group-grouped-2 toggle-button-group-grouped-4 Mui-selected toggle-button-selected-6"
+      data-id="Perth"
+      tabindex="0"
+      type="button"
+      value="Perth"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Perth
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      aria-label="Melbourne"
+      aria-pressed="false"
+      class="MuiButtonBase-root MuiToggleButton-root toggle-button-root-5 MuiToggleButtonGroup-grouped toggle-button-group-grouped-2 toggle-button-group-grouped-4 MuiToggleButtonGroup-groupedHorizontal toggle-button-group-grouped-2 toggle-button-group-grouped-4"
+      data-id="Melbourne"
+      tabindex="0"
+      type="button"
+      value="Melbourne"
+    >
+      <span
+        class="MuiToggleButton-label"
+      >
+        Melbourne
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;

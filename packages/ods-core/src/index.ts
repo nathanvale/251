@@ -70,6 +70,8 @@ import { TextAreaField } from "./TextAreaField/TextAreaField";
 import { TextField } from "./TextField/TextField";
 import { TextFieldBase } from "./TextFieldBase/TextFieldBase";
 import { TextLinkRenderer } from "./TextLinkRenderer/TextLinkRenderer";
+import { ToggleButton } from "./ToggleButton/ToggleButton";
+import { ToggleButtonGroup } from "./ToggleButtonGroup/ToggleButtonGroup";
 import { TrackedLink } from "./TrackedLink/TrackedLink";
 import { TrackingDisable } from "./TrackingDisable/TrackingDisable";
 import { TrackingProvider } from "./TrackingProvider/TrackingProvider";
@@ -135,6 +137,8 @@ export type TextFieldProps = import("./TextField/TextField").TextFieldProps;
 export type TextFieldBaseProps = import("./TextFieldBase/TextFieldBase").TextFieldBaseProps;
 export type TextLinkProps = import("./TextLink/TextLink").TextLinkProps;
 export type TextLinkRendererProps = import("./TextLinkRenderer/TextLinkRenderer").TextLinkRendererProps;
+export type ToggleButtonProps = import("./ToggleButton/ToggleButton").ToggleButtonProps;
+export type ToggleButtonGroupProps = import("./ToggleButtonGroup/ToggleButtonGroup").ToggleButtonGroupProps;
 export type TrackedLinkProps = import("./TrackedLink/TrackedLink").TrackedLinkProps;
 export type TrackingDisableProps = import("./TrackingDisable/TrackingDisable").TrackingDisableProps;
 export type TrackingProviderProps = import("./TrackingProvider/TrackingProvider").TrackingProviderProps;
@@ -201,6 +205,8 @@ export {
   TextField,
   TextFieldBase,
   TextLinkRenderer,
+  ToggleButton,
+  ToggleButtonGroup,
   TrackedLink,
   TrackingDisable,
   TrackingProvider,
@@ -269,6 +275,8 @@ export const Components = {
   TextFieldBase,
   TextLink,
   TextLinkRenderer,
+  ToggleButton,
+  ToggleButtonGroup,
   TrackedLink,
   TrackingDisable,
   TrackingProvider,
