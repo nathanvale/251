@@ -9,6 +9,8 @@ export * from "./palette";
 export * from "./tracking";
 
 export type SvgIconSizeVariants = "small" | "medium" | "large" | "inherit";
+
+// grey300 was added to support information icon
 export type SvgIconToneVariants =
   | keyof Pick<
       ColorPalette,
