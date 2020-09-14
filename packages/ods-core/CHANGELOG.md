@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.66.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.66.0...@origin-digital/ods-core@0.66.1) (2020-09-14)
+
+
+### Bug Fixes
+
+* **togglebutton:** no text color change on selected ([0e619a8](https://bitbucket.orgn.io/od/origin-ui/commits/0e619a85752dd84d6c41fcfd536d6cf03320db74))
+
+
+
+
+
 # [0.66.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.65.3...@origin-digital/ods-core@0.66.0) (2020-09-14)
 
 
