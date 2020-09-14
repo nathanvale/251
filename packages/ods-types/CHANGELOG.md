@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.36.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.36.0...@origin-digital/ods-types@0.36.1) (2020-09-14)
+
+
+### Bug Fixes
+
+* **grey300 icon tone:** adding comment to svgicontonevariants ([e3c59e2](https://bitbucket.orgn.io/od/origin-ui/commits/e3c59e24ce3950e2d1ca54d593daa150f09c49ac))
+
+
+
+
+
 # [0.36.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.35.0...@origin-digital/ods-types@0.36.0) (2020-09-10)
 
 

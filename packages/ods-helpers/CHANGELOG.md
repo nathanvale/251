@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.9](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-helpers@0.11.8...@origin-digital/ods-helpers@0.11.9) (2020-09-14)
+
+**Note:** Version bump only for package @origin-digital/ods-helpers
+
+
+
+
+
 ## [0.11.8](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-helpers@0.11.7...@origin-digital/ods-helpers@0.11.8) (2020-09-10)
 
 **Note:** Version bump only for package @origin-digital/ods-helpers
