@@ -47,6 +47,7 @@ const useToggleButtonStyles = makeStyles(
       "&$selected$selected": {
         backgroundColor: fade(theme.palette.secondary.main, 0.08),
         border: `solid 1px ${theme.palette.secondary.main}`,
+        color: theme.palette.grey[500],
         "& .MuiToggleButton-label": {
           fontWeight: theme.typography.fontWeightMedium,
         },
