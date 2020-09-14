@@ -8,6 +8,7 @@ import { getTypographyForVariant } from "./getTypographyForVariant";
 
 export interface UseBasekickStylesProps {
   variant: TextVariants | Heading12Variants | Heading34Variants;
+  inline?: boolean;
 }
 
 /**
@@ -19,7 +20,7 @@ export interface UseBasekickStylesProps {
  * This hook gets CSS transforms from our typography theme so we can translate
  * the text back onto the baseline where it should be.
  */
-export function useBasekickStyles({ variant }: UseBasekickStylesProps) {
+export function useBasekickStyles({ variant, inline }: UseBasekickStylesProps) {
   return makeStyles(
     ({ breakpoints, typography }) => {
       const responsiveFontSize: Record<"h1" | "h2" | "h3", any> = {
@@ -51,7 +52,7 @@ export function useBasekickStyles({ variant }: UseBasekickStylesProps) {
         basekick: {
           fontFamily: typography.fontFamily,
           ...getTypographyForVariant(typography)[variant!],
-          display: "block",
+          display: inline ? "inline" : "block",
           ...responsiveBasekick,
         },
       };

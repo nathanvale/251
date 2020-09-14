@@ -1804,6 +1804,7 @@ exports[`Text 1`] = `
     | "span"
     | "ul"
   data-id?: string
+  inline?: boolean
   tone?: 
     | "critical"
     | "neutral"
@@ -1879,6 +1880,7 @@ exports[`TextContextProvider 1`] = `
 {
   children?: ReactNode
   defaults?: {
+    inline?: boolean
     tone?: 
       | "critical"
       | "neutral"
@@ -1896,6 +1898,7 @@ exports[`TextContextProvider 1`] = `
       | "medium"
       | "regular"
   }
+  inline?: boolean
   tone?: 
     | "critical"
     | "neutral"
@@ -2058,6 +2061,7 @@ exports[`TrackingProvider 1`] = `
 
 exports[`useTextStyles 1`] = `
 {
+  inline?: boolean
   tone?: 
     | "critical"
     | "neutral"

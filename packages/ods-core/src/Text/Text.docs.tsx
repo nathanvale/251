@@ -15,6 +15,8 @@ export const docs: ComponentDocs<TextProps> = {
     truncate:
       "This will add an ellipsis to the end of the text if the text drops onto more than one line.",
     weight: "The font weight of the text.",
+    inline:
+      "Setting text to inline prevents the text node from take its parents full width.",
   },
   migrationGuide: false,
   examples: {
@@ -113,6 +115,18 @@ export const docs: ComponentDocs<TextProps> = {
         Code: () => (
           <Text align={["left", "center"]}>
             The quick brown fox jumps over the lazy dog.
+          </Text>
+        ),
+      },
+      {
+        label: "Inline Text",
+        Code: () => (
+          <Text>
+            The quick brown fox{" "}
+            <Text inline tone="positive">
+              jumps over
+            </Text>{" "}
+            the lazy dog.
           </Text>
         ),
       },

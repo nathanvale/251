@@ -21,6 +21,7 @@ export interface TextProps {
   truncate?: boolean;
   "data-id"?: string;
   component?: BoxProps["component"];
+  inline?: boolean;
 }
 
 const defaultProps = {
@@ -64,9 +65,20 @@ export const TextInner = (props: TextInnerProps) => {
   );
 };
 
-export const Text = ({ tone, variant, weight, ...others }: TextProps) => {
+export const Text = ({
+  tone,
+  variant,
+  weight,
+  inline,
+  ...others
+}: TextProps) => {
   return (
-    <TextContextProvider tone={tone} variant={variant} weight={weight}>
+    <TextContextProvider
+      tone={tone}
+      variant={variant}
+      weight={weight}
+      inline={inline}
+    >
       <TextInner {...others} />
     </TextContextProvider>
   );

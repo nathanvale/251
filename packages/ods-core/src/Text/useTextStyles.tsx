@@ -12,9 +12,9 @@ import { useCheckTypographyBackground } from "../_private/hooks";
 import { TextContext, UseTextProps } from "./TextContextProvider";
 
 export function useTextStyles(props: UseTextProps) {
-  const { tone = "neutral", weight, variant } = props;
+  const { tone = "neutral", weight, variant, inline } = props;
   useCheckTypographyBackground();
-  const basekickStyles = useBasekickStyles({ variant });
+  const basekickStyles = useBasekickStyles({ variant, inline });
   const toneStyles = useToneStyles({ tone });
   const weightStyles = useWeightStyles(weight);
   const strongStyles = useStrongStyles("medium");
