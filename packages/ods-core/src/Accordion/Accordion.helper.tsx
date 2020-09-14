@@ -22,9 +22,11 @@ const defaultProps = {
 };
 
 export const generateAccordion = (
-  props: Partial<AccordionBaseProps> & AccordionUncontrolledProps = {}
+  props: Partial<AccordionBaseProps> &
+    AccordionUncontrolledProps & { key?: number } = {}
 ) => <Accordion {...{ ...defaultProps, ...props }} />;
 
 export const generateControlledAccordion = (
-  props: Partial<AccordionBaseProps> & AccordionControlledProps
+  props: Partial<AccordionBaseProps> &
+    AccordionControlledProps & { key?: number }
 ) => <Accordion {...{ ...defaultProps, ...props }} />;

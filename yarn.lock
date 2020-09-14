@@ -7908,6 +7908,15 @@ cliui@^6.0.0:
     strip-ansi "^6.0.0"
     wrap-ansi "^6.2.0"
 
+cliui@^7.0.0:
+  version "7.0.1"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/cliui/-/cliui-7.0.1.tgz#a4cb67aad45cd83d8d05128fc9f4d8fbb887e6b3"
+  integrity sha1-pMtnqtRc2D2NBRKPyfTY+7iH5rM=
+  dependencies:
+    string-width "^4.2.0"
+    strip-ansi "^6.0.0"
+    wrap-ansi "^7.0.0"
+
 clone-buffer@^1.0.0:
   version "1.0.0"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/clone-buffer/-/clone-buffer-1.0.0.tgz#e3e25b207ac4e701af721e2cb5a16792cac3dc58"
@@ -10096,6 +10105,11 @@ es6-symbol@^3.1.1, es6-symbol@~3.1.3:
     d "^1.0.1"
     ext "^1.1.2"
 
+escalade@^3.0.2:
+  version "3.0.2"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/escalade/-/escalade-3.0.2.tgz#6a580d70edb87880f22b4c91d0d56078df6962c4"
+  integrity sha1-algNcO24eIDyK0yR0NVgeN9pYsQ=
+
 es6-weak-map@^2.0.1:
   version "2.0.3"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/es6-weak-map/-/es6-weak-map-2.0.3.tgz#b6da1f16cc2cc0d9be43e6bdbfc5e7dfcdf31d53"
@@ -11421,7 +11435,7 @@ get-caller-file@^1.0.1:
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/get-caller-file/-/get-caller-file-1.0.3.tgz#f978fa4c90d1dfe7ff2d6beda2a515e713bdcf4a"
   integrity sha1-+Xj6TJDR3+f/LWvtoqUV5xO9z0o=
 
-get-caller-file@^2.0.1:
+get-caller-file@^2.0.1, get-caller-file@^2.0.5:
   version "2.0.5"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
   integrity sha1-T5RBKoLbMvNuOwuXQfipf+sDH34=
@@ -24160,6 +24174,15 @@ wrap-ansi@^6.2.0:
     string-width "^4.1.0"
     strip-ansi "^6.0.0"
 
+wrap-ansi@^7.0.0:
+  version "7.0.0"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
+  integrity sha1-Z+FFz/UQpqaYS98RUpEdadLrnkM=
+  dependencies:
+    ansi-styles "^4.0.0"
+    string-width "^4.1.0"
+    strip-ansi "^6.0.0"
+
 wrappy@1:
   version "1.0.2"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
@@ -24317,6 +24340,11 @@ y18n@^3.2.1:
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/y18n/-/y18n-4.0.0.tgz#95ef94f85ecc81d007c264e190a120f0a3c8566b"
   integrity sha1-le+U+F7MgdAHwmThkKEg8KPIVms=
 
+y18n@^5.0.1:
+  version "5.0.1"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/y18n/-/y18n-5.0.1.tgz#1ad2a7eddfa8bce7caa2e1f6b5da96c39d99d571"
+  integrity sha1-GtKn7d+ovOfKouH2tdqWw52Z1XE=
+
 yallist@^2.1.2:
   version "2.1.2"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/yallist/-/yallist-2.1.2.tgz#1c11f9218f076089a47dd512f93c6699a6a81d52"
@@ -24385,6 +24413,11 @@ yargs-parser@^18.1.0:
   dependencies:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
+
+yargs-parser@^20.0.0:
+  version "20.0.0"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/yargs-parser/-/yargs-parser-20.0.0.tgz#c65a1daaa977ad63cebdd52159147b789a4e19a9"
+  integrity sha1-xlodqql3rWPOvdUhWRR7eJpOGak=
 
 yargs-parser@^7.0.0:
   version "7.0.0"
@@ -24512,6 +24545,19 @@ yargs@^7.1.0:
     which-module "^1.0.0"
     y18n "^3.2.1"
     yargs-parser "5.0.0-security.0"
+
+yargs@^16.0.2:
+  version "16.0.2"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/yargs/-/yargs-16.0.2.tgz#ed79f153df307aa962dd268a37a53717443778e7"
+  integrity sha1-7XnxU98weqli3SaKN6U3F0Q3eOc=
+  dependencies:
+    cliui "^7.0.0"
+    escalade "^3.0.2"
+    get-caller-file "^2.0.5"
+    require-directory "^2.1.1"
+    string-width "^4.2.0"
+    y18n "^5.0.1"
+    yargs-parser "^20.0.0"
 
 yargs@^8.0.2:
   version "8.0.2"

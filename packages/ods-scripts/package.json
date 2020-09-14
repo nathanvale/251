@@ -21,6 +21,7 @@
     "lodash": "^4.17.15",
     "prettier": "^1.19.1",
     "react-element-to-jsx-string": "^14.3.1",
-    "tsconfig-paths": "^3.9.0"
+    "tsconfig-paths": "^3.9.0",
+    "yargs": "^16.0.2"
   }
 }

@@ -2030,6 +2030,51 @@ exports[`TextLinkRenderer 1`] = `
 }
 `;
 
+exports[`ToggleButton 1`] = `
+{
+  aria-label?: string
+  children: ReactNode
+  className?: string
+  classes?: Record<string, string>
+  data-id?: string
+  disabled?: boolean
+  id?: string
+  muiProps?: MuiProps<OverrideProps<ToggleButtonTypeMap<{}, "button">, "button">> | undefined
+  selected?: boolean
+  value: 
+    | number
+    | string
+}
+`;
+
+exports[`ToggleButtonGroup 1`] = `
+{
+  aria-label?: string
+  children?: ReactNode
+  className?: string
+  classes?: Record<string, string>
+  data-id?: string
+  defaultValue?: 
+    | number
+    | string
+  id: string
+  muiProps?: ToggleButtonGroupProps | undefined
+  onChange?: (event: MouseEvent<HTMLElement, MouseEvent>, value: any) => void
+  options?: 
+    | OptionType[]
+    | string[]
+  size?: 
+    | "medium"
+    | "small"
+  value?: 
+    | number
+    | string
+  width?: 
+    | "content"
+    | "full"
+}
+`;
+
 exports[`TrackedLink 1`] = `
 {
   children?: ReactNode
