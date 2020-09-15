@@ -3832,6 +3832,15 @@
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/ods-types/-/@origin-digital/ods-types-0.34.1.tgz#7589b6d6e2866bd919e906ca45d834adcb6d3ab3"
   integrity sha1-dYm21uKGa9kZ6QbKRdg0rcttOrM=
 
+"@origin-digital/ods-typography@^0.3.11":
+  version "0.3.15"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/ods-typography/-/@origin-digital/ods-typography-0.3.15.tgz#bb6f2e8b7430ef1d89275fdbf269e79470c9dc57"
+  integrity sha1-u28ui3Qw7x2JJ1/b8mnnlHDJ3Fc=
+  dependencies:
+    "@babel/runtime-corejs3" "^7.8.3"
+    "@material-ui/core" "^4.11.0"
+    "@origin-digital/ods-types" "^0.36.1"
+
 "@origin-digital/origin-scripts@^1.13.3":
   version "1.13.3"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/origin-scripts/-/@origin-digital/origin-scripts-1.13.3.tgz#7ea323673c98e27e800f864396f48407ae31fba1"
@@ -10105,11 +10114,6 @@ es6-symbol@^3.1.1, es6-symbol@~3.1.3:
     d "^1.0.1"
     ext "^1.1.2"
 
-escalade@^3.0.2:
-  version "3.0.2"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/escalade/-/escalade-3.0.2.tgz#6a580d70edb87880f22b4c91d0d56078df6962c4"
-  integrity sha1-algNcO24eIDyK0yR0NVgeN9pYsQ=
-
 es6-weak-map@^2.0.1:
   version "2.0.3"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/es6-weak-map/-/es6-weak-map-2.0.3.tgz#b6da1f16cc2cc0d9be43e6bdbfc5e7dfcdf31d53"
@@ -10119,6 +10123,11 @@ es6-weak-map@^2.0.1:
     es5-ext "^0.10.46"
     es6-iterator "^2.0.3"
     es6-symbol "^3.1.1"
+
+escalade@^3.0.2:
+  version "3.0.2"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/escalade/-/escalade-3.0.2.tgz#6a580d70edb87880f22b4c91d0d56078df6962c4"
+  integrity sha1-algNcO24eIDyK0yR0NVgeN9pYsQ=
 
 escape-html@^1.0.3, escape-html@~1.0.3:
   version "1.0.3"
@@ -24527,6 +24536,19 @@ yargs@^15.0.1:
     y18n "^4.0.0"
     yargs-parser "^18.1.0"
 
+yargs@^16.0.2:
+  version "16.0.2"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/yargs/-/yargs-16.0.2.tgz#ed79f153df307aa962dd268a37a53717443778e7"
+  integrity sha1-7XnxU98weqli3SaKN6U3F0Q3eOc=
+  dependencies:
+    cliui "^7.0.0"
+    escalade "^3.0.2"
+    get-caller-file "^2.0.5"
+    require-directory "^2.1.1"
+    string-width "^4.2.0"
+    y18n "^5.0.1"
+    yargs-parser "^20.0.0"
+
 yargs@^7.1.0:
   version "7.1.1"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/yargs/-/yargs-7.1.1.tgz#67f0ef52e228d4ee0d6311acede8850f53464df6"
@@ -24545,19 +24567,6 @@ yargs@^7.1.0:
     which-module "^1.0.0"
     y18n "^3.2.1"
     yargs-parser "5.0.0-security.0"
-
-yargs@^16.0.2:
-  version "16.0.2"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/yargs/-/yargs-16.0.2.tgz#ed79f153df307aa962dd268a37a53717443778e7"
-  integrity sha1-7XnxU98weqli3SaKN6U3F0Q3eOc=
-  dependencies:
-    cliui "^7.0.0"
-    escalade "^3.0.2"
-    get-caller-file "^2.0.5"
-    require-directory "^2.1.1"
-    string-width "^4.2.0"
-    y18n "^5.0.1"
-    yargs-parser "^20.0.0"
 
 yargs@^8.0.2:
   version "8.0.2"

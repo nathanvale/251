@@ -1549,21 +1549,19 @@ exports[`SelectField 1`] = `
 
 exports[`Spinner 1`] = `
 {
-  children?: ReactNode
   className?: string
   classes?: Record<string, string>
-  color?: 
-    | "inherit"
-    | "primary"
-    | "secondary"
   data-id?: string
-  disabled?: boolean
   id?: string
   size?: 
     | "large"
     | "medium"
     | "small"
     | "xsmall"
+  tone?: 
+    | "inherit"
+    | "secondary"
+    | "white"
 }
 `;
 
