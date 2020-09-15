@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-typography@0.3.15...@origin-digital/ods-typography@0.4.0) (2020-09-15)
+
+
+### Features
+
+* **Text:** add inline prop to Text ([243c0ad](https://bitbucket.orgn.io/od/origin-ui/commits/243c0ad8eeb625f915f4aaa3e04d35b31d2b54da))
+
+
+
+
+
 ## [0.3.15](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-typography@0.3.14...@origin-digital/ods-typography@0.3.15) (2020-09-14)
 
 **Note:** Version bump only for package @origin-digital/ods-typography
