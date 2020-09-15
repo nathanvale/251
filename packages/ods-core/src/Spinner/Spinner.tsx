@@ -1,32 +1,67 @@
 import * as React from "react";
 import { CircularProgress } from "@material-ui/core";
 import { ComponentBaseProps } from "@origin-digital/ods-types";
+import { makeStyles } from "@material-ui/core/styles";
 
-export interface SpinnerProps extends ComponentBaseProps {
-  size?: "xsmall" | "small" | "medium" | "large";
-  color?: "inherit" | "primary" | "secondary";
+export type SpinnerSize = "xsmall" | "small" | "medium" | "large";
+export type SpinnerTone = "inherit" | "secondary" | "white";
+
+export interface SpinnerProps
+  extends Omit<ComponentBaseProps, "children" | "disabled"> {
+  size?: SpinnerSize;
+  tone?: SpinnerTone;
 }
 
+const mapSizeToPixel = (size: SpinnerSize) => {
+  if (size === "small") {
+    return 24;
+  }
+  if (size === "medium") {
+    return 48;
+  }
+  if (size === "large") {
+    return 72;
+  }
+  return 20;
+};
+
+const useColorStyles = makeStyles(
+  (theme) => ({
+    root: ({ tone }: { tone: SpinnerTone }) =>
+      tone === "white"
+        ? {
+            color: theme.palette.common.white,
+          }
+        : {},
+  }),
+  { classNamePrefix: "spinner" }
+);
 export const Spinner = ({
-  color = "secondary",
+  tone = "secondary",
   size = "xsmall",
+  classes,
   ...other
 }: SpinnerProps) => {
-  let spinnerSize = 20;
-  if (size === "small") {
-    spinnerSize = 24;
-  } else if (size === "medium") {
-    spinnerSize = 48;
-  } else if (size === "large") {
-    spinnerSize = 72;
-  }
+  const spinnerSize = mapSizeToPixel(size);
 
-  return <CircularProgress color={color} size={spinnerSize} {...other} />;
+  const spinnerClasses = useColorStyles({ tone });
+
+  return (
+    <CircularProgress
+      color={tone !== "secondary" ? "inherit" : "secondary"}
+      size={spinnerSize}
+      classes={{
+        ...classes,
+        ...(spinnerClasses || {}),
+      }}
+      {...other}
+    />
+  );
 };
 
 Spinner.displayName = "Spinner";
 Spinner.defaultProps = {
-  color: "secondary",
+  tone: "secondary",
   "data-id": "spinner",
   size: "small",
 };

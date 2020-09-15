@@ -232,7 +232,7 @@ exports[`it renders an text secondary 1`] = `
 exports[`when spinner is on it does not render a spinner when disabled is true 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root Button-root-386 Button-root-397 MuiButton-outlined Button-outlined-392 MuiButton-outlinedPrimary Button-outlinedPrimary-393 Mui-disabled Button-disabled-396 Mui-disabled"
+    class="MuiButtonBase-root MuiButton-root Button-root-392 Button-root-403 MuiButton-outlined Button-outlined-398 MuiButton-outlinedPrimary Button-outlinedPrimary-399 Mui-disabled Button-disabled-402 Mui-disabled"
     data-id="button"
     disabled=""
     id="btn1"
@@ -261,7 +261,7 @@ exports[`when spinner is on it renders a 20px spinner for 'small' size 1`] = `
 
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root Button-root-338 Button-root-349 MuiButton-contained Button-contained-341 MuiButton-containedPrimary Button-containedPrimary-342 MuiButton-containedSizeSmall MuiButton-sizeSmall Button-sizeSmall-339 Mui-disabled Button-disabled-348 Mui-disabled"
+    class="MuiButtonBase-root MuiButton-root Button-root-340 Button-root-351 MuiButton-contained Button-contained-343 MuiButton-containedPrimary Button-containedPrimary-344 MuiButton-containedSizeSmall MuiButton-sizeSmall Button-sizeSmall-341 Mui-disabled Button-disabled-350 Mui-disabled"
     data-id="button"
     disabled=""
     id="btn1"
@@ -278,7 +278,7 @@ exports[`when spinner is on it renders a 20px spinner for 'small' size 1`] = `
         Small
       </span>
       <div
-        class="MuiCircularProgress-root button-spinner-360 button-spinner-361 MuiCircularProgress-colorSecondary MuiCircularProgress-indeterminate"
+        class="MuiCircularProgress-root spinner-root-364 spinner-root-365 button-spinner-362 button-spinner-363 MuiCircularProgress-colorSecondary MuiCircularProgress-indeterminate"
         data-id="button-spinner"
         role="progressbar"
         style="width: 20px; height: 20px;"
@@ -332,7 +332,7 @@ exports[`when spinner is on it renders a 24px spinner for 'medium' size 1`] = `
         Primary
       </span>
       <div
-        class="MuiCircularProgress-root button-spinner-336 button-spinner-337 MuiCircularProgress-colorSecondary MuiCircularProgress-indeterminate"
+        class="MuiCircularProgress-root spinner-root-338 spinner-root-339 button-spinner-336 button-spinner-337 MuiCircularProgress-colorSecondary MuiCircularProgress-indeterminate"
         data-id="button-spinner"
         role="progressbar"
         style="width: 24px; height: 24px;"
@@ -369,7 +369,7 @@ exports[`when spinner is on it renders a spinner for 'outlined' variant 1`] = `
 
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root Button-root-362 Button-root-373 MuiButton-outlined Button-outlined-368 MuiButton-outlinedPrimary Button-outlinedPrimary-369 Mui-disabled Button-disabled-372 Mui-disabled"
+    class="MuiButtonBase-root MuiButton-root Button-root-366 Button-root-377 MuiButton-outlined Button-outlined-372 MuiButton-outlinedPrimary Button-outlinedPrimary-373 Mui-disabled Button-disabled-376 Mui-disabled"
     data-id="button"
     disabled=""
     id="btn1"
@@ -386,7 +386,7 @@ exports[`when spinner is on it renders a spinner for 'outlined' variant 1`] = `
         Small
       </span>
       <div
-        class="MuiCircularProgress-root button-spinner-384 button-spinner-385 MuiCircularProgress-colorSecondary MuiCircularProgress-indeterminate"
+        class="MuiCircularProgress-root spinner-root-390 spinner-root-391 button-spinner-388 button-spinner-389 MuiCircularProgress-colorSecondary MuiCircularProgress-indeterminate"
         data-id="button-spinner"
         role="progressbar"
         style="width: 24px; height: 24px;"

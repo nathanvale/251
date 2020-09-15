@@ -3,7 +3,7 @@
 exports[`TextField with error endIcon should render error after the text 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfieldbase-root-14 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-16 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label
@@ -29,12 +29,12 @@ exports[`TextField with error endIcon should render error after the text 1`] = `
         value=""
       />
       <span
-        class="MuiInputAdornment-root makeStyles-fade-in-animation-16 MuiInputAdornment-filled MuiInputAdornment-positionEnd"
+        class="MuiInputAdornment-root makeStyles-fade-in-animation-18 MuiInputAdornment-filled MuiInputAdornment-positionEnd"
         data-id="input-adornment"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root svg-icon-critical-small-svg-icon-20"
+          class="MuiSvgIcon-root svg-icon-critical-small-svg-icon-22"
           data-id="IconError"
           focusable="false"
           viewBox="0 0 24 24"
@@ -46,7 +46,7 @@ exports[`TextField with error endIcon should render error after the text 1`] = `
       </span>
     </div>
     <div
-      class="MuiFormHelperText-root MuiFormHelperText-contained form-helper-text-grey400-colour-15"
+      class="MuiFormHelperText-root MuiFormHelperText-contained form-helper-text-grey400-colour-17"
       data-id="text-field-helper-text"
       id="text-field-helper-text"
     >
@@ -149,7 +149,7 @@ exports[`TextField with validating endIcon should render validating after the te
         data-id="input-adornment"
       >
         <div
-          class="MuiCircularProgress-root MuiCircularProgress-colorSecondary MuiCircularProgress-indeterminate"
+          class="MuiCircularProgress-root spinner-root-14 spinner-root-15 MuiCircularProgress-colorSecondary MuiCircularProgress-indeterminate"
           data-id="spinner"
           role="progressbar"
           style="width: 20px; height: 20px;"
@@ -186,7 +186,7 @@ exports[`TextField with validating endIcon should render validating after the te
 exports[`should render the custom after the text 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfieldbase-root-21 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-23 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label
@@ -217,7 +217,7 @@ exports[`should render the custom after the text 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-27"
+          class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-29"
           data-id="IconCheck"
           focusable="false"
           viewBox="0 0 24 24"
@@ -229,7 +229,7 @@ exports[`should render the custom after the text 1`] = `
       </span>
     </div>
     <div
-      class="MuiFormHelperText-root MuiFormHelperText-contained form-helper-text-grey400-colour-22"
+      class="MuiFormHelperText-root MuiFormHelperText-contained form-helper-text-grey400-colour-24"
       data-id="text-field-helper-text"
       id="text-field-helper-text"
     >
@@ -244,7 +244,7 @@ exports[`should render the custom after the text 1`] = `
 exports[`should render the custom before the text 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textfieldbase-root-28 MuiFormControl-fullWidth"
+    class="MuiFormControl-root MuiTextField-root textfieldbase-root-30 MuiFormControl-fullWidth"
     data-id="text-field"
   >
     <label
@@ -265,7 +265,7 @@ exports[`should render the custom before the text 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-30"
+          class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-32"
           data-id="IconCheck"
           focusable="false"
           viewBox="0 0 24 24"
@@ -287,7 +287,7 @@ exports[`should render the custom before the text 1`] = `
       />
     </div>
     <div
-      class="MuiFormHelperText-root MuiFormHelperText-contained form-helper-text-grey400-colour-29"
+      class="MuiFormHelperText-root MuiFormHelperText-contained form-helper-text-grey400-colour-31"
       data-id="text-field-helper-text"
       id="text-field-helper-text"
     >
