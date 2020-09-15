@@ -15,6 +15,7 @@ export interface UseTextProps {
   variant: TextVariants;
   weight: Exclude<TypographyWeightVariants, "bold">;
   tone?: TextToneVariants;
+  inline?: boolean;
 }
 
 export const TextContext = React.createContext<UseTextProps | false>(false);
@@ -32,12 +33,15 @@ export function mergeToContext(
         props.variant ?? (curContext && curContext.variant) ?? defaults.variant,
       weight:
         props.weight ?? (curContext && curContext.weight) ?? defaults.weight,
+      inline:
+        props.inline ?? (curContext && curContext.inline) ?? defaults.inline,
     };
   } else {
     mergedContext = {
       tone: props.tone ?? defaults?.tone,
       variant: props.variant ?? defaults.variant,
       weight: props.weight ?? defaults.weight,
+      inline: props.inline ?? defaults.inline,
     };
   }
 
@@ -53,6 +57,7 @@ export function TextContextProvider({
   variant,
   weight,
   tone,
+  inline,
   children,
   defaults = TEXT_CONTEXT_DEFAULTS,
 }: TextContextProviderProps) {
@@ -65,10 +70,11 @@ export function TextContextProvider({
         tone,
         variant,
         weight,
+        inline,
       },
       defaults
     );
-  }, [curContext, defaults, tone, variant, weight]);
+  }, [curContext, defaults, tone, variant, weight, inline]);
 
   return (
     <TextContext.Provider value={textContextValue}>
