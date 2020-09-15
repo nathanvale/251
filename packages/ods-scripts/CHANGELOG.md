@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.63.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.62.0...@origin-digital/ods-scripts@0.63.0) (2020-09-15)
+
+
+### Features
+
+* **spinner:** update API ([6cfc0b0](https://bitbucket.orgn.io/od/origin-ui/commits/6cfc0b0f804b51f1d77b43f8c04f91d7e4b92dfc))
+
+
+
+
+
 # [0.62.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.61.1...@origin-digital/ods-scripts@0.62.0) (2020-09-15)
 
 
