@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.68.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.68.1...@origin-digital/ods-core@0.68.2) (2020-09-16)
+
+
+### Bug Fixes
+
+* set column to display block when alignX is left ([ce506a7](https://bitbucket.orgn.io/od/origin-ui/commits/ce506a782ee08a4a21e23f0032445918c1d21ce3))
+
+
+
+
+
 ## [0.68.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.68.0...@origin-digital/ods-core@0.68.1) (2020-09-16)
 
 **Note:** Version bump only for package @origin-digital/ods-core
