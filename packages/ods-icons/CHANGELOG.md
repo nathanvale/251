@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.16.3...@origin-digital/ods-icons@0.17.0) (2020-09-16)
+
+
+### Features
+
+* **ods-icons:** lPGDIGI-176: Add star icon ⭐ ([da3a4a3](https://bitbucket.orgn.io/od/origin-ui/commits/da3a4a38f174d6bdb2b49e5e0add93df05fc7c52))
+
+
+
+
+
 ## [0.16.3](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-icons@0.16.2...@origin-digital/ods-icons@0.16.3) (2020-09-15)
 
 **Note:** Version bump only for package @origin-digital/ods-icons
