@@ -66,6 +66,7 @@ export { default as IconRenew } from "./IconRenew";
 export { default as IconRouter } from "./IconRouter";
 export { default as IconSearch } from "./IconSearch";
 export { default as IconSme } from "./IconSme";
+export { default as IconStar } from "./IconStar";
 export { default as IconSupervisorAccount } from "./IconSupervisorAccount";
 export { default as IconSwapHoriz } from "./IconSwapHoriz";
 export { default as IconTextsms } from "./IconTextsms";
