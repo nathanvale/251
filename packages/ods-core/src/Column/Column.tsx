@@ -58,10 +58,10 @@ const OuterStyledBox = styled(Box)<{
       : null}
 `;
 
-const InnerStyledBox = styled(Box)`
+const InnerStyledBox = styled(Box)<{ alignX: ColumnProps["alignX"] }>`
   width: inherit;
-  display: flex;
-  ${OuterStyledBox}:first-child > & {
+  display: ${(p) => (p.alignX === "left" ? "block" : "flex")}
+    ${OuterStyledBox}:first-child > & {
     padding-top: 0;
   }
 `;
@@ -97,6 +97,7 @@ export const Column = ({
       columnWidth={width}
     >
       <InnerStyledBox
+        alignX={alignX}
         paddingLeft={{
           xs: collapseXs ? "none" : xsSpace,
           sm: collapseSm ? "none" : smSpace,
@@ -129,6 +130,7 @@ export const Column = ({
 Column.defaultProps = {
   "data-id": "column",
   width: "flex",
+  alignX: "left",
 };
 
 Column.displayName = "Column";
