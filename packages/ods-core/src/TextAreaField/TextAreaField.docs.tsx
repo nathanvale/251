@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Stack } from "../Stack/Stack";
-import { Text } from "../Text/Text";
+import { Stack } from "../Stack";
+import { Text } from "../Text";
 import { baseFieldPropDesc } from "../TextFieldBase/TextFieldBase.docs";
 import { TextAreaField, TextAreaFieldProps } from "./TextAreaField";
 

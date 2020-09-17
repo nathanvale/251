@@ -1,8 +1,8 @@
 import React from "react";
-import { TableBody } from "../TableBody/TableBody";
-import { TableCell } from "../TableCell/TableCell";
-import { TableHead } from "../TableHead/TableHead";
-import { TableRow } from "../TableRow/TableRow";
+import { TableBody } from "../TableBody";
+import { TableCell } from "../TableCell";
+import { TableHead } from "../TableHead";
+import { TableRow } from "../TableRow";
 import { Table, TableProps } from "./Table";
 
 export const generateTable = (

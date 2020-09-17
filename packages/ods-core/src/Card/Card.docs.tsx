@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
 import { Placeholder } from "../Placeholder/Placeholder";
-import { CardProps, Card } from "../Card/Card";
+import { CardProps, Card } from "../Card";
 
 export const docs: ComponentDocs<CardProps> = {
   category: "Layout",

@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@origin-digital/ods-testing-library";
-import { Box } from "../Box/Box";
+import { Box } from "../Box";
 import { Text } from "./Text";
 
 test("It should render a p tag by default", () => {

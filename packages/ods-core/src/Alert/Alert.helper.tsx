@@ -1,8 +1,8 @@
 import React from "react";
-import { Text } from "../Text/Text";
-import { TextLink } from "../TextLink/TextLink";
-import { Strong } from "../Strong/Strong";
-import { Emphasis } from "../Emphasis/Emphasis";
+import { Text } from "../Text";
+import { TextLink } from "../TextLink";
+import { Strong } from "../Strong";
+import { Emphasis } from "../Emphasis";
 import { Alert, AlertProps } from "./Alert";
 
 export const alertTones: AlertProps["tone"][] = [

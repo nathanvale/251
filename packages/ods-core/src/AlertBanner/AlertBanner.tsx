@@ -1,8 +1,8 @@
 import React from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
-import { Alert, AlertProps } from "../Alert/Alert";
-import { Box } from "../Box/Box";
+import { Alert, AlertProps } from "../Alert";
+import { Box } from "../Box";
 
 const useAlertBannerStyles = makeStyles(
   () => ({

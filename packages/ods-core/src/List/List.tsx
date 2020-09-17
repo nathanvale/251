@@ -3,11 +3,14 @@ import React from "react";
 import { OptionalTrackableProps } from "@origin-digital/ods-types/";
 import { style, get } from "styled-system";
 import { cssLengthToString } from "@origin-digital/ods-helpers";
-import { TextProps } from "../Text/Text";
 import { Stack, StackProps } from "../Stack/Stack";
 import { CounterContainer, CounterLabel, Counter } from "../ListItem/ListItem";
-import { TextContextProvider, UseTextProps } from "../Text/TextContextProvider";
-import { useTextStylesFromContext } from "../Text/useTextStyles";
+import {
+  TextContextProvider,
+  UseTextProps,
+  TextProps,
+  useTextStylesFromContext,
+} from "../Text";
 
 type ULType = "disc" | "circle";
 type OLType =

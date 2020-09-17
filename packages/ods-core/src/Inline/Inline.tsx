@@ -13,7 +13,7 @@ import {
 import styled, { css } from "styled-components";
 import { style, get, ResponsiveValue } from "styled-system";
 import { resolveCollapsibleAlignmentProps } from "../_private/resolveCollapsibleAlignmentProps";
-import { Box } from "../Box/Box";
+import { Box } from "../Box";
 
 export interface InlineProps
   extends CollapsibleAlignmentProps,

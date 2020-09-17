@@ -5,8 +5,8 @@ import {
   ToggleButtonGroup,
   ToggleButtonGroupProps,
 } from "../ToggleButtonGroup/ToggleButtonGroup";
-import { Text } from "../Text/Text";
-import { Stack } from "../Stack/Stack";
+import { Text } from "../Text";
+import { Stack } from "../Stack";
 import {
   generateToggleButtonGroup,
   toggleButtons,

@@ -3,7 +3,7 @@ import React from "react";
 /* eslint-disable react/display-name */
 import { ComponentDocs } from "@origin-digital/ods-types";
 import { IconHelp } from "@origin-digital/ods-icons";
-import { Button } from "../Button/Button";
+import { Button } from "../Button";
 import { generateAlert, alertTones } from "./Alert.helper";
 import { AlertProps } from "./Alert";
 

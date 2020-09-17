@@ -5,8 +5,8 @@ import {
   IconHotWater,
 } from "@origin-digital/ods-icons";
 import { E2ETests } from "@origin-digital/ods-types";
-import { ListItem } from "../ListItem/ListItem";
-import { TextLink } from "../TextLink/TextLink";
+import { ListItem } from "../ListItem";
+import { TextLink } from "../TextLink";
 import { List } from "./List";
 
 export const tests: E2ETests = [

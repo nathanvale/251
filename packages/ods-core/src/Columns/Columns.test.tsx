@@ -3,8 +3,8 @@ import {
   queryAllByAttribute,
   render,
 } from "@origin-digital/ods-testing-library";
-import { Column } from "../Column/Column";
-import { Placeholder } from "../Placeholder/Placeholder";
+import { Column } from "../Column";
+import { Placeholder } from "../Placeholder";
 import { Columns } from "./Columns";
 
 test("it spaces column comps with small space", () => {

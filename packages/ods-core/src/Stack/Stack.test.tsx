@@ -3,7 +3,7 @@ import {
   render,
   queryAllByAttribute,
 } from "@origin-digital/ods-testing-library";
-import { Placeholder } from "../Placeholder/Placeholder";
+import { Placeholder } from "../Placeholder";
 import { Stack } from "./Stack";
 
 const RenderNull = () => null;

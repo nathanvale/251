@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Box } from "../Box/Box";
-import { CheckboxBase } from "../CheckboxBase/CheckboxBase";
+import { Box } from "../Box";
+import { CheckboxBase } from "../CheckboxBase";
 import { FormControlLabel, FormControlLabelProps } from "./FormControlLabel";
 
 export const docs: ComponentDocs<FormControlLabelProps> = {

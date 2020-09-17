@@ -1,12 +1,12 @@
 /* eslint-disable no-alert */
 import React from "react";
 import { ComponentDocs, ExampleDocs } from "@origin-digital/ods-types";
-import { Button } from "../Button/Button";
-import { Card } from "../Card/Card";
-import { Text } from "../Text/Text";
-import { TextLink } from "../TextLink/TextLink";
-import { Stack } from "../Stack/Stack";
-import { Strong } from "../Strong/Strong";
+import { Button } from "../Button";
+import { Card } from "../Card";
+import { Text } from "../Text";
+import { TextLink } from "../TextLink";
+import { Stack } from "../Stack";
+import { Strong } from "../Strong";
 import { TrackingProvider, TrackingProviderProps } from "./TrackingProvider";
 
 export const setupTracking: ExampleDocs = {

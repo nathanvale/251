@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Text } from "../Text/Text";
+import { Text } from "../Text";
 import { TextLinkRenderer } from "./TextLinkRenderer";
 
 export const docs: ComponentDocs = {

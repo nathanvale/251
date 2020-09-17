@@ -1,11 +1,11 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
 import { IconCheck } from "@origin-digital/ods-icons";
-import { Stack } from "../Stack/Stack";
-import { Text } from "../Text/Text";
-import { Columns } from "../Columns/Columns";
-import { Column } from "../Column/Column";
-import { Box } from "../Box/Box";
+import { Stack } from "../Stack";
+import { Text } from "../Text";
+import { Columns } from "../Columns";
+import { Column } from "../Column";
+import { Box } from "../Box";
 import { baseFieldPropDesc } from "../TextFieldBase/TextFieldBase.docs";
 import { TextField, TextFieldProps } from "./TextField";
 

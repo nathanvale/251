@@ -11,9 +11,9 @@ import {
   useLinkResetStyles,
   getTypographyForVariant,
 } from "@origin-digital/ods-typography";
-import { TextContext } from "../Text/TextContextProvider";
-import { HeadingContext } from "../Heading/HeadingContext";
-import { Box } from "../Box/Box";
+import { TextContext } from "../Text";
+import { HeadingContext } from "../Heading";
+import { Box } from "../Box";
 
 export interface ChevronLinkRendererProps {
   children: (renderProps: ChevronLinkRenderProps) => ReactElement;

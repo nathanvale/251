@@ -1,7 +1,7 @@
 import React from "react";
 import { E2ETests } from "@origin-digital/ods-types";
-import { Stack } from "../Stack/Stack";
-import { Box } from "../Box/Box";
+import { Stack } from "../Stack";
+import { Box } from "../Box";
 import { Text } from "./Text";
 
 export const tests: E2ETests = [

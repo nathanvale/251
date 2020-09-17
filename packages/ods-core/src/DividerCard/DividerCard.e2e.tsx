@@ -1,6 +1,6 @@
 import React from "react";
 import { E2ETests } from "@origin-digital/ods-types";
-import { Placeholder } from "../Placeholder/Placeholder";
+import { Placeholder } from "../Placeholder";
 import { DividerCard } from "./DividerCard";
 
 const RenderNull = () => null;

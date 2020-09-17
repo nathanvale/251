@@ -1,8 +1,8 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Placeholder } from "../Placeholder/Placeholder";
-import { Stack } from "../Stack/Stack";
-import { Box } from "../Box/Box";
+import { Placeholder } from "../Placeholder";
+import { Stack } from "../Stack";
+import { Box } from "../Box";
 import { Section, SectionProps } from "./Section";
 
 export const docs: ComponentDocs<SectionProps> = {

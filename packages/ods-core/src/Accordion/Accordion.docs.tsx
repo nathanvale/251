@@ -1,14 +1,14 @@
 import React from "react";
 
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Heading } from "../Heading/Heading";
-import { Text } from "../Text/Text";
-import { Stack } from "../Stack/Stack";
-import { AccordionProps } from "../Accordion/Accordion";
+import { Heading } from "../Heading";
+import { Text } from "../Text";
+import { Stack } from "../Stack";
+import { AccordionProps } from "./Accordion";
 import {
   generateAccordion,
   generateControlledAccordion,
-} from "../Accordion/Accordion.helper";
+} from "./Accordion.helper";
 
 export const docs: ComponentDocs<AccordionProps> = {
   category: "Content",

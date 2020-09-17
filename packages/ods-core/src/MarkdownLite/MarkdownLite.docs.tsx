@@ -1,8 +1,8 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Strong } from "../Strong/Strong";
-import { Text } from "../Text/Text";
-import { TextLink } from "../TextLink/TextLink";
+import { Strong } from "../Strong";
+import { Text } from "../Text";
+import { TextLink } from "../TextLink";
 import { MarkdownLite, MarkdownLiteProps } from "./MarkdownLite";
 
 export const docs: ComponentDocs<MarkdownLiteProps> = {

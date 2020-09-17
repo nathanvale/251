@@ -5,7 +5,7 @@ import {
   ControlGroupMuiProps,
   ControlGroupProps,
 } from "../ControlGroup/ControlGroup";
-import { Stack } from "../Stack/Stack";
+import { Stack } from "../Stack";
 
 export interface CheckboxGroupProps extends ControlGroupProps {
   groupComponent?: FormGroupElements;

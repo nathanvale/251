@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Placeholder } from "../Placeholder/Placeholder";
+import { Placeholder } from "../Placeholder";
 import { Inline, InlineProps } from "./Inline";
 
 export const docs: ComponentDocs<InlineProps> = {

@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Radio } from "../Radio/Radio";
+import { Radio } from "../Radio";
 import {
   getRadioGroupDesc,
   getRadioGroupPropsDesc,

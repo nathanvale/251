@@ -13,7 +13,7 @@ import {
   cssLengthToString,
   alignXToFlexAlign,
 } from "@origin-digital/ods-helpers";
-import { Box, BoxProps } from "../Box/Box";
+import { Box, BoxProps } from "../Box";
 
 const validStackComponents = ["div", "ol", "ul"] as const;
 

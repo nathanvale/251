@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Text } from "../Text/Text";
-import { TextLink } from "../TextLink/TextLink";
+import { Text } from "../Text";
+import { TextLink } from "../TextLink";
 import { OriginThemeProviderProps } from "./OriginThemeProvider";
 
 export const docs: ComponentDocs<OriginThemeProviderProps> = {

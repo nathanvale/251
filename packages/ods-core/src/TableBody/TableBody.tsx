@@ -2,10 +2,7 @@ import React from "react";
 import MuiTableBody, {
   TableBodyProps as MuiTableBodyProps,
 } from "@material-ui/core/TableBody";
-import {
-  OptionalTrackableProps,
-  MuiProps,
-} from "@origin-digital/ods-types/src";
+import { OptionalTrackableProps, MuiProps } from "@origin-digital/ods-types";
 
 export interface TableBodyProps
   extends OptionalTrackableProps,

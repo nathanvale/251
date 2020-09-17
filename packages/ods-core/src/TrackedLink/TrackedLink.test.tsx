@@ -3,7 +3,7 @@ import { render, fireEvent } from "@origin-digital/ods-testing-library";
 import { LinkComponentType } from "@origin-digital/ods-types";
 import { OriginThemeProvider } from "../OriginThemeProvider/OriginThemeProvider";
 import { TrackingProvider } from "../TrackingProvider/TrackingProvider";
-import { Box } from "../Box/Box";
+import { Box } from "../Box";
 import { TrackedLink } from "./TrackedLink";
 
 test("It can render", () => {

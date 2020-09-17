@@ -16,9 +16,9 @@ import {
   InputType,
   ResponsiveProp,
 } from "@origin-digital/ods-types";
-import { Box } from "../Box/Box";
-import { Spinner } from "../Spinner/Spinner";
-import { useTracking } from "../TrackingProvider/useTracking";
+import { Box } from "../Box";
+import { Spinner } from "../Spinner";
+import { useTracking } from "../TrackingProvider";
 import {
   useButtonStyles,
   useInverseStyles,

@@ -17,8 +17,8 @@ import {
   useTruncatedContent,
   useCheckTypographyBackground,
 } from "../_private/hooks";
-import { BoxProps, Box } from "../Box/Box";
-import { Text } from "../Text/Text";
+import { BoxProps, Box } from "../Box";
+import { Text } from "../Text";
 import { HeadingContext } from "./HeadingContext";
 
 export interface HeadingBaseProps {

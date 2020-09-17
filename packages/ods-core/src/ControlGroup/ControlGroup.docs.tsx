@@ -1,8 +1,8 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Radio } from "../Radio/Radio";
-import { RadioGroupBase } from "../RadioGroupBase/RadioGroupBase";
-import { Checkbox } from "../Checkbox/Checkbox";
+import { Radio } from "../Radio";
+import { RadioGroupBase } from "../RadioGroupBase";
+import { Checkbox } from "../Checkbox";
 import { ControlGroup, ControlGroupProps } from "./ControlGroup";
 
 export const getCGPropsDocs = (name: string) => ({

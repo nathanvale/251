@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "@origin-digital/ods-testing-library";
-import { Placeholder } from "../Placeholder/Placeholder";
-import { Card } from "../Card/Card";
+import { Placeholder } from "../Placeholder";
+import { Card } from "../Card";
 import { CardStackSection } from "./CardStackSection";
 
 test("it renders a CardStackSection", () => {

@@ -6,7 +6,7 @@ import {
   CardBackgroundVariant,
   RequiredWithoutChildren,
 } from "@origin-digital/ods-types";
-import { Box } from "../Box/Box";
+import { Box } from "../Box";
 
 export interface CardProps {
   padding?: CardPaddingVariants;

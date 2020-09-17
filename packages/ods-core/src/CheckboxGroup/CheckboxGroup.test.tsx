@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@origin-digital/ods-testing-library";
-import { Checkbox } from "../Checkbox/Checkbox";
+import { Checkbox } from "../Checkbox";
 import { CheckboxGroup } from "./CheckboxGroup";
 
 test("when disabled, the checkbox inputs become disabled as well", () => {

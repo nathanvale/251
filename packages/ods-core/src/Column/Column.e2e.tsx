@@ -1,9 +1,9 @@
 import * as React from "react";
 import { E2ETests } from "@origin-digital/ods-types";
-import { Placeholder } from "../Placeholder/Placeholder";
-import { Stack } from "../Stack/Stack";
-import { Columns } from "../Columns/Columns";
-import { Heading } from "../Heading/Heading";
+import { Placeholder } from "../Placeholder";
+import { Stack } from "../Stack";
+import { Columns } from "../Columns";
+import { Heading } from "../Heading";
 import { Column, widthValueMap } from "./Column";
 
 export const tests: E2ETests = [

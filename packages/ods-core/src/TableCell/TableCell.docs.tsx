@@ -1,10 +1,9 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Placeholder } from "../Placeholder/Placeholder";
-import { Table } from "../Table/Table";
-import { generateTable } from "../Table/Table.helper";
-import { TableBody } from "../TableBody/TableBody";
-import { TableRow } from "../TableRow/TableRow";
+import { Placeholder } from "../Placeholder";
+import { Table, generateTable } from "../Table";
+import { TableBody } from "../TableBody";
+import { TableRow } from "../TableRow";
 import { TableCell, TableCellProps } from "./TableCell";
 
 export const docs: ComponentDocs<TableCellProps> = {

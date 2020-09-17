@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@origin-digital/ods-testing-library";
-import { Placeholder } from "../Placeholder/Placeholder";
+import { Placeholder } from "../Placeholder";
 import { Hidden } from "./Hidden";
 
 test("it renders a Hidden", () => {

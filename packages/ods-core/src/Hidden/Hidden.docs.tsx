@@ -1,8 +1,8 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Placeholder } from "../Placeholder/Placeholder";
-import { Stack } from "../Stack/Stack";
-import { Hidden, HiddenProps } from "../Hidden/Hidden";
+import { Placeholder } from "../Placeholder";
+import { Stack } from "../Stack";
+import { Hidden, HiddenProps } from "../Hidden";
 
 export const docs: ComponentDocs<HiddenProps> = {
   category: "Layout",

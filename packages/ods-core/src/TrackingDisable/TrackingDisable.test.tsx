@@ -2,7 +2,7 @@ import React from "react";
 import { render, fireEvent } from "@origin-digital/ods-testing-library";
 import { TrackingEventHandler } from "@origin-digital/ods-types";
 import { TrackingProvider } from "../TrackingProvider/TrackingProvider";
-import { Button } from "../Button/Button";
+import { Button } from "../Button";
 import { TrackingDisable } from "./TrackingDisable";
 
 describe("DisableTracking", () => {
