@@ -20,7 +20,7 @@
     "@date-io/date-fns": "^1.3.13",
     "@material-ui/core": "^4.11.0",
     "@origin-digital/action-bar": "^9.1.21",
-    "@origin-digital/formatters": "^7.0.2",
+    "@origin-digital/formatters": "^8.0.0",
     "@origin-digital/icon": "^1.7.0",
     "@origin-digital/messages": "^1.3.9",
     "@origin-digital/ods-core": "^0.68.2",
