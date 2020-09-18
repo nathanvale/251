@@ -424,7 +424,7 @@ When you are submitting a PR please make sure you follow this checklist beforeha
 
 ### Adding a new component
 
-As mentioned before your component API should have dirst been discussed and approved by the ODS core team and documented
+As mentioned before your component API should have first been discussed and approved by the ODS core team and documented
 in Wiki.
 
 We take accessibility (a11y) as a first-class requirement for all components in ODS. Hence, make sure you make yourself familiar

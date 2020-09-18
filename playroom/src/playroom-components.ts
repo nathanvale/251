@@ -36,6 +36,7 @@ export {
   MarkdownLite,
   OriginThemeProvider,
   Placeholder,
+  Preloader,
   Radio,
   RadioBase,
   RadioGroup,
