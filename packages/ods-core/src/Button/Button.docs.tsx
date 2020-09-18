@@ -1,11 +1,11 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
 import { IconEmail } from "@origin-digital/ods-icons";
-import { Stack } from "../Stack/Stack";
-import { Columns } from "../Columns/Columns";
-import { Column } from "../Column/Column";
-import { Box } from "../Box/Box";
-import { Text } from "../Text/Text";
+import { Stack } from "../Stack";
+import { Columns } from "../Columns";
+import { Column } from "../Column";
+import { Box } from "../Box";
+import { Text } from "../Text";
 import { Button, ButtonProps } from "./Button";
 
 export const docs: ComponentDocs<ButtonProps> = {

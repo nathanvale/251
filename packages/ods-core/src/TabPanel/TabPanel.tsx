@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentBaseProps } from "@origin-digital/ods-types/src";
-import { Box } from "../Box/Box";
+import { Box } from "../Box";
 
 export interface TabPanelProps extends ComponentBaseProps {
   hidden?: boolean;

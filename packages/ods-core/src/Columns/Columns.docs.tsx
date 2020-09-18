@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Placeholder } from "../Placeholder/Placeholder";
-import { Column } from "../Column/Column";
+import { Placeholder } from "../Placeholder";
+import { Column } from "../Column";
 import { Columns, ColumnsProps } from "./Columns";
 
 export const docs: ComponentDocs<ColumnsProps> = {

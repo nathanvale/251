@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@origin-digital/ods-testing-library";
-import { Card } from "../Card/Card";
+import { Card } from "../Card";
 
 test("it renders a card", () => {
   const { container } = render(<Card />);

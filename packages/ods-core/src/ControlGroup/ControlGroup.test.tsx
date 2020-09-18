@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "@origin-digital/ods-testing-library";
-import { Radio } from "../Radio/Radio";
-import { RadioGroupBase } from "../RadioGroupBase/RadioGroupBase";
+import { Radio } from "../Radio";
+import { RadioGroupBase } from "../RadioGroupBase";
 import { ControlGroup } from "./ControlGroup";
 
 test("It renders a label and a helper text", () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import { IconBankAccount, SvgIconProps } from "@origin-digital/ods-icons";
-import { Text, TextProps } from "../Text/Text";
+import { Text, TextProps } from "../Text";
 import { IconButton, IconButtonProps } from "./IconButton";
 
 export const generateIconButton = (

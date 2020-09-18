@@ -1,8 +1,8 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
 import { IconGas, IconElectricity } from "@origin-digital/ods-icons";
-import { Tab } from "../Tab/Tab";
-import { Text } from "../Text/Text";
+import { Tab } from "../Tab";
+import { Text } from "../Text";
 import { Tabs } from "./Tabs";
 
 export const docs: ComponentDocs = {

@@ -1,9 +1,8 @@
 import React from "react";
 
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { AccordionGroup } from "../AccordionGroup/AccordionGroup";
-import { AccordionProps } from "../Accordion/Accordion";
-import { generateAccordion } from "../Accordion/Accordion.helper";
+import { AccordionGroup } from "../AccordionGroup";
+import { generateAccordion, AccordionProps } from "../Accordion";
 
 const accordions = [
   ["My first accordion", "accordion-1"],

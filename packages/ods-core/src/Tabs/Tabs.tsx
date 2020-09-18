@@ -6,8 +6,8 @@ import {
   Theme,
 } from "@material-ui/core";
 import { ComponentBaseProps } from "@origin-digital/ods-types/src";
-import { TabProps } from "../Tab/Tab";
-import { TabPanel } from "../TabPanel/TabPanel";
+import { TabProps } from "../Tab";
+import { TabPanel } from "../TabPanel";
 
 export interface TabsProps extends ComponentBaseProps {
   "aria-label"?: string;

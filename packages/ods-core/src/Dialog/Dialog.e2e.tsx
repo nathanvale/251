@@ -1,6 +1,6 @@
 import React from "react";
 import { E2ETests } from "@origin-digital/ods-types";
-import { Text } from "../Text/Text";
+import { Text } from "../Text";
 import { Dialog } from "./Dialog";
 
 export const tests: E2ETests = [

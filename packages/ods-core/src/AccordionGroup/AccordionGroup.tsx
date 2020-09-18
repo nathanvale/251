@@ -2,7 +2,7 @@ import React, { createContext } from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import { ComponentBaseProps } from "@origin-digital/ods-types";
-import { Box } from "../Box/Box";
+import { Box } from "../Box";
 
 export interface AccordionGroupProps
   extends Omit<ComponentBaseProps, "disabled" | "classes"> {

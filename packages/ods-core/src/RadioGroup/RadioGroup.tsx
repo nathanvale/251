@@ -6,11 +6,8 @@ import {
   InputValueType,
   LabelElements,
 } from "@origin-digital/ods-types";
-import { RadioGroupBase } from "../RadioGroupBase/RadioGroupBase";
-import {
-  ControlGroup,
-  ControlGroupMuiProps,
-} from "../ControlGroup/ControlGroup";
+import { RadioGroupBase } from "../RadioGroupBase";
+import { ControlGroup, ControlGroupMuiProps } from "../ControlGroup";
 
 export interface RadioGroupMuiProps {
   controlGroupMuiProps?: ControlGroupMuiProps;

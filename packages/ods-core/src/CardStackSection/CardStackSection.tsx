@@ -14,10 +14,10 @@ import {
   SpaceVariants,
   ResponsiveProp,
 } from "@origin-digital/ods-types";
-import { Box, BoxProps } from "../Box/Box";
-import { Stack } from "../Stack/Stack";
-import { CardProps } from "../Card/Card";
-import { DividerCardProps } from "../DividerCard/DividerCard";
+import { Box, BoxProps } from "../Box";
+import { Stack } from "../Stack";
+import { CardProps } from "../Card";
+import { DividerCardProps } from "../DividerCard";
 
 export interface CardStackSectionProps {
   "data-id"?: string;

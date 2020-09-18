@@ -1,9 +1,9 @@
 import React from "react";
 import { LinkBaseProps } from "@origin-digital/ods-types";
-import { Heading } from "../Heading/Heading";
-import { ChevronLinkRenderer } from "../ChevronLinkRenderer/ChevronLinkRenderer";
-import { Box } from "../Box/Box";
-import { TrackedLink } from "../TrackedLink/TrackedLink";
+import { Heading } from "../Heading";
+import { ChevronLinkRenderer } from "../ChevronLinkRenderer";
+import { Box } from "../Box";
+import { TrackedLink } from "../TrackedLink";
 
 export interface HeadingChevronLinkProps extends LinkBaseProps {}
 const defaultDataId = "heading-chevron-link";

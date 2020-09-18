@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Checkbox } from "../Checkbox/Checkbox";
+import { Checkbox } from "../Checkbox";
 import { FormControl, FormControlProps } from "./FormControl";
 
 export const docs: ComponentDocs<FormControlProps> = {

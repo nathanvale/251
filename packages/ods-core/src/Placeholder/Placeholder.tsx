@@ -10,7 +10,7 @@ import {
 } from "styled-system";
 import { ResponsiveProp } from "@origin-digital/ods-types";
 import { mapToStyledSystem } from "@origin-digital/ods-helpers";
-import { Box, BoxProps } from "../Box/Box";
+import { Box, BoxProps } from "../Box";
 
 type PlaceholderShapeVariant = "rectangle" | "round";
 export interface PlaceholderProps {

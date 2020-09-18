@@ -10,9 +10,9 @@ import {
   FormHelperTextProps as MuiFormHelperTextProps,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { FormControl } from "../FormControl/FormControl";
-import { FormLabel } from "../FormLabel/FormLabel";
-import { FormHelperText } from "../FormHelperText/FormHelperText";
+import { FormControl } from "../FormControl";
+import { FormLabel } from "../FormLabel";
+import { FormHelperText } from "../FormHelperText";
 
 export type ControlGroupMuiProps = {
   formControlProps?: MuiFormControlProps;

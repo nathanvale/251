@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Box } from "../Box/Box";
-import { Stack } from "../Stack/Stack";
+import { Box } from "../Box";
+import { Stack } from "../Stack";
 import { HeadingProps, Heading } from "./Heading";
 
 export const headingPropDescriptions: Partial<Record<

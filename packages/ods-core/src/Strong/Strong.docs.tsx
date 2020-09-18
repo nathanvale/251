@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Text } from "../Text/Text";
-import { Heading } from "../Heading/Heading";
+import { Text } from "../Text";
+import { Heading } from "../Heading";
 import { Strong } from "./Strong";
 
 export const docs: ComponentDocs = {

@@ -4,11 +4,8 @@ import MuiTableRow, {
   TableRowProps as MuiTableRowProps,
 } from "@material-ui/core/TableRow";
 import { makeStyles } from "@material-ui/core/styles";
-import {
-  OptionalTrackableProps,
-  MuiProps,
-} from "@origin-digital/ods-types/src";
-import { TableContext } from "../Table/Table";
+import { OptionalTrackableProps, MuiProps } from "@origin-digital/ods-types";
+import { TableContext } from "../Table";
 
 const useTableRowStyles = makeStyles(
   (theme) => ({

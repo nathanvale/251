@@ -1,6 +1,6 @@
 import React from "react";
-import { Placeholder } from "../Placeholder/Placeholder";
-import { Box } from "../Box/Box";
+import { Placeholder } from "../Placeholder";
+import { Box } from "../Box";
 import { AlertBanner, AlertBannerProps } from "./AlertBanner";
 
 export const generateAlertBanner = (props: Partial<AlertBannerProps> = {}) => (

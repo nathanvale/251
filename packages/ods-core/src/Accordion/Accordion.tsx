@@ -12,9 +12,9 @@ import MuiAccordionDetails, {
 } from "@material-ui/core/AccordionDetails";
 import { ComponentBaseProps, MuiProps } from "@origin-digital/ods-types";
 import { IconExpand, IconCollapse } from "@origin-digital/ods-icons";
-import { Text } from "../Text/Text";
-import { useTracking } from "../TrackingProvider/useTracking";
-import { AccordionGroupContext } from "../AccordionGroup/AccordionGroup";
+import { Text } from "../Text";
+import { useTracking } from "../TrackingProvider";
+import { AccordionGroupContext } from "../AccordionGroup";
 
 const useAccordionStyles = makeStyles(
   (theme) => ({

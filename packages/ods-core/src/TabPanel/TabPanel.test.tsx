@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@origin-digital/ods-testing-library";
-import { TabPanel } from "../TabPanel/TabPanel";
+import { TabPanel } from "../TabPanel";
 
 test("it renders", () => {
   const { container } = render(<TabPanel value="0">testing</TabPanel>);

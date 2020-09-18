@@ -1,7 +1,7 @@
 import React from "react";
 import { E2ETests } from "@origin-digital/ods-types";
-import { AccordionGroup } from "../AccordionGroup/AccordionGroup";
-import { generateAccordion } from "../Accordion/Accordion.helper";
+import { AccordionGroup } from "../AccordionGroup";
+import { generateAccordion } from "../Accordion";
 
 const accordions = [
   ["My first accordion", "accordion-1"],

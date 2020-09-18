@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Placeholder } from "../Placeholder/Placeholder";
-import { Card } from "../Card/Card";
+import { Placeholder } from "../Placeholder";
+import { Card } from "../Card";
 import {
   CardStackSection,
   CardStackSectionProps,

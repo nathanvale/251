@@ -9,10 +9,10 @@ import {
   normaliseResponsiveProp,
   mapToStyledSystem,
 } from "@origin-digital/ods-helpers";
-import { ColumnProps } from "../Column/Column";
+import { ColumnProps } from "../Column";
 
 import { resolveCollapsibleAlignmentProps } from "../_private/resolveCollapsibleAlignmentProps";
-import { InnerContainer } from "../Inline/Inline";
+import { InnerContainer } from "../Inline";
 
 export type CollapsibleAlignmentChildProps = ReturnType<
   typeof resolveCollapsibleAlignmentProps

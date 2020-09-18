@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "@origin-digital/ods-testing-library";
-import { Columns } from "../Columns/Columns";
-import { Placeholder } from "../Placeholder/Placeholder";
+import { Columns } from "../Columns";
+import { Placeholder } from "../Placeholder";
 import { Column } from "./Column";
 
 test("it sets width to flex by default", () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Button } from "../Button/Button";
-import { Text } from "../Text/Text";
+import { Button } from "../Button";
+import { Text } from "../Text";
 import { Dialog, DialogProps } from "./Dialog";
 
 export const docs: ComponentDocs<DialogProps> = {

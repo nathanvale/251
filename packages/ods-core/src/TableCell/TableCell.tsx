@@ -10,7 +10,7 @@ import {
   AlignYType,
   AlignXType,
 } from "@origin-digital/ods-types";
-import { TableProps, TableContext } from "../Table/Table";
+import { TableProps, TableContext } from "../Table";
 
 interface TableCellStylesProps
   extends Pick<TableCellProps, "alignY">,

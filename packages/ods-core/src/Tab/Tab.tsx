@@ -8,7 +8,7 @@ import {
 } from "@material-ui/core";
 import { ComponentBaseProps } from "@origin-digital/ods-types";
 import { useTracking } from "../TrackingProvider/useTracking";
-import { Box } from "../Box/Box";
+import { Box } from "../Box";
 
 export interface TabProps extends ComponentBaseProps {
   label: string | React.ReactNode;

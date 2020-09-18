@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { E2ETests } from "@origin-digital/ods-types";
-import { Placeholder } from "../Placeholder/Placeholder";
+import { Placeholder } from "../Placeholder";
 import { Inline } from "./Inline";
 
 export const tests: E2ETests = [

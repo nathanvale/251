@@ -12,8 +12,8 @@ import {
   SvgIconToneVariants,
 } from "@origin-digital/ods-types";
 import { SvgIconContext, SvgIconProps } from "@origin-digital/ods-icons";
-import { ButtonActionProps } from "../Button/Button";
-import { TextContext, UseTextProps } from "../Text/TextContextProvider";
+import { ButtonActionProps } from "../Button";
+import { TextContext, UseTextProps } from "../Text";
 
 export interface IconButtonProps extends ComponentBaseProps, ButtonActionProps {
   children: React.ReactElement<SvgIconProps>;

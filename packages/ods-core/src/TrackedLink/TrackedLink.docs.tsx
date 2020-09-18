@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentDocs, ExampleDocs } from "@origin-digital/ods-types";
-import { Text, TextProps } from "../Text/Text";
-import { TextLink } from "../TextLink/TextLink";
+import { Text, TextProps } from "../Text";
+import { TextLink } from "../TextLink";
 
 export const example: ExampleDocs = {
   label: "Creating a non-text anchor with tracking",

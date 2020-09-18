@@ -11,12 +11,11 @@ import {
   IconLocalOffer,
 } from "@origin-digital/ods-icons";
 import { ComponentBaseProps, MuiProps } from "@origin-digital/ods-types";
-import { Strong } from "../Strong/Strong";
-import { Stack } from "../Stack/Stack";
-import { IconButton } from "../IconButton/IconButton";
-import { Box } from "../Box/Box";
-import { Text } from "../Text/Text";
-import { TextContextProvider } from "../Text/TextContextProvider";
+import { Strong } from "../Strong";
+import { Stack } from "../Stack";
+import { IconButton } from "../IconButton";
+import { Box } from "../Box";
+import { Text, TextContextProvider } from "../Text";
 
 const createStandardStyle = (
   color: string,

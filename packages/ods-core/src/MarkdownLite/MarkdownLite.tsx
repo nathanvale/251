@@ -1,9 +1,9 @@
 import React, { ReactNodeArray, useContext } from "react";
 import { kebabCase } from "@origin-digital/ods-helpers";
-import { Emphasis } from "../Emphasis/Emphasis";
-import { Strong } from "../Strong/Strong";
-import { TextContext } from "../Text/TextContextProvider";
-import { TextLink } from "../TextLink/TextLink";
+import { Emphasis } from "../Emphasis";
+import { Strong } from "../Strong";
+import { TextContext } from "../Text";
+import { TextLink } from "../TextLink";
 
 export interface MarkdownLiteProps {
   children: string;

@@ -5,7 +5,7 @@ import {
   TextToneVariants,
   TypographyWeightVariants,
 } from "@origin-digital/ods-types";
-import { BoxProps, Box } from "../Box/Box";
+import { BoxProps, Box } from "../Box";
 import { useTruncatedContent } from "../_private/hooks";
 
 import { TextContextProvider, UseTextProps } from "./TextContextProvider";

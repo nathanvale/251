@@ -1,6 +1,6 @@
 import * as React from "react";
 import { SvgIcon, SvgIconProps } from "@material-ui/core";
-import { BaseFieldProps, TextFieldBase } from "../TextFieldBase/TextFieldBase";
+import { BaseFieldProps, TextFieldBase } from "../TextFieldBase";
 
 export type OptionType = {
   value: string;

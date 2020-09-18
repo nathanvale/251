@@ -1,8 +1,8 @@
 import React from "react";
 import { render } from "@origin-digital/ods-testing-library";
-import { Table, TableProps } from "../Table/Table";
-import { TableBody } from "../TableBody/TableBody";
-import { TableRow } from "../TableRow/TableRow";
+import { Table, TableProps } from "../Table";
+import { TableBody } from "../TableBody";
+import { TableRow } from "../TableRow";
 import { TableCell, TableCellProps } from "./TableCell";
 
 const renderTableCell = (

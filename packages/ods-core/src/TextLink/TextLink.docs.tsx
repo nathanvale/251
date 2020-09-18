@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Text, TextProps } from "../Text/Text";
+import { Text, TextProps } from "../Text";
 import { TextLink } from "./TextLink";
 
 export const docs: ComponentDocs<TextProps> = {

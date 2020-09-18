@@ -1,8 +1,8 @@
 import React from "react";
 import { IconCheck } from "@origin-digital/ods-icons";
 import { E2ETests } from "@origin-digital/ods-types";
-import { Stack } from "../Stack/Stack";
-import { Text } from "../Text/Text";
+import { Stack } from "../Stack";
+import { Text } from "../Text";
 import { Button } from "./Button";
 
 export const tests: E2ETests = [

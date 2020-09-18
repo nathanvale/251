@@ -1,9 +1,9 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Box } from "../Box/Box";
-import { Text } from "../Text/Text";
-import { TextLink } from "../TextLink/TextLink";
-import { Placeholder } from "../Placeholder/Placeholder";
+import { Box } from "../Box";
+import { Text } from "../Text";
+import { TextLink } from "../TextLink";
+import { Placeholder } from "../Placeholder";
 import { DividerCardProps, DividerCard as ODSDivider } from "./DividerCard";
 
 const DividerCard = (props: DividerCardProps) => (

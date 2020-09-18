@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import { resolveResponsiveRangeProps } from "@origin-digital/ods-helpers";
 import { ResponsiveRangeProps } from "@origin-digital/ods-types";
-import { Box } from "../Box/Box";
+import { Box } from "../Box";
 
 export interface HiddenProps extends ResponsiveRangeProps {
   children: ReactNode;

@@ -1,9 +1,9 @@
 import React from "react";
 import { E2ETests } from "@origin-digital/ods-types";
-import { Table } from "../Table/Table";
-import { TableBody } from "../TableBody/TableBody";
-import { TableRow } from "../TableRow/TableRow";
-import { Placeholder } from "../Placeholder/Placeholder";
+import { Table } from "../Table";
+import { TableBody } from "../TableBody";
+import { TableRow } from "../TableRow";
+import { Placeholder } from "../Placeholder";
 import { TableCell } from "./TableCell";
 
 export const tests: E2ETests = [

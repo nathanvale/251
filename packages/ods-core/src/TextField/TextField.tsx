@@ -1,9 +1,9 @@
 import React from "react";
 import { Theme, useTheme } from "@material-ui/core";
 import { IconCheckCircle, IconError } from "@origin-digital/ods-icons";
-import { BaseFieldProps, TextFieldBase } from "../TextFieldBase/TextFieldBase";
-import { InputAdornment } from "../InputAdornment/InputAdornment";
-import { Spinner } from "../Spinner/Spinner";
+import { BaseFieldProps, TextFieldBase } from "../TextFieldBase";
+import { InputAdornment } from "../InputAdornment";
+import { Spinner } from "../Spinner";
 import {
   useFadeInAnimation,
   useBounceInAnimation,

@@ -1,9 +1,9 @@
 import React, { ReactNode } from "react";
-import { Table, TableProps, defaultProps } from "../Table/Table";
-import { TableBody } from "../TableBody/TableBody";
-import { TableCell } from "../TableCell/TableCell";
-import { TableHead } from "../TableHead/TableHead";
-import { TableRow } from "../TableRow/TableRow";
+import { Table, TableProps, defaultProps } from "../Table";
+import { TableBody } from "../TableBody";
+import { TableCell } from "../TableCell";
+import { TableHead } from "../TableHead";
+import { TableRow } from "../TableRow";
 
 export interface DataTableProps
   extends Pick<TableProps, Exclude<keyof TableProps, "children">> {

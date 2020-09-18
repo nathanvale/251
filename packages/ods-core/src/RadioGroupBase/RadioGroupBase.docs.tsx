@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { Radio } from "../Radio/Radio";
-import { Text } from "../Text/Text";
+import { Radio } from "../Radio";
+import { Text } from "../Text";
 import { RadioGroupBase, RadioGroupBaseProps } from "./RadioGroupBase";
 
 export const getRadioGroupDesc = (name: string) => (

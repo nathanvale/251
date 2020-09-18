@@ -6,11 +6,8 @@ import {
   ResponsiveProp,
   AlignX,
 } from "@origin-digital/ods-types";
-import { Box } from "../Box/Box";
-import {
-  ColumnsContext,
-  CollapsibleAlignmentChildProps,
-} from "../Columns/Columns";
+import { Box } from "../Box";
+import { ColumnsContext, CollapsibleAlignmentChildProps } from "../Columns";
 
 export interface ColumnProps extends OptionalTrackableProps {
   children?: ReactNode;

@@ -1,12 +1,12 @@
 /* eslint-disable no-alert */
 import React from "react";
 import { ComponentDocs, ExampleDocs } from "@origin-digital/ods-types";
-import { Button } from "../Button/Button";
-import { TrackingProvider } from "../TrackingProvider/TrackingProvider";
-import { Stack } from "../Stack/Stack";
-import { Text } from "../Text/Text";
-import { TextLink } from "../TextLink/TextLink";
-import { Card } from "../Card/Card";
+import { Button } from "../Button";
+import { TrackingProvider } from "../TrackingProvider";
+import { Stack } from "../Stack";
+import { Text } from "../Text";
+import { TextLink } from "../TextLink";
+import { Card } from "../Card";
 import { TrackingDisable } from "./TrackingDisable";
 
 export const disableTrackingExample: ExampleDocs = {

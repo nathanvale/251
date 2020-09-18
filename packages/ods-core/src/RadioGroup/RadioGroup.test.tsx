@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@origin-digital/ods-testing-library";
-import { Radio } from "../Radio/Radio";
+import { Radio } from "../Radio";
 import { RadioGroup } from "./RadioGroup";
 
 test("it selects only one Radio in the group when one clicked", () => {

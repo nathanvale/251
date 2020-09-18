@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@origin-digital/ods-testing-library";
-import { Tab } from "../Tab/Tab";
+import { Tab } from "../Tab";
 import { Tabs } from "./Tabs";
 
 test("it selects only one Tab in the group when one is clicked", () => {

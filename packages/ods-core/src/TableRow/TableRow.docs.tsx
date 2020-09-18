@@ -1,5 +1,5 @@
 import { ComponentDocs } from "@origin-digital/ods-types";
-import { generateTable } from "../Table/Table.helper";
+import { generateTable } from "../Table";
 import { TableRowProps } from "./TableRow";
 
 export const docs: ComponentDocs<TableRowProps> = {

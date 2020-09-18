@@ -4,7 +4,7 @@ import {
   getByTestId as odsGetByTestId,
   getAllByTestId as odsGetAllByTestId,
 } from "@origin-digital/ods-testing-library";
-import { Text } from "../Text/Text";
+import { Text } from "../Text";
 import { MarkdownLite } from "./MarkdownLite";
 
 test("It should render bold text using astrix", () => {

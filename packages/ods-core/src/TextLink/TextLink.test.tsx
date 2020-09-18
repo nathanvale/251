@@ -4,10 +4,10 @@ import {
   TrackingEventHandler,
   LinkComponentType,
 } from "@origin-digital/ods-types";
-import { OriginThemeProvider } from "../OriginThemeProvider/OriginThemeProvider";
-import { Text } from "../Text/Text";
-import { TrackingProvider } from "../TrackingProvider/TrackingProvider";
-import { Strong } from "../Strong/Strong";
+import { OriginThemeProvider } from "../OriginThemeProvider";
+import { Text } from "../Text";
+import { TrackingProvider } from "../TrackingProvider";
+import { Strong } from "../Strong";
 import { TextLink } from "./TextLink";
 
 test("It can render", () => {

@@ -8,13 +8,9 @@ import {
   Theme,
 } from "@origin-digital/ods-types";
 import { mapToStyledSystem } from "@origin-digital/ods-helpers";
-import { Box, BoxProps } from "../Box/Box";
-import {
-  defaultCardProps,
-  cardPaddingForVariant,
-  CardProps,
-} from "../Card/Card";
-import { Stack, StackChild, StackChildProps } from "../Stack/Stack";
+import { Box, BoxProps } from "../Box";
+import { defaultCardProps, cardPaddingForVariant, CardProps } from "../Card";
+import { Stack, StackChild, StackChildProps } from "../Stack";
 
 export interface DividerCardProps extends CardProps {
   space?: ResponsiveSpace;
