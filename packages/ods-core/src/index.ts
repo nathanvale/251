@@ -75,6 +75,8 @@ import { OriginThemeProvider } from "./OriginThemeProvider";
 
 import { Placeholder } from "./Placeholder";
 
+import { Preloader } from "./Preloader";
+
 import { Radio } from "./Radio";
 
 import { RadioBase } from "./RadioBase";
@@ -168,6 +170,7 @@ export type ListItemProps = import("./ListItem").ListItemProps;
 export type MarkdownLiteProps = import("./MarkdownLite").MarkdownLiteProps;
 export type OriginThemeProviderProps = import("./OriginThemeProvider").OriginThemeProviderProps;
 export type PlaceholderProps = import("./Placeholder").PlaceholderProps;
+export type PreloaderProps = import("./Preloader").PreloaderProps;
 export type RadioProps = import("./Radio").RadioProps;
 export type RadioBaseProps = import("./RadioBase").RadioBaseProps;
 export type RadioGroupProps = import("./RadioGroup").RadioGroupProps;
@@ -236,6 +239,7 @@ export {
   MarkdownLite,
   OriginThemeProvider,
   Placeholder,
+  Preloader,
   Radio,
   RadioBase,
   RadioGroup,
@@ -306,6 +310,7 @@ export const Components = {
   MarkdownLite,
   OriginThemeProvider,
   Placeholder,
+  Preloader,
   Radio,
   RadioBase,
   RadioGroup,

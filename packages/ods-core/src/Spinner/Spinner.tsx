@@ -1,10 +1,13 @@
 import * as React from "react";
 import { CircularProgress } from "@material-ui/core";
-import { ComponentBaseProps } from "@origin-digital/ods-types";
+import {
+  ComponentBaseProps,
+  GraphicToneVariants,
+} from "@origin-digital/ods-types";
 import { makeStyles } from "@material-ui/core/styles";
 
 export type SpinnerSize = "xsmall" | "small" | "medium" | "large";
-export type SpinnerTone = "inherit" | "secondary" | "white";
+export type SpinnerTone = "inherit" | GraphicToneVariants;
 
 export interface SpinnerProps
   extends Omit<ComponentBaseProps, "children" | "disabled"> {

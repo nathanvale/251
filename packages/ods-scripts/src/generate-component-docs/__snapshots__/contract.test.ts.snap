@@ -1358,6 +1358,18 @@ exports[`Placeholder 1`] = `
 }
 `;
 
+exports[`Preloader 1`] = `
+{
+  className?: string
+  classes?: Record<string, string>
+  data-id?: string
+  id?: string
+  tone?: 
+    | "secondary"
+    | "white"
+}
+`;
+
 exports[`Radio 1`] = `
 {
   aria-label?: string

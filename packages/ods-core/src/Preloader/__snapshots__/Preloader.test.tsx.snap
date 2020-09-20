@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It renders in default 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+<div>
+  <div
+    class="preloader-container-1 c0"
+    display="flex"
+  >
+    <div
+      class="preloader-circle-2 preloader-circle-3 preloader-bounce-bounceEffect-8"
+    />
+    <div
+      class="preloader-circle-2 preloader-circle-3 preloader-bounce-bounceEffect-8 preloader-bounce-secondDelay-5"
+    />
+    <div
+      class="preloader-circle-2 preloader-circle-3 preloader-bounce-bounceEffect-8 preloader-bounce-thirdDelay-6"
+    />
+    <div
+      class="preloader-circle-2 preloader-circle-3 preloader-bounce-bounceEffect-8 preloader-bounce-fourthDelay-7"
+    />
+  </div>
+</div>
+`;
+
+exports[`It renders with the white tone 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+<div>
+  <div
+    class="preloader-container-9 c0"
+    display="flex"
+  >
+    <div
+      class="preloader-circle-10 preloader-circle-11 preloader-bounce-bounceEffect-16"
+    />
+    <div
+      class="preloader-circle-10 preloader-circle-11 preloader-bounce-bounceEffect-16 preloader-bounce-secondDelay-13"
+    />
+    <div
+      class="preloader-circle-10 preloader-circle-11 preloader-bounce-bounceEffect-16 preloader-bounce-thirdDelay-14"
+    />
+    <div
+      class="preloader-circle-10 preloader-circle-11 preloader-bounce-bounceEffect-16 preloader-bounce-fourthDelay-15"
+    />
+  </div>
+</div>
+`;

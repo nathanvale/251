@@ -62,6 +62,7 @@ export type TextToneVariants =
   | "neutral"
   | "neutralLight"
   | "neutralDark";
+export type GraphicToneVariants = "secondary" | "white";
 export type TypographyWeightVariants = "regular" | "medium" | "bold";
 export type BaseTextVariants = "body" | "body-small";
 export type TextVariants =
