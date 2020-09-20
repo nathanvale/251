@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.37.0](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.36.7...playroom@0.37.0) (2020-09-20)
+
+
+### Features
+
+* **Preloader:** Added new component Preloader ([e99ce85](https://bitbucket.orgn.io/od/origin-ui/commits/e99ce852479cd6c3e3bc8276cf3b241dff7ebd6a))
+
+
+
+
+
 ## [0.36.7](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.36.6...playroom@0.36.7) (2020-09-18)
 
 **Note:** Version bump only for package playroom
