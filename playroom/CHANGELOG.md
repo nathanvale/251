@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.1](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.37.0...playroom@0.37.1) (2020-09-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @origin-digital/formatters to v8 ([69a4a1f](https://bitbucket.orgn.io/od/origin-ui/commits/69a4a1f7a123e5c3f0b741c4ab82b7d48b67ab50))
+
+
+
+
+
 # [0.37.0](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.36.7...playroom@0.37.0) (2020-09-20)
 
 
