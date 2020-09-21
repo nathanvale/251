@@ -3732,15 +3732,14 @@
     semver "^6.3.0"
     webpack "^4.38.0"
 
-"@origin-digital/formatters@^7.0.2":
-  version "7.0.2"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/formatters/-/@origin-digital/formatters-7.0.2.tgz#4b63c17edda07a4d72724e760fd00d71200dd331"
-  integrity sha1-S2PBft2gek1yck52D9ANcSAN0zE=
+"@origin-digital/formatters@^8.0.0":
+  version "8.0.0"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/formatters/-/@origin-digital/formatters-8.0.0.tgz#cdd95a5f1619f1c599bb994552cfffe5cbf5ddc3"
+  integrity sha1-zdlaXxYZ8cWZu5lFUs//5cv13cM=
   dependencies:
     "@babel/runtime-corejs2" "^7.0.0"
     "@origin-digital/platform-enums" "^0.4.2"
-    "@origin-digital/style-guide" "^22.3.3"
-    "@origin-digital/validation" "^6.3.0"
+    "@origin-digital/validation" "^7.0.0"
 
 "@origin-digital/helper@^3.0.1":
   version "3.0.1"
@@ -3997,10 +3996,10 @@
     "@babel/runtime-corejs2" "^7.0.0"
     "@origin-digital/style-guide" "^22.3.3"
 
-"@origin-digital/validation@^6.3.0":
-  version "6.3.0"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/validation/-/@origin-digital/validation-6.3.0.tgz#bd144e88827baf6512795e3e8e358d1e0abd2978"
-  integrity sha1-vRROiIJ7r2USeV4+jjWNHgq9KXg=
+"@origin-digital/validation@^7.0.0":
+  version "7.0.0"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/validation/-/@origin-digital/validation-7.0.0.tgz#ea8d5816fe294a40b94976a49783762e41389759"
+  integrity sha1-6o1YFv4pSkC5SXakl4N2LkE4l1k=
   dependencies:
     "@babel/runtime-corejs2" "^7.0.0"
     date-fns "^2.0.0-alpha.25"
