@@ -3831,6 +3831,11 @@
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/ods-types/-/@origin-digital/ods-types-0.34.1.tgz#7589b6d6e2866bd919e906ca45d834adcb6d3ab3"
   integrity sha1-dYm21uKGa9kZ6QbKRdg0rcttOrM=
 
+"@origin-digital/ods-types@^0.36.1":
+  version "0.36.1"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/ods-types/-/@origin-digital/ods-types-0.36.1.tgz#f5841b378b45dab7cddd1555896cdf33d26e44c2"
+  integrity sha1-9YQbN4tF2rfN3RVViWzfM9JuRMI=
+
 "@origin-digital/ods-typography@^0.3.11":
   version "0.3.15"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/ods-typography/-/@origin-digital/ods-typography-0.3.15.tgz#bb6f2e8b7430ef1d89275fdbf269e79470c9dc57"
