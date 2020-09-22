@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.8](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-pickers@0.3.7...@origin-digital/ods-pickers@0.3.8) (2020-09-22)
+
+
+### Bug Fixes
+
+* broken yarn.lock ([bbc626b](https://bitbucket.orgn.io/od/origin-ui/commits/bbc626bab638da4d19e415ecdf35104ee5ca8d4c))
+
+
+
+
+
 ## [0.3.7](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-pickers@0.3.6...@origin-digital/ods-pickers@0.3.7) (2020-09-20)
 
 **Note:** Version bump only for package @origin-digital/ods-pickers
