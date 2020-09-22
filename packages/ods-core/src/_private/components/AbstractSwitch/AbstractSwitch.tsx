@@ -18,8 +18,8 @@ const getHelperId = (baseId: string) => `${baseId}-helper-text`;
  * This allows our Switch components to be sensitive to a FormControl context surrounding them.
  * If the FormControl (ControlGroup) is in error state, all Checkboxes or Radios inside it show up in error state.
  * @param props
- * @param states
  * @param muiFormControl
+ * @param states
  */
 function formControlState({
   props,
