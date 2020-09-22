@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.69.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.69.0...@origin-digital/ods-core@0.69.1) (2020-09-22)
+
+
+### Bug Fixes
+
+* **odstypes bump:** to get ODS-TYPES to bump ([8c76194](https://bitbucket.orgn.io/od/origin-ui/commits/8c76194d99e8c1ed02b0bf3e46620b1c6b7126c4))
+
+
+
+
+
 # [0.69.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.68.3...@origin-digital/ods-core@0.69.0) (2020-09-20)
 
 

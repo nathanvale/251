@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.7](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-themes@0.20.6...@origin-digital/ods-themes@0.20.7) (2020-09-22)
+
+**Note:** Version bump only for package @origin-digital/ods-themes
+
+
+
+
+
 ## [0.20.6](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-themes@0.20.5...@origin-digital/ods-themes@0.20.6) (2020-09-20)
 
 **Note:** Version bump only for package @origin-digital/ods-themes
