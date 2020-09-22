@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.70.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.69.1...@origin-digital/ods-core@0.70.0) (2020-09-22)
+
+
+### Features
+
+* **tabs:** add e2e ([479c744](https://bitbucket.orgn.io/od/origin-ui/commits/479c7448a50b0ec925a7d7e598ad4b65abe8f1f3))
+
+
+
+
+
 ## [0.69.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.69.0...@origin-digital/ods-core@0.69.1) (2020-09-22)
 
 
