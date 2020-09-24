@@ -3774,14 +3774,12 @@
   dependencies:
     "@origin-digital/helper" "^3.0.1"
 
-"@origin-digital/messages@^1.3.9":
-  version "1.3.9"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/messages/-/@origin-digital/messages-1.3.9.tgz#3e254b2ebfd1a4f6547350ad02e8eff363eb6299"
-  integrity sha1-PiVLLr/RpPZUc1CtAujv82PrYpk=
+"@origin-digital/messages@^2.0.0":
+  version "2.0.0"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@origin-digital/messages/-/@origin-digital/messages-2.0.0.tgz#40469a744d63a00f39e517d0d0670ee6747fb837"
+  integrity sha1-QEaadE1joA855RfQ0GcO5nR/uDc=
   dependencies:
     "@babel/runtime-corejs2" "^7.0.0"
-    "@origin-digital/layout" "^5.2.0"
-    "@origin-digital/style-guide" "^22.3.3"
 
 "@origin-digital/origin-scripts@^1.13.3":
   version "1.13.3"
