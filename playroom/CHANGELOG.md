@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.5](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.37.4...playroom@0.37.5) (2020-09-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @origin-digital/messages to v2 ([f9cfe1f](https://bitbucket.orgn.io/od/origin-ui/commits/f9cfe1f7f6207735a5d471dee5c6ccc90a7b54a7))
+
+
+
+
+
 ## [0.37.4](https://bitbucket.orgn.io/od/origin-ui/compare/playroom@0.37.3...playroom@0.37.4) (2020-09-22)
 
 **Note:** Version bump only for package playroom
