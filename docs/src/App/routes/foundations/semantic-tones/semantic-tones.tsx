@@ -1,7 +1,6 @@
 import React from "react";
-import { Box, BoxProps, Text, TextLink } from "@origin-digital/ods-core";
+import { Box, BoxProps, Stack, Text, TextLink } from "@origin-digital/ods-core";
 
-import { TextStack } from "../../../TextStack/TextStack";
 import { DocsPage } from "../../../../types";
 import { Page, PageSection } from "../../../Page/Page";
 import { AnchorLink } from "../../../AnchorLink/AnchorLink";
@@ -94,7 +93,7 @@ const SemanticTones = () => {
       hideAnchorLinks
       title="Semantic tones"
       description={
-        <TextStack>
+        <Stack>
           <Text>
             The usage of colour in ODS is designed to have a strong correlation
             with the tone of voice being used. ODS makes available a spectrum of
@@ -115,7 +114,7 @@ const SemanticTones = () => {
               );
             })}
           </Box>
-        </TextStack>
+        </Stack>
       }
       sections={sections}
     />

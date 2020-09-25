@@ -13,7 +13,6 @@ import { IconWarning } from "@origin-digital/ods-icons";
 import styled from "styled-components";
 import { HashLink as Link } from "react-router-hash-link";
 import { slugify } from "@origin-digital/ods-helpers";
-import { TextStack } from "../TextStack/TextStack";
 import { propsTitle } from "../ComponentDoc/ComponentDoc";
 
 export interface PageSection {
@@ -111,7 +110,7 @@ export const Page = ({
   hideAnchorLinks,
 }: PageProps) => {
   return (
-    <TextStack space={["medium", "large"]}>
+    <Stack>
       <Heading variant="h3">{title}</Heading>
       {typeof description === "string" ? (
         <Text variant="body">{description}</Text>
@@ -137,7 +136,7 @@ export const Page = ({
         const slug = slugify(title);
         return (
           <div id={slug} key={index}>
-            <TextStack>
+            <Stack>
               {title && title !== propsTitle ? (
                 <LinkableHeading slug={slug}>
                   {isLab ? (
@@ -156,10 +155,10 @@ export const Page = ({
                 description
               ) : null}
               {children}
-            </TextStack>
+            </Stack>
           </div>
         );
       })}
-    </TextStack>
+    </Stack>
   );
 };

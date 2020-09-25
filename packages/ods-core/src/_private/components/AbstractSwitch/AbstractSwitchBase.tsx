@@ -31,6 +31,7 @@ export function AbstractSwitchBase<T extends SwitchBaseMuiProps>(
     "aria-describedby": describedBy,
     Component,
     "data-id": dataId,
+    error, // This should not be passed down.
     id,
     muiProps,
     ...others

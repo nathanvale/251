@@ -101,7 +101,7 @@ export const SubNavigation = ({ onSelect }: SubNavigationProps) => {
 
       <SubNavigationGroup
         title="Guides"
-        items={map(guides, (guide, path) => ({
+        items={map(guides.links, (guide, path) => ({
           name: guide.title,
           path: `#${path}`,
           external: false,

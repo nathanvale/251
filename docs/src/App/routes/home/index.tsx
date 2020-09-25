@@ -1,9 +1,8 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React from "react";
-import { Text, TextLink } from "@origin-digital/ods-core";
+import { Stack, Text, TextLink } from "@origin-digital/ods-core";
 import { DocsPage } from "../../../types";
 import { Page, PageSection } from "../../Page/Page";
-import { TextStack } from "../../TextStack/TextStack";
 import { useConfig } from "../../ConfigContext";
 
 const odsSupportLink = (
@@ -60,7 +59,7 @@ const Home = () => {
     {
       title: "Getting started",
       children: (
-        <TextStack>
+        <Stack>
           <Text>
             First, we recommend reading the{" "}
             <TextLink href="/guides/development-workflow">
@@ -89,7 +88,7 @@ const Home = () => {
             you to try out the components without requiring a development
             environment.
           </Text>
-        </TextStack>
+        </Stack>
       ),
     },
     {
@@ -132,7 +131,7 @@ const Home = () => {
     <Page
       title="Origin Design System"
       description={
-        <TextStack>
+        <Stack>
           <Text>
             Welcome to ODS, the themeable design system for{" "}
             <TextLink href="https://www.originenergy.com.au/about.html">
@@ -150,7 +149,7 @@ const Home = () => {
             <TextLink href="https://styled-system.com/">Styled System</TextLink>
             .
           </Text>
-        </TextStack>
+        </Stack>
       }
       sections={sections}
     />

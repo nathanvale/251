@@ -66,17 +66,16 @@ export interface AccordionBaseProps
   children: React.ReactNode;
   summary: React.ReactNode;
   id: string;
-  size?: "small" | "medium";
   defaultExpanded?: boolean;
+  onChange?: () => void;
+  size?: "small" | "medium";
 }
 
 export interface AccordionControlledProps {
-  onChange: () => void;
   expanded: boolean;
 }
 
 export interface AccordionUncontrolledProps {
-  onChange?: undefined;
   expanded?: undefined;
 }
 

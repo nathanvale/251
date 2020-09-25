@@ -2,7 +2,6 @@ import React from "react";
 import { Text, Stack, Columns, Column, Box } from "@origin-digital/ods-core";
 import { SpaceVariants } from "@origin-digital/ods-types";
 import { coreLayoutTheme } from "@origin-digital/ods-themes";
-import { TextStack } from "../../../TextStack/TextStack";
 import { DocsPage } from "../../../../types";
 import { PageSection, Page } from "../../../Page/Page";
 import Code from "../../../Code/Code";
@@ -21,7 +20,7 @@ const Layout = () => {
     {
       title: "Spacing",
       children: (
-        <TextStack>
+        <Stack>
           <Text>
             ODS provides a standard white space scale that is available across
             the entire component suite. As much as possible, ODS tries to make
@@ -53,13 +52,13 @@ const Layout = () => {
                 </Columns>
               ))}
           </Stack>
-        </TextStack>
+        </Stack>
       ),
     },
     {
       title: "Box",
       children: (
-        <TextStack>
+        <Stack>
           <Text>
             Box is the most low-level layout component provided by ODS. Its job
             is to render an individual element on the screen.
@@ -111,13 +110,13 @@ const Layout = () => {
           <Code codeString={snippets?.Box[2] || missingSnippet}>
             {docs.Box[2].Code()}
           </Code>
-        </TextStack>
+        </Stack>
       ),
     },
     {
       title: "Card",
       children: (
-        <TextStack>
+        <Stack>
           <Text>
             Rather than nesting content in arbitrary Box elements, you may
             prefer to use standard Card elements instead.
@@ -125,13 +124,13 @@ const Layout = () => {
           <Code codeString={snippets?.Card[0] || missingSnippet}>
             {docs.Card[0].Code()}
           </Code>
-        </TextStack>
+        </Stack>
       ),
     },
     {
       title: "Stack",
       children: (
-        <TextStack>
+        <Stack>
           <Text>
             The most common white space on screen is between elements stacked
             vertically. For this use case, ODS provides a Stack component that
@@ -180,13 +179,13 @@ const Layout = () => {
           <Code codeString={snippets?.Stack[5] || missingSnippet}>
             {docs.Stack[5].Code()}
           </Code>
-        </TextStack>
+        </Stack>
       ),
     },
     {
       title: "Columns",
       children: (
-        <TextStack>
+        <Stack>
           <Text>
             If you need to lay out content horizontally, ODS provides the{" "}
             Columns and Column components:
@@ -235,13 +234,13 @@ const Layout = () => {
           <Code codeString={snippets?.Columns[4] || missingSnippet}>
             {docs.Columns[4].Code()}
           </Code>
-        </TextStack>
+        </Stack>
       ),
     },
     {
       title: "Section",
       children: (
-        <TextStack>
+        <Stack>
           <Text>
             By default, all layout components will render full width. However,
             most applications will want to limit the width of content on the
@@ -259,13 +258,13 @@ const Layout = () => {
           <Code codeString={snippets?.Section[1] || missingSnippet}>
             {docs.Section[1].Code()}
           </Code>
-        </TextStack>
+        </Stack>
       ),
     },
     {
       title: "CardStackSection",
       children: (
-        <TextStack>
+        <Stack>
           <Text>
             CardStackSection is a versatile vertical card stacking component
             that managers responsive max-widths, distributed space and paddingY.
@@ -274,7 +273,7 @@ const Layout = () => {
           <Code codeString={snippets?.CardStackSection[0] || missingSnippet}>
             {docs.CardStackSection[0].Code()}
           </Code>
-        </TextStack>
+        </Stack>
       ),
     },
   ];
@@ -282,7 +281,7 @@ const Layout = () => {
     <Page
       title="Layout"
       description={
-        <TextStack>
+        <Stack>
           <Text>
             The guiding principle for layout in ODS is that components should
             not provide surrounding white space. Instead, spacing between
@@ -297,7 +296,7 @@ const Layout = () => {
             grasp of these components is an essential part of working
             effectively with ODS.
           </Text>
-        </TextStack>
+        </Stack>
       }
       sections={sections}
       hideAnchorLinks

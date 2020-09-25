@@ -1,6 +1,5 @@
 import React from "react";
-import { Box, BoxProps, Text, TextLink } from "@origin-digital/ods-core";
-import { TextStack } from "../../../TextStack/TextStack";
+import { Box, BoxProps, Stack, Text, TextLink } from "@origin-digital/ods-core";
 import { DocsPage } from "../../../../types";
 import { Page, PageSection } from "../../../Page/Page";
 import { AnchorLink } from "../../../AnchorLink/AnchorLink";
@@ -69,7 +68,7 @@ const BrandColours = () => {
       hideAnchorLinks
       title="Brand colours"
       description={
-        <TextStack>
+        <Stack>
           <Text>
             Primary and secondary brand colours are derived from the theme.
           </Text>
@@ -88,7 +87,7 @@ const BrandColours = () => {
               );
             })}
           </Box>
-        </TextStack>
+        </Stack>
       }
       sections={sections}
     />

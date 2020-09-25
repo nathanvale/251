@@ -6,15 +6,15 @@ import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import {
   Box,
-  Text,
   Heading,
-  TextFieldBase,
-  Strong,
   InputAdornment,
+  Stack,
+  Strong,
+  Text,
+  TextFieldBase,
   TextLink,
 } from "@origin-digital/ods-core";
 import { icons } from "@origin-digital/ods-icons";
-import { TextStack } from "../../../TextStack/TextStack";
 import { Overlay } from "../../../Overlay/Overlay";
 import { DocsPage } from "../../../../types";
 
@@ -118,7 +118,7 @@ const Icons = () => {
   }
 
   return (
-    <TextStack space={["medium", "large"]}>
+    <Stack>
       <Heading variant="h3">Icon library</Heading>
       <Text>
         ODS features a library of ready to use energy industry related icons. If
@@ -195,7 +195,7 @@ const Icons = () => {
           </Box>
         ))}
       </Box>
-    </TextStack>
+    </Stack>
   );
 };
 

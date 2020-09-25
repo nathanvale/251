@@ -62,6 +62,7 @@ export interface TableCellProps
 export const TableCell = ({
   children,
   className,
+  alignX: alignXProp,
   alignY,
   muiProps,
   ...props
@@ -79,7 +80,7 @@ export const TableCell = ({
 
   return (
     <MuiTableCell
-      align={props.alignX || alignX}
+      align={alignXProp || alignX}
       className={clsx(className, withPadding, withVerticalAlign, withFontSize, {
         [withBorder]: bordered,
         [withoutFirstLastPadding]: !bordered && !striped && !hover,
