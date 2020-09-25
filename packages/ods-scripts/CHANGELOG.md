@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.64.4](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.64.3...@origin-digital/ods-scripts@0.64.4) (2020-09-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency prettier to v2 ([ce0c7e4](https://bitbucket.orgn.io/od/origin-ui/commits/ce0c7e4fb3eb0c84b5ed45071e2f9c30782247b6))
+
+
+
+
+
 ## [0.64.3](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.64.2...@origin-digital/ods-scripts@0.64.3) (2020-09-22)
 
 **Note:** Version bump only for package @origin-digital/ods-scripts

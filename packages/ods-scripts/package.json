@@ -2,7 +2,7 @@
   "private": true,
   "name": "@origin-digital/ods-scripts",
   "description": "Build scripts for the monorepo",
-  "version": "0.64.3",
+  "version": "0.64.4",
   "scripts": {
     "create:mui-icons": "ts-node ./src/create-mui-icons.ts"
   },
