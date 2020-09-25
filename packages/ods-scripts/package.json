@@ -19,7 +19,7 @@
     "fs-extra": "^9.0.0",
     "glob": "^7.1.2",
     "lodash": "^4.17.15",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.0",
     "react-element-to-jsx-string": "^14.3.1",
     "tsconfig-paths": "^3.9.0",
     "yargs": "^16.0.2"

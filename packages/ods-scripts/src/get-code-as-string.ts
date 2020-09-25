@@ -1,14 +1,14 @@
 import reactElementToJSXString from "react-element-to-jsx-string";
 import memoize from "lodash/memoize";
 import prettier from "prettier/standalone";
-import babylonParser from "prettier/parser-babylon";
+import babelParser from "prettier/parser-babel";
 
 const formatSnippet = memoize(
   (snippet) =>
     prettier
       .format(snippet, {
         parser: "babel",
-        plugins: [babylonParser],
+        plugins: [babelParser],
         semi: false,
       })
       .replace(/^;/, "") // Remove leading semicolons from JSX
