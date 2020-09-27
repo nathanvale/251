@@ -14,7 +14,9 @@ import e2e from "./routes/e2e";
 const CustomLink = React.forwardRef<any, LinkComponentProps>((props, ref) => {
   const { href, children, ...restProps } = props;
   return href[0] === "/" ? (
-    <ReactRouterLink to={href} ref={ref} {...restProps} />
+    <ReactRouterLink to={href} ref={ref} {...restProps}>
+      {children}
+    </ReactRouterLink>
   ) : (
     <a href={href} ref={ref} {...restProps}>
       {children}
@@ -32,7 +34,7 @@ export const App = () => (
         <Navigation>
           <Switch>
             {map(
-              { ...home, ...guides, ...foundations, ...components },
+              { ...home, ...guides.routes, ...foundations, ...components },
               (routeProps, path) => (
                 <Route key={path} {...routeProps} path={path} />
               )

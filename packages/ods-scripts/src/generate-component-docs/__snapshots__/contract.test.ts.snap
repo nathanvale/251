@@ -774,6 +774,37 @@ exports[`DataTable 1`] = `
 }
 `;
 
+exports[`DatePicker 1`] = `
+{
+  children?: ReactNode
+  className?: string
+  classes?: Record<string, string>
+  data-id?: string
+  defaultValue?: Date | null | undefined
+  disableFuture?: boolean
+  disablePast?: boolean
+  disabled?: boolean
+  error?: boolean
+  format?: string
+  helperText?: string
+  id: string
+  label?: string
+  maxDate?: Date | null | undefined
+  minDate?: Date | null | undefined
+  muiProps?: Partial<KeyboardDatePickerProps> | Partial<DatePickerProps> | undefined
+  onChange?: (date: MaterialUiPickersDate) => void
+  shouldDisableDate?: (date: MaterialUiPickersDate) => boolean
+  value?: Date | null | undefined
+}
+`;
+
+exports[`DatePickerProvider 1`] = `
+{
+  children: ReactNode
+  utils?: IUtils<Date>
+}
+`;
+
 exports[`Dialog 1`] = `
 {
   children?: ReactNode
@@ -1040,6 +1071,34 @@ exports[`InputAdornment 1`] = `
   position: 
     | "end"
     | "start"
+}
+`;
+
+exports[`KeyboardDatePicker 1`] = `
+{
+  children?: ReactNode
+  className?: string
+  classes?: Record<string, string>
+  data-id?: string
+  defaultValue?: Date | null | undefined
+  disableFuture?: boolean
+  disablePast?: boolean
+  disabled?: boolean
+  error?: boolean
+  format?: string
+  helperText?: string
+  id: string
+  invalidDateMessage?: ReactNode
+  label?: string
+  maxDate?: Date | null | undefined
+  maxDateMessage?: ReactNode
+  minDate?: Date | null | undefined
+  minDateMessage?: ReactNode
+  muiProps?: Partial<KeyboardDatePickerProps> | Partial<DatePickerProps> | undefined
+  onChange?: (date: MaterialUiPickersDate) => void
+  onError?: (error: ReactNode, value: MaterialUiPickersDate) => void
+  shouldDisableDate?: (date: MaterialUiPickersDate) => boolean
+  value?: Date | null | undefined
 }
 `;
 

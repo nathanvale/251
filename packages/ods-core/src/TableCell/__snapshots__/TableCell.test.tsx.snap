@@ -78,7 +78,6 @@ exports[`It adds horizontal align 1`] = `
           data-id="table-row"
         >
           <td
-            alignx="right"
             class="MuiTableCell-root MuiTableCell-body TableCell-withPadding-22 TableCell-withPadding-27 TableCell-withVerticalAlign-21 TableCell-withVerticalAlign-26 TableCell-withFontSize-24 TableCell-withFontSize-28 TableCell-withoutFirstLastPadding-23 MuiTableCell-alignRight"
             data-id="table-cell"
           >

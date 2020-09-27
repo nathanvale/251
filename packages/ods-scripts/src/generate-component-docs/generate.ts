@@ -10,8 +10,27 @@ import {
   NormalisedPropType,
 } from "@origin-digital/ods-types";
 
-const aliasWhitelist = ["ResponsiveProp"];
+const aliasWhitelist = ["ResponsiveProp", "Date"];
 const noNormalisePropNames = ["muiProps", "domProps"];
+
+const getWhiteListRegExp = (awl: string) => {
+  const fc = awl.charAt(0);
+  const lc = awl.charAt(awl.length - 1);
+  const h = awl.substring(0, awl.length - 1);
+  const t = awl.substring(1);
+  return new RegExp(
+    /* eslint-disable no-useless-escape */
+    `^${awl}$|\\\s+${h}(${lc}\\\s+|${lc}$)|(\\\s+${fc}|^${fc})${t}\\\s+`
+  );
+};
+const isAliasWhitelist = (typeAlias: string) => {
+  return (
+    aliasWhitelist.includes(typeAlias) ||
+    aliasWhitelist.filter((awl) => getWhiteListRegExp(awl).test(typeAlias))
+      .length > 0
+  );
+};
+
 const propBlacklist = ["key"];
 
 const tsconfigPath = path.join(__dirname, "../../../../tsconfig.json");
@@ -122,7 +141,7 @@ export default () => {
                 propName,
                 required: !isOptional,
                 type:
-                  aliasWhitelist.includes(typeAlias) ||
+                  isAliasWhitelist(typeAlias) ||
                   noNormalisePropNames.includes(propName)
                     ? typeAlias
                     : normaliseType(propType, propsObj),
