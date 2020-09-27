@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.70.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.70.0...@origin-digital/ods-core@0.70.1) (2020-09-27)
+
+
+### Bug Fixes
+
+* **migration guide:** add for common components ([b2f319e](https://bitbucket.orgn.io/od/origin-ui/commits/b2f319ea9790c64c9069584f5709aa91c8f8f336))
+
+
+
+
+
 # [0.70.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@0.69.1...@origin-digital/ods-core@0.70.0) (2020-09-22)
 
 
