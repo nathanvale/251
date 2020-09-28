@@ -2458,10 +2458,10 @@
   dependencies:
     find-up "^2.1.0"
 
-"@craco/craco@5.6.4":
-  version "5.6.4"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@craco/craco/-/craco-5.6.4.tgz#de7a707c727864f39e6afc192fb6732c3ca45f90"
-  integrity sha1-3npwfHJ4ZPOeavwZL7ZzLDykX5A=
+"@craco/craco@5.7.0":
+  version "5.7.0"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/@craco/craco/-/craco-5.7.0.tgz#ad6a240e0f85ac948f2935581da12d4223d66366"
+  integrity sha1-rWokDg+FrJSPKTVYHaEtQiPWY2Y=
   dependencies:
     cross-spawn "^7.0.0"
     lodash "^4.17.15"
