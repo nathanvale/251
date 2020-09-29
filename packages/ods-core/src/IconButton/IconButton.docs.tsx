@@ -1,4 +1,5 @@
 import { ComponentDocs } from "@origin-digital/ods-types";
+import { docs as buttonDocs } from "../Button/Button.docs";
 import { IconButtonProps } from "./IconButton";
 import { generateIconButton } from "./IconButton.helper";
 
@@ -12,6 +13,8 @@ export const docs: ComponentDocs<IconButtonProps> = {
       "The color of the icon. If inside a text component you can set to inherit and the tone from the text will be used instead",
     noIconPadding:
       "Removes the visible padding around the icon but leaves the touchable area",
+    href: buttonDocs.propDescriptions!.href,
+    target: buttonDocs.propDescriptions!.target,
   },
   migrationGuide: false,
   examples: {

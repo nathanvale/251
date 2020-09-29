@@ -1008,6 +1008,7 @@ exports[`IconButton 1`] = `
     | "primary"
   data-id?: string
   disabled?: boolean
+  href?: string
   id?: string
   muiProps?: OverrideProps<IconButtonTypeMap<{}, "button">, "button"> | undefined
   noIconPadding?: boolean
@@ -1018,6 +1019,7 @@ exports[`IconButton 1`] = `
   onKeyDown?: (event: KeyboardEvent<HTMLButtonElement>) => void
   onKeyPress?: (event: KeyboardEvent<HTMLButtonElement>) => void
   onKeyUp?: (event: KeyboardEvent<HTMLButtonElement>) => void
+  target?: string
 }
 `;
 
