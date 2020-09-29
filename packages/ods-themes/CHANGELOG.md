@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.8](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-themes@0.20.7...@origin-digital/ods-themes@0.20.8) (2020-09-29)
+
+
+### Bug Fixes
+
+* **originretail theme:** remove from ods-themes ([76f81dc](https://bitbucket.orgn.io/od/origin-ui/commits/76f81dc9ef2ce62ad028e32a071fdd3a013fa05e))
+
+
+
+
+
 ## [0.20.7](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-themes@0.20.6...@origin-digital/ods-themes@0.20.7) (2020-09-22)
 
 **Note:** Version bump only for package @origin-digital/ods-themes
