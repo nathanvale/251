@@ -12,10 +12,13 @@ import {
   SvgIconToneVariants,
 } from "@origin-digital/ods-types";
 import { SvgIconContext, SvgIconProps } from "@origin-digital/ods-icons";
-import { ButtonActionProps } from "../Button";
+import { ButtonProps, ButtonActionProps } from "../Button";
 import { TextContext, UseTextProps } from "../Text";
 
-export interface IconButtonProps extends ComponentBaseProps, ButtonActionProps {
+export interface IconButtonProps
+  extends ComponentBaseProps,
+    ButtonActionProps,
+    Pick<ButtonProps, "href" | "target"> {
   children: React.ReactElement<SvgIconProps>;
   "aria-label"?: string;
   color?: IconButtonColor;
