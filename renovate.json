@@ -1,7 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", ":preserveSemverRanges"],
-  "bbUseDefaultReviewers": true,
+  "extends": ["config:base", ":preserveSemverRanges", ":prHourlyLimit4"],
   "ignoreDeps": [
     "react",
     "react-dom",
@@ -11,10 +10,37 @@
     "@types/styled-components",
     "@types/react",
     "@types/react-dom",
-    "core-js",
     "lerna"
   ],
   "packageRules": [
+    {
+      "packagePatterns": ["^@origin-digital"],
+      "minor": {
+        "groupName": "OD non-major dependencies",
+        "groupSlug": "od-minor-patch-dependencies"
+      }
+    },
+    {
+      "packagePatterns": ["^@origin-digital"],
+      "excludePackagePatterns": ["^@origin-digital/babel-preset"],
+      "major": {
+        "groupName": "OD major dependencies",
+        "groupSlug": "od-major-dependencies"
+      }
+    },
+    {
+      "packagePatterns": ["*"],
+      "excludePackagePatterns": ["^@origin-digital"],
+      "minor": {
+        "groupName": "3rd-party non-major dependencies",
+        "groupSlug": "third-party-minor-patch"
+      }
+    },
+    {
+      "packageName": "@origin-digital/babel-preset",
+      "updateTypes": ["major"],
+      "enabled": false
+    },
     {
       "packageName": "core-js",
       "updateTypes": ["major"],
@@ -32,11 +58,11 @@
     },
     {
       "packageName": "typescript",
-      "updateTypes": ["major", "minor"],
+      "updateTypes": ["major"],
       "enabled": false
     },
     {
-      "packageName": "csstype",
+      "packageName": "csstypes",
       "updateTypes": ["major"],
       "enabled": false
     }
