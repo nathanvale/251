@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.64.7](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.64.6...@origin-digital/ods-scripts@0.64.7) (2020-09-29)
+
+
+### Bug Fixes
+
+* **iconbutton:** Add href and target props ([5dbb491](https://bitbucket.orgn.io/od/origin-ui/commits/5dbb491554a396497fb05d4f5e9bcb06bfa79022))
+
+
+
+
+
 ## [0.64.6](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.64.5...@origin-digital/ods-scripts@0.64.6) (2020-09-29)
 
 **Note:** Version bump only for package @origin-digital/ods-scripts
