@@ -3,7 +3,7 @@ import {
   ResponsiveSpace,
   CollapsibleAlignmentProps,
   SpaceVariants,
-  OptionalTrackableProps,
+  ComponentBaseProps,
 } from "@origin-digital/ods-types";
 import flattenChildren from "react-keyed-flatten-children";
 import {
@@ -17,7 +17,7 @@ import { Box } from "../Box";
 
 export interface InlineProps
   extends CollapsibleAlignmentProps,
-    OptionalTrackableProps {
+    ComponentBaseProps {
   space?: ResponsiveSpace;
   children: React.ReactNode;
 }
@@ -87,6 +87,7 @@ export const Inline = ({
   alignX,
   alignY,
   collapseBelow,
+  ...rest
 }: InlineProps) => {
   const {
     collapsibleAlignmentProps,
@@ -98,7 +99,11 @@ export const Inline = ({
   });
 
   return (
-    <OuterContainer space={mapToStyledSystem(space) || "none"} data-id={dataId}>
+    <OuterContainer
+      space={mapToStyledSystem(space) || "none"}
+      data-id={dataId}
+      {...rest}
+    >
       <InnerContainer
         space={mapToStyledSystem(space) || "none"}
         flexWrap="wrap"

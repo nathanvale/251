@@ -1,21 +1,20 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import {
   BreakpointVariants,
   SpaceVariants,
   CardPaddingVariants,
   CardBackgroundVariant,
-  RequiredWithoutChildren,
+  ComponentBaseProps,
+  RequiredNoBaseProps,
 } from "@origin-digital/ods-types";
 import { Box } from "../Box";
 
-export interface CardProps {
+export interface CardProps extends ComponentBaseProps {
   padding?: CardPaddingVariants;
-  "data-id"?: string;
-  children?: ReactNode;
   backgroundColor?: CardBackgroundVariant;
 }
 
-export const defaultCardProps: RequiredWithoutChildren<CardProps> = {
+export const defaultCardProps: RequiredNoBaseProps<CardProps> = {
   "data-id": "card",
   padding: "small",
   backgroundColor: "white",

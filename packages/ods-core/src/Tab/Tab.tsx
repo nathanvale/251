@@ -6,11 +6,11 @@ import {
   Theme,
   fade,
 } from "@material-ui/core";
-import { ComponentBaseProps } from "@origin-digital/ods-types";
+import { MuiBasedComponentBaseProps } from "@origin-digital/ods-types";
 import { useTracking } from "../TrackingProvider/useTracking";
 import { Box } from "../Box";
 
-export interface TabProps extends ComponentBaseProps {
+export interface TabProps extends MuiBasedComponentBaseProps {
   label: string | React.ReactNode;
   icon?: React.ReactNode;
   value?: string | number;

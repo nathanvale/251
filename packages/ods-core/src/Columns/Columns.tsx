@@ -2,7 +2,7 @@ import React, { ReactElement, createContext } from "react";
 import {
   ResponsiveSpace,
   CollapsibleAlignmentProps,
-  OptionalTrackableProps,
+  ComponentBaseProps,
   SpaceVariants,
 } from "@origin-digital/ods-types";
 import {
@@ -53,7 +53,7 @@ export const ColumnsContext = createContext<ColumnsContextValue>({
 
 export interface ColumnsProps
   extends CollapsibleAlignmentProps,
-    OptionalTrackableProps {
+    Omit<ComponentBaseProps, "children"> {
   space: ResponsiveSpace;
   children:
     | Array<ReactElement<ColumnProps> | null>

@@ -1,9 +1,11 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import styled from "styled-components";
+import clsx from "clsx";
 import {
   TextVariants,
   TextToneVariants,
   TypographyWeightVariants,
+  ComponentBaseProps,
 } from "@origin-digital/ods-types";
 import { BoxProps, Box } from "../Box";
 import { useTruncatedContent } from "../_private/hooks";
@@ -12,14 +14,12 @@ import { TextContextProvider, UseTextProps } from "./TextContextProvider";
 
 import { useTextStylesFromContext } from "./useTextStyles";
 
-export interface TextProps {
-  children?: ReactNode;
+export interface TextProps extends ComponentBaseProps {
   variant?: TextVariants;
   tone?: TextToneVariants;
   weight?: Exclude<TypographyWeightVariants, "bold">;
   align?: BoxProps["textAlign"];
   truncate?: boolean;
-  "data-id"?: string;
   component?: BoxProps["component"];
   inline?: boolean;
 }
@@ -41,9 +41,10 @@ export const TextInner = (props: TextInnerProps) => {
   const {
     align,
     children,
+    className: classNameProp,
     component = defaultProps.component,
-    "data-id": dataId,
     truncate = defaultProps.truncate,
+    ...rest
   } = props;
 
   const { className } = useTextStylesFromContext();
@@ -55,10 +56,10 @@ export const TextInner = (props: TextInnerProps) => {
 
   return (
     <Container
-      data-id={dataId}
-      className={className}
+      className={clsx(className, classNameProp)}
       component={component}
       textAlign={align}
+      {...rest}
     >
       {content}
     </Container>

@@ -3,10 +3,10 @@ import {
   Breadcrumbs as MUIBreadCrumbs,
   BreadcrumbsProps as MUIBreadcrumbsProps,
 } from "@material-ui/core";
-import { OptionalTrackableProps } from "@origin-digital/ods-types";
+import { ComponentBaseProps } from "@origin-digital/ods-types";
 import { BreadcrumbProps } from "../Breadcrumb/Breadcrumb";
 
-export interface BreadCrumbsProps extends OptionalTrackableProps {
+export interface BreadCrumbsProps extends ComponentBaseProps {
   children: ReactElement<BreadcrumbProps>[] | ReactElement<BreadcrumbProps>;
   muiProps?: MUIBreadcrumbsProps;
   "aria-label"?: string;
@@ -17,13 +17,15 @@ export const Breadcrumbs = ({
   "data-id": dataId,
   "aria-label": ariaLabel,
   muiProps,
+  ...rest
 }: BreadCrumbsProps) => {
   return (
     <MUIBreadCrumbs
       data-id={dataId}
       aria-label={ariaLabel}
       separator="/"
-      {...muiProps}
+      {...rest}
+      {...(muiProps || {})}
     >
       {children}
     </MUIBreadCrumbs>

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { KeyboardDatePickerProps, DatePickerProps } from "@material-ui/pickers";
 import { MaterialUiPickersDate } from "@material-ui/pickers/typings/date";
-import { ComponentBaseProps } from "@origin-digital/ods-types";
+import { MuiBasedComponentBaseProps } from "@origin-digital/ods-types";
 import { TextField } from "@origin-digital/ods-core";
 import { makeStyles, TextFieldProps, fade } from "@material-ui/core";
 
@@ -21,7 +21,7 @@ export const propDescriptions = {
   disablePast: "Disable past dates",
 };
 
-export interface DatePickerBaseProps extends ComponentBaseProps {
+export interface DatePickerBaseProps extends MuiBasedComponentBaseProps {
   id: string;
   label?: string;
   defaultValue?: MaterialUiPickersDate;

@@ -3,10 +3,11 @@ import styled, { css } from "styled-components";
 import { style, get, ResponsiveValue } from "styled-system";
 import {
   AlignXType,
-  ResponsiveSpace,
-  ResponsiveProp,
+  ComponentBaseProps,
   SpaceVariants,
-  RequiredWithoutChildren,
+  ResponsiveProp,
+  ResponsiveSpace,
+  RequiredNoBaseProps,
 } from "@origin-digital/ods-types";
 import {
   mapToStyledSystem,
@@ -17,7 +18,7 @@ import { Box, BoxProps } from "../Box";
 
 const validStackComponents = ["div", "ol", "ul"] as const;
 
-export interface StackProps {
+export interface StackProps extends ComponentBaseProps {
   children: ReactNode;
   component?: typeof validStackComponents[number];
   space?: ResponsiveSpace;
@@ -31,14 +32,12 @@ export interface StackChildProps {
   space?: ResponsiveValue<SpaceVariants>;
 }
 
-export const stackDefaultProps: RequiredWithoutChildren<StackProps> = {
+export const stackDefaultProps = {
   component: "div",
   "data-id": "stack",
-  dividers: false,
   alignX: "left",
   space: ["medium", "large"],
-  className: "",
-};
+} as RequiredNoBaseProps<StackProps>;
 
 const spacingTop = style({
   prop: "space",

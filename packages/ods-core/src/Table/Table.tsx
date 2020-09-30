@@ -4,10 +4,10 @@ import MuiTable, { TableProps as MuiTableProps } from "@material-ui/core/Table";
 import MuiTableContainer from "@material-ui/core/TableContainer";
 import { makeStyles } from "@material-ui/core/styles";
 import {
-  OptionalTrackableProps,
   MuiProps,
   AlignXType,
   BaseTextVariants,
+  ComponentBaseProps,
 } from "@origin-digital/ods-types";
 
 const useTableStyles = makeStyles(
@@ -38,13 +38,12 @@ const useTableContainerStyles = makeStyles(
 );
 
 export interface TableProps
-  extends OptionalTrackableProps,
+  extends Omit<ComponentBaseProps, "children">,
     MuiProps<MuiTableProps>,
     Pick<MuiTableProps, "children" | "stickyHeader"> {
   "aria-label"?: string;
   alignX?: AlignXType;
   bordered?: boolean;
-  className?: string;
   hover?: boolean;
   maxHeight?: number | string;
   size?: "small" | "medium";

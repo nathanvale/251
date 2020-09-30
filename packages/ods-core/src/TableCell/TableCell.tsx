@@ -5,10 +5,10 @@ import MuiTableCell, {
 } from "@material-ui/core/TableCell";
 import { makeStyles } from "@material-ui/core/styles";
 import {
-  OptionalTrackableProps,
   MuiProps,
   AlignYType,
   AlignXType,
+  ComponentBaseProps,
 } from "@origin-digital/ods-types";
 import { TableProps, TableContext } from "../Table";
 
@@ -51,12 +51,11 @@ const useTableCellStyles = makeStyles(
 );
 
 export interface TableCellProps
-  extends OptionalTrackableProps,
+  extends ComponentBaseProps,
     MuiProps<MuiTableCellProps>,
     Pick<MuiTableCellProps, "children" | "colSpan" | "rowSpan" | "scope"> {
   alignX?: AlignXType;
   alignY?: AlignYType;
-  className?: string;
 }
 
 export const TableCell = ({

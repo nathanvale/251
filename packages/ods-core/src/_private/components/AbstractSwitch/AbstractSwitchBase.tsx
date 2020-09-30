@@ -1,8 +1,11 @@
 import React from "react";
 import { Theme } from "@material-ui/core";
-import { BaseSwitchBaseProps } from "@origin-digital/ods-types";
+import {
+  AbstractSwitchBaseProps,
+  SwitchBaseMuiProps,
+  BaseSwitchBaseProps,
+} from "@origin-digital/ods-types";
 import { makeStyles } from "@material-ui/core/styles";
-import { AbstractSwitchBaseProps, SwitchBaseMuiProps } from "./abstract-types";
 
 const useSwitchBaseStyles = (props: BaseSwitchBaseProps) => {
   const styleCreator = makeStyles(

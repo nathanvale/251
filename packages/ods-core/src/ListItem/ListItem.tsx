@@ -1,11 +1,11 @@
 import React, { ReactNode } from "react";
 import styled from "styled-components";
-import { OptionalTrackableProps } from "@origin-digital/ods-types";
+import { ComponentBaseProps } from "@origin-digital/ods-types";
 import { Box } from "../Box/Box";
 import { FormHelperText } from "../FormHelperText/FormHelperText";
 import { Stack } from "../Stack/Stack";
 
-export interface ListItemProps extends OptionalTrackableProps {
+export interface ListItemProps extends ComponentBaseProps {
   children: ReactNode;
   icon?: ReactNode;
   helperText?: string | ReactNode;
@@ -19,10 +19,10 @@ export const ListItem = ({
   children,
   icon,
   helperText,
-  "data-id": dataId,
+  ...rest
 }: ListItemProps) => {
   return (
-    <Box display="flex" data-id={dataId}>
+    <Box display="flex" {...rest}>
       <CounterContainer>
         {icon ? (
           icon

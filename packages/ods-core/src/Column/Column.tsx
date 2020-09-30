@@ -1,17 +1,16 @@
-import React, { ReactNode, useContext } from "react";
+import React, { useContext } from "react";
 import styled, { css } from "styled-components";
 import { alignXToFlexAlign } from "@origin-digital/ods-helpers";
 import {
-  OptionalTrackableProps,
   ResponsiveProp,
-  AlignX,
+  AlignXType,
+  ComponentBaseProps,
 } from "@origin-digital/ods-types";
 import { Box } from "../Box";
 import { ColumnsContext, CollapsibleAlignmentChildProps } from "../Columns";
 
-export interface ColumnProps extends OptionalTrackableProps {
-  children?: ReactNode;
-  alignX?: ResponsiveProp<AlignX>;
+export interface ColumnProps extends ComponentBaseProps {
+  alignX?: ResponsiveProp<AlignXType>;
   width?:
     | "content"
     | "1/2"

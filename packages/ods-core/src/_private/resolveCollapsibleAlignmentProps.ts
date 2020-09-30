@@ -1,8 +1,8 @@
 import {
   ResponsiveProp,
-  AlignX,
   ResponsiveRangeProps,
-  AlignY,
+  AlignXType,
+  AlignYType,
 } from "@origin-digital/ods-types";
 import {
   resolveResponsiveRangeProps,
@@ -13,8 +13,8 @@ import {
 
 export interface CollapsibleAlignmentProps {
   collapseBelow?: ResponsiveRangeProps["below"];
-  alignX?: ResponsiveProp<AlignX>;
-  alignY?: ResponsiveProp<AlignY>;
+  alignX?: ResponsiveProp<AlignXType>;
+  alignY?: ResponsiveProp<AlignYType>;
   reverse?: boolean;
 }
 

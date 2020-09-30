@@ -1,18 +1,25 @@
 import React, { ReactNode, useContext } from "react";
+import clsx from "clsx";
 import { useWeightStyles } from "@origin-digital/ods-typography";
+import { ComponentBaseProps } from "@origin-digital/ods-types";
 import { TextContext } from "../Text/TextContextProvider";
 
-export interface StrongProps {
+export interface StrongProps extends ComponentBaseProps {
   children: ReactNode;
-  "data-id"?: string;
 }
 
-export const Strong = ({ children, "data-id": dataId }: StrongProps) => {
+export const Strong = ({
+  children,
+  "data-id": dataId,
+  className,
+  ...rest
+}: StrongProps) => {
   const inText = useContext(TextContext);
   return (
     <strong
       data-id={dataId}
-      className={useWeightStyles(inText ? "medium" : "bold")}
+      className={clsx(useWeightStyles(inText ? "medium" : "bold"), className)}
+      {...rest}
     >
       {children}
     </strong>

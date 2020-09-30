@@ -12,8 +12,8 @@ import {
   ButtonElements,
   ButtonSize,
   ButtonVariant,
-  ComponentBaseProps,
   InputType,
+  MuiBasedComponentBaseProps,
   ResponsiveProp,
 } from "@origin-digital/ods-types";
 import { Box } from "../Box";
@@ -36,7 +36,7 @@ export interface ButtonActionProps {
 }
 
 export interface ButtonProps
-  extends Omit<ComponentBaseProps, "classes">,
+  extends Omit<MuiBasedComponentBaseProps, "classes">,
     ButtonActionProps {
   variant?: ButtonVariant;
   noTextPadding?: boolean;

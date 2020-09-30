@@ -1,9 +1,8 @@
 import React from "react";
 import { CheckboxProps as MuiCheckboxProps } from "@material-ui/core";
-import { BaseSwitchProps } from "@origin-digital/ods-types";
+import { BaseSwitchProps, SwitchMuiProps } from "@origin-digital/ods-types";
 import { CheckboxBase } from "../CheckboxBase";
 import { AbstractSwitch } from "../_private/components/AbstractSwitch/AbstractSwitch";
-import { SwitchMuiProps } from "../_private/components/AbstractSwitch/abstract-types";
 
 export type CheckboxMuiPropsType = SwitchMuiProps<MuiCheckboxProps>;
 

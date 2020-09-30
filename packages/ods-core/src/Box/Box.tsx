@@ -4,6 +4,7 @@ import styled, { StyledComponentClass } from "styled-components";
 import {
   AlignItemsVariants,
   BackgroundColorVariants,
+  ComponentBaseProps,
   DisplayVariants,
   FlexDirectionVariants,
   FlexWrapVariants,
@@ -14,7 +15,6 @@ import {
   TLength,
   TransformVariants,
   TransitionVariants,
-  OptionalTrackableProps,
 } from "@origin-digital/ods-types";
 import * as CSS from "csstype";
 import { mapToStyledSystem } from "@origin-digital/ods-helpers";
@@ -25,7 +25,7 @@ import {
 } from "../_private/components/StyledSystemBox/StyledSystemBox";
 import { renderBackgroundProvider } from "./BackgroundContext";
 
-export interface BoxProps extends OptionalTrackableProps {
+export interface BoxProps extends ComponentBaseProps {
   alignItems?: ResponsiveProp<AlignItemsVariants>;
   alignSelf?: ResponsiveProp<AlignItemsVariants>;
   backgroundColor?: BackgroundColorVariants;
@@ -86,12 +86,9 @@ export interface BoxProps extends OptionalTrackableProps {
     | "style"
     | "children"
   >;
-  children?: React.ReactNode;
   style?: CSSProperties;
   onClick?: AllHTMLAttributes<HTMLElement>["onClick"];
   tabIndex?: number;
-  id?: string;
-  className?: string;
 }
 
 export const StyledCodeReset = styled(StyledSystemBox.withComponent("code"))<

@@ -1,14 +1,23 @@
 import React, { ReactNode } from "react";
 import { resolveResponsiveRangeProps } from "@origin-digital/ods-helpers";
-import { ResponsiveRangeProps } from "@origin-digital/ods-types";
+import {
+  ComponentBaseProps,
+  ResponsiveRangeProps,
+} from "@origin-digital/ods-types";
 import { Box } from "../Box";
 
-export interface HiddenProps extends ResponsiveRangeProps {
+export interface HiddenProps extends ResponsiveRangeProps, ComponentBaseProps {
   children: ReactNode;
   inline?: boolean;
 }
 
-export const Hidden = ({ children, above, below, inline }: HiddenProps) => {
+export const Hidden = ({
+  children,
+  above,
+  below,
+  inline,
+  ...rest
+}: HiddenProps) => {
   const [
     hiddenOnXs,
     hiddenOnSm,
@@ -32,6 +41,7 @@ export const Hidden = ({ children, above, below, inline }: HiddenProps) => {
         xl: hiddenOnXl ? "none" : display,
       }}
       component={inline ? "span" : "div"}
+      {...rest}
     >
       {children}
     </Box>
@@ -41,5 +51,6 @@ export const Hidden = ({ children, above, below, inline }: HiddenProps) => {
 Hidden.displayName = "Hidden";
 
 Hidden.defaultProps = {
+  "data-id": "hidden",
   inline: false,
 };

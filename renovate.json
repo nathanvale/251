@@ -62,7 +62,7 @@
       "enabled": false
     },
     {
-      "packageName": "csstypes",
+      "packageName": "csstype",
       "updateTypes": ["major"],
       "enabled": false
     }

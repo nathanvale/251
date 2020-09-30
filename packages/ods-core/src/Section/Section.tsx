@@ -12,13 +12,13 @@ import {
   FluidityVariant,
   ResponsiveSpace,
   BreakpointVariants,
+  ComponentBaseProps,
 } from "@origin-digital/ods-types";
 import { Box } from "../Box";
 
-export interface SectionProps {
+export interface SectionProps extends Omit<ComponentBaseProps, "className"> {
   children: React.ReactNode;
   backgroundColor?: CardBackgroundVariant;
-  "data-id"?: string;
   fluidity?: FluidityVariant;
   hideGutter?: ResponsiveProp<boolean>;
   stretchY?: boolean;
@@ -75,9 +75,9 @@ ${(p) =>
     ${(p) => getStylesForbreakpoint(p, "sm")}
 
     ${(p) => getStylesForbreakpoint(p, "md")}
-  
+
     ${(p) => getStylesForbreakpoint(p, "lg")}
-  
+
     ${(p) => getStylesForbreakpoint(p, "xl")}
 `;
 
@@ -178,20 +178,20 @@ export const Section = ({
 }: SectionProps) => {
   return (
     <Box
-      data-id={dataId}
-      width="full"
-      paddingY={cardPaddingYForVariant[paddingY]}
-      display="flex"
       backgroundColor={backgroundColor}
+      data-id={dataId}
+      display="flex"
       height={stretchY ? "full" : undefined}
+      paddingY={cardPaddingYForVariant[paddingY]}
+      width="full"
     >
       <StyledBox
         {...rest}
         fluidity={getResponsiveFluidity(fluidity)}
         height={stretchY ? "full" : undefined}
         paddingX={getResponsiveSpace(hideGutter)}
-        width="full"
         style={{ marginLeft: "auto", marginRight: "auto" }}
+        width="full"
       >
         {children}
       </StyledBox>

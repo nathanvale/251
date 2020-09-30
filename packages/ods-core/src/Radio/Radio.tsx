@@ -1,9 +1,8 @@
 import React from "react";
 import { RadioProps as MuiRadioProps } from "@material-ui/core";
-import { BaseSwitchProps } from "@origin-digital/ods-types";
+import { BaseSwitchProps, SwitchMuiProps } from "@origin-digital/ods-types";
 import { RadioBase } from "../RadioBase";
 import { AbstractSwitch } from "../_private/components/AbstractSwitch/AbstractSwitch";
-import { SwitchMuiProps } from "../_private/components/AbstractSwitch/abstract-types";
 
 export type RadioMuiPropsType = SwitchMuiProps<MuiRadioProps>;
 

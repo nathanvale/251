@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import { ComponentBaseProps } from "@origin-digital/ods-types";
 import { Box } from "../Box";
 
-export interface DividerProps {
-  "data-id"?: string;
-}
+export interface DividerProps extends ComponentBaseProps {}
 
 const StyledBox = styled(Box)`
   height: 1px;

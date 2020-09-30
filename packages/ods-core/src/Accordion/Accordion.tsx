@@ -61,7 +61,7 @@ interface AccordionMuiProps {
 }
 
 export interface AccordionBaseProps
-  extends Omit<ComponentBaseProps, "disabled" | "classes">,
+  extends ComponentBaseProps,
     MuiProps<AccordionMuiProps> {
   children: React.ReactNode;
   summary: React.ReactNode;
