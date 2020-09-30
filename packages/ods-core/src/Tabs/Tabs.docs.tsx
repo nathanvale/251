@@ -16,6 +16,8 @@ export const docs: ComponentDocs = {
     value: "Currently selected tab",
     onChange: "Function to be called when a tab is clicked",
     scrollButtons: "",
+    size: "Default is medium. Small option available with less padding",
+    hideDivider: "Hide the grey divider between tabs and tab content",
     children: "Tabs to display - children must be Tab components",
     muiProps: "Allows access to the MUI component API under the hood",
   },
@@ -85,6 +87,34 @@ export const docs: ComponentDocs = {
               label="Natural gas"
               icon={<IconGas tone="neutral" />}
             />
+          </Tabs>
+        ),
+      },
+      {
+        label: "Hide divider",
+        description: "Tabs with no divider under them",
+        Code: () => (
+          <Tabs id="test" aria-label="icon tabs" defaultValue={0} hideDivider>
+            <Tab
+              data-id="tab1"
+              label="Electricity"
+              icon={<IconElectricity tone="neutral" />}
+            />
+            <Tab
+              data-id="tab2"
+              label="Natural gas"
+              icon={<IconGas tone="neutral" />}
+            />
+          </Tabs>
+        ),
+      },
+      {
+        label: "Small tabs",
+        description: "Tabs with less padding",
+        Code: () => (
+          <Tabs id="test" aria-label="icon tabs" defaultValue={0} size="small">
+            <Tab data-id="tab1" label="Electricity" />
+            <Tab data-id="tab2" label="Natural gas" />
           </Tabs>
         ),
       },

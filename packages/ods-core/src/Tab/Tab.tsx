@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Tab as MuiTab,
   TabProps as MuiTabProps,
@@ -8,6 +8,7 @@ import {
 } from "@material-ui/core";
 import { MuiBasedComponentBaseProps } from "@origin-digital/ods-types";
 import { useTracking } from "../TrackingProvider/useTracking";
+import { TabsContext, TabsProviderContext } from "../Tabs/Tabs";
 import { Box } from "../Box";
 
 export interface TabProps extends MuiBasedComponentBaseProps {
@@ -23,7 +24,10 @@ const useTabStyles = makeStyles(
       color: theme.palette.secondaryB.main,
       opacity: 1,
       textTransform: "none",
-      padding: `${theme.spacing(3)}px ${theme.spacing(4)}px`,
+      padding: ({ size }: TabsProviderContext) =>
+        size === "medium"
+          ? `${theme.spacing(3)}px ${theme.spacing(4)}px`
+          : `${theme.spacing(1.5)}px ${theme.spacing(3)}px`,
       fontSize: `${theme.typography.body1.fontSize}px`,
       "&:hover": {
         color: theme.palette.grey[600],
@@ -61,7 +65,8 @@ export const Tab = ({
   value,
   ...others
 }: TabProps) => {
-  const classes = useTabStyles();
+  const context = useContext(TabsContext);
+  const classes = useTabStyles(context);
   const { onClickCapture, ref } = useTracking({
     children: label,
     "data-id": dataId,

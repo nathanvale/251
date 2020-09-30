@@ -25,7 +25,7 @@ exports[`it renders 1`] = `
 <div>
   <button
     aria-controls="tabpanel-mlb"
-    class="MuiButtonBase-root MuiTab-root tab-root-1 MuiTab-textColorInherit"
+    class="MuiButtonBase-root MuiTab-root tab-root-1 tab-root-3 MuiTab-textColorInherit"
     data-id="tab"
     id="mlb"
     role="tab"

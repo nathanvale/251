@@ -60,6 +60,26 @@ export const tests: E2ETests = [
     responsive: false,
   },
   {
+    label: "Small tabs",
+    Code: () => (
+      <Tabs id="test" defaultValue={0} size="small">
+        <Tab data-id="tab1" label="Electricity" />
+        <Tab data-id="tab2" label="Natural gas" />
+      </Tabs>
+    ),
+    responsive: false,
+  },
+  {
+    label: "Hide divider",
+    Code: () => (
+      <Tabs id="test" defaultValue={0} hideDivider>
+        <Tab data-id="tab1" label="Electricity" />
+        <Tab data-id="tab2" label="Natural gas" />
+      </Tabs>
+    ),
+    responsive: false,
+  },
+  {
     label: "Scrollable tabs",
     Code: () => (
       <Tabs

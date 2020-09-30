@@ -1883,6 +1883,7 @@ exports[`Tabs 1`] = `
     | number
     | string
   disabled?: boolean
+  hideDivider?: boolean
   id?: string
   muiProps?: OverrideProps<TabsTypeMap<{}, ExtendButtonBase<ButtonBaseTypeMap<{}, "button">>>, ExtendButtonBase<ButtonBaseTypeMap<{}, "button">>> | undefined
   onChange?: (event: ChangeEvent<{}>, newValue: ReactText) => void
@@ -1890,6 +1891,9 @@ exports[`Tabs 1`] = `
     | "auto"
     | "off"
     | "on"
+  size?: 
+    | "medium"
+    | "small"
   value?: 
     | number
     | string

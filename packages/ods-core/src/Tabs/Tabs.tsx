@@ -5,7 +5,7 @@ import {
   makeStyles,
   Theme,
 } from "@material-ui/core";
-import { MuiBasedComponentBaseProps } from "@origin-digital/ods-types/src";
+import { MuiBasedComponentBaseProps, TabSize } from "@origin-digital/ods-types";
 import { TabProps } from "../Tab";
 import { TabPanel } from "../TabPanel";
 
@@ -16,13 +16,16 @@ export interface TabsProps extends MuiBasedComponentBaseProps {
   onChange?: (event: React.ChangeEvent<{}>, newValue: string | number) => void;
   variant?: "standard" | "scrollable" | "fullWidth";
   scrollButtons?: "auto" | "on" | "off";
+  size?: TabSize;
+  hideDivider?: boolean;
   muiProps?: MuiTabsProps;
 }
 
 const useTabsStyles = makeStyles(
   (theme: Theme) => ({
     root: {
-      borderBottom: `1px solid ${theme.palette.grey[200]}`,
+      borderBottom: ({ hideDivider }: TabsProps) =>
+        hideDivider ? "none" : `1px solid ${theme.palette.grey[200]}`,
     },
     indicator: {
       height: "4px",
@@ -31,15 +34,23 @@ const useTabsStyles = makeStyles(
   { classNamePrefix: "tabs" }
 );
 
+export interface TabsProviderContext {
+  size?: TabSize;
+}
+
+export const TabsContext = React.createContext<TabsProviderContext>({});
+
 export const Tabs = ({
   defaultValue,
   value,
   onChange,
+  hideDivider,
+  size,
   children,
   muiProps,
   ...others
 }: TabsProps) => {
-  const classes = useTabsStyles();
+  const classes = useTabsStyles({ hideDivider });
   const [uncontrolledValue, setUncontrolledValue] = React.useState(
     defaultValue
   );
@@ -51,7 +62,7 @@ export const Tabs = ({
   const activeTab = value === undefined ? uncontrolledValue : value;
 
   return (
-    <>
+    <TabsContext.Provider value={{ size }}>
       <MuiTabs
         classes={classes}
         value={activeTab}
@@ -76,7 +87,7 @@ export const Tabs = ({
           );
         }
       )}
-    </>
+    </TabsContext.Provider>
   );
 };
 
@@ -84,5 +95,6 @@ Tabs.defaultProps = {
   scrollButtons: "auto",
   variant: "standard",
   "aria-label": "tabs",
+  size: "medium",
 };
 Tabs.displayName = "Tabs";

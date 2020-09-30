@@ -17,7 +17,7 @@ export const TabPanel = ({
   ...other
 }: TabPanelProps) => (
   <Box
-    marginY="xlarge"
+    marginTop="xlarge"
     domProps={{ role: "tabpanel", hidden }}
     id={id || `tabpanel-${value}`}
     aria-labelledby={tabId || `tab-${value}`}
