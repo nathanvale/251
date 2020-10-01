@@ -1,9 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React, { AllHTMLAttributes } from "react";
-import {
-  OptionalTrackableProps,
-  ChevronVaraints,
-} from "@origin-digital/ods-types";
+import { ChevronVariants } from "@origin-digital/ods-types";
 import {
   ChevronLinkRenderer,
   ChevronLinkRendererProps,
@@ -12,9 +9,8 @@ import { Text } from "../Text";
 import { useTracking } from "../TrackingProvider";
 
 export interface ChevronButtonProps
-  extends Omit<ChevronLinkRendererProps, "children" | "variant">,
-    OptionalTrackableProps {
-  variant?: ChevronVaraints;
+  extends Omit<ChevronLinkRendererProps, "children" | "variant"> {
+  variant?: ChevronVariants;
   onClick?: AllHTMLAttributes<HTMLButtonElement>["onClick"];
   type?: "button" | "submit" | "reset";
   children?: React.ReactNode;

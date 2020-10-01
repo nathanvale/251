@@ -1,8 +1,8 @@
 import * as React from "react";
 import { CircularProgress } from "@material-ui/core";
 import {
-  ComponentBaseProps,
   GraphicToneVariants,
+  MuiBasedComponentBaseProps,
 } from "@origin-digital/ods-types";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -10,7 +10,7 @@ export type SpinnerSize = "xsmall" | "small" | "medium" | "large";
 export type SpinnerTone = "inherit" | GraphicToneVariants;
 
 export interface SpinnerProps
-  extends Omit<ComponentBaseProps, "children" | "disabled"> {
+  extends Omit<MuiBasedComponentBaseProps, "children" | "disabled"> {
   size?: SpinnerSize;
   tone?: SpinnerTone;
 }

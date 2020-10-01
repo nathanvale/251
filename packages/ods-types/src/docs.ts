@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export interface ComponentDocs<T = {}> {
   componentName: string;
   category:
@@ -13,7 +15,7 @@ export interface ComponentDocs<T = {}> {
     default: ExampleDocsDefault;
     additional?: ExampleDocs[];
   };
-  description?: React.ReactNode;
+  description?: ReactNode;
   propDescriptions?: Partial<Record<keyof T, string>>;
   migrationGuide?: boolean;
   snippets: DocsSnippet[];
@@ -47,7 +49,7 @@ export interface ExampleDocsDefault {
 
 export interface ExampleDocs extends ExampleDocsDefault {
   label: string;
-  description?: React.ReactNode;
+  description?: ReactNode;
 }
 
 export interface DocsSnippet {

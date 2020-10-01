@@ -5,7 +5,7 @@ import {
   ToggleButtonGroupProps as MuiToggleButtonGroupProps,
 } from "@material-ui/lab";
 
-import { ComponentBaseProps } from "@origin-digital/ods-types";
+import { MuiBasedComponentBaseProps } from "@origin-digital/ods-types";
 import { makeStyles } from "@material-ui/core/styles";
 import { useControlled } from "@material-ui/core";
 import { ToggleButton } from "../ToggleButton/ToggleButton";
@@ -13,7 +13,7 @@ import { ToggleButton } from "../ToggleButton/ToggleButton";
 export type ToggleButtonWidth = "full" | "content";
 export type OptionType = { value: string | number; label: string };
 export interface ToggleButtonGroupProps
-  extends Omit<ComponentBaseProps, "disabled" | "id"> {
+  extends Omit<MuiBasedComponentBaseProps, "disabled" | "id"> {
   id: string;
   "aria-label"?: string;
   defaultValue?: string | number;

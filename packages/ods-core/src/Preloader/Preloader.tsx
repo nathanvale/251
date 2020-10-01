@@ -7,8 +7,7 @@ import {
 import { makeStyles } from "@material-ui/core/styles";
 import { Box } from "../Box";
 
-export interface PreloaderProps
-  extends Omit<ComponentBaseProps, "children" | "disabled"> {
+export interface PreloaderProps extends Omit<ComponentBaseProps, "children"> {
   tone?: GraphicToneVariants;
 }
 
@@ -68,8 +67,7 @@ const usePreloaderStyles = makeStyles(
   { classNamePrefix: "preloader" }
 );
 
-export const Preloader = (preloaderProps: PreloaderProps) => {
-  const { tone } = preloaderProps;
+export const Preloader = ({ tone, className, ...rest }: PreloaderProps) => {
   const { circle, container } = usePreloaderStyles({ tone });
   const {
     bounceEffect,
@@ -82,8 +80,9 @@ export const Preloader = (preloaderProps: PreloaderProps) => {
     <Box
       display="flex"
       flexDirection="row"
-      className={container}
+      className={clsx(container, className)}
       alignItems="flex-end"
+      {...rest}
     >
       <div className={clsx(circle, bounceEffect)} />
       <div className={clsx(circle, bounceEffect, secondDelay)} />

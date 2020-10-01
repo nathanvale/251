@@ -6,6 +6,7 @@ import {
   Heading12Variants,
   Heading34Variants,
   HeadingVariants,
+  ComponentBaseProps,
 } from "@origin-digital/ods-types";
 import {
   useBasekickStyles,
@@ -21,11 +22,10 @@ import { BoxProps, Box } from "../Box";
 import { Text } from "../Text";
 import { HeadingContext } from "./HeadingContext";
 
-export interface HeadingBaseProps {
+export interface HeadingBaseProps extends ComponentBaseProps {
   children: ReactNode;
   align?: BoxProps["textAlign"];
   truncate?: boolean;
-  "data-id"?: string;
   component?: HeadingComponentVariants;
   /**
    * Heading font weights can only be applied to h1 and h2 variants.

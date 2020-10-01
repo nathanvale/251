@@ -85,6 +85,7 @@ exports[`it hides components above the sm breakpoint 1`] = `
 
 <div
   class="c0"
+  data-id="hidden"
   display="block,block,none,none,none"
 >
   <div
@@ -191,6 +192,7 @@ exports[`it hides components below the md breakpoint 1`] = `
 
 <div
   class="c0"
+  data-id="hidden"
   display="none,none,block,block,block"
 >
   <div
@@ -252,6 +254,7 @@ exports[`it hides text nodes above md 1`] = `
   The following text node is hidden above md:
   <span
     class="-span c0"
+    data-id="hidden"
     display="inline,inline,inline,none,none"
   >
     Hidden above md.
@@ -299,6 +302,7 @@ exports[`it hides text nodes below md 1`] = `
   The following text node is hidden below md:
   <span
     class="-span c0"
+    data-id="hidden"
     display="none,none,inline,inline,inline"
   >
     Hidden below md.
@@ -391,6 +395,7 @@ exports[`it renders a Hidden 1`] = `
 
 <div
   class="c0"
+  data-id="hidden"
   display="block,block,block,block,block"
 >
   <div

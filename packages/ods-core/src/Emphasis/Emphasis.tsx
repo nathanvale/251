@@ -1,8 +1,8 @@
 import React, { ReactNode } from "react";
+import { ComponentBaseProps } from "@origin-digital/ods-types";
 
-export interface EmphasisProps {
+export interface EmphasisProps extends Omit<ComponentBaseProps, "children"> {
   children: ReactNode;
-  "data-id"?: string;
 }
 
 export const Emphasis = ({ children, "data-id": dataId }: EmphasisProps) => (

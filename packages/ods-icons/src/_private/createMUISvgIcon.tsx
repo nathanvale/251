@@ -4,7 +4,7 @@ import {
   SvgIcon,
   SvgIconProps,
   defaultColor,
-  defaultsize,
+  defaultSize,
   defaultViewBox,
 } from "../SvgIcon/SvgIcon";
 import { SvgIconContext } from "../SvgIcon/SvgIconContext";
@@ -19,7 +19,7 @@ export function createMUISvgIcon(
       (
         {
           tone,
-          size = defaultsize,
+          size = defaultSize,
           "data-id": dataId = `Icon${displayName}`,
           ...rest
         }: SvgIconProps,
@@ -43,7 +43,7 @@ export function createMUISvgIcon(
   );
 
   SvgIcon.defaultProps = {
-    size: defaultsize,
+    size: defaultSize,
     viewBox: defaultViewBox,
   };
 

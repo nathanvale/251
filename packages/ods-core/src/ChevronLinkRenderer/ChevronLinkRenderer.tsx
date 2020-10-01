@@ -1,7 +1,8 @@
 import React, { ReactElement, useContext } from "react";
 import {
   ChevronLinkRenderProps,
-  ChevronVaraints,
+  ChevronVariants,
+  ComponentBaseProps,
 } from "@origin-digital/ods-types";
 import clsx from "clsx";
 import { IconChevronRight } from "@origin-digital/ods-icons";
@@ -15,12 +16,13 @@ import { TextContext } from "../Text";
 import { HeadingContext } from "../Heading";
 import { Box } from "../Box";
 
-export interface ChevronLinkRendererProps {
+export interface ChevronLinkRendererProps
+  extends Omit<ComponentBaseProps, "children"> {
   children: (renderProps: ChevronLinkRenderProps) => ReactElement;
-  variant: ChevronVaraints;
+  variant: ChevronVariants;
 }
 interface UseChevronLinkProps {
-  variant: ChevronVaraints;
+  variant: ChevronVariants;
 }
 
 function IconChevron() {

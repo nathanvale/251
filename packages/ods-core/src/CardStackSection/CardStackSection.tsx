@@ -13,18 +13,19 @@ import {
   PaddingYVariants,
   SpaceVariants,
   ResponsiveProp,
+  ComponentBaseProps,
 } from "@origin-digital/ods-types";
 import { Box, BoxProps } from "../Box";
 import { Stack } from "../Stack";
 import { CardProps } from "../Card";
 import { DividerCardProps } from "../DividerCard";
 
-export interface CardStackSectionProps {
-  "data-id"?: string;
-  cardWidth?: CardStackSize;
+export interface CardStackSectionProps
+  extends Omit<ComponentBaseProps, "children"> {
   children:
     | ReactElement<CardProps | DividerCardProps>[]
     | ReactElement<CardProps | DividerCardProps>;
+  cardWidth?: CardStackSize;
   paddingY?: PaddingYVariants;
   variant?: CardStackSectionVariant;
 }

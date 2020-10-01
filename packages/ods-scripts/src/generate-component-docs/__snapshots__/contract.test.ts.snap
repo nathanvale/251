@@ -191,7 +191,7 @@ exports[`Box 1`] = `
     | "list-item"
     | "none"
   >
-  domProps?: Pick<AllHTMLAttributes<HTMLElement>, "size" | "className" | "disabled" | "id" | "cite" | "data" | "form" | "label" | "span" | "summary" | "title" | ... 341 more ... | "wmode"> | undefined
+  domProps?: Pick<AllHTMLAttributes<HTMLElement>, "size" | "disabled" | "className" | "id" | "cite" | "data" | "form" | "label" | "span" | "summary" | "title" | ... 341 more ... | "wmode"> | undefined
   flexDirection?: ResponsiveProp<
     | "column"
     | "column-reverse"
@@ -419,9 +419,11 @@ exports[`Breadcrumb 1`] = `
 {
   active?: boolean
   children?: ReactNode
+  className?: string
   data-id?: string
   domProps?: AnchorHTMLAttributes<HTMLAnchorElement> | undefined
   href: string
+  id?: string
   onClick?: (event: MouseEvent<HTMLAnchorElement, MouseEvent>) => void
   target?: string
 }
@@ -433,7 +435,9 @@ exports[`Breadcrumbs 1`] = `
   children: 
     | ReactElement<BreadcrumbProps, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>
     | ReactElement<BreadcrumbProps, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>[]
+  className?: string
   data-id?: string
+  id?: string
   muiProps?: OverrideProps<BreadcrumbsTypeMap<{}, "nav">, "nav"> | undefined
 }
 `;
@@ -493,7 +497,9 @@ exports[`Card 1`] = `
     | "transparent"
     | "white"
   children?: ReactNode
+  className?: string
   data-id?: string
+  id?: string
   padding?: 
     | "large"
     | "medium"
@@ -510,7 +516,9 @@ exports[`CardStackSection 1`] = `
   children: 
     | ReactElement<CardProps | DividerCardProps, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>
     | ReactElement<CardProps | DividerCardProps, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>[]
+  className?: string
   data-id?: string
+  id?: string
   paddingY?: 
     | "medium"
     | "none"
@@ -611,8 +619,10 @@ exports[`CheckboxGroup 1`] = `
 exports[`ChevronButton 1`] = `
 {
   children?: ReactNode
+  className?: string
   data-id?: string
-  domProps?: Pick<AllHTMLAttributes<HTMLButtonElement>, "size" | "className" | "disabled" | "id" | "cite" | "data" | "form" | "label" | "span" | "style" | ... 345 more ... | "wmode"> | undefined
+  domProps?: Pick<AllHTMLAttributes<HTMLButtonElement>, "size" | "disabled" | "className" | "id" | "cite" | "data" | "form" | "label" | "span" | "style" | ... 345 more ... | "wmode"> | undefined
+  id?: string
   onClick?: (event: MouseEvent<HTMLButtonElement, MouseEvent>) => void
   type?: 
     | "button"
@@ -627,9 +637,11 @@ exports[`ChevronButton 1`] = `
 exports[`ChevronLink 1`] = `
 {
   children?: ReactNode
+  className?: string
   data-id?: string
   domProps?: AnchorHTMLAttributes<HTMLAnchorElement> | undefined
   href: string
+  id?: string
   onClick?: (event: MouseEvent<HTMLAnchorElement, MouseEvent>) => void
   target?: string
   variant?: 
@@ -641,6 +653,9 @@ exports[`ChevronLink 1`] = `
 exports[`ChevronLinkRenderer 1`] = `
 {
   children: (renderProps: ChevronLinkRenderProps) => ReactElement<any, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>
+  className?: string
+  data-id?: string
+  id?: string
   variant: 
     | "primary"
     | "secondary"
@@ -655,7 +670,9 @@ exports[`Column 1`] = `
     | "right"
   >
   children?: ReactNode
+  className?: string
   data-id?: string
+  id?: string
   width?: 
     | "1/12"
     | "1/2"
@@ -688,12 +705,14 @@ exports[`Columns 1`] = `
   children: 
     | (ReactElement<ColumnProps, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)> | null)[]
     | ReactElement<ColumnProps, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>
+  className?: string
   collapseBelow?: 
     | "lg"
     | "md"
     | "sm"
     | "xl"
   data-id?: string
+  id?: string
   space: ResponsiveProp<
     | "large"
     | "medium"
@@ -759,6 +778,7 @@ exports[`DataTable 1`] = `
   data-id?: string
   headings?: ReactNode[]
   hover?: boolean
+  id?: string
   maxHeight?: 
     | number
     | string
@@ -830,7 +850,10 @@ exports[`Dialog 1`] = `
 
 exports[`Divider 1`] = `
 {
+  children?: ReactNode
+  className?: string
   data-id?: string
+  id?: string
 }
 `;
 
@@ -841,7 +864,9 @@ exports[`DividerCard 1`] = `
     | "transparent"
     | "white"
   children?: ReactNode
+  className?: string
   data-id?: string
+  id?: string
   padding?: 
     | "large"
     | "medium"
@@ -863,7 +888,9 @@ exports[`DividerCard 1`] = `
 exports[`Emphasis 1`] = `
 {
   children: ReactNode
+  className?: string
   data-id?: string
+  id?: string
 }
 `;
 
@@ -951,6 +978,7 @@ exports[`Heading 1`] = `
     | "right"
   >
   children: ReactNode
+  className?: string
   component?: 
     | "h1"
     | "h2"
@@ -959,6 +987,7 @@ exports[`Heading 1`] = `
     | "h5"
     | "h6"
   data-id?: string
+  id?: string
   truncate?: boolean
   variant: 
     | "h1"
@@ -971,9 +1000,11 @@ exports[`Heading 1`] = `
 exports[`HeadingChevronLink 1`] = `
 {
   children?: ReactNode
+  className?: string
   data-id?: string
   domProps?: AnchorHTMLAttributes<HTMLAnchorElement> | undefined
   href: string
+  id?: string
   onClick?: (event: MouseEvent<HTMLAnchorElement, MouseEvent>) => void
   target?: string
 }
@@ -992,6 +1023,9 @@ exports[`Hidden 1`] = `
     | "sm"
     | "xl"
   children: ReactNode
+  className?: string
+  data-id?: string
+  id?: string
   inline?: boolean
 }
 `;
@@ -1036,12 +1070,14 @@ exports[`Inline 1`] = `
     | "top"
   >
   children: ReactNode
+  className?: string
   collapseBelow?: 
     | "lg"
     | "md"
     | "sm"
     | "xl"
   data-id?: string
+  id?: string
   space?: ResponsiveProp<
     | "large"
     | "medium"
@@ -1107,7 +1143,9 @@ exports[`KeyboardDatePicker 1`] = `
 exports[`List 1`] = `
 {
   children: ReactNode
+  className?: string
   data-id?: string
+  id?: string
   space?: ResponsiveProp<
     | "large"
     | "medium"
@@ -1148,9 +1186,11 @@ exports[`List 1`] = `
 exports[`ListItem 1`] = `
 {
   children: ReactNode
+  className?: string
   data-id?: string
   helperText?: ReactNode
   icon?: ReactNode
+  id?: string
 }
 `;
 
@@ -1399,11 +1439,13 @@ exports[`OriginThemeProvider 1`] = `
 
 exports[`Placeholder 1`] = `
 {
+  className?: string
   data-id?: string
   height?: ResponsiveProp<
     | number
     | string
   >
+  id?: string
   label?: string
   minWidth?: ResponsiveProp<
     | number
@@ -1422,7 +1464,6 @@ exports[`Placeholder 1`] = `
 exports[`Preloader 1`] = `
 {
   className?: string
-  classes?: Record<string, string>
   data-id?: string
   id?: string
   tone?: 
@@ -1562,6 +1603,7 @@ exports[`Section 1`] = `
   >
   hideGutter?: ResponsiveProp<boolean
   >
+  id?: string
   paddingY?: 
     | "medium"
     | "none"
@@ -1653,6 +1695,7 @@ exports[`Stack 1`] = `
     | "ul"
   data-id?: string
   dividers?: boolean
+  id?: string
   space?: ResponsiveProp<
     | "large"
     | "medium"
@@ -1670,7 +1713,9 @@ exports[`Stack 1`] = `
 exports[`Strong 1`] = `
 {
   children: ReactNode
+  className?: string
   data-id?: string
+  id?: string
 }
 `;
 
@@ -1760,6 +1805,7 @@ exports[`Table 1`] = `
   className?: string
   data-id?: string
   hover?: boolean
+  id?: string
   maxHeight?: 
     | number
     | string
@@ -1778,7 +1824,9 @@ exports[`Table 1`] = `
 exports[`TableBody 1`] = `
 {
   children?: ReactNode
+  className?: string
   data-id?: string
+  id?: string
   muiProps?: T | undefined
 }
 `;
@@ -1797,6 +1845,7 @@ exports[`TableCell 1`] = `
   className?: string
   colSpan?: number
   data-id?: string
+  id?: string
   muiProps?: T | undefined
   rowSpan?: number
   scope?: string
@@ -1806,7 +1855,9 @@ exports[`TableCell 1`] = `
 exports[`TableHead 1`] = `
 {
   children?: ReactNode
+  className?: string
   data-id?: string
+  id?: string
   muiProps?: T | undefined
 }
 `;
@@ -1816,6 +1867,7 @@ exports[`TableRow 1`] = `
   children?: ReactNode
   className?: string
   data-id?: string
+  id?: string
   muiProps?: T | undefined
 }
 `;
@@ -1856,6 +1908,7 @@ exports[`Text 1`] = `
     | "right"
   >
   children?: ReactNode
+  className?: string
   component?: 
     | "a"
     | "button"
@@ -1875,6 +1928,7 @@ exports[`Text 1`] = `
     | "span"
     | "ul"
   data-id?: string
+  id?: string
   inline?: boolean
   tone?: 
     | "critical"
@@ -2090,9 +2144,11 @@ exports[`TextFieldBase 1`] = `
 exports[`TextLink 1`] = `
 {
   children?: ReactNode
+  className?: string
   data-id?: string
   domProps?: AnchorHTMLAttributes<HTMLAnchorElement> | undefined
   href: string
+  id?: string
   onClick?: (event: MouseEvent<HTMLAnchorElement, MouseEvent>) => void
   target?: string
 }
@@ -2152,9 +2208,11 @@ exports[`ToggleButtonGroup 1`] = `
 exports[`TrackedLink 1`] = `
 {
   children?: ReactNode
+  className?: string
   data-id?: string
   domProps?: AnchorHTMLAttributes<HTMLAnchorElement> | undefined
   href: string
+  id?: string
   onClick?: (event: MouseEvent<HTMLAnchorElement, MouseEvent>) => void
   target?: string
   trackingLabel: ReactNode

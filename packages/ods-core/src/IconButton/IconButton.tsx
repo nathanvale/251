@@ -7,8 +7,8 @@ import {
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import {
-  ComponentBaseProps,
   IconButtonColor,
+  MuiBasedComponentBaseProps,
   SvgIconToneVariants,
 } from "@origin-digital/ods-types";
 import { SvgIconContext, SvgIconProps } from "@origin-digital/ods-icons";
@@ -16,7 +16,7 @@ import { ButtonProps, ButtonActionProps } from "../Button";
 import { TextContext, UseTextProps } from "../Text";
 
 export interface IconButtonProps
-  extends ComponentBaseProps,
+  extends MuiBasedComponentBaseProps,
     ButtonActionProps,
     Pick<ButtonProps, "href" | "target"> {
   children: React.ReactElement<SvgIconProps>;

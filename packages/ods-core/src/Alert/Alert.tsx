@@ -10,7 +10,10 @@ import {
   IconCancel,
   IconLocalOffer,
 } from "@origin-digital/ods-icons";
-import { ComponentBaseProps, MuiProps } from "@origin-digital/ods-types";
+import {
+  MuiBasedComponentBaseProps,
+  MuiProps,
+} from "@origin-digital/ods-types";
 import { Strong } from "../Strong";
 import { Stack } from "../Stack";
 import { IconButton } from "../IconButton";
@@ -135,7 +138,7 @@ const useFilledStyles = makeStyles(
 );
 
 export interface AlertProps
-  extends Omit<ComponentBaseProps, "disabled">,
+  extends Omit<MuiBasedComponentBaseProps, "disabled">,
     MuiProps<MuiAlertProps> {
   children: React.ReactNode;
   title?: React.ReactNode;
@@ -143,10 +146,6 @@ export interface AlertProps
   variant?: "standard" | "filled";
   icon?: React.ReactNode | false;
   onCloseClick?: () => void;
-}
-
-export interface AlertStylesProps {
-  color: string;
 }
 
 const defaultProps: Pick<AlertProps, "data-id" | "tone" | "variant"> = {

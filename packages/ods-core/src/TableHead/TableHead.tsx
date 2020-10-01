@@ -4,10 +4,7 @@ import MuiTableHead, {
   TableHeadProps as MuiTableHeadProps,
 } from "@material-ui/core/TableHead";
 import { makeStyles } from "@material-ui/core/styles";
-import {
-  OptionalTrackableProps,
-  MuiProps,
-} from "@origin-digital/ods-types/src";
+import { MuiProps, ComponentBaseProps } from "@origin-digital/ods-types/src";
 
 const useTableHeadStyles = makeStyles(
   (theme) => ({
@@ -21,7 +18,7 @@ const useTableHeadStyles = makeStyles(
 );
 
 export interface TableHeadProps
-  extends OptionalTrackableProps,
+  extends Omit<ComponentBaseProps, "children">,
     MuiProps<MuiTableHeadProps>,
     Pick<MuiTableHeadProps, "children"> {}
 

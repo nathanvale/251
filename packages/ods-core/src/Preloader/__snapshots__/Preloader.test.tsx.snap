@@ -25,6 +25,7 @@ exports[`It renders in default 1`] = `
 <div>
   <div
     class="preloader-container-1 c0"
+    data-id="preloader"
     display="flex"
   >
     <div
@@ -68,6 +69,7 @@ exports[`It renders with the white tone 1`] = `
 <div>
   <div
     class="preloader-container-9 c0"
+    data-id="preloader"
     display="flex"
   >
     <div

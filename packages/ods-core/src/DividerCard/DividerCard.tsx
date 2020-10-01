@@ -4,22 +4,23 @@ import {
   ResponsiveSpace,
   BreakpointVariants,
   CardPaddingVariants,
-  RequiredWithoutChildren,
   Theme,
+  RequiredNoBaseProps,
 } from "@origin-digital/ods-types";
 import { mapToStyledSystem } from "@origin-digital/ods-helpers";
 import { Box, BoxProps } from "../Box";
 import { defaultCardProps, cardPaddingForVariant, CardProps } from "../Card";
-import { Stack, StackChild, StackChildProps } from "../Stack";
+import { StackChild, StackChildProps } from "../Stack";
+import { stackDefaultProps } from "../Stack/Stack";
 
 export interface DividerCardProps extends CardProps {
   space?: ResponsiveSpace;
 }
-const dividerCardDefaultProps: RequiredWithoutChildren<DividerCardProps> = {
+const dividerCardDefaultProps: RequiredNoBaseProps<DividerCardProps> = {
   "data-id": "divider-card",
   padding: defaultCardProps.padding,
   backgroundColor: defaultCardProps.backgroundColor,
-  space: Stack.defaultProps.space,
+  space: stackDefaultProps.space,
 };
 
 interface DividerCardChildProps {

@@ -4,11 +4,11 @@ import {
   makeStyles,
   useFormControl,
 } from "@material-ui/core";
+import { AbstractSwitchProps, SwitchMuiProps } from "@origin-digital/ods-types";
 import { kebabCase } from "@origin-digital/ods-helpers";
 import { FormControlLabel } from "../../../FormControlLabel/FormControlLabel";
 import { FormHelperText } from "../../../FormHelperText/FormHelperText";
 import { Box } from "../../../Box/Box";
-import { AbstractSwitchProps, SwitchMuiProps } from "./abstract-types";
 
 const getId = (baseId: string, compName: string = "") =>
   `${baseId}-${kebabCase(compName ?? "")}`;

@@ -4,7 +4,7 @@ import MuiTableRow, {
   TableRowProps as MuiTableRowProps,
 } from "@material-ui/core/TableRow";
 import { makeStyles } from "@material-ui/core/styles";
-import { OptionalTrackableProps, MuiProps } from "@origin-digital/ods-types";
+import { MuiProps, ComponentBaseProps } from "@origin-digital/ods-types";
 import { TableContext } from "../Table";
 
 const useTableRowStyles = makeStyles(
@@ -24,11 +24,9 @@ const useTableRowStyles = makeStyles(
 );
 
 export interface TableRowProps
-  extends OptionalTrackableProps,
+  extends Omit<ComponentBaseProps, "children">,
     MuiProps<MuiTableRowProps>,
-    Pick<MuiTableRowProps, "children"> {
-  className?: string;
-}
+    Pick<MuiTableRowProps, "children"> {}
 
 export const TableRow = ({
   children,

@@ -8,13 +8,12 @@ import {
   HeightProps,
   MinWidthProps,
 } from "styled-system";
-import { ResponsiveProp } from "@origin-digital/ods-types";
+import { ComponentBaseProps, ResponsiveProp } from "@origin-digital/ods-types";
 import { mapToStyledSystem } from "@origin-digital/ods-helpers";
 import { Box, BoxProps } from "../Box";
 
 type PlaceholderShapeVariant = "rectangle" | "round";
-export interface PlaceholderProps {
-  "data-id"?: string;
+export interface PlaceholderProps extends Omit<ComponentBaseProps, "children"> {
   height?: ResponsiveProp<string | number>;
   label?: string;
   shape?: PlaceholderShapeVariant;
@@ -53,6 +52,7 @@ export const Placeholder = ({
   height = defaultHeight,
   minWidth = defaultMinWidth,
   shape = defaultShape,
+  ...rest
 }: PlaceholderProps) => {
   return (
     <Container
@@ -67,6 +67,7 @@ export const Placeholder = ({
       height={mapToStyledSystem<string | number>(height)}
       shape={shape}
       backgroundColor="grey200"
+      {...rest}
     >
       {label ? (
         <Box

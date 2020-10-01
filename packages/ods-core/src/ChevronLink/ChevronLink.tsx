@@ -1,10 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React, { AnchorHTMLAttributes } from "react";
-import {
-  OptionalTrackableProps,
-  LinkComponentProps,
-  ChevronVaraints,
-} from "@origin-digital/ods-types";
+import { LinkComponentProps, ChevronVariants } from "@origin-digital/ods-types";
 import {
   ChevronLinkRenderer,
   ChevronLinkRendererProps,
@@ -12,9 +8,8 @@ import {
 import { TrackedLink } from "../TrackedLink";
 
 export interface ChevronLinkProps
-  extends Omit<ChevronLinkRendererProps, "children" | "variant">,
-    OptionalTrackableProps {
-  variant?: ChevronVaraints;
+  extends Omit<ChevronLinkRendererProps, "children" | "variant"> {
+  variant?: ChevronVariants;
   href: LinkComponentProps["href"];
   target?: AnchorHTMLAttributes<HTMLAnchorElement>["target"];
   onClick?: AnchorHTMLAttributes<HTMLAnchorElement>["onClick"];

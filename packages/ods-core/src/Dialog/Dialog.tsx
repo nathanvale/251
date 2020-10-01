@@ -2,6 +2,7 @@ import React from "react";
 import {
   ComponentBaseProps,
   DialogMaxWidthVariants,
+  MuiBasedComponentBaseProps,
 } from "@origin-digital/ods-types";
 import { useTheme, makeStyles } from "@material-ui/core/styles";
 import {
@@ -24,7 +25,7 @@ export interface MuiProps {
   contentProps?: MuiDialogContentProps;
 }
 
-export interface DialogProps extends ComponentBaseProps {
+export interface DialogProps extends MuiBasedComponentBaseProps {
   id: string;
   onClose?: () => void;
   title: string | React.ReactNode;

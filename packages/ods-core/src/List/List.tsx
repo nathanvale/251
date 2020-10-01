@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import React from "react";
-import { OptionalTrackableProps } from "@origin-digital/ods-types/";
+import { ComponentBaseProps } from "@origin-digital/ods-types/";
 import { style, get } from "styled-system";
 import { cssLengthToString } from "@origin-digital/ods-helpers";
 import { Stack, StackProps } from "../Stack/Stack";
@@ -33,7 +33,7 @@ const listInnerDefaultProps: Pick<ListProps, "space" | "type" | "data-id"> = {
   "data-id": "list",
 };
 
-export interface ListProps extends OptionalTrackableProps {
+export interface ListProps extends ComponentBaseProps {
   children: StackProps["children"];
   variant?: Exclude<TextProps["variant"], "caption" | "overline-text">;
   space?: StackProps["space"];

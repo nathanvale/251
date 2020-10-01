@@ -3,7 +3,10 @@ import {
   ToggleButton as MuiToggleButton,
   ToggleButtonProps as MuiToggleButtonProps,
 } from "@material-ui/lab";
-import { ComponentBaseProps, MuiProps } from "@origin-digital/ods-types";
+import {
+  MuiBasedComponentBaseProps,
+  MuiProps,
+} from "@origin-digital/ods-types";
 import { fade, makeStyles } from "@material-ui/core/styles";
 
 /**
@@ -27,7 +30,7 @@ import { fade, makeStyles } from "@material-ui/core/styles";
  */
 
 export interface ToggleButtonProps
-  extends Omit<ComponentBaseProps, "children"> {
+  extends Omit<MuiBasedComponentBaseProps, "children"> {
   children: React.ReactNode;
   value: string | number;
   "aria-label"?: string;
