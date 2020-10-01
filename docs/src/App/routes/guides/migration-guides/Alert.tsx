@@ -94,9 +94,9 @@ export const alertMigrationGuide: ComponentMigrationGuide = {
 -  message="This is a **bold** text"
   ...
  >
-+  <MarkdownLite>
-+    <Text>This is a **bold** text</Text>
-+  </MarkdownLite>
++  <Text>
++    <MarkdownLite>This is a **bold** text</MarkdownLite>
++  </Text>
 -</AlertBox>
 +</Alert>
 \`\`\``}
