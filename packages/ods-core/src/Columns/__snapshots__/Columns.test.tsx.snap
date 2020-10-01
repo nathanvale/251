@@ -90,9 +90,10 @@ exports[`it top-aligns children by default 1`] = `
 
 .c5 {
   width: inherit;
+  display: block;
 }
 
-display:block .c2:first-child > .c5 {
+.c2:first-child > .c5 {
   padding-top: 0;
 }
 
@@ -516,9 +517,10 @@ exports[`it vertically aligns children bottom if alignY is bottom 1`] = `
 
 .c5 {
   width: inherit;
+  display: block;
 }
 
-display:block .c2:first-child > .c5 {
+.c2:first-child > .c5 {
   padding-top: 0;
 }
 
@@ -942,9 +944,10 @@ exports[`it vertically aligns children middle if alignY is center 1`] = `
 
 .c5 {
   width: inherit;
+  display: block;
 }
 
-display:block .c2:first-child > .c5 {
+.c2:first-child > .c5 {
   padding-top: 0;
 }
 

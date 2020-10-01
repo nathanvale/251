@@ -14,6 +14,8 @@ module.exports = {
   extends:
     "./node_modules/@origin-digital/origin-scripts/dist/config/eslintrc.js",
   rules: {
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
     "react/no-unescaped-entities": "off",
     "no-console": "error",
     "import/no-default-export": "error",

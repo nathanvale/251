@@ -26,7 +26,6 @@ const Props = ({
   propName: string;
   type: NormalisedPropType;
   description?: string;
-  hasDefaultProps: boolean;
   defaultProps: {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     [x: string]: any;
@@ -47,7 +46,6 @@ const Props = ({
 export const PropListView = ({
   requiredProps,
   optionalProps,
-  hasDefaultProps,
   defaultProps,
   propDescriptions = {},
   specialRequiredProps = [],
@@ -58,7 +56,6 @@ export const PropListView = ({
     {requiredProps.map(({ propName, type }) => {
       return (
         <Props
-          hasDefaultProps={hasDefaultProps}
           defaultProps={defaultProps}
           propName={propName}
           type={type}
@@ -71,7 +68,6 @@ export const PropListView = ({
       specialRequiredProps.map(({ name, type }) => {
         return (
           <Props
-            hasDefaultProps={hasDefaultProps}
             defaultProps={defaultProps}
             propName={name}
             description={type.description}
@@ -84,7 +80,6 @@ export const PropListView = ({
     {optionalProps.map(({ propName, type }) => {
       return (
         <Props
-          hasDefaultProps={hasDefaultProps}
           defaultProps={defaultProps}
           propName={propName}
           type={type}
@@ -97,7 +92,6 @@ export const PropListView = ({
       specialOptionalProps.map(({ name, type }) => {
         return (
           <Props
-            hasDefaultProps={hasDefaultProps}
             defaultProps={defaultProps}
             propName={name}
             description={type.description}

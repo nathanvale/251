@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unused-modules */
 import {
   Breakpoint,
   SpaceTShirts,
@@ -22,6 +21,5 @@ import {
 import {} from "styled-components/cssprop";
 
 declare module "styled-components" {
-  // eslint-disable-next-line @typescript-eslint/interface-name-prefix
   export interface DefaultTheme extends Theme {}
 }
