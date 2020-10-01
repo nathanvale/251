@@ -34,7 +34,7 @@ When done successfully, it suddenly becomes trivial to translate standard design
 The Origin Design System (also known ans **ODS**) is an implementation of this industry trend.
 
 As our design system is based on **Material Design** language, we use [Material UI](https://material-ui.com/)
-as the backbone of our ODS components. This gives us several benefits:
+as the backbone of our ODS components. This gives us several benefits :
 
 -   We benefit from all the effort and support the open source community has put into building those components
 -   Time to build new components will massively reduce as the heavy lifting is delegated to MUI components

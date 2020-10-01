@@ -27,6 +27,6 @@
     "./src/**/*.json",
     "../packages/ods-types",
     "../packages/*/src/",
-    "../globals.d.ts"
+    "../globals.d.ts",
   ]
 }

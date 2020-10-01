@@ -56,8 +56,8 @@ const OuterStyledBox = styled(Box)<{
 
 const InnerStyledBox = styled(Box)<{ alignX: ColumnProps["alignX"] }>`
   width: inherit;
-  display: ${(p) => (p.alignX === "left" ? "block" : "flex")}
-    ${OuterStyledBox}:first-child > & {
+  display: ${(p) => (p.alignX === "left" ? "block" : "flex")};
+  ${OuterStyledBox}:first-child > & {
     padding-top: 0;
   }
 `;

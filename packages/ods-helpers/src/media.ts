@@ -91,6 +91,5 @@ export const media: MediaObject = (Object.keys(
 
     return accumulator;
   },
-  // eslint-disable-next-line @typescript-eslint/no-object-literal-type-assertion
   { min: {}, max: {} } as MediaObject
 );

@@ -1,5 +1,4 @@
 /* eslint-disable babel/camelcase */
-/* eslint-disable @typescript-eslint/camelcase */
 export {
   AccountNumber as ZAccountNumber,
   Amount as ZAmount,
