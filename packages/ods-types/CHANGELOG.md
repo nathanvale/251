@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.37.1...@origin-digital/ods-types@0.37.2) (2020-10-01)
+
+
+### Bug Fixes
+
+* **types:** clean up types ([e5b15f3](https://bitbucket.orgn.io/od/origin-ui/commits/e5b15f32882a6dccd77226efbf38d1036b4ea8fc))
+
+
+
+
+
 ## [0.37.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.37.0...@origin-digital/ods-types@0.37.1) (2020-09-22)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.64.8](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.64.7...@origin-digital/ods-scripts@0.64.8) (2020-10-01)
+
+
+### Bug Fixes
+
+* **types:** clean up types ([e5b15f3](https://bitbucket.orgn.io/od/origin-ui/commits/e5b15f32882a6dccd77226efbf38d1036b4ea8fc))
+
+
+
+
+
 ## [0.64.7](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-scripts@0.64.6...@origin-digital/ods-scripts@0.64.7) (2020-09-29)
 
 
