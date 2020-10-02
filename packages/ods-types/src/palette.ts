@@ -164,7 +164,7 @@ export type ColorPaletteVariants = keyof ColorPalette;
 export type ColorVariants = keyof Colors;
 
 // grey300 is for information icon
-export type SvgIconToneVariants =
+export type SvgIconColorVariants =
   | keyof Pick<
       ColorPalette,
       | "caution"
@@ -194,13 +194,6 @@ export type TextToneVariants =
   | "neutral"
   | "neutralLight"
   | "neutralDark";
-
-export type ChevronVariants = keyof Pick<Colors, "primary" | "secondary">;
-
-export type CardBackgroundVariant = keyof Pick<
-  ColorPalette,
-  "grey50" | "white" | "transparent"
->;
 
 export interface Theme {
   space: Space;

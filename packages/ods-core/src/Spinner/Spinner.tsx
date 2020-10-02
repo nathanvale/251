@@ -1,18 +1,18 @@
 import * as React from "react";
 import { CircularProgress } from "@material-ui/core";
 import {
-  GraphicToneVariants,
+  GraphicColorVariants,
   MuiBasedComponentBaseProps,
 } from "@origin-digital/ods-types";
 import { makeStyles } from "@material-ui/core/styles";
 
 export type SpinnerSize = "xsmall" | "small" | "medium" | "large";
-export type SpinnerTone = "inherit" | GraphicToneVariants;
+export type SpinnerColor = "inherit" | GraphicColorVariants;
 
 export interface SpinnerProps
   extends Omit<MuiBasedComponentBaseProps, "children" | "disabled"> {
   size?: SpinnerSize;
-  tone?: SpinnerTone;
+  color?: SpinnerColor;
 }
 
 const mapSizeToPixel = (size: SpinnerSize) => {
@@ -30,8 +30,8 @@ const mapSizeToPixel = (size: SpinnerSize) => {
 
 const useColorStyles = makeStyles(
   (theme) => ({
-    root: ({ tone }: { tone: SpinnerTone }) =>
-      tone === "white"
+    root: ({ color }: { color: SpinnerColor }) =>
+      color === "white"
         ? {
             color: theme.palette.common.white,
           }
@@ -40,18 +40,19 @@ const useColorStyles = makeStyles(
   { classNamePrefix: "spinner" }
 );
 export const Spinner = ({
-  tone = "secondary",
+  color = "secondary",
   size = "xsmall",
   classes,
   ...other
 }: SpinnerProps) => {
   const spinnerSize = mapSizeToPixel(size);
 
-  const spinnerClasses = useColorStyles({ tone });
+  // We cannot set color white via color prop, need to use classes for it.
+  const spinnerClasses = useColorStyles({ color });
 
   return (
     <CircularProgress
-      color={tone !== "secondary" ? "inherit" : "secondary"}
+      color={color !== "secondary" ? "inherit" : "secondary"}
       size={spinnerSize}
       classes={{
         ...classes,
@@ -64,7 +65,7 @@ export const Spinner = ({
 
 Spinner.displayName = "Spinner";
 Spinner.defaultProps = {
-  tone: "secondary",
+  color: "secondary",
   "data-id": "spinner",
   size: "small",
 };

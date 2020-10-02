@@ -40,13 +40,14 @@ export const buttonMigrationGuide: ComponentMigrationGuide = {
             <ListItem>
               The <Emphasis>kind</Emphasis> prop is changed to{" "}
               <Emphasis>variant</Emphasis> prop where
-              <Strong>"primary" -> "contained"</Strong> and{" "}
-              <Strong>"secondary" -> "outlined"</Strong>.
+              <Strong>"primary" {"->"} "contained"</Strong> and{" "}
+              <Strong>"secondary" {"->"} "outlined"</Strong>.
             </ListItem>
             <ListItem>
               The values for <Emphasis>color</Emphasis> prop is changed to match
-              more abstract theme colours: <Strong>"red" -> "primary"</Strong>{" "}
-              and <Strong>"grey" -> "secondary"</Strong>.
+              more abstract theme colours:{" "}
+              <Strong>"red" {"->"} "primary"</Strong> and{" "}
+              <Strong>"grey" {"->"} "secondaryB"</Strong>.
             </ListItem>
             <ListItem>
               The <Emphasis>block</Emphasis> prop is now renamed to{" "}

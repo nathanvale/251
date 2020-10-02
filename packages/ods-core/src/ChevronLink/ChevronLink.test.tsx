@@ -13,9 +13,9 @@ test("It can render", () => {
   expect(container.firstChild).toMatchSnapshot();
 });
 
-test("It can render another tone", () => {
+test("It can render another color", () => {
   const { container } = render(
-    <ChevronLink variant="secondary" href="">
+    <ChevronLink color="secondaryB" href="">
       Chevron link
     </ChevronLink>
   );

@@ -1,15 +1,18 @@
 import { makeStyles } from "@material-ui/core";
 import {
-  SvgIconToneVariants,
+  SvgIconColorVariants,
   SvgIconSizeVariants,
 } from "@origin-digital/ods-types";
 
 interface UseSvgIconStylesProps {
   size: SvgIconSizeVariants;
-  tone: SvgIconToneVariants;
+  color: SvgIconColorVariants;
 }
 
-export const useSvgIconStyles = ({ tone, size }: UseSvgIconStylesProps) => {
+export const useSvgIconStyles = ({
+  color: colorProp,
+  size,
+}: UseSvgIconStylesProps) => {
   return makeStyles(
     ({ palette }) => {
       const sizeMap: Record<SvgIconSizeVariants, string> = {
@@ -19,7 +22,9 @@ export const useSvgIconStyles = ({ tone, size }: UseSvgIconStylesProps) => {
         large: "64px",
       };
       const color =
-        tone === "inherit" ? "inherit" : palette.getColorVariantCSSColor(tone);
+        colorProp === "inherit"
+          ? "inherit"
+          : palette.getColorVariantCSSColor(colorProp);
 
       return {
         "svg-icon": {
@@ -28,6 +33,6 @@ export const useSvgIconStyles = ({ tone, size }: UseSvgIconStylesProps) => {
         },
       };
     },
-    { classNamePrefix: `svg-icon-${tone}-${size}` }
+    { classNamePrefix: `svg-icon-${colorProp}-${size}` }
   )()["svg-icon"];
 };

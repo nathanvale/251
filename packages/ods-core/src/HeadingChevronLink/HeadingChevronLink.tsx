@@ -15,7 +15,7 @@ export const HeadingChevronLink = ({
   ...rest
 }: HeadingChevronLinkProps) => {
   return (
-    <ChevronLinkRenderer variant="primary">
+    <ChevronLinkRenderer color="primary">
       {({ chevronLinkStyles, IconChevron }) => (
         <TrackedLink
           domProps={{ ...domProps, className: chevronLinkStyles }}

@@ -22,7 +22,7 @@ export const textMigrationGuide: ComponentMigrationGuide = {
   route: `${baseMigrationGuidesURL}/${COMP_NAME}`,
   ListItemComp: () => (
     <TextLink href={`${baseMigrationGuidesURL}/${COMP_NAME}`}>
-      Heading(1,2,3,4) -> {COMP_NAME}
+      Heading(1,2,3,4) {"->"} {COMP_NAME}
     </TextLink>
   ),
   PageComp: () => {

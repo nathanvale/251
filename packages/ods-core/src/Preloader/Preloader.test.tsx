@@ -10,7 +10,7 @@ test("It renders in default", () => {
   expect(container).toMatchSnapshot();
 });
 
-test("It renders with the white tone", () => {
-  const { container } = renderPreloader({ tone: "white" });
+test("It renders with the white color", () => {
+  const { container } = renderPreloader({ color: "white" });
   expect(container).toMatchSnapshot();
 });

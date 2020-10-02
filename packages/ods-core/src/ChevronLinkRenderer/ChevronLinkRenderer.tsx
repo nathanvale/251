@@ -1,7 +1,7 @@
 import React, { ReactElement, useContext } from "react";
 import {
+  ButtonColor,
   ChevronLinkRenderProps,
-  ChevronVariants,
   ComponentBaseProps,
 } from "@origin-digital/ods-types";
 import clsx from "clsx";
@@ -19,10 +19,10 @@ import { Box } from "../Box";
 export interface ChevronLinkRendererProps
   extends Omit<ComponentBaseProps, "children"> {
   children: (renderProps: ChevronLinkRenderProps) => ReactElement;
-  variant: ChevronVariants;
+  color: ButtonColor;
 }
 interface UseChevronLinkProps {
-  variant: ChevronVariants;
+  color: ButtonColor;
 }
 
 function IconChevron() {
@@ -43,14 +43,11 @@ function IconChevron() {
   );
 }
 
-function useChevronLinkStyles({ variant }: UseChevronLinkProps) {
+function useChevronLinkStyles({ color: colorProp }: UseChevronLinkProps) {
   const linkResetStyles = useLinkResetStyles();
   const chevronLinkStyles = makeStyles(
     ({ palette, typography }) => {
-      const color =
-        variant === "secondary"
-          ? palette.secondaryB.main
-          : palette.getColorVariantCSSColor(variant);
+      const color = palette.getColorVariantCSSColor(colorProp);
       return {
         "chevron-link": {
           display: "flex",
@@ -97,8 +94,8 @@ export const ChevronLinkRenderer = (props: ChevronLinkRendererProps) => {
     }
   }
 
-  const { children, variant = "primary" } = props;
-  const chevronLinkStyles = useChevronLinkStyles({ variant });
+  const { children, color = "primary" } = props;
+  const chevronLinkStyles = useChevronLinkStyles({ color });
   return (
     <>
       {children({

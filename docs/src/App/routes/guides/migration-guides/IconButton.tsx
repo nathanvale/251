@@ -48,8 +48,8 @@ export const iconButtonMigrationGuide: ComponentMigrationGuide = {
                   <Strong>"Primary"</Strong>: used to be <Strong>"red"</Strong>.
                 </ListItem>
                 <ListItem>
-                  <Strong>"neutral"</Strong>: used to be <Strong>"grey"</Strong>
-                  .
+                  <Strong>"secondaryB"</Strong>: used to be{" "}
+                  <Strong>"grey"</Strong>.
                 </ListItem>
                 <ListItem>
                   <Strong>"inherit"</Strong>: This does not have an equivalent
@@ -87,8 +87,8 @@ export const iconButtonMigrationGuide: ComponentMigrationGuide = {
             renderers={{ code: DiffCodeBlock }}
             source={`\`\`\`diff
 <IconButton
--  color="lightOrange"
-+  color="secondary"
+-  color="grey"
++  color="secondaryB"
 
 -  tracking="sales-form:example"
 +  data-id="sales-form:example"

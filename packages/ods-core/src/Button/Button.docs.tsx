@@ -21,7 +21,7 @@ export const docs: ComponentDocs<ButtonProps> = {
     color: [
       "The button could either of 2 colours:",
       "(1) 'primary': picks up theme.palette.primary color;",
-      "(2) 'secondary': picks up theme.palette.grey[500] color.",
+      "(2) 'secondaryB': picks up theme.palette.secondaryB color.",
     ].join(" "),
     component: "The type of React element underneath this component.",
     "data-id":
@@ -70,11 +70,11 @@ export const docs: ComponentDocs<ButtonProps> = {
             </Columns>
             <Columns space="medium">
               <Column width="content">
-                <Button color="secondary">Secondary</Button>
+                <Button color="secondaryB">SecondaryB</Button>
               </Column>
               <Column>
-                <Button disabled color="secondary">
-                  Secondary
+                <Button disabled color="secondaryB">
+                  SecondaryB
                 </Button>
               </Column>
             </Columns>
@@ -83,8 +83,8 @@ export const docs: ComponentDocs<ButtonProps> = {
         codeString: `<Box>
    <Button>Primary</Button>
    <Button disabled>Primary</Button>
-   <Button color="secondary">Secondary</Button>
-   <Button disabled color="secondary">Secondary</Button>
+   <Button color="secondaryB">SecondaryB</Button>
+   <Button disabled color="secondaryB">SecondaryB</Button>
 </Box>`,
       },
       {
@@ -103,13 +103,13 @@ export const docs: ComponentDocs<ButtonProps> = {
             </Columns>
             <Columns space="medium">
               <Column width="content">
-                <Button variant="outlined" color="secondary">
-                  Secondary
+                <Button variant="outlined" color="secondaryB">
+                  SecondaryB
                 </Button>
               </Column>
               <Column>
-                <Button disabled variant="outlined" color="secondary">
-                  Secondary
+                <Button disabled variant="outlined" color="secondaryB">
+                  SecondaryB
                 </Button>
               </Column>
             </Columns>
@@ -118,8 +118,8 @@ export const docs: ComponentDocs<ButtonProps> = {
         codeString: `<Box>
   <Button variant="outlined">Primary</Button>
   <Button disabled variant="outlined">Primary</Button>
-  <Button variant="outlined" color="secondary">Secondary</Button>
-  <Button disabled variant="outlined" color="secondary">Secondary</Button>
+  <Button variant="outlined" color="secondaryB">SecondaryB</Button>
+  <Button disabled variant="outlined" color="secondaryB">SecondaryB</Button>
 </Box>`,
       },
       {
@@ -140,13 +140,13 @@ export const docs: ComponentDocs<ButtonProps> = {
             </Columns>
             <Columns space="medium">
               <Column width="content">
-                <Button variant="text" color="secondary" size="small">
-                  Secondary
+                <Button variant="text" color="secondaryB" size="small">
+                  SecondaryB
                 </Button>
               </Column>
               <Column>
-                <Button disabled variant="text" color="secondary" size="small">
-                  Secondary
+                <Button disabled variant="text" color="secondaryB" size="small">
+                  SecondaryB
                 </Button>
               </Column>
             </Columns>
@@ -155,8 +155,8 @@ export const docs: ComponentDocs<ButtonProps> = {
         codeString: `<Box>
   <Button variant="text">Primary</Button>
   <Button disabled variant="text">Primary</Button>
-  <Button variant="text" color="secondary">Secondary </Button>
-  <Button disabled variant="text" color="secondary">Secondary</Button>
+  <Button variant="text" color="secondaryB">SecondaryB </Button>
+  <Button disabled variant="text" color="secondaryB">SecondaryB</Button>
 </Box>`,
       },
       {
@@ -279,23 +279,28 @@ export const docs: ComponentDocs<ButtonProps> = {
               <Column>
                 {" "}
                 <Stack space="small">
-                  <Button inverse color="secondary">
+                  <Button inverse color="secondaryB">
                     Contained
                   </Button>
 
-                  <Button inverse variant="outlined" color="secondary">
+                  <Button inverse variant="outlined" color="secondaryB">
                     Outlined
                   </Button>
 
-                  <Button inverse variant="text" color="secondary">
+                  <Button inverse variant="text" color="secondaryB">
                     Text
                   </Button>
 
-                  <Button inverse disabled variant="outlined" color="secondary">
+                  <Button
+                    inverse
+                    disabled
+                    variant="outlined"
+                    color="secondaryB"
+                  >
                     Disabled
                   </Button>
 
-                  <Button inverse disabled variant="text" color="secondary">
+                  <Button inverse disabled variant="text" color="secondaryB">
                     Disabled
                   </Button>
                 </Stack>
@@ -309,10 +314,10 @@ export const docs: ComponentDocs<ButtonProps> = {
   <Button inverse variant="text">Text</Button>
   <Button inverse disabled>Disabled</Button>
 
-  <Button inverse color="secondary">Contained</Button>
-  <Button inverse variant="outlined" color="secondary">Outlined</Button>
-  <Button inverse variant="text" color="secondary">Text</Button>
-  <Button inverse disabled color="secondary">Disabled</Button>
+  <Button inverse color="secondaryB">Contained</Button>
+  <Button inverse variant="outlined" color="secondaryB">Outlined</Button>
+  <Button inverse variant="text" color="secondaryB">Text</Button>
+  <Button inverse disabled color="secondaryB">Disabled</Button>
 </Box>`,
       },
       {
@@ -337,8 +342,8 @@ export const docs: ComponentDocs<ButtonProps> = {
             <Button>Primary</Button>
           </Column>
           <Column>
-            <Button color="secondary" variant="outlined">
-              Secondary
+            <Button color="secondaryB" variant="outlined">
+              SecondaryB
             </Button>
           </Column>
         </Columns>
@@ -394,8 +399,8 @@ export const docs: ComponentDocs<ButtonProps> = {
             <Button variant="text">Primary</Button>
           </Column>
           <Column>
-            <Button variant="text" color="secondary">
-              Secondary
+            <Button variant="text" color="secondaryB">
+              SecondaryB
             </Button>
           </Column>
         </Columns>

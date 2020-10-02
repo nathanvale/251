@@ -24,7 +24,7 @@ export const dialogMigrationGuide: ComponentMigrationGuide = {
   route: `${baseMigrationGuidesURL}/${COMP_NAME}`,
   ListItemComp: () => (
     <TextLink href={`${baseMigrationGuidesURL}/${COMP_NAME}`}>
-      Modal -> {COMP_NAME}
+      Modal {"->"} {COMP_NAME}
     </TextLink>
   ),
   PageComp: () => {

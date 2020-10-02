@@ -18,6 +18,7 @@ export function createMUISvgIcon(
     React.forwardRef(
       (
         {
+          color,
           tone,
           size = defaultSize,
           "data-id": dataId = `Icon${displayName}`,
@@ -25,9 +26,12 @@ export function createMUISvgIcon(
         }: SvgIconProps,
         ref
       ) => {
-        const contextTone = useContext(SvgIconContext);
+        // tone is deprecated but we still allow it to work.
+        const finalColor = color ? color : tone;
+
+        const contextColor = useContext(SvgIconContext);
         const svgIconStyles = useSvgIconStyles({
-          tone: tone || contextTone || defaultColor,
+          color: finalColor || contextColor || defaultColor,
           size,
         });
         return (

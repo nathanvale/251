@@ -193,12 +193,12 @@ export const useButtonStyles = makeStyles(
         },
       },
       containedSecondary: {
-        backgroundColor: theme.palette.grey[500],
+        backgroundColor: theme.palette.secondaryB.main,
         "&:hover": {
-          backgroundColor: getContainedHoverBG(theme.palette.grey[500]),
+          backgroundColor: getContainedHoverBG(theme.palette.secondaryB.main),
         },
         "&$disabled": {
-          backgroundColor: getDisabledBG(theme.palette.grey[500]),
+          backgroundColor: getDisabledBG(theme.palette.secondaryB.main),
         },
       },
 
@@ -215,26 +215,26 @@ export const useButtonStyles = makeStyles(
         },
       },
       outlinedSecondary: {
-        color: theme.palette.grey[500],
-        border: `1px solid ${fade(theme.palette.grey[500], 0.5)}`,
+        color: theme.palette.secondaryB.main,
+        border: `1px solid ${fade(theme.palette.secondaryB.main, 0.5)}`,
         "&:hover": {
-          border: `1px solid ${theme.palette.grey[500]}`,
+          border: `1px solid ${theme.palette.secondaryB.main}`,
           backgroundColor: fade(
-            theme.palette.grey[500],
+            theme.palette.secondaryB.main,
             theme.palette.action.hoverOpacity
           ),
         },
         "&$disabled": {
-          color: getDisabledBG(theme.palette.grey[500]),
-          border: `1px solid ${getDisabled16BG(theme.palette.grey[500])}`,
+          color: getDisabledBG(theme.palette.secondaryB.main),
+          border: `1px solid ${getDisabled16BG(theme.palette.secondaryB.main)}`,
         },
       },
 
       textSecondary: {
-        color: theme.palette.grey[500],
+        color: theme.palette.secondaryB.main,
         "&:hover": {
           backgroundColor: fade(
-            theme.palette.grey[500],
+            theme.palette.secondaryB.main,
             theme.palette.action.hoverOpacity
           ),
         },
@@ -253,7 +253,7 @@ export const useInverseStyles = makeStyles(
         backgroundColor: theme.palette.common.white,
         "&$disabled": {
           color: theme.palette.grey[300],
-          backgroundColor: darken(theme.palette.grey[500], 0.16),
+          backgroundColor: darken(theme.palette.secondaryB.main, 0.16),
         },
       },
       containedPrimary: {
@@ -263,9 +263,9 @@ export const useInverseStyles = makeStyles(
         },
       },
       containedSecondary: {
-        color: theme.palette.grey[500],
+        color: theme.palette.secondaryB.main,
         "&:hover": {
-          backgroundColor: getHoverBGInverse(theme.palette.grey[500]),
+          backgroundColor: getHoverBGInverse(theme.palette.secondaryB.main),
         },
       },
 
@@ -274,22 +274,22 @@ export const useInverseStyles = makeStyles(
         border: `1px solid ${fade(theme.palette.common.white, 0.5)}`,
         "&:hover": {
           border: `1px solid ${theme.palette.common.white}`,
-          backgroundColor: getHoverBGInverseFade(theme.palette.grey[500]),
+          backgroundColor: getHoverBGInverseFade(theme.palette.secondaryB.main),
         },
         "&&$disabled": {
-          color: theme.palette.grey[500],
+          color: theme.palette.secondaryB.main,
           backgroundColor: "transparent",
-          border: `1px solid ${theme.palette.grey[500]}`,
+          border: `1px solid ${theme.palette.secondaryB.main}`,
         },
       },
 
       text: {
         color: theme.palette.common.white,
         "&:hover": {
-          backgroundColor: getHoverBGInverseFade(theme.palette.grey[500]),
+          backgroundColor: getHoverBGInverseFade(theme.palette.secondaryB.main),
         },
         "&$disabled": {
-          color: theme.palette.grey[500],
+          color: theme.palette.secondaryB.main,
         },
       },
 
@@ -313,7 +313,7 @@ export const useSpinnerStyles = makeStyles(
       let spinnerColor =
         color === "primary"
           ? theme.palette.primary.main
-          : theme.palette.grey[500];
+          : theme.palette.secondaryB.main;
 
       if (variant === "contained") {
         spinnerColor = getHoverBG(spinnerColor);

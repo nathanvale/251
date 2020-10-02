@@ -9,6 +9,7 @@ import React, {
 import type { FormControlLabelProps as MuiFormControlLabelProps } from "@material-ui/core/FormControlLabel/FormControlLabel";
 import type { FormHelperTextProps as MuiFormHelperTextProps } from "@material-ui/core/FormHelperText/FormHelperText";
 import { ResponsiveProp } from "./responsive";
+import { ColorPalette } from "./palette";
 
 /************************* generic types ********************************/
 export interface OptionalTrackableProps {
@@ -135,15 +136,19 @@ export interface LinkBaseProps extends ComponentBaseProps {
   domProps?: AnchorHTMLAttributes<HTMLAnchorElement>;
 }
 
-export type ButtonColor = "primary" | "secondary";
+export type ButtonColor = "primary" | "secondaryB";
 export type ButtonElements = "button" | "a" | "input";
 export type ButtonVariant = "contained" | "outlined" | "text";
 export type ButtonSize = "small" | "medium";
-export type IconButtonColor = "primary" | "neutral" | "inherit";
+export type IconButtonColor = ButtonColor | "inherit";
 export type InputType = "button" | "submit" | "reset";
 export type TabSize = "small" | "medium";
 
 /************************* Card, CardStackSection ********************************/
+export type CardBackgroundVariant = keyof Pick<
+  ColorPalette,
+  "grey50" | "white" | "transparent"
+>;
 export type CardPaddingVariants = "small" | "medium" | "large";
 export type CardStackSectionVariant = "widget" | "default" | "card-centered";
 export type CardStackSize = "small" | "medium" | "large";

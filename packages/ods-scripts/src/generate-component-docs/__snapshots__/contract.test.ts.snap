@@ -191,7 +191,7 @@ exports[`Box 1`] = `
     | "list-item"
     | "none"
   >
-  domProps?: Pick<AllHTMLAttributes<HTMLElement>, "size" | "disabled" | "className" | "id" | "cite" | "data" | "form" | "label" | "span" | "summary" | "title" | ... 341 more ... | "wmode"> | undefined
+  domProps?: Pick<AllHTMLAttributes<HTMLElement>, "color" | "size" | "disabled" | "className" | "id" | "cite" | "data" | "form" | "label" | "span" | "summary" | ... 341 more ... | "wmode"> | undefined
   flexDirection?: ResponsiveProp<
     | "column"
     | "column-reverse"
@@ -452,7 +452,7 @@ exports[`Button 1`] = `
   classes?: Partial<Record<ButtonClassKey, string>>
   color?: 
     | "primary"
-    | "secondary"
+    | "secondaryB"
   component?: 
     | "a"
     | "button"
@@ -620,17 +620,17 @@ exports[`ChevronButton 1`] = `
 {
   children?: ReactNode
   className?: string
+  color?: 
+    | "primary"
+    | "secondaryB"
   data-id?: string
-  domProps?: Pick<AllHTMLAttributes<HTMLButtonElement>, "size" | "disabled" | "className" | "id" | "cite" | "data" | "form" | "label" | "span" | "style" | ... 345 more ... | "wmode"> | undefined
+  domProps?: Pick<AllHTMLAttributes<HTMLButtonElement>, "color" | "size" | "disabled" | "className" | "id" | "cite" | "data" | "form" | "label" | ... 346 more ... | "wmode"> | undefined
   id?: string
   onClick?: (event: MouseEvent<HTMLButtonElement, MouseEvent>) => void
   type?: 
     | "button"
     | "reset"
     | "submit"
-  variant?: 
-    | "primary"
-    | "secondary"
 }
 `;
 
@@ -638,15 +638,15 @@ exports[`ChevronLink 1`] = `
 {
   children?: ReactNode
   className?: string
+  color?: 
+    | "primary"
+    | "secondaryB"
   data-id?: string
   domProps?: AnchorHTMLAttributes<HTMLAnchorElement> | undefined
   href: string
   id?: string
   onClick?: (event: MouseEvent<HTMLAnchorElement, MouseEvent>) => void
   target?: string
-  variant?: 
-    | "primary"
-    | "secondary"
 }
 `;
 
@@ -654,11 +654,11 @@ exports[`ChevronLinkRenderer 1`] = `
 {
   children: (renderProps: ChevronLinkRenderProps) => ReactElement<any, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<...>)>
   className?: string
+  color: 
+    | "primary"
+    | "secondaryB"
   data-id?: string
   id?: string
-  variant: 
-    | "primary"
-    | "secondary"
 }
 `;
 
@@ -1038,8 +1038,8 @@ exports[`IconButton 1`] = `
   classes?: Record<string, string>
   color?: 
     | "inherit"
-    | "neutral"
     | "primary"
+    | "secondaryB"
   data-id?: string
   disabled?: boolean
   href?: string
@@ -1464,11 +1464,11 @@ exports[`Placeholder 1`] = `
 exports[`Preloader 1`] = `
 {
   className?: string
-  data-id?: string
-  id?: string
-  tone?: 
+  color?: 
     | "secondary"
     | "white"
+  data-id?: string
+  id?: string
 }
 `;
 
@@ -1666,6 +1666,10 @@ exports[`Spinner 1`] = `
 {
   className?: string
   classes?: Record<string, string>
+  color?: 
+    | "inherit"
+    | "secondary"
+    | "white"
   data-id?: string
   id?: string
   size?: 
@@ -1673,10 +1677,6 @@ exports[`Spinner 1`] = `
     | "medium"
     | "small"
     | "xsmall"
-  tone?: 
-    | "inherit"
-    | "secondary"
-    | "white"
 }
 `;
 
@@ -1724,6 +1724,25 @@ exports[`SvgIcon 1`] = `
   children?: ReactNode
   className?: string
   classes?: Record<string, string>
+  color?: 
+    | "caution"
+    | "critical"
+    | "disabled"
+    | "grey300"
+    | "info"
+    | "inherit"
+    | "neutral"
+    | "neutralDark"
+    | "neutralLight"
+    | "positive"
+    | "positiveLight"
+    | "primary"
+    | "primaryB"
+    | "promote"
+    | "promoteB"
+    | "secondary"
+    | "secondaryB"
+    | "white"
   data-id?: string
   disabled?: boolean
   id?: string

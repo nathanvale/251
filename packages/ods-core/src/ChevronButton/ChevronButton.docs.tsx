@@ -5,7 +5,11 @@ import { ChevronButtonProps, ChevronButton } from "./ChevronButton";
 export const docs: ComponentDocs<ChevronButtonProps> = {
   category: "Interaction",
   componentName: "ChevronButon",
-  description: `By default, this component renders a native "button" element. If you’d like to customise the implementation of this component (e.g. to use a React Router link) you should use ChevronLinkRenderer instead.`,
+  description: [
+    `By default, this component renders a native "button" element. `,
+    `If you’d like to customise the implementation of this component`,
+    `(e.g. to use a React Router link) you should use ChevronLinkRenderer instead.`,
+  ].join(" "),
   propDescriptions: {
     type: "Sets or returns the type of a button",
     domProps:
@@ -19,9 +23,9 @@ export const docs: ComponentDocs<ChevronButtonProps> = {
     },
     additional: [
       {
-        label: "Setting the variant",
+        label: "Setting the color",
         Code: () => (
-          <ChevronButton variant="secondary">Chevron button</ChevronButton>
+          <ChevronButton color="secondaryB">Chevron button</ChevronButton>
         ),
       },
     ],

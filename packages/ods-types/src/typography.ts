@@ -11,7 +11,7 @@ export interface ChevronLinkRenderProps {
   IconChevron: () => JSX.Element;
 }
 
-export type GraphicToneVariants = "secondary" | "white";
+export type GraphicColorVariants = "secondary" | "white";
 export type TypographyWeightVariants = "regular" | "medium" | "bold";
 export type BaseTextVariants = "body" | "body-small";
 export type TextVariants =
