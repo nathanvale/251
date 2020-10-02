@@ -10,7 +10,6 @@ exports[`it renders 1`] = `
   font: inherit;
   vertical-align: baseline;
   margin-top: 32px;
-  margin-bottom: 32px;
 }
 
 <div>
@@ -35,7 +34,6 @@ exports[`should be hidden when not the active tab 1`] = `
   font: inherit;
   vertical-align: baseline;
   margin-top: 32px;
-  margin-bottom: 32px;
 }
 
 <div>

@@ -31,12 +31,11 @@ exports[`it renders 1`] = `
   font: inherit;
   vertical-align: baseline;
   margin-top: 32px;
-  margin-bottom: 32px;
 }
 
 <div>
   <div
-    class="MuiTabs-root tabs-root-9"
+    class="MuiTabs-root tabs-root-13 tabs-root-15"
     id="cities"
   >
     <div
@@ -51,7 +50,7 @@ exports[`it renders 1`] = `
         <button
           aria-controls="tabpanel-mlb"
           aria-selected="true"
-          class="MuiButtonBase-root MuiTab-root tab-root-11 MuiTab-textColorInherit Mui-selected tab-selected-12"
+          class="MuiButtonBase-root MuiTab-root tab-root-16 tab-root-18 MuiTab-textColorInherit Mui-selected tab-selected-17"
           data-id="tab"
           id="mlb"
           role="tab"
@@ -72,7 +71,7 @@ exports[`it renders 1`] = `
         <button
           aria-controls="tabpanel-syd"
           aria-selected="false"
-          class="MuiButtonBase-root MuiTab-root tab-root-11 MuiTab-textColorInherit"
+          class="MuiButtonBase-root MuiTab-root tab-root-16 tab-root-23 MuiTab-textColorInherit"
           data-id="tab"
           id="syd"
           role="tab"
@@ -93,7 +92,7 @@ exports[`it renders 1`] = `
         <button
           aria-controls="tabpanel-prt"
           aria-selected="false"
-          class="MuiButtonBase-root MuiTab-root tab-root-11 MuiTab-textColorInherit"
+          class="MuiButtonBase-root MuiTab-root tab-root-16 tab-root-24 MuiTab-textColorInherit"
           data-id="tab"
           id="prt"
           role="tab"
@@ -113,7 +112,7 @@ exports[`it renders 1`] = `
         </button>
       </div>
       <span
-        class="PrivateTabIndicator-root-13 PrivateTabIndicator-colorSecondary-15 MuiTabs-indicator tabs-indicator-10"
+        class="PrivateTabIndicator-root-19 PrivateTabIndicator-colorSecondary-21 MuiTabs-indicator tabs-indicator-14"
         style="left: 0px; width: 0px;"
       />
     </div>

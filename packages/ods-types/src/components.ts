@@ -141,6 +141,7 @@ export type ButtonVariant = "contained" | "outlined" | "text";
 export type ButtonSize = "small" | "medium";
 export type IconButtonColor = "primary" | "neutral" | "inherit";
 export type InputType = "button" | "submit" | "reset";
+export type TabSize = "small" | "medium";
 
 /************************* Card, CardStackSection ********************************/
 export type CardPaddingVariants = "small" | "medium" | "large";
