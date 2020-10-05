@@ -9,7 +9,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import {
   IconButtonColor,
   MuiBasedComponentBaseProps,
-  SvgIconToneVariants,
+  SvgIconColorVariants,
 } from "@origin-digital/ods-types";
 import { SvgIconContext, SvgIconProps } from "@origin-digital/ods-icons";
 import { ButtonProps, ButtonActionProps } from "../Button";
@@ -47,7 +47,7 @@ export const getSvgTone = (
   color: IconButtonColor,
   disabled?: boolean,
   textContext?: false | UseTextProps
-): SvgIconToneVariants => {
+): SvgIconColorVariants => {
   if (disabled) {
     return "disabled";
   }

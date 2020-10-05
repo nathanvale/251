@@ -17,7 +17,7 @@ export const docs: ComponentDocs<SpinnerProps> = {
       `Size of the Spinner.`,
       `The "xsmall" size is for very specific use cases. Do not use this size unless you know what you are doing.`,
     ].join(" "),
-    tone: [`Available colours to choose for the Spinner.`].join(" "),
+    color: [`Available colours to choose for the Spinner.`].join(" "),
   },
   migrationGuide: false,
   examples: {
@@ -26,19 +26,19 @@ export const docs: ComponentDocs<SpinnerProps> = {
     },
     additional: [
       {
-        label: "Inherit tone form parent context",
+        label: "Inherit color form parent context",
         description: [
-          `You can change the tone to inherit from color value of its parent.`,
+          `You can change the color to inherit from tone value of its parent.`,
         ].join(" "),
         Code: () => (
           <Text tone="positive">
-            This is inherited colour <Spinner tone="inherit" />
+            This is inherited colour <Spinner color="inherit" />
           </Text>
         ),
       },
       {
-        label: "Tone white, on dark backgrounds",
-        description: `If the background is dark, use the "white" tone for spinner.`,
+        label: "color white, on dark backgrounds",
+        description: `If the background is dark, use the "white" color for spinner.`,
         playroom: false,
         Code: () => (
           <Box
@@ -47,7 +47,7 @@ export const docs: ComponentDocs<SpinnerProps> = {
             justifyContent="center"
             style={{ backgroundColor: "rgb(236, 0, 0)", height: "100px" }}
           >
-            <Spinner tone="white" />
+            <Spinner color="white" />
           </Box>
         ),
       },
@@ -73,8 +73,8 @@ export const docs: ComponentDocs<SpinnerProps> = {
       Code: () => <Spinner />,
     },
     {
-      label: "with tone and size",
-      Code: () => <Spinner size="large" tone="inherit" />,
+      label: "with color and size",
+      Code: () => <Spinner size="large" color="inherit" />,
     },
   ],
 };

@@ -85,5 +85,3 @@ test("it vertically aligns children bottom if alignY is bottom", () => {
 
   expect(container).toMatchSnapshot();
 });
-
-//TODO: FInd a way to unit test collapseBelow. Needs to set window width.

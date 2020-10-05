@@ -1,7 +1,6 @@
 /* eslint-disable react/display-name */
 import React from "react";
 import { ComponentDocs } from "@origin-digital/ods-types";
-//@ts-ignore
 import { Text, TextLink } from "@origin-digital/ods-core";
 import { SvgIcon, SvgIconProps } from "./SvgIcon";
 
@@ -18,8 +17,9 @@ export const docs: ComponentDocs<SvgIconProps> = {
   ),
   propDescriptions: {
     children: "Svg nodes passed into the SVG element",
-    tone:
-      "The tone of the component. It supports theme colors that make sense for this component.",
+    color:
+      "The color of the component. It supports theme colors that make sense for this component.",
+    tone: `Deprecated, use "color" prop instead.`,
     size:
       "The fontSize applied to the icon, xsmall (20px) | small (24px) | medium (48px) | large (64px). It can also be configured to inherit font size.",
     viewBox:
@@ -62,7 +62,7 @@ export const docs: ComponentDocs<SvgIconProps> = {
           </Text>
         ),
         Code: () => (
-          <SvgIcon tone="critical" size="large" viewBox="0 0 48 48">
+          <SvgIcon color="critical" size="large" viewBox="0 0 48 48">
             <path d="M35.399 3c-5.045 0-9.387 4.104-11.398 8.391-2.013-4.286-6.355-8.391-11.401-8.391-6.955 0-12.6 5.646-12.6 12.601 0 14.149 14.273 17.859 24.001 31.848 9.195-13.902 23.999-18.15 23.999-31.848 0-6.956-5.645-12.601-12.601-12.601z" />
           </SvgIcon>
         ),

@@ -10,7 +10,7 @@ export const docs: ComponentDocs<PreloaderProps> = {
     "This component is used to show a the origin pre loading animation while the user is waiting for a page to be loaded. It should not be used for loading sections of a page, instead a Spinner should be used to communication section loading.",
   ].join(" "),
   propDescriptions: {
-    tone: [`Available colours to choose for the Preloader.`].join(" "),
+    color: [`Available colours to choose for the Preloader.`].join(" "),
   },
   migrationGuide: false,
   examples: {
@@ -19,8 +19,8 @@ export const docs: ComponentDocs<PreloaderProps> = {
     },
     additional: [
       {
-        label: "Tone white, on dark backgrounds",
-        description: `If the background is dark, use the "white" tone for spinner.`,
+        label: "Color white, on dark backgrounds",
+        description: `If the background is dark, use the "white" color for spinner.`,
         playroom: true,
         Code: () => (
           <Box
@@ -29,7 +29,7 @@ export const docs: ComponentDocs<PreloaderProps> = {
             justifyContent="center"
             style={{ backgroundColor: "rgb(236, 0, 0)", height: "100px" }}
           >
-            <Preloader tone="white" />
+            <Preloader color="white" />
           </Box>
         ),
       },
@@ -41,8 +41,8 @@ export const docs: ComponentDocs<PreloaderProps> = {
       Code: () => <Preloader />,
     },
     {
-      label: "with tone",
-      Code: () => <Preloader tone="white" />,
+      label: "with color",
+      Code: () => <Preloader color="white" />,
     },
   ],
 };

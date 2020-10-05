@@ -15,23 +15,23 @@ export const tests: E2ETests = [
     Code: () => <Button disabled>Primary</Button>,
   },
   {
-    label: "Contained button secondary",
-    Code: () => <Button color="secondary">Secondary</Button>,
+    label: "Contained button secondaryB",
+    Code: () => <Button color="secondaryB">SecondaryB</Button>,
   },
   {
-    label: "Contained button secondary disabled",
+    label: "Contained button secondaryB disabled",
     Code: () => (
-      <Button disabled color="secondary">
-        Secondary
+      <Button disabled color="secondaryB">
+        SecondaryB
       </Button>
     ),
   },
   {
-    label: "Secondary button",
+    label: "SecondaryB button",
     Code: () => <Button variant="outlined">Primary</Button>,
   },
   {
-    label: "Secondary button disabled",
+    label: "SecondaryB button disabled",
     Code: () => (
       <Button variant="outlined" disabled>
         Primary
@@ -39,18 +39,18 @@ export const tests: E2ETests = [
     ),
   },
   {
-    label: "Secondary button secondary",
+    label: "SecondaryB button secondaryB",
     Code: () => (
-      <Button variant="outlined" color="secondary">
-        Secondary
+      <Button variant="outlined" color="secondaryB">
+        SecondaryB
       </Button>
     ),
   },
   {
-    label: "Secondary button secondary disabled",
+    label: "SecondaryB button secondaryB disabled",
     Code: () => (
-      <Button variant="outlined" disabled color="secondary">
-        Secondary
+      <Button variant="outlined" disabled color="secondaryB">
+        SecondaryB
       </Button>
     ),
   },
@@ -67,18 +67,18 @@ export const tests: E2ETests = [
     ),
   },
   {
-    label: "Text button secondary",
+    label: "Text button secondaryB",
     Code: () => (
-      <Button variant="outlined" color="secondary">
+      <Button variant="outlined" color="secondaryB">
         Text
       </Button>
     ),
   },
   {
-    label: "Text button secondary disabled",
+    label: "Text button secondaryB disabled",
     Code: () => (
-      <Button variant="outlined" disabled color="secondary">
-        Secondary
+      <Button variant="outlined" disabled color="secondaryB">
+        SecondaryB
       </Button>
     ),
   },
@@ -164,23 +164,23 @@ export const tests: E2ETests = [
     ),
   },
   {
-    label: "Inverse contained button secondary",
+    label: "Inverse contained button secondaryB",
     Code: () => (
-      <Button inverse color="secondary">
-        Secondary
+      <Button inverse color="secondaryB">
+        SecondaryB
       </Button>
     ),
   },
   {
-    label: "Inverse contained button secondary disabled",
+    label: "Inverse contained button secondaryB disabled",
     Code: () => (
-      <Button inverse disabled color="secondary">
-        Secondary
+      <Button inverse disabled color="secondaryB">
+        SecondaryB
       </Button>
     ),
   },
   {
-    label: "Inverse secondary button",
+    label: "Inverse secondaryB button",
     Code: () => (
       <Button inverse variant="outlined">
         Primary
@@ -188,7 +188,7 @@ export const tests: E2ETests = [
     ),
   },
   {
-    label: "Inverse secondary button disabled",
+    label: "Inverse secondaryB button disabled",
     Code: () => (
       <Button inverse variant="outlined" disabled>
         Primary
@@ -196,18 +196,18 @@ export const tests: E2ETests = [
     ),
   },
   {
-    label: "Inverse secondary button secondary",
+    label: "Inverse secondaryB button secondaryB",
     Code: () => (
-      <Button inverse variant="outlined" color="secondary">
-        Secondary
+      <Button inverse variant="outlined" color="secondaryB">
+        SecondaryB
       </Button>
     ),
   },
   {
-    label: "Inverse secondary button secondary disabled",
+    label: "Inverse secondaryB button secondaryB disabled",
     Code: () => (
-      <Button inverse variant="outlined" disabled color="secondary">
-        Secondary
+      <Button inverse variant="outlined" disabled color="secondaryB">
+        SecondaryB
       </Button>
     ),
   },
@@ -228,18 +228,18 @@ export const tests: E2ETests = [
     ),
   },
   {
-    label: "Inverse text button secondary",
+    label: "Inverse text button secondaryB",
     Code: () => (
-      <Button inverse variant="outlined" color="secondary">
+      <Button inverse variant="outlined" color="secondaryB">
         Text
       </Button>
     ),
   },
   {
-    label: "Inverse text button secondary disabled",
+    label: "Inverse text button secondaryB disabled",
     Code: () => (
-      <Button inverse variant="outlined" disabled color="secondary">
-        Secondary
+      <Button inverse variant="outlined" disabled color="secondaryB">
+        SecondaryB
       </Button>
     ),
   },

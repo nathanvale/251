@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React, { AllHTMLAttributes } from "react";
-import { ChevronVariants } from "@origin-digital/ods-types";
+import { ButtonColor } from "@origin-digital/ods-types";
 import {
   ChevronLinkRenderer,
   ChevronLinkRendererProps,
@@ -9,8 +9,8 @@ import { Text } from "../Text";
 import { useTracking } from "../TrackingProvider";
 
 export interface ChevronButtonProps
-  extends Omit<ChevronLinkRendererProps, "children" | "variant"> {
-  variant?: ChevronVariants;
+  extends Omit<ChevronLinkRendererProps, "children" | "color"> {
+  color?: ButtonColor;
   onClick?: AllHTMLAttributes<HTMLButtonElement>["onClick"];
   type?: "button" | "submit" | "reset";
   children?: React.ReactNode;
@@ -20,10 +20,10 @@ export interface ChevronButtonProps
   >;
 }
 const defaultDataId = "chevron-button";
-const defaultVariant = "primary";
+const defaultColor = "primary";
 export const ChevronButton = ({
   "data-id": dataId = defaultDataId,
-  variant = defaultVariant,
+  color = defaultColor,
   children,
   domProps,
   ...rest
@@ -34,7 +34,7 @@ export const ChevronButton = ({
     type: ChevronButton.displayName,
   });
   return (
-    <ChevronLinkRenderer variant={variant}>
+    <ChevronLinkRenderer color={color}>
       {({ chevronLinkStyles, IconChevron }) => (
         <button
           data-id={dataId}
@@ -54,7 +54,7 @@ export const ChevronButton = ({
 
 ChevronButton.defaultProps = {
   "data-id": defaultDataId,
-  variant: defaultVariant,
+  color: defaultColor,
 };
 
 ChevronButton.displayName = "ChevronButton";

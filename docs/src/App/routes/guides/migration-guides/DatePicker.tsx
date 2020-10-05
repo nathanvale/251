@@ -22,7 +22,7 @@ export const datePickerMigrationGuide: ComponentMigrationGuide = {
   route: `${baseMigrationGuidesURL}/${COMP_NAME}`,
   ListItemComp: () => (
     <TextLink href={`${baseMigrationGuidesURL}/${COMP_NAME}`}>
-      {COMP_NAME} -> {COMP_NAME} / Keyboard{COMP_NAME}
+      {COMP_NAME} {"->"} {COMP_NAME} / Keyboard{COMP_NAME}
     </TextLink>
   ),
   PageComp: () => {

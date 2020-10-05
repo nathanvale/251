@@ -6,16 +6,20 @@ import {
 import {
   MuiBasedComponentBaseProps,
   SvgIconSizeVariants,
-  SvgIconToneVariants,
+  SvgIconColorVariants,
 } from "@origin-digital/ods-types";
 import { useSvgIconStyles } from "../_private/useSvgIconStyles";
 import { SvgIconContext } from "./SvgIconContext";
 
 export interface SvgIconProps extends MuiBasedComponentBaseProps {
-  tone?: SvgIconToneVariants;
-  size?: SvgIconSizeVariants;
+  color?: SvgIconColorVariants;
   muiProps?: MuiSvgIconProps;
+  size?: SvgIconSizeVariants;
   titleAccess?: string;
+  /**
+   * @deprecated Use color props instead. Will be removed in ODS v2.0
+   */
+  tone?: SvgIconColorVariants;
   viewBox?: string;
 }
 
@@ -24,10 +28,20 @@ export const defaultSize = "small";
 export const defaultViewBox = "0 0 24 24";
 
 export const SvgIcon = React.forwardRef<any, SvgIconProps>((props, ref) => {
-  const { children, tone, size = defaultSize, muiProps, ...rest } = props;
-  const contextTone = useContext(SvgIconContext);
+  const {
+    children,
+    tone,
+    color,
+    size = defaultSize,
+    muiProps,
+    ...rest
+  } = props;
+  // tone is deprecated but we still allow it to work.
+  const finalColor = color ? color : tone;
+
+  const contextColor = useContext(SvgIconContext);
   const svgIconStyles = useSvgIconStyles({
-    tone: tone || contextTone || defaultColor,
+    color: finalColor || contextColor || defaultColor,
     size,
   });
   return (

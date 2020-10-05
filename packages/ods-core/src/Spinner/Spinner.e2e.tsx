@@ -3,7 +3,7 @@ import { E2ETests } from "@origin-digital/ods-types";
 import { Box } from "../Box/Box";
 import { Column } from "../Column/Column";
 import { Columns } from "../Columns/Columns";
-import { Spinner, SpinnerSize, SpinnerTone } from "./Spinner";
+import { Spinner, SpinnerSize, SpinnerColor } from "./Spinner";
 
 export const tests: E2ETests = [
   {
@@ -14,19 +14,19 @@ export const tests: E2ETests = [
     label: "Spinner in different colors",
     Code: () => (
       <Columns space="medium">
-        {(["inherit", "secondary", "white"] as SpinnerTone[]).map((tone) => (
-          <Column key={tone}>
-            {tone === "white" ? (
+        {(["inherit", "secondary", "white"] as SpinnerColor[]).map((color) => (
+          <Column key={color}>
+            {color === "white" ? (
               <Box
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
                 style={{ backgroundColor: "rgb(236, 0, 0)", height: "100px" }}
               >
-                <Spinner tone={tone} />
+                <Spinner color={color} />
               </Box>
             ) : (
-              <Spinner tone={tone} />
+              <Spinner color={color} />
             )}
           </Column>
         ))}

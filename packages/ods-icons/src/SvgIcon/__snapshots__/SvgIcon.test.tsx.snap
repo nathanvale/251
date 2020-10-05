@@ -26,7 +26,7 @@ exports[`it renders a svg 1`] = `
 </svg>
 `;
 
-exports[`it renders a svg with tone 1`] = `
+exports[`it renders a svg with color 1`] = `
 <svg
   aria-hidden="true"
   class="MuiSvgIcon-root svg-icon-critical-small-svg-icon-3"

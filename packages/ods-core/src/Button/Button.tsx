@@ -40,7 +40,7 @@ export interface ButtonProps
     ButtonActionProps {
   variant?: ButtonVariant;
   noTextPadding?: boolean;
-  color?: ButtonColor; // secondary here is a grey colour.
+  color?: ButtonColor;
   classes?: MuiButtonProps["classes"];
   size?: ButtonSize;
   fullWidth?: ResponsiveProp<boolean>;
@@ -108,7 +108,7 @@ export const Button = (props: ButtonProps) => {
       disabled={spinner || disabled}
       ref={ref}
       classes={inverse ? inverseClasses : btnClasses}
-      color={color}
+      color={color === "secondaryB" ? "secondary" : color}
       component={newComp}
       href={href}
       type={type}

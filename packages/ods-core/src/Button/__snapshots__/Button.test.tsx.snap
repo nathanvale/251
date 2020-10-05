@@ -38,7 +38,7 @@ exports[`it renders a contained primary by default 1`] = `
 </div>
 `;
 
-exports[`it renders a contained secondary 1`] = `
+exports[`it renders a contained secondaryB 1`] = `
 <div>
   <button
     class="MuiButtonBase-root MuiButton-root Button-root-25 Button-root-36 MuiButton-contained Button-contained-28 MuiButton-containedSecondary Button-containedSecondary-30"
@@ -151,7 +151,7 @@ exports[`it renders an outlined primary 1`] = `
 </div>
 `;
 
-exports[`it renders an outlined secondary 1`] = `
+exports[`it renders an outlined secondaryB 1`] = `
 <div>
   <button
     class="MuiButtonBase-root MuiButton-root Button-root-97 Button-root-108 MuiButton-outlined Button-outlined-103 MuiButton-outlinedSecondary Button-outlinedSecondary-105"
@@ -209,7 +209,7 @@ exports[`it renders an text primary 1`] = `
 </div>
 `;
 
-exports[`it renders an text secondary 1`] = `
+exports[`it renders an text secondaryB 1`] = `
 <div>
   <button
     class="MuiButtonBase-root MuiButton-root Button-root-169 Button-root-180 MuiButton-text MuiButton-textSecondary Button-textSecondary-178"

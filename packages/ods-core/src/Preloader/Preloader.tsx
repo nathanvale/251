@@ -2,13 +2,13 @@ import * as React from "react";
 import clsx from "clsx";
 import {
   ComponentBaseProps,
-  GraphicToneVariants,
+  GraphicColorVariants,
 } from "@origin-digital/ods-types";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box } from "../Box";
 
 export interface PreloaderProps extends Omit<ComponentBaseProps, "children"> {
-  tone?: GraphicToneVariants;
+  color?: GraphicColorVariants;
 }
 
 const useBounceAnimation = makeStyles(
@@ -50,12 +50,12 @@ const usePreloaderStyles = makeStyles(
     container: {
       minHeight: 32,
     },
-    circle: ({ tone }: { tone?: GraphicToneVariants }) => ({
+    circle: ({ color }: { color?: GraphicColorVariants }) => ({
       width: 6,
       height: 6,
       borderWidth: 3,
       borderColor:
-        tone === "white"
+        color === "white"
           ? theme.palette.common.white
           : theme.palette.secondary.main,
       borderStyle: "solid",
@@ -67,8 +67,8 @@ const usePreloaderStyles = makeStyles(
   { classNamePrefix: "preloader" }
 );
 
-export const Preloader = ({ tone, className, ...rest }: PreloaderProps) => {
-  const { circle, container } = usePreloaderStyles({ tone });
+export const Preloader = ({ color, className, ...rest }: PreloaderProps) => {
+  const { circle, container } = usePreloaderStyles({ color });
   const {
     bounceEffect,
     secondDelay,
@@ -94,6 +94,6 @@ export const Preloader = ({ tone, className, ...rest }: PreloaderProps) => {
 
 Preloader.displayName = "Preloader";
 Preloader.defaultProps = {
-  tone: "secondary",
+  color: "secondary",
   "data-id": "preloader",
 };

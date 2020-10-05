@@ -11,7 +11,7 @@ test("It can render", () => {
 
 test("It can render another tone", () => {
   const { container } = render(
-    <ChevronButton variant="secondary">Chevron button</ChevronButton>
+    <ChevronButton color="secondaryB">Chevron button</ChevronButton>
   );
   expect(container.firstChild).toMatchSnapshot();
 });

@@ -39,7 +39,7 @@ exports[`It can render 1`] = `
 </a>
 `;
 
-exports[`It can render another tone 1`] = `
+exports[`It can render another color 1`] = `
 .c0 {
   margin: 0;
   padding: 0;

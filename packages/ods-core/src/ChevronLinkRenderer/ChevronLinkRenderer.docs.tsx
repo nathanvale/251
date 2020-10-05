@@ -4,8 +4,12 @@ import { ComponentDocs } from "@origin-digital/ods-types";
 export const docs: ComponentDocs = {
   category: "Interaction",
   componentName: "ChevronLinkRenderer",
-  description:
-    "ChevronLinkRenderer abstracts away our chevron link styling and chevron icon behaviour. This allows you to render something that looks like a ChevronLink but is semantically something different, e.g. React Router Link. If what you’re rendering is semantically a link or button, consider using a ChevronLink or ChevronButton instead.",
+  description: [
+    "ChevronLinkRenderer abstracts away our chevron link styling and chevron icon behaviour.",
+    "This allows you to render something that looks like a ChevronLink but is semantically",
+    "something different, e.g. React Router Link. If what you’re rendering is semantically",
+    "a link or button, consider using a ChevronLink or ChevronButton instead.",
+  ].join(" "),
   propDescriptions: {},
   examples: {
     default: {
@@ -14,7 +18,7 @@ import { Link } from 'react-router-dom';
 import { ChevronLinkRenderer } from "@origin-digital/ods-core";
 
 export default () => (
-  <ChevronLinkRenderer variant="primary">
+  <ChevronLinkRenderer color="primary">
   {({ chevronLinkStyles, IconChevron }) => (
     <Link to="" className={chevronLinkStyles}>
       <IconChevron />

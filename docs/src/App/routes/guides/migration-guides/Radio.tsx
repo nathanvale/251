@@ -22,7 +22,7 @@ export const radioMigrationGuide: ComponentMigrationGuide = {
   route: `${baseMigrationGuidesURL}/${COMP_NAME}`,
   ListItemComp: () => (
     <TextLink href={`${baseMigrationGuidesURL}/${COMP_NAME}`}>
-      RadioButton, RadioGroup -> {COMP_NAME}(Group)
+      RadioButton, RadioGroup {"->"} {COMP_NAME}(Group)
     </TextLink>
   ),
   PageComp: () => {

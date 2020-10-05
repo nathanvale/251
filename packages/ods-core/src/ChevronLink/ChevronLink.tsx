@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React, { AnchorHTMLAttributes } from "react";
-import { LinkComponentProps, ChevronVariants } from "@origin-digital/ods-types";
+import { LinkComponentProps, ButtonColor } from "@origin-digital/ods-types";
 import {
   ChevronLinkRenderer,
   ChevronLinkRendererProps,
@@ -8,8 +8,8 @@ import {
 import { TrackedLink } from "../TrackedLink";
 
 export interface ChevronLinkProps
-  extends Omit<ChevronLinkRendererProps, "children" | "variant"> {
-  variant?: ChevronVariants;
+  extends Omit<ChevronLinkRendererProps, "children" | "color"> {
+  color?: ButtonColor;
   href: LinkComponentProps["href"];
   target?: AnchorHTMLAttributes<HTMLAnchorElement>["target"];
   onClick?: AnchorHTMLAttributes<HTMLAnchorElement>["onClick"];
@@ -17,18 +17,18 @@ export interface ChevronLinkProps
   domProps?: AnchorHTMLAttributes<HTMLAnchorElement>;
 }
 const defaultDataId = "chevron-link";
-const defaultVariant = "primary";
+const defaultColor = "primary";
 const defaultPadding = "none";
 export const ChevronLink = ({
   "data-id": dataId = defaultDataId,
-  variant = defaultVariant,
+  color = defaultColor,
   children,
   domProps,
   target,
   ...rest
 }: ChevronLinkProps) => {
   return (
-    <ChevronLinkRenderer variant={variant}>
+    <ChevronLinkRenderer color={color}>
       {({ chevronLinkStyles, IconChevron }) => (
         <TrackedLink
           trackingType={ChevronLink.displayName}
@@ -51,7 +51,7 @@ export const ChevronLink = ({
 
 ChevronLink.defaultProps = {
   "data-id": defaultDataId,
-  variant: defaultVariant,
+  color: defaultColor,
   padding: defaultPadding,
 };
 

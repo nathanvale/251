@@ -17,8 +17,8 @@ test("it renders a contained primary by default", () => {
   expect(container).toMatchSnapshot();
 });
 
-test("it renders a contained secondary", () => {
-  const { container } = render(<Button color="secondary">Primary</Button>);
+test("it renders a contained secondaryB", () => {
+  const { container } = render(<Button color="secondaryB">Primary</Button>);
 
   expect(container).toMatchSnapshot();
 });
@@ -35,9 +35,9 @@ test("it renders an outlined primary", () => {
   expect(container).toMatchSnapshot();
 });
 
-test("it renders an outlined secondary", () => {
+test("it renders an outlined secondaryB", () => {
   const { container } = render(
-    <Button variant="outlined" color="secondary">
+    <Button variant="outlined" color="secondaryB">
       Primary
     </Button>
   );
@@ -61,9 +61,9 @@ test("it renders an text primary", () => {
   expect(container).toMatchSnapshot();
 });
 
-test("it renders an text secondary", () => {
+test("it renders an text secondaryB", () => {
   const { container } = render(
-    <Button variant="text" color="secondary">
+    <Button variant="text" color="secondaryB">
       Primary
     </Button>
   );

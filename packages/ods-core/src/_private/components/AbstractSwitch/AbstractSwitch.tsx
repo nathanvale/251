@@ -96,7 +96,7 @@ export function AbstractSwitch<
   const fcs = formControlState({
     props,
     muiFormControl: muiFormControl!,
-    states: ["disabled", "error"], // TODO: see if we need to support the whole list of FormControlState keys.
+    states: ["disabled", "error"],
   }) as FormControlState;
 
   const disabledVal = disabled || !!fcs.disabled;
