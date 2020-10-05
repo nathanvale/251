@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.34.5](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.34.4...docs@0.34.5) (2020-10-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency postcss-loader to v4 ([6d97d6c](https://bitbucket.orgn.io/od/origin-ui/commits/6d97d6c1e1c2350a382eefe2c3f8bb1610740caf))
+
+
+
+
+
 ## [0.34.4](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.34.3...docs@0.34.4) (2020-10-05)
 
 
