@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.34.3](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.34.2...docs@0.34.3) (2020-10-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency postcss-safe-parser to v5 ([5349c4a](https://bitbucket.orgn.io/od/origin-ui/commits/5349c4a91f9ca1802890a175ea0180c0ef42d72b))
+
+
+
+
+
 ## [0.34.2](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.34.1...docs@0.34.2) (2020-10-05)
 
 
