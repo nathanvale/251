@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.5](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-typography@0.4.4...@origin-digital/ods-typography@0.4.5) (2020-10-05)
+
+**Note:** Version bump only for package @origin-digital/ods-typography
+
+
+
+
+
 ## [0.4.4](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-typography@0.4.3...@origin-digital/ods-typography@0.4.4) (2020-10-02)
 
 **Note:** Version bump only for package @origin-digital/ods-typography

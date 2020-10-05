@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.17](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-pickers@0.3.16...@origin-digital/ods-pickers@0.3.17) (2020-10-05)
+
+**Note:** Version bump only for package @origin-digital/ods-pickers
+
+
+
+
+
 ## [0.3.16](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-pickers@0.3.15...@origin-digital/ods-pickers@0.3.16) (2020-10-02)
 
 **Note:** Version bump only for package @origin-digital/ods-pickers

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.38.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.37.3...@origin-digital/ods-types@0.38.0) (2020-10-05)
+
+
+### Features
+
+* **tones:** changed to color ([cc4c63d](https://bitbucket.orgn.io/od/origin-ui/commits/cc4c63d93b1835a74f724aef997a4e2f9935b0b4))
+
+
+
+
+
 ## [0.37.3](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.37.2...@origin-digital/ods-types@0.37.3) (2020-10-02)
 
 **Note:** Version bump only for package @origin-digital/ods-types

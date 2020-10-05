@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.29.8](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.29.7...@origin-digital/ods-lab@0.29.8) (2020-10-05)
+
+**Note:** Version bump only for package @origin-digital/ods-lab
+
+
+
+
+
 ## [0.29.7](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-lab@0.29.6...@origin-digital/ods-lab@0.29.7) (2020-10-02)
 
 **Note:** Version bump only for package @origin-digital/ods-lab

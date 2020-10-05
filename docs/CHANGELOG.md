@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.34.0](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.33.28...docs@0.34.0) (2020-10-05)
+
+
+### Bug Fixes
+
+* **deps:** update 3rd-party non-major dependencies ([86c73ee](https://bitbucket.orgn.io/od/origin-ui/commits/86c73ee654df145709ba52db4897593eabcbca0f))
+
+
+### Features
+
+* **tones:** changed to color ([cc4c63d](https://bitbucket.orgn.io/od/origin-ui/commits/cc4c63d93b1835a74f724aef997a4e2f9935b0b4))
+
+
+
+
+
 ## [0.33.28](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.33.27...docs@0.33.28) (2020-10-02)
 
 **Note:** Version bump only for package docs
