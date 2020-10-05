@@ -14893,6 +14893,11 @@ kleur@^3.0.3:
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha1-p5yezIbuHOP6YgbRIWxQHxR/wH4=
 
+klona@^2.0.4:
+  version "2.0.4"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/klona/-/klona-2.0.4.tgz#7bb1e3affb0cb8624547ef7e8f6708ea2e39dfc0"
+  integrity sha1-e7Hjr/sMuGJFR+9+j2cI6i4538A=
+
 koa-bodyparser@^4.2.1:
   version "4.3.0"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/koa-bodyparser/-/koa-bodyparser-4.3.0.tgz#274c778555ff48fa221ee7f36a9fbdbace22759a"
@@ -18886,7 +18891,18 @@ postcss-load-config@^2.0.0:
     cosmiconfig "^5.0.0"
     import-cwd "^2.0.0"
 
-postcss-loader@3.0.0, postcss-loader@^3.0.0:
+postcss-loader@4.0.3:
+  version "4.0.3"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/postcss-loader/-/postcss-loader-4.0.3.tgz#337f51bbdfb02269fb42f7db9fc7f0a93c1b2e3f"
+  integrity sha1-M39Ru9+wImn7Qvfbn8fwqTwbLj8=
+  dependencies:
+    cosmiconfig "^7.0.0"
+    klona "^2.0.4"
+    loader-utils "^2.0.0"
+    schema-utils "^2.7.1"
+    semver "^7.3.2"
+
+postcss-loader@^3.0.0:
   version "3.0.0"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/postcss-loader/-/postcss-loader-3.0.0.tgz#6b97943e47c72d845fa9e03f273773d4e8dd6c2d"
   integrity sha1-a5eUPkfHLYRfqeA/Jzdz1OjdbC0=
