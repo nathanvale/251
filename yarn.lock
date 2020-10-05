@@ -20024,10 +20024,10 @@ react-router@5.1.2, react-router@^5.1.2:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
-react-syntax-highlighter@^13.5.3:
-  version "13.5.3"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/react-syntax-highlighter/-/react-syntax-highlighter-13.5.3.tgz#9712850f883a3e19eb858cf93fad7bb357eea9c6"
-  integrity sha1-lxKFD4g6PhnrhYz5P617s1fuqcY=
+react-syntax-highlighter@^15.0.0:
+  version "15.0.1"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/react-syntax-highlighter/-/react-syntax-highlighter-15.0.1.tgz#6b4e325ed6d93d144c8a7a755b9d9b5435c66bd7"
+  integrity sha1-a04yXtbZPRRMinp1W52bVDXGa9c=
   dependencies:
     "@babel/runtime" "^7.3.1"
     highlight.js "^10.1.1"
