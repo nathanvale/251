@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.34.2](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.34.1...docs@0.34.2) (2020-10-05)
+
+
+### Bug Fixes
+
+* **deps:** dependency postcss-normalize to v9 ([a062fbb](https://bitbucket.orgn.io/od/origin-ui/commits/a062fbb46c9f638bb7408f693aec761420e0ab20))
+* **deps:** update dependency css-loader to v4 ([56aa1ca](https://bitbucket.orgn.io/od/origin-ui/commits/56aa1ca05619158be77a0107f9831578ad7a3e74))
+
+
+
+
+
 ## [0.34.1](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.34.0...docs@0.34.1) (2020-10-05)
 
 
