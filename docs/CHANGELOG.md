@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.34.4](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.34.3...docs@0.34.4) (2020-10-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-syntax-highlighter to v15 ([d43edcb](https://bitbucket.orgn.io/od/origin-ui/commits/d43edcb4397805f7b39013ba2d125596e9a0b0e4))
+* **deps:** update dependency style-loader to v1 ([b9fa7a5](https://bitbucket.orgn.io/od/origin-ui/commits/b9fa7a52ca1ac387a1d91d3b9aa4dd3e08151d82))
+* **deps:** update dependency terser-webpack-plugin to v4 ([944861f](https://bitbucket.orgn.io/od/origin-ui/commits/944861feecd2ca3e36409f2ba7ea3170589bdb8a))
+
+
+
+
+
 ## [0.34.3](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.34.2...docs@0.34.3) (2020-10-05)
 
 
