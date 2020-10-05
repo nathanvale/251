@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.34.6](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.34.5...docs@0.34.6) (2020-10-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency url-loader to v4 ([6b24588](https://bitbucket.orgn.io/od/origin-ui/commits/6b24588ffbc0ed6f71c79a06d945cdee1aab3d57))
+
+
+
+
+
 ## [0.34.5](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.34.4...docs@0.34.5) (2020-10-05)
 
 
