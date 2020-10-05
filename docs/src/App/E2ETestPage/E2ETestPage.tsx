@@ -14,7 +14,7 @@ interface E2ETestProps {
 
 function E2ETest({ componentName, tests }: E2ETestProps) {
   return (
-    <Section stretchY backgroundColor="white">
+    <Section backgroundColor="white">
       <Stack space="xlarge" dividers data-id="tests">
         <Heading variant="h2">{componentName} </Heading>
         {tests.map((test) => {
