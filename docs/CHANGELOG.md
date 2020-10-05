@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.34.1](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.34.0...docs@0.34.1) (2020-10-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @svgr/webpack to v5 ([2f016d3](https://bitbucket.orgn.io/od/origin-ui/commits/2f016d314871f3978dda9827d5b941f98786db5f))
+* **deps:** update dependency camelcase to v6 ([7a037ef](https://bitbucket.orgn.io/od/origin-ui/commits/7a037ef1e8db4314b53770eadaa9778bba017f4b))
+* **deps:** update dependency file-loader to v6 ([587f765](https://bitbucket.orgn.io/od/origin-ui/commits/587f765d5af7aded81e581d96d3e9dcf8768dd21))
+* **deps:** update dependency semver to v7 ([6fa50df](https://bitbucket.orgn.io/od/origin-ui/commits/6fa50dfff19edca568860d321c545134556d9bf7))
+* **e2e tests:** whole page white bg ([ff17d71](https://bitbucket.orgn.io/od/origin-ui/commits/ff17d716c7fde67b440f4833a28d67fb70e8a8dc))
+
+
+
+
+
 # [0.34.0](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.33.28...docs@0.34.0) (2020-10-05)
 
 
