@@ -20,7 +20,7 @@
     "@origin-digital/ods-themes": "^0.20.11",
     "@origin-digital/ods-types": "^0.38.0",
     "@origin-digital/reporting-client": "^4.0.0",
-    "@svgr/webpack": "4.3.3",
+    "@svgr/webpack": "5.4.0",
     "babel-loader": "8.1.0",
     "babel-plugin-named-asset-import": "^0.3.6",
     "camelcase": "^5.3.1",
