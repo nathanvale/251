@@ -53,11 +53,14 @@ const AnchorLink = ({ children, to }: any) => {
 const LinkableHeadingContainer = styled(Box)`
   cursor: pointer;
 `;
+
 const HashAnchor = styled(Box)`
-  margintop: -40px;
+  margin-top: -40px;
 `;
+
 const HashLink = styled(Box)`
   opacity: 0;
+  /* stylelint-disable selector-type-no-unknown */
   ${LinkableHeadingContainer}:hover & {
     opacity: 1;
   }

@@ -166,7 +166,6 @@ export const StyledButtonReset = styled(
   text-decoration: none;
   color: inherit;
   outline: none;
-  text-decoration: none;
   cursor: pointer;
   &:disabled {
     pointer-events: none;

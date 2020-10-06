@@ -6,8 +6,8 @@ import React, {
   Ref,
   RefObject,
 } from "react";
-import type { FormControlLabelProps as MuiFormControlLabelProps } from "@material-ui/core/FormControlLabel/FormControlLabel";
-import type { FormHelperTextProps as MuiFormHelperTextProps } from "@material-ui/core/FormHelperText/FormHelperText";
+import { FormControlLabelProps as MuiFormControlLabelProps } from "@material-ui/core/FormControlLabel/FormControlLabel";
+import { FormHelperTextProps as MuiFormHelperTextProps } from "@material-ui/core/FormHelperText/FormHelperText";
 import { ResponsiveProp } from "./responsive";
 import { ColorPalette } from "./palette";
 

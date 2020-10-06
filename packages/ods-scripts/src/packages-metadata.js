@@ -24,8 +24,8 @@ function getPackagesMetaData() {
 
   const packagesMetadata = result.stdout
     .split("\n")
-    .filter((package) => package !== "")
-    .map((package) => JSON.parse(package));
+    .filter((pkg) => pkg !== "")
+    .map((pkg) => JSON.parse(pkg));
 
   return packagesMetadata;
 }
@@ -42,8 +42,8 @@ function getPackagesMetaData() {
 function getResolveAliases(packagesMetadata) {
   return packagesMetadata.reduce(
     (previousValue, currentValue, currentIndex, array) => {
-      const package = array[currentIndex];
-      return { ...previousValue, [package.name]: `${package.location}/src` };
+      const pkg = array[currentIndex];
+      return { ...previousValue, [pkg.name]: `${pkg.location}/src` };
     },
     {}
   );

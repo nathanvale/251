@@ -70,19 +70,19 @@ export const textMigrationGuide: ComponentMigrationGuide = {
               <Emphasis>variant</Emphasis> prop instead. Here is the mapping:
               <List type="disc">
                 <ListItem>
-                  <Strong>xs</Strong> -> <Strong>body-small</Strong>
+                  <Strong>xs</Strong> -{">"} <Strong>body-small</Strong>
                 </ListItem>
                 <ListItem>
-                  <Strong>sm</Strong> -> <Strong>body</Strong>
+                  <Strong>sm</Strong> -{">"} <Strong>body</Strong>
                 </ListItem>
                 <ListItem>
-                  <Strong>md</Strong> -> <Strong>subtitle-small</Strong>
+                  <Strong>md</Strong> -{">"} <Strong>subtitle-small</Strong>
                 </ListItem>
                 <ListItem>
-                  <Strong>lg</Strong> -> <Strong>subtitle</Strong>
+                  <Strong>lg</Strong> -{">"} <Strong>subtitle</Strong>
                 </ListItem>
                 <ListItem>
-                  <Strong>xl</Strong> -> No corresponding value
+                  <Strong>xl</Strong> -{">"} No corresponding value
                 </ListItem>
               </List>
             </ListItem>

@@ -85,16 +85,16 @@ const pointerEvents = style({
 });
 
 export const StyledSystemBox = styled.div<StyledSystemProps>`
-        ${themeChecker};
-        margin: 0;
-        padding: 0;
-        border: 0;
-        box-sizing: border-box;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
-        ${backgroundColor}
-        ${pointerEvents}
+  ${themeChecker};
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit; /* stylelint-disable-line declaration-block-no-shorthand-property-overrides */
+  vertical-align: baseline;
+  ${backgroundColor}
+  ${pointerEvents}
         ${display}
         ${flexDirection}
         ${flexWrap}
@@ -115,20 +115,20 @@ export const StyledSystemBox = styled.div<StyledSystemProps>`
         ${textAlign}
         ${overflow}
         ${(p) =>
-          p.width === "full" &&
-          css`
-            width: 100%;
-          `}
+    p.width === "full" &&
+    css`
+      width: 100%;
+    `}
         ${(p) => (p.height === "full" ? "height: 100%;" : null)}
         ${({ theme, showAnts }) =>
-          showAnts &&
-          css`
-            border: 1px dashed ${theme.colors.grey200};
-          `}
+    showAnts &&
+    css`
+      border: 1px dashed ${theme.colors.grey200};
+    `}
 
           ${({ theme, transition }) =>
-            transition &&
-            css`
-              transition: ${theme.transitions[transition]};
-            `}
-       `;
+    transition &&
+    css`
+      transition: ${theme.transitions[transition]};
+    `}
+`;

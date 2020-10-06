@@ -40,11 +40,10 @@ const FooterNav = styled.nav`
 const FooterNavLink = styled.a`
   text-decoration: none;
   margin-right: 48px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 12px;
   color: ${TEXT.BODY};
   line-height: 1.67;
-  font-weight: normal;
   text-align: left;
   @media (max-width: ${BREAK_POINTS.MAX.SM}) {
     margin-right: 24px;

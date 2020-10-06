@@ -1,4 +1,4 @@
-import type { ReactNode, SVGProps } from "react";
+import { ReactNode, SVGProps } from "react";
 
 export type SvgIconSizeVariants = "small" | "medium" | "large" | "inherit";
 

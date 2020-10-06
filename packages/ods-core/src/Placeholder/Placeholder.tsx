@@ -37,7 +37,7 @@ const Container = styled<Omit<BoxProps, "width" | "height">>(Box)<
       ? css`
           border-radius: 50%;
         `
-      : undefined}}
+      : undefined}
 `;
 
 const defaultHeight = 120;

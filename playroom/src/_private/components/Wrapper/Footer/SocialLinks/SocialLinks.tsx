@@ -13,15 +13,15 @@ const SocialNav = styled.nav`
 const SocialNavLink = styled.a`
   margin: 12px;
   span > svg {
-  width: 24px
+    width: 24px;
   }
-    &:hover > span > svg {
-    fill: ${COLOURS.PRIMARY.GREY};
-    }
 
-    &:hover > span > svg > path {
+  &:hover > span > svg {
     fill: ${COLOURS.PRIMARY.GREY};
-    }
+  }
+
+  &:hover > span > svg > path {
+    fill: ${COLOURS.PRIMARY.GREY};
   }
 `;
 

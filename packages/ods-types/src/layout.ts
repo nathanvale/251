@@ -1,4 +1,4 @@
-import type { ResponsiveProp, ResponsiveRangeProps } from "./responsive";
+import { ResponsiveProp, ResponsiveRangeProps } from "./responsive";
 
 export type TLength = string | 0 | number;
 

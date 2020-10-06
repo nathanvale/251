@@ -32,6 +32,7 @@
     "playroom:clean": "rm -rf playroom/dist",
     "serve:static": "cd docs && yarn serve:static",
     "start": "yarn generate-component-docs && cd docs && yarn start",
+    "stylelint": "origin-scripts stylelint",
     "test": "origin-scripts test",
     "tsc": "tsc -b",
     "validate": "origin-scripts validate"
@@ -44,7 +45,7 @@
   "devDependencies": {
     "@origin-digital/ods-testing-library": "*",
     "@origin-digital/ods-types": "*",
-    "@origin-digital/origin-scripts": "^2.0.0-beta.4",
+    "@origin-digital/origin-scripts": "^2.0.0-beta.11",
     "@testing-library/react": "^11.0.0",
     "@types/jest": "^24.0.23",
     "@types/lodash": "^4.14.132",

@@ -33,6 +33,7 @@ iconNames = sortBy(iconNames, (obj) => obj.displayName);
 const Container = styled(Box)``;
 
 const HoverOverlay = styled(Overlay)`
+  /* stylelint-disable selector-type-no-unknown */
   ${Container}:hover & {
     opacity: 1;
     box-shadow: inset 0 0 0 1px #c4c4c4;
