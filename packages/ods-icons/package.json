@@ -4,7 +4,7 @@
   "description": "Contains Icons that understand typography and colour context.",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "files": [
@@ -21,8 +21,8 @@
   "dependencies": {
     "@babel/runtime-corejs3": "^7.8.3",
     "@material-ui/icons": "^4.9.1",
-    "@origin-digital/ods-themes": "^1.0.1",
-    "@origin-digital/ods-types": "^1.0.1"
+    "@origin-digital/ods-themes": "^1.0.2",
+    "@origin-digital/ods-types": "^1.0.2"
   },
   "peerDependencies": {
     "react": "^16.9.0",
