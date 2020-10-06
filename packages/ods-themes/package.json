@@ -3,7 +3,7 @@
   "description": "ODS is theme based and different themese are available in this package.",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "files": [
@@ -20,8 +20,8 @@
     "@babel/runtime-corejs3": "^7.8.3",
     "@material-ui/core": "^4.11.0",
     "@material-ui/styles": "^4.10.0",
-    "@origin-digital/ods-types": "^1.0.0",
-    "@origin-digital/ods-typography": "^1.0.0"
+    "@origin-digital/ods-types": "^1.0.1",
+    "@origin-digital/ods-typography": "^1.0.1"
   },
   "peerDependencies": {
     "react": "^16.9.0",
