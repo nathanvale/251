@@ -1,6 +1,6 @@
 {
   "name": "@origin-digital/ods-themes",
-  "description": "",
+  "description": "ODS is theme based and different themese are available in this package.",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
   "version": "0.20.11",

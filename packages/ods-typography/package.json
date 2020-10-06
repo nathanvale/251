@@ -1,6 +1,6 @@
 {
   "name": "@origin-digital/ods-typography",
-  "description": "Typography hooks for ODS components",
+  "description": "Typography hooks and utility functions for ODS components",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
   "version": "0.4.5",

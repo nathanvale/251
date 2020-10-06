@@ -1,6 +1,6 @@
 {
   "name": "@origin-digital/ods-helpers",
-  "description": "Utilities for building components",
+  "description": "Utilities for building components, internal use only, not to be used directly.",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
   "version": "0.11.15",

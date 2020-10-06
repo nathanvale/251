@@ -1,6 +1,6 @@
 {
   "name": "@origin-digital/ods-types",
-  "description": "Custom type declarations",
+  "description": "Custom types in ODS that are used across multiple packages.",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
   "version": "0.38.0",
