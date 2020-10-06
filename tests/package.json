@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "tests",
-  "description": "Visual tests using applitools",
+  "description": "Visual tests for ODS using applitools",
   "license": "UNLICENSED",
   "author": "Charan Damisetti <Charan.Damisetti@originenergy.com.au>",
   "version": "0.1.6",

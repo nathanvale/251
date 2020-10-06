@@ -1,6 +1,6 @@
 {
   "name": "@origin-digital/ods-core",
-  "description": "Origin digital design system",
+  "description": "The core package of Origin Design System",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
   "version": "0.71.0",

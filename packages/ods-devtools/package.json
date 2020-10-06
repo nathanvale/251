@@ -1,6 +1,6 @@
 {
   "name": "@origin-digital/ods-devtools",
-  "description": "Dev tools to enhance the developer experience",
+  "description": "Dev tools to enhance the developer experience in ODS",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
   "version": "0.6.0",

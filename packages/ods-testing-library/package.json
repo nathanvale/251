@@ -1,6 +1,6 @@
 {
   "name": "@origin-digital/ods-testing-library",
-  "description": "ODS testing tools that enhance react-testing-library",
+  "description": "ODS testing tools that enhance @testing-library/react. Prefer this over enzyme.",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
   "version": "0.10.2",

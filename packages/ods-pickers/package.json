@@ -1,6 +1,6 @@
 {
   "name": "@origin-digital/ods-pickers",
-  "description": "Origin digital design system",
+  "description": "Accessible DatePickers for ODS",
   "license": "UNLICENSED",
   "author": "Alex Mordue <alex.mordue@origin.com.au>",
   "version": "0.3.17",

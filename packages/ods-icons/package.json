@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "@origin-digital/ods-icons",
-  "description": "",
+  "description": "Contains Icons that understand typography and colour context.",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
   "version": "0.18.0",
