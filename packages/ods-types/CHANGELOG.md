@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.38.0...@origin-digital/ods-types@1.0.0) (2020-10-06)
+
+
+### Features
+
+* **ods:** first stable version ([b926e9f](https://bitbucket.orgn.io/od/origin-ui/commits/b926e9fc760a359430bee93f0e043f0d7e43fe57))
+
+
+### BREAKING CHANGES
+
+* **ods:** Bump up to v1.0.0
+
+"fix ODS-345"
+
+
+
+
+
 # [0.38.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-types@0.37.3...@origin-digital/ods-types@0.38.0) (2020-10-05)
 
 

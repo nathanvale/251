@@ -3,7 +3,7 @@
   "description": "Dev tools to enhance the developer experience in ODS",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
-  "version": "0.6.0",
+  "version": "1.0.0",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "files": [

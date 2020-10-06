@@ -4,7 +4,7 @@
   "description": "Visual tests for ODS using applitools",
   "license": "UNLICENSED",
   "author": "Charan Damisetti <Charan.Damisetti@originenergy.com.au>",
-  "version": "0.1.6",
+  "version": "1.0.0",
   "scripts": {
     "serve:static": "cd ../ && cd docs && yarn serve:static",
     "test:func": "ts-node ./scripts/test-func.ts",
