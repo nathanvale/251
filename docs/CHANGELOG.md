@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.34.7](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.34.6...docs@0.34.7) (2020-10-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency workbox-webpack-plugin to v5 ([1a8cceb](https://bitbucket.orgn.io/od/origin-ui/commits/1a8ccebc6db5c3b5c9fb1c43c6a7bcbf823ab159))
+
+
+
+
+
 ## [0.34.6](https://bitbucket.orgn.io/od/origin-ui/compare/docs@0.34.5...docs@0.34.6) (2020-10-05)
 
 
