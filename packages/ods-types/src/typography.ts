@@ -1,4 +1,4 @@
-import type { FontSizeVariants } from "@material-ui/core/styles/createTypography";
+import { FontSizeVariants } from "@material-ui/core/styles/createTypography";
 
 export type HeadingComponentVariants = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 

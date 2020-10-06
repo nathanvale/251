@@ -1,11 +1,11 @@
-import type {
+import {
   PaletteColor,
   TypeBackground,
 } from "@material-ui/core/styles/createPalette";
-import type { Color } from "@material-ui/core";
-import type { Typography as MUITypography } from "@material-ui/core/styles/createTypography";
-import type { Space } from "./layout";
-import type { Breakpoint, Breakpoints } from "./responsive";
+import { Color } from "@material-ui/core";
+import { Typography as MUITypography } from "@material-ui/core/styles/createTypography";
+import { Space } from "./layout";
+import { Breakpoint, Breakpoints } from "./responsive";
 
 export interface Transform {
   touchable: string;

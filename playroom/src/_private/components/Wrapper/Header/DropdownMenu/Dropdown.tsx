@@ -43,7 +43,7 @@ const LinkedListLink = styled(StyledLink)`
   font-weight: 500;
   &:hover,
   &:hover h4 {
-    childrencolor: ${TEXT.LINK.HOVER};
+    color: ${TEXT.LINK.HOVER};
     cursor: pointer;
   }
 `;

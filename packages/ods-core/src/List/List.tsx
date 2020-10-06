@@ -112,10 +112,10 @@ const StylisedList = styled(Stack)<{
       counter-increment: listCounter;
       align-items: flex-end;
       ${Counter} {
-      border-radius: 0;
-      background: none;
-      display: flex;
-      align-items: flex-start;
+        border-radius: 0;
+        background: none;
+        display: flex;
+        align-items: flex-start;
         ${(p) =>
           getCounterStyles({
             type: p.type,
@@ -134,6 +134,7 @@ const StylisedList = styled(Stack)<{
               : ""}
         }
       }
+      /* stylelint-disable string-no-newline */
       ${CounterLabel} {
         &::before {
           content: counter(
@@ -148,6 +149,7 @@ const StylisedList = styled(Stack)<{
                 : "."}";
         }
       }
+      /* stylelint-enable string-no-newline */
     }
   }
 `;
