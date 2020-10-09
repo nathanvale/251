@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://bitbucket.orgn.io/od/origin-ui/compare/docs@1.0.2...docs@1.0.3) (2020-10-09)
+
+
+### Bug Fixes
+
+* **deps:** update 3rd-party non-major dependencies ([e78f0e5](https://bitbucket.orgn.io/od/origin-ui/commits/e78f0e51fafc0e77f358f3e41b119c1a402e76dc))
+
+
+
+
+
 ## [1.0.2](https://bitbucket.orgn.io/od/origin-ui/compare/docs@1.0.0...docs@1.0.2) (2020-10-06)
 
 **Note:** Version bump only for package docs
