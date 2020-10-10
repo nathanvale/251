@@ -11387,13 +11387,13 @@ file-entry-cache@^5.0.1:
   dependencies:
     flat-cache "^2.0.1"
 
-file-loader@6.1.0, file-loader@^6.1.0:
-  version "6.1.0"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/file-loader/-/file-loader-6.1.0.tgz#65b9fcfb0ea7f65a234a1f10cdd7f1ab9a33f253"
-  integrity sha1-Zbn8+w6n9lojSh8Qzdfxq5oz8lM=
+file-loader@6.1.1:
+  version "6.1.1"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/file-loader/-/file-loader-6.1.1.tgz#a6f29dfb3f5933a1c350b2dbaa20ac5be0539baa"
+  integrity sha1-pvKd+z9ZM6HDULLbqiCsW+BTm6o=
   dependencies:
     loader-utils "^2.0.0"
-    schema-utils "^2.7.1"
+    schema-utils "^3.0.0"
 
 file-loader@^6.0.0:
   version "6.0.0"
@@ -11402,6 +11402,14 @@ file-loader@^6.0.0:
   dependencies:
     loader-utils "^2.0.0"
     schema-utils "^2.6.5"
+
+file-loader@^6.1.0:
+  version "6.1.0"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/file-loader/-/file-loader-6.1.0.tgz#65b9fcfb0ea7f65a234a1f10cdd7f1ab9a33f253"
+  integrity sha1-Zbn8+w6n9lojSh8Qzdfxq5oz8lM=
+  dependencies:
+    loader-utils "^2.0.0"
+    schema-utils "^2.7.1"
 
 file-uri-to-path@1.0.0:
   version "1.0.0"
@@ -16750,7 +16758,7 @@ mime-types@^2.1.12, mime-types@^2.1.18, mime-types@~2.1.17, mime-types@~2.1.18, 
   dependencies:
     mime-db "1.43.0"
 
-mime-types@^2.1.24, mime-types@^2.1.26:
+mime-types@^2.1.24, mime-types@^2.1.26, mime-types@^2.1.27:
   version "2.1.27"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/mime-types/-/mime-types-2.1.27.tgz#47949f98e279ea53119f5722e0f34e529bec009f"
   integrity sha1-R5SfmOJ56lMRn1ci4PNOUpvsAJ8=
@@ -19131,15 +19139,15 @@ postcss-load-config@^2.0.0:
     cosmiconfig "^5.0.0"
     import-cwd "^2.0.0"
 
-postcss-loader@4.0.3:
-  version "4.0.3"
-  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/postcss-loader/-/postcss-loader-4.0.3.tgz#337f51bbdfb02269fb42f7db9fc7f0a93c1b2e3f"
-  integrity sha1-M39Ru9+wImn7Qvfbn8fwqTwbLj8=
+postcss-loader@4.0.4:
+  version "4.0.4"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/postcss-loader/-/postcss-loader-4.0.4.tgz#b2d005b52e008a44991cf8123bee207e635eb53e"
+  integrity sha1-stAFtS4AikSZHPgSO+4gfmNetT4=
   dependencies:
     cosmiconfig "^7.0.0"
     klona "^2.0.4"
     loader-utils "^2.0.0"
-    schema-utils "^2.7.1"
+    schema-utils "^3.0.0"
     semver "^7.3.2"
 
 postcss-loader@^3.0.0:
@@ -24387,7 +24395,16 @@ url-join@^4.0.0, url-join@^4.0.1:
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/url-join/-/url-join-4.0.1.tgz#b642e21a2646808ffa178c4c5fda39844e12cde7"
   integrity sha1-tkLiGiZGgI/6F4xMX9o5hE4Szec=
 
-url-loader@4.1.0, url-loader@^4.1.0:
+url-loader@4.1.1:
+  version "4.1.1"
+  resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/url-loader/-/url-loader-4.1.1.tgz#28505e905cae158cf07c92ca622d7f237e70a4e2"
+  integrity sha1-KFBekFyuFYzwfJLKYi1/I35wpOI=
+  dependencies:
+    loader-utils "^2.0.0"
+    mime-types "^2.1.27"
+    schema-utils "^3.0.0"
+
+url-loader@^4.1.0:
   version "4.1.0"
   resolved "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-all/url-loader/-/url-loader-4.1.0.tgz#c7d6b0d6b0fccd51ab3ffc58a78d32b8d89a7be2"
   integrity sha1-x9aw1rD8zVGrP/xYp40yuNiae+I=
