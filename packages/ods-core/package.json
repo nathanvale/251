@@ -3,7 +3,7 @@
   "description": "The core package of Origin Design System",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "files": [
