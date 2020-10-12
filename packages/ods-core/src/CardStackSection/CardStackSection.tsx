@@ -63,29 +63,29 @@ interface CardSectionProps {
 }
 
 const CardSection = styled(Box)<CardSectionProps>`
-${(p) => css`
-  @media (min-width: ${p.theme.breakpoints.sm}) {
-    max-width: ${cardSizeForVariant[p.cardSize].sm}px;
-  }
-`}
+  ${(p) => css`
+    @media (min-width: ${p.theme.breakpoints.sm}) {
+      max-width: ${cardSizeForVariant[p.cardSize].sm}px;
+    }
+  `}
+
+  ${(p) => css`
+    @media (min-width: ${p.theme.breakpoints.md}) {
+      max-width: ${cardSizeForVariant[p.cardSize].md}px;
+    }
+  `}
 
 ${(p) => css`
-  @media (min-width: ${p.theme.breakpoints.md}) {
-    max-width: ${cardSizeForVariant[p.cardSize].md}px;
-  }
-`}
+    @media (min-width: ${p.theme.breakpoints.lg}) {
+      max-width: ${cardSizeForVariant[p.cardSize].lg}px;
+    }
+  `}
 
 ${(p) => css`
-  @media (min-width: ${p.theme.breakpoints.lg}) {
-    max-width: ${cardSizeForVariant[p.cardSize].lg}px;
-  }
-`}
-
-${(p) => css`
-  @media (min-width: ${p.theme.breakpoints.xl}) {
-    max-width: ${cardSizeForVariant[p.cardSize].xl}px;
-  }
-`}
+    @media (min-width: ${p.theme.breakpoints.xl}) {
+      max-width: ${cardSizeForVariant[p.cardSize].xl}px;
+    }
+  `}
 `;
 
 interface ResponsiveGridProps {
@@ -149,7 +149,7 @@ const WidgetStack = ({
 }: CardStackSectionProps) => (
   <Box width="full" data-id={dataId}>
     <Box
-      backgroundColor="secondary"
+      backgroundColor="primaryB"
       display={{ lg: "none" }}
       style={{ height: "120px" }}
       width="full"
