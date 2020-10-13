@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.6](https://bitbucket.orgn.io/od/origin-ui/compare/docs@1.0.5...docs@1.0.6) (2020-10-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency mini-css-extract-plugin to v1 ([58b634f](https://bitbucket.orgn.io/od/origin-ui/commits/58b634f0480dcaf94093e2449f8f6cb19241d0f4))
+
+
+
+
+
 ## [1.0.5](https://bitbucket.orgn.io/od/origin-ui/compare/docs@1.0.4...docs@1.0.5) (2020-10-12)
 
 
