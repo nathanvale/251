@@ -2,7 +2,7 @@
   "private": true,
   "name": "docs",
   "description": "ODS documentation, should be a goto for everyone using ODS.",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "src/index.tsx",
   "scripts": {
     "build": "BUILD_WEBPACK=true node ./scripts/build.js",

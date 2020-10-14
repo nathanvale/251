@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.7](https://bitbucket.orgn.io/od/origin-ui/compare/docs@1.0.6...docs@1.0.7) (2020-10-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency style-loader to v2 ([bfca045](https://bitbucket.orgn.io/od/origin-ui/commits/bfca045f6bb7236f58bf7891e7f3714730f139d8))
+
+
+
+
+
 ## [1.0.6](https://bitbucket.orgn.io/od/origin-ui/compare/docs@1.0.5...docs@1.0.6) (2020-10-13)
 
 
