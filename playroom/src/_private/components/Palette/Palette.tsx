@@ -54,6 +54,7 @@ export const Palette = () => {
           "primaryB",
           "promote",
           "promoteB",
+          "promoteC",
           "secondary",
           "secondaryB",
           "background",

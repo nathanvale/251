@@ -81,6 +81,14 @@ export const docs: ComponentDocs<TextProps> = {
         ),
       },
       {
+        label: "Tone (promoteC)",
+        Code: () => (
+          <Text tone="promoteC">
+            The quick brown fox jumps over the lazy dog.
+          </Text>
+        ),
+      },
+      {
         label: "Weight (medium)",
         Code: () => (
           <Text weight="medium">

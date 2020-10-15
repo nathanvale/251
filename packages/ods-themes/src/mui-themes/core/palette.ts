@@ -58,6 +58,7 @@ export const p: Theme["palette"] = createPalette({
   },
   primaryB: getPaletteColor(colors.darkOrange),
   promoteB: getPaletteColor(colors.purple),
+  promoteC: getPaletteColor(colors.bloodOrange),
   text: {
     primary: colors.grey[500],
     secondary: colors.grey[400],

@@ -14,6 +14,7 @@ const semanticTones = [
   "neutral",
   "promote",
   "promoteB",
+  "promoteC",
 ] as const;
 type SemanticTone = typeof semanticTones[number];
 
@@ -57,6 +58,12 @@ const semanticToneDocs: Record<SemanticTone, ColourDoc> = {
     description:
       "Offers and marketing. Not in the suite of Origin’s brand guidelines.",
     swatch: "promoteB",
+    usage: "",
+  },
+  promoteC: {
+    description:
+      "Similar to promoteB. For Offers and marketing. Not in the suite of Origin’s brand guidelines.",
+    swatch: "promoteC",
     usage: "",
   },
 };

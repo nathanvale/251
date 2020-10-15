@@ -12,6 +12,8 @@ export const alertTones: AlertProps["tone"][] = [
   "neutral",
   "positive",
   "promote",
+  "promoteB",
+  "promoteC",
 ];
 export const alertVariants: AlertProps["variant"][] = ["standard", "filled"];
 

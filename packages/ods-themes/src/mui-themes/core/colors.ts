@@ -17,6 +17,7 @@ const grey = {
 
 export const colors = {
   blue: "#0a5fd2",
+  bloodOrange: "#D44500",
   darkOrange: "#fa4616",
   green: "#008906",
   grey,

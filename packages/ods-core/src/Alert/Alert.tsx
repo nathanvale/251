@@ -103,6 +103,14 @@ const useStandardStyles = makeStyles(
       theme.palette.grey[500],
       theme.palette.info.main
     ),
+    promoteB: createStandardStyle(
+      theme.palette.grey[500],
+      theme.palette.promoteB.main
+    ),
+    promoteC: createStandardStyle(
+      theme.palette.grey[500],
+      theme.palette.promoteC.main
+    ),
   }),
   { classNamePrefix: "Alert" }
 );
@@ -133,6 +141,14 @@ const useFilledStyles = makeStyles(
       theme.palette.info.contrastText,
       theme.palette.info.main
     ),
+    promoteB: createFilledStyle(
+      theme.palette.promoteB.contrastText,
+      theme.palette.promoteB.main
+    ),
+    promoteC: createFilledStyle(
+      theme.palette.promoteC.contrastText,
+      theme.palette.promoteC.main
+    ),
   }),
   { classNamePrefix: "Alert" }
 );
@@ -142,7 +158,15 @@ export interface AlertProps
     MuiProps<MuiAlertProps> {
   children: React.ReactNode;
   title?: React.ReactNode;
-  tone?: "critical" | "caution" | "info" | "neutral" | "positive" | "promote";
+  tone?:
+    | "critical"
+    | "caution"
+    | "info"
+    | "neutral"
+    | "positive"
+    | "promote"
+    | "promoteB"
+    | "promoteC";
   variant?: "standard" | "filled";
   icon?: React.ReactNode | false;
   onCloseClick?: () => void;
@@ -163,6 +187,10 @@ const AlertIcon = ({ tone }: Pick<AlertProps, "tone">) => {
     case "positive":
       return <IconCheckCircle />;
     case "promote":
+      return <IconLocalOffer />;
+    case "promoteB":
+      return <IconLocalOffer />;
+    case "promoteC":
       return <IconLocalOffer />;
     default:
       return <IconInfo />;

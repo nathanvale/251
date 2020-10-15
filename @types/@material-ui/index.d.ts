@@ -43,6 +43,7 @@ declare module "@material-ui/core/styles/createPalette" {
   interface Palette {
     primaryB: PaletteColor;
     promoteB: PaletteColor;
+    promoteC: PaletteColor;
     secondaryB: PaletteColor;
     getColorVariantCSSColor: (variant: ColorPaletteVariants) => string;
   }
@@ -50,6 +51,7 @@ declare module "@material-ui/core/styles/createPalette" {
   interface PaletteOptions {
     primaryB?: SimplePaletteColorOptions;
     promoteB?: SimplePaletteColorOptions;
+    promoteC?: SimplePaletteColorOptions;
     secondaryB?: SimplePaletteColorOptions;
   }
 }

@@ -90,7 +90,7 @@ exports[`It renders 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-14"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-18"
         data-id="IconInfo"
         focusable="false"
         viewBox="0 0 24 24"
@@ -119,12 +119,12 @@ exports[`It renders 1`] = `
             data-id="alert-content"
           >
             <span
-              class="typography-body-variant-basekick-15 typography-neutral-color-16 typography-regular-weight-17 typography-strong-support-18 c4 -span c5"
+              class="typography-body-variant-basekick-19 typography-neutral-color-20 typography-regular-weight-21 typography-strong-support-22 c4 -span c5"
               data-id="text"
             >
               Lorem ipsum 
               <strong
-                class="typography-medium-weight-20"
+                class="typography-medium-weight-24"
                 data-id="strong"
               >
                 dolor
@@ -139,7 +139,7 @@ exports[`It renders 1`] = `
                adipiscing elit. Suspendisse facilisis
                
               <a
-                class="typography-linkReset-21 typography-neutral-tone-link-22"
+                class="typography-linkReset-25 typography-neutral-tone-link-26"
                 data-id="text-link"
                 href="#"
               >
@@ -236,7 +236,7 @@ exports[`It uses variant (filled) and tone (caution) 1`] = `
 
 <div>
   <div
-    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-177 Alert-caution-185 MuiPaper-elevation0"
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-261 Alert-caution-271 MuiPaper-elevation0"
     data-id="alert"
     role="alert"
   >
@@ -245,7 +245,7 @@ exports[`It uses variant (filled) and tone (caution) 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-190"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-278"
         data-id="IconWarning"
         focusable="false"
         viewBox="0 0 24 24"
@@ -274,12 +274,12 @@ exports[`It uses variant (filled) and tone (caution) 1`] = `
             data-id="alert-content"
           >
             <span
-              class="typography-body-variant-basekick-191 typography-neutral-color-192 typography-regular-weight-193 typography-strong-support-194 c4 -span c5"
+              class="typography-body-variant-basekick-279 typography-neutral-color-280 typography-regular-weight-281 typography-strong-support-282 c4 -span c5"
               data-id="text"
             >
               Lorem ipsum 
               <strong
-                class="typography-medium-weight-196"
+                class="typography-medium-weight-284"
                 data-id="strong"
               >
                 dolor
@@ -294,7 +294,7 @@ exports[`It uses variant (filled) and tone (caution) 1`] = `
                adipiscing elit. Suspendisse facilisis
                
               <a
-                class="typography-linkReset-197 typography-neutral-tone-link-198"
+                class="typography-linkReset-285 typography-neutral-tone-link-286"
                 data-id="text-link"
                 href="#"
               >
@@ -391,7 +391,7 @@ exports[`It uses variant (filled) and tone (critical) 1`] = `
 
 <div>
   <div
-    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-155 Alert-critical-162 MuiPaper-elevation0"
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-235 Alert-critical-244 MuiPaper-elevation0"
     data-id="alert"
     role="alert"
   >
@@ -400,7 +400,7 @@ exports[`It uses variant (filled) and tone (critical) 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-168"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-252"
         data-id="IconError"
         focusable="false"
         viewBox="0 0 24 24"
@@ -429,12 +429,12 @@ exports[`It uses variant (filled) and tone (critical) 1`] = `
             data-id="alert-content"
           >
             <span
-              class="typography-body-variant-basekick-169 typography-neutral-color-170 typography-regular-weight-171 typography-strong-support-172 c4 -span c5"
+              class="typography-body-variant-basekick-253 typography-neutral-color-254 typography-regular-weight-255 typography-strong-support-256 c4 -span c5"
               data-id="text"
             >
               Lorem ipsum 
               <strong
-                class="typography-medium-weight-174"
+                class="typography-medium-weight-258"
                 data-id="strong"
               >
                 dolor
@@ -449,7 +449,7 @@ exports[`It uses variant (filled) and tone (critical) 1`] = `
                adipiscing elit. Suspendisse facilisis
                
               <a
-                class="typography-linkReset-175 typography-neutral-tone-link-176"
+                class="typography-linkReset-259 typography-neutral-tone-link-260"
                 data-id="text-link"
                 href="#"
               >
@@ -546,7 +546,7 @@ exports[`It uses variant (filled) and tone (info) 1`] = `
 
 <div>
   <div
-    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-199 Alert-info-208 MuiPaper-elevation0"
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-287 Alert-info-298 MuiPaper-elevation0"
     data-id="alert"
     role="alert"
   >
@@ -555,7 +555,7 @@ exports[`It uses variant (filled) and tone (info) 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-212"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-304"
         data-id="IconInfo"
         focusable="false"
         viewBox="0 0 24 24"
@@ -584,12 +584,12 @@ exports[`It uses variant (filled) and tone (info) 1`] = `
             data-id="alert-content"
           >
             <span
-              class="typography-body-variant-basekick-213 typography-neutral-color-214 typography-regular-weight-215 typography-strong-support-216 c4 -span c5"
+              class="typography-body-variant-basekick-305 typography-neutral-color-306 typography-regular-weight-307 typography-strong-support-308 c4 -span c5"
               data-id="text"
             >
               Lorem ipsum 
               <strong
-                class="typography-medium-weight-218"
+                class="typography-medium-weight-310"
                 data-id="strong"
               >
                 dolor
@@ -604,7 +604,7 @@ exports[`It uses variant (filled) and tone (info) 1`] = `
                adipiscing elit. Suspendisse facilisis
                
               <a
-                class="typography-linkReset-219 typography-neutral-tone-link-220"
+                class="typography-linkReset-311 typography-neutral-tone-link-312"
                 data-id="text-link"
                 href="#"
               >
@@ -701,7 +701,7 @@ exports[`It uses variant (filled) and tone (neutral) 1`] = `
 
 <div>
   <div
-    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-221 Alert-neutral-231 MuiPaper-elevation0"
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-313 Alert-neutral-325 MuiPaper-elevation0"
     data-id="alert"
     role="alert"
   >
@@ -710,7 +710,7 @@ exports[`It uses variant (filled) and tone (neutral) 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-234"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-330"
         data-id="IconInfo"
         focusable="false"
         viewBox="0 0 24 24"
@@ -739,12 +739,12 @@ exports[`It uses variant (filled) and tone (neutral) 1`] = `
             data-id="alert-content"
           >
             <span
-              class="typography-body-variant-basekick-235 typography-neutral-color-236 typography-regular-weight-237 typography-strong-support-238 c4 -span c5"
+              class="typography-body-variant-basekick-331 typography-neutral-color-332 typography-regular-weight-333 typography-strong-support-334 c4 -span c5"
               data-id="text"
             >
               Lorem ipsum 
               <strong
-                class="typography-medium-weight-240"
+                class="typography-medium-weight-336"
                 data-id="strong"
               >
                 dolor
@@ -759,7 +759,7 @@ exports[`It uses variant (filled) and tone (neutral) 1`] = `
                adipiscing elit. Suspendisse facilisis
                
               <a
-                class="typography-linkReset-241 typography-neutral-tone-link-242"
+                class="typography-linkReset-337 typography-neutral-tone-link-338"
                 data-id="text-link"
                 href="#"
               >
@@ -856,7 +856,7 @@ exports[`It uses variant (filled) and tone (positive) 1`] = `
 
 <div>
   <div
-    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-243 Alert-positive-254 MuiPaper-elevation0"
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-339 Alert-positive-352 MuiPaper-elevation0"
     data-id="alert"
     role="alert"
   >
@@ -865,7 +865,7 @@ exports[`It uses variant (filled) and tone (positive) 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-256"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-356"
         data-id="IconDone"
         focusable="false"
         viewBox="0 0 24 24"
@@ -894,12 +894,12 @@ exports[`It uses variant (filled) and tone (positive) 1`] = `
             data-id="alert-content"
           >
             <span
-              class="typography-body-variant-basekick-257 typography-neutral-color-258 typography-regular-weight-259 typography-strong-support-260 c4 -span c5"
+              class="typography-body-variant-basekick-357 typography-neutral-color-358 typography-regular-weight-359 typography-strong-support-360 c4 -span c5"
               data-id="text"
             >
               Lorem ipsum 
               <strong
-                class="typography-medium-weight-262"
+                class="typography-medium-weight-362"
                 data-id="strong"
               >
                 dolor
@@ -914,7 +914,7 @@ exports[`It uses variant (filled) and tone (positive) 1`] = `
                adipiscing elit. Suspendisse facilisis
                
               <a
-                class="typography-linkReset-263 typography-neutral-tone-link-264"
+                class="typography-linkReset-363 typography-neutral-tone-link-364"
                 data-id="text-link"
                 href="#"
               >
@@ -1011,7 +1011,7 @@ exports[`It uses variant (filled) and tone (promote) 1`] = `
 
 <div>
   <div
-    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-265 Alert-promote-277 MuiPaper-elevation0"
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-365 Alert-promote-379 MuiPaper-elevation0"
     data-id="alert"
     role="alert"
   >
@@ -1020,7 +1020,7 @@ exports[`It uses variant (filled) and tone (promote) 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-278"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-382"
         data-id="IconLocalOffer"
         focusable="false"
         viewBox="0 0 24 24"
@@ -1049,12 +1049,12 @@ exports[`It uses variant (filled) and tone (promote) 1`] = `
             data-id="alert-content"
           >
             <span
-              class="typography-body-variant-basekick-279 typography-neutral-color-280 typography-regular-weight-281 typography-strong-support-282 c4 -span c5"
+              class="typography-body-variant-basekick-383 typography-neutral-color-384 typography-regular-weight-385 typography-strong-support-386 c4 -span c5"
               data-id="text"
             >
               Lorem ipsum 
               <strong
-                class="typography-medium-weight-284"
+                class="typography-medium-weight-388"
                 data-id="strong"
               >
                 dolor
@@ -1069,7 +1069,317 @@ exports[`It uses variant (filled) and tone (promote) 1`] = `
                adipiscing elit. Suspendisse facilisis
                
               <a
-                class="typography-linkReset-285 typography-neutral-tone-link-286"
+                class="typography-linkReset-389 typography-neutral-tone-link-390"
+                data-id="text-link"
+                href="#"
+              >
+                posuere
+              </a>
+               sodales.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It uses variant (filled) and tone (promoteB) 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c4 {
+  max-width: 100%;
+}
+
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+<div>
+  <div
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-391 Alert-promoteB-406 MuiPaper-elevation0"
+    data-id="alert"
+    role="alert"
+  >
+    <div
+      class="MuiAlert-icon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-408"
+        data-id="IconLocalOffer"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"
+        />
+      </svg>
+    </div>
+    <div
+      class="MuiAlert-message"
+    >
+      <div
+        class="c0"
+        data-id="stack"
+        display="block"
+        width="full"
+      >
+        <div
+          class="c1 c2"
+          data-id="stack-child"
+          display="block"
+        >
+          <div
+            class="c3"
+            data-id="alert-content"
+          >
+            <span
+              class="typography-body-variant-basekick-409 typography-neutral-color-410 typography-regular-weight-411 typography-strong-support-412 c4 -span c5"
+              data-id="text"
+            >
+              Lorem ipsum 
+              <strong
+                class="typography-medium-weight-414"
+                data-id="strong"
+              >
+                dolor
+              </strong>
+               sit amet,
+               
+              <em
+                data-id="emphasis"
+              >
+                consectetur
+              </em>
+               adipiscing elit. Suspendisse facilisis
+               
+              <a
+                class="typography-linkReset-415 typography-neutral-tone-link-416"
+                data-id="text-link"
+                href="#"
+              >
+                posuere
+              </a>
+               sodales.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It uses variant (filled) and tone (promoteC) 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c4 {
+  max-width: 100%;
+}
+
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+<div>
+  <div
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-417 Alert-promoteC-433 MuiPaper-elevation0"
+    data-id="alert"
+    role="alert"
+  >
+    <div
+      class="MuiAlert-icon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-434"
+        data-id="IconLocalOffer"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"
+        />
+      </svg>
+    </div>
+    <div
+      class="MuiAlert-message"
+    >
+      <div
+        class="c0"
+        data-id="stack"
+        display="block"
+        width="full"
+      >
+        <div
+          class="c1 c2"
+          data-id="stack-child"
+          display="block"
+        >
+          <div
+            class="c3"
+            data-id="alert-content"
+          >
+            <span
+              class="typography-body-variant-basekick-435 typography-neutral-color-436 typography-regular-weight-437 typography-strong-support-438 c4 -span c5"
+              data-id="text"
+            >
+              Lorem ipsum 
+              <strong
+                class="typography-medium-weight-440"
+                data-id="strong"
+              >
+                dolor
+              </strong>
+               sit amet,
+               
+              <em
+                data-id="emphasis"
+              >
+                consectetur
+              </em>
+               adipiscing elit. Suspendisse facilisis
+               
+              <a
+                class="typography-linkReset-441 typography-neutral-tone-link-442"
                 data-id="text-link"
                 href="#"
               >
@@ -1166,7 +1476,7 @@ exports[`It uses variant (standard) and tone (caution) 1`] = `
 
 <div>
   <div
-    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-45 Alert-caution-47 MuiPaper-elevation0"
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-53 Alert-caution-55 MuiPaper-elevation0"
     data-id="alert"
     role="alert"
   >
@@ -1175,7 +1485,7 @@ exports[`It uses variant (standard) and tone (caution) 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-58"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-70"
         data-id="IconWarning"
         focusable="false"
         viewBox="0 0 24 24"
@@ -1204,12 +1514,12 @@ exports[`It uses variant (standard) and tone (caution) 1`] = `
             data-id="alert-content"
           >
             <span
-              class="typography-body-variant-basekick-59 typography-neutral-color-60 typography-regular-weight-61 typography-strong-support-62 c4 -span c5"
+              class="typography-body-variant-basekick-71 typography-neutral-color-72 typography-regular-weight-73 typography-strong-support-74 c4 -span c5"
               data-id="text"
             >
               Lorem ipsum 
               <strong
-                class="typography-medium-weight-64"
+                class="typography-medium-weight-76"
                 data-id="strong"
               >
                 dolor
@@ -1224,7 +1534,7 @@ exports[`It uses variant (standard) and tone (caution) 1`] = `
                adipiscing elit. Suspendisse facilisis
                
               <a
-                class="typography-linkReset-65 typography-neutral-tone-link-66"
+                class="typography-linkReset-77 typography-neutral-tone-link-78"
                 data-id="text-link"
                 href="#"
               >
@@ -1321,7 +1631,7 @@ exports[`It uses variant (standard) and tone (critical) 1`] = `
 
 <div>
   <div
-    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-23 Alert-critical-24 MuiPaper-elevation0"
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-27 Alert-critical-28 MuiPaper-elevation0"
     data-id="alert"
     role="alert"
   >
@@ -1330,7 +1640,7 @@ exports[`It uses variant (standard) and tone (critical) 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-36"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-44"
         data-id="IconError"
         focusable="false"
         viewBox="0 0 24 24"
@@ -1359,12 +1669,12 @@ exports[`It uses variant (standard) and tone (critical) 1`] = `
             data-id="alert-content"
           >
             <span
-              class="typography-body-variant-basekick-37 typography-neutral-color-38 typography-regular-weight-39 typography-strong-support-40 c4 -span c5"
+              class="typography-body-variant-basekick-45 typography-neutral-color-46 typography-regular-weight-47 typography-strong-support-48 c4 -span c5"
               data-id="text"
             >
               Lorem ipsum 
               <strong
-                class="typography-medium-weight-42"
+                class="typography-medium-weight-50"
                 data-id="strong"
               >
                 dolor
@@ -1379,7 +1689,7 @@ exports[`It uses variant (standard) and tone (critical) 1`] = `
                adipiscing elit. Suspendisse facilisis
                
               <a
-                class="typography-linkReset-43 typography-neutral-tone-link-44"
+                class="typography-linkReset-51 typography-neutral-tone-link-52"
                 data-id="text-link"
                 href="#"
               >
@@ -1476,7 +1786,7 @@ exports[`It uses variant (standard) and tone (info) 1`] = `
 
 <div>
   <div
-    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-67 Alert-info-70 MuiPaper-elevation0"
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-79 Alert-info-82 MuiPaper-elevation0"
     data-id="alert"
     role="alert"
   >
@@ -1485,7 +1795,7 @@ exports[`It uses variant (standard) and tone (info) 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-80"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-96"
         data-id="IconInfo"
         focusable="false"
         viewBox="0 0 24 24"
@@ -1514,12 +1824,12 @@ exports[`It uses variant (standard) and tone (info) 1`] = `
             data-id="alert-content"
           >
             <span
-              class="typography-body-variant-basekick-81 typography-neutral-color-82 typography-regular-weight-83 typography-strong-support-84 c4 -span c5"
+              class="typography-body-variant-basekick-97 typography-neutral-color-98 typography-regular-weight-99 typography-strong-support-100 c4 -span c5"
               data-id="text"
             >
               Lorem ipsum 
               <strong
-                class="typography-medium-weight-86"
+                class="typography-medium-weight-102"
                 data-id="strong"
               >
                 dolor
@@ -1534,7 +1844,7 @@ exports[`It uses variant (standard) and tone (info) 1`] = `
                adipiscing elit. Suspendisse facilisis
                
               <a
-                class="typography-linkReset-87 typography-neutral-tone-link-88"
+                class="typography-linkReset-103 typography-neutral-tone-link-104"
                 data-id="text-link"
                 href="#"
               >
@@ -1631,7 +1941,7 @@ exports[`It uses variant (standard) and tone (neutral) 1`] = `
 
 <div>
   <div
-    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-89 Alert-neutral-93 MuiPaper-elevation0"
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-105 Alert-neutral-109 MuiPaper-elevation0"
     data-id="alert"
     role="alert"
   >
@@ -1640,7 +1950,7 @@ exports[`It uses variant (standard) and tone (neutral) 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-102"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-122"
         data-id="IconInfo"
         focusable="false"
         viewBox="0 0 24 24"
@@ -1669,12 +1979,12 @@ exports[`It uses variant (standard) and tone (neutral) 1`] = `
             data-id="alert-content"
           >
             <span
-              class="typography-body-variant-basekick-103 typography-neutral-color-104 typography-regular-weight-105 typography-strong-support-106 c4 -span c5"
+              class="typography-body-variant-basekick-123 typography-neutral-color-124 typography-regular-weight-125 typography-strong-support-126 c4 -span c5"
               data-id="text"
             >
               Lorem ipsum 
               <strong
-                class="typography-medium-weight-108"
+                class="typography-medium-weight-128"
                 data-id="strong"
               >
                 dolor
@@ -1689,7 +1999,7 @@ exports[`It uses variant (standard) and tone (neutral) 1`] = `
                adipiscing elit. Suspendisse facilisis
                
               <a
-                class="typography-linkReset-109 typography-neutral-tone-link-110"
+                class="typography-linkReset-129 typography-neutral-tone-link-130"
                 data-id="text-link"
                 href="#"
               >
@@ -1786,7 +2096,7 @@ exports[`It uses variant (standard) and tone (positive) 1`] = `
 
 <div>
   <div
-    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-111 Alert-positive-116 MuiPaper-elevation0"
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-131 Alert-positive-136 MuiPaper-elevation0"
     data-id="alert"
     role="alert"
   >
@@ -1795,7 +2105,7 @@ exports[`It uses variant (standard) and tone (positive) 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-124"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-148"
         data-id="IconDone"
         focusable="false"
         viewBox="0 0 24 24"
@@ -1824,12 +2134,12 @@ exports[`It uses variant (standard) and tone (positive) 1`] = `
             data-id="alert-content"
           >
             <span
-              class="typography-body-variant-basekick-125 typography-neutral-color-126 typography-regular-weight-127 typography-strong-support-128 c4 -span c5"
+              class="typography-body-variant-basekick-149 typography-neutral-color-150 typography-regular-weight-151 typography-strong-support-152 c4 -span c5"
               data-id="text"
             >
               Lorem ipsum 
               <strong
-                class="typography-medium-weight-130"
+                class="typography-medium-weight-154"
                 data-id="strong"
               >
                 dolor
@@ -1844,7 +2154,7 @@ exports[`It uses variant (standard) and tone (positive) 1`] = `
                adipiscing elit. Suspendisse facilisis
                
               <a
-                class="typography-linkReset-131 typography-neutral-tone-link-132"
+                class="typography-linkReset-155 typography-neutral-tone-link-156"
                 data-id="text-link"
                 href="#"
               >
@@ -1941,7 +2251,7 @@ exports[`It uses variant (standard) and tone (promote) 1`] = `
 
 <div>
   <div
-    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-133 Alert-promote-139 MuiPaper-elevation0"
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-157 Alert-promote-163 MuiPaper-elevation0"
     data-id="alert"
     role="alert"
   >
@@ -1950,7 +2260,7 @@ exports[`It uses variant (standard) and tone (promote) 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-146"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-174"
         data-id="IconLocalOffer"
         focusable="false"
         viewBox="0 0 24 24"
@@ -1979,12 +2289,12 @@ exports[`It uses variant (standard) and tone (promote) 1`] = `
             data-id="alert-content"
           >
             <span
-              class="typography-body-variant-basekick-147 typography-neutral-color-148 typography-regular-weight-149 typography-strong-support-150 c4 -span c5"
+              class="typography-body-variant-basekick-175 typography-neutral-color-176 typography-regular-weight-177 typography-strong-support-178 c4 -span c5"
               data-id="text"
             >
               Lorem ipsum 
               <strong
-                class="typography-medium-weight-152"
+                class="typography-medium-weight-180"
                 data-id="strong"
               >
                 dolor
@@ -1999,7 +2309,317 @@ exports[`It uses variant (standard) and tone (promote) 1`] = `
                adipiscing elit. Suspendisse facilisis
                
               <a
-                class="typography-linkReset-153 typography-neutral-tone-link-154"
+                class="typography-linkReset-181 typography-neutral-tone-link-182"
+                data-id="text-link"
+                href="#"
+              >
+                posuere
+              </a>
+               sodales.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It uses variant (standard) and tone (promoteB) 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c4 {
+  max-width: 100%;
+}
+
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+<div>
+  <div
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-183 Alert-promoteB-190 MuiPaper-elevation0"
+    data-id="alert"
+    role="alert"
+  >
+    <div
+      class="MuiAlert-icon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-200"
+        data-id="IconLocalOffer"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"
+        />
+      </svg>
+    </div>
+    <div
+      class="MuiAlert-message"
+    >
+      <div
+        class="c0"
+        data-id="stack"
+        display="block"
+        width="full"
+      >
+        <div
+          class="c1 c2"
+          data-id="stack-child"
+          display="block"
+        >
+          <div
+            class="c3"
+            data-id="alert-content"
+          >
+            <span
+              class="typography-body-variant-basekick-201 typography-neutral-color-202 typography-regular-weight-203 typography-strong-support-204 c4 -span c5"
+              data-id="text"
+            >
+              Lorem ipsum 
+              <strong
+                class="typography-medium-weight-206"
+                data-id="strong"
+              >
+                dolor
+              </strong>
+               sit amet,
+               
+              <em
+                data-id="emphasis"
+              >
+                consectetur
+              </em>
+               adipiscing elit. Suspendisse facilisis
+               
+              <a
+                class="typography-linkReset-207 typography-neutral-tone-link-208"
+                data-id="text-link"
+                href="#"
+              >
+                posuere
+              </a>
+               sodales.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It uses variant (standard) and tone (promoteC) 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.c4 {
+  max-width: 100%;
+}
+
+.c1:empty {
+  display: none;
+}
+
+.c1:empty + div:before {
+  display: none;
+}
+
+.c1:not(:empty) ~ div:not(:empty):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+.c1:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  position: relative;
+  height: 0.1px;
+  margin-top: 8px;
+}
+
+<div>
+  <div
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess Alert-alert-209 Alert-promoteC-217 MuiPaper-elevation0"
+    data-id="alert"
+    role="alert"
+  >
+    <div
+      class="MuiAlert-icon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root svg-icon-secondary-small-svg-icon-226"
+        data-id="IconLocalOffer"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"
+        />
+      </svg>
+    </div>
+    <div
+      class="MuiAlert-message"
+    >
+      <div
+        class="c0"
+        data-id="stack"
+        display="block"
+        width="full"
+      >
+        <div
+          class="c1 c2"
+          data-id="stack-child"
+          display="block"
+        >
+          <div
+            class="c3"
+            data-id="alert-content"
+          >
+            <span
+              class="typography-body-variant-basekick-227 typography-neutral-color-228 typography-regular-weight-229 typography-strong-support-230 c4 -span c5"
+              data-id="text"
+            >
+              Lorem ipsum 
+              <strong
+                class="typography-medium-weight-232"
+                data-id="strong"
+              >
+                dolor
+              </strong>
+               sit amet,
+               
+              <em
+                data-id="emphasis"
+              >
+                consectetur
+              </em>
+               adipiscing elit. Suspendisse facilisis
+               
+              <a
+                class="typography-linkReset-233 typography-neutral-tone-link-234"
                 data-id="text-link"
                 href="#"
               >
