@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-themes@1.0.2...@origin-digital/ods-themes@1.1.0) (2020-10-15)
+
+
+### Features
+
+* **new color:** added new promotional color ([dc4d627](https://bitbucket.orgn.io/od/origin-ui/commits/dc4d6270c557639d788e8cdbe497453ba426a196))
+
+
+
+
+
 ## [1.0.2](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-themes@1.0.0...@origin-digital/ods-themes@1.0.2) (2020-10-06)
 
 **Note:** Version bump only for package @origin-digital/ods-themes
