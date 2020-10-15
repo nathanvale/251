@@ -26,6 +26,7 @@ export interface Palette {
   primaryB: PaletteColor;
   promote: PaletteColor;
   promoteB: PaletteColor;
+  promoteC: PaletteColor;
   secondary: PaletteColor;
   secondaryB: PaletteColor;
   background: TypeBackground;
@@ -65,6 +66,9 @@ export interface Colors {
   promoteB: string;
   promoteBDark: string;
   promoteBLight: string;
+  promoteC: string;
+  promoteCDark: string;
+  promoteCLight: string;
   secondary: string;
   secondaryDark: string;
   secondaryLight: string;
@@ -130,6 +134,9 @@ export interface ColorPalette {
   promoteB: string;
   promoteBLight: string;
   promoteBDark: string;
+  promoteC: string;
+  promoteCLight: string;
+  promoteCDark: string;
 }
 
 export type Tones = Pick<
@@ -155,6 +162,9 @@ export type Tones = Pick<
   | "promoteB"
   | "promoteBLight"
   | "promoteBDark"
+  | "promoteC"
+  | "promoteCLight"
+  | "promoteCDark"
 >;
 
 export type ToneVariants = keyof Tones;
@@ -181,6 +191,7 @@ export type SvgIconColorVariants =
       | "primaryB"
       | "promote"
       | "promoteB"
+      | "promoteC"
       | "secondary"
       | "secondaryB"
       | "white"
@@ -190,7 +201,10 @@ export type SvgIconColorVariants =
 export type BackgroundColorVariants = ColorPaletteVariants;
 
 export type TextToneVariants =
-  | keyof Pick<Tones, "critical" | "positive">
+  | keyof Pick<
+      Tones,
+      "critical" | "positive" | "promote" | "promoteB" | "promoteC"
+    >
   | "neutral"
   | "neutralLight"
   | "neutralDark";

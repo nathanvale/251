@@ -63,16 +63,16 @@ const getStylesForbreakpoint = (
 };
 
 const StyledBox = styled(Box)<StyledBoxProps>`
-${(p) =>
-  !Object.values(p.fluidity as Record<BreakpointVariants, boolean>).some(
-    (e) => e
-  )
-    ? css`
-        max-width: ${p.theme.section.maxWidth.xl}px;
-      `
-    : ""}
+  ${(p) =>
+    !Object.values(p.fluidity as Record<BreakpointVariants, boolean>).some(
+      (e) => e
+    )
+      ? css`
+          max-width: ${p.theme.section.maxWidth.xl}px;
+        `
+      : ""}
 
-    ${(p) => getStylesForbreakpoint(p, "sm")}
+  ${(p) => getStylesForbreakpoint(p, "sm")}
 
     ${(p) => getStylesForbreakpoint(p, "md")}
 

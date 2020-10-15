@@ -44,6 +44,8 @@ exports[`Alert 1`] = `
     | "neutral"
     | "positive"
     | "promote"
+    | "promoteB"
+    | "promoteC"
   variant?: 
     | "filled"
     | "standard"
@@ -71,6 +73,8 @@ exports[`AlertBanner 1`] = `
     | "neutral"
     | "positive"
     | "promote"
+    | "promoteB"
+    | "promoteC"
   variant?: 
     | "filled"
     | "standard"
@@ -128,6 +132,9 @@ exports[`Box 1`] = `
     | "promoteB"
     | "promoteBDark"
     | "promoteBLight"
+    | "promoteC"
+    | "promoteCDark"
+    | "promoteCLight"
     | "promoteDark"
     | "promoteLight"
     | "secondary"
@@ -1163,6 +1170,9 @@ exports[`List 1`] = `
     | "neutralDark"
     | "neutralLight"
     | "positive"
+    | "promote"
+    | "promoteB"
+    | "promoteC"
   type?: 
     | "circle"
     | "decimal"
@@ -1255,7 +1265,7 @@ exports[`OriginThemeProvider 1`] = `
         light: string
         main: string
       }
-      getColorVariantCSSColor: (variant: "disabled" | "caution" | "critical" | "grey300" | "info" | "neutral" | "neutralDark" | "neutralLight" | "positive" | "positiveLight" | "primary" | "primaryB" | "promote" | "promoteB" | ... 37 more ... | "promoteBDark") => string
+      getColorVariantCSSColor: (variant: "disabled" | "caution" | "critical" | "grey300" | "info" | "neutral" | "neutralDark" | "neutralLight" | "positive" | "positiveLight" | "primary" | "primaryB" | "promote" | "promoteB" | ... 40 more ... | "promoteCDark") => string
       getContrastText: (background: string) => string
       grey: {
         100: string
@@ -1292,6 +1302,12 @@ exports[`OriginThemeProvider 1`] = `
         main: string
       }
       promoteB: {
+        contrastText: string
+        dark: string
+        light: string
+        main: string
+      }
+      promoteC: {
         contrastText: string
         dark: string
         light: string
@@ -1740,6 +1756,7 @@ exports[`SvgIcon 1`] = `
     | "primaryB"
     | "promote"
     | "promoteB"
+    | "promoteC"
     | "secondary"
     | "secondaryB"
     | "white"
@@ -1772,6 +1789,7 @@ exports[`SvgIcon 1`] = `
     | "primaryB"
     | "promote"
     | "promoteB"
+    | "promoteC"
     | "secondary"
     | "secondaryB"
     | "white"
@@ -1959,6 +1977,9 @@ exports[`Text 1`] = `
     | "neutralDark"
     | "neutralLight"
     | "positive"
+    | "promote"
+    | "promoteB"
+    | "promoteC"
   truncate?: boolean
   variant?: 
     | "body"
@@ -2035,6 +2056,9 @@ exports[`TextContextProvider 1`] = `
       | "neutralDark"
       | "neutralLight"
       | "positive"
+      | "promote"
+      | "promoteB"
+      | "promoteC"
     variant: 
       | "body"
       | "body-small"
@@ -2053,6 +2077,9 @@ exports[`TextContextProvider 1`] = `
     | "neutralDark"
     | "neutralLight"
     | "positive"
+    | "promote"
+    | "promoteB"
+    | "promoteC"
   variant?: 
     | "body"
     | "body-small"
@@ -2265,6 +2292,9 @@ exports[`useTextStyles 1`] = `
     | "neutralDark"
     | "neutralLight"
     | "positive"
+    | "promote"
+    | "promoteB"
+    | "promoteC"
   variant: 
     | "body"
     | "body-small"

@@ -64,6 +64,12 @@ export const tests: E2ETests = [
     ),
   },
   {
+    label: "Tone (promoteC)",
+    Code: () => (
+      <Text tone="promoteC">The quick brown fox jumps over the lazy dog.</Text>
+    ),
+  },
+  {
     label: "Weight (medium)",
     Code: () => (
       <Text weight="medium">The quick brown fox jumps over the lazy dog.</Text>
