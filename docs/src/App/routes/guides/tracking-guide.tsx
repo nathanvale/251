@@ -98,6 +98,7 @@ const TrackingGuide = () => {
             <li>ChevronButton</li>
             <li>ChevronLink</li>
             <li>HeadingChevronLink</li>
+            <li>IconButton</li>
             <li>TextLink</li>
             <li>TrackedLink</li>
           </ul>
