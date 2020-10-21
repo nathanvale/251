@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://bitbucket.orgn.io/od/origin-ui/compare/docs@1.1.0...docs@1.2.0) (2020-10-21)
+
+
+### Features
+
+* **IconButton:** Add tracking ([cc20561](https://bitbucket.orgn.io/od/origin-ui/commits/cc20561a959f2b986094bbbf79b7f28db6c15cc6))
+
+
+
+
+
 # [1.1.0](https://bitbucket.orgn.io/od/origin-ui/compare/docs@1.0.7...docs@1.1.0) (2020-10-15)
 
 
