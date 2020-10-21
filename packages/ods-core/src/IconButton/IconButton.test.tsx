@@ -1,4 +1,7 @@
-import { render } from "@origin-digital/ods-testing-library";
+import React from "react";
+import { fireEvent, render } from "@origin-digital/ods-testing-library";
+import { TrackingEventHandler } from "@origin-digital/ods-types";
+import { TrackingProvider } from "../TrackingProvider/TrackingProvider";
 import { UseTextProps } from "../Text/TextContextProvider";
 import { generateIconButton } from "./IconButton.helper";
 import { getSvgTone } from "./IconButton";
@@ -34,5 +37,23 @@ describe("<IconButton />", () => {
     expect(
       container.querySelector("button[class*='noIconPadding']")
     ).not.toBeNull();
+  });
+
+  test("should call tracking handler when passed into the TrackingProvider", () => {
+    const onTrackingCapture: TrackingEventHandler = jest.fn();
+
+    const { getByTestId } = render(
+      <TrackingProvider onTrackingCapture={onTrackingCapture}>
+        {generateIconButton()}
+      </TrackingProvider>
+    );
+    const node = getByTestId("icon-button");
+    fireEvent.click(node);
+    expect(onTrackingCapture).toHaveBeenCalledWith({
+      "data-id": "icon-button",
+      type: "IconButton",
+      label: "",
+      postClickState: undefined,
+    });
   });
 });

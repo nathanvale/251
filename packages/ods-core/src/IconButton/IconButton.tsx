@@ -12,6 +12,7 @@ import {
   SvgIconColorVariants,
 } from "@origin-digital/ods-types";
 import { SvgIconContext, SvgIconProps } from "@origin-digital/ods-icons";
+import { useTracking } from "../TrackingProvider";
 import { ButtonProps, ButtonActionProps } from "../Button";
 import { TextContext, UseTextProps } from "../Text";
 
@@ -60,8 +61,9 @@ export const getSvgTone = (
 export const IconButton = ({
   children,
   color = defaultProps.color,
-  noIconPadding,
+  "data-id": dataId = defaultProps["data-id"],
   disabled,
+  noIconPadding,
   ...props
 }: IconButtonProps) => {
   const styles = useIconButtonStyles();
@@ -72,11 +74,20 @@ export const IconButton = ({
     textContext,
   ]);
 
+  const { onClickCapture, ref } = useTracking({
+    children,
+    "data-id": dataId,
+    type: IconButton.displayName,
+  });
+
   return (
     <MuiIconButton
       className={clsx(styles.root, noIconPadding && styles.noIconPadding)}
+      data-id={dataId}
       disabled={disabled}
       size="medium"
+      ref={ref}
+      onClickCapture={onClickCapture}
       {...props}
       {...props.muiProps}
     >
