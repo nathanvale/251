@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@1.2.0...@origin-digital/ods-core@1.2.1) (2020-10-29)
+
+
+### Bug Fixes
+
+* **iconbutton:** seperate iconbutton muiprops ([0df4209](https://bitbucket.orgn.io/od/origin-ui/commits/0df42099ac1c08768c25ffab45a0d1c121b259ba))
+
+
+
+
+
 # [1.2.0](https://bitbucket.orgn.io/od/origin-ui/compare/@origin-digital/ods-core@1.1.0...@origin-digital/ods-core@1.2.0) (2020-10-21)
 
 

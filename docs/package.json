@@ -2,7 +2,7 @@
   "private": true,
   "name": "docs",
   "description": "ODS documentation, should be a goto for everyone using ODS.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "main": "src/index.tsx",
   "scripts": {
     "build": "BUILD_WEBPACK=true node ./scripts/build.js",
@@ -11,12 +11,12 @@
   },
   "dependencies": {
     "@babel/runtime-corejs3": "^7.11.2",
-    "@origin-digital/ods-core": "^1.2.0",
+    "@origin-digital/ods-core": "^1.2.1",
     "@origin-digital/ods-devtools": "^1.0.0",
     "@origin-digital/ods-helpers": "^1.0.3",
     "@origin-digital/ods-icons": "^1.0.3",
     "@origin-digital/ods-lab": "^1.0.3",
-    "@origin-digital/ods-pickers": "^1.0.5",
+    "@origin-digital/ods-pickers": "^1.0.6",
     "@origin-digital/ods-themes": "^1.1.0",
     "@origin-digital/ods-types": "^1.1.0",
     "@origin-digital/reporting-client": "^4.0.0",

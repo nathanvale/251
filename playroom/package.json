@@ -4,7 +4,7 @@
   "description": "Living design system containing the building blocks and design principles of ODS.",
   "license": "UNLICENSED",
   "author": "Nathan Vale <nathan.vale@origin.com.au>",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "workspaces": {
     "nohoist": [
       "playroom",
@@ -24,11 +24,11 @@
     "@origin-digital/formatters": "^8.0.0",
     "@origin-digital/icon": "^1.7.0",
     "@origin-digital/messages": "^2.0.0",
-    "@origin-digital/ods-core": "^1.2.0",
+    "@origin-digital/ods-core": "^1.2.1",
     "@origin-digital/ods-icons": "^1.0.3",
     "@origin-digital/ods-lab": "^1.0.3",
-    "@origin-digital/ods-pickers": "^1.0.5",
-    "@origin-digital/ods-scripts": "^1.1.1",
+    "@origin-digital/ods-pickers": "^1.0.6",
+    "@origin-digital/ods-scripts": "^1.1.2",
     "@origin-digital/ods-themes": "^1.1.0",
     "@origin-digital/ods-types": "^1.1.0",
     "@origin-digital/style-guide": "^23.0.0",
