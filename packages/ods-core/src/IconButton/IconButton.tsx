@@ -64,6 +64,7 @@ export const IconButton = ({
   "data-id": dataId = defaultProps["data-id"],
   disabled,
   noIconPadding,
+  muiProps,
   ...props
 }: IconButtonProps) => {
   const styles = useIconButtonStyles();
@@ -89,7 +90,7 @@ export const IconButton = ({
       ref={ref}
       onClickCapture={onClickCapture}
       {...props}
-      {...props.muiProps}
+      {...muiProps}
     >
       <SvgIconContext.Provider value={tone}>{children}</SvgIconContext.Provider>
     </MuiIconButton>
