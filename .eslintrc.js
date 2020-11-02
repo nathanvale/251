@@ -8,11 +8,10 @@ const result = spawnSync(
     encoding: "utf-8",
   }
 );
-const packages = result.stdout.split("\n").filter((package) => package !== "");
+const packages = result.stdout.split("\n").filter((pkg) => pkg !== "");
 
 module.exports = {
-  extends:
-    "./node_modules/@origin-digital/origin-scripts/dist/config/eslintrc.js",
+  extends: "./node_modules/easy-scripts/dist/config/eslintrc.js",
   rules: {
     "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/ban-ts-comment": "off",

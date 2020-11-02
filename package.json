@@ -23,19 +23,19 @@
     "docs:clean": "rm -rf docs/build",
     "docs:deploy": "cd docs && yarn deploy",
     "docs:snippets": "node packages/ods-scripts/src/ts-node.js",
-    "format": "origin-scripts format",
+    "format": "easy-scripts format",
     "generate-component-docs": "ts-node packages/ods-scripts/src/generate-component-docs",
     "generate-e2e-manifest": "ts-node packages/ods-scripts/src/generate-e2e-manifest",
-    "postinstall": "origin-scripts postinstall",
-    "lint": "origin-scripts lint",
+    "postinstall": "easy-scripts postinstall",
+    "lint": "easy-scripts lint",
     "playroom": "cd playroom && yarn start",
     "playroom:clean": "rm -rf playroom/dist",
     "serve:static": "cd docs && yarn serve:static",
     "start": "yarn generate-component-docs && cd docs && yarn start",
-    "stylelint": "origin-scripts stylelint",
-    "test": "origin-scripts test",
+    "stylelint": "easy-scripts stylelint",
+    "test": "easy-scripts test",
     "tsc": "tsc -b",
-    "validate": "origin-scripts validate"
+    "validate": "easy-scripts validate"
   },
   "config": {
     "commitizen": {
@@ -45,7 +45,6 @@
   "devDependencies": {
     "@origin-digital/ods-testing-library": "*",
     "@origin-digital/ods-types": "*",
-    "@origin-digital/origin-scripts": "^2.0.0-beta.11",
     "@testing-library/react": "^11.0.0",
     "@types/jest": "^24.0.23",
     "@types/lodash": "^4.14.132",
@@ -58,6 +57,7 @@
     "@types/styled-system": "^5.1.4",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
+    "easy-scripts": "^2.9.0-beta.6",
     "eslint-plugin-jest": "^24.0.0",
     "fs-extra": "^8.1.0",
     "jest-styled-components": "6.3.4",
@@ -85,9 +85,9 @@
   ],
   "husky": {
     "hooks": {
-      "commit-msg": "origin-scripts commitlint -e $HUSKY_GIT_PARAMS",
-      "pre-commit": "rm -rf packages/*/dist && origin-scripts pre-commit",
-      "post-rewrite": "origin-scripts pre-commit"
+      "commit-msg": "easy-scripts commitlint -e $HUSKY_GIT_PARAMS",
+      "pre-commit": "rm -rf packages/*/dist && easy-scripts pre-commit",
+      "post-rewrite": "easy-scripts pre-commit"
     }
   },
   "resolutions": {

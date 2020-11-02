@@ -12,8 +12,8 @@
   ],
   "scripts": {
     "build": "yarn build:cjs && yarn build:es",
-    "build:cjs": "BUILD_FORMAT=cjs origin-scripts build --monorepo --delete-dir-on-start --out-dir dist/cjs",
-    "build:es": "BUILD_WEBPACK=true origin-scripts build --monorepo --out-dir dist/es",
+    "build:cjs": "BUILD_FORMAT=cjs easy-scripts build --monorepo --delete-dir-on-start --out-dir dist/cjs",
+    "build:es": "BUILD_WEBPACK=true easy-scripts build --monorepo --out-dir dist/es",
     "create:mui-icons": "cd ../ods-scripts && yarn create:mui-icons"
   },
   "sideEffects": false,

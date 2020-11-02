@@ -1,1 +1,1 @@
-module.exports = require("@origin-digital/origin-scripts/dist/config/prettier.config");
+module.exports = require("easy-scripts/dist/config/prettier.config");
