@@ -233,7 +233,7 @@ export interface InactiveKeyPolygon {
   };
 }
 
-export interface ActiveKey {
+export interface ActiveRenderKey {
   polygon: ActiveKeyPolygon;
   text1: ActiveKeyText;
   text2: ActiveKeyText;
@@ -483,8 +483,8 @@ export class KeyboardModel {
     leftHandKeysColor: "red",
     rightHandKeysColor: "blue",
   };
-  private _activeLeftHandKeys: ActiveKeys[] = [];
-  private _activeRightHandKeys: ActiveKeys[] = [];
+  private _activeLeftHandKeys: ActiveRenderKey[] = [];
+  private _activeRightHandKeys: ActiveRenderKey[] = [];
 
   private _keysMap: Partial<
     Record<
@@ -589,11 +589,11 @@ export class KeyboardModel {
   }
 
   playLeftHandKeys(keys: ActiveKeys) {
-    this._activeLeftHandKeys = this._getLabels(keys);
+    this._activeLeftHandKeys = this._getActiveRenderKey(keys);
   }
 
   playRightHandKeys(keys: ActiveKeys) {
-    this._activeRightHandKeys = this._getLabels(keys);
+    this._activeRightHandKeys = this._getActiveRenderKey(keys);
   }
 
   getOptions() {
@@ -618,8 +618,8 @@ export class KeyboardModel {
     return this._activeRightHandKeys;
   }
 
-  private _getLabels(keys: ActiveKeys): ActiveKeys[] {
-    return Object.keys(keys).map<ActiveKey>((keyName) => {
+  private _getActiveRenderKey(keys: ActiveKeys): ActiveRenderKey[] {
+    return Object.keys(keys).map<ActiveRenderKey>((keyName) => {
       const key = this._keysMap[keyName as KeyNameVariants];
 
       if (!key) {
@@ -637,7 +637,7 @@ export class KeyboardModel {
         ...textElements,
         polygon: {
           ...polygon,
-          style: { fill: "green", strokeWidth: 0 },
+          style: { fill: "green", strokeWidth: 0, stroke: "" },
         },
       };
     });
@@ -716,19 +716,19 @@ export class KeyboardModel {
   }
 }
 
-const k = new KeyboardModel({ range: ["C3", "C6"] });
+// const k = new KeyboardModel({ range: ["C3", "C6"] });
 
-const leftHandLabels: ActiveKeys = { B3: { label: "P1" } }; //?
-const rightHandLabels: ActiveKeys = {
-  "D#4": { label: "M3" },
-  "F#4": { label: "P5" },
-  "A#4": { label: "M7" },
-  "C#5": { label: "M9" },
-}; //?
+// const leftHandLabels: ActiveKeys = { B3: { label: "P1" } }; //?
+// const rightHandLabels: ActiveKeys = {
+//   "D#4": { label: "M3" },
+//   "F#4": { label: "P5" },
+//   "A#4": { label: "M7" },
+//   "C#5": { label: "M9" },
+// }; //?
 
 // console.log(k.getOptions());
 
-console.log(k.playLeftHandKeys(leftHandLabels));
-console.log(k.getLeftHandActiveKeys());
-console.log(k.playRightHandKeys(rightHandLabels));
-console.log(k.getRightHandActiveKeys());
+// console.log(k.playLeftHandKeys(leftHandLabels));
+// console.log(k.getLeftHandActiveKeys());
+// console.log(k.playRightHandKeys(rightHandLabels));
+// console.log(k.getRightHandActiveKeys());

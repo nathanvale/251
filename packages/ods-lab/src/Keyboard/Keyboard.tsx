@@ -1,6 +1,10 @@
 /* eslint-disable react/no-array-index-key */
 import React, { useEffect, useState, useRef } from "react";
-import { KeyboardModel, KeyboardOptions, ActiveKeys } from "../SVGKeyboard/KeyboardModel";
+import {
+  KeyboardModel,
+  KeyboardOptions,
+  ActiveKeys,
+} from "../SVGKeyboard/KeyboardModel";
 
 export interface KeyboardProps {
   leftHandKeys?: ActiveKeys;
@@ -37,18 +41,15 @@ export const Keyboard = ({
       setKeyboardModel(km);
       km.playLeftHandKeys(leftHandKeys || {});
       km.playRightHandKeys(rightHandKeys || {});
-      console.log("optionsChanged");
     }
     if (prevLeftHandKeys !== JSON.stringify(leftHandKeys) && !optionsChanged) {
       keyboardModel.playLeftHandKeys(leftHandKeys || {});
-      console.log("leftHandKeysChanged");
     }
     if (
       prevRightHandKeys !== JSON.stringify(rightHandKeys) &&
       !optionsChanged
     ) {
       keyboardModel.playRightHandKeys(rightHandKeys || {});
-      console.log("rightHandKeysChanged");
     }
   }, [
     prevOptions,

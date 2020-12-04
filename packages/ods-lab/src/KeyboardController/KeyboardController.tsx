@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useTheme } from "@material-ui/core";
-import { Keyboard } from "../Keyboard/Keyboard";
-import { chord, Chord } from "../Keyboard/chord";
-import { getKeyboardLabels } from "./utils";
 import { Button } from "@origin-digital/ods-core";
+import { Keyboard } from "../Keyboard/Keyboard";
+import { chord } from "../Keyboard/chord";
 import { KeyboardOptions, ActiveKeys } from "../SVGKeyboard/KeyboardModel";
+import { getKeyboardLabels } from "./utils";
 
 export interface KeyboardControllerProps {}
 

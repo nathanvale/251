@@ -84,7 +84,7 @@ export function chord(
   throw new Error("Invalid Chord. Couldn't find note name");
 }
 
-const c = chord("Eb", 4, ["M3", "P5", "M7", "M9"]); //?
+// const c = chord("Eb", 4, ["M3", "P5", "M7", "M9"]); //?
 // console.log(c.notes());
 // console.log(c.simple());
 // //console.log(c.invertDown().simple());
