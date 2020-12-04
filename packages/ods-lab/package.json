@@ -34,12 +34,5 @@
   },
   "publishConfig": {
     "registry": "https://artifactory.origindigital-dac.com.au/artifactory/api/npm/npm-internal/"
-  },
-  "quokka": {
-    "babel": true,
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-typescripts"
-    ]
   }
 }

@@ -39,6 +39,8 @@ export { InputLabel } from "./InputLabel/InputLabel";
 export type InputLabelProps = import("./InputLabel/InputLabel").InputLabelProps;
 export { Keyboard } from "./Keyboard/Keyboard";
 export type KeyboardProps = import("./Keyboard/Keyboard").KeyboardProps;
+export { KeyboardController } from "./KeyboardController/KeyboardController";
+export type KeyboardControllerProps = import("./KeyboardController/KeyboardController").KeyboardControllerProps;
 export { MenuItem } from "./MenuItem/MenuItem";
 export type MenuItemProps = import("./MenuItem/MenuItem").MenuItemProps;
 export { MenuList } from "./MenuList/MenuList";

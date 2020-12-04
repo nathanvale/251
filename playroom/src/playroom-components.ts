@@ -1,4 +1,3 @@
-// export * from "./legacy-components";
 // export * from "./_private/components";
 // export {
 //   Accordion,
@@ -72,4 +71,9 @@
 // } from "@origin-digital/ods-pickers";
 
 // export * from "@origin-digital/ods-icons";
-export { Breadcrumbs, Breadcrumb, Keyboard } from "@origin-digital/ods-lab";
+export {
+  Breadcrumbs,
+  Breadcrumb,
+  Keyboard,
+  KeyboardController,
+} from "@origin-digital/ods-lab";

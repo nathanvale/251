@@ -3857,15 +3857,6 @@
     "@origin-digital/layout" "^5.2.0"
     "@origin-digital/style-guide" "^22.3.1"
 
-"@origin-digital/formatters@^8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@origin-digital/formatters/-/@origin-digital/formatters-8.0.0.tgz#cdd95a5f1619f1c599bb994552cfffe5cbf5ddc3"
-  integrity sha1-zdlaXxYZ8cWZu5lFUs//5cv13cM=
-  dependencies:
-    "@babel/runtime-corejs2" "^7.0.0"
-    "@origin-digital/platform-enums" "^0.4.2"
-    "@origin-digital/validation" "^7.0.0"
-
 "@origin-digital/helper@^3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@origin-digital/helper/-/@origin-digital/helper-3.0.1.tgz#34fcee3dd360baa704e4eb919a353cdc83b854d8"
@@ -3878,40 +3869,12 @@
   dependencies:
     "@origin-digital/helper" "^3.0.1"
 
-"@origin-digital/icon@^1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@origin-digital/icon/-/@origin-digital/icon-1.8.0.tgz#461c8834aedde304fb825c79fcd1ab3249c088af"
-  integrity sha1-RhyINK7d4wT7glx5/NGrMknAiK8=
-  dependencies:
-    "@origin-digital/helper" "^3.0.1"
-
 "@origin-digital/layout@^5.2.0":
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/@origin-digital/layout/-/@origin-digital/layout-5.2.0.tgz#5f92ad59f49659f7475e252182b5c5dc03a9e8ae"
   integrity sha1-X5KtWfSWWfdHXiUhgrXF3AOp6K4=
   dependencies:
     "@origin-digital/helper" "^3.0.1"
-
-"@origin-digital/layout@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@origin-digital/layout/-/@origin-digital/layout-6.0.0.tgz#5afbbeb7596dc03758d883b1d733dab40d15d206"
-  integrity sha1-Wvu+t1ltwDdY2IOx1zPatA0V0gY=
-  dependencies:
-    "@origin-digital/helper" "^3.0.1"
-
-"@origin-digital/messages@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@origin-digital/messages/-/@origin-digital/messages-2.0.0.tgz#40469a744d63a00f39e517d0d0670ee6747fb837"
-  integrity sha1-QEaadE1joA855RfQ0GcO5nR/uDc=
-  dependencies:
-    "@babel/runtime-corejs2" "^7.0.0"
-
-"@origin-digital/platform-enums@^0.4.2":
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/@origin-digital/platform-enums/-/@origin-digital/platform-enums-0.4.4.tgz#029b5134ffc12ec82f6f17efe081b84ade74f1e1"
-  integrity sha1-AptRNP/BLsgvbxfv4IG4St508eE=
-  dependencies:
-    "@babel/runtime-corejs3" "^7.5.5"
 
 "@origin-digital/reporting-client@^4.0.0":
   version "4.1.1"
@@ -3920,7 +3883,7 @@
   dependencies:
     "@babel/runtime-corejs3" "^7.5.5"
 
-"@origin-digital/style-guide@^22.3.1", "@origin-digital/style-guide@^22.3.3":
+"@origin-digital/style-guide@^22.3.1":
   version "22.3.3"
   resolved "https://registry.yarnpkg.com/@origin-digital/style-guide/-/@origin-digital/style-guide-22.3.3.tgz#8dd795a4b13d51bf95220e88dfc2d5c2ef219b92"
   integrity sha1-jdeVpLE9Ub+VIg6I38LVwu8hm5I=
@@ -3937,40 +3900,6 @@
     polished "2.0.3"
     prop-types "^15.6.2"
     react-day-picker "^7.1.10"
-
-"@origin-digital/style-guide@^23.0.0":
-  version "23.0.0"
-  resolved "https://registry.yarnpkg.com/@origin-digital/style-guide/-/@origin-digital/style-guide-23.0.0.tgz#2e1b967d02a6210199241d40e84d50e0c6c427c6"
-  integrity sha1-LhuWfQKmIQGZJB1A6E1Q4MbEJ8Y=
-  dependencies:
-    "@babel/runtime-corejs2" "^7.0.0"
-    "@origin-digital/helper" "^3.0.1"
-    "@origin-digital/icon" "^1.8.0"
-    "@origin-digital/layout" "^6.0.0"
-    custom-event-polyfill "^1.0.6"
-    date-fns "^2.0.0-alpha.25"
-    dom-helpers "^3.3.1"
-    keycode "^2.2.0"
-    lodash.clamp "^4.0.3"
-    polished "2.0.3"
-    prop-types "^15.6.2"
-    react-day-picker "^7.1.10"
-
-"@origin-digital/tile-selector@^1.2.8":
-  version "1.2.8"
-  resolved "https://registry.yarnpkg.com/@origin-digital/tile-selector/-/@origin-digital/tile-selector-1.2.8.tgz#e120c51b9e3e5792ed021637a7983446bf13b8cf"
-  integrity sha1-4SDFG54+V5LtAhY3p5g0Rr8TuM8=
-  dependencies:
-    "@babel/runtime-corejs2" "^7.0.0"
-    "@origin-digital/style-guide" "^22.3.3"
-
-"@origin-digital/validation@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@origin-digital/validation/-/@origin-digital/validation-7.0.0.tgz#ea8d5816fe294a40b94976a49783762e41389759"
-  integrity sha1-6o1YFv4pSkC5SXakl4N2LkE4l1k=
-  dependencies:
-    "@babel/runtime-corejs2" "^7.0.0"
-    date-fns "^2.0.0-alpha.25"
 
 "@rollup/plugin-node-resolve@^7.1.1":
   version "7.1.3"

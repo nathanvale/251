@@ -1,7 +1,12 @@
 /* eslint-disable one-var */
 declare module "teoria" {
-  export type IntervalConstructor = (interval: IntervalVariant) => Chord;
-  export type ChordConstructor = (root: string | Note, name?: string) => Chord;
+  export type IntervalConstructor = (
+    interval: IntervalCoord | IntervalVariant
+  ) => Note;
+  export type ChordConstructor = (
+    root: string | NoteInstance,
+    name?: string
+  ) => Chord;
 
   export interface Duration {
     value: number;
@@ -13,7 +18,7 @@ declare module "teoria" {
     voicing: (voicing?: IntervalVariant[]) => Chord;
     simple: () => string[];
     transpose: (intervalCoord: IntervalCoord) => Chord;
-    notes: () => Note[];
+    notes: () => NoteInstance[];
     bass: () => string;
     root: {
       duration: Duration;
@@ -21,10 +26,7 @@ declare module "teoria" {
     };
     symbol: string;
     intervals: IntervalCoord[];
-  }
-  export interface Note {
-    interval: IntervalConstructor;
-    chord: (root: string, name?: string) => Chord;
+    resetVoicing: () => void;
   }
 
   export interface IntervalCoord {
@@ -33,6 +35,17 @@ declare module "teoria" {
 
   export class Interval {
     static toCoord: (interval: IntervalVariant) => IntervalCoord;
+  }
+
+  export class Note {
+    static fromString: (str: string) => NoteInstance;
+    interval: IntervalConstructor;
+    chord: (root: string, name?: string) => Chord;
+    transpose: (intervalCoord: IntervalCoord) => NoteInstance;
+    name: () => string;
+    accidental: () => string;
+    toString: (dont?: Boolean) => string;
+    octave: () => string;
   }
 
   export type NoteVariant = string;
@@ -47,9 +60,7 @@ declare module "teoria" {
   dd: 'doubly diminished'
   */
 
-  export const note: (name: NoteVariant, duration?: any) => Note;
-
-  export const chord: ChordConstructor;
+  export const note: (name: NoteVariant, duration?: any) => NoteInstance;
 
   export type IntervalVariant =
     // perfect
