@@ -1,14 +1,11 @@
 /* eslint-disable react/no-array-index-key */
 import React, { useEffect, useState, useRef } from "react";
-import {
-  KeyboardModel,
-  KeyboardOptions,
-  ActiveKeys,
-} from "../SVGKeyboard/KeyboardModel";
+import { KeyboardModel, KeyboardOptions, ActiveKeys } from "./KeyboardModel";
+import { Chord } from "./Chord";
 
 export interface KeyboardProps {
-  leftHandKeys?: ActiveKeys;
-  rightHandKeys?: ActiveKeys;
+  leftHandKeys?: ActiveKeys | Chord;
+  rightHandKeys?: ActiveKeys | Chord;
   options?: Partial<KeyboardOptions>;
 }
 

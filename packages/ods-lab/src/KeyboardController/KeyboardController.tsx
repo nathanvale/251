@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import { useTheme } from "@material-ui/core";
 import { Button } from "@origin-digital/ods-core";
 import { Keyboard } from "../Keyboard/Keyboard";
-import { chord } from "../Keyboard/chord";
-import { KeyboardOptions, ActiveKeys } from "../SVGKeyboard/KeyboardModel";
-import { getKeyboardLabels } from "./utils";
+import { chord, Chord } from "../Keyboard/Chord";
+import { KeyboardOptions, ActiveKeys } from "../Keyboard/KeyboardModel";
 
 export interface KeyboardControllerProps {}
 
@@ -24,12 +23,12 @@ export const KeyboardController = () => {
     defaultOptions
   );
 
-  const [lhk, setLeftHandKeys] = useState<ActiveKeys>(
-    getKeyboardLabels(chord("Cb", 3, ["P1"]))
+  const [lhk, setLeftHandKeys] = useState<ActiveKeys | Chord>(
+    chord("Cb", 3, ["P1"])
   );
 
-  const [rhk, setRightHandKeys] = useState<ActiveKeys>(
-    getKeyboardLabels(chord("Bb", 3, ["M3", "P5", "M7", "M9"]))
+  const [rhk, setRightHandKeys] = useState<ActiveKeys | Chord>(
+    chord("Bb", 3, ["M3", "P5", "M7", "M9"])
   );
 
   function changeOptions() {
@@ -37,19 +36,15 @@ export const KeyboardController = () => {
   }
 
   function changeOptions2() {
-    setLeftHandKeys(getKeyboardLabels(chord("C", 4, ["P1"])));
+    setLeftHandKeys(chord("C", 4, ["P1"]));
   }
 
   function changeOptions3() {
-    setRightHandKeys(
-      getKeyboardLabels(chord("C", 4, ["M3", "P5", "M7", "M9"]))
-    );
+    setRightHandKeys(chord("C", 4, ["M3", "P5", "M7", "M9"]));
   }
   function changeOptions4() {
-    setLeftHandKeys(getKeyboardLabels(chord("B", 3, ["P1"])));
-    setRightHandKeys(
-      getKeyboardLabels(chord("B", 3, ["M3", "P5", "M7", "M9"]))
-    );
+    setLeftHandKeys(chord("B", 3, ["P1"]));
+    setRightHandKeys(chord("B", 3, ["M3", "P5", "M7", "M9"]));
   }
 
   return (
