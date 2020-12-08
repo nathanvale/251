@@ -12,8 +12,8 @@ export const KeyboardController = () => {
 
   const defaultOptions = {
     range: ["C3", "C6"],
-    scaleX: 2,
-    scaleY: 2,
+    scaleX: 1.9,
+    scaleY: 1.9,
     strokeWidth: 1,
     fontFamily: theme.typography.fontFamily || "",
     rightHandKeysColor: theme.palette.info.light,

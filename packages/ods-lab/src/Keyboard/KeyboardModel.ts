@@ -404,7 +404,10 @@ export class KeyboardModel {
     if (keys instanceof Chord) {
       keys = convertTeoriaChordToActiveKeys(keys);
     }
-    this._activeLeftHandKeys = this._getActiveRenderKey(keys);
+    this._activeLeftHandKeys = this._getActiveRenderKey(
+      keys,
+      this._options.leftHandKeysColor
+    );
     return this;
   }
 
@@ -412,7 +415,10 @@ export class KeyboardModel {
     if (keys instanceof Chord) {
       keys = convertTeoriaChordToActiveKeys(keys);
     }
-    this._activeRightHandKeys = this._getActiveRenderKey(keys);
+    this._activeRightHandKeys = this._getActiveRenderKey(
+      keys,
+      this._options.rightHandKeysColor
+    );
     return this;
   }
 
@@ -438,7 +444,10 @@ export class KeyboardModel {
     return this._activeRightHandKeys;
   }
 
-  private _getActiveRenderKey(keys: ActiveKeys): ActiveRenderKey[] {
+  private _getActiveRenderKey(
+    keys: ActiveKeys,
+    fill: string
+  ): ActiveRenderKey[] {
     return Object.keys(keys).map<ActiveRenderKey>((keyName) => {
       const key = this._keysMap[keyName as KeyNameVariants];
 
@@ -457,7 +466,7 @@ export class KeyboardModel {
         ...textElements,
         polygon: {
           ...polygon,
-          style: { fill: "green", strokeWidth: 0, stroke: "" },
+          style: { fill, strokeWidth: 0, stroke: "" },
         },
       };
     });
@@ -482,13 +491,7 @@ export class KeyboardModel {
   private _getTextElements(
     key: Key
   ): { text1: ActiveKeyText; text2: ActiveKeyText } {
-    let fill = "";
-
-    if (key.sharp) {
-      fill = this._options.palette[1];
-    } else {
-      fill = this._options.palette[0];
-    }
+    const fill = "white";
 
     const {
       offsetX,
