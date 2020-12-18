@@ -53,13 +53,13 @@ describe("Keyboard model tests", () => {
           "polygon": Object {
             "points": "152.25000000000003,2 152.25000000000003,102 142.60000000000002,102 142.60000000000002,147 166.20000000000002,147 166.20000000000002,102 166.20000000000002,102 166.20000000000002,2",
             "style": Object {
-              "fill": "green",
+              "fill": "red",
               "stroke": "",
               "strokeWidth": 0,
             },
           },
           "text1": Object {
-            "fill": "#39383D",
+            "fill": "white",
             "fontFamily": "helvetica",
             "fontSize": "10px",
             "fontWeight": 600,
@@ -69,7 +69,7 @@ describe("Keyboard model tests", () => {
             "y": 134.75,
           },
           "text2": Object {
-            "fill": "#39383D",
+            "fill": "white",
             "fontFamily": "helvetica",
             "fontSize": "12px",
             "fontWeight": 600,
@@ -90,13 +90,13 @@ describe("Keyboard model tests", () => {
           "polygon": Object {
             "points": "209.25,2 209.25,102 209.25,102 209.25,102 221.95,102 221.95,102 221.95,102 221.95,2",
             "style": Object {
-              "fill": "green",
+              "fill": "blue",
               "stroke": "",
               "strokeWidth": 0,
             },
           },
           "text1": Object {
-            "fill": "#F2F2EF",
+            "fill": "white",
             "fontFamily": "helvetica",
             "fontSize": "10px",
             "fontWeight": 600,
@@ -106,7 +106,7 @@ describe("Keyboard model tests", () => {
             "y": 89.75,
           },
           "text2": Object {
-            "fill": "#F2F2EF",
+            "fill": "white",
             "fontFamily": "helvetica",
             "fontSize": "12px",
             "fontWeight": 600,
@@ -120,13 +120,13 @@ describe("Keyboard model tests", () => {
           "polygon": Object {
             "points": "250.95,2 250.95,102 250.95,102 250.95,102 263.65,102 263.65,102 263.65,102 263.65,2",
             "style": Object {
-              "fill": "green",
+              "fill": "blue",
               "stroke": "",
               "strokeWidth": 0,
             },
           },
           "text1": Object {
-            "fill": "#F2F2EF",
+            "fill": "white",
             "fontFamily": "helvetica",
             "fontSize": "10px",
             "fontWeight": 600,
@@ -136,7 +136,7 @@ describe("Keyboard model tests", () => {
             "y": 89.75,
           },
           "text2": Object {
-            "fill": "#F2F2EF",
+            "fill": "white",
             "fontFamily": "helvetica",
             "fontSize": "12px",
             "fontWeight": 600,
@@ -150,13 +150,13 @@ describe("Keyboard model tests", () => {
           "polygon": Object {
             "points": "304.74999999999994,2 304.74999999999994,102 304.74999999999994,102 304.74999999999994,102 317.44999999999993,102 317.44999999999993,102 317.44999999999993,102 317.44999999999993,2",
             "style": Object {
-              "fill": "green",
+              "fill": "blue",
               "stroke": "",
               "strokeWidth": 0,
             },
           },
           "text1": Object {
-            "fill": "#F2F2EF",
+            "fill": "white",
             "fontFamily": "helvetica",
             "fontSize": "10px",
             "fontWeight": 600,
@@ -166,7 +166,7 @@ describe("Keyboard model tests", () => {
             "y": 89.75,
           },
           "text2": Object {
-            "fill": "#F2F2EF",
+            "fill": "white",
             "fontFamily": "helvetica",
             "fontSize": "12px",
             "fontWeight": 600,
@@ -180,13 +180,13 @@ describe("Keyboard model tests", () => {
           "polygon": Object {
             "points": "346.44999999999993,2 346.44999999999993,102 346.44999999999993,102 346.44999999999993,102 359.1499999999999,102 359.1499999999999,102 359.1499999999999,102 359.1499999999999,2",
             "style": Object {
-              "fill": "green",
+              "fill": "blue",
               "stroke": "",
               "strokeWidth": 0,
             },
           },
           "text1": Object {
-            "fill": "#F2F2EF",
+            "fill": "white",
             "fontFamily": "helvetica",
             "fontSize": "10px",
             "fontWeight": 600,
@@ -196,7 +196,7 @@ describe("Keyboard model tests", () => {
             "y": 89.75,
           },
           "text2": Object {
-            "fill": "#F2F2EF",
+            "fill": "white",
             "fontFamily": "helvetica",
             "fontSize": "12px",
             "fontWeight": 600,

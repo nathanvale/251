@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { useTheme } from "@material-ui/core";
-import { Button } from "@origin-digital/ods-core";
+import { useTheme, Card } from "@material-ui/core";
+import { Button, Stack } from "@origin-digital/ods-core";
 import { Keyboard } from "../Keyboard/Keyboard";
 import { chord, Chord } from "../Keyboard/Chord";
 import { KeyboardOptions, ActiveKeys } from "../Keyboard/KeyboardModel";
+import { ChordCategories } from "../ChordCategories/ChordCategories";
 
 export interface KeyboardControllerProps {}
 
@@ -49,11 +50,24 @@ export const KeyboardController = () => {
 
   return (
     <>
-      <Keyboard leftHandKeys={lhk} rightHandKeys={rhk} options={options} />
-      <Button onClick={changeOptions}>Change</Button>
-      <Button onClick={changeOptions2}>Change</Button>
-      <Button onClick={changeOptions3}>Change</Button>
-      <Button onClick={changeOptions4}>Change</Button>
+      <Card>
+        <Stack>
+          <Keyboard leftHandKeys={lhk} rightHandKeys={rhk} options={options} />
+          <Button variant="outlined" size="small" onClick={changeOptions}>
+            Change
+          </Button>
+          <Button size="small" onClick={changeOptions2}>
+            Change
+          </Button>
+          <Button size="small" onClick={changeOptions3}>
+            Change
+          </Button>
+          <Button size="small" onClick={changeOptions4}>
+            Change
+          </Button>
+          <ChordCategories />
+        </Stack>
+      </Card>
     </>
   );
 };
