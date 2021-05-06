@@ -3848,14 +3848,14 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@origin-digital/action-bar@^9.1.21":
-  version "9.1.21"
-  resolved "https://registry.yarnpkg.com/@origin-digital/action-bar/-/@origin-digital/action-bar-9.1.21.tgz#b72d9b0ff7ff1eb979f5e658e6fb86b9eb040e63"
-  integrity sha1-ty2bD/f/Hrl59eZY5vuGuesEDmM=
+"@origin-digital/formatters@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@origin-digital/formatters/-/@origin-digital/formatters-8.0.0.tgz#cdd95a5f1619f1c599bb994552cfffe5cbf5ddc3"
+  integrity sha1-zdlaXxYZ8cWZu5lFUs//5cv13cM=
   dependencies:
     "@babel/runtime-corejs2" "^7.0.0"
-    "@origin-digital/layout" "^5.2.0"
-    "@origin-digital/style-guide" "^22.3.1"
+    "@origin-digital/platform-enums" "^0.4.2"
+    "@origin-digital/validation" "^7.0.0"
 
 "@origin-digital/helper@^3.0.1":
   version "3.0.1"
@@ -3876,6 +3876,13 @@
   dependencies:
     "@origin-digital/helper" "^3.0.1"
 
+"@origin-digital/platform-enums@^0.4.2":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@origin-digital/platform-enums/-/@origin-digital/platform-enums-0.4.4.tgz#029b5134ffc12ec82f6f17efe081b84ade74f1e1"
+  integrity sha1-AptRNP/BLsgvbxfv4IG4St508eE=
+  dependencies:
+    "@babel/runtime-corejs3" "^7.5.5"
+
 "@origin-digital/reporting-client@^4.0.0":
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/@origin-digital/reporting-client/-/@origin-digital/reporting-client-4.1.1.tgz#de1b83b628d3c960eeb74451f04039c5b48b748b"
@@ -3883,7 +3890,7 @@
   dependencies:
     "@babel/runtime-corejs3" "^7.5.5"
 
-"@origin-digital/style-guide@^22.3.1":
+"@origin-digital/style-guide@^22.3.3":
   version "22.3.3"
   resolved "https://registry.yarnpkg.com/@origin-digital/style-guide/-/@origin-digital/style-guide-22.3.3.tgz#8dd795a4b13d51bf95220e88dfc2d5c2ef219b92"
   integrity sha1-jdeVpLE9Ub+VIg6I38LVwu8hm5I=
@@ -3900,6 +3907,22 @@
     polished "2.0.3"
     prop-types "^15.6.2"
     react-day-picker "^7.1.10"
+
+"@origin-digital/tile-selector@^1.2.8":
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/@origin-digital/tile-selector/-/@origin-digital/tile-selector-1.2.8.tgz#e120c51b9e3e5792ed021637a7983446bf13b8cf"
+  integrity sha1-4SDFG54+V5LtAhY3p5g0Rr8TuM8=
+  dependencies:
+    "@babel/runtime-corejs2" "^7.0.0"
+    "@origin-digital/style-guide" "^22.3.3"
+
+"@origin-digital/validation@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@origin-digital/validation/-/@origin-digital/validation-7.0.0.tgz#ea8d5816fe294a40b94976a49783762e41389759"
+  integrity sha1-6o1YFv4pSkC5SXakl4N2LkE4l1k=
+  dependencies:
+    "@babel/runtime-corejs2" "^7.0.0"
+    date-fns "^2.0.0-alpha.25"
 
 "@rollup/plugin-node-resolve@^7.1.1":
   version "7.1.3"

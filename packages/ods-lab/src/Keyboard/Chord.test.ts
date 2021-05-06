@@ -1,4 +1,4 @@
-import { chord, Chord } from "./Chord";
+import { chord, Chord } from "./chord";
 
 describe("Chord tests", () => {
   let c: Chord;

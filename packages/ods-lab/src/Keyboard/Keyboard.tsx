@@ -1,11 +1,14 @@
 /* eslint-disable react/no-array-index-key */
 import React, { useEffect, useState, useRef } from "react";
-import { KeyboardModel, KeyboardOptions, ActiveKeys } from "./KeyboardModel";
-import { Chord } from "./Chord";
+import {
+  KeyboardModel,
+  KeyboardOptions,
+  RenderActiveKey,
+} from "../SVGKeyboard/KeyboardModel";
 
 export interface KeyboardProps {
-  leftHandKeys?: ActiveKeys | Chord;
-  rightHandKeys?: ActiveKeys | Chord;
+  leftHandKeys?: Partial<KeyboardOptions>;
+  rightHandKeys?: Partial<KeyboardOptions>;
   options?: Partial<KeyboardOptions>;
 }
 
@@ -16,7 +19,7 @@ function usePrevious(value: string) {
   });
   return ref.current;
 }
-
+//TODO create state for dimensions
 //TODO error handling for out of range keys
 export const Keyboard = ({
   rightHandKeys,
@@ -26,6 +29,8 @@ export const Keyboard = ({
   const [keyboardModel, setKeyboardModel] = useState<KeyboardModel>(
     new KeyboardModel(options)
   );
+  const [lhk, setLeftHandKeys] = useState<RenderActiveKey[] | undefined>();
+  const [rhk, setRightHandKeys] = useState<RenderActiveKey[] | undefined>();
 
   const prevOptions = usePrevious(JSON.stringify(options));
   const prevLeftHandKeys = usePrevious(JSON.stringify(leftHandKeys));
@@ -36,17 +41,19 @@ export const Keyboard = ({
     if (optionsChanged) {
       const km = new KeyboardModel(options);
       setKeyboardModel(km);
-      km.playLeftHandKeys(leftHandKeys || {});
-      km.playRightHandKeys(rightHandKeys || {});
+      setLeftHandKeys(km.getLeftHandkeys(leftHandKeys || {}));
+      setRightHandKeys(km.getRightHandKeys(rightHandKeys || {}));
     }
+
     if (prevLeftHandKeys !== JSON.stringify(leftHandKeys) && !optionsChanged) {
-      keyboardModel.playLeftHandKeys(leftHandKeys || {});
+      setLeftHandKeys(keyboardModel.getLeftHandkeys(leftHandKeys || {}));
     }
+
     if (
       prevRightHandKeys !== JSON.stringify(rightHandKeys) &&
       !optionsChanged
     ) {
-      keyboardModel.playRightHandKeys(rightHandKeys || {});
+      setRightHandKeys(keyboardModel.getRightHandKeys(rightHandKeys || {}));
     }
   }, [
     prevOptions,
@@ -58,12 +65,11 @@ export const Keyboard = ({
     keyboardModel,
   ]);
 
+  const dimensions = keyboardModel.getSVGDimensions();
+  const keyboardOptions = keyboardModel.getOptions();
   const polygons = keyboardModel.getPolygons();
-  const width = keyboardModel.getWidth();
-  const height = keyboardModel.getHeight();
-  const leftHandActiveKeys = keyboardModel.getLeftHandActiveKeys();
-  const rightHandActiveKeys = keyboardModel.getRightHandActiveKeys();
-
+  const width = dimensions[0];
+  const height = dimensions[1] + keyboardOptions.strokeWidth * 2;
   return (
     <>
       <svg width={width} height={height}>
@@ -74,39 +80,69 @@ export const Keyboard = ({
             })}
         </g>
         <g>
-          {leftHandActiveKeys &&
-            leftHandActiveKeys.map(({ polygon, text1, text2 }, index) => {
+          {lhk &&
+            lhk.map(({ activeKey, text1, text2 }, index: number) => {
               return [
-                polygon && <polygon {...polygon} key={`lhk${index}`} />,
+                activeKey && <polygon {...activeKey} key={`lhk${index}`} />,
                 text1 && (
-                  <text {...text1} key={`lhkt1${index}`}>
+                  <text {...text1} key={`lhl1${index}`}>
                     {text1.value}
                   </text>
                 ),
                 text2 && (
-                  <text {...text2} key={`lhkt2${index}`}>
+                  <text {...text2} key={`lhl2${index}`}>
                     {text2.value}
                   </text>
                 ),
               ];
             })}
-          {rightHandActiveKeys &&
-            rightHandActiveKeys.map(({ polygon, text1, text2 }, index) => {
+          {rhk &&
+            rhk.map(({ activeKey, text1, text2 }, index) => {
               return [
-                polygon && <polygon {...polygon} key={`rhk${index}`} />,
+                activeKey && <polygon {...activeKey} key={`rhk${index}`} />,
                 text1 && (
-                  <text {...text1} key={`rhkt1${index}`}>
+                  <text {...text1} key={`lhl1${index}`}>
                     {text1.value}
                   </text>
                 ),
                 text2 && (
-                  <text {...text2} key={`rhkt2${index}`}>
+                  <text {...text2} key={`lhl2${index}`}>
                     {text2.value}
                   </text>
                 ),
               ];
             })}
         </g>
+        {/* <g>
+          {leftHandLabels.map(({ text1, text2 }, index) => {
+            return [
+              text1 && (
+                <text {...text1} key={`lhl1${index}`}>
+                  {text1.value}
+                </text>
+              ),
+              text2 && (
+                <text {...text2} key={`lhl2${index}`}>
+                  {text2.value}
+                </text>
+              ),
+            ];
+          })}
+          {rightHandLabels.map(({ text1, text2 }, index) => {
+            return [
+              text1 && (
+                <text {...text1} key={`rhl1${index}`}>
+                  {text1.value}
+                </text>
+              ),
+              text2 && (
+                <text {...text2} key={`rhl2${index}`}>
+                  {text2.value}
+                </text>
+              ),
+            ];
+          })}
+        </g> */}
       </svg>
     </>
   );

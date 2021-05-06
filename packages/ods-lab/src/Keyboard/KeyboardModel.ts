@@ -9,7 +9,7 @@ import {
   upperWidth,
   convertTeoriaChordToActiveKeys,
 } from "./utils";
-import { Chord } from "./Chord";
+import { Chord } from "./chord";
 
 export type KeyNameBasicVariants =
   | "C"

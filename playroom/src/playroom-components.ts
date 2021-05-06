@@ -77,5 +77,3 @@ export {
   Keyboard,
   KeyboardController,
 } from "@origin-digital/ods-lab";
-
-export { Card, Stack, Box } from "@origin-digital/ods-core";

@@ -5,7 +5,7 @@ import {
   KeyDetail,
   ActiveKeys,
 } from "./KeyboardModel";
-import { Chord } from "./Chord";
+import { Chord } from "./chord";
 
 export const keyboard: KeyCore[] = [
   {

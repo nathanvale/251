@@ -10,7 +10,7 @@ import {
   convertTeoriaChordToActiveKeys,
 } from "./utils";
 import { Key } from "./KeyboardModel";
-import { chord } from "./Chord";
+import { chord } from "./chord";
 
 describe("Keyboard - utils tests", () => {
   test("it have the correct accidentals ", () => {
